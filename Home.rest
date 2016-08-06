@@ -12,12 +12,10 @@ Welcome to IBEX User Manual's documentation!
     Concepts/ProcessVariables.rest
     Concepts/Blocks.rest
 
-:ref:`what_is_ibex`
-
-* [[WhatIsIBEX]]
-* [[StartingAndStoppingIBEX]]
-* [[ProcessVariables]]
-* [[Blocks]]
+* :ref:`WhatIsIBEX`
+* :ref:`StartingAndStoppingIBEX`
+* :ref:`ProcessVariables`
+* :ref:`Blocks`
 
 Indices and tables
 ==================
