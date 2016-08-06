@@ -1,14 +1,23 @@
+Welcome to IBEX User Manual's documentation!
+============================================
 
 .. toctree::
     :maxdepth: 2
     :numbered:
     :titlesonly:
-    :glob:
     :hidden:
-
+    
     Introduction/WhatIsIBEX.rest
+    Introduction/StartingAndStoppingIBEX.rest
     Concepts/ProcessVariables.rest
-
-Welcome to the ibex_user_manual wiki!
+    Concepts/Blocks.rest
 
 :ref:`what_is_ibex`
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
