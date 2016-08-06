@@ -196,7 +196,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('Home.rest', 'IBEXUserManual.tex', u'IBEX User Manual Documentation',
+  ('Home', 'IBEXUserManual.tex', u'IBEX User Manual Documentation',
    u'ISIS Computing Group', 'manual'),
 ]
 
@@ -226,7 +226,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('Home.rest', 'ibexusermanual', u'IBEX User Manual Documentation',
+    ('Home', 'ibexusermanual', u'IBEX User Manual Documentation',
      [u'ISIS Computing Group'], 1)
 ]
 
@@ -240,7 +240,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('Home.rest', 'IBEXUserManual', u'IBEX User Manual Documentation',
+  ('Home', 'IBEXUserManual', u'IBEX User Manual Documentation',
    u'ISIS Computing Group', 'IBEXUserManual', 'One line description of project.',
    'Miscellaneous'),
 ]
