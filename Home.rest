@@ -17,6 +17,9 @@ Welcome to IBEX User Manual's documentation!
 * :ref:`ProcessVariables`
 * :ref:`Blocks`
 
+* `test web link <http://www.isis.stfc.ac.uk/>`_
+* <http://www.isis.stfc.ac.uk/>
+
 Indices and tables
 ==================
 
