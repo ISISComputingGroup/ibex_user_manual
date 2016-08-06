@@ -1,4 +1,3 @@
-Welcome to the ibex_user_manual wiki!
 
 .. toctree::
     :maxdepth: 2
@@ -10,3 +9,6 @@ Welcome to the ibex_user_manual wiki!
     Introduction/WhatIsIBEX.rest
     Concepts/ProcessVariables.rest
 
+Welcome to the ibex_user_manual wiki!
+
+:ref:`what_is_ibex`
