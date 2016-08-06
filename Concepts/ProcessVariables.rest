@@ -1,0 +1,32 @@
+Process Variables
+=================
+
+A key cobncepr in EPICS, and hence IBEX, is the process variable.
+In the underlying EPICS framework, a process variable is a named piece of
+information that can be read/monitored/changed. Information from hardware
+deviecs and elsewhere is exposed as process variables, and devices are
+controlled by writing to the appropriate process variables.
+
+Naming
+------
+
+Process varuiabkle names are a stribng of alpha-numeric charatceters
+with : used to separate sections and certain sections following naming
+conventones. 
+
+For an instrument all process variables relevant to that instrument will start with the IN: prefil followed by the instrument name followed by deviec specific details. For example 
+
+IN:LARMOR:DAE:GOODUAH        good microams on LARMOR
+IN:IMAT:DAE:GOODUAH        good microams on LARMOR
+
+Items not part of an instrument have a differenct to prefix. For example, the accelerator generates values with a top prefix of AC: such as 
+
+AC:TS1:BEAM:CURR     TS1 beam current
+
+
+Displaying
+----------
+
+caget IN:LARMOR:DAE:GOODUAH
+camonitor IN:LARMOR:DAE:GOODUAH
+

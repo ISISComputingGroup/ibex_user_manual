@@ -1,1 +1,12 @@
 Welcome to the ibex_user_manual wiki!
+
+.. toctree::
+    :maxdepth: 2
+    :numbered:
+    :titlesonly:
+    :glob:
+    :hidden:
+
+    Introduction/WhatIsIBEX.rest
+    Concepts/ProcessVariables.rest
+
