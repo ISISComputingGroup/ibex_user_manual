@@ -28,3 +28,5 @@ Indices and tables
 * :ref:`search`
 
 test2
+
+[[What is ibex|Introduction/WhatIsIBEX.rest]]
