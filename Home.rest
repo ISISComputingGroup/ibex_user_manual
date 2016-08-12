@@ -29,4 +29,4 @@ Indices and tables
 
 test2
 
-[[What is ibex|Introduction/WhatIsIBEX.rest]]
+[[What is ibex|Introduction/WhatIsIBEX]]
