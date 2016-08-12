@@ -19,6 +19,7 @@ Welcome to IBEX User Manual's documentation!
 
 * `test web link <http://www.isis.stfc.ac.uk/>`_
 * <http://www.isis.stfc.ac.uk/>
+   + `WhatIsIBEX`_
 
 Indices and tables
 ==================
