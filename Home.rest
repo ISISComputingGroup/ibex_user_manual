@@ -30,3 +30,5 @@ Indices and tables
 test2
 
 [[What is ibex|Introduction/WhatIsIBEX]]
+
+[[What is ibex|WhatIsIBEX]]
