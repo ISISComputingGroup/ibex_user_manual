@@ -5,7 +5,7 @@ What is IBEX
 
 IBEX is the new instrument control program; it is intended to replace SECI. 
 
-Most device control is currently performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  While LabVIEW will not disappear entirely, we will be using EPICS for most device control. When LabVIEW is required, it can be wrapped in EPICS.
+Most device control is currently performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  LabVIEW will not disappear entirely; when LabVIEW is required, it can be wrapped in EPICS.
 
 IBEX and SECI Similarities
 --------------------------
