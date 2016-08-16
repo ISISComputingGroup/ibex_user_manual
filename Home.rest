@@ -7,6 +7,7 @@ IBEX User Manual
     
     Introduction/WhatIsIBEX.rest
     Introduction/StartingAndStoppingIBEX.rest
+    Introduction/AQuickTourofIBEX.rest
     Concepts/ProcessVariables.rest
     Concepts/Blocks.rest
     Glossary.rest
