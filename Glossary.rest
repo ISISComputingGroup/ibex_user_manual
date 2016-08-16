@@ -3,26 +3,23 @@
 Glossary
 ========
 
-.. glossary::
-
    EPICS
      EPICS is a software framework for controlling devices and is
      the underlying framework for the IBEX server.
      See http://www.aps.anl.gov/epics/
 
-   PV
-   Process Variable
+   PV (Process Variable)
      This is a named piece of information in the EPICS system, such as
      a temperature setpoint or readback. A PV will have a name
-     of the form IN:LARMOR:MOT:MTR0101 for a motor
+     of the form ``IN:LARMOR:MOT:MTR0101`` for a motor
 
    Block
-     This is a named peice of information created by the user as part
-     of an instrument configuration. Block can have logging enabled and
-     will then appear in the final data file
+     This is a named piece of information created by the user as part
+     of an instrument configuration. A block is essentially and alias to 
+     a process variable.   A block can have logging enabled and
+     will then appear in the final data file.
 
-   Client
-   Server
+   Client Server
      IBEX, like :term:`EPICS`, is a client-server system. In such
      systems background processes (servers) provide information for
      clients (such as a GUI or command line). Multiple clients
