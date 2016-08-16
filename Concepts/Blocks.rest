@@ -5,6 +5,6 @@ Blocks
 
 The IBEX concept of a block is similar to SECI, in that it is a relevant piece of information chosen by the scientist that will be displayed on the instrument dashboard and logged into the datafile.
 
-In IBEX, a block is, to all intents and purposes, an alias to a process variable.  For example, the block Chop1Freq on LARMOR is the process variable IN:LARMOR:CS:SB:Chop1Freq.  It is much simpler to refer to a block than to refer to a process variable.  Utilities like genie_python know about blocks and you can use commands such as cset to access Chop1Freq. However you can access blocks using the name IN:LARMOR:CS:SB:Chop1Freq  with any standard EPICS tool
+In IBEX, a block is, to all intents and purposes, an alias to a process variable.  For example, the block Chop1Freq on LARMOR is the process variable IN:LARMOR:CS:SB:Chop1Freq.  It is much simpler to refer to a block than to refer to a process variable.  Utilities like genie_python know about blocks and you can use commands such as cset to access Chop1Freq. However you can access blocks using the name IN:LARMOR:CS:SB:Chop1Freq  with any standard EPICS tool.
 
 
