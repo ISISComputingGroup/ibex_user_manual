@@ -11,20 +11,20 @@ Naming
 
 A process variable name is simply a string of alpha-numeric characters.  However, PV names are usually structured to conform to a naming convention, so that individual PV names are unique.  The colon : character is used to separate the different sections of a PV name.  At ISIS we use the following convention:
 
-For an instrument all process variables relevant to that instrument will start with the IN: prefix followed by the instrument name followed by device specific details. For example 
+For an instrument all process variables relevant to that instrument will start with the ``IN:`` prefix followed by the instrument name followed by device specific details. For example 
 
-IN:LARMOR:DAE:GOODUAH        good microamps on LARMOR
+``IN:LARMOR:DAE:GOODUAH``        good microamps on LARMOR
 
-IN:IMAT:DAE:GOODUAH        good microamps on IMAT
+``IN:IMAT:DAE:GOODUAH``        good microamps on IMAT
 
-Items not part of an instrument have a different prefix. For example, the accelerator generates values with a top-level prefix of AC: such as 
+Items not part of an instrument have a different prefix. For example, the accelerator generates values with a top-level prefix of ``AC:`` such as 
 
-AC:TS1:BEAM:CURR     TS1 beam current
+``AC:TS1:BEAM:CURR``     TS1 beam current
 
 
 Displaying
 ----------
 
-caget IN:LARMOR:DAE:GOODUAH
-camonitor IN:LARMOR:DAE:GOODUAH
+``caget IN:LARMOR:DAE:GOODUAH``
+``camonitor IN:LARMOR:DAE:GOODUAH``
 
