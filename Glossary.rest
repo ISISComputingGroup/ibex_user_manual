@@ -35,7 +35,7 @@ Glossary
 
    IOC
      An IOC (Input Output Controller) is an :term:`EPICS` process that
-     provides some service, oftem managing a device. For example, access
+     provides some service, often managing a device. For example, access
      to a Eurotherm temperature controller is controlled via an IOC
      process that provides :term:`Process Variable` for the relevant
      control elements
