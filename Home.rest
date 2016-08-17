@@ -26,6 +26,8 @@ Indices and Tables
 
 [[KeyConceptsinIBEX]]
 
+[[IBEXFeatures]]
+
 [[Glossary]]
 
 
