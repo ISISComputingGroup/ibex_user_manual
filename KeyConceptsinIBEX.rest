@@ -37,7 +37,8 @@ Archiver
 IOCs 
   IOCs (Input/Output Controllers) are processes which control individual devices attached to  
   the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other 
-  processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].
+  processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].  Typically, there 
+  is one IOC for each device attached to the instrument control PC.
   
 Message Server 
   The Message Server intercepts console messages written by IOCs and stores them in a database.
