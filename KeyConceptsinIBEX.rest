@@ -41,8 +41,8 @@ IOCs
   
 Message Server 
   The Message Server intercepts console messages written by IOCs and stores them in a database.
-  It also serves the messages to the IBEX client, so that the message log can be inspected from 
-  the GUI.
+  It also serves the messages to the IBEX client, so that the message log can be inspected and
+  searched from the GUI.
   
 MySQL 
   MySQL is an open-source relational database system, which provides database services to 
