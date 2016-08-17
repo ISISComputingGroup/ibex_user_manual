@@ -1,0 +1,14 @@
+Key Concepts in IBEX
+====================
+
+It is worth taking a few moments to appreciate some of the key concepts behind IBEX.
+
+Clients & Servers
+-----------------
+
+IBEX is designed as a client-server system
+
+Process Variables
+-----------------
+
+
