@@ -1,0 +1,18 @@
+.. _InstallingIBEX:
+
+Installing IBEX
+===============
+
+Installing IBEX Server
+----------------------
+
+Installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  If you need to install IBEX server on your instrument, please contact the Experimental Controls team.
+
+Installing IBEX Client
+----------------------
+
+Installation of IBEX client on a PC is simple and straightforward.
+
+#. Before installing IBEX client, please ensure that you have an up-to-date version of Java on your PC.
+#. Open a Windows Explorer window and navigate to XXXX
+#. Double-click on XXXX
