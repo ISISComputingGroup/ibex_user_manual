@@ -1,0 +1,19 @@
+IBEX Features
+=============
+
+This section summarises the main features of IBEX as presented by the IBEX GUI client.
+
+[[Dashboard]]
+
+[[BlocksandGroups]]
+
+[[Configurations]]
+
+[[Views]]
+
+[[Alarms]]
+
+[[AccessandSecurity]]
+
+[[Archiver]]
+
