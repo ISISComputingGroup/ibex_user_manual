@@ -15,7 +15,7 @@ Glossary
 
    Block
      This is a named piece of information created by the user as part
-     of an instrument configuration. A block is essentially and alias to 
+     of an instrument configuration. A block is essentially an alias to 
      a process variable.   A block can have logging enabled and
      will then appear in the final data file.
 
