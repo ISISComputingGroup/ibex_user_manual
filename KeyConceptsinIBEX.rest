@@ -8,7 +8,12 @@ Clients & Servers
 
 IBEX is designed as a client-server system
 
-Process Variables
------------------
+Blocks & Process Variables
+--------------------------
+
+[[ProcessVariables]]
+
+[[Blocks]]
+
 
 
