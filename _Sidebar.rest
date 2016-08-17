@@ -1,4 +1,3 @@
-
 * [[WhatIsIBEX]]
 * [[StartingAndStoppingIBEX]]
 * [[ProcessVariables]]
