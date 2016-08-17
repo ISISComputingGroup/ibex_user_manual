@@ -13,6 +13,16 @@ Installing IBEX Client
 
 Installation of IBEX client on a PC is simple and straightforward.
 
-#. Before installing IBEX client, please ensure that you have an up-to-date version of Java on your PC.  If you need to install an up-to-date version of Java, you can obtain a copy from the Java web-site (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
+Pre-requisites for running IBEX Client
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to run IBEX client, your PC must meet the following pre-requisites
+
+#. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 or Windows 10 (Professional or Enterprise), Build 10586.
+#. Your PC must also be running an up-to-date version of Java version 8, update 101 (or later). If you need to install an up-to-date version of Java, you can obtain a copy from the Java web-site (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
+
+Installation
+~~~~~~~~~~~~
+
 #. Open a Windows Explorer window and navigate to XXXX
 #. Double-click on XXXX
