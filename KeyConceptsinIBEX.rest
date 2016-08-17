@@ -10,11 +10,6 @@ A client-server system is one that employs a distributed application architectur
 
 The design of IBEX follows this model.  IBEX consists of a server component, which runs on the instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <http://www.aps.anl.gov/epics/>`_ framework for creating distributed control systems.
 
-IBEX Server
-~~~~~~~~~~~
-
-The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon instrument.  The primary components of the IBEX server are:
-
 IBEX Client
 ~~~~~~~~~~~
 
@@ -23,6 +18,36 @@ The IBEX Client is a single application, which functions as a GUI for IBEX.
 genie_python
 ~~~~~~~~~~~~
 genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
+
+IBEX Server
+~~~~~~~~~~~
+
+The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon instrument.  The primary components of the IBEX server are:
+
+BlockServer 
+  The core component of the IBEX server.  The BlockServer provides the service that
+  translates [[ProcessVariables]] into [[Blocks]].  It also supports run-control and 
+  serves configuration information. 
+
+Archiver 
+  The Archiver, as its name suggests, archives the values of process variables to a database.
+  This service supports strip-chart plots of blocks & process variables and can also be used 
+  to inspect the history of process variables for diagnostic purposes. 
+
+IOCs 
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to  
+  the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other 
+  processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].
+  
+Message Server 
+  The Message Server, intercepts console messages written by IOCs and stores them in a database.
+  It also serves the messages to the IBEX client, so that the message log can be inspected from 
+  the GUI.
+  
+MySQL 
+  MySQL is an open-source relational database system, which provides database services to 
+  the Archiver and the Message Server.
+
 
 Blocks & Process Variables
 --------------------------
