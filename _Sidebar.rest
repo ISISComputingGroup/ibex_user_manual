@@ -1,4 +1,3 @@
-    [[WhatIsIBEX]]
 
 * [[WhatIsIBEX]]
 * [[StartingAndStoppingIBEX]]
