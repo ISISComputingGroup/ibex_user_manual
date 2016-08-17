@@ -1,5 +1,6 @@
 * [[WhatIsIBEX]]
 * [[StartingAndStoppingIBEX]]
+* [[InstallingIBEX]]
 * [[ProcessVariables]]
 * [[Blocks]]
 * [[Glossary]]
