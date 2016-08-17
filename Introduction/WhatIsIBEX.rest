@@ -7,6 +7,8 @@ IBEX is the new instrument control program; it is intended to replace SECI.
 
 Most device control is currently performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  LabVIEW will not disappear entirely; when LabVIEW is required, it can be wrapped in EPICS.
 
+IBEX also uses genie_python as its scripting language.
+
 IBEX and SECI Similarities
 --------------------------
 
@@ -16,3 +18,15 @@ IBEX and SECI Differences
 --------------------------
 
 IBEX is a client-server based system.  The server components of IBEX run on the instrument control PC and directly control the instrument.  The IBEX client is a GUI, which provides an integrated view of the information provided by the server components.  The IBEX client typically runs on a separate PC (which could be located in the instrument cabin or pod, or could be located in your office).  It is important to realise that the IBEX client is itself not the instrument control program. You can thus close the IBEX client without stopping control of devices; you can even run multiple instances of the client on the same or different computers.  You can also run the IBEX client on the instrument control PC.
+
+Introduction to genie_python
+------------------------------------------------
+
+There is some information about genie_python here: http://shadow.nd.rl.ac.uk/ibex_user_manual_sphinx/.
+
+Differences between Open Genie and genie_python
+------------------------------------------------
+
+Open Genie and genie_python are not the same.
+
+
