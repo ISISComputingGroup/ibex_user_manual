@@ -17,14 +17,14 @@ A process variable name is simply a string of alpha-numeric characters.  However
  
 For example 
 
-|   ``IN:LARMOR:DAE:GOODUAH``       good microamps on LARMOR
+|   ``IN:LARMOR:DAE:GOODUAH`` is the PV that holds the good microamps on LARMOR
 
-|   ``IN:IMAT:DAE:GOODUAH``        good microamps on IMAT
+|   ``IN:IMAT:DAE:GOODUAH`` is the PV that holds the good microamps on IMAT
 
 
 Items not part of an instrument have a different prefix. For example, the accelerator generates values with a top-level prefix of ``AC:`` such as 
 
-|   ``AC:TS1:BEAM:CURR``     TS1 beam current
+|   ``AC:TS1:BEAM:CURR`` is the PV that holds the TS1 beam current
 
 
 Displaying
