@@ -22,7 +22,7 @@ IBEX is a client-server based system.  The server components of IBEX run on the 
 Introduction to genie_python
 ------------------------------------------------
 
-There is some information about genie_python here: http://shadow.nd.rl.ac.uk/ibex_user_manual_sphinx/.
+A full reference to genie_python is available here: http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html.
 
 Differences between Open Genie and genie_python
 ------------------------------------------------
