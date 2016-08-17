@@ -40,7 +40,7 @@ IOCs
   processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].
   
 Message Server 
-  The Message Server, intercepts console messages written by IOCs and stores them in a database.
+  The Message Server intercepts console messages written by IOCs and stores them in a database.
   It also serves the messages to the IBEX client, so that the message log can be inspected from 
   the GUI.
   
