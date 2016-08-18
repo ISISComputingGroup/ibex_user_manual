@@ -15,7 +15,7 @@ Dashboard States & Colours
 The meanings of the dashboard states and colours are:
 
 +------------+-------------------+
-| State      | background Colour |
+| State      | Background Colour |
 +============+===================+
 | RUNNING    | LIGHT_GREEN       |
 +------------+-------------------+
