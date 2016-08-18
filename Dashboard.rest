@@ -25,9 +25,9 @@ The meanings of the dashboard states and colours are:
 +------------+-------------+-----------------+
 | PAUSED     | RED         | *TODO: meaning* |
 +------------+-------------+-----------------+
-| WAITING    | GOLDEN_ROD  | *TODO: meaning* |
+| WAITING    | DARK_YELLOW | *TODO: meaning* |
 +------------+-------------+-----------------+
-| VETOING    | GOLDEN_ROD  | *TODO: meaning* |
+| VETOING    | DARK_YELLOW | *TODO: meaning* |
 +------------+-------------+-----------------+
 | ENDING     | BLUE        | *TODO: meaning* |
 +------------+-------------+-----------------+
