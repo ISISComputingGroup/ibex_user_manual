@@ -1,0 +1,32 @@
+Views & the View Selector
+=========================
+
+The main area of the IBEX GUI is reserved for displaying different types of view.  Each displays a different aspect of the instrument.
+
+View Selector
+-------------
+The View Selector, situated on the left-hand side of the IBEX GUI, below the [[Dashboard]], is simply a column of buttons.  Click on each button to change the view.  The currently highlighted button indicates which view is selected.
+
+Views
+------
+Alarms
+   The Alarms View displays the alarm state of all devices attached to the instrument control PC.
+Beam Status
+   The Beam Status View displays the status of the synchrotron, TS1 and TS2 beams.  It also displays MCR news.
+DAE
+   The DAE View allows you to set up and control the DAE.
+Experiment Details
+   The Experiment Details View allows you to look up details of your current experiment using the RB number.
+IOC Log
+   The IOC Log View displays a log of all the messages sent by the IOCs which control the devices attached to the instrument control PC.
+Log Plotter
+   The Log Plotter View alloows you to plot a strip-chart graph of any block of process variable.
+Motors
+   The Motors View displays the status of all motors connected to the instrument control PC.  You can also control all motors from this view.  The Motors View is most useful for instruments with large numbers of motors.
+Scripting
+   Selecting the Scripting View displays a Python console, allowing you to load and execute Python or genie_python scripts.
+Synoptic
+   The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC.
+Web Links
+   The Web Links View is a collection of convenient web links.
+
