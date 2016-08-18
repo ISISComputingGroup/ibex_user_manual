@@ -1,0 +1,14 @@
+IBEX Dashboard
+==============
+
+The dashboard occupies the top left-hand corner of the IBEX GUI.  It provides a brief summary of the current status of the instrument.
+
+The top part of the dashboard shows the name of the instrument to which the IBEX GUI is connected and the current state of the instrument, along with the current Run number and the state of the instrument shutter.
+
+The bottom part of the dashboard summarises the current experiment title and users.  At the lower left, the dashboard displays information on good frames vs raw frames, the beam current and monitor counts.  At the lower right, the dashboard displays the current instrument time, the length of the current run and the period.
+
+**Please note:** The instrument time is the date/time measured by the clock on the instrument control PC.  It might not be the same as the time displayed on your PC or other electronic devices (e.g. your phone).
+
+
+
+You might find it helpful to refer to a `schematic view of the IBEX UI <http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/IBEX_UI_Schematic.png>`_ while reading this section.
