@@ -14,14 +14,37 @@ Dashboard States & Colours
 
 The meanings of the dashboard states and colours are:
 
-+------------+------------+-----------+ 
-| State      | Colour     | Meaning   | 
-+============+============+===========+ 
-| SETUP      | column 2   | column 3  | 
-+------------+------------+-----------+ 
-| RUNNING    | column 2   | column 3  |
-+------------+------------+-----------+ 
-| PAUSED     | column 2   | column 3  |
-+------------+------------+-----------+ 
-| XXXXXXX    |            |           | 
-+------------+------------+-----------+
++------------+-------------+-----------------+
+| State      | Colour      | Meaning         |
++============+=============+=================+ 
+| PROCESSING | YELLOW      | *TODO: meaning* |
++------------+-------------+-----------------+
+| RUNNING    | LIGHT_GREEN | *TODO: meaning* |
++------------+-------------+-----------------+
+| SETUP      | LIGHT_BLUE  | *TODO: meaning* |
++------------+-------------+-----------------+
+| PAUSED     | RED         | *TODO: meaning* |
++------------+-------------+-----------------+
+| WAITING    | GOLDEN_ROD  | *TODO: meaning* |
++------------+-------------+-----------------+
+| VETOING    | GOLDEN_ROD  | *TODO: meaning* |
++------------+-------------+-----------------+
+| ENDING     | BLUE        | *TODO: meaning* |
++------------+-------------+-----------------+
+| PAUSING    | DARK_RED    | *TODO: meaning* |
++------------+-------------+-----------------+
+| BEGINNING  | GREEN       | *TODO: meaning* |
++------------+-------------+-----------------+
+| ABORTING   | BLUE        | *TODO: meaning* |
++------------+-------------+-----------------+
+| RESUMING   | GREEN       | *TODO: meaning* |
++------------+-------------+-----------------+
+| UPDATING   | YELLOW      | *TODO: meaning* |
++------------+-------------+-----------------+
+| STORING    | YELLOW      | *TODO: meaning* |
++------------+-------------+-----------------+
+| SAVING     | YELLOW      | *TODO: meaning* |
++------------+-------------+-----------------+
+| UNKNOWN    | YELLOW      | *TODO: meaning* |
++------------+-------------+-----------------+
+
