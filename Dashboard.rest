@@ -9,6 +9,19 @@ The bottom part of the dashboard summarises the current experiment title and use
 
 **Please note:** The instrument time is the date/time measured by the clock on the instrument control PC.  It might not be the same as the time displayed on your PC or other electronic devices (e.g. your phone).
 
+Dashboard States & Colours
+--------------------------
 
+The meanings of the dashboard states and colours are:
 
-You might find it helpful to refer to a `schematic view of the IBEX UI <http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/IBEX_UI_Schematic.png>`_ while reading this section.
++------------+------------+-----------+ 
+| State      | Colour     | Meaning   | 
++============+============+===========+ 
+| SETUP      | column 2   | column 3  | 
++------------+------------+-----------+ 
+| RUNNING    | column 2   | column 3  |
++------------+------------+-----------+ 
+| PAUSED     | column 2   | column 3  |
++------------+------------+-----------+ 
+| XXXXXXX    |            |           | 
++------------+------------+-----------+
