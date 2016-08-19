@@ -3,7 +3,7 @@ IBEX FAQ
 
 In this section of the IBEX user manual we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
 
-.. _Return_to_Top:
+.. _Return:
 
 List of Frequently Asked Questions
 ----------------------------------
@@ -24,58 +24,58 @@ List of Frequently Asked Questions
 
 This is the first answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1002:
 
 This is the second answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1003:  
 
 This is the third answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1004:
 
 This is the fourth answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1005:
 
 This is the fifth answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1006:
 
 This is the sixth answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1007:
 
 This is the seventh answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1008:
 
 This is the eighth answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1009:
 
 This is the ninth answer.
 
-Return_to_Top_.
+Return_
 
 .. _FAQ1010:
 
 This is the tenth answer.
 
-Return_to_Top_.
+Return_
