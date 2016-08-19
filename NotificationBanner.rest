@@ -1,0 +1,9 @@
+
+Notification Banner
+===================
+
+The Notification Banner sets just below the dashboard and the blocks & groups area of the IBEX GUI.
+
+The Notification Banner is used to display important status information about selected devices on an instrument.  It is customisable on an instrument by instrument basis.  For example, on LARMOR, the Notification Banner is customised to display a message indicating whether any motors are moving and to display a message if the bump strip has been tripped.  On IMAT, the Notification Banner is customised to display the current position of the beam attenuator device.
+
+Please discuss how you would like the Notification Banner to be customised for your instrument with the Experimental Controls team.
