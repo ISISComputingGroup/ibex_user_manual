@@ -8,18 +8,74 @@ In this section of the IBEX user manual we have compiled a list of frequently as
 List of Frequently Asked Questions
 ----------------------------------
 
-#. FAQnumber1_.
-#. FAQnumber2_.
+#. FAQ1001_ This is the first question
+#. FAQ1002_ This is the second question
+#. FAQ1003_ This is the third question
+#. FAQ1004_ This is the fourth question
+#. FAQ1005_ This is the fifth question
+#. FAQ1006_ This is the sixth question
+#. FAQ1007_ This is the seventh question
+#. FAQ1008_ This is the eighth question
+#. FAQ1009_ This is the ninth question
+#. FAQ1010_ This is the tenth question
 
 
-.. _FAQnumber1:
+.. _FAQ1001:
 
-This is an example FAQ.
+This is the first answer.
 
 Return_to_Top_.
 
-.. _FAQnumber2:
+.. _FAQ1002:
 
-This is another example FAQ.
+This is the second answer.
+
+Return_to_Top_.
+
+.. _FAQ1003:  
+
+This is the third answer.
+
+Return_to_Top_.
+
+.. _FAQ1004:
+
+This is the fourth answer.
+
+Return_to_Top_.
+
+.. _FAQ1005:
+
+This is the fifth answer.
+
+Return_to_Top_.
+
+.. _FAQ1006:
+
+This is the sixth answer.
+
+Return_to_Top_.
+
+.. _FAQ1007:
+
+This is the seventh answer.
+
+Return_to_Top_.
+
+.. _FAQ1008:
+
+This is the eighth answer.
+
+Return_to_Top_.
+
+.. _FAQ1009:
+
+This is the ninth answer.
+
+Return_to_Top_.
+
+.. _FAQ1010:
+
+This is the tenth answer.
 
 Return_to_Top_.
