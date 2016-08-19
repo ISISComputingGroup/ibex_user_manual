@@ -34,5 +34,11 @@ Components
 Recent Configurations
    Select a recently used configuration and make it the current configuration.
 
-
-
+Synoptic Menu
+-------------
+New 
+   Create a new synoptic.
+Edit
+   Select an existing synoptic and edit it.
+Delete
+   Select an existing synoptic to delete it. 
