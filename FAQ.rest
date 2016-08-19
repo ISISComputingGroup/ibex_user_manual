@@ -1,0 +1,25 @@
+IBEX FAQ
+========
+
+In this section of the IBEX user manual we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
+
+.. _Return_to_Top:
+
+List of Frequently Asked Questions
+----------------------------------
+
+#. FAQnumber1_.
+#. FAQnumber2_.
+
+
+.. _FAQnumber1:
+
+This is an example FAQ.
+
+Return_to_Top_.
+
+.. _FAQnumber2:
+
+This is another example FAQ.
+
+Return_to_Top_.
