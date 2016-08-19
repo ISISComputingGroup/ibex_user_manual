@@ -3,4 +3,5 @@
 * [[InstallingIBEX]]
 * [[KeyConceptsinIBEX]]
 * [[IBEXGUIFeatures]]
+* [[FAQ]]
 * [[Glossary]]

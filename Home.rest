@@ -28,6 +28,8 @@ Indices and Tables
 
 [[IBEXGUIFeatures]]
 
+[[FAQ]]
+
 [[Glossary]]
 
 
