@@ -1,0 +1,38 @@
+IBEX Menu Bar
+=============
+
+The menu bar on the IBEX GUI provides access to the application features described below.
+
+IBEX Menu
+---------
+Switch Instrument
+   Select the Switch Instrument menu item to re-direct the IBEX GUI to view a different instrument.
+Restore Default View
+   Selecting the Restore Default View option resets the IBEX GUI display to its startup view.
+Exit IBEX Client
+   Select the Exit IBEX Client menu item to quit.  Please note, quitting the IBEX Client does not terminate the IBEX server, which will continue to run on the instrument control PC.
+
+Configuration Menu
+------------------
+Edit Current Configuration
+   Select the Edit Current Configuration menu item to make changes to the currently loaded instrument configuration.
+Configurations
+   Select the Configuration menu item to perform one of the following actions:
+
+   * New - create a new configuration
+   * Load - replace the current configuration with a different configuration loaded from a file
+   * Edit - edit an existing configuration (independently of the current configuration)
+   * Delete - delete a configuration
+
+Components
+   Select the Components menu item to perform one of the following actions:
+
+   * New - create a new component
+   * Edit - edit an existing component
+   * Delete - delete a component
+
+Recent Configurations
+   Select a recently used configuration and make it the current configuration.
+
+
+
