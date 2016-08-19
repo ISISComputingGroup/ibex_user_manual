@@ -8,73 +8,74 @@ List of Frequently Asked Questions
 
 .. _Return:
 
-#. FAQ1001_ This is the first question
-#. FAQ1002_ This is the second question
-#. FAQ1003_ This is the third question
-#. FAQ1004_ This is the fourth question
-#. FAQ1005_ This is the fifth question
-#. FAQ1006_ This is the sixth question
-#. FAQ1007_ This is the seventh question
-#. FAQ1008_ This is the eighth question
-#. FAQ1009_ This is the ninth question
-#. FAQ1010_ This is the tenth question
+#. `This is the first question`_
+#. `This is the second question`_
+#. `This is the third question`_
+#. `This is the fourth question`_
+#. `This is the fifth question`_
+#. `This is the sixth question`_
+#. `This is the seventh question`_
+#. `This is the eighth question`_
+#. `This is the ninth question`_
+#. `This is the tenth question`_
 
 
-.. _FAQ1001:
+.. _`This is the first question`:
 
+This is the first question.
 This is the first answer.
 
 Return_
 
-.. _FAQ1002:
+.. _`This is the second question`:
 
 This is the second answer.
 
 Return_
 
-.. _FAQ1003:  
+.. _`This is the third question`:  
 
 This is the third answer.
 
 Return_
 
-.. _FAQ1004:
+.. _`This is the fourth question`:
 
 This is the fourth answer.
 
 Return_
 
-.. _FAQ1005:
+.. _`This is the fifth question`:
 
 This is the fifth answer.
 
 Return_
 
-.. _FAQ1006:
+.. _`This is the sixth question`:
 
 This is the sixth answer.
 
 Return_
 
-.. _FAQ1007:
+.. _`This is the seventh question`:
 
 This is the seventh answer.
 
 Return_
 
-.. _FAQ1008:
+.. _`This is the eighth question`:
 
 This is the eighth answer.
 
 Return_
 
-.. _FAQ1009:
+.. _`This is the ninth question`:
 
 This is the ninth answer.
 
 Return_
 
-.. _FAQ1010:
+.. _`This is the tenth question`:
 
 This is the tenth answer.
 
