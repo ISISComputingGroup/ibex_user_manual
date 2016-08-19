@@ -42,3 +42,13 @@ Edit
    Select an existing synoptic and edit it.
 Delete
    Select an existing synoptic to delete it. 
+
+IOC Menu
+--------
+Start/Stop IOCs
+   Selecting the Start/Stop IOCs menu item displays a dialog allowing you to start an IOC or to stop an IOC that is currently running.
+
+Run Control Menu
+----------------
+View Run Control Settings
+   Selecting the View Run Control Settings menu item displays a dialog showing you which blocks (if any) are currently under run control.  You can also assign new run-control settings to blocks and modify or remove existing run-control settings.
