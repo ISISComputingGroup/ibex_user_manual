@@ -25,7 +25,9 @@ To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IB
 Starting and Stopping IBEX Server
 ---------------------------------
 
-The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis.  The IBEX Server is actually a collection of mutually cooperating processes.  In order to start and stop the IBEX Server, these processes need to be started and stopped in the correct order.  There are scripts to start and stop IBEX Server.  If you need to start or stop IBEX Server, please use the appropriate script (as described below).
+The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis.  
+
+The IBEX Server is actually a collection of mutually cooperating processes.  In order to start and stop the IBEX Server, these processes need to be started and stopped in the correct order.  There are scripts to start and stop IBEX Server.  If you need to start or stop IBEX Server, please use the appropriate script (as described below).
 
 Starting IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
