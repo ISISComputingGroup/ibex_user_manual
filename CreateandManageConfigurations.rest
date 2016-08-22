@@ -1,0 +1,58 @@
+.. _CreateandManageConfigurations:
+
+Create & Manage Configurations
+================================
+
+A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use in order to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments.
+
+**Please note:** An IBEX configuration is **not** the same as a Mantid configuration.  IBEX and Mantid view instruments in fundamentally different ways, which means that their respective configurations are not interchangeable.
+
+Creating a Configuration
+------------------------
+
+To create a configuration:
+
+#. Select ``Configurations > New`` from the ``Configuration`` menu.
+#. IBEX displays a dialog containing eight tabs.  
+
+   #. IOCs
+   #. Blocks
+   #. Groups
+   #. Components
+   #. IOC Macros
+   #. IOC PV Values
+   #. IOC PV Sets
+   #. Summary
+
+We'll describe each of these in turn.
+
+IOCs Tab
+~~~~~~~~
+The IOCs tab lists all the IOCs available on the instrument.  In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
+
+To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes (or select both).  By selecting these check-boxes, IBEX will automatically start (or restart) to chosen IOCs each time your configuration is loaded into IBEX.
+
+**Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.
+
+Blocks Tab
+~~~~~~~~~~
+The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariable]]).
+
+To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.   Below the block name field is the PV address field.  Click on the ``Select PV`` button next to the PV address field to choose a PV to be aliased by the block name.
+
+On clicking the ``Select PV`` button, IBEX will display a list of PVs available on your instrument.  There can be a very large number of PVs on an instrument, so the dialog provides a number of filters to help you narrow your search.  Choose:
+
+PVs from
+   ``All IOCs`` to see PVs from all IOCs on your instrument (this can result in a very long list of PVs).
+   ``Active IOCs`` to see PVs only from IOcs that are currently running on your instrument.
+   ``Config IOCs`` to see PVs only from IOCs that are included in the current configuration.
+
+Interest Level
+   ``High`` to see PVs considered to be of high interest to scientists
+   ``Medium`` to see PVs considered to be of medium interest to scientists (many PVs in this category will be of more interest to technicians and support staff, rather than scientists)
+   ``Facility`` to see PVs that relate to facility, rather than instrument, devices (PVs in this category typically include PVs relating to the accelerator, target stations, shared beamlines and instrument shutters).
+   ``All`` to see all PVs from your selected category of IOCs (again, this can generate a very long list of PVs).
+
+
+
+
