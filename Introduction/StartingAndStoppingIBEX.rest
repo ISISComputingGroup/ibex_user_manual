@@ -39,12 +39,12 @@ To start IBEX Server, proceed as follows:
     cd c:\Instrument\Apps\EPICS
     start_inst
     
-#. Allow the ``start_inst`` script a few moments to complete before starting the IBEX client.
+#. Allow the ``start_inst`` script a few moments to complete.
 
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
-#. If you are running the IBEX Client, exit from the IBEX Client before stopping IBEX Server.
+#. If you are running the IBEX Client, exit before stopping IBEX Server.
 #. Use Windows Remote Desktop Connection to login to your instrument control PC
 #. Open a command window
 #. At the command prompt type the following::
