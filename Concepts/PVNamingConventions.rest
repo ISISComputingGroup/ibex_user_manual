@@ -19,3 +19,35 @@ The essential format of the ISIS naming convention is ``DOMAIN:SUBDOMAIN:TECHNIC
 PV names should contain only the following characters ``A-Z``, ``0-9``, ``_``, ``:``, ``*``. Notice that lowercase characters are not allowed.  The colon character ``:`` is used to separate different elements of the PV name; therefore, do not use the ``:`` for other purposes (e.g. as part of an IOC name).  To break up individual components of a PV name into readable segments, use the underscore, ``_`` character.
 
 In addition, PV names must start with a letter and must not end with ``_``.
+
+Domain & Subdomain Names
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Names appearing in the domain & subdomain levels include:
+
++------+--------------------------------------------------------------------------------------------------------+ 
+| Name | Description                                                                                            | 
++======+========================================================================================================+ 
+| AC   | ISIS Accelerator/synchrotron related parameter                                                         |
++------+--------------------------------------------------------------------------------------------------------+ 
+| TG   | ISIS Target related parameter                                                                          |
++------+--------------------------------------------------------------------------------------------------------+ 
+| IN   | Instrument related parameter                                                                           |
++------+--------------------------------------------------------------------------------------------------------+ 
+| BL   | Beamline – used if multiple instruments are sharing a common set of equipment; e.g, the muon beamlines |
++------+--------------------------------------------------------------------------------------------------------+ 
+| TE   | Testing domain, used by local EPICS developers                                                         |
++------+--------------------------------------------------------------------------------------------------------+ 
+
+In the instrument domain, the sub-domain is the full instrument name.  For example: ``IN:GEM`` or ``IN:POLREF``.
+
+Technical Area and Device Names
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Technical Area and Device Names reflect the nature of the device that owns the PV in question.  For example:
+
+* ``IN:GEM:MOT`` relates to PVs associated with motion control equipment on GEM.
+* ``IN:ZOOM:VAC`` relates to PVs associated with vacuum equipment equipment on ZOOM
+* ``IN:LARMOR:DAE`` relates to PVs associated with the DAE on LARMOR
+
+
