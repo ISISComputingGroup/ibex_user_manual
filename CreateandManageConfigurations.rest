@@ -38,7 +38,9 @@ Blocks Tab
 ~~~~~~~~~~
 The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariable]]).
 
-To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.   Below the block name field is the PV address field.  Click on the ``Select PV`` button next to the PV address field to choose a PV to be aliased by the block name.
+To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name starts with a character and contains only the characters a-z and A-Z, the digits 0-9 and the underscore character.
+
+Below the block name field is the PV address field.  Click on the ``Select PV`` button next to the PV address field to choose a PV to be aliased by the block name.
 
 On clicking the ``Select PV`` button, IBEX will display a list of PVs available on your instrument.  There can be a very large number of PVs on an instrument, so the dialog provides a number of filters to help you narrow your search.  Choose:
 
