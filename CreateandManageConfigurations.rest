@@ -67,7 +67,7 @@ On the Add Block dialog you can also choose to
 Visible/Local
    Toggle the ``Visible`` check-box to make the block visible or hidden.  By default, blocks are always visible.  This feature is useful, for example, if you need to see blocks while setting up an experiment, but don't need to see them once the experiment is running.
 
-   The ``Local`` check-box is used when you need to view PVs from another instrument as blocks.  In most circumstances, you will not need to view PVs belonging to another instrument, so you should leave the ``Local`` check-box checked.  Facility PVs are an exception to this rule, but IBEX knows about facility PVs and defaults the ``Local`` check-box  to unchecked.  If you do need to view PVs belonging another instrument, please consult with the Experiment Controls team.
+   The ``Local`` check-box is used when you need to view PVs from another instrument as blocks.  In most circumstances, you will not need to view PVs belonging to another instrument, so you should leave the ``Local`` check-box checked.  Facility PVs are an exception to this rule, but IBEX knows about facility PVs and, in this case, automatically sets the ``Local`` check-box  to unchecked.  If you do need to view PVs belonging another instrument, please consult with the Experiment Controls team.
 
 Run-Control Settings
    Toggle the ``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is collected only when the block lies within the range) .
