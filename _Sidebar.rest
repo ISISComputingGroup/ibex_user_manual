@@ -1,6 +1,6 @@
 * [[WhatIsIBEX]]
-* [[StartingAndStoppingIBEX]]
 * [[InstallingIBEX]]
+* [[StartingAndStoppingIBEX]]
 * [[KeyConceptsinIBEX]]
 * [[IBEXGUIFeatures]]
 * [[FAQ]]
