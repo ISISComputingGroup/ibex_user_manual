@@ -1,0 +1,18 @@
+.. _HowToDoThingsInIBEX:
+
+How To Do Things In IBEX
+========================
+
+In this section of the IBEX User Manual, we describe how to do the most common and important tasks.
+
+[[CreateandManageConfigurations]]
+
+[[CreateandManageComponents]]
+
+[[StartandStopIOCs]]
+
+[[CreateandManageSynoptics]]
+
+[[CreateandManageScripts]]
+
+[[ManagetheDAE]]
