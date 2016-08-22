@@ -44,14 +44,22 @@ On clicking the ``Select PV`` button, IBEX will display a list of PVs available 
 
 PVs from
    ``All IOCs`` to see PVs from all IOCs on your instrument (this can result in a very long list of PVs).
+
    ``Active IOCs`` to see PVs only from IOcs that are currently running on your instrument.
+
    ``Config IOCs`` to see PVs only from IOCs that are included in the current configuration.
 
 Interest Level
    ``High`` to see PVs considered to be of high interest to scientists
+
    ``Medium`` to see PVs considered to be of medium interest to scientists (many PVs in this category will be of more interest to technicians and support staff, rather than scientists)
+
    ``Facility`` to see PVs that relate to facility, rather than instrument, devices (PVs in this category typically include PVs relating to the accelerator, target stations, shared beamlines and instrument shutters).
+
    ``All`` to see all PVs from your selected category of IOCs (again, this can generate a very long list of PVs).
+
+Scroll down the list of PVs until you find the one you want.  Click on it, to select it and then click on the OK button to return to the Add Block dialog.
+
 
 
 
