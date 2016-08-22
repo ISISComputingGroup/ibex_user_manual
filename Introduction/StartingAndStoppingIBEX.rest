@@ -46,6 +46,8 @@ To start IBEX Server, proceed as follows:
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
+To stop IBEX Server, proceed as follows:
+
 #. If you are running the IBEX Client, exit before stopping IBEX Server.
 #. Use Windows Remote Desktop Connection to login to your instrument control PC
 #. Open a command window
