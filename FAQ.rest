@@ -8,8 +8,8 @@ List of Frequently Asked Questions
 
 .. _Return:
 
-#. `This is the first question`_
-#. `This is the second question`_
+#. `How do I start IBEX Server?`_
+#. `How do I stop IBEX Server?`_
 #. `This is the third question`_
 #. `This is the fourth question`_
 #. `This is the fifth question`_
@@ -20,16 +20,19 @@ List of Frequently Asked Questions
 #. `This is the tenth question`_
 
 
-.. _`This is the first question`:
+.. _`How do I start IBEX Server?`:
 
-This is the first question.
-This is the first answer.
+**Q: How do I start IBEX Server?**
+
+**A:** To start IBEX Server - see [[StartingAndStoppingIBEX]]
 
 Return_
 
-.. _`This is the second question`:
+.. _`How do I stop IBEX Server?`:
 
-This is the second answer.
+**Q: How do I stop IBEX Server?**
+
+**A:** To stop IBEX Server - see [[StartingAndStoppingIBEX]]
 
 Return_
 
