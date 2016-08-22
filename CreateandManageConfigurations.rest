@@ -36,7 +36,7 @@ To include an IOC in your configuration, scroll down the list until you find the
 
 Blocks Tab
 ~~~~~~~~~~
-The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariable]]).
+The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariables]]).
 
 To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name starts with a character and contains only the characters a-z and A-Z, the digits 0-9 and the underscore character.
 
@@ -74,3 +74,18 @@ Run-Control Settings
 
 Logging Settings
    By default (Logging Settings is disabled), the block is logged whenever its value changes.  Toggle the ``Enabled`` check-box to change the way the block is logged.  You can set the block to logged periodically (i.e. every N seconds), or you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
+
+Groups Tab
+~~~~~~~~~~
+Use the Groups tab to arrange your blocks into convenient groups.  You can define as many groups as you wish and you can place as many blocks in each group as you wish, although a block can only appear in one group.
+
+By default, all blocks are assigned to an automatic group called "Other".  By creating new groups, you have the opportunity to override the default assignment and assign blocks to groups of your choosing.  
+
+To create a new group, select the Groups tab and click on the ``Add`` button.  IBEX displays a dialog to allow you to define a new group.  By default, the new block is given the name ``NEW_GROUP``.  You can give the block any name you like, provided the name starts with a character and contains only the characters a-z and A-Z, the digits 0-9 and the underscore character.  When you click on the ``Add`` button, the dialog displays which blocks are available to be assigned to the new group (i.e. blocks in the "Other" group).
+
+Use the buttons with the Up and Down arrows to control the ordering of the groups and the order of the blocks within the groups.
+
+Components Tab
+~~~~~~~~~~~~~~
+
+Components are, in essence, sub-configurations.
