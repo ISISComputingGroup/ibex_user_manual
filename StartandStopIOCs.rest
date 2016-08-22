@@ -3,7 +3,7 @@
 Starting and Stopping IOCs
 ==========================
 
-In EPICS an IOC is a component which controls hardware devices.  In IBEX, we use IOCs to control sample environment devices attached to instruments. The acronym IOC stands for Input/Output Controller.  As the name suggests, an IOC controls the communication between a hardware device and other parts of IBEX.
+In `EPICS <http://www.aps.anl.gov/epics/>`_ an IOC is a component which controls hardware devices.  In IBEX, we use IOCs to control sample environment devices attached to instruments. The acronym IOC stands for Input/Output Controller.  As the name suggests, an IOC controls the communication between a hardware device and other parts of IBEX.
 
 In order to communicate with a hardware device, the corresponding IOC must be running.  The ``IOC`` menu in IBEX provides the means to start IOCs (and to stop IOCs, when they are no longer required).
 
