@@ -18,19 +18,40 @@ Alternatively, if you created a desktop short-cut to the IBEX client, simply dou
 Stopping IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
 
-To stop the IBEX client, select `Exit IBEX Client` from the `IBEX` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Simply confirm that you wish to exit and the IBEX client will shut down.
+To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Simply confirm that you wish to exit and the IBEX client will shut down.
 
-** Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stopped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
+**Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stopped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
 
 Starting and Stopping IBEX Server
 ---------------------------------
 
+The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis.  The IBEX Server is actually a collection of mutually cooperating processes.  In order to start and stop the IBEX Server, these processes need to be started and stopped in the correct order.  There are scripts to start and stop IBEX Server.  If you need to start or stop IBEX Server, please use the appropriate script (as described below).
+
 Starting IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
-To start IBEX Client simply select IBEX from the Start icon on the taskbar of your Windows PC.  If you use IBEX regularly, it will appear in the menu of frequently used programs as soon as you click on the Start icon.  
+To start IBEX Server, proceed as follows:
+
+#. Use Windows Remote Desktop Connection to login to your instrument
+#. Open a command window
+#. At the command prompt type the following: 
+
+    cd c:\Instrument\Apps\EPICS
+    start_inst
+    
+#. Allow the `start_inst` script a few moments to complete before starting the IBEX client.
 
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
+
+#. Use Windows Remote Desktop Connection to login to your instrument
+#. Open a command window
+#. At the command prompt type the following: 
+
+    cd c:\Instrument\Apps\EPICS
+    stop_inst
+    
+#. Allow the `stop_inst` script a few moments to complete before starting the IBEX client.
+
 
 
