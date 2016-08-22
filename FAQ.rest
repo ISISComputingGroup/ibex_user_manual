@@ -8,9 +8,9 @@ List of Frequently Asked Questions
 
 .. _Return:
 
+#. `How do I report a problem with IBEX?`_
 #. `How do I start IBEX Server?`_
 #. `How do I stop IBEX Server?`_
-#. `This is the third question`_
 #. `This is the fourth question`_
 #. `This is the fifth question`_
 #. `This is the sixth question`_
@@ -19,6 +19,13 @@ List of Frequently Asked Questions
 #. `This is the ninth question`_
 #. `This is the tenth question`_
 
+.. _`How do I report a problem with IBEX?`:  
+
+**Q: How do I report a problem with IBEX?**
+
+**A:** To report a problem with IBEX (Client or Server), please use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page.  Using this page helps to ensure that your problem report gets routed to the right person as quickly as possible.  When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the IBEX menu.
+
+Return_
 
 .. _`How do I start IBEX Server?`:
 
@@ -33,12 +40,6 @@ Return_
 **Q: How do I stop IBEX Server?**
 
 **A:** To stop IBEX Server - see [[StartingAndStoppingIBEX]]
-
-Return_
-
-.. _`This is the third question`:  
-
-This is the third answer.
 
 Return_
 
