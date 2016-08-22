@@ -20,9 +20,9 @@ Indices and Tables
 
 [[WhatIsIBEX]]
 
-[[StartingAndStoppingIBEX]]
-
 [[InstallingIBEX]]
+
+[[StartingAndStoppingIBEX]]
 
 [[KeyConceptsinIBEX]]
 
