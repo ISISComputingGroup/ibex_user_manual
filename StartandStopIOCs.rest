@@ -1,4 +1,3 @@
-
 .. _StartandStopIOCs:
 
 Starting and Stopping IOCs
@@ -8,13 +7,23 @@ In EPICS an IOC is a component which controls hardware devices.  In IBEX, we use
 
 In order to communicate with a hardware device, the corresponding IOC must be running.  The ``IOC`` menu in IBEX provides the means to start IOCs (and to stop IOCs, when they are no longer required).
 
-Starting an IOC
----------------
-To start an IOC:
+Starting or Stopping an IOC
+---------------------------
+To start or stop an IOC:
 
+#. Select ``Stat/Stop IOCs`` from the ``IOC`` menu.
+#. IBEX displays a dialog containing two panes.  
 
-Stopping an IOC
----------------
-To stop an IOC:
+   #. The first pane is a list of all the IOCs available on the instrument.  The list shows whether each IOC is running or stopped.
+   #. The second pane, below the list, allows you to start, stop or restart the selected IOC.
 
+#. Scroll down the list until you find the IOC you wish to start or stop.  Select the IOC by clicking on it once.
+#. The selected IOC is highlighted in the list and lower pane activates.
+#. Click on
+
+   #. the ``Start`` button to start an IOC that is currently stopped
+   #. the ``Stop`` button to stop an IOC that is currently running
+   #. the ``Restart`` button to restart an IOC that is currently running
+
+It may take a few moments from pressing the button for the selected IOC to start or stop.  You might also see a number of messages written to the [[IOC Log]] as the IOC starts itself up or shuts itself down.
 
