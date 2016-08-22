@@ -1,0 +1,21 @@
+.. _PVNamingConventions:
+
+PV Naming Conventions
+=====================
+
+Facilities running `EPICS <http://www.aps.anl.gov/epics/>`_ usually adopt a convention for naming PVs [[ProcessVariables]].  ISIS is no exception.
+
+The purpose of the naming convention is to
+a. provide a systematic means of describing the PV
+b. ensure that the name of the PV is unique (within the facility).
+
+ISIS Naming Convention
+----------------------
+
+At ISIS, PV names are chosen to describe function, not hardware/technology - the PV name is the purpose of a channel and is abstracted from the underlying hardware; the name of the IOC (to which the PV belongs) can however reflect technology/hardware/implementation. 
+
+The essential format of the ISIS naming convention is ``DOMAIN:SUBDOMAIN:TECHNICALAREA:DEVICE:SUBDEVICE:SIGNAL``
+
+PV names should contain only the following characters ``A-Z``, ``0-9``, ``_``, ``:``, ``*``. Notice that lowercase characters are not allowed.  The colon character ``:`` is used to separate different elements of the PV name; therefore, do not use the ``:`` for other purposes (e.g. as part of an IOC name).  To break up individual components of a PV name into readable segments, use the underscore, ``_`` character.
+
+In addition, PV names must start with a letter and must not end with ``_``.
