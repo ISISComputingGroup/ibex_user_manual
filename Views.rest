@@ -20,7 +20,7 @@ Experiment Details
 IOC Log
    The IOC Log View displays a log of all the messages sent by the IOCs which control the devices attached to the instrument control PC.
 Log Plotter
-   The Log Plotter View allows you to plot a strip-chart graph of any block of process variable.
+   The Log Plotter View allows you to plot a strip-chart graph of any block or process variable.
 Motors
    The Motors View displays the status of all motors connected to the instrument control PC.  You can also control all motors from this view.  The Motors View is most useful for instruments with large numbers of motors.
 Scripting
