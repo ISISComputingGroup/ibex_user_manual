@@ -62,7 +62,15 @@ Interest Level
 
 Scroll down the list of PVs until you find the one you want.  Click on it, to select it and then click on the OK button to return to the Add Block dialog.
 
+On the Add Block dialog you can also choose to 
 
+Visible/Local
+   Toggle the``Visible`` check-box to make the block visible or hidden.  By default, blocks are always visible.  This feature is useful, for example, if you need to see blocks while setting up an experiment, but don't need to see them once the experiment is running.
 
+Toggle the``Local`` check-box to make .
 
+Run-Control Settings
+   Toggle the``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is collected only when the block lies within the range) .
 
+Logging Settings
+   By default (Logging Settings is disabled), the block is logged whenever its value changes.  Toggle the``Enabled`` check-box to change the way the block is logged.  You can set the block to logged periodically (i.e. every N seconds), or you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
