@@ -3,5 +3,6 @@
 * [[StartingAndStoppingIBEX]]
 * [[KeyConceptsinIBEX]]
 * [[IBEXGUIFeatures]]
+* [[HowToDoThingsInIBEX]]
 * [[FAQ]]
 * [[Glossary]]
