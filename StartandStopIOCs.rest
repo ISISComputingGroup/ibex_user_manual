@@ -25,5 +25,5 @@ To start or stop an IOC:
    #. the ``Stop`` button to stop an IOC that is currently running
    #. the ``Restart`` button to restart an IOC that is currently running
 
-It may take a few moments from pressing the button for the selected IOC to start or stop.  You might also see a number of messages written to the [[IOCLog]] as the IOC starts itself up or shuts itself down.
+It might take a few moments from pressing the button for the selected IOC to start or stop.  You might also see a number of messages written to the [[IOCLog]] as the IOC starts itself up or shuts itself down.
 
