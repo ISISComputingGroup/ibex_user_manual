@@ -43,6 +43,8 @@ To start IBEX Server, proceed as follows:
     
 #. Allow the ``start_ibex_server`` script a few moments to complete.
 
+You should wait until the ``start_ibex_server`` script has completed before starting IBEX Client.
+
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
