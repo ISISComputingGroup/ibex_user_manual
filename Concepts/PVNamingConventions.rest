@@ -93,6 +93,6 @@ For example, for a TEMP signal
 
 * ``...:HEATER:TEMP`` Current temperature
 * ``...:HEATER:TEMP:SP`` Temperature set point (requested value) – this is the value that was input in software and sent to the equipment. Writing to this PV will cause the setpoint to change
-* ``...:HEATER:TEMP:SP:RBV``  This is the setpoint “readback”  from hardware, which may differ from SP sent above if e.g. the hardware was unable to exactly match the requested value.  By definition, a readback PV is read-only.  Also if the SP was changed by some other mechanism (e.g. manually on the hardware) `:SP` would not reflect this, but `:SP:RBV` would.
+* ``...:HEATER:TEMP:SP:RBV``  This is the setpoint “readback”  from hardware, which may differ from SP sent above if, for example, the hardware was unable to exactly match the requested value.  By definition, a readback PV is read-only.  Also if the SP was changed by some other mechanism (e.g. manually on the hardware) ``:SP`` would not reflect this, but ``:SP:RBV`` would.
 
-**Note:** The RBV suffix can be used more generally e.g. For P,I,D values you could have `...:P` and `...:P:RBV`
+**Note:** The RBV suffix can be used more generally e.g. For P,I,D values you could have ``...:P`` and ``...:P:RBV``
