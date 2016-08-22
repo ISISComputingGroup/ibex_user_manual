@@ -37,9 +37,9 @@ To start IBEX Server, proceed as follows:
 #. At the command prompt type the following::
 
     cd c:\Instrument\Apps\EPICS
-    start_inst
+    start_ibex_server
     
-#. Allow the ``start_inst`` script a few moments to complete.
+#. Allow the ``start_ibex_server`` script a few moments to complete.
 
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
@@ -50,6 +50,6 @@ Stopping IBEX Server
 #. At the command prompt type the following::
 
     cd c:\Instrument\Apps\EPICS
-    stop_inst
+    stop_ibex_server
     
-#. Allow the ``stop_inst`` script a few moments to complete.
+#. Allow the ``stop_ibex_server`` script a few moments to complete.
