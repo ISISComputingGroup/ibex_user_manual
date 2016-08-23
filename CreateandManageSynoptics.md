@@ -1,4 +1,3 @@
-
 .. _CreateandManageSynoptics:
 
 Create & Manage Synoptic Views
@@ -15,7 +14,7 @@ Creating a Synoptic View
 
 To create a synoptic view:
 
-#. Select ``New`` from the ``Synoptic menu.
+#. Select ``New`` from the ``Synoptic`` menu.
 #. IBEX displays a dialog divided into four panes.  
 
    #. Instrument Tree
