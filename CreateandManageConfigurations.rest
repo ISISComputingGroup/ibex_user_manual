@@ -102,14 +102,15 @@ To set an IOC macro:
    #. Macro Name: the name of the macro (e.g. ``PORT``, ``BAUD`` or ``IPADDRESS``)
    #. Value: the current value of the macro (e.g. ``COM3``, ``9600`` or ``192.83.42.106``)
    #. Description: a short description of the macro's purpose
-   #. Pattern: macros need to be specified correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is expressed as a "regular expression").
+   #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is expressed as a "regular expression").
 
 #. Choose a macro from the table.  The ``Name:`` field (read-only) is populated with the macro name and the ``Value:`` field is populated with the current value of the macro.
 
-#. Edit the ``Value:`` field to change the macro value.  Please note that the value you enter will be validated against the pattern.  If the macro does not conform to the pattern, IBEX will display a warning message.
+#. Edit the ``Value:`` field to change the macro value.  Please note that the value you enter will be validated against the pattern.  If the macro does not conform to the pattern, IBEX will display a warning message.  IBEX will refuse to accept any values that do not conform to the pattern.
 
-#. Click on the ``Set Macro`` button to set the macro value.  The table of macros will be updated with the new value.  You can also use the ``Clear macro`` button to clear the contents of the ``Value:`` field.
+#. Click on the ``Set Macro`` button to set the macro value.  The table of macros will be updated with the new value.  You can also use the ``Clear Macro`` button to clear the contents of the ``Value:`` field.
 
+If you are not sure about how to correctly configure macro values for a device, please consult with the Experimental Controls team.
 
 IOC PV Values
 ~~~~~~~~~~~~~
@@ -119,3 +120,17 @@ IOC PV Sets
 
 Summary
 ~~~~~~~
+
+The Summary tab allows you to create a short description for your configuration.  It also allows you to associate a default synoptic view with your configuration.
+
+When you click on the Summary tab, IBEX displays the following fields:
+
+Name
+   This is a read-only field.  It is defined when you save the configuration.  When you are creating a new configuration, the ``Name:`` field will be empty.
+
+Description
+   Provide a short description of your configuration.  Configuration names can sometime be a little cryptic; a short description will help you to better remember the purpose of the configuration.
+
+Synoptic
+   IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
+
