@@ -154,7 +154,7 @@ Editing a Configuration
 To edit a configuration:
 
 #. Select ``Configurations > Edit`` from the ``Configuration`` menu.
-#. IBEX displays the Edit Configuration dialog (described above).
+#. IBEX displays the Edit Configuration dialog (as described in `Creating a Configuration`_).
 #. This time the Edit Configuration dialog has three buttons at the bottom of the dialog
 
 Save
@@ -165,6 +165,11 @@ Save as...
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes. 
+
+Edit Current Configuration ...
+------------------------------
+
+To edit the current configuration simply select ``Edit Current Configuration ...`` from the ``Configuration`` menu.  This avoids the need to select the current configuration from a list of configurations.  Otherwise, this option behaves in the same way as `Editing a Configuration`_.
 
 Load a Configuration
 -----------------------
