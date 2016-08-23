@@ -33,19 +33,25 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the dialog without saving your changes.
 
-We'll describe each of four panes in turn.
+Use the Synoptic editor as follows:
 
-Instrument Tree
-~~~~~~~~~~~~~~~
+#. Click on the ``Add Component`` button to add a new component to the Instrument Tree.
 
-Component Details
-~~~~~~~~~~~~~~~~~
+   #. When you add a new component, its details are shown in the Component Details pane.  It is given the default name ``New Component`` and a default type of ``UNKNOWN``.  
+   #. In the Component Details pane, you can adjust the properties of the component.
 
-Component  Target Details
-~~~~~~~~~~~~~~~~~~~~~~~~~
+      * Give it a suitable name
+      * Select the type of device it represents
+      * Add associated PVs to be displayed below the component in the synoptic view (``Add New PV`` button).
+      * Remove associated PVs 
 
-PV Details
-~~~~~~~~~~
+   #. If you add an associated PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a block or PV.
 
+   #. Use the Component Target Details pane to **DO SOMETHING**.
 
+#. Click on the ``Copy Component`` button to duplicate the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
+
+#. Click on the ``Delete Component`` button to delete the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
+
+#. Toggle the ``Show Beam`` check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.
 
