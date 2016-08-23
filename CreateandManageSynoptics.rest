@@ -51,7 +51,7 @@ Use the Synoptic editor as follows:
 
 #. Click on the ``Copy Component`` button to duplicate the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
 
-#. Click on the ``Delete Component`` button to delete the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
+#. Click on the ``Delete Component`` button to delete the currently selected component.  If no component is selected, the ``Delete Component`` button is inactive.
 
 #. Toggle the ``Show Beam`` check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.
 
