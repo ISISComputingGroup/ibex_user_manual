@@ -13,7 +13,7 @@ Creating a Configuration
 To create a configuration:
 
 #. Select ``Configurations > New`` from the ``Configuration`` menu.
-#. IBEX displays a dialog containing eight tabs.  
+#. IBEX displays the Edit Configuration dialog, which contains eight tabs.  
 
    #. IOCs
    #. Blocks
@@ -24,7 +24,15 @@ To create a configuration:
    #. IOC PV Sets
    #. Summary
 
-We'll describe each of these in turn.
+#. At the bottom of the dialog are two buttons
+
+Save as...
+   Click on the ``Save as...`` button to save your changes.  The Save as... dialog prompts you to provide a name and description for your configuration.  You must provide a name for the configuration.  The name of the configuration can contain only the characters a-z, A-Z, 0-9 and _ (underscore).  The name must also start with a character.
+
+Cancel
+   Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
+
+We'll describe each of the Edit Configuration dialog tabs in turn.
 
 IOCs Tab
 ~~~~~~~~
@@ -140,3 +148,20 @@ Description
 Synoptic
    IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
 
+Editing a Configuration
+-----------------------
+
+To edit a configuration:
+
+#. Select ``Configurations > Edit`` from the ``Configuration`` menu.
+#. IBEX displays the Edit Configuration dialog (described above).
+#. This time the Edit Configuration dialog has three buttons at the bottom of the dialog
+
+Save
+   Clicking on the ``Save`` button immediately saves your changes without any further prompting.  
+
+Save as...
+   Clicking on the ``Save as...`` button operates as described in the previous section.  You can use the ``Save as...`` button to save the configuration with a new name, prior to making further changes.
+
+Cancel
+   Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes. 
