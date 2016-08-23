@@ -41,7 +41,7 @@ Use the Synoptic editor as follows:
    #. In the Component Details pane, you can adjust the properties of the component.
 
       * Give it a suitable name
-      * Select the type of device it represents
+      * Select the type of device it represents.  Click on the drop-down menu to select the device type.
       * Add associated PVs to be displayed below the component in the synoptic view (``Add New PV`` button).
       * Remove associated PVs 
 
