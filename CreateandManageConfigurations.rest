@@ -89,3 +89,30 @@ Components Tab
 ~~~~~~~~~~~~~~
 
 Components are, in essence, sub-configurations.
+
+IOC Macros
+~~~~~~~~~~
+
+IOC Macros are configurable values that IBEX can supply to the IOC when the IOC is started.  For example, if the IOC is controlling a serial device attached to a COM port, you can use an macro to identify the appropriate port to the IOC.  This is especially useful if the device moves between instruments and may be attached to different COM ports on different instruments.
+
+To set an IOC macro:
+
+#. Select the IOC Macros tab and choose an IOC from the drop-down menu list of IOCs.  If the IOC has any configurable macro parameters, they will be displayed in the list below.  The list contains four columns:
+
+   #. Macro Name: the name of the macro (e.g. ``PORT``)
+   #. Value: the current value of the macro (e.g. ``COM3``)
+   #. Description: a short description of the macro's purpose
+   #. Pattern: macros need to be specified correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is expressed as a "regular expression").
+
+#. Choose a macro from the list.  The ``Name:`` field (read-only) is populated with the macro name and the ``Value:`` field is populated with the current value of the macro.
+
+#. Edit the ``Value:`` field to change the macro value.  Please note that the value you enter will be validated against the pattern.  If the macro does not conform to the pattern, IBEX will display a warning message.
+
+IOC PV Values
+~~~~~~~~~~~~~
+
+IOC PV Sets
+~~~~~~~~~~~
+
+Summary
+~~~~~~~
