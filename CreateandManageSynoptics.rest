@@ -14,8 +14,9 @@ Creating a Synoptic View
 
 To create a synoptic view:
 
-#. Select ``New`` from the ``Synoptic`` menu.
-#. IBEX displays a dialog divided into four panes.  
+Select ``New`` from the ``Synoptic`` menu.
+
+IBEX displays a dialog divided into four panes.  
 
    #. Instrument Tree
    #. Component Details
@@ -23,5 +24,3 @@ To create a synoptic view:
    #. PV Details
 
 We'll describe each of these in turn.
-
-
