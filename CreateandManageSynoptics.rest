@@ -7,7 +7,7 @@ In IBEX, synoptic views provide you with interactive, schematic views of your in
 
 You can define as many synoptic views as you wish for your instrument.  Each synoptic need not encompass the whole instrument.  You can define synoptic views that focus on specific aspects of your instrument - for example, just the beam optics, or just the sample stack and equipment mounted on the sample stack.
 
-You can also associate a synoptic view with a particular configuration, so that, in effect, the synoptic becomes the default synoptic for that configuration.
+You can also associate a synoptic view with a particular configuration, so that, in effect, the chosen synoptic becomes the default synoptic for that configuration.
 
 Creating a Synoptic View
 ------------------------
