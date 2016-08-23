@@ -14,13 +14,38 @@ Creating a Synoptic View
 
 To create a synoptic view:
 
-Select ``New`` from the ``Synoptic`` menu.
-
-IBEX displays a dialog divided into four panes.  
+#. Select ``New`` from the ``Synoptic`` menu.
+#. IBEX displays the Synoptic editor dialog, which is divided into four panes.  
 
    #. Instrument Tree
    #. Component Details
    #. Component  Target Details
    #. PV Details
 
-We'll describe each of these in turn.
+#. At the bottom of the dialog are three buttons
+
+Synoptic Preview
+   Click on the ``Synoptic Preview`` button to get a preview of how your synoptic will appear.  You can click on the ``Synoptic Preview`` button at any time.
+
+Save as...
+   Click on the ``Save as...`` button to save your changes.  You must provide a name for the synoptic view.  The name of the synoptic can contain only the characters a-z, A-Z, 0-9 and _ (underscore).  The name must also start with a character.
+
+Cancel
+   Click on the ``Cancel`` button to exit the dialog without saving your changes.
+
+We'll describe each of four panes in turn.
+
+Instrument Tree
+~~~~~~~~~~~~~~~
+
+Component Details
+~~~~~~~~~~~~~~~~~
+
+Component  Target Details
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PV Details
+~~~~~~~~~~
+
+
+
