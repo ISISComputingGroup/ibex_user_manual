@@ -165,3 +165,27 @@ Save as...
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes. 
+
+Load a Configuration
+-----------------------
+
+To load a configuration:
+
+#. Select ``Configurations > Load`` from the ``Configuration`` menu.
+#. IBEX displays the Load Configuration dialog, which list all the configurations defined for your instrument.
+#. Select a configuration from the list and press the ``OK`` button
+#. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
+
+Delete a Configuration
+-----------------------
+
+To delete a configuration:
+
+#. Select ``Configurations > Delete`` from the ``Configuration`` menu.
+#. IBEX displays the Delete Configuration dialog, which list all the configurations defined for your instrument.
+#. Select a configuration from the list and press the ``OK`` button
+#. IBEX deletes the selected configuration.
+
+**Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration, load a different configuration, then delete the previously loaded configuration.
+
+**Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experimental Controls team - it may be possible to recover the deleted configuration.
