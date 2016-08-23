@@ -90,6 +90,8 @@ Components Tab
 
 Components are, in essence, sub-configurations.
 
+**TO DO**
+
 IOC Macros
 ~~~~~~~~~~
 
@@ -115,8 +117,12 @@ If you are not sure about how to correctly configure macro values for a device, 
 IOC PV Values
 ~~~~~~~~~~~~~
 
+**TO DO**
+
 IOC PV Sets
 ~~~~~~~~~~~
+
+**TO DO**
 
 Summary
 ~~~~~~~
