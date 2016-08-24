@@ -53,6 +53,8 @@ Save as...
    * The name must also start with a character.
    * The name of the configuration must be unique (on your instrument).
 
+   The Save as... dialog also includes an option to save a configuration as a component.  This option is described in more detail in the [[CreateandManageComponents]] page.
+
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
 
@@ -102,7 +104,6 @@ You can also narrow down the list of PVs by typing the start of the PV name in t
 
 Scroll down the list of PVs until you find the one you want.  Click on it, to select it and then click on the OK button to return to the Add Block dialog.
 
-
 On the Add Block dialog you can also choose to 
 
 Visible/Local
@@ -121,6 +122,8 @@ Logging Settings
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
+**Note:** Blocks that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+
 Groups Tab
 ~~~~~~~~~~
 Use the Groups tab to arrange your blocks into convenient groups.  You can define as many groups as you wish and you can place as many blocks in each group as you wish, although a block can only appear in one group.
@@ -136,6 +139,10 @@ To create a new group, select the Groups tab and click on the ``Add`` button.  I
 When you click on the ``Add`` button, the dialog displays which blocks are available to be assigned to the new group (i.e. blocks in the "Other" group).
 
 Use the buttons with the Up and Down arrows to control the ordering of the groups and the order of the blocks within the groups.
+
+You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or Ctrl`` keys on your keyboard.
+
+**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
 Components Tab
 ~~~~~~~~~~~~~~
@@ -216,6 +223,8 @@ Edit Current Configuration ...
 ------------------------------
 
 To edit the current configuration simply select ``Edit Current Configuration ...`` from the ``Configuration`` menu.  This avoids the need to select the current configuration from a list of configurations.  Otherwise, this option behaves in the same way as `Editing a Configuration`_.
+
+**Note:** When you click on the ``Save`` button when editing the current configuration, the changes you make are applied immediately.  There will be a short pause while IBEX re-loads the current configuration and refreshes the display.
 
 Load a Configuration
 --------------------
