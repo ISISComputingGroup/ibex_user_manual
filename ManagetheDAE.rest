@@ -1,0 +1,46 @@
+Manage the DAE
+==============
+
+The DAE view provides the means for controlling the Data Acquisition Electronics (DAE).
+
+Contents
+--------
+
+#. `Run Summary`_
+#. `Experiment Setup`_
+
+   #. `Time Channels`_
+   #. `Data Acquisition`_
+   #. `Periods`_
+
+#. `Run Information`_
+#. `Spectra Plots`_
+#. `Diagnostics`_
+#. `Vetos`_
+
+Run Summary
+--------
+
+Experiment Setup
+--------
+
+Time Channels
+~~~~~~~~~~~~~
+
+Data Acquisition
+~~~~~~~~~~~~~
+
+Periods
+~~~~~~~~~~~~~
+
+Run Information
+--------
+
+Spectra Plots
+--------
+
+Diagnostics
+--------
+
+Vetos
+--------
