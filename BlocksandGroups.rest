@@ -28,13 +28,13 @@ A coloured box surrounding the block indicates that the block is in an alarm sta
 
 If a block is in an alarm state, you should check the Alarms View to find out why an alarm has been raised.
 
-If a block is flagged as being disconnected, it typically means there is a problem with the IOC which controls the device which provides the value of the block, or with the device itself:
+If a block is flagged as being disconnected, it typically means there is a problem with the device which provides the value of the block or with the IOC which controls the device:
 
 #. the IOC is not running. 
-#. the IOC has not been correctly configured and is not communicating correctly with the device.
+#. the IOC has not been correctly configured and, therefore, is not communicating correctly with the device.
 #. the device is not connected to the instrument control PC (e.g. a cable is disconnected). 
-#. the device is not switched on.
-#. there is a fault with the device which provides the value of the block.
+#. the device is switched off.
+#. there is a fault with the device.
 
 The last of these possibilities is the least likely to occur.  It is good practice to rule out the other possibilities before concluding that there is a fault with the device.
 
