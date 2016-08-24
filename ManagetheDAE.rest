@@ -55,7 +55,7 @@ Resume Run
    Click on the ``RESUME RUN`` button to resume a previously paused run.  Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The DAE’s run status will return to RUNNING.
 
 Abort Run
-   Click on the ``ABORT RUN`` button to abort the current run.  Aborting a run instructs the ICP to tell the DAE to stop data collection as for END.  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP.
+   Click on the ``ABORT RUN`` button to abort the current run.  Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP.
 
 Cancel Abort 
    Click on the ``CANCEL ABORT`` button to cancel the abort process.
