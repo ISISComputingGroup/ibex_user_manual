@@ -72,7 +72,7 @@ Blocks Tab
 ~~~~~~~~~~
 The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariables]]).
 
-To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name of the block 
+To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name 
 
 * contains only the characters a-z, A-Z, 0-9 and _ (underscore).
 * starts with a character.
@@ -127,7 +127,7 @@ Use the Groups tab to arrange your blocks into convenient groups.  You can defin
 
 By default, all blocks are assigned to an automatic group called "Other".  By creating new groups, you have the opportunity to override the default assignment and assign blocks to groups of your choosing.  
 
-To create a new group, select the Groups tab and click on the ``Add`` button.  IBEX displays a dialog to allow you to define a new group.  By default, the new block is given the name ``NEW_GROUP``.  You can give the block any name you like, provided the name of the group
+To create a new group, select the Groups tab and click on the ``Add`` button.  IBEX displays a dialog to allow you to define a new group.  By default, the new group is given the name ``NEW_GROUP``.  You can give the group any name you like, provided the name 
 
 * contains only the characters a-z, A-Z, 0-9 and _ (underscore).
 * starts with a character.
