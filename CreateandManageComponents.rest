@@ -27,7 +27,7 @@ Save an existing Configuration as a Component
 Create a New Component
    You can create a new component directly from the ``Configuration`` menu.  Simply select ``Configurations > New`` from the ``Configuration`` menu.  IBEX will then display the New Configuration  dialog.
    
-   The process of defining is the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the New Component dialog.
+   The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the New Component dialog.
 
 Edit a Component
 ----------------
