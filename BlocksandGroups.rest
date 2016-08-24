@@ -7,7 +7,36 @@ Blocks
 ------
 A block is, in effect, an alias for a process variable.  Process variables are defined in more detail on the [[ProcessVariables]] page.  Any process variable can be assigned to a block.  Blocks are defined in more detail on the [[Blocks]] page.
 
-A tick mark next to a block, or a coloured box surrounding the block indicates that the block is under run control. Run control is defined in more detail on the [[RunControl]] page.
+Run Control Indicators
+~~~~~~~~~~~~~~~~~~~~~~
+
+A tick mark or an X mark next to a block indicates that the block is under run control.  
+
+* An unadorned block (i.e. no symbol next to the value of the block) means the block is not under run control.
+* A green check icon next to the value means the block is under run control and within its limits.
+* A red X icon next to the value means is under run control and outside its limits.
+
+Alarm State Indicators
+~~~~~~~~~~~~~~~~~~~~~~
+
+A coloured box surrounding the block indicates that the block is in an alarm state (or, more correctly, that the underlying PV is in an alarm state).
+
+* No border means the block is connected and is not in an alarm state.
+* An orange border around the block value means the block is under minor alarm.
+* A red border around the block value means the block is under major alarm.
+* A purple border around the block value means the block is disconnected.
+
+If a block is in an alarm state, you should check the Alarms View to find out why an alarm has been raised.
+
+If a block is flagged as being disconnected, it typically means there is a problem with the IOC which controls the device which provides the value of the block, or with the device itself:
+
+#. the IOC is not running. 
+#. the IOC has not been correctly configured and is not communicating correctly with the device.
+#. the device is not connected to the instrument control PC (e.g. a cable is disconnected). 
+#. the device is not switched on.
+#. there is a fault with the device which provides the value of the block.
+
+The last of these possibilities is the least likely to occur.  It is good practice to rule out the other possibilities before concluding that there is a fault with the device.
 
 Groups
 ------
