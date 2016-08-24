@@ -100,7 +100,12 @@ Run-Control Settings
    Toggle the ``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is collected only when the block lies within the range) .
 
 Logging Settings
-   By default (Logging Settings is disabled), the block is logged whenever its value changes.  Toggle the ``Enabled`` check-box to change the way the block is logged.  You can set the block to logged periodically (i.e. every N seconds), or you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
+   Use the Logging Settings section of the Configure Block dialog to control how the value of the block is logged.
+
+   * **Note:** By default logging is disabled (i.e. changes in the value of the block will not be logged).  
+   * Click on the ``Enabled`` check-box to change the way the block is logged.  If the ``Enabled`` check-box is checked, then logging is enabled.
+   * You can choose to log the block value periodically (the default period is every 30 seconds).
+   * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
 Groups Tab
 ~~~~~~~~~~
