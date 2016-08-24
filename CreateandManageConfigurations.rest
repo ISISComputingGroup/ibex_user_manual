@@ -7,6 +7,25 @@ A configuration is the means by which an instrument is described and defined to 
 
 **Please note:** An IBEX configuration is **not** the same as a Mantid configuration.  IBEX and Mantid view instruments in fundamentally different ways, which means that their respective configurations are not interchangeable.
 
+Contents
+--------
+
+#. `Creating a Configuration`_
+
+   #. `IOCs Tab`_
+   #. `Blocks Tab`_
+   #. `Groups Tab`_
+   #. `Components Tab`_
+   #. `IOC Macros`_
+   #. `IOC PV Values`_
+   #. `IOC PV Sets`_
+   #. `Summary`_
+
+#. `Editing a Configuration`_
+#. `Edit Current Configuration ...`_
+#. `Load a Configuration`_
+#. `Delete a Configuration`_
+
 Creating a Configuration
 ------------------------
 
@@ -172,7 +191,7 @@ Edit Current Configuration ...
 To edit the current configuration simply select ``Edit Current Configuration ...`` from the ``Configuration`` menu.  This avoids the need to select the current configuration from a list of configurations.  Otherwise, this option behaves in the same way as `Editing a Configuration`_.
 
 Load a Configuration
------------------------
+--------------------
 
 To load a configuration:
 
@@ -182,7 +201,7 @@ To load a configuration:
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
 
 Delete a Configuration
------------------------
+----------------------
 
 To delete a configuration:
 
