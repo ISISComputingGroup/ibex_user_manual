@@ -1,3 +1,5 @@
+.. _KeyConceptsinIBEX:
+
 Key Concepts in IBEX
 ====================
 
