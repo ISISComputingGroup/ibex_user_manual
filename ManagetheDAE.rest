@@ -79,6 +79,8 @@ Periods
 Run Information
 ---------------
 
+The Run Information Tab provides a more compete summary of the DAE setup than the Run Summary tab.  All the fields on this tab are read-only.
+
 Spectra Plots
 -------------
 
