@@ -40,4 +40,6 @@ The last of these possibilities is the least likely to occur.  It is good practi
 
 Groups
 ------
-Blocks can be arranged in groups.  This provides a convenient way to group related blocks together.  You can create as many groups as you need to categorise your blocks.  By default, blocks will be assigned to a group called "Other".
+Blocks can be arranged in groups.  This provides a convenient way to group related blocks together.  You can create as many groups as you need to categorise your blocks.  
+
+If you do not explicitly assign a block to a group, it will, by default, be assigned to a group called "Other".
