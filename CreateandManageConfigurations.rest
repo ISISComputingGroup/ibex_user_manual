@@ -98,7 +98,10 @@ Interest Level
 
    ``All`` to see all PVs from your selected category of IOCs (again, this can generate a very long list of PVs).
 
+You can also narrow down the list of PVs by typing the start of the PV name in the ``PV address`` field.  For example, if you type ``IN:IRIS:EURO`` you will see only PVs whose address starts with those characters.  This is useful if you already know which PV you are looking for.
+
 Scroll down the list of PVs until you find the one you want.  Click on it, to select it and then click on the OK button to return to the Add Block dialog.
+
 
 On the Add Block dialog you can also choose to 
 
