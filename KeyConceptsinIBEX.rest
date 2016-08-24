@@ -29,6 +29,9 @@ BlockServer
   translates [[ProcessVariables]] into [[Blocks]].  It also supports run-control and 
   serves configuration information. 
 
+ICP
+  The ICP (Instrument Control Program) is the process which controls the DAE (Data Acquisition Electronics).  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
+
 Archiver 
   The Archiver, as its name suggests, archives the values of process variables to a database.
   This service supports strip-chart plots of blocks & process variables and can also be used 
