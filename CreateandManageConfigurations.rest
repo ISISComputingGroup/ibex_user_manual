@@ -206,7 +206,7 @@ Delete a Configuration
 To delete a configuration:
 
 #. Select ``Configurations > Delete`` from the ``Configuration`` menu.
-#. IBEX displays the Delete Configuration dialog, which list all the configurations defined for your instrument.
+#. IBEX displays the Delete Configuration dialog, which lists all the configurations defined for your instrument.
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX deletes the selected configuration.
 
