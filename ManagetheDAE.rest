@@ -1,7 +1,11 @@
+.. _ManagetheDAE:
+
 Manage the DAE
 ==============
 
-The DAE view provides the means for controlling the Data Acquisition Electronics (DAE).
+The Data Acquisition Electronics (DAE) is the hardware where the neutron or muon data is collected. The DAE is controlled by the ICP, which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
+
+The DAE view communicates with the ICP to control the DAE.
 
 Contents
 --------
@@ -19,28 +23,69 @@ Contents
 #. `Vetos`_
 
 Run Summary
---------
+-----------
+
+The Run Summary tab displays some summary information about the current run and displays any log messages received from the ICP. 
+
+Run Summary Fields
+~~~~~~~~~~~~~~~~~~
+
+* ``Instrument``: (read-only) records the instrument on which the current run is being performed
+* ``Run Status``: (read-only) records status of the current run
+* ``Run Number``: (read-only) records the current run number
+* ``ISIS Cycle``: (read-only) records the current ISIS cycle
+* ``Title``: you can proviode a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file).
+
+Message Log
+~~~~~~~~~~~
+The message log area lets you view any messages issued by the ICP.  The message log area is the same as the main Log Messages view, filtered to show only messages from the ICP.
+
+The Run Summary tab also provides a number of buttons to control the acquisition of data.
+
+Begin Run
+   Click on the ``BEGIN RUN`` button to start a new run.
+
+End Run
+   Click on the ``END RUN`` button to terminate the current run.
+
+Pause Run
+   Click on the ``PAUSE RUN`` button to temporarily halt the current run.
+
+Resume Run
+   Click on the ``RESUME RUN`` button to resume a previously paused run.
+
+Abort Run
+   Click on the ``ABORT RUN`` button to abort the current run.
+
+Cancel Abort 
+   Click on the ``CANCEL ABORT`` button to cancel the abort process.
+
+Save Run 
+   Click on the ``SAVE RUN`` button to save the current run.
+
 
 Experiment Setup
---------
+----------------
 
 Time Channels
 ~~~~~~~~~~~~~
 
 Data Acquisition
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Periods
-~~~~~~~~~~~~~
+~~~~~~~
 
 Run Information
---------
+---------------
 
 Spectra Plots
---------
+-------------
 
 Diagnostics
---------
+-----------
 
 Vetos
---------
+-----
+
+Some stuff here ...
