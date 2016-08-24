@@ -165,7 +165,7 @@ To set an IOC macro:
    #. Macro Name: the name of the macro (e.g. ``PORT``, ``BAUD`` or ``IPADDRESS``)
    #. Value: the current value of the macro (e.g. ``COM3``, ``9600`` or ``192.83.42.106``)
    #. Description: a short description of the macro's purpose
-   #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is expressed as a "regular expression").
+   #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is in the form of a "regular expression").
 
 #. Choose a macro from the table.  The ``Name:`` field (read-only) is populated with the macro name and the ``Value:`` field is populated with the current value of the macro.
 
