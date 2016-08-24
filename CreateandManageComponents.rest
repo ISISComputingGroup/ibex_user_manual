@@ -1,0 +1,20 @@
+.. _CreateandManageComponents:
+
+Create & Manage Components
+==========================
+
+Many instrument configurations feature a number of devices and settings in common.  A component is a mini configuration (or sub-configuration) which provides a means of defining a selection of IOCs, Blocks, Groups, etc. that can be treated as a single object.  Other configurations can then include the component which means that common IOCs, Block and other settings do not have to be repeatedly added to each configuration. It also means that changes need only be made to a single object - if a component is changed the changes will propagate to all the configurations that use that component.
+
+Contents
+--------
+
+#. `Creating a Component`_
+#. `Editing a Configuration`_
+#. `Edit Current Configuration ...`_
+#. `Load a Configuration`_
+#. `Delete a Configuration`_
+
+Creating a Component
+--------------------
+
+There are several ways to create a component:
