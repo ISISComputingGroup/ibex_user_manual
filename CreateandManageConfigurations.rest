@@ -46,7 +46,12 @@ To create a configuration:
 #. At the bottom of the dialog are two buttons
 
 Save as...
-   Click on the ``Save as...`` button to save your changes.  The Save as... dialog prompts you to provide a name and description for your configuration.  You must provide a name for the configuration.  The name of the configuration can contain only the characters a-z, A-Z, 0-9 and _ (underscore).  The name must also start with a character.
+   Click on the ``Save as...`` button to save your changes.  The Save as... dialog prompts you to provide a name and description for your configuration.
+
+   * You must provide a name for the configuration.
+   * The name of the configuration can contain only the characters a-z, A-Z, 0-9 and _ (underscore).
+   * The name must also start with a character.
+   * The name of the configuration must be unique (on your instrument).
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
