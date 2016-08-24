@@ -127,7 +127,13 @@ Use the Groups tab to arrange your blocks into convenient groups.  You can defin
 
 By default, all blocks are assigned to an automatic group called "Other".  By creating new groups, you have the opportunity to override the default assignment and assign blocks to groups of your choosing.  
 
-To create a new group, select the Groups tab and click on the ``Add`` button.  IBEX displays a dialog to allow you to define a new group.  By default, the new block is given the name ``NEW_GROUP``.  You can give the block any name you like, provided the name starts with a character and contains only the characters a-z and A-Z, the digits 0-9 and the underscore character.  When you click on the ``Add`` button, the dialog displays which blocks are available to be assigned to the new group (i.e. blocks in the "Other" group).
+To create a new group, select the Groups tab and click on the ``Add`` button.  IBEX displays a dialog to allow you to define a new group.  By default, the new block is given the name ``NEW_GROUP``.  You can give the block any name you like, provided the name of the group
+
+* contains only the characters a-z, A-Z, 0-9 and _ (underscore).
+* starts with a character.
+* is unique (on your instrument).
+
+When you click on the ``Add`` button, the dialog displays which blocks are available to be assigned to the new group (i.e. blocks in the "Other" group).
 
 Use the buttons with the Up and Down arrows to control the ordering of the groups and the order of the blocks within the groups.
 
