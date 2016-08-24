@@ -41,7 +41,7 @@ Delete a Component
 To delete a component:
 
 #. Select ``Components > Delete`` from the ``Configuration`` menu.
-#. IBEX displays the Delete Component dialog, which list all the components defined for your instrument.
+#. IBEX displays the Delete Component dialog, which lists all the components defined for your instrument.
 #. Select a component from the list and press the ``OK`` button
 #. IBEX deletes the selected component.
 
