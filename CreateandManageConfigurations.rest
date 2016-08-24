@@ -59,7 +59,7 @@ The IOCs tab lists all the IOCs available on the instrument.  In general, you wi
 
 To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes (or select both).  By selecting these check-boxes, IBEX will automatically start (or restart) to chosen IOCs each time your configuration is loaded into IBEX.
 
-**Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.
+**Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
 
 Blocks Tab
 ~~~~~~~~~~
