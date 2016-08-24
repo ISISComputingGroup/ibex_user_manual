@@ -43,19 +43,19 @@ The message log area lets you view any messages issued by the ICP.  The message 
 The Run Summary tab also provides a number of buttons to control the acquisition of data.
 
 Begin Run
-   Click on the ``BEGIN RUN`` button to start a new run.
+   Click on the ``BEGIN RUN`` button to start a new run.  Beginning a run instructs the ICP to tell the DAE to start collecting data. The DAE’s run status will change to RUNNING (which is reflected in the ``Run Status`` field and in the IBEX [[Dashboard]].
 
 End Run
-   Click on the ``END RUN`` button to terminate the current run.
+   Click on the ``END RUN`` button to terminate the current run.  Ending a run instructs the ICP to tell the DAE to stop collecting data.  It also instructs the ICP to write the data collected during the run to a file. The DAE’s run status will change to SETUP.
 
 Pause Run
-   Click on the ``PAUSE RUN`` button to temporarily halt the current run.
+   Click on the ``PAUSE RUN`` button to halt (but not end) the current run.  Pausing a run instructs the ICP to tell the DAE to pause data collection indefinitely. The DAE’s run status will change to PAUSED.  The DAE's status will remain PAUSED until it is instructed to RESUME.
 
 Resume Run
-   Click on the ``RESUME RUN`` button to resume a previously paused run.
+   Click on the ``RESUME RUN`` button to resume a previously paused run.  Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The DAE’s run status will return to RUNNING.
 
 Abort Run
-   Click on the ``ABORT RUN`` button to abort the current run.
+   Click on the ``ABORT RUN`` button to abort the current run.  Aborting a run instructs the ICP to tell the DAE to stop data collection as for END.  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP.
 
 Cancel Abort 
    Click on the ``CANCEL ABORT`` button to cancel the abort process.
