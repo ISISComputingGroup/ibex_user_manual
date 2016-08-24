@@ -18,7 +18,7 @@ Create a Component
 There are several ways to create a component:
 
 Save an existing Configuration as a Component
-   You can save an existing configuration as a component.  When you click on the ``Save as...`` button on the Edit Configuration dialog (see [[CreateandManageConfigurations]]) the resulting Save As... dialog contains a check-box labelled ``Save the configuration as a component``.  By default, this check-box is unchecked.  Click on the ``Save the configuration as a component`` and then click the ``OK`` button to save the configuration as a component.
+   You can save an existing configuration as a component.  When you click on the ``Save as...`` button on the Edit Configuration dialog (see [[CreateandManageConfigurations]]) the resulting Save As... dialog contains a check-box labelled ``Save the configuration as a component``.  By default, this check-box is unchecked.  Click on the ``Save the configuration as a component`` check-box and then click the ``OK`` button to save the configuration as a component.
 
    Once you have saved the configuration as a component, you can edit it as a component.
 
