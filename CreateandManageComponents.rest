@@ -8,12 +8,12 @@ Many instrument configurations feature a number of devices and settings in commo
 Contents
 --------
 
-#. `Creating a Component`_
-#. `Editing a Component`_
+#. `Create a Component`_
+#. `Edit a Component`_
 #. `Delete a Component`_
 
-Creating a Component
---------------------
+Create a Component
+------------------
 
 There are several ways to create a component:
 
@@ -27,12 +27,22 @@ Create a New Component
    
    The process of defining is the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the New Component dialog.
 
-Editing a Component
--------------------
+Edit a Component
+----------------
 
 To edit a component:
 
-#. Select ``Components> Edit`` from the ``Configuration`` menu.
-#. IBEX displays the Edit Component dialog which is is identical to the New Component dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the New Component dialog.(as described in `Creating a Component`_).
+#. Select ``Components > Edit`` from the ``Configuration`` menu.
+#. IBEX displays the Edit Component dialog which is is identical to the New Component dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+
+Delete a Component
+------------------
+
+To delete a component:
+
+#. Select ``Components > Delete`` from the ``Configuration`` menu.
+#. IBEX displays the Delete Component dialog, which list all the components defined for your instrument.
+#. Select a component from the list and press the ``OK`` button
+#. IBEX deletes the selected component.
 
 
