@@ -115,9 +115,11 @@ Use the buttons with the Up and Down arrows to control the ordering of the group
 Components Tab
 ~~~~~~~~~~~~~~
 
-Components are, in essence, sub-configurations.
+Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
 
-**TO DO**
+The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
+
+Use the arrow buttons to move components between the two lists.  
 
 IOC Macros
 ~~~~~~~~~~
