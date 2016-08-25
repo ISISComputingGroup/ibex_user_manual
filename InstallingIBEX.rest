@@ -18,7 +18,7 @@ Pre-requisites for running IBEX Client
 
 In order to run IBEX client, your PC must meet the following pre-requisites
 
-#. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 or Windows 10 (Professional or Enterprise), Build 10586.
+#. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 (or higher), or Windows 10 (Professional or Enterprise), Build 10586 (or higher).
 #. Your PC must also be running an up-to-date version of Java version 8, update 101 (or later). If you need to install an up-to-date version of Java, you can obtain a copy from the Java web-site (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
 
 Installation
@@ -47,4 +47,4 @@ Installation
 4. Run the command ``install_client.bat``. This will copy the contents of the above directory 
    to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
-5. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.
+5. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
