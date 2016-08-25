@@ -24,5 +24,27 @@ In order to run IBEX client, your PC must meet the following pre-requisites
 Installation
 ~~~~~~~~~~~~
 
-#. Open a Windows Explorer window and navigate to XXXX
-#. Double-click on XXXX
+1. Open a command window on your PC and use the following commands to create the 
+   following folders on your ``C:`` drive:
+
+::
+
+      mkdir C:\Instrument\Apps\Client
+      mkdir C:\Instrument\Apps\Python
+      cd C:\Instrument
+
+2. In the command window type the following (if your command prompt doesn't support UNC paths, 
+   use ``pushd`` instead of ``cd``):
+
+::
+
+      cd \\isis\inst$\Kits$\CompGroup\ICP\Releases
+
+3. Inside this folder you will see folders with names of the form ``BUILDmmm``, where ``mmm`` is a 
+   three-digit number and folders with names of the form ``BUILD-nnnn``, where ``nnnn`` is a four-digit 
+   number. Change directory to the folder ``BUILDmmm`` with the highest value of ``mmm``.
+
+4. Run the command ``install_client.bat``. This will copy the contents of the above directory 
+   to ``C:\Instrument\Apps\Client``. It will also install genie_python.
+
+5. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.
