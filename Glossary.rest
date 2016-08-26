@@ -3,37 +3,40 @@
 Glossary
 ========
 
-EPICS
-  EPICS is a software framework for controlling devices and is
-  the underlying framework for the IBEX server.
-  See http://www.aps.anl.gov/epics/
-
-PV (Process Variable)
-  This is a named piece of information in the EPICS system, such as
-  a temperature setpoint or readback. A PV will have a name
-  of the form ``IN:LARMOR:MOT:MTR0101`` for a motor
-
 Block
-  This is a named piece of information created by the user as part
-  of an instrument configuration. A block is essentially an alias to 
-  a process variable.   A block can have logging enabled and
+  This is a named piece of information created by the user as part of an instrument configuration. 
+  A block is essentially an alias to a process variable.   A block can have logging enabled and
   will then appear in the final data file.
-
-Client Server
-  IBEX, like :term:`EPICS`, is a client-server system. In such
-  systems background processes (servers) provide information for
-  clients (such as a GUI or command line). Multiple clients
-  can communicate with a single server process over the network.
 
 Blockserver
   This is a :term:`Server` element of the IBEX control system that is responsible for managing 
   a :term:`Block` and also a :term:`Configuration`
 
+Client Server
+  IBEX, like :term:`EPICS`, is a client-server system. In such systems background processes (servers) 
+  provide information for clients (such as a GUI or command line). Multiple clients can 
+  communicate with a single server process over the network.
+
+Component
+  A component in IBEX is, essentially, a mini-configuration.  It can be used to create a configuration for a sub-set 
+  of devices attached to an instrument.  When the component is included in a configuration, the configuration "inherits" 
+  all the definitions from the component. 
+
 Configuration
   A configuration defines the blocks, IOCs, macros and other items needed to control the instrument.  
   More specifically, a configuration is an information structure which defines and describes an instrument to IBEX. 
+
+EPICS
+  `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted 
+  control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is
+  the underlying framework used to create IBEX.
 
 IOC
   An IOC (Input/Output Controller) is an :term:`EPICS` process that provides some service, often managing a device. 
   For example, access to a Eurotherm temperature controller is controlled via an IOC process that provides 
   :term:`Process Variable` for the relevant control elements
+
+PV (Process Variable)
+  This is a named piece of information in the EPICS system, such as a temperature setpoint or readback. 
+  A PV has structured name that uniquely identifies it on the network.  An example of such a name, in 
+  this case for a motor, is: ``IN:LARMOR:MOT:MTR0101`` 
