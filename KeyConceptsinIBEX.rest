@@ -19,6 +19,7 @@ The IBEX Client is a single application, which functions as a GUI for IBEX.
 
 genie_python
 ~~~~~~~~~~~~
+
 genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
 
 IBEX Server
@@ -62,5 +63,63 @@ Blocks & Process Variables
 
 [[Blocks]]
 
+DAE (Data Acquisition Electronics)
+----------------------------------
+
+The DAE is a collection of electronic cards housed in a VXI/VME crate, which is located in the instrument cabin or pod.  The DAE is maintained by the ISIS electronics group.  There are two types of card in the DAE:
+
+Detector Cards
+   The DAE contains many detector cards, which are connected to the instrument detectors, and record neutron counts.
+
+Environment/Period Card
+   The DAE contains a single environment/period card, which distributes timing signals etc. and maintains global 
+   counters (e.g. number of ISIS pulses, proton charge delivered (PPP))
+
+The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.
+
+What does the DAE do?
+~~~~~~~~~~~~~~~~~~~~~
+The DAE:
+
+* Records the arrival time of neutrons at detectors relative to the ISIS pulse
+* Histograms the neutron counts based on their time of arrival into “bins” chosen by scientists
+* If desired, groups (gangs) detectors together
+* If necessary, rejects (vetoes) data based on pre-defined criteria
+* Saves all of this in “detector card memory” to be later read by the PC
+
+GOOD Frames and RAW Frames
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DAE will only record data if it receives a “start pulse” signal.
+
+RAW Frame
+   A RAW Frame means the DAE received a “start pulse” signal, but data may or may not have been saved to the detector card.
+
+GOOD Frame
+   A GOOD Frame is a RAW frame where data was histogrammed and written to the detector card.
+
+RAW frames that do not become GOOD frames are called VETOED frames 
+
+Vetoes
+~~~~~~
+A veto is a hardware signal that can, on a frame by frame basis, tell the DAE not to collect data.
+
+* The DAE supports four user defined external vetoes (labelled VT0 -> VT3 on crate), which can be connected to choppers, moderator, etc.
+* Internal (FIFO) veto – triggered if too many counts in a single frame on any card
+* SMP veto – triggered if chopper timing signal out of phase with ISIS
+* Fermi chopper veto: checks for the arrival of a chopper signal within a given window on inelastic chopper spectrometers
+
+  * Used on MERLIN, MAPS, MARI. On LET handled by chopper crate and so just an external veto. 
+
+* ISIS 50Hz veto: vetoes frames when accelerator not running at 50Hz (e.g. during beam run up or diagnostics) 
+
+  * Used on IRIS/OSIRIS, but they also use ISISFREQ SECI block 
+
+DAE Timing Sources
+~~~~~~~~~~~~~~~~~~
+The DAE can use one of three timing sources:
+
+* ISIS: uses the ISIS accelerator pulse from the cable plugged into the TOF socket
+* SMP: uses the “secondary master pulse”, usually a chopper plugged into the SMP socket
+* First TS1: uses the first ISIS pulse after the missing TS2 pulse (so 10Hz on TS1).
 
 
