@@ -41,7 +41,7 @@ EPICS
 
 ICP (Instrument Control Program)
   The ICP (sometimes called the ISIS ICP) is a :term:`Server` element of the IBEX control system that controls 
-  communication with the DAE. the ICP is also responsible for writing the RAW experiement data file at the 
+  communication with the DAE.  The ICP is also responsible for writing the RAW experiement data file at the 
   end of a run or experiment.
 
 IOC
