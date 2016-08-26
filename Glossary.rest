@@ -26,6 +26,14 @@ Configuration
   A configuration defines the blocks, IOCs, macros and other items needed to control the instrument.  
   More specifically, a configuration is an information structure which defines and describes an instrument to IBEX. 
 
+DAE (Data Acquisition Electronics)
+  The DAE is a set of electronic cards housed in a VXI/VME crate located in the instrument cabin/pod and 
+  maintained by ISIS electronics group.  The DAE contains two types of card:
+
+#. Detector cards (many): these cards record neutron  counts
+#. Environment/period card (only one): this card distributes timing signals etc. and maintains global 
+   counters (e.g. number of ISIS pulses, proton charge delivered (PPP))
+
 EPICS
   `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted 
   control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is
