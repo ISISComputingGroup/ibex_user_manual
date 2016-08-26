@@ -121,5 +121,22 @@ The DAE can use one of three timing sources:
 * ISIS: uses the ISIS accelerator pulse from the cable plugged into the TOF socket
 * SMP: uses the “secondary master pulse”, usually a chopper plugged into the SMP socket
 * First TS1: uses the first ISIS pulse after the missing TS2 pulse (so 10Hz on TS1).
+* Internal Test Clock: 50Hz timing signal provided internally by DAE
+
+  * Used for quiet counts out of cycle
+  * Need to turn off SMP veto as test clock is not synchronised to anything
+
+TS1, 50Hz running
+^^^^^^^^^^^^^^^^^
+* Can choose either ISIS or SMP – however they differ in what happens if beam goes off
+* ISIS: beam off -> no signal and so no RAW frame
+* SMP: if chopper continues to run -> RAW frame, which will be vetoed by the SMP veto as 
+  there is no corresponding ISIS TOF pulse.
+
+TS1, 25Hz running
+^^^^^^^^^^^^^^^^^
+* Must choose SMP (chopper) timing as this signal is the one at 25Hz
+* If beam off, chopper continues to run -> RAW frame, but vetoed by SMP veto as no corresponding ISIS pulse
+* Dashboard beam current calculated from DAE pulses, so 25Hz -> half ISIS beam current  
 
 
