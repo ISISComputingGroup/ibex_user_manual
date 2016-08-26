@@ -224,7 +224,7 @@ Edit Current Configuration ...
 
 To edit the current configuration simply select ``Edit Current Configuration ...`` from the ``Configuration`` menu.  This avoids the need to select the current configuration from a list of configurations.  Otherwise, this option behaves in the same way as `Editing a Configuration`_.
 
-It is always a good idea to check the name of the current configuration before you start editing it - just in case you edit the wrong configuration.  The name of the current configuration is displayed in the [[StatusBar]].
+It is always a good idea to check the name of the current configuration before you start editing it - to be sure that you are about to edit the configuration you intended to edit.  The name of the current configuration is displayed in the [[StatusBar]].
 
 **Note:** When you click on the ``Save`` button when editing the current configuration, the changes you make are applied immediately.  There will be a short pause while IBEX re-loads the current configuration and refreshes the display.
 
