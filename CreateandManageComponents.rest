@@ -7,6 +7,8 @@ Many instrument configurations feature a number of devices and settings in commo
 
 One of the most common and useful ways to use a component, is to create a "base" component.  A "base" component defines a configuration for all the devices permanently attached to an instrument.  Any new configuration can then include the "base" component and inherit all the IOCs, blocks, groups, macros, etc. associated with the permanent devices.
 
+Components are also frequently used to describe equipment (either a single device or a group of devices) that move between different instruments (e.g. a cryostat and associated temperature controllers).  By defining a component to describe the equipment on the first instrument, the component can be copied across to the second instrument at the same time as the equipment is moved.  This saves having to re-define all the relevant blocks, groups, etc. in a new configuration on the second instrument.
+
 Contents
 --------
 
