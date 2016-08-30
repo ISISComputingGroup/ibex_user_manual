@@ -40,7 +40,7 @@ Use the Synoptic editor as follows:
 #. Click on the ``Add Component`` button to add a new component to the Instrument Tree.
 
    #. When you add a new component, its details are shown in the Component Details pane.  It is given the default name ``New Component`` and a default type of ``UNKNOWN``.  
-   #. In the Component Details pane, you can adjust the properties of the component.
+   #. In the Component Details pane, you can adjust the general properties of the component.
 
       * Give it a suitable name
       * Select the type of device it represents.  Click on the drop-down menu to select the device type.
@@ -49,7 +49,12 @@ Use the Synoptic editor as follows:
 
    #. If you add an associated PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a block or PV.
 
-   #. Use the Component Target Details pane to **DO SOMETHING**.
+   #. Use the Component Target Details pane to adjust the specific properties of the component (e.g. which model of device the component represents, which component properties are needed).
+
+      * Give it a suitable name
+      * Select the type of device it represents.  Click on the drop-down menu to select the device type.
+      * Add associated PVs to be displayed below the component in the synoptic view (``Add New PV`` button).
+      * Remove associated PVs 
 
 #. Click on the ``Copy Component`` button to duplicate the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
 
