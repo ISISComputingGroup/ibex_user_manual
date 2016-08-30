@@ -57,7 +57,7 @@ Use the Synoptic editor as follows:
       * Below the `Description:` field is a table of `Properties:`, which lists the properties belonging to the selected component.  Each property has a name and a value.  Select each property in turn to edit the value.
       * On selecting a property, the value of the property will  appear `Value:` field.  A description of the value is provided in the `Description:` field below the `Value:` field.  The default value might be blank.
       * Set the property value.   
-      * **Please note:** Component properties are very specific to individual devices - it is impractical to give definitive advice in a user manual as to correct value for a component property.  The  `Description:` field will generally provide advice on the type of value to be entered in the `Value:` field.  If you are unsure about the correct value to choose, please consult with the Experimental Controls team.
+      * **Please note:** Component properties are very specific to individual devices - it is impractical to give definitive advice in a user manual on correct value for a component property.  The  `Description:` field will generally provide advice on the type of value to be entered in the `Value:` field.  If you are unsure about the correct value to choose, please consult with the Experimental Controls team.
 
 #. Click on the ``Copy Component`` button to duplicate the currently selected component.  If no component is selected, the ``Copy Component`` button is inactive.
 
