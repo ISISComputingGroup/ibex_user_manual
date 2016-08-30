@@ -3,7 +3,7 @@
 Manage the DAE
 ==============
 
-The Data Acquisition Electronics (DAE) is the hardware where the neutron or muon data is collected. The DAE is controlled by the ICP, which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
+The Data Acquisition Electronics (DAE) is the hardware where the neutron or muon data is collected. The DAE is controlled by the ICP (see [[KeyConceptsinIBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
 
 The DAE view communicates with the ICP to control the DAE.
 
@@ -71,6 +71,8 @@ Return to `Contents`_.
 Experiment Setup
 ----------------
 
+The Experiment Setup comprises three sub-tabs.  Each of these 3 sub-tabs will have been configured by an ISIS Instrument Scientist.  Please do not modify the contents of these 3 tabs without consulting with the instrument scientist.
+
 Time Channels
 ~~~~~~~~~~~~~
 
@@ -95,6 +97,9 @@ Return to `Contents`_.
 
 Spectra Plots
 -------------
+
+The Spectra Plots Tab displays up to 4 spectra plots.  You can choose which spectra are plotted bu using the ``Spectrum:`` and ``Period:`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum:`` or ``Period:`` fields.
+
 
 Return to `Contents`_.
 
