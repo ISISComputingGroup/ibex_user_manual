@@ -31,6 +31,8 @@ Create a New Component
    
    The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the New Component dialog.
 
+Return to `Contents`_.
+
 Edit a Component
 ----------------
 
@@ -38,6 +40,8 @@ To edit a component:
 
 #. Select ``Components > Edit`` from the ``Configuration`` menu.
 #. IBEX displays the Edit Component dialog which is is identical to the New Component dialog.  Refer to [[CreateandManageConfigurations]] for a full description of how use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+
+Return to `Contents`_.
 
 Delete a Component
 ------------------
@@ -51,3 +55,4 @@ To delete a component:
 
 **Note:** When you delete a component it really is deleted. It is no longer available to be used by IBEX. Before deleting a component, please be sure that you really do want to delete it. If you unintentionally delete a component, please contact the Experimental Controls team - it may be possible to recover the deleted component.
 
+Return to `Contents`_.
