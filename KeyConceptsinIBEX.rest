@@ -13,6 +13,7 @@ Contents
    #. `IBEX Client`_
    #. `genie_python`_
    #. `IBEX Server`_
+   #. `Security`_
 
 #. `Blocks & Process Variables`_
 #. `DAE (Data Acquisition Electronics)`_
