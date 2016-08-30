@@ -11,7 +11,7 @@ Starting or Stopping an IOC
 ---------------------------
 To start or stop an IOC:
 
-#. Select ``Stat/Stop IOCs`` from the ``IOC`` menu.
+#. Select ``Start/Stop IOCs`` from the ``IOC`` menu.
 #. IBEX displays a dialog containing two panes.  
 
    #. The first pane is a list of all the IOCs available on the instrument.  The list shows whether each IOC is running or stopped.
