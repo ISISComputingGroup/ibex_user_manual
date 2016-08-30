@@ -47,7 +47,7 @@ Use the Synoptic editor as follows:
       * Click on the ``Add New PV`` button to add blocks or PVs to be associated with the component (remember - blocks are just aliases to PVs).  Any blocks or PVs you select will be displayed below the component in the synoptic view.
       * Remove any blocks or PVs previously associated with the component.
 
-   #. If you add an associated block or PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a block or PV.
+   #. If you add an associated block or PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a specific block or PV to associated with the component.
 
    #. Use the Component Target Details pane to adjust the specific properties of the component (e.g. which model of device the component represents, which component properties are needed).
 
