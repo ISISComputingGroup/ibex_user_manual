@@ -111,4 +111,6 @@ Return to `Contents`_.
 Vetos
 -----
 
+The Vetos tab shows a summary of the vetoes that are in force for the current run.  This information is read-only.  Vetoes can only be changed prior to the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
+
 Return to `Contents`_.
