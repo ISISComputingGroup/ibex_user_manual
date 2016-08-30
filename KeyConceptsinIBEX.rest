@@ -75,6 +75,36 @@ MySQL
 
 Return to `Contents`_.
 
+Security
+~~~~~~~~
+
+A critical aspect of any control system is security: in particular, who has control of an instrument at any point in time.  By control, we mean the ability to change PVs or start/stop the collection of data.  The security model in IBEX reflects current working practices at ISIS.
+
+Instrument Sub-Network
+^^^^^^^^^^^^^^^^^^^^^^
+
+Each instrument controlled by IBEX has its own sub-network.  The sub-network is a self-contained, mini-network which connects the instrument blockhouse, the instrument machine room (which houses the instrument control PC and DAE rack) and the instrument cabin/pod. Each instrument sub-network is independent of the sub-network belonging to any other instrument.  The instrument sub-network is connected to the wider ISIS network by means of a gateway.  In addition, the instrument control PC runs a process called the EPICS Gateway, which controls access to PVs on the instrument sub-network.
+
+This arrangement means that the devices attached to the instrument control PC are isolated from events elsewhere on the network.  For example, should there be a need to shut down a part of the ISIS network (e.g. for maintenance reasons), the instrument sub-network will continue to run without interruption.  Many hardware devices are not designed to be connected directly to busy, general purpose networks; by employing a sub-network, we can insulate these devices from the background traffic that exists on the rest of the network.  A sub-network arrangement helps to make the instrument more resilient.
+
+Who has Control?
+^^^^^^^^^^^^^^^^
+
+In IBEX, only PCs directly connected to the instrument sub-network can control the instrument.  In order to control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.  
+
+Any request from a PC for access to a PV is checked by the EPICS Gateway.  If the request originates from within the instrument sub-network, the EPICS Gateway will allow full (read and write) access to the PV.  If the request originates from outside the instrument sub-network, the EPICS Gateway will allow read-only access to the PV.  Therefore, if your PC is not directly connected to the instrument sub-network, you can only view the status of an instrument.
+
+Who can View an Instrument?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Anyone on the ISIS network can view an instrument.  For example:
+* another scientist, using another instrument, can view what is happening on your instrument
+* an instrument scientist can view what is happening on your instrument from his or her office
+* a technician can use IBEX to view that status of a device 
+* a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems
+
+Return to `Contents`_.
+
 Blocks & Process Variables
 --------------------------
 
