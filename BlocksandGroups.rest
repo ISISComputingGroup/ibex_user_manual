@@ -13,8 +13,8 @@ Run Control Indicators
 A tick mark or an X mark next to a block indicates that the block is under run control.  
 
 * An unadorned block (i.e. no symbol next to the value of the block) means the block is not under run control.
-* A green check icon next to the value means the block is under run control and within its limits.
-* A red X icon next to the value means is under run control and outside its limits.
+* An icon featuring a black check mark on a green background next to the value means the block is under run control and within its limits.
+* An icon featuring a white X on a red background next to the value means is under run control and outside its limits.
 
 Alarm State Indicators
 ~~~~~~~~~~~~~~~~~~~~~~
