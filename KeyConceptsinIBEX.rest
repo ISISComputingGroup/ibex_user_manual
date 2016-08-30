@@ -99,6 +99,7 @@ Who can View an Instrument?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Anyone on the ISIS network can view an instrument.  For example:
+
 * another scientist, using another instrument, can view what is happening on your instrument
 * an instrument scientist can view what is happening on your instrument from his or her office
 * a technician can use IBEX to view that status of a device 
