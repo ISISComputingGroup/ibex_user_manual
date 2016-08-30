@@ -36,6 +36,8 @@ Run Summary Fields
 * ``ISIS Cycle``: (read-only) records the current ISIS cycle
 * ``Title``: you can provide a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file).
 
+Return to `Contents`_.
+
 Message Log
 ~~~~~~~~~~~
 The message log area lets you view any messages issued by the ICP.  The message log area is the same as the main Log Messages view, filtered to show only messages from the ICP.
