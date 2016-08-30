@@ -126,7 +126,7 @@ Logging Settings
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
-**Note:** Blocks that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+**Note:** Blocks that have been inherited from a component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
 Return to `Contents`_.
 
