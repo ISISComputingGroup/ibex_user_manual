@@ -7,6 +7,8 @@ IBEX Menu
 ---------
 Switch Instrument
    Select the Switch Instrument menu item to re-direct the IBEX GUI to view a different instrument.
+
+   **Please Note:** If you connect to an instrument from outside the instrument's sub-network (i.e. if you are not in the instrument blockhouse or cabin/pod), you will only be able to view the instrument (i.e. you will not be able to make changes to any of the fields).
 Restore Default View
    Selecting the Restore Default View option resets the IBEX GUI display to its startup view.
 Exit IBEX Client
