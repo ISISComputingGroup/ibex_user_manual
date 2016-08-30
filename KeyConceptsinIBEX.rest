@@ -5,6 +5,18 @@ Key Concepts in IBEX
 
 It is worth taking a few moments to appreciate some of the key concepts behind IBEX.
 
+Contents
+--------
+
+#. `Clients & Servers`_
+
+   #. `IBEX Client`_
+   #. `genie_python`_
+   #. `IBEX Server`_
+
+#. `Blocks & Process Variables`_
+#. `DAE (Data Acquisition Electronics)`_
+
 Clients & Servers
 -----------------
 
@@ -33,7 +45,7 @@ BlockServer
   serves configuration information. 
 
 ICP
-  The ICP (Instrument Control Program) is the process which controls the DAE (Data Acquisition Electronics).  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
+  The ICP (Instrument Control Program) is the process which controls the `DAE (Data Acquisition Electronics)`_.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
 
 Archiver 
   The Archiver, as its name suggests, archives the values of process variables to a database.
