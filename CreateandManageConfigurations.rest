@@ -58,6 +58,8 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
 
+Return to `Contents`_.
+
 We'll describe each of the Edit Configuration dialog tabs in turn.
 
 IOCs Tab
@@ -69,6 +71,8 @@ The [[KeyConceptsinIBEX]] page describes what an IOC is.
 To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes (or select both).  By selecting these check-boxes, IBEX will automatically start (or restart) to chosen IOCs each time your configuration is loaded into IBEX.
 
 **Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
+
+Return to `Contents`_.
 
 Blocks Tab
 ~~~~~~~~~~
@@ -124,6 +128,8 @@ Logging Settings
 
 **Note:** Blocks that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
+Return to `Contents`_.
+
 Groups Tab
 ~~~~~~~~~~
 Use the Groups tab to arrange your blocks into convenient groups.  You can define as many groups as you wish and you can place as many blocks in each group as you wish, although a block can only appear in one group.
@@ -144,6 +150,8 @@ You can select multiple blocks to be added (or removed) from a group using the `
 
 **Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
+Return to `Contents`_.
+
 Components Tab
 ~~~~~~~~~~~~~~
 
@@ -152,6 +160,8 @@ Components are, in essence, mini configurations.  You can use components to "pre
 The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
 
 Use the arrow buttons to move components between the two lists.  
+
+Return to `Contents`_.
 
 IOC Macros
 ~~~~~~~~~~
@@ -175,15 +185,21 @@ To set an IOC macro:
 
 If you are not sure about how to correctly configure macro values for a device, please consult with the Experimental Controls team.
 
+Return to `Contents`_.
+
 IOC PV Values
 ~~~~~~~~~~~~~
 
 **TO DO**
 
+Return to `Contents`_.
+
 IOC PV Sets
 ~~~~~~~~~~~
 
 **TO DO**
+
+Return to `Contents`_.
 
 Summary
 ~~~~~~~
@@ -200,6 +216,8 @@ Description
 
 Synoptic
    IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
+
+Return to `Contents`_.
 
 Editing a Configuration
 -----------------------
@@ -219,6 +237,8 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes. 
 
+Return to `Contents`_.
+
 Edit Current Configuration ...
 ------------------------------
 
@@ -227,6 +247,8 @@ To edit the current configuration simply select ``Edit Current Configuration ...
 It is always a good idea to check the name of the current configuration before you start editing it - to be sure that you are about to edit the configuration you intended to edit.  The name of the current configuration is displayed in the [[StatusBar]].
 
 **Note:** When you click on the ``Save`` button when editing the current configuration, the changes you make are applied immediately.  There will be a short pause while IBEX re-loads the current configuration and refreshes the display.
+
+Return to `Contents`_.
 
 Load a Configuration
 --------------------
@@ -237,6 +259,8 @@ To load a configuration:
 #. IBEX displays the Load Configuration dialog, which list all the configurations defined for your instrument.
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
+
+Return to `Contents`_.
 
 Delete a Configuration
 ----------------------
@@ -251,3 +275,5 @@ To delete a configuration:
 **Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration, load a different configuration, then delete the previously loaded configuration.
 
 **Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experimental Controls team - it may be possible to recover the deleted configuration.
+
+Return to `Contents`_.
