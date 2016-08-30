@@ -24,15 +24,21 @@ A client-server system is one that employs a distributed application architectur
 
 The design of IBEX follows this model.  IBEX consists of a server component, which runs on the instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <http://www.aps.anl.gov/epics/>`_ framework for creating distributed control systems.
 
+Return to `Contents`_.
+
 IBEX Client
 ~~~~~~~~~~~
 
 The IBEX Client is a single application, which functions as a GUI for IBEX.
 
+Return to `Contents`_.
+
 genie_python
 ~~~~~~~~~~~~
 
 genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
+
+Return to `Contents`_.
 
 IBEX Server
 ~~~~~~~~~~~
@@ -67,6 +73,7 @@ MySQL
   MySQL is an open-source relational database system, which provides database services to 
   the Archiver and the Message Server.
 
+Return to `Contents`_.
 
 Blocks & Process Variables
 --------------------------
@@ -74,6 +81,8 @@ Blocks & Process Variables
 [[ProcessVariables]]
 
 [[Blocks]]
+
+Return to `Contents`_.
 
 DAE (Data Acquisition Electronics)
 ----------------------------------
@@ -151,4 +160,5 @@ TS1, 25Hz running
 * If beam off, chopper continues to run -> RAW frame, but vetoed by SMP veto as no corresponding ISIS pulse
 * Dashboard beam current calculated from DAE pulses, so 25Hz -> half ISIS beam current  
 
+Return to `Contents`_.
 
