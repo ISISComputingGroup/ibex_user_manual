@@ -11,6 +11,13 @@ A synoptic need not encompass the whole instrument.  You can define synoptic vie
 
 You can also associate a synoptic view with a particular configuration, so that, in effect, the chosen synoptic becomes the default synoptic for that configuration.
 
+Contents
+--------
+
+#. `Creating a Synoptic View`_
+#. `Editing a Synoptic View`_
+#. `Deleting a Synoptic View`_
+
 Creating a Synoptic View
 ------------------------
 
@@ -68,6 +75,8 @@ Use the New Synoptic dialog as follows:
 
 #. Toggle the ``Show Beam`` check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.
 
+Return to `Contents`_.
+
 Editing a Synoptic View
 ------------------------
 
@@ -90,8 +99,9 @@ Cancel
 
 **Please note:** After exiting the Edit Synoptic dialog, you might need to click on the ``Refresh Synoptic`` button at the top of the synoptic display area to see the changes you have made.
 
-Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `
-Creating a Synoptic View`_).
+Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `Creating a Synoptic View`_).
+
+Return to `Contents`_.
 
 Deleting a Synoptic View
 ------------------------
@@ -106,3 +116,5 @@ To delete a synoptic:
 **Note 1:** If you attempt to delete the current synoptic, IBEX will indeed delete it (you might have to click the ``Refresh Synoptic`` button to see that IBEX really has deleted the current synoptic).
 
 **Note 2:** When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic, please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experimental Controls team - it may be possible to recover the deleted synoptic.
+
+Return to `Contents`_.
