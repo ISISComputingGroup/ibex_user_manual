@@ -26,7 +26,7 @@ Motors
 Scripting
    Selecting the Scripting View displays a Python console, allowing you to load and execute Python or genie_python scripts.  See [[CreateandManageScripts]] for further details.
 Synoptic
-   The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC.
+   The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC.  The [[CreateandManageSynoptics]] page provide more detail on how to create and manage synoptics.
 Web Links
    The Web Links View is a collection of convenient web links.
 
