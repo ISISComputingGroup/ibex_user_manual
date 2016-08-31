@@ -55,7 +55,8 @@ Use the New Synoptic dialog as follows:
       * Select the type of device it represents.  Click on the drop-down menu to select the device type.
       * Click on the ``Add New PV`` button to add blocks or PVs to be associated with the component (remember - blocks are just aliases to PVs).  Any blocks or PVs you select will be displayed below the component in the synoptic view.
       * Remove any blocks or PVs previously associated with the component.
-      * You can change the order of components in the synoptic view by dragging & dropping any component to the desired position.  As you drag a component, a black line will appear to indicate the you can drop the component and it will be positioned between the two components immediately above and below the black line.  If you drop a component on top of another component, it will be positioned as "sub-component".  "Sub-components" are useful if you have several components that are grouped together as a composite unit.
+      * You can change the order of components in the synoptic view by dragging & dropping any component to the desired position.  As you drag a component, a black line will appear to indicate the you can drop the component and it will be positioned between the two components immediately above and below the black line.  
+      * If you drop a component on top of another component, it will be positioned as "sub-component".  "Sub-components" are useful if you have several components that can usefully be grouped together as a composite unit.  "Sub-components" are also useful if you have a complex instrument; you can  use "sub-components" to create a degree of hierarchy in the synoptic.
 
    #. If you add an associated block or PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a specific block or PV to associated with the component.
 
