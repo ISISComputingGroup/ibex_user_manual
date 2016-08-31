@@ -1,0 +1,23 @@
+.. _PlotaBlockGraph:
+
+Plot a Graph of a Block or PV
+=============================
+
+IBEX provides a quick, easy way to plot a graph of a block or PV as a function of time (i.e. a "strip-chart").
+
+Plot a Graph of a Block
+-----------------------
+To plot a graph of a block:
+
+#. Select ``Log Plotter`` from the ``View Selector`` (see [[Views]]).
+#. If you have not previously plotted a block, IBEX displays an empty view, prompting you to select a block.  If you have already plotted a block, IBEX restores the graph.
+#. To plot a block, simply right-click on a block displayed in the Blocks & Groups view at the top of the IBEX window.
+#. Right-clicking displays a pop-up menu.  Choose``Display block history`` from the menu.
+#. IBEX displays a graph of the selected block as a function of time.
+
+The graph axes will automatically adjust to the range of values that the selected block has experienced.  The graph axes are labelled with the name of the underlying PV (remember, blocks are aliases to PVs).
+
+Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.  However the mouse over each button to see its name.
+
+It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the IOC Log (see [[Views]]) as the IOC starts up or shuts down.
+
