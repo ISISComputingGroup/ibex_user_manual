@@ -14,7 +14,7 @@ Alarms
 Beam Status
    The Beam Status View displays the status of the synchrotron, TS1 and TS2 beams.  It also displays MCR news.
 DAE
-   The DAE View allows you to set up and control the DAE.
+   The DAE View allows you to set up and control the DAE.  See [[ManagetheDAE]] for further details.
 Experiment Details
    The Experiment Details View allows you to look up details of your current experiment using the RB number.
 IOC Log
