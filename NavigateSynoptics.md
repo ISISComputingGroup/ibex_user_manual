@@ -9,9 +9,3 @@ The focus of this page is navigating synoptic views.  If you wish to create your
 
 Selecting a Synoptic View
 -------------------------
-
-#. To view an instrument synoptic, click on the ``Synoptic`` button on the View Selector (see [[Views]]).
-#. If a default synoptic has been defined for your current configuration, IBEX will display it.  The name of the synoptic will be displayed in the drop-down menu in the area labelled ``Synoptic Selection`` at the top of the synoptic display area.
-#. If no default synoptic has been defined for your current configuration, IBEX will display ``--NONE--`` in the drop-down menu in the area labelled ``Synoptic Selection`` at the top of the synoptic display area and the synoptic display will be blank. 
-#.  You can choose to view any synoptic defined for your instrument by in the drop-down menu in ``Synoptic Selection`` area and choosing any of the synoptics listed.  IBEX will refresh the synoptic display to show your chosen synoptic.
-
