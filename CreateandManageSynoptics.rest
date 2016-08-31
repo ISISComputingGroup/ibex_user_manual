@@ -103,6 +103,6 @@ To delete a synoptic:
 #. Select a synoptic from the list and press the ``OK`` button
 #. IBEX deletes the selected synoptic.
 
-**Note 1:** If you try to delete the current synoptic, IBEX will indeed delete it (you might have to click the ``Refresh Synoptic`` button to see that IBEX really has deleted the current synoptic).
+**Note 1:** If you attempt to delete the current synoptic, IBEX will indeed delete it (you might have to click the ``Refresh Synoptic`` button to see that IBEX really has deleted the current synoptic).
 
-**Note 2:** When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic , please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experimental Controls team - it may be possible to recover the deleted synoptic.
+**Note 2:** When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic, please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experimental Controls team - it may be possible to recover the deleted synoptic.
