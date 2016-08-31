@@ -7,6 +7,13 @@ In IBEX, synoptic views provide you with interactive, schematic views of your in
 
 The focus of this page is navigating synoptic views.  If you wish to create your own synoptic view see [[CreateandManageSynoptics]].
 
+
+Contents
+--------
+
+#. `Selecting a Synoptic View`_
+#. `Navigating a Synoptic View`_
+
 Selecting a Synoptic View
 -------------------------
 
@@ -15,4 +22,10 @@ Selecting a Synoptic View
 #. If no default synoptic has been defined for your current configuration, IBEX will display ``--NONE--`` in the drop-down menu in the area labelled ``Synoptic Selection`` at the top of the synoptic display area and the synoptic display will be blank. 
 #. You can choose to view any synoptic defined for your instrument by in the drop-down menu in ``Synoptic Selection`` area and choosing any of the synoptics listed.  IBEX will refresh the synoptic display to show your chosen synoptic.
 
+Return to `Contents`_.
+
+Navigating a Synoptic View
+--------------------------
+
+Return to `Contents`_.
 
