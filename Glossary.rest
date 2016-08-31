@@ -49,6 +49,9 @@ IOC
   For example, access to a Eurotherm temperature controller is controlled via an IOC process that provides 
   :term:`Process Variable` for the relevant control elements
 
+OPI
+  OPI stands for Operator Interface.  An OPI is the user interface for an individual device attached to an instrument.   For example, an OPI is displayed when you click on a device icon on a synoptic view.
+
 PV (Process Variable)
   This is a named piece of information in the EPICS system, such as a temperature setpoint or readback. 
   A PV has structured name that uniquely identifies it on the network.  An example of such a name, in 
