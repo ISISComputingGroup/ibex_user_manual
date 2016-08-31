@@ -35,6 +35,8 @@ Clicking on an icon displays a control panel (or OPI) for the device represented
 
 If you click on a second icon, the control panel for the second device is displayed in a new tab alongside the tab for the first device control panel.  You can repeat this action to view the controls panels for further devices.
 
+You can also display a device control panel by using the drop-down menu in the area labelled ``Synoptic Navigation`` at the top of the synoptic display area.  This is a convenient way of displaying a device control panel on large synoptics without having to scroll to find the appropriate device icon.
+
 When you no longer need to view a control panel, click on the "X" icon at the top right-hand corner of the tab.
 
 Return to `Contents`_.
