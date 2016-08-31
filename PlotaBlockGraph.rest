@@ -7,6 +7,7 @@ IBEX provides a quick, easy way to plot a graph of a block or PV as a function o
 
 Plot a Graph of a Block
 -----------------------
+
 To plot a graph of a block:
 
 #. Select ``Log Plotter`` from the ``View Selector`` (see [[Views]]).
@@ -17,7 +18,28 @@ To plot a graph of a block:
 
 The graph axes will automatically adjust to the range of values that the selected block has experienced.  The graph axes are labelled with the name of the underlying PV (remember, blocks are aliases to PVs).
 
-Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.  However the mouse over each button to see its name.
+Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.  Move the cursor over each button to see its function.  The most important buttons are:
 
-It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the IOC Log (see [[Views]]) as the IOC starts up or shuts down.
+Configure Settings
+   Allows you to configure the appearance of the graph.  You can choose the range of values to be shown on the graph axes, you can choose linear or logarithmic axes, you can choose the style and colour of the trace.
+
+Show Value Labels
+   Allows you to toggle the display of labels which report the position of the cursor on the graph.
+
+Show Axis Trace
+   Allows you to toggle the display of a cross-hair which shows the position of the cursor on the graph.
+
+Panning
+   Allows you to pan the graph left-right and up-down.
+
+Undo & Redo
+   Allows you to undo or redo any changes you have made to the way that the graph is displayed.
+
+Save Snapshot to PNG file
+   Click on the camera icon to save a snapshot of the plot to a file.  The file is saved to a location on the PC that is running the IBEX client.  The file is saved as a PNG file, a format which is widely supported by many graphics software packages.
+
+Plot a Graph of a PV
+--------------------
+
+You can choose a PV to be plotted from any OPI, in the same way as choosing a block.  Simply right-click on the PV and select ``Display block history`` from the menu.
 
