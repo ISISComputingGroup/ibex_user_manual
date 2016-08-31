@@ -11,6 +11,8 @@ In this section of the IBEX User Manual, we describe how to do the most common a
 
 [[StartandStopIOCs]]
 
+[[NavigateSynoptics]]
+
 [[CreateandManageSynoptics]]
 
 [[CreateandManageScripts]]
