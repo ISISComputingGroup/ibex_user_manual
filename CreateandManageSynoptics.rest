@@ -90,7 +90,8 @@ Cancel
 
 **Please note:** After exiting the Edit Synoptic dialog, you might need to click on the ``Refresh Synoptic`` button at the top of the synoptic display area to see the changes you have made.
 
-Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `Creating a Synoptic`_).
+Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `
+Creating a Synoptic View`_).
 
 Deleting a Synoptic View
 ------------------------
