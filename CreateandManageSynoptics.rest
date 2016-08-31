@@ -17,7 +17,7 @@ Creating a Synoptic View
 To create a synoptic view:
 
 #. Select ``New`` from the ``Synoptic`` menu.
-#. IBEX displays the Synoptic editor dialog, which is divided into four panes.  
+#. IBEX displays the New Synoptic dialog, which is divided into four panes.  
 
    #. Instrument Tree
    #. Component Details
@@ -35,7 +35,9 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the dialog without saving your changes.
 
-Use the Synoptic editor as follows:
+**Please note:** After exiting the New Synoptic dialog, you will need explicitly select the synoptic you have just created in order to see it displayed in the synoptic display area.
+
+Use the New Synoptic dialog as follows:
 
 #. Click on the ``Add Component`` button to add a new component to the Instrument Tree.
 
@@ -66,3 +68,40 @@ Use the Synoptic editor as follows:
 
 #. Toggle the ``Show Beam`` check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.
 
+Editing a Synoptic View
+------------------------
+
+Editing a synoptic view is similar to creating a synoptic view, except that you are working from an existing synoptic:
+
+#. Select ``Edit`` from the ``Synoptic`` menu.
+#. IBEX displays the Edit Synoptic dialog, which lists all the synoptics defined for your instrument.
+#. Choose a synoptic from the list and press the ``OK`` button.
+#. IBEX then displays the Edit Synoptic dialog.
+#. This time the Edit Synoptic dialog has three buttons at the bottom of the dialog.
+
+Save
+   Clicking on the ``Save`` button immediately saves your changes without any further prompting.  
+
+Save as...
+   Clicking on the ``Save as...`` button operates as described in the previous section.  You can use the ``Save as...`` button to save the synoptic with a new name, prior to making further changes.
+
+Cancel
+   Click on the ``Cancel`` button to exit the Edit Synoptic dialog without saving your changes. 
+
+**Please note:** After exiting the Edit Synoptic dialog, you might need to click on the ``Refresh Synoptic`` button at the top of the synoptic display area to see the changes you have made.
+
+Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `Creating a Synoptic`_).
+
+Deleting a Synoptic View
+------------------------
+
+To delete a synoptic:
+
+#. Select ``Delete`` from the ``Synoptic`` menu.
+#. IBEX displays the Delete Synoptic dialog, which lists all the synoptics defined for your instrument.
+#. Select a synoptic from the list and press the ``OK`` button
+#. IBEX deletes the selected synoptic.
+
+**Note 1:** If you try to delete the current synoptic, IBEX will indeed delete it (you might have to click the ``Refresh Synoptic`` button to see that IBEX really has deleted the current synoptic).
+
+**Note 2:** When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic , please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experimental Controls team - it may be possible to recover the deleted synoptic.
