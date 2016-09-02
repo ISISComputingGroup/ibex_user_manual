@@ -47,7 +47,8 @@ Installation
 
 3. Inside this folder you will see folders with names of the form ``BUILDmmm``, where ``mmm`` is a 
    three-digit number and folders with names of the form ``BUILD-nnnn``, where ``nnnn`` is a four-digit 
-   number. Change directory to the folder ``BUILDmmm`` with the highest value of ``mmm``.
+   number. Ignore the folders with names of the form ``BUILD-nnnn``.  Change directory to the folder 
+   ``BUILDmmm`` with the highest value of ``mmm``.
 
 4. Run the command ``install_client.bat``. This will copy the contents of the above directory 
    to ``C:\Instrument\Apps\Client``. It will also install genie_python.
