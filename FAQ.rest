@@ -9,8 +9,8 @@ List of Frequently Asked Questions
 .. _Return:
 
 #. `How do I report a problem with IBEX?`_
-#. `How do I install IBEX Server`_
-#. `How do I install IBEX Client`_
+#. `How do I install IBEX Server?`_
+#. `How do I install IBEX Client?`_
 #. `How do I start IBEX Server?`_
 #. `How do I stop IBEX Server?`_
 #. `This is the sixth question`_
@@ -27,7 +27,7 @@ List of Frequently Asked Questions
 
 Return_
 
-.. _`How do I install IBEX Server`:
+.. _`How do I install IBEX Server?`:
 
 **Q: How do I install IBEX Server?**
 
@@ -35,7 +35,7 @@ Return_
 
 Return_
 
-.. _`How do I install IBEX Client`:
+.. _`How do I install IBEX Client?`:
 
 **Q: How do I install IBEX Client?**
 
