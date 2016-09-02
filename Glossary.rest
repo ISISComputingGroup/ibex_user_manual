@@ -53,6 +53,4 @@ OPI
   OPI stands for Operator Interface.  An OPI is a user interface element of IBEX.  In essence, an OPI is a control panel for an individual device attached to an instrument.  It allows you to view and modify the PVs that define the state of the device.  For example, an OPI is displayed when you click on a device icon on a synoptic view.
 
 PV (Process Variable)
-  This is a named piece of information in the EPICS system, such as a temperature setpoint or readback. 
-  A PV has structured name that uniquely identifies it on the network.  An example of such a name, in 
-  this case for a motor, is: ``IN:LARMOR:MOT:MTR0101`` 
+  A Process Variable, usually referred to as a PV, is a named piece of information in the EPICS system, such as a temperature setpoint or readback.  PVs typically have structured names that uniquely identify them on the network.  An example of such a name, in this case for a motor, is: ``IN:LARMOR:MOT:MTR0101`` 
