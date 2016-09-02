@@ -6,7 +6,12 @@ Installing IBEX
 Installing IBEX Server
 ----------------------
 
-Installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  If you need to install IBEX server on your instrument, please contact the Experimental Controls team.
+The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, prior to the physical installation, a significant amount of preparation work is required.  For example:
+
+#. for an existing instrument, SECI configs need to be converted to their IBEX equivalents and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
+#. for a new instrument, the design and list of devices needs to be understood, new IOCs and OPIs will need to be created, etc.
+
+If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
 
 Installing IBEX Client
 ----------------------
