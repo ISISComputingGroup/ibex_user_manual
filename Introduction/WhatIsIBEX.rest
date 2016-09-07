@@ -5,14 +5,16 @@ What is IBEX
 
 IBEX is the new instrument control program; it is intended to replace SECI. 
 
-Most device control is currently performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  LabVIEW will not disappear entirely; when LabVIEW is required, it can be wrapped in EPICS.
+Prior to the development of IBEX, most device control was performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  LabVIEW will not disappear entirely; when LabVIEW is required, it can be wrapped in EPICS.
 
 IBEX also uses genie_python as its scripting language.
 
 IBEX and SECI Similarities
 --------------------------
 
-Both IBEX and SECI have block and dashboard
+IBEX and SECI both provide integrated views for controlling neutron & muon instruments.  SECI integrates information from LabVIEW VIs; IBEX integrates information from EPICS IOCs.  In SECI, it is the LabVIEW VIs that directly control the individual devices attached to an instrument.  In IBEX, the EPICS IOCs fulfil the role performed by the LabVIEW VIs.
+
+IBEX and SECI also share similar UIs, partly because they perform similar functions, but mainly by design - if they behave in similar ways, then it is easier to switch from SECI to IBEX. 
 
 IBEX and SECI Differences
 --------------------------
