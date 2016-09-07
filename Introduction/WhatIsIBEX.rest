@@ -25,7 +25,7 @@ It is important to realise that the IBEX client is not the instrument control pr
 
 In SECI, the LabVIEW VIs all run as processes on a single PC - the instrument control PC.  By contrast, in IBEX, all the server components (and the IBEX client, for that matter) are independent processes that can run anywhere on the ISIS network.  This means that IBEX has a much more flexible architecture - new components can be introduced into the architecture more easily, control processes can be distributed across multiple PCs (if necessary), instruments can more easily share infrastructure.  
 
-In most cases, the IBEX server components will continue to run (as independent processes) on a single control PC.  However, depending on individual circumstances, some server components will run on additional control PCs.  For example, some devices have their own control PC (e.g. cameras on IMAT).  The IBEX architecture provides the flexibility to accommodate such arrangements in a transparent fashion.
+In practice, in most cases, the IBEX server components will continue to run (as independent processes) on a single control PC.  However, depending on individual circumstances, we will choose to run some server components on additional control PCs.  For example, some devices have their own dedicated control PC (e.g. cameras on IMAT).  The IBEX architecture provides the flexibility to accommodate such arrangements in a transparent fashion.
 
 Introduction to genie_python
 ------------------------------------------------
