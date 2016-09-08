@@ -44,3 +44,10 @@ To run scripts via a command window, you must first log into you the control ser
 
 **Please note:** When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).
 
+Guidance for Writing Scripts
+----------------------------
+We have compiled a number of pages providing guidance on writing scripts.
+
+* [[GeneralScriptGuidance]]
+* [[MuonFEScriptGuidance]]
+
