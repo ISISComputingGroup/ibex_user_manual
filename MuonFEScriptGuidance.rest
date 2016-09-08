@@ -18,12 +18,20 @@ Starting & Stopping Runs Remotely
 
 Insert documentation explaining how to start/stop runs on each instrument remotely.
 
+::
+
+   Provide some handy sample code by replacing this text.
+
 Return to `Contents`_.
 
 Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
 Insert documentation explaining how to access the blocks on ``IN:MUONFE`` to write the tuning control scripts via Mantid/Genie Python.
+
+::
+
+   Provide some handy sample code by replacing this text.
 
 Return to `Contents`_.
 
@@ -32,11 +40,19 @@ How to Switch between Access Gateway Setups
 
 Insert documentation detailing the methods to switch between access gateway setups.
 
+::
+
+   Provide some handy sample code by replacing this text.
+
 Return to `Contents`_.
 
 How to Re-apply Settings
 ------------------------
 
 Insert documentation covering the easy re-apply settings procedure
+
+::
+
+   Provide some handy sample code by replacing this text.
 
 Return to `Contents`_.
