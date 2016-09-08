@@ -50,7 +50,9 @@ How to Re-apply Settings
 ------------------------
 
 IOCs controlling Power Supply Units have the option to re-apply their set-points (current, voltage, status on/off) the next time they are restarted.
+
 To do this, the relevant configuration must be setup in the following way (through the "Edit Configuration" dialog):
+
 #. In the "IOCs" tab, make sure both the "Auto-start?" and "Auto-restart?" boxes for the IOC are checked 
 #. In the "IOC Macros" tab, select the correct IOC and set the macro "SP_AT_STARTUP" to "YES" (default is "NO")
 
