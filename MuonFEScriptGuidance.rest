@@ -49,7 +49,9 @@ Return to `Contents`_.
 How to Re-apply Settings
 ------------------------
 
-Insert documentation covering the easy re-apply settings procedure
+IOCs controlling Power Supply Units have the option to re-apply their set-points (current, voltage, status on/off).
+To do this, the configuration in use must be setup in the following way:
+
 
 ::
 
