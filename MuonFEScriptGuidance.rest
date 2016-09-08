@@ -23,7 +23,7 @@ Return to `Contents`_.
 Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
-Insert documentation explaining how to access the blocks on `IN:MUONFE` to write the tuning control scripts via Mantid/Genie Python.
+Insert documentation explaining how to access the blocks on ``IN:MUONFE`` to write the tuning control scripts via Mantid/Genie Python.
 
 Return to `Contents`_.
 
