@@ -17,7 +17,9 @@ You can choose whichever method you prefer.
 Creating Scripts
 ----------------
 
-You can create Python scripts to run on IBEX using your favourite text editor or Python programming environment.
+You can create Python scripts to run on IBEX using your favourite text editor (e.g. Notepad++) or Python programming environment.
+
+**Tip:** Configure your text editor or Python programming environment to replace tabs with spaces.
 
 genie_python Library
 --------------------
