@@ -1,0 +1,34 @@
+.. MuonFEScriptGuidance:
+
+Guidance on Writing Scripts for the Muon Front-End
+===================================================
+
+This page contains guidance on writing scripts for the Muon Front-End control PC (NDEMUONFE).  The information on this page is specific to NDEMUONFE and is not relevant to other control PCs.
+
+Contents
+---------
+
+#. `Starting & Stopping Runs Remotely`_
+#. `Using Blocks to Write Tuning Control Scripts`_
+#. `How to Switch between Access Gateway Setups`_
+#. `How to Re-apply Settings`_
+
+Starting & Stopping Runs Remotely
+---------------------------------
+
+Insert documentation explaining how to start/stop runs on each instrument remotely.
+
+Using Blocks to Write Tuning Control Scripts
+--------------------------------------------
+
+Insert documentation explaining how to access the blocks on `IN:MUONFE` to write the tuning control scripts via Mantid/Genie Python.
+
+How to Switch between Access Gateway Setups
+-------------------------------------------
+
+Insert documentation detailing the methods to switch between access gateway setups.
+
+How to Re-apply Settings
+------------------------
+
+Insert documentation covering the easy re-apply settings procedure
