@@ -18,17 +18,17 @@ Indices and Tables
 * :ref:`search`
 * :ref:`glossary`
 
-[[WhatIsIBEX]]
+[[What Is IBEX|WhatIsIBEX]]
 
-[[InstallingIBEX]]
+[[Installing IBEX|InstallingIBEX]]
 
-[[StartingAndStoppingIBEX]]
+[[Starting And Stopping IBEX|StartingAndStoppingIBEX]]
 
-[[KeyConceptsinIBEX]]
+[[Key Concepts in IBEX|KeyConceptsinIBEX]]
 
-[[IBEXGUIFeatures]]
+[[IBEX GUI Features|IBEXGUIFeatures]]
 
-[[HowToDoThingsInIBEX]]
+[[How To Do Things In IBEX|HowToDoThingsInIBEX]]
 
 [[FAQ]]
 
