@@ -5,18 +5,18 @@ How To Do Things In IBEX
 
 In this section of the IBEX User Manual, we describe how to do the most common and important tasks.
 
-[[CreateandManageConfigurations]]
+[[Create and Manage Configurations|CreateandManageConfigurations]]
 
-[[CreateandManageComponents]]
+[[Create and Manage Components|CreateandManageComponents]]
 
-[[StartandStopIOCs]]
+[[Start and Stop IOCs|StartandStopIOCs]]
 
-[[NavigateSynoptics]]
+[[Navigate Synoptics|NavigateSynoptics]]
 
-[[CreateandManageSynoptics]]
+[[Create and Manage Synoptics|CreateandManageSynoptics]]
 
-[[CreateandManageScripts]]
+[[Create and Manage Scripts|CreateandManageScripts]]
 
-[[ManagetheDAE]]
+[[Manage the DAE|ManagetheDAE]]
 
-[[PlotaBlockGraph]]
+[[Plot a Block Graph|PlotaBlockGraph]]
