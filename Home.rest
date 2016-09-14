@@ -5,7 +5,7 @@ IBEX User Manual
     :maxdepth: 2
     :numbered:
     
-    What Is IBEX|Introduction/WhatIsIBEX.rest
+    Introduction/WhatIsIBEX.rest
     Introduction/StartingAndStoppingIBEX.rest
     Concepts/ProcessVariables.rest
     Concepts/Blocks.rest
