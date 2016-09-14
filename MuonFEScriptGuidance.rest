@@ -34,9 +34,29 @@ Insert documentation explaining how to start/stop runs on each instrument remote
 
     from multiple_dae_controller import MultipleDaeController
     controller = MultipleDaeController()
-    try:
-        for m in ["NDXHIFI","NDXMUSR","NDXEMU"]:
-            controller.add_machine(m, WAITFOR_TIMEOUT_SECONDS)
+    waitfor_seconds = 10
+    for m in ["NDXHIFI","NDXMUSR","NDXEMU"]:
+        controller.add_machine(m,waitfor_seconds)
+    controller.run_on_all("get_run_state")
+    controller.run_on_machines("end",["NDXHIFI","NDXMUSR"])
+    controller.run_on_machine("begin","NDXEMU")
+
+The following methods are currently supported:
+
+- begin
+- end
+- pause
+- resume
+- abort
+- get_run_state
+- get_events
+- get_frames
+- get_counts
+- waitfor_counts
+- waitfor_frames
+- waitfor_events
+
+    
 
 Return to `Contents`_.
 
