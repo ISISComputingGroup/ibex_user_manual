@@ -16,11 +16,27 @@ Contents
 Starting & Stopping Runs Remotely
 ---------------------------------
 
+The relevant code can be found in the github repository:
+
+https://github.com/ISISComputingGroup/mfe_control_scripts
+
+The code is written in Python and relies on the win32com module. Please ensure this is installed before running.
+
+There is a file, run_interactively.py, which can be used to interactively trigger commands on multiple machines. It is currently set up to run on the 3 MFE instrument PCs. You can adjust it by changing the list of machine names in the variable MACHINES. To run just launch the script with Python.
+
+Note that the script relies on the host machine and user having sufficient DCOM permissions to talk to the three instrument machines. At time of writing, there remains some issue here. In the past, establishing a remote desktop connection with the instrument machine has been sufficient to establish the underlying permissions but this no longer appears to be the case.
+
+To write your own scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.
+
 Insert documentation explaining how to start/stop runs on each instrument remotely.
 
 ::
 
-   Provide some handy sample code by replacing this text.
+    from multiple_dae_controller import MultipleDaeController
+    controller = MultipleDaeController()
+    try:
+        for m in ["NDXHIFI","NDXMUSR","NDXEMU"]
+            controller.add_machine(m, WAITFOR_TIMEOUT_SECONDS)
 
 Return to `Contents`_.
 
