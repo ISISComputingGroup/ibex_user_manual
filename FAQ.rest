@@ -13,7 +13,7 @@ List of Frequently Asked Questions
 #. `How do I install IBEX Client?`_
 #. `How do I start IBEX Server?`_
 #. `How do I stop IBEX Server?`_
-#. `This is the sixth question`_
+#. `Can I run IBEX and SECI at the same time?`_
 #. `This is the seventh question`_
 #. `This is the eighth question`_
 #. `This is the ninth question`_
@@ -59,9 +59,11 @@ Return_
 
 Return_
 
-.. _`This is the sixth question`:
+.. _`Can I run IBEX and SECI at the same time?`:
 
-This is the sixth answer.
+**Q: Can I run IBEX and SECI at the same time?**
+
+**A:** In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
 
 Return_
 
