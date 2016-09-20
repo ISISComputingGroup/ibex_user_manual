@@ -45,12 +45,24 @@ Installation
 
       cd \\isis\inst$\Kits$\CompGroup\ICP\Releases
 
-3. Inside this folder you will see folders with names of the form ``BUILDmmm``, where ``mmm`` is a 
-   three-digit number and folders with names of the form ``BUILD-nnnn``, where ``nnnn`` is a four-digit 
-   number. Ignore the folders with names of the form ``BUILD-nnnn``.  Change directory to the folder 
-   ``BUILDmmm`` with the highest value of ``mmm``.
+3. Inside this folder you will see a list of folders resembling the following:
 
-4. Run the command ``install_client.bat``. This will copy the contents of the above directory 
+::
+
+      2.0.0
+      2.1.0
+      ...
+      EPICS
+      genie_python_release
+
+
+Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in the above example).
+
+4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
+
+5. In the folder ``Client ``, change to the folder named ``BUILDmmm``: ``cd BUILDmmm`` 
+
+6. Run the command ``install_client.bat``. This will copy the contents of the above directory 
    to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
-5. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
+7. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
