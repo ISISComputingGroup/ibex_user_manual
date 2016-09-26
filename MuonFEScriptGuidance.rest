@@ -31,7 +31,7 @@ Note that the script relies on the host machine and user having sufficient DCOM 
 3. You will need credentials for all the machines you want to connect to. The "Persistence" field for the credentials must be "Enterprise" or higher (not "Local machine").
 4. To add a new credential
     1. Click "Add a Windows credential"
-    2. Enter the credentials (e.g. NDXMUSR, NDXMUSR\spudulike, [PASSWORD])
+    2. Enter the credentials (e.g. NDXMUSR, NDXMUSR\\spudulike, [PASSWORD])
     3. Click "OK"
 
 To write your own scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.
