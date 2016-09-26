@@ -1,9 +1,5 @@
 IBEX User Manual
 ================
-
-.. toctree::
-    :maxdepth: 2
-    :numbered:
     
     Introduction/WhatIsIBEX.rest
     Introduction/StartingAndStoppingIBEX.rest
