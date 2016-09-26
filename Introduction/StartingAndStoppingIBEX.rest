@@ -21,7 +21,7 @@ Alternatively, if you created a desktop short-cut to the IBEX client, simply dou
 
 ::
 
-Java was started but returned exit code=13
+   Java was started but returned exit code=13
 
 it is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[InstallingIBEX]]).
 
