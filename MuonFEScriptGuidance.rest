@@ -71,22 +71,51 @@ Return to `Contents`_.
 Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
-Insert documentation explaining how to access the blocks on ``IN:MUONFE`` to write the tuning control scripts via Mantid/Genie Python.
+A configuration with blocks should be created as for any IBEX instrument on NDEMUONFE.
+On an appropriate system, import genie_python to Mantid, and set your instrument to be "MUONFE".
 
 ::
 
-   Provide some handy sample code by replacing this text.
+   get_blocks()
+
+You should now get a list of blocks on the remote system. These can then be used as standard for scripting by simply writing to and from those values.
 
 Return to `Contents`_.
 
-How to Switch between Access Gateway Setups
+How to alter write access to blocks for each instrument
 -------------------------------------------
 
-Insert documentation detailing the methods to switch between access gateway setups.
+The initial gateway setup has been undertaken. Should the computers being provided control need to be changed, then the gateway should be restarted at the very least, and it would be wise to consider restarting the whole server.
+
+For any system in R55 which requires full control of all aspects of NDEMUONFE ensure that there is an entry in globals.txt on NDEMUONFE of the format
+
+::
+   
+   ACF_IH1=computer_name
+
+You are able to specify up to four of these. 
+
+Gateway settings have been set up to allow NDX and NDL systems to control each instrument respectively (so the items used by MUSR have write access from MUSR). There are more detailed instructions in how to set up these aspects of the gateway in:
+
+https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Access-Gateway
+
+In order to limit the systems listed in globals.txt to read only then sending the following command should be entered into an EPICS prompt:
+
+::
+   
+   caput IN:MUONFE:CS:EXCLUSIVE 1
+
+There is a similar PV for each instrument, so to limit HIFI to read only:
 
 ::
 
-   Provide some handy sample code by replacing this text.
+   caput IN:MUONFE:CS:EXCLUSIVE:HIFI 1
+
+Or to allow for writing to the EMU values:
+
+::
+
+   caput IN:MUONFE:CS:EXCLUSIVE:EMU 0
 
 Return to `Contents`_.
 
