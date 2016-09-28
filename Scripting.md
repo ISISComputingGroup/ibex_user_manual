@@ -1,0 +1,1 @@
+There is no help with scripting... yet.
