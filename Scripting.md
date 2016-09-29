@@ -73,7 +73,28 @@ Run control
 Converting Open Genie to genie_python
 =====================================
 
-[TODO]
+If you know a little bit of Python already, converting Open Genie scripts to `genie_python` is very often straightforward. Even if you're new to Python, once you know a few simple pieces of syntax, you'll be able to convert many scripts without issue.
+
+One thing we can't cover here is **indentation**. In Python, different code blocks are identified by their indentation level. In many programming languages, code blocks are encased in curly braces (`{...}`), but Python uses indentation. For example:
+
+```
+print "This has no indentation"
+def my_func():
+    print "The first line of the function is indented"
+    if True:
+        print "Having a 2nd level indent shows this line is within the if clause"
+        print "So is this one"
+    print "This line isn't within the if clause"
+print "This line is outside of the function"
+```
+
+| Open Genie syntax | `genie_python` syntax | Comments |
+|-------------------|-----------------------|----------|
+| PROCEDURE my_func | 
+My Open Genie Script	Notes	My equivalent_genie_python Script
+My_Instrument_Script	It is fine to give your new genie_python script the same name as the original Open Genie script.	My_Instrument_Script ()
+/* some comment */ Do_something arg1 arg2	In python, function calls have ( )s round the list of arguments.	#some comment Do_something (arg1, arg2)
+/* another comment */ Do_something_else arg3	...	#another comment Do_something_else (arg3)
 
 Creating and running instrument scripts
 =======================================
