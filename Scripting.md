@@ -86,12 +86,20 @@ Creating scripts
 We have glossed over step 2 because Python is a very powerful scripting language. Combined with Open Genie, the potential scope of a script is enormous, and well beyond the scope of this guide. For example though, here is a simple script that executes a calibration run.
 
 ```
-g.waitfor(seconds=60)
-g.change(title="Calibration run 1, 29th September")
-g.waitfor(seconds=60)
+# Change the title
+calibration_run_title = "Calibration run 1, 29th September"
+g.change(title=calibration_run_title)
+
+# Begin the run
+print "Beginning calibration run : " + calibration_run_title
 g.begin()
+
+# Wait for 100 uamps
 g.waitfor(uamps=100)
+
+# End the run
 g.end()
+print "Calibration run finished successfully"
 ```
 
 Running
