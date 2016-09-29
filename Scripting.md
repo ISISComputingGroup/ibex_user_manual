@@ -3,14 +3,14 @@ Scripting
 
 Scripting in IBEX is done using genie_python. The [genie_python reference manual] (http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ) gives a full account of what functions are available in genie_python. This page is intended to give a broad guide to scripting for the beginner and novice user.
 
-- [Running genie commands](#running-genie-commands)
-- [Common genie commands](#common-genie-commands)
+- [Running `genie_python` commands](#running-genie_python-commands)
+- [Common `genie_python` commands](#common-genie_python-commands)
 - [Converting Open Genie to `genie_python`](#converting-open-genie-to-genie_python)
 - [Creating and running instrument scripts](#creating-and-running-instrument-scripts)
 - [Creating and running user scripts](#creating-and-running-user-scripts)
 - [Tips from the developers](#tips-from-the-developers)
 
-Running genie commands
+Running genie_python commands
 ======================
 
 When running `genie_python` from an interactive console such as from the GUI or after running `C:\Instrument\Apps\Python\genie_python.bat`, the `genie` module will be aliased to `g`. Genie commands can then be accessed by using the prefix `g.[COMMAND_NAME]`. For example:
@@ -25,7 +25,7 @@ This is particularly useful from the GUI which will auto-complete commands and p
 
 Note that in many cases, arguments will be optional. For instance, `begin` can be used as `g.begin()` despite supporting all of the arguments `period`, `meas_id`, `meas_type`, `meas_subid`, `sample_id`, `delayed`, `quiet`, `paused`, and `verbose`.
 
-Common genie commands
+Common genie_python commands
 =====================
 
 Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands. This is **not a complete list**. For full information, consult the [genie_python reference manual] ( http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ).
@@ -74,6 +74,11 @@ Converting Open Genie to genie_python
 =====================================
 
 If you know a little bit of Python already, converting Open Genie scripts to `genie_python` is very often straightforward. Even if you're new to Python, once you know a few simple pieces of syntax, you'll be able to convert many scripts without issue.
+
+List of functions
+-----------------
+We've included some 
+- [Common `genie_python` commands](#common-genie_python-commands) on this page, but for a full list refer to the [genie_python reference manual] (http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ).
 
 Indentation
 -----------
