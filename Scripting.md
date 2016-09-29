@@ -62,7 +62,7 @@ as is:
 g.change_beamline_pars(value=1,name="PAR1")
 ```
 
-This can be very useful in avoiding mistakes in scripts, like getting the order of high and low limits the wrong way round. Note that unnamed variables must precede named variables so:
+This can be **very useful in avoiding mistakes** in scripts, like getting the order of high and low limits the wrong way round. Note that unnamed variables must precede named variables so:
 
 ```
 g.change_beamline_pars("PAR1",value=1)
