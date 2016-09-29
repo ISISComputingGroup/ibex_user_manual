@@ -44,6 +44,25 @@ Updating blocks and PVs
 | get_pv  | Get the value for the specified PV                   | g.get_pv("IN:INSTNAME:IOC_01:STAT")   |
 | set_pv  | Set the value for the specified PV                   | g.set_pv("IN:INSTNAME:IOC_01:STAT",1) |
 
+
+Run control
+----------
+
+| Command | Description                                                                                    | Example                               |
+|------------------|---------------------------------------------------------------------------------------|---------------------------------------|
+| get_uamps        | Get the current number of micro-amp hours                                             | g.get_uamps() |
+| get_frames       | Gets the current number of good frames                                                | g.get_frames() |
+| get_runstate     | Get the current status of the instrument as a string                                  | g.get_runstate() |
+| get_mevents      | Gets the total counts for all the detectors                                           | g.get_mevents() |
+| get_totalcounts  | Get the total counts for the current run                                              | g.get_totalcounts() |
+| waitfor          | Interrupts execution until certain conditions are met                                 | g.waitfor("NEW_BLOCK",value=1) |
+| waitfor_block    | Interrupts execution until block reaches specific value                               | g.waitfor_block("NEW_BLOCK",1) |
+| waitfor_time     | Interrupts execution for a specified amount of time                                   | g.waitfor_time(1) |
+| waitfor_frames   | Interrupts execution to wait for number of total good frames to reach parameter value | g.waitfor_frames(1000) |
+| waitfor_uamps    | Interrupts execution to wait for a specific total charge                              | g.waitfor_uamps(9.9) |
+| waitfor_runstate | Wait for a particular instrument run state                                            | g.waitfor_runstate("paused") |
+| waitfor_move     | Wait for all motion or specific motion to complete                                    | g.waitfor_move("NEW_BLOCK") |
+
 Converting Open Genie to genie_python
 =====================================
 
