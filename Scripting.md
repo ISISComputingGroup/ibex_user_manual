@@ -75,7 +75,10 @@ Converting Open Genie to genie_python
 
 If you know a little bit of Python already, converting Open Genie scripts to `genie_python` is very often straightforward. Even if you're new to Python, once you know a few simple pieces of syntax, you'll be able to convert many scripts without issue.
 
-One thing we can't cover here is **indentation**. In Python, different code blocks are identified by their indentation level. In many programming languages, code blocks are encased in curly braces (`{...}`), but Python uses indentation. For example:
+Indentation
+-----------
+
+One thing where there is no direct comparison is with **indentation**. In Python, different code blocks are identified by their indentation level. In many programming languages, code blocks are encased in curly braces (`{...}`), but Python uses indentation. For example:
 
 ```
 print "No indent"
@@ -88,13 +91,19 @@ def my_func():
 print "No indent. Outside the function"
 ```
 
+Typically an `indent` is 3 or 4 spaces. Tabs can be used too, but Python won't recognise that a tab is the same as 4 spaces so can lead to problems. It's often best to avoid them. This might be a new concept if you've only ever written Open Genie, but trust us in that it opens up a lot of ways to make scripts more powerful, easier to read and more reliable.
+
+Side-by-side comparison
+------------------------
+
 | Open Genie syntax | `genie_python` syntax | Comments |
 |-------------------|-----------------------|----------|
-| PROCEDURE my_func | 
-My Open Genie Script	Notes	My equivalent_genie_python Script
-My_Instrument_Script	It is fine to give your new genie_python script the same name as the original Open Genie script.	My_Instrument_Script ()
-/* some comment */ Do_something arg1 arg2	In python, function calls have ( )s round the list of arguments.	#some comment Do_something (arg1, arg2)
-/* another comment */ Do_something_else arg3	...	#another comment Do_something_else (arg3)
+| PROCEDURE my_func | def my_func():        | This is the standard way to define a function in Python |
+| begin             | g.begin()             | Many functions in `genie_python` have the same name as in Open Genie. In these cases, prepend `g.` to idicate the method belongs to `genie_python` and append `()` to tell Python to execute the method with no arguments |
+| my_func_2 100     | my_func_2(100)        | To execute a function, give its name and then the argument in brackets. This is a user-defined function, not a `genie_python` function, so it has no `g.` in front. |
+| my_func_3 100 200 | my_func_2(100,200)        | As above, except that multiple arguments are separated by a comma |
+| waitfor seconds=20 | g.waitfor(seconds=20)    | Some methods can take named arguments. In these cases you simply give named arguments in the form `[name]=[value]`. Note that you can mix named and unnamed arguments, but unnamed arguments always appear at the start of the argument list. |
+| # This is a comment | # This is a comment | Comments are the same in both languages |
 
 Creating and running instrument scripts
 =======================================
