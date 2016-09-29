@@ -21,14 +21,18 @@ Note that in many cases, arguments will be optional. For instance, `begin` can b
 Common genie commands
 ==========================
 
-Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands
+Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands. This is **not a complete list**. For full information, consult the [genie_python reference manual] http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ).
 
 Starting and stopping a run
 ---------------------------
 
 | Command | Description | Arguments | Example |
 |-------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| begin | Starts a new run | - **period** (int, optional) : the period to begin data collection in<br>- **meas_id** (string, optional) : the measurement id<br>**meas_type** (string, optional) : the type of measurement<br>- **meas_subid** (string, optional) : the measurement sub-id<br>- **sample_id** (string, optional) : the sample id<br>- **delayed** (bool, optional) : puts the period card to into delayed start mode<br>- **quiet** (bool, optional) : suppress the output to the screen<br>- **paused** (bool, optional) : begin in the paused state<br>- **verbose** (bool, optional) : show the messages from the DAE | g.begin() |
+| begin | Starts a new run | - **period** (int, optional) : the period to begin data collection in<br>- **meas_id** (string, optional) : the measurement id<br>- **meas_type** (string, optional) : the type of measurement<br>- **meas_subid** (string, optional) : the measurement sub-id<br>- **sample_id** (string, optional) : the sample id<br>- **delayed** (bool, optional) : puts the period card to into delayed start mode<br>- **quiet** (bool, optional) : suppress the output to the screen<br>- **paused** (bool, optional) : begin in the paused state<br>- **verbose** (bool, optional) : show the messages from the DAE | g.begin() |
+| end | Ends the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.end() |
+| abort | Aborts the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.abort() |
+| pause | Pauses the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.pause() |
+| resume | Resumes the current run after it has been paused | - **verbose** (bool, optional) : show the messages from the DAE | g.resume() |
 
 Converting Open Genie to genie_python
 =====================================
