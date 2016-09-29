@@ -120,7 +120,11 @@ Creating scripts
 
 For the most part, this is the same as [creating-user-scripts](#creating-and-running-user-scripts).
 
+### Script directory
+
 Unlike user scripts, instrument scripts should be placed in `C:\Instrument\Settings\config\[MACHINE_NAME]\Python`. Once the script has been created, edit the file `inst.py` in the same directory and add the line `from [MY_FILE] import *` where `[MY_FILE]` is the name of your file without the `.py` file extension. This will include the new script in the list of scripts loaded at startup. Best to avoid file names containing spaces, it [can be done](http://stackoverflow.com/questions/9123517/how-do-you-import-a-file-in-python-with-spaces-in-the-name) but it's easier to just not do it.
+
+### Script structure
 
 Everything in the instrument scripts will be executed when `genie_python` is started. This includes
   - Making functions available to be called later
@@ -148,13 +152,13 @@ then the user could only access `print_a()` and the value could not be changed.
 Running
 -------
 
-Once the script is loaded, anything from the script will be available using the `inst` package reference. For instance if your script contained the variable `my_var` and function `my_function` you can call:
+Once the script is loaded, anything from the script will be available using the `inst` package reference. For instance if your script contains the function `my_function` you can call:
 
 ```
-print inst.my_var
-inst.my_var = 1
 inst.my_function()
 ```
+
+Whilst using the scripting perspective in the Ibex GUI, users will also benefit from the same auto-complete feature as they do with `genie_python` commands.
 
 Creating and running user scripts
 =================================
