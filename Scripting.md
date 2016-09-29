@@ -46,7 +46,6 @@ Argument ordering
 
 As this is Python, `genie_python` conforms to the standard pattern of calling Python functions. The arguments to the function are contained within brackets and the variables passed in as a comma-separated list. Ordering is important but can be overridden by using named variables, for instance the following are all correct and equivalent:
 
-
 ```
 g.change_beamline_pars("PAR1",1)
 g.change_beamline_pars(name="PAR1",value=1)
@@ -56,14 +55,14 @@ g.change_beamline_pars("PAR1",value=1)
 
 In the last example, named and unnamed variables are mixed. Unnamed variables must precede named variables. The following examples are not valid
 
-```
+:red:```
 g.change_beamline_pars(name="PAR1",1) # Named variable before unnamed
 g.change_beamline_pars(1,"PAR1") # Cannot change order of unnamed variables
 ```
 
 Using named variables can be **very useful in avoiding mistakes**. For instance, getting the order of high and low limits the wrong way round. For instance this example:
 
-```
+:red:```
 g.change_monitor(1,10,0)
 ```
 
