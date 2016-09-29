@@ -76,13 +76,30 @@ Creating and running instrument scripts
 Creating and running user scripts
 =================================
 
+Creating scripts
+----------------
+
+1. First, we need to create a script file. By default, user scripts should be placed in `C:\scripts`. Navigate to your desired directory and create the script file with extension `.py`.
+2. Write some `genie_python`!
+3. Save the file
+
+We have glossed over step 2 because Python is a very powerful scripting language. Combined with Open Genie, the potential scope of a script is enormous, and well beyond the scope of this guide. For example though, here is a simple script that executes a series of runs:
+
+```
+g.waitfor(seconds=60)
+g.change(title="Calibration run 1, 29th September")
+g.waitfor(seconds=60)
+g.begin()
+g.waitfor(uamps=100)
+g.end()
+```
+
 Running
 -------
 
 Once you've created your script, it's time to run it. There are a number of ways of launching a Python script.
 
-From Ibex
-------------
+### From Ibex
 
 1. Launch the Ibex GUI 
 1. Navigate to the scripting perspective
@@ -90,8 +107,7 @@ From Ibex
     - Note that if you omit the absolute path to the file (i.e. `C:\path\to\script`) then `genie_python` will look in the current script directory. By default this is `C:\scripts` but can be viewed and set with the commands `g.get_script_dir()` and `g.set_script_dir()` respectively.
 1. When the script is loaded, any procedures in the script will be run automatically. If the script contains any function, you will now be able to call them from within the scripting window.
 
-From a genie_python terminal
-----------------------------
+### From a genie_python terminal
 
 1. Launch a `genie_python` terminal from `C:\Instrument\Apps\Python\` by running `genie_python.bat`
 1. Follow the above starting at step 3.
