@@ -44,40 +44,33 @@ Tips from the developers
 Argument ordering
 -----------------
 
-As this is Python, `genie_python` conforms to the standard pattern of calling Python functions. The arguments to the function are contained within brackets and the variables passed in as a comma-separated list. Ordering is important but can be overridden by using named variables, for instance:
+As this is Python, `genie_python` conforms to the standard pattern of calling Python functions. The arguments to the function are contained within brackets and the variables passed in as a comma-separated list. Ordering is important but can be overridden by using named variables, for instance the following are all correct and equivalent:
+
 
 ```
 g.change_beamline_pars("PAR1",1)
-```
-
-is the same as:
-
-```
 g.change_beamline_pars(name="PAR1",value=1)
-```
-
-as is:
-
-```
 g.change_beamline_pars(value=1,name="PAR1")
-```
-
-Note that unnamed variables must precede named variables so:
-
-```
 g.change_beamline_pars("PAR1",value=1)
 ```
 
-would be valid but:
+In the last example, named and unnamed variables are mixed. Unnamed variables must precede named variables. The following examples are not valid
 
 ```
-g.change_beamline_pars(name="PAR1",1)
+g.change_beamline_pars(name="PAR1",1) # Named variable before unnamed
+g.change_beamline_pars(1,"PAR1") # Cannot change order of unnamed variables
 ```
 
-nor would changing the order of unnamed variables:
+Using named variables can be **very useful in avoiding mistakes**. For instance, getting the order of high and low limits the wrong way round:
 
 ```
-g.change_beamline_pars(1,"PAR1")
+g.change_monitor(1,10,0)
 ```
 
-This can be **very useful in avoiding mistakes** in scripts. For instance, getting the order of high and low limits the wrong way round. 
+you can just write any of:
+
+```
+g.change_monitor(1,high=10,low=0)
+```
+
+and then it doesn't matter, and it's clear for whoever comes to edit the code in future.
