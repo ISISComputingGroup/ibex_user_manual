@@ -26,8 +26,9 @@ Many `genie_python` commands share the same name with their Open Genie equivalen
 Starting and stopping a run
 ---------------------------
 
-
-g.begin()
+| Command | Description | Arguments | Example |
+|-------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| begin | Starts a new run | period (int, optional) : the period to begin data collection in meas_id (string, optional) : the measurement id meas_type (string, optional) : the type of measurement meas_subid (string, optional) : the measurement sub-id sample_id (string, optional) : the sample id delayed (bool, optional) : puts the period card to into delayed start mode quiet (bool, optional) : suppress the output to the screen paused (bool, optional) : begin in the paused state verbose (bool, optional) : show the messages from the DAE | g.begin() |
 
 Converting Open Genie to genie_python
 =====================================
