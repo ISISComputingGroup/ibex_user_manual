@@ -103,12 +103,12 @@ Side-by-side comparison
 
 | Open Genie syntax | `genie_python` syntax | Comments |
 |-------------------|-----------------------|----------|
-| PROCEDURE my_func | def my_func():        | This is the standard way to define a function in Python |
-| begin             | g.begin()             | Many functions in `genie_python` have the same name as in Open Genie. In these cases, prepend `g.` to idicate the method belongs to `genie_python` and append `()` to tell Python to execute the method with no arguments |
-| my_func_2 100     | my_func_2(100)        | To execute a function, give its name and then the argument in brackets. This is a user-defined function, not a `genie_python` function, so it has no `g.` in front. |
-| my_func_3 100 200 | my_func_2(100,200)        | As above, except that multiple arguments are separated by a comma |
-| waitfor seconds=20 | g.waitfor(seconds=20)    | Some methods can take named arguments. In these cases you simply give named arguments in the form `[name]=[value]`. Note that you can mix named and unnamed arguments, but unnamed arguments always appear at the start of the argument list. |
-| # This is a comment | # This is a comment | Comments are the same in both languages |
+| <nobr>PROCEDURE my_func</nobr> | <nobr>def my_func():</nobr>        | This is the standard way to define a function in Python |
+| <nobr>begin</nobr>             | <nobr>g.begin()</nobr>             | Many functions in `genie_python` have the same name as in Open Genie. In these cases, prepend `g.` to idicate the method belongs to `genie_python` and append `()` to tell Python to execute the method with no arguments |
+| <nobr>my_func_2 100</nobr>     | <nobr>my_func_2(100)</nobr>        | To execute a function, give its name and then the argument in brackets. This is a user-defined function, not a `genie_python` function, so it has no `g.` in front. |
+| <nobr>my_func_3 100 200</nobr> | <nobr>my_func_2(100,200)</nobr>        | As above, except that multiple arguments are separated by a comma |
+| <nobr>waitfor seconds=20</nobr> | <nobr>g.waitfor(seconds=20)</nobr>    | Some methods can take named arguments. In these cases you simply give named arguments in the form `[name]=[value]`. Note that you can mix named and unnamed arguments, but unnamed arguments always appear at the start of the argument list. |
+| <nobr># This is a comment</nobr> | <nobr># This is a comment</nobr> | Comments are the same in both languages |
 
 Creating and running instrument scripts
 =======================================
