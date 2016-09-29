@@ -61,16 +61,16 @@ g.change_beamline_pars(name="PAR1",1) # Named variable before unnamed
 g.change_beamline_pars(1,"PAR1") # Cannot change order of unnamed variables
 ```
 
-Using named variables can be **very useful in avoiding mistakes**. For instance, getting the order of high and low limits the wrong way round:
+Using named variables can be **very useful in avoiding mistakes**. For instance, getting the order of high and low limits the wrong way round. For instance this example:
 
 ```
 g.change_monitor(1,10,0)
 ```
 
-you can just write any of:
+is wrong and wouldn't work. Instead, we could have written:
 
 ```
 g.change_monitor(1,high=10,low=0)
 ```
 
-and then it doesn't matter, and it's clear for whoever comes to edit the code in future.
+which would have work and makes it clear for whoever comes to edit the code in future.
