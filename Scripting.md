@@ -1,7 +1,7 @@
 Scripting
 =========
 
-Scripting in IBEX is done using genie_python. The [genie_python reference manual] http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ) gives a full account of what functions are available in genie_python. This page is intended to give a broad guide to scripting for the beginner and novice user.
+Scripting in IBEX is done using genie_python. The [genie_python reference manual] (http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ) gives a full account of what functions are available in genie_python. This page is intended to give a broad guide to scripting for the beginner and novice user.
 
 Running genie commands
 ======================
@@ -21,7 +21,7 @@ Note that in many cases, arguments will be optional. For instance, `begin` can b
 Common genie commands
 ==========================
 
-Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands. This is **not a complete list**. For full information, consult the [genie_python reference manual] http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ).
+Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands. This is **not a complete list**. For full information, consult the [genie_python reference manual] ( http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html ).
 
 Starting and stopping a run
 ---------------------------
