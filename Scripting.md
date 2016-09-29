@@ -83,7 +83,7 @@ Creating scripts
 2. Write some `genie_python`!
 3. Save the file
 
-We have glossed over step 2 because Python is a very powerful scripting language. Combined with Open Genie, the potential scope of a script is enormous, and well beyond the scope of this guide. For example though, here is a simple script that executes a series of runs:
+We have glossed over step 2 because Python is a very powerful scripting language. Combined with Open Genie, the potential scope of a script is enormous, and well beyond the scope of this guide. For example though, here is a simple script that executes a simple calibration run.
 
 ```
 g.waitfor(seconds=60)
