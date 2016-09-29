@@ -16,10 +16,18 @@ g.abort()
 
 This is particularly useful from the GUI which will auto-complete commands and provide tool tips describing each function and its arguments.
 
+Note that in many cases, arguments will be optional. For instance, `begin` can be used as `g.begin()` despite supporting all of the arguments `period`, `meas_id`, `meas_type`, `meas_subid`, `sample_id`, `delayed`, `quiet`, `paused`, and `verbose`.
+
 Common genie commands
 ==========================
 
-[TODO]
+Many `genie_python` commands share the same name with their Open Genie equivalent so it will often be very straightforward to find the function you're looking for. Still, here is a list of the most commonly used `genie_python` commands
+
+Starting and stopping a run
+---------------------------
+
+
+g.begin()
 
 Converting Open Genie to genie_python
 =====================================
