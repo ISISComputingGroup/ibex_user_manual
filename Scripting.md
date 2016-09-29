@@ -6,7 +6,7 @@ Scripting in IBEX is done using genie_python. The [genie_python reference manual
 Running genie commands
 ======================
 
-When running `genie_python` from an interactive console such as from the GUI or after running `C:\Instrument\Apps\Python\genie_python.bat`, the `genie` module will be aliased to `g`. Genie commands can then be accessed by using the prefix `g.[COMMAND_NAME]`. For example:
+When running `genie_python` from an interactive console such as from the GUI or after running :red:`C:\Instrument\Apps\Python\genie_python.bat`, the `genie` module will be aliased to `g`. Genie commands can then be accessed by using the prefix `g.[COMMAND_NAME]`. For example:
 
 ```
 g.start()
