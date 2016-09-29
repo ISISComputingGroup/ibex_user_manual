@@ -76,9 +76,25 @@ Creating and running instrument scripts
 Creating and running user scripts
 =================================
 
-[TODO]
+Running
+-------
 
+Once you've created your script, it's time to run it. There are a number of ways of launching a Python script.
 
+From Ibex
+------------
+
+1. Launch the Ibex GUI 
+1. Navigate to the scripting perspective
+1. Run the command `g.load_script("C:\path\to\script\my_script.py")` where the path and script name are updated appropriately
+    - Note that if you omit the absolute path to the file (i.e. `C:\path\to\script`) then `genie_python` will look in the current script directory. By default this is `C:\scripts` but can be viewed and set with the commands `g.get_script_dir()` and `g.set_script_dir()` respectively.
+1. When the script is loaded, any procedures in the script will be run automatically. If the script contains any function, you will now be able to call them from within the scripting window.
+
+From a genie_python terminal
+----------------------------
+
+1. Launch a `genie_python` terminal from `C:\Instrument\Apps\Python\` by running `genie_python.bat`
+1. Follow the above starting at step 3.
 
 Tips from the developers
 ============================
