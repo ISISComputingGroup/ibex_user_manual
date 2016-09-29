@@ -78,14 +78,14 @@ If you know a little bit of Python already, converting Open Genie scripts to `ge
 One thing we can't cover here is **indentation**. In Python, different code blocks are identified by their indentation level. In many programming languages, code blocks are encased in curly braces (`{...}`), but Python uses indentation. For example:
 
 ```
-print "This has no indentation"
+print "No indent"
 def my_func():
-    print "The first line of the function is indented"
+    print "1 indent. Inside the function"
     if True:
-        print "Having a 2nd level indent shows this line is within the if clause"
-        print "So is this one"
-    print "This line isn't within the if clause"
-print "This line is outside of the function"
+        print "2 indents. Inside the if clause"
+        print "2 indents. Still inside the if clause"
+    print "1 indent. In the function but not the if clause"
+print "No indent. Outside the function"
 ```
 
 | Open Genie syntax | `genie_python` syntax | Comments |
