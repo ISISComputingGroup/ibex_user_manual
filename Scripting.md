@@ -6,7 +6,7 @@ Scripting in IBEX is done using genie_python. The [genie_python reference manual
 Running genie commands
 ======================
 
-When running `genie_python` from an interactive console such as from the GUI or after running :red:`C:\Instrument\Apps\Python\genie_python.bat`, the `genie` module will be aliased to `g`. Genie commands can then be accessed by using the prefix `g.[COMMAND_NAME]`. For example:
+When running `genie_python` from an interactive console such as from the GUI or after running `C:\Instrument\Apps\Python\genie_python.bat`, the `genie` module will be aliased to `g`. Genie commands can then be accessed by using the prefix `g.[COMMAND_NAME]`. For example:
 
 ```
 g.start()
@@ -55,14 +55,14 @@ g.change_beamline_pars("PAR1",value=1)
 
 In the last example, named and unnamed variables are mixed. Unnamed variables must precede named variables. The following examples are not valid
 
-:red:```
+```
 g.change_beamline_pars(name="PAR1",1) # Named variable before unnamed
 g.change_beamline_pars(1,"PAR1") # Cannot change order of unnamed variables
 ```
 
 Using named variables can be **very useful in avoiding mistakes**. For instance, getting the order of high and low limits the wrong way round. For instance this example:
 
-:red:```
+```
 g.change_monitor(1,10,0)
 ```
 
