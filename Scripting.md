@@ -5,7 +5,7 @@ Scripting in IBEX is done using genie_python. The [genie_python reference manual
 
 - [Running genie commands](#running-genie-commands)
 - [Common genie commands](#common-genie-commands)
-- [Converting Open Genie to `genie_python`](#converting-open-genie-to-genie-python)
+- [Converting Open Genie to `genie_python`](#converting-open-genie-to-genie_python)
 - [Creating and running instrument scripts](#creating-and-running-instrument-scripts)
 - [Creating and running user scripts](#creating-and-running-user-scripts)
 - [Tips from the developers](#tips-from-the-developers)
