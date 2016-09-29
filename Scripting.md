@@ -26,13 +26,13 @@ Many `genie_python` commands share the same name with their Open Genie equivalen
 Starting and stopping a run
 ---------------------------
 
-| Command | Description | Arguments | Example |
-|-------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| begin | Starts a new run | - **period** (int, optional) : the period to begin data collection in<br>- **meas_id** (string, optional) : the measurement id<br>- **meas_type** (string, optional) : the type of measurement<br>- **meas_subid** (string, optional) : the measurement sub-id<br>- **sample_id** (string, optional) : the sample id<br>- **delayed** (bool, optional) : puts the period card to into delayed start mode<br>- **quiet** (bool, optional) : suppress the output to the screen<br>- **paused** (bool, optional) : begin in the paused state<br>- **verbose** (bool, optional) : show the messages from the DAE | g.begin() |
-| end | Ends the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.end() |
-| abort | Aborts the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.abort() |
-| pause | Pauses the current run | - **verbose** (bool, optional) : show the messages from the DAE | g.pause() |
-| resume | Resumes the current run after it has been paused | - **verbose** (bool, optional) : show the messages from the DAE | g.resume() |
+| Command | Description                                      | Example    |
+|---------|--------------------------------------------------|------------|
+| begin   | Starts a new run                                 | g.begin()  |
+| end     | Ends the current run                             | g.end()    |
+| abort   | Aborts the current run                           | g.abort()  |
+| pause   | Pauses the current run                           | g.pause()  |
+| resume  | Resumes the current run after it has been paused | g.resume() |
 
 Converting Open Genie to genie_python
 =====================================
