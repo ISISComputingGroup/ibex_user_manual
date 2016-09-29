@@ -16,7 +16,7 @@ g.abort()
 
 This is particularly useful from the GUI which will auto-complete commands and provide tool tips describing each function and its arguments.
 
-Most common genie commands
+Common genie commands
 ==========================
 
 [TODO]
@@ -35,3 +35,47 @@ Creating and running user scripts
 =================================
 
 [TODO]
+
+
+
+Tips from the developers
+============================
+
+Argument ordering
+-----------------
+
+As this is Python, `genie_python` conforms to the standard pattern of calling Python functions. The arguments to the function are contained within brackets and the variables passed in as a comma-separated list. Ordering is important but can be overridden by using named variables, for instance:
+
+```
+g.change_beamline_pars("PAR1",1)
+```
+
+is the same as:
+
+```
+g.change_beamline_pars(name="PAR1",value=1)
+```
+
+as is:
+
+```
+g.change_beamline_pars(value=1,name="PAR1")
+```
+
+This can be very useful in avoiding mistakes in scripts, like getting the order of high and low limits the wrong way round. Note that unnamed variables must precede named variables so:
+
+```
+g.change_beamline_pars("PAR1",value=1)
+```
+
+would be valid but:
+
+```
+g.change_beamline_pars(name="PAR1",1)
+```
+
+nor would changing the order of unnamed variables:
+
+```
+g.change_beamline_pars(1,"PAR1")
+```
