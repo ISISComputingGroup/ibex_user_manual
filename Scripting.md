@@ -48,8 +48,8 @@ Updating blocks and PVs
 |---------|------------------------------------------------------|---------------------------------------|
 | cget    | Gets the useful values associated with a block       | g.cget("NEW_BLOCK")                   |
 | cset    | Sets the setpoint and runcontrol settings for blocks | g.cset("NEW_BLOCK",1)                 |
-| get_pv  | Get the value for the specified PV                   | g.get_pv("IN:INSTNAME:IOC_01:STAT")   |
-| set_pv  | Set the value for the specified PV                   | g.set_pv("IN:INSTNAME:IOC_01:STAT",1) |
+| get_pv  | Gets the value for the specified PV                  | g.get_pv("IN:INSTNAME:IOC_01:STAT")   |
+| set_pv  | Sets the value for the specified PV                  | g.set_pv("IN:INSTNAME:IOC_01:STAT",1) |
 
 
 Run control
