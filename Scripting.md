@@ -241,4 +241,4 @@ is wrong and wouldn't work. Instead, we could have written:
 g.change_monitor(1,high=10,low=0)
 ```
 
-which would have work and makes it clear for whoever comes to edit the code in future.
+which would have worked and makes it clear for whoever comes to edit the code in future.
