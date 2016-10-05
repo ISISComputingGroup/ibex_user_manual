@@ -8,8 +8,8 @@ a full account of what functions are available in genie\_python. This
 page is intended to give a broad guide to scripting for the beginner and
 novice user.
 
--  `Running ``genie_python`` commands`_
--  `Common ``genie_python`` commands`_
+-  `Running genie_python commands`_
+-  `Common genie_python commands`_
 -  `Converting Open Genie to ``genie_python```_
 -  `Creating and running instrument scripts`_
 -  `Creating and running user scripts`_
