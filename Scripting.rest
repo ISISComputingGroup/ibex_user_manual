@@ -1,9 +1,7 @@
 Scripting
 =========
 
-Scripting in IBEX is done using genie\_python. The [genie\_python
-reference manual]
-(http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html )
+Scripting in IBEX is done using genie\_python. The `genie\_python refrefence manual`__
 gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
 beginner and novice user.
@@ -14,6 +12,8 @@ beginner and novice user.
 -  `Creating and running instrument scripts <#creating-and-running-instrument-scripts>`__
 -  `Creating and running user scripts <#creating-and-running-user-scripts>`__
 -  `Tips from the developers <#tips-from-the-developers>`__
+
+.. _`genie\_python refrefence manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
 
 Running genie\_python commands
 ==============================
