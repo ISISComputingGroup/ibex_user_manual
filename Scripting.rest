@@ -6,11 +6,11 @@ gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
 beginner and novice user.
 
--  `Running ``genie_python``
+-  `Running genie_python
    commands <#running-genie_python-commands>`__
--  `Common ``genie_python`` commands <#common-genie_python-commands>`__
+-  `Common genie_python commands <#common-genie_python-commands>`__
 -  `Converting Open Genie to
-   ``genie_python`` <#converting-open-genie-to-genie_python>`__
+   genie_python <#converting-open-genie-to-genie_python>`__
 -  `Creating and running instrument
    scripts <#creating-and-running-instrument-scripts>`__
 -  `Creating and running user
