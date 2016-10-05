@@ -231,8 +231,7 @@ Many ``genie_python`` commands share the same name with their Open Genie
 equivalent so it will often be very straightforward to find the function
 you're looking for. Still, here is a list of the most commonly used
 ``genie_python`` commands. This is **not a complete list**. For full
-information, consult the [genie\_python reference manual] (
-http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html ).
+information, consult the `genie\_python reference manual`_.
 
 Starting and stopping a run
 ---------------------------
@@ -310,8 +309,7 @@ List of functions
 
 We've included some - `Common ``genie_python``
 commands <#common-genie_python-commands>`__ on this page, but for a full
-list refer to the [genie\_python reference manual]
-(http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html ).
+list refer to the `genie\_python reference manual`_.
 
 Indentation
 -----------
