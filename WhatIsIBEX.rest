@@ -35,6 +35,6 @@ A full reference to genie_python is available here: http://shadow.nd.rl.ac.uk/ge
 Differences between Open Genie and genie_python
 ------------------------------------------------
 
-Open Genie and genie_python are not the same.
+A detailed description of the differences is available on the [[Scripting page|Scripting]].
 
 
