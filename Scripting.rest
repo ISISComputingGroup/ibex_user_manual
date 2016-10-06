@@ -235,6 +235,8 @@ changed.
 Running
 -------
 
+**Please note:** When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).
+
 Once the script is loaded, anything from the script will be available
 using the ``inst`` package reference. For instance if your script
 contains the function ``my_function`` you can call:
@@ -283,6 +285,8 @@ here is a simple script that executes a calibration run.
 
 Running
 -------
+
+**Please note:** When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).
 
 Once you've created your script, it's time to run it. There are a number
 of ways of launching a Python script.
