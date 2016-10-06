@@ -17,8 +17,9 @@ beginner and novice user.
    scripts <#creating-and-running-user-scripts>`__
 -  `Tips from the developers <#tips-from-the-developers>`__
 
-There is also some specific `scripting advice for the Muon Front END<https://github.com/ISISComputingGroup/ibex_user_manual/wiki/MuonFEScriptGuidance>`__.
+There is also some specific `scripting advice for the Muon Front END`_.
 
+.. _`scripting advice for the Muon Front END`: https://github.com/ISISComputingGroup/ibex_user_manual/wiki/MuonFEScriptGuidance
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
 
 Running genie\_python commands
