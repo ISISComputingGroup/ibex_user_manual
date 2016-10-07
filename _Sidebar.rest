@@ -4,5 +4,6 @@
 * [[KeyConceptsinIBEX]]
 * [[IBEXGUIFeatures]]
 * [[HowToDoThingsInIBEX]]
+* [[Scripting]]
 * [[FAQ]]
 * [[Glossary]]
