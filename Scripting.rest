@@ -127,7 +127,7 @@ you'll be able to convert many scripts without issue.
 List of functions
 -----------------
 
-We've included some - `Common genie_python
+We've included some `common genie_python
 commands <#common-genie_python-commands>`__ on this page, but for a full
 list refer to the `genie\_python reference manual`_.
 
