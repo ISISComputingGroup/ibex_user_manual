@@ -321,6 +321,8 @@ From a genie\_python terminal
 Tips from the developers
 ========================
 
+Even with correct syntax, a working script can become bug-prone and difficult for users to update. Here we document some tips
+to help keep your scripts working as expected and easy to modify in the future.
 
 Argument ordering
 -----------------
