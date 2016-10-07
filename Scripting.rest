@@ -321,7 +321,6 @@ From a genie\_python terminal
 Tips from the developers
 ========================
 
-Here is some text.
 
 Argument ordering
 -----------------
