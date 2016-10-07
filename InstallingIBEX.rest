@@ -45,7 +45,7 @@ Installation
 
       cd \\isis\inst$\Kits$\CompGroup\ICP\Releases
 
-  Alternatively use ``\\isis.cclrc.ac.uk\inst$\...`` for non-domain machines.
+Alternatively use ``\\isis.cclrc.ac.uk\inst$\...`` for non-domain machines.
 
 3. Inside this folder you will see a list of folders resembling the following:
 
