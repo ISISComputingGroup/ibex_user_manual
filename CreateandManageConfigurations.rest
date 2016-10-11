@@ -121,10 +121,12 @@ Run-Control Settings
 Logging Settings
    Use the Logging Settings section of the Configure Block dialog to control how the value of the block is logged.
 
-   * **Note:** By default logging is disabled (i.e. changes in the value of the block will not be logged).  
+   * **Note:** By default logging is enabled (i.e. changes in the value of the block will be logged).  
    * Click on the ``Enabled`` check-box to change the way the block is logged.  If the ``Enabled`` check-box is checked, then logging is enabled.
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
+
+**PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
 
 **Note:** Blocks that have been inherited from a component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
