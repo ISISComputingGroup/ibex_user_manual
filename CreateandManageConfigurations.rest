@@ -128,7 +128,8 @@ Logging Settings
 
 **Note:** Blocks that have been inherited from a component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
-TEST CONTENT
+.. role:: rubric
+:rubric:`TEST CONTENT`
 
 Return to `Contents`_.
 
