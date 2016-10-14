@@ -38,28 +38,53 @@ Installation
       mkdir C:\Instrument\Apps\Python
       cd C:\Instrument
 
-2. In the command window type the following (if your command prompt doesn't support UNC paths, 
-   use ``pushd`` instead of ``cd``):
+2. If your PC is in the ISIS domain (i.e. it is an ISIS PC), use the following instruction.  
+If your PC is not in the ISIS domain (i.e. it is not an ISIS PC) skip to step 3.
+In the command window type the following command:
 
 ::
 
-      cd \\isis\inst$\Kits$\CompGroup\ICP\Releases
+      net use Z: \\isis\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
 
-Alternatively use ``\\isis.cclrc.ac.uk\inst$\...`` for non-domain machines. You may need to use your FedID to access this folder.
+substituting your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as your drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
 
-3. Inside this folder you will see a list of folders resembling the following:
+Change to the ``Z:`` drive:
+::
+
+      Z:
+
+Now proceed directly to step 4 (i.e. skip step 3).
+
+3. If your PC is not in the ISIS domain (i.e. it is not an ISIS PC), type the following command in the command window :
+
+::
+
+      net use Z: \\isis.cclrc.ac.uk\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
+
+substituting your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as your drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
+
+Change to the ``Z:`` drive:
+::
+
+      Z:
+
+Proceed directly to step 4.
+
+4. On the ``Z:`` drive you will see a list of folders resembling the following:
 
 ::
 
       2.0.0
       2.1.0
 
-
 Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in the above example).
 
-4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
+5. In the folder ``N.M.O``, change to the Client folder: 
+::
 
-5. Run the command ``install_client.bat``. This will copy the contents of the above directory 
+   cd Client
+
+6. Run the command ``install_client.bat``. This will copy the contents of the above directory 
    to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
-6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
+7. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
