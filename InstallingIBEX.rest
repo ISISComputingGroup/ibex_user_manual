@@ -53,7 +53,7 @@ or
 
       net use Z: \\isis.cclrc.ac.uk\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
 
-In either case, substitute your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as the drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
+In either case, substitute your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as the drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters exactly as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
 
 Change to the ``Z:`` drive:
 ::
