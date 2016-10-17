@@ -69,7 +69,9 @@ Return_
 
 .. _`Where can I learn about Python?`:
 
-Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
+**Q: Where can I learn about Python?**
+
+**A:** Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
 
 Return_
 
