@@ -19,6 +19,9 @@ beginner and novice user.
 
 There is also some specific [[scripting advice for the Muon Front End|MuonFEScriptGuidance]]
 
+If you are new to Python, the Mantid team has created an excellent `Introduction to Python 
+<http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid web-site.
+
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
 
 Running genie\_python commands
@@ -123,6 +126,9 @@ If you know a little bit of Python already, converting Open Genie
 scripts to ``genie_python`` is very often straightforward. Even if
 you're new to Python, once you know a few simple pieces of syntax,
 you'll be able to convert many scripts without issue.
+
+**Note:** If you are new to Python, consult the `Introduction to Python 
+<http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid web-site.
 
 List of functions
 -----------------
