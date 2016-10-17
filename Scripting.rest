@@ -134,7 +134,7 @@ list refer to the `genie\_python reference manual`_.
 Indentation
 -----------
 
-One thing where there is no direct comparison is with **indentation**.
+One thing where there is no direct comparison between Python and Open Genie is with **indentation**.
 In Python, different code blocks are identified by their indentation
 level. In many programming languages, code blocks are encased in curly
 braces (``{...}``), but Python uses indentation. For example:
@@ -209,7 +209,7 @@ Script structure
 
 Everything in the instrument scripts will be executed when
 ``genie_python`` is started. This includes - Making functions available
-to be called later - Setting variables - Running methods Typically, most
+to be called later - Setting variables - Running methods. Typically, most
 code in instrument scripts will be contained within functions
 (procedures in Open Genie language), but it's important to be aware that
 anything that isn't will be included too. For example, if an instrument
