@@ -76,11 +76,15 @@ Return to `Contents`_.
 Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
-A configuration with blocks should be created as for any IBEX instrument on NDEMUONFE.
-On an appropriate system, import `genie\_python`_ to Mantid, and set your instrument to be "MUONFE".
+A configuration_ with blocks should be created as for any IBEX instrument on NDEMUONFE.
+
+.. _configuration: CreateandManageConfigurations
+
+On an appropriate system, import `genie\_python`_ to Mantid, and set your instrument to be "MUONFE", then get the associated blocks.
 
 ::
 
+   set_instrument("MUONFE")
    get_blocks()
 
 You should now get a list of blocks on the remote system. These can then be used as standard for scripting by simply writing to and from those values.
@@ -104,7 +108,7 @@ Gateway settings have been set up to allow NDX and NDL systems to control each i
 
 https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Access-Gateway
 
-In order to limit the systems listed in globals.txt to read only then sending the following command should be entered into an EPICS prompt:
+Machines listed in the globals.txt can be restricted to read only access by sending the following command:
 
 ::
    
