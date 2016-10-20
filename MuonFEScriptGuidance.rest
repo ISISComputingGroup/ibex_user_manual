@@ -16,6 +16,8 @@ Contents
 Starting & Stopping Runs Remotely
 ---------------------------------
 
+### Ensuring the control machine has sufficient permission to begin a run
+
 The relevant code can be found in the github repository:
 
 https://github.com/ISISComputingGroup/mfe_control_scripts
@@ -34,9 +36,9 @@ Note that the script relies on the host machine and user having sufficient DCOM 
     2. Enter the credentials (e.g. NDXMUSR, NDXMUSR\\spudulike, [PASSWORD])
     3. Click "OK"
 
-To write your own scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.
+### Using the script to control the runs
 
-Insert documentation explaining how to start/stop runs on each instrument remotely.
+To write your own scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.
 
 ::
 
