@@ -12,7 +12,7 @@
 
 [[Scripting]]
 
-[[Instrument specific guidance|InstrumentGuidance]]
+[[Instrument Specific Guidance|InstrumentGuidance]]
 
 [[FAQ]]
 
