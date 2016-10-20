@@ -131,7 +131,7 @@ Return to `Contents`_.
 How to Re-apply Settings
 ------------------------
 
-IOCs controlling Power Supply Units have the option to re-apply their set-points (current, voltage, status on/off) the next time they are restarted.
+IOCs controlling Power Supply Units (PSUs) have the option to re-apply their set-points (current, voltage, status on/off) the next time they are restarted. The following may be useful if, for any reason, the PSUs are restarted and lose their set-points, and you need a quick way to re-apply them all at once rather than manually one by one.
 
 To do this, the relevant configuration must be setup in the following way:
 
