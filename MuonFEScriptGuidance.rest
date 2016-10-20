@@ -1,5 +1,7 @@
 .. MuonFEScriptGuidance:
 
+.. _`genie\_python`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
+
 Guidance on Writing Scripts for the Muon Front-End
 ===================================================
 
@@ -75,7 +77,7 @@ Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
 A configuration with blocks should be created as for any IBEX instrument on NDEMUONFE.
-On an appropriate system, import genie_python to Mantid, and set your instrument to be "MUONFE".
+On an appropriate system, import `genie\_python`_ to Mantid, and set your instrument to be "MUONFE".
 
 ::
 
@@ -133,7 +135,7 @@ To do this, the relevant configuration must be setup in the following way:
 #. In the ``IOCs`` tab, locate the correct IOC and make sure both the ``Auto-start?`` and ``Auto-restart?`` boxes for the IOC are checked.
 #. In the ``IOC Macros`` tab, select the correct IOC and set the macro ``SP_AT_STARTUP`` to ``YES`` (default is ``NO``).
 
-The set-points can be re-applied by reloading the current configuration (which will restart the IOCs), with the following genie_python command:
+The set-points can be re-applied by reloading the current configuration (which will restart the IOCs), with the following `genie\_python`_ command:
 
 ::
 
