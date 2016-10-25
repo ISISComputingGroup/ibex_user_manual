@@ -14,10 +14,9 @@ List of Frequently Asked Questions
 #. `How do I start IBEX Server?`_
 #. `How do I stop IBEX Server?`_
 #. `Can I run IBEX and SECI at the same time?`_
+#. `Can I switch from running IBEX to SECI and vice-versa?`_
 #. `Can I write scripts to control my experiment?`_
 #. `Where can I learn about Python?`_
-#. `This is the ninth question`_
-#. `This is the tenth question`_
 
 .. _`How do I report a problem with IBEX?`:  
 
@@ -67,6 +66,14 @@ Return_
 
 Return_
 
+.. _`Can I switch from running IBEX to SECI and vice-versa?`:
+
+**Q: Can I switch from running IBEX to SECI and vice-versa?**
+
+**A:** Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful.  You cannot have IBEX and SECI running simultaneously - you must fully shut-down the one control system before you can start running the other control system.  You should be especially careful to ensure that you do not inadvertently leave a run executing on the DAE when switching between control systems.
+
+Return_
+
 .. _`Can I write scripts to control my experiment?`:
 
 **Q: Can I write scripts to control my experiment?**
@@ -83,14 +90,3 @@ Return_
 
 Return_
 
-.. _`This is the ninth question`:
-
-This is the ninth answer.
-
-Return_
-
-.. _`This is the tenth question`:
-
-This is the tenth answer.
-
-Return_
