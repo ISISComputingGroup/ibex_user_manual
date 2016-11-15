@@ -80,4 +80,4 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in t
 
 ::
 
-netsh advfirewall firewall add rule name="Control SVCS Machine" dir=in action=allow protocol=UDP remoteip=130.246.51.171 remoteport=5064 profile=any
+    netsh advfirewall firewall add rule name="Control SVCS Machine" dir=in action=allow protocol=UDP remoteip=130.246.51.171 remoteport=5064 profile=any
