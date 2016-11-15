@@ -74,4 +74,10 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in t
 5. Run the command ``install_client.bat``. This will copy the contents of the above directory 
    to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
-6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``.
+6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``
+
+7. Open up the firewall ports needed by the client by running the following command as Administrator in a command window:
+
+::
+
+    netsh advfirewall firewall add rule name="Control SVCS Machine" dir=in action=allow protocol=UDP remoteip=130.246.51.171 remoteport=5064 profile=any
