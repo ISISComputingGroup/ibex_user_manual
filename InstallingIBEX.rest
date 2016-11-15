@@ -38,16 +38,13 @@ Installation
       mkdir C:\Instrument\Apps\Python
       cd C:\Instrument
 
-2. In the command window type one of the following commands:
-
-   a) If your your PC is in the ISIS domain (i.e. it is an ISIS PC):
+2. If your your PC is in the ISIS domain (i.e. it is an ISIS PC) then in the command window type:
 
 ::
 
       net use Z: \\isis\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
 
-or
-   b) If your your PC is not in the ISIS domain (i.e. it is not an ISIS PC):
+If your your PC is not in the ISIS domain (i.e. it is not an ISIS PC) then in the command window type:
 
 ::
 
