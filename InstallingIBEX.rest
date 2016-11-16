@@ -63,8 +63,10 @@ Change to the ``Z:`` drive:
 
       2.0.0
       2.1.0
+      2.2.0
+      ... etc.
 
-Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in the above example).
+Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in the above example).
 
 4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
 
