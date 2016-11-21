@@ -83,7 +83,7 @@ Return_
 
 Return_
 
-.. _`What do I look at if there are no RAW frames when Collecting Data`
+.. _`What do I look at if there are no RAW frames when Collecting Data?`:
 **Q: What do I look at if there are no RAW frames when Collecting Data?**
 
 **A:** If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
@@ -98,7 +98,7 @@ Consider swapping the timing source to help diagnose the problem.
 
 Return_
 
-.. _`What do I look at if there are no GOOD frames when Collecting Data?`
+.. _`What do I look at if there are no GOOD frames when Collecting Data?`:
 
 **Q: What do I look at if there are no GOOD frames when Collecting Data?**
 
