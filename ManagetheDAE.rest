@@ -3,7 +3,7 @@
 Manage the DAE
 ==============
 
-The Data Acquisition Electronics (DAE) is the hardware where the neutron or muon data is collected. The DAE is controlled by the ICP (see [[KeyConceptsinIBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
+The Data Acquisition Electronics (DAE) is the hardware where the neutron or muon data is collected. The DAE is controlled by the ICP (see [[Key Concepts in IBEX|KeyConceptsinIBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
 
 The DAE view communicates with the ICP to control the DAE.
 
@@ -77,15 +77,24 @@ The Experiment Setup comprises three sub-tabs.  Each of these 3 sub-tabs will ha
 Time Channels
 ~~~~~~~~~~~~~
 
+The time channels tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and size distributions (using mode) you can optimise the time bins in the final spectra. The time channels can be set using the table below or if more regiemes are required a file can be specified. The files are part of the settings stored in the `configurations/tcb` directory.
+
 Return to `Contents`_.
 
 Data Acquisition
 ~~~~~~~~~~~~~~~~
 
+The data acquisition tab allow you to set up how the data is collected. The wiring table, detector table and spectra table can be set so that the DAE knows how to collect data from the detectors and turn it into spectra. These files are part of the settings stored in the `configurations/tables` directory.
+The vetos section allows different vetos to be turned on.
+The muon section allows the DAE to collect muon data.
+The Timing section allows timing source and auto save frequency to be set.
+
 Return to `Contents`_.
 
 Periods
 ~~~~~~~
+
+The period tab allows the period types and needed parameters to be setup within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python's `change_period` command. The other options are Harware controlled and these are internal (within the DAE) or external control. 
 
 Return to `Contents`_.
 
