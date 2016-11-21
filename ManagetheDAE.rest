@@ -77,7 +77,7 @@ The Experiment Setup comprises three sub-tabs.  Each of these 3 sub-tabs will ha
 Time Channels
 ~~~~~~~~~~~~~
 
-The time channels tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and size distributions (using mode) you can optimise the time bins in the final spectra. The time channels can be set using the table below or if more regiemes are required a file can be specified. The files are part of the settings stored in the `configurations/tcb` directory.
+The time channels tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and size distributions (using mode) you can optimise the time bins in the final spectra. The time channels can be set using the table below or if more regimes are required a file can be specified. The files are part of the settings stored in the `configurations/tcb` directory.
 
 Return to `Contents`_.
 
