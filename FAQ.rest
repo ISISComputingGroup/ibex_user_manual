@@ -85,7 +85,9 @@ Return_
 
 .. _`There are no RAW frames when Collecting Data`:
 
-If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
+**Q: There are no RAW frames when Collecting Data**
+
+**A:** If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
 
 Timing is ISIS:
     Either ISIS is offor there is a problem with the TOF (ISIS) signal. Check other instruments to find out.
@@ -99,7 +101,8 @@ Return_
 
 .. _`There are no GOOD frames when Collecting Data`:
 
-If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
+**Q: There are no GOOD frames when Collecting Data: **
+**A:** If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
 
 FIFO veto:
     Too many counts in a frame, e.g. noisy detector, jaws opened too wide
