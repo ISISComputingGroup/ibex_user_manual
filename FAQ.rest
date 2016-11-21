@@ -16,8 +16,8 @@ List of Frequently Asked Questions
 #. `Can I run IBEX and SECI at the same time?`_
 #. `Can I write scripts to control my experiment?`_
 #. `Where can I learn about Python?`_
-#. `This is the ninth question`_
-#. `This is the tenth question`_
+#. `There are no RAW frames when Collecting Data`_
+#. `There are no GOOD frames when Collecting Data`_
 
 .. _`How do I report a problem with IBEX?`:  
 
@@ -83,14 +83,31 @@ Return_
 
 Return_
 
-.. _`This is the ninth question`:
+.. _`There are no RAW frames when Collecting Data`:
 
-This is the ninth answer.
+If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
+
+Timing is ISIS:
+    Either ISIS is offor there is a problem with the TOF (ISIS) signal. Check other instruments to find out.
+
+Timing is SMP:
+    Chopper is not spinning or there is a problem with the signal
+    
+Consider swapping the timing source to help diagnose the problem. 
 
 Return_
 
-.. _`This is the tenth question`:
+.. _`There are no GOOD frames when Collecting Data`:
 
-This is the tenth answer.
+If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
+
+FIFO veto:
+    Too many counts in a frame, e.g. noisy detector, jaws opened too wide
+
+SMP veto:
+    chopper out of phase with ISIS, or no ISIS signal
+
+External veto{0-3}:
+    could be an additional chopper, the shutter or moderator
 
 Return_
