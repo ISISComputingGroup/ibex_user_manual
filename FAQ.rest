@@ -16,8 +16,8 @@ List of Frequently Asked Questions
 #. `Can I run IBEX and SECI at the same time?`_
 #. `Can I write scripts to control my experiment?`_
 #. `Where can I learn about Python?`_
-#. `There are no RAW frames when Collecting Data`_
-#. `There are no GOOD frames when Collecting Data`_
+#. `What do I look at if there are no RAW frames when Collecting Data?`_
+#. `What do I look at if there are no GOOD frames when Collecting Data?`_
 
 .. _`How do I report a problem with IBEX?`:  
 
@@ -83,9 +83,9 @@ Return_
 
 Return_
 
-.. _`There are no RAW frames when Collecting Data`:
+.. _`What do I look at if there are no RAW frames when Collecting Data?`
 
-**Q: There are no RAW frames when Collecting Data**
+**Q: What do I look at if there are no RAW frames when Collecting Data?**
 
 **A:** If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
 
@@ -99,9 +99,10 @@ Consider swapping the timing source to help diagnose the problem.
 
 Return_
 
-.. _`There are no GOOD frames when Collecting Data`:
+.. _`What do I look at if there are no GOOD frames when Collecting Data?`
 
-**Q: There are no GOOD frames when Collecting Data: **
+**Q: What do I look at if there are no GOOD frames when Collecting Data?**
+
 **A:** If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
 
 FIFO veto:
