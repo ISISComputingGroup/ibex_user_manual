@@ -20,7 +20,7 @@ Contents
 #. `Run Information`_
 #. `Spectra Plots`_
 #. `Diagnostics`_
-#. `Vetos`_
+#. `Vetoes`_
 
 Run Summary
 -----------
@@ -84,7 +84,7 @@ Return to `Contents`_.
 Data Acquisition
 ~~~~~~~~~~~~~~~~
 
-The data acquisition tab allow you to set up how the DAE will collect the data. The page is split into several sections:
+The data acquisition tab allows you to set up how the DAE will collect the data. The page is split into several sections:
 
 Tables:
     The wiring table, detector table and spectra table set the files used when turning signals generated at the detectors into spectra. These files are stored in the ``configurations/tables`` directory in settings on the instrument.
@@ -106,7 +106,7 @@ Return to `Contents`_.
 Periods
 ~~~~~~~
 
-The period tab allows the period types and needed parameters to be setup within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python's `change_period` command. The other options are Harware controlled and these are internal (within the DAE) or external control. 
+The period tab allows the period types and needed parameters to be setup within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python's ``change_period`` command. The other options are Hardware controlled and these are internal (within the DAE) or external control. 
 
 Return to `Contents`_.
 
