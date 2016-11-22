@@ -45,25 +45,25 @@ The message log area lets you view any messages issued by the ICP.  The message 
 
 The Run Summary tab also provides a number of buttons to control the acquisition of data.
 
-Begin Run
+Begin Run:
    Click on the ``BEGIN RUN`` button to start a new run.  Beginning a run instructs the ICP to tell the DAE to start collecting data. The DAE’s run status will change to RUNNING (which is reflected in the ``Run Status`` field and in the IBEX [[Dashboard]].
 
-End Run
+End Run:
    Click on the ``END RUN`` button to terminate the current run.  Ending a run instructs the ICP to tell the DAE to stop collecting data.  It also instructs the ICP to write the data collected during the run to a file. The DAE’s run status will change to SETUP.
 
-Pause Run
+Pause Run:
    Click on the ``PAUSE RUN`` button to halt (but not end) the current run.  Pausing a run instructs the ICP to tell the DAE to pause data collection indefinitely. The DAE’s run status will change to PAUSED.  The DAE's status will remain PAUSED until it is instructed to RESUME.
 
-Resume Run
+Resume Run:
    Click on the ``RESUME RUN`` button to resume a previously paused run.  Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The DAE’s run status will return to RUNNING.
 
-Abort Run
+Abort Run:
    Click on the ``ABORT RUN`` button to abort the current run.  Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP.
 
-Cancel Abort 
+Cancel Abort:
    Click on the ``CANCEL ABORT`` button to cancel the abort process.
 
-Save Run 
+Save Run: 
    Click on the ``SAVE RUN`` button to save the current run.
 
 Return to `Contents`_.
@@ -77,17 +77,29 @@ The Experiment Setup comprises three sub-tabs.  Each of these 3 sub-tabs will ha
 Time Channels
 ~~~~~~~~~~~~~
 
-The time channels tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and size distributions (using mode) you can optimise the time bins in the final spectra. The time channels can be set using the table below or if more regimes are required a file can be specified. The files are part of the settings stored in the `configurations/tcb` directory.
+The time channels tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and size distributions (using mode) you can optimise the time bins in the final spectra. The time channels can be set using the table below or if more regimes are required a file can be specified. The files are stored in the ``configurations/tcb`` directory in the settings on the instrument.
 
 Return to `Contents`_.
 
 Data Acquisition
 ~~~~~~~~~~~~~~~~
 
-The data acquisition tab allow you to set up how the data is collected. The wiring table, detector table and spectra table can be set so that the DAE knows how to collect data from the detectors and turn it into spectra. These files are part of the settings stored in the `configurations/tables` directory.
-The vetos section allows different vetos to be turned on.
-The muon section allows the DAE to collect muon data.
-The Timing section allows timing source and auto save frequency to be set.
+The data acquisition tab allow you to set up how the DAE will collect the data. The page is split into several sections:
+
+Tables:
+    The wiring table, detector table and spectra table set the files used when turning signals generated at the detectors into spectra. These files are stored in the ``configurations/tables`` directory in settings on the instrument.
+
+Monitor:
+    Set which spectra number is used for the monitor counts and between what times the spectra should be integrated to return the counts.
+
+Vetoes:
+    Set which [[vetoes|KeyConceptsinIBEX#vetoes]] are active.
+
+Muons:
+    Set if and how to collect muon data.
+
+Timing:
+    Set the source of the [[timing signal|KeyConceptsinIBEX#dae-timing-sources]] and how often the data should be auto saved.
 
 Return to `Contents`_.
 
@@ -101,7 +113,7 @@ Return to `Contents`_.
 Run Information
 ---------------
 
-The Run Information Tab provides a more compete summary of the DAE setup than the Run Summary tab.  All the fields on this tab are read-only.
+The Run Information Tab provides a more complete summary of the DAE setup than the Run Summary tab.  All the fields on this tab are read-only.
 
 Return to `Contents`_.
 
@@ -118,9 +130,9 @@ Diagnostics
 
 Return to `Contents`_.
 
-Vetos
------
+Vetoes
+------
 
-The Vetos tab shows a summary of the vetoes that are in force for the current run.  This information is read-only.  Vetoes can only be changed prior to the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
+The Vetoes tab shows a summary of the vetoes that are in force for the current run.  This information is read-only.  Vetoes can only be changed prior to the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
 
 Return to `Contents`_.
