@@ -78,3 +78,26 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.1.0`` in t
 ::
 
     netsh advfirewall firewall add rule name="Control SVCS Machine" dir=in action=allow protocol=UDP remoteip=130.246.51.171 remoteport=5064 profile=any
+
+Installation Layout
+-------------------
+
+After installation the current paths are used by the various components.
+
++-------------------------------------------------------+-------------------------------------------------------------------+
+| Item                                                  | Path                                                              +
++=======================================================+===================================================================+
+|IBEX Client                                            |  ``C:\Instrument\Apps\Client``                                    | 
++-------------------------------------------------------+-------------------------------------------------------------------|
+| genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python``                                     |
++-------------------------------------------------------+-------------------------------------------------------------------|
+| EPICS utilities                                       | ``C:\Instrument\Apps\Python\EPICS_UTILS``                         |
++-------------------------------------------------------+-------------------------------------------------------------------|
+| Server Code and executables                           | ``c:\Instrument\Apps\EPICS``                                      |
++-------------------------------------------------------+-------------------------------------------------------------------|
+| Server Settings                                       | ``C:\Instrument\Settings\config\<Instument name>\configurations`` |
++-------------------------------------------------------+-------------------------------------------------------------------|
+| Common settings files (e.g. sensor calibration files) | ``C:\Instrument\Settings\config\common``                          |
++-------------------------------------------------------+-------------------------------------------------------------------|
+| Server logs, autosave and database files              |  ``C:\Instrument\Var``                                            |
++-------------------------------------------------------+-------------------------------------------------------------------|
