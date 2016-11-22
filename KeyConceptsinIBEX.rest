@@ -130,6 +130,8 @@ Environment/Period Card
 
 The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.
 
+Settings for the DAE can be read and changed either through the [[IBEX client|ManagetheDAE]] or commands [[issued in scripts|scripting]].
+
 What does the DAE do?
 ~~~~~~~~~~~~~~~~~~~~~
 The DAE:
