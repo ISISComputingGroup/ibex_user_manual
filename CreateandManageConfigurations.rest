@@ -197,7 +197,7 @@ Return to `Contents`_.
 
 IOC Macros
 ~~~~~~~~~~
-*Note: In Ibex versions newer than 3.1.0 the IOC macros tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
+*Note: In Ibex versions newer than 3.1.0 the IOC macros are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC Macros are configurable values that IBEX can supply to the IOC when the IOC is started.  For example, if the IOC is controlling a serial device attached to a COM port, you can use an macro to identify the appropriate port to the IOC.  This is especially useful if the device moves between instruments and may be attached to different COM ports on different instruments.  Another example of an IOC macro might be the name of a calibration file.
 
@@ -222,7 +222,7 @@ Return to `Contents`_.
 
 IOC PV Values
 ~~~~~~~~~~~~~
-*Note: In Ibex versions newer than 3.1.0 the IOC PV Values tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
+*Note: In Ibex versions newer than 3.1.0 the IOC PV Values are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example setting a experimental parameter on first load. 
 
@@ -232,7 +232,7 @@ Return to `Contents`_.
 
 IOC PV Sets
 ~~~~~~~~~~~
-*Note: In Ibex versions newer than 3.1.0 the IOC PV Sets tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
+*Note: In Ibex versions newer than 3.1.0, PV Sets are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC PV Sets is an experimental feature within IBEX **do not** use this before talking to the IBEX team. It can be used to load in autosaved values from a specific file setup beforehand.
 
