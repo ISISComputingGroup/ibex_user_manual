@@ -93,16 +93,27 @@ Return to `Contents`_.
 
 IOCs Tab
 ~~~~~~~~
-The IOCs tab lists all the IOCs available on the instrument.  In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
 
-The [[KeyConceptsinIBEX]] page describes what an IOC is.
+*Note: Managing IOCs in a configuration has changed for releases newer than IBEX 3.1.0. This section contains instructions for both versions. We have provided screenshots of the IOCs tab in each version to help determine which one you are using.*
 
-To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes as required
+The [[KeyConceptsinIBEX]] page describes what an IOC is. In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
 
-- Auto start: The IOC will be started/restarted whenever the configuration is changed.
-- Auto restart: This setting only applies if auto start has been selected as well, otherwise it does nothing. If both auto start and auto restart are selected then if the IOC is terminated unexpectedly, it will be automatically restarted. If the IOC is stopped from the client or writing to the appropriate PV then it will not be restarted.
+Up to Version 3.1.0:
+   The IOCs tab lists all the IOCs available on the instrument. To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes as required
 
-**Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
+   - Auto start: The IOC will be started/restarted whenever the configuration is changed.
+   - Auto restart: This setting only applies if auto start has been selected as well, otherwise it does nothing. If both auto start and auto restart are selected then if the IOC is terminated unexpectedly, it will be automatically restarted. If the IOC is stopped from the client or writing to the appropriate PV then it will not be restarted.
+
+   **Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
+
+Newer Versions:
+   IOCs need to be explicitly added to the configuration. The IOCs tab shows an overview of all IOCs that are part of the currently viewed configuration. Below the overview table, the tab contains three buttons to add, edit or delete an IOC.
+
+   - The "Edit IOC"-button opens a dialog containing all the settings related to the selected IOC: the general Simulation level and Auto-(re)start settings at the top, as well as tabs for setting `IOC Macros`_, `IOC PV Values`_ and `IOC PV Sets`_.
+   - The "Add IOC"-button opens a dialog which lets you choose from a list of all IOCs available on the instrument. Confirming your selection will take you to the "Edit IOC" dialog for the selected IOC.
+   - The "Delete IOC"-button allows you to delete IOCs from the list and the configuration. This works with multiple selection, too.
+
+
 
 Return to `Contents`_.
 
@@ -188,6 +199,7 @@ Return to `Contents`_.
 
 IOC Macros
 ~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0 the IOC macros tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
 
 IOC Macros are configurable values that IBEX can supply to the IOC when the IOC is started.  For example, if the IOC is controlling a serial device attached to a COM port, you can use an macro to identify the appropriate port to the IOC.  This is especially useful if the device moves between instruments and may be attached to different COM ports on different instruments.  Another example of an IOC macro might be the name of a calibration file.
 
@@ -212,6 +224,7 @@ Return to `Contents`_.
 
 IOC PV Values
 ~~~~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0 the IOC PV Values tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
 
 IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example setting a experimental parameter on first load. 
 
@@ -221,6 +234,7 @@ Return to `Contents`_.
 
 IOC PV Sets
 ~~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0 the IOC PV Sets tab has been moved into the new "Edit IOC"-Dialog. See section* `IOCs Tab`_.
 
 IOC PV Sets is an experimental feature within IBEX **do not** use this before talking to the IBEX team. It can be used to load in autosaved values from a specific file setup beforehand.
 
