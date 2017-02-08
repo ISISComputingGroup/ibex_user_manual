@@ -13,10 +13,10 @@ Contents
 #. `Creating a Configuration`_
 
    #. `Summary`_
+   #. `Components Tab`_
    #. `IOCs Tab`_
    #. `Blocks Tab`_
    #. `Groups Tab`_
-   #. `Components Tab`_
    #. `IOC Macros`_
    #. `IOC PV Values`_
    #. `IOC PV Sets`_
@@ -32,13 +32,13 @@ Creating a Configuration
 To create a configuration:
 
 #. Select ``Configurations > New`` from the ``Configuration`` menu.
-#. IBEX displays the Edit Configuration dialog, which contains eight tabs.  
+#. IBEX displays the Edit Configuration dialog, which contains the following eight sections:  
 
    #. Summary
+   #. Components
    #. IOCs
    #. Blocks
    #. Groups
-   #. Components
    #. IOC Macros
    #. IOC PV Values
    #. IOC PV Sets
@@ -61,6 +61,35 @@ Cancel
 Return to `Contents`_.
 
 We'll describe each of the Edit Configuration dialog tabs in turn.
+
+Summary
+~~~~~~~
+
+The Summary allows you to create a short description for your configuration.  It also allows you to associate a default synoptic view with your configuration.
+
+The summary is displayed at the top of the dialog and contains the following fields:
+
+Name
+   This is a read-only field.  It is defined when you save the configuration.  When you are creating a new configuration, the ``Name:`` field will be empty.
+
+Description
+   Provide a short description of your configuration.  Configuration names can sometime be a little cryptic; a short description will help you to better remember the purpose of the configuration.
+
+Synoptic
+   IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
+
+Return to `Contents`_.
+
+Components Tab
+~~~~~~~~~~~~~~
+
+Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
+
+The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
+
+Use the arrow buttons to move components between the two lists.  
+
+Return to `Contents`_.
 
 IOCs Tab
 ~~~~~~~~
@@ -157,17 +186,6 @@ You can select multiple blocks to be added (or removed) from a group using the `
 
 Return to `Contents`_.
 
-Components Tab
-~~~~~~~~~~~~~~
-
-Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
-
-The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
-
-Use the arrow buttons to move components between the two lists.  
-
-Return to `Contents`_.
-
 IOC Macros
 ~~~~~~~~~~
 
@@ -207,24 +225,6 @@ IOC PV Sets
 IOC PV Sets is an experimental feature within IBEX **do not** use this before talking to the IBEX team. It can be used to load in autosaved values from a specific file setup beforehand.
 
 **Note**: The value of any PVs will remain until it is set to something else. So if a configuration does this auto load then loading another configuration will not set it back to what it was before.
-
-Return to `Contents`_.
-
-Summary
-~~~~~~~
-
-The Summary tab allows you to create a short description for your configuration.  It also allows you to associate a default synoptic view with your configuration.
-
-When you click on the Summary tab, IBEX displays the following fields:
-
-Name
-   This is a read-only field.  It is defined when you save the configuration.  When you are creating a new configuration, the ``Name:`` field will be empty.
-
-Description
-   Provide a short description of your configuration.  Configuration names can sometime be a little cryptic; a short description will help you to better remember the purpose of the configuration.
-
-Synoptic
-   IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
 
 Return to `Contents`_.
 
