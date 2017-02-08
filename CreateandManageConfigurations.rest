@@ -94,7 +94,7 @@ Return to `Contents`_.
 IOCs Tab
 ~~~~~~~~
 
-*Note: Managing IOCs in a configuration has changed for releases newer than IBEX 3.1.0. This section contains instructions for both versions. We have provided screenshots of the IOCs tab in each version to help determine which one you are using.*
+*Note: Managing IOCs in a configuration has changed for releases newer than IBEX 3.1.0. This section contains instructions for both versions. You can see your client version under* ``Help > About`` *in the IBEX Window.*
 
 The [[KeyConceptsinIBEX]] page describes what an IOC is. In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
 
@@ -112,8 +112,6 @@ Newer Versions:
    - The "Edit IOC"-button opens a dialog containing all the settings related to the selected IOC: the general Simulation level and Auto-(re)start settings at the top, as well as tabs for setting `IOC Macros`_, `IOC PV Values`_ and `IOC PV Sets`_.
    - The "Add IOC"-button opens a dialog which lets you choose from a list of all IOCs available on the instrument. Confirming your selection will take you to the "Edit IOC" dialog for the selected IOC.
    - The "Delete IOC"-button allows you to delete IOCs from the list and the configuration. This works with multiple selection, too.
-
-
 
 Return to `Contents`_.
 
