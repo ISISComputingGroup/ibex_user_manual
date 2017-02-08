@@ -12,6 +12,7 @@ Contents
 
 #. `Creating a Configuration`_
 
+   #. `Summary`_
    #. `IOCs Tab`_
    #. `Blocks Tab`_
    #. `Groups Tab`_
@@ -19,7 +20,6 @@ Contents
    #. `IOC Macros`_
    #. `IOC PV Values`_
    #. `IOC PV Sets`_
-   #. `Summary`_
 
 #. `Editing a Configuration`_
 #. `Edit Current Configuration ...`_
@@ -34,6 +34,7 @@ To create a configuration:
 #. Select ``Configurations > New`` from the ``Configuration`` menu.
 #. IBEX displays the Edit Configuration dialog, which contains eight tabs.  
 
+   #. Summary
    #. IOCs
    #. Blocks
    #. Groups
@@ -41,7 +42,6 @@ To create a configuration:
    #. IOC Macros
    #. IOC PV Values
    #. IOC PV Sets
-   #. Summary
 
 #. At the bottom of the dialog are two buttons
 
