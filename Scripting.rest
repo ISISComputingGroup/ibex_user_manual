@@ -200,7 +200,7 @@ For the most part, this is the same as
 Script directory
 ~~~~~~~~~~~~~~~~
 
-Instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst``. O
+Instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst``.
 
 Script structure
 ~~~~~~~~~~~~~~~~
