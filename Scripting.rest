@@ -200,15 +200,7 @@ For the most part, this is the same as
 Script directory
 ~~~~~~~~~~~~~~~~
 
-Unlike user scripts, instrument scripts should be placed in
-``C:\Instrument\Settings\config\[MACHINE_NAME]\Python``. Once the script
-has been created, edit the file ``inst.py`` in the same directory and
-add the line ``from [MY_FILE] import *`` where ``[MY_FILE]`` is the name
-of your file without the ``.py`` file extension. This will include the
-new script in the list of scripts loaded at startup. Best to avoid file
-names containing spaces, it `can be
-done <http://stackoverflow.com/questions/9123517/how-do-you-import-a-file-in-python-with-spaces-in-the-name>`__
-but it's easier to just not do it.
+Instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst``. O
 
 Script structure
 ~~~~~~~~~~~~~~~~
