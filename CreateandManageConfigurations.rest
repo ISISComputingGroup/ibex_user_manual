@@ -170,7 +170,7 @@ Logging Settings
 
 **PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
 
-**Note:** Blocks that have been inherited from a component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
 Return to `Contents`_.
 
@@ -303,7 +303,7 @@ To delete a configuration:
 Editing a global setting
 ------------------------
 
-Global settings are stored in the configuration directory in a file called `globals.txt` file (<Setting directory>\\config\\<instrument name>\\configurations). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
+Global settings are stored in the configuration directory in a file called `globals.txt` file (`<Setting directory>\\config\\<instrument name>\\configurations`). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
 
 `<IOC name>__<Macro Name>=<value>`
 
