@@ -307,6 +307,6 @@ Global settings are stored in the configuration directory in a file called ``glo
 
 ``<IOC name>__<Macro Name>=<value>``
 
-where IOC Name is the name of the IOC on which the macro is set, macro name is the name of the macro and value is the value is should have. (**N.B.** that is a double underscore).
+where ``IOC name`` is the name of the IOC on which the macro is set, ``Macro name`` is the name of the macro and value is the value it should have. (**N.B.** that is a double underscore between ``IOC name`` and ``Macro name``).
 
 Return to `Contents`_.
