@@ -301,9 +301,9 @@ To delete a configuration:
 
 
 Editing a global setting
---------------------
+------------------------
 
-Global setting are stored in the configuration directory in a file called `globals.txt` file (<Setting directory>\\config\\<instrument name>\\configurations). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
+Global settings are stored in the configuration directory in a file called `globals.txt` file (<Setting directory>\\config\\<instrument name>\\configurations). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
 
 `<IOC name>__<Macro Name>=<value>`
 
