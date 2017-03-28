@@ -3,7 +3,7 @@
 Create & Manage Configurations
 ================================
 
-A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use in order to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments. 
+A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use in order to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments. In some cases there are macro settings which are global for the instrument these are set outside of the GUI and override the values in the configuration. These are setting which should not change, e.g. the IP address of the Galil motors (see the section below on how to alter these). 
 
 **Please note:** An IBEX configuration is **not** the same as a Mantid configuration.  IBEX and Mantid view instruments in fundamentally different ways, which means that their respective configurations are not interchangeable.
 
@@ -25,6 +25,7 @@ Contents
 #. `Edit Current Configuration ...`_
 #. `Load a Configuration`_
 #. `Delete a Configuration`_
+#. `Editing a global setting`_
 
 Creating a Configuration
 ------------------------
@@ -296,5 +297,16 @@ To delete a configuration:
 **Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration, load a different configuration, then delete the previously loaded configuration.
 
 **Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experimental Controls team - it may be possible to recover the deleted configuration.
+
+
+
+Editing a global setting
+--------------------
+
+Global setting are stored in the configuration directory in a file called `globals.txt` file (<Setting directory>\\config\\<instrument name>\\configurations). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
+
+`<IOC name>__<Macro Name>=<value>`
+
+where IOC Name is the name of the IOC on which the macro is set, macro name is the name of the macro and value is the value is should have. (NB that is a double underscore).
 
 Return to `Contents`_.
