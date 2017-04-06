@@ -368,11 +368,35 @@ code in future (hint: that person might be you!).
 Some examples
 ========================
 
-Reads the power of a temperature controller and gradually ramp it down over a few minutes
+Sequentially sets a position (e.g. sample changer) and waits for a fixed number of uamps
 
 ::
 
-    from genie_python import g
+
+    from genie_python import genie as g    
+    
+    def loop_over_samples(block_name, position_names, charge_to_wait_for):
+        """
+        Begins a run. Loops over a set of sample positions. Ends the run
+        
+        :param block_name: The name of the block containing the sample position
+        :param position_names: A collection of the positions to loop over
+        :param uamps_to_wait_for: The number of uamps to wait for between samples
+        """
+        g.begin()
+        total_charge_to_wait_for = 0
+        for position_name in position_names:
+            print "Moving sample changer to position: {0}".format(position_name)
+            g.cset(block_name, position_name)
+            total_charge_to_wait_for += charge_to_wait_for
+            g.waitfor_uamps(total_charge_to_wait_for)
+        g.end()
+
+Reads the value of a block and moves it through a series of intervals to a new values taking a fixed time
+
+::
+
+    from genie_python import genie as g
     
     def ramp(time, block_name, steps=100, final_value=0.0):
         """
