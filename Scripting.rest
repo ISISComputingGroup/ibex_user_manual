@@ -427,7 +427,7 @@ Reads the value of a block and moves it through a series of intervals to a new v
             g.cset(block_name, step_value)
             print "Ramping to: {0} Target value: {1}".format(step_value, final_value)
             g.waitfor_time(seconds=step_duration)
-            new_block_value = g.cget(block_name)
+            new_block_value = g.cget(block_name)['value']
             if not values_match(new_block_value, step_value):
                 print "WARNING: The current value for block {0}, {1}, does not match the target value of {2}".format(block_name, new_block_value, step_value)
                 
