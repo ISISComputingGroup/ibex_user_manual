@@ -408,7 +408,7 @@ Reads the value of a block and moves it through a series of intervals to a new v
         :param final_value: The value we want to ramp to
         """
         
-        initial_value = g.cget(block_name)
+        initial_value = g.cget(block_name)['value']
         if initial_value is None:
             print "Unable to determine temperature from block {0}. No action will be taken".format(block_name)
             return
