@@ -411,6 +411,7 @@ Reads the value of a block and moves it through a series of intervals to a new v
         initial_value = g.cget(block_name)
         if initial_value is None:
             print "Unable to determine temperature from block {0}. No action will be taken".format(block_name)
+            return
         
         step_value = initial_value
         step_size = (final_value - initial_value)/steps
