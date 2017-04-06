@@ -16,6 +16,7 @@ beginner and novice user.
 -  `Creating and running user
    scripts <#creating-and-running-user-scripts>`__
 -  `Tips from the developers <#tips-from-the-developers>`__
+-  `Some examples <#some-examples>`__
 
 There is also some specific [[scripting advice for the Muon Front End|MuonFEScriptGuidance]]
 
@@ -363,3 +364,47 @@ is wrong and wouldn't work. Instead, we could have written:
 
 which would have worked and makes it clear for whoever comes to edit the
 code in future (hint: that person might be you!).
+
+Some examples
+========================
+
+Reads the power of a temperature controller and gradually ramp it down over a few minutes
+
+::
+
+    from genie_python import g
+    
+    def ramp(time, block_name, steps=100, final_value=0.0):
+        """
+        Moves a block between an initial and target value over a sequence of steps, waiting a fixed time at each step.
+        
+        :param time: The overall time to take to ramp. Time will be split evenly between steps
+        :param nsteps: The number of steps to take during the ramp
+        :param block_name: The name of the block whose value to set
+        :param final_value: The value we want to ramp to
+        """
+        
+        initial_value = g.cget(block_name)
+        if initial_value is None:
+            print "Unable to determine temperature from block {0}. No action will be taken".format(block_name)
+        
+        step_value = initial_value
+        step_size = (final_value - initial_value)/steps
+        step_duration = time/steps
+        
+        def values_match(v1, v2):
+            tolerance = 0.001
+            small = 1.0e-20
+            return 2*abs(v1-v2)/(abs(v1)+abs(v2)+small) < tolerance
+        
+        while not values_match(step_value, final_value):
+            step_value += step_size
+            g.cset(block_name, step_value)
+            print "Ramping to: {0} Target value: {1}".format(step_value, final_value)
+            g.waitfor_time(seconds=step_duration)
+            new_block_value = g.cget(block_name)
+            if not values_match(new_block_value, step_value):
+                print "WARNING: The current value for block {0}, {1}, does not match the target value of {2}".format(block_name, new_block_value, step_value)
+                
+        print "Ramp complete"
+            
