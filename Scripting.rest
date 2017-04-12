@@ -233,6 +233,8 @@ script was:
 then the user could only access ``print_a()`` and the value could not be
 changed.
 
+To reload the inst module, for instance if you had updated the script or added a new script, you should issue the command ``reload(inst)``.
+
 Running
 -------
 
