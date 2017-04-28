@@ -18,6 +18,7 @@ List of Frequently Asked Questions
 #. `Where can I learn about Python?`_
 #. `What do I look at if there are no RAW frames when Collecting Data?`_
 #. `What do I look at if there are no GOOD frames when Collecting Data?`_
+#. `Can I change what my graphs look like in the log plotter or OPI?`_
 
 .. _`How do I report a problem with IBEX?`:  
 
@@ -114,3 +115,15 @@ External veto{0-3}:
     could be an additional chopper, the shutter or moderator
 
 Return_
+
+.. _`Can I change what my graphs look like in the log plotter or OPI?`:
+
+**Q: Can I change what my graphs look like in the log plotter or OPI?**
+
+**A: Yes**, there are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings 
+
+#. Show the tool bar 
+    #. In the log plotter view this is already shown
+    #. On an OPI right click and select Show/Hide Graph Toolbar
+#. The click the settings button (left most icon with a spanner and screwdriver on it)
+#. Click on the tabs to find what you want to change. Graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third
