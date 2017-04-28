@@ -367,6 +367,11 @@ is wrong and wouldn't work. Instead, we could have written:
 which would have worked and makes it clear for whoever comes to edit the
 code in future (hint: that person might be you!).
 
+Making Errors Standout in Python Console
+----------------------------------------
+
+Python console will display most output in black this is from the standard out but will display error information in red. Error information should be written to standard error using `sys.stderr.write("error\n")`.
+
 Some examples
 ========================
 
