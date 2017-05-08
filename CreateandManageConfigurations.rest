@@ -3,7 +3,7 @@
 Create & Manage Configurations
 ================================
 
-A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use in order to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments.
+A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use in order to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments. In some cases there are macro settings which are global for the instrument these are set outside of the GUI and override the values in the configuration. These are setting which should not change, e.g. the IP address of the Galil motors (see the section below on how to alter these). 
 
 **Please note:** An IBEX configuration is **not** the same as a Mantid configuration.  IBEX and Mantid view instruments in fundamentally different ways, which means that their respective configurations are not interchangeable.
 
@@ -12,19 +12,20 @@ Contents
 
 #. `Creating a Configuration`_
 
+   #. `Summary`_
+   #. `Components Tab`_
    #. `IOCs Tab`_
    #. `Blocks Tab`_
    #. `Groups Tab`_
-   #. `Components Tab`_
    #. `IOC Macros`_
    #. `IOC PV Values`_
    #. `IOC PV Sets`_
-   #. `Summary`_
 
 #. `Editing a Configuration`_
 #. `Edit Current Configuration ...`_
 #. `Load a Configuration`_
 #. `Delete a Configuration`_
+#. `Editing a global setting`_
 
 Creating a Configuration
 ------------------------
@@ -32,16 +33,16 @@ Creating a Configuration
 To create a configuration:
 
 #. Select ``Configurations > New`` from the ``Configuration`` menu.
-#. IBEX displays the Edit Configuration dialog, which contains eight tabs.  
+#. IBEX displays the Edit Configuration dialog, which contains the following eight sections:  
 
+   #. Summary
+   #. Components
    #. IOCs
    #. Blocks
    #. Groups
-   #. Components
    #. IOC Macros
    #. IOC PV Values
    #. IOC PV Sets
-   #. Summary
 
 #. At the bottom of the dialog are two buttons
 
@@ -62,15 +63,56 @@ Return to `Contents`_.
 
 We'll describe each of the Edit Configuration dialog tabs in turn.
 
+Summary
+~~~~~~~
+
+The Summary allows you to create a short description for your configuration.  It also allows you to associate a default synoptic view with your configuration.
+
+The summary is displayed at the top of the dialog and contains the following fields:
+
+Name
+   This is a read-only field.  It is defined when you save the configuration.  When you are creating a new configuration, the ``Name:`` field will be empty.
+
+Description
+   Provide a short description of your configuration.  Configuration names can sometime be a little cryptic; a short description will help you to better remember the purpose of the configuration.
+
+Synoptic
+   IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
+
+Return to `Contents`_.
+
+Components Tab
+~~~~~~~~~~~~~~
+
+Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
+
+The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
+
+Use the arrow buttons to move components between the two lists.  
+
+Return to `Contents`_.
+
 IOCs Tab
 ~~~~~~~~
-The IOCs tab lists all the IOCs available on the instrument.  In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
 
-The [[KeyConceptsinIBEX]] page describes what an IOC is.
+*Note: Managing IOCs in a configuration has changed for releases newer than IBEX 3.1.0. This section contains instructions for both versions. You can see your client version under* ``Help > About`` *in the IBEX Window.*
 
-To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes (or select both).  By selecting these check-boxes, IBEX will automatically start (or restart) the IOCs each time your configuration is loaded into IBEX.
+The [[KeyConceptsinIBEX]] page describes what an IOC is. In general, you will only wish to include a sub-set of these in your configuration (i.e. those that correspond to devices on your instrument).
 
-**Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
+Up to Version 3.1.0:
+   The IOCs tab lists all the IOCs available on the instrument. To include an IOC in your configuration, scroll down the list until you find the appropriate IOC and select the Auto-Start or Auto-Restart check-boxes as required
+
+   - Auto start: The IOC will be started/restarted whenever the configuration is changed.
+   - Auto restart: This setting only applies if auto start has been selected as well, otherwise it does nothing. If both auto start and auto restart are selected then if the IOC is terminated unexpectedly, it will be automatically restarted. If the IOC is stopped from the client or writing to the appropriate PV then it will not be restarted.
+
+   **Note:** The list of IOCs in the IOC tab also includes a column headed Sim. level.  This column is used to indicate whether the IOC should run in simulation mode.  By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting.
+
+Newer Versions:
+   IOCs need to be explicitly added to the configuration. The IOCs tab shows an overview of all IOCs that are part of the currently viewed configuration. Below the overview table, the tab contains three buttons to add, edit or delete an IOC.
+
+   - The "Edit IOC"-button opens a dialog containing all the settings related to the selected IOC: the general Simulation level and Auto-(re)start settings at the top, as well as tabs for setting `IOC Macros`_, `IOC PV Values`_ and `IOC PV Sets`_.
+   - The "Add IOC"-button opens a dialog which lets you choose from a list of all IOCs available on the instrument. Confirming your selection will take you to the "Edit IOC" dialog for the selected IOC.
+   - The "Delete IOC"-button allows you to delete IOCs from the list and the configuration. This works with multiple selection, too.
 
 Return to `Contents`_.
 
@@ -128,7 +170,7 @@ Logging Settings
 
 **PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
 
-**Note:** Blocks that have been inherited from a component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
 Return to `Contents`_.
 
@@ -154,19 +196,9 @@ You can select multiple blocks to be added (or removed) from a group using the `
 
 Return to `Contents`_.
 
-Components Tab
-~~~~~~~~~~~~~~
-
-Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
-
-The Components tab displays two lists of components.  The left hand list shows which components are available to be included in your configuration.  The right hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
-
-Use the arrow buttons to move components between the two lists.  
-
-Return to `Contents`_.
-
 IOC Macros
 ~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0 the IOC macros are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC Macros are configurable values that IBEX can supply to the IOC when the IOC is started.  For example, if the IOC is controlling a serial device attached to a COM port, you can use an macro to identify the appropriate port to the IOC.  This is especially useful if the device moves between instruments and may be attached to different COM ports on different instruments.  Another example of an IOC macro might be the name of a calibration file.
 
@@ -191,6 +223,7 @@ Return to `Contents`_.
 
 IOC PV Values
 ~~~~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0 the IOC PV Values are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example setting a experimental parameter on first load. 
 
@@ -200,28 +233,11 @@ Return to `Contents`_.
 
 IOC PV Sets
 ~~~~~~~~~~~
+*Note: In Ibex versions newer than 3.1.0, PV Sets are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC PV Sets is an experimental feature within IBEX **do not** use this before talking to the IBEX team. It can be used to load in autosaved values from a specific file setup beforehand.
 
 **Note**: The value of any PVs will remain until it is set to something else. So if a configuration does this auto load then loading another configuration will not set it back to what it was before.
-
-Return to `Contents`_.
-
-Summary
-~~~~~~~
-
-The Summary tab allows you to create a short description for your configuration.  It also allows you to associate a default synoptic view with your configuration.
-
-When you click on the Summary tab, IBEX displays the following fields:
-
-Name
-   This is a read-only field.  It is defined when you save the configuration.  When you are creating a new configuration, the ``Name:`` field will be empty.
-
-Description
-   Provide a short description of your configuration.  Configuration names can sometime be a little cryptic; a short description will help you to better remember the purpose of the configuration.
-
-Synoptic
-   IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
 
 Return to `Contents`_.
 
@@ -281,5 +297,16 @@ To delete a configuration:
 **Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration, load a different configuration, then delete the previously loaded configuration.
 
 **Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experimental Controls team - it may be possible to recover the deleted configuration.
+
+
+
+Editing a global setting
+------------------------
+
+Global settings are stored in the configuration directory in a file called ``globals.txt`` (the configuration directory is ``<Setting directory>\\config\\<instrument name>\\configurations``). Lines in the file starting with a '#' are comments. Settings are expressed by a line 
+
+``<IOC name>__<Macro Name>=<value>``
+
+where ``IOC name`` is the name of the IOC on which the macro is set, ``Macro name`` is the name of the macro and value is the value it should have. (**N.B.** that is a double underscore between ``IOC name`` and ``Macro name``).
 
 Return to `Contents`_.

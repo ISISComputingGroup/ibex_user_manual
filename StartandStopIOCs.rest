@@ -9,21 +9,12 @@ In order to communicate with a hardware device, the corresponding IOC must be ru
 
 Starting or Stopping an IOC
 ---------------------------
-To start or stop an IOC:
+To start, stop or restart an IOC:
 
 #. Select ``Start/Stop IOCs`` from the ``IOC`` menu.
-#. IBEX displays a dialog containing two panes.  
-
-   #. The first pane is a list of all the IOCs available on the instrument.  The list shows whether each IOC is running or stopped.
-   #. The second pane, below the list, allows you to start, stop or restart the selected IOC.
-
-#. Scroll down the list until you find the IOC you wish to start or stop.  Select the IOC by clicking on it once.
-#. The selected IOC is highlighted in the list and lower pane activates.
-#. Click on
-
-   #. the ``Start`` button to start an IOC that is currently stopped
-   #. the ``Stop`` button to stop an IOC that is currently running
-   #. the ``Restart`` button to restart an IOC that is currently running
+#. IBEX displays a dialog containing a list of all the IOCs available on the instrument.  The list shows whether each IOC is running or stopped.
+#. Find the IOC you want in the list and use the buttons at the bottom to start, stop or restart that IOC.
 
 It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the IOC Log (see [[Views]]) as the IOC starts up or shuts down.
 
+NB The effect of auto-restart has no effect on the stop action. Stop will stop the IOC and it will not restart.
