@@ -190,20 +190,19 @@ This is just a sample of the methods available.
 
 
 **Exercise 2**
---------------
--    This exercise requires the following pre-requisites. These should be satisfied if you are following this as part of the Ibex-run training course
+==============
+-    This exercise requires that:
  
      - You have permission to begin and end runs on the instrument you're using.
      - The instrument your using has been configured so it can successfully enter a running state
      - You have a settable block called "MY_BLOCK"
 
 - Change the title of the run to "Exercise 2"
-- Begin a new run
-- Pause the run
+- Start a run and wait for 1 uamps (maximum wait 10 seconds) before pausing
 - Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control
 - Resume the run
-- Set the value of "MY_BLOCK" to 20
-- Confirm (using ``genie_python``) that the instrument has entered a waiting state
+- Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state
+- Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
 - End the run
 
 -------------------------------------------------------------------------------
