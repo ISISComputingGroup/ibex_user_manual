@@ -1,5 +1,8 @@
 Exercise 1
 ==========
+
+From [[getting started|Ibex-and-genie_python:-Getting started]].
+
 - Open a scripting window in Ibex
     - Should be straightforward if Ibex is correctly installed.
     - Ideally the instrument will appear as ``SETUP``
