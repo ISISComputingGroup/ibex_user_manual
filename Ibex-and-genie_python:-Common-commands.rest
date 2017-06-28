@@ -154,12 +154,12 @@ The following script scans a block between its upper and lower limit::
         g.cset(block=current_value + step_size)
         g.waitfor(seconds=0.1)
 
-
-Run control
------------
-
 Experiment setup
 ----------------
+
+You can change various experiment details. This is a list of some of the most common commands:
+
+``
 
 **Exercise 2**
 --------------
