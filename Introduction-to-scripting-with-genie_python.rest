@@ -47,17 +47,26 @@ Instrument control commands let you switch between experimental states. The most
 - ``end``: Ends the current run
 - ``abort``: Aborts the current run
 
+At each point you can get the state of the run as a string using the command:
+
+- ``get_runstate``: Gets the states of the current run
+
 You can also update and store results using:
 
 - ``update``: Load the data from the DAE into memory
 - ``store``: Write the updated DAE information to disk
 - ``updatestore``: Load the data from the DAE into memory and store it to disk
 
-As an example, you can begin and then immediately end a run by calling the following commands:
+As an example, the following script will begin and run, then stop it once it reaches a running state:
 
 ::
-    g.begin()
-    g.end()
+    import time
+    if g.get_runstate=="SETUP"
+        g.begin()
+        # Will run forever if we never reach running
+        while g.get_runstate()!="RUNNING"
+            time.sleep(1)
+            g.end()
 
 
 Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
@@ -101,13 +110,14 @@ Experiment setup
     - You have permission to begin and end runs on the instrument you're using.
     - The instrument your using has been configured so it can successfully enter a running state
     - You have a settable block called "MY_BLOCK"
-- From the scripting perspective, complete the following actions:
-    - Change the title of the run to "Exercise 3"
-    - Begin a new run
-    - Pause the run
-    - Set the value of "MY_BLOCK" to 5
-    - Resume the run
-    - End the run
+- Change the title of the run to "Exercise 2"
+- Begin a new run
+- Pause the run
+- Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control
+- Resume the run
+- Set the value of "MY_BLOCK" to 20
+- Confirm (using ``genie_python``) that the instrument has entered a waiting state
+- End the run
 
 
 Creating and running scripts
