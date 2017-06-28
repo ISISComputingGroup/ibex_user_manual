@@ -27,4 +27,8 @@ You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\ge
 - Output "Hello, world!" to the console
 - Calculate and output the square of all the integers between 1 and 10
 
-[[Solution]|Exercise-solutions]
+[[Solution|Ibex-and-genie_python:-Exercise-solutions]]
+
+-----------------------------------------------------------
+
+**Previous**: [[Introduction|Ibex-and-genie_python:-Introduction]] **Next**: [[Common commands|Ibex-and-genie_python:-Common-commands]]
