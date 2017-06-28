@@ -22,4 +22,4 @@ From [[Getting Started|Ibex-and-genie_python:-Getting started]].
         for i in range(1,11):
             print i*i
 
-    - A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and execute it.
+    - A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and be executed.
