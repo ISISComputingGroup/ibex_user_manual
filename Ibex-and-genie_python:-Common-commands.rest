@@ -207,7 +207,7 @@ This is just a sample of the methods available.
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Common commands|Ibex-and-genie_python:-Scripting]]
+**Next**: [[Scripting|Ibex-and-genie_python:-Scripting]]
 
 **Previous**: [[Getting started|Ibex-and-genie_python:-Getting-started]]
     
