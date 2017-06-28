@@ -31,6 +31,6 @@ You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\ge
 
 -------------------------------------------------------------------------------
 
-**Previous**: [[Welcome|Ibex-and-genie_python:-Introduction]]
+**Previous**: [[Introduction to ``genie_python``|Ibex-and-genie_python:-Introduction]]
 
 **Next**: [[Common commands|Ibex-and-genie_python:-Common-commands]]
