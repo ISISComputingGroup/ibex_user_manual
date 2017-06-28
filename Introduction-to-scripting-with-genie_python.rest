@@ -66,7 +66,7 @@ As an example, the following script will begin and run, then stop it once it rea
         # Will run forever if we never reach running
         while g.get_runstate()!="RUNNING"
             time.sleep(1)
-            g.end()
+        g.end()
 
 
 Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
