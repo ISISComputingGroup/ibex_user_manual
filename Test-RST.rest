@@ -1,6 +1,5 @@
 
 * Sets the value for a particular block
-
     + Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint.
 
 *   Blank lines between list items are optional, avoid them.
