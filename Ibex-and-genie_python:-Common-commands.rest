@@ -40,12 +40,19 @@ Worked example
 The following script will begin and run, then stop it once it reaches a running state::
 
     import time
+
+    # Only start if we're in the correct state
     if g.get_runstate=="SETUP"
         g.begin()
-        for i in range(60):
+
+        maximum_retries = 60
+        for i in range(maximum_retries):
             if g.get_runstate()=="RUNNING":
                 g.end()
+                # We're done, exit the loop
                 break
+
+            # Wait for a second before checking again
             time.sleep(1)
         else:
             "Could not reach a running state"
