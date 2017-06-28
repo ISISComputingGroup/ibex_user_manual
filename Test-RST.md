@@ -1,3 +1,71 @@
+Accessing ``genie_python`` commands
+===================================
+
+From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
+
+You should have noticed immediately after you typed ``g.`` that an autocomplete window appeared:
+
+.. image:: AutoCompleteWindowBasic.png
+
+The window lists the available commands, and the arguments they take in brackets. You also notice that a description of the highlighted functions and its arguments is also given. The list will be refined as you type more characters.
+
+Instrument control
+==================
+
+Instrument control commands let you switch between experimental states. The most common commands are:
+
+- ``begin``: Begins a new run
+- ``pause``: Pauses the current run
+- ``resume``: Resumes the current run
+- ``end``: Ends the current run
+- ``abort``: Aborts the current run
+
+Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE. The default is non-verbose output.
+
+If you need to get the current state, you can use:
+
+- ``get_runstate``: Gets the states of the current run
+
+**WARNING**: Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
+
+You can update and store DAE results using:
+
+- ``update``: Load the data from the DAE into memory
+- ``store``: Write the updated DAE information to disk
+- ``updatestore``: Load the data from the DAE into memory and store it to disk
+
+Worked example
+--------------
+
+The following script will begin and run, then stop it once it reaches a running state::
+
+    import time
+
+    # Only start if we're in the correct state
+    if g.get_runstate=="SETUP"
+        g.begin()
+
+        maximum_retries = 60
+        for i in range(maximum_retries):
+            if g.get_runstate()=="RUNNING":
+
+                # A function that does the sequence of operations associated with the run
+                do_experimental_stuff()
+
+                # We're done, exit the loop
+                break
+
+            else:
+                # Wait for a second before checking again
+                time.sleep(1)
+        else:
+            "Could not reach a running state"
+
+
+
+Blocks
+========
+
 - ``get_blocks``: Gets a list of the currently available blocks
 - ``cshow``: Shows the properties of a named block/all blocks
     - If given a name (e.g. ``MY_BLOCK``) it will return a string containing properties of the block
