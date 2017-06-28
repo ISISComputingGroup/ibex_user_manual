@@ -20,9 +20,9 @@ Instrument control commands let you switch between experimental states. The most
 - ``end``: Ends the current run
 - ``abort``: Aborts the current run
 
-Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
+Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE. The default is non-verbose output.
 
-At each point you can get the state of the run as a string using the command:
+If you need to get the current state, you can use:
 
 - ``get_runstate``: Gets the states of the current run
 
