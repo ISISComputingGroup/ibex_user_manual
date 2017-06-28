@@ -71,7 +71,7 @@ Run control
 Experiment setup
 ----------------
 
-**Exercise 3**
+**Exercise 2**
 --------------
 - This exercise requires the following pre-requisites. These should be satisfied if you are following this as part of the Ibex-run training course:
     - You have permission to begin and end runs on the instrument you're using.
