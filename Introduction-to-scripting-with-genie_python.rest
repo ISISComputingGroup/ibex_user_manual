@@ -53,6 +53,13 @@ You can also update and store results using:
 - ``store``: Write the updated DAE information to disk
 - ``updatestore``: Load the data from the DAE into memory and store it to disk
 
+As an example, you can begin and then immediately end a run by calling the following commands:
+
+::
+    g.begin()
+    g.end()
+
+
 Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
 
 Blocks
