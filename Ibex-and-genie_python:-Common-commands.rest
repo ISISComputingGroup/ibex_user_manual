@@ -37,9 +37,8 @@ You can update and store DAE results using:
 Worked example
 --------------
 
-The following script will begin and run, then stop it once it reaches a running state:
+The following script will begin and run, then stop it once it reaches a running state::
 
-::
     import time
     if g.get_runstate=="SETUP"
         g.begin()
