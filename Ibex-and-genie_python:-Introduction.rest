@@ -9,9 +9,9 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 - Create specialised instrument and user scripts scripts
 - Convert ``OpenGENIE`` scripts to ``genie_python``
 
-At each stage the course aims to assist learning with exercises and worked examples.
+At each stage the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python.
 
-If you're looking for specific answers, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]!
+If you're looking for a specific section, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]!
 
 Contents
 ========
