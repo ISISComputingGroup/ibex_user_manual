@@ -13,6 +13,11 @@ At each stage the course aims to assist learning with exercises and worked examp
 
 If you're looking for specific answers, please refer to the course contents below. Otherwise, let's `get started`__!
 
+Internal crossreferences, like example_.
+.. _example:
+
+This is an example crossreference target.
+
 __ GettingStarted_
 
 Contents
