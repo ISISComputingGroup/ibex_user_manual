@@ -1,4 +1,3 @@
-- get_blocks: Gets a list of the currently available blocks
 - cshow: Shows the properties of a named block/all blocks
     - If given a name (e.g. ``MY_BLOCK``) it will return a string containing properties of the block
         - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
