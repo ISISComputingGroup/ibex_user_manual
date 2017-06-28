@@ -11,15 +11,15 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 
 At each stage the course aims to assist learning with exercises and worked examples.
 
-If you're looking for specific answers, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Exercise-answers]]
+If you're looking for specific answers, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]
 
 Contents
 ========
 
 We expect that most people will take this course in a linear fashion, but if you have a specific query, the course is broadly split up into the following topics
 
-- Getting started
-- Common ``genie_python`` commands
-- Scripting
-- Converting between ``OpenGENIE`` and ``genie_python``
-- Solutions to the exercises
+- [[Getting started|Ibex-and-genie_python:-Getting-started]]
+- [[Common commands|Ibex-and-genie_python:-Common-commands]]
+- [[Scripting|Ibex-and-genie_python:-Scripting]]
+- [[Converting from ``OpenGENIE``|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
+- [[Exercise solutions|Ibex-and-genie_python:-Exercise-notes]]
