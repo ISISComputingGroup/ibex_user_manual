@@ -22,4 +22,4 @@ We expect that most people will take this course in a linear fashion, but if you
 - [[Common commands|Ibex-and-genie_python:-Common-commands]]
 - [[Scripting|Ibex-and-genie_python:-Scripting]]
 - [[Converting from ``OpenGENIE``|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
-- [[Exercise solutions|Ibex-and-genie_python:-Exercise-notes]]
+- [[Exercise solutions|Ibex-and-genie_python:-Exercise-solutions]]
