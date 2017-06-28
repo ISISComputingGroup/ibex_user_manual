@@ -11,7 +11,7 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 
 At each stage the course aims to assist learning with exercises and worked examples.
 
-If you're looking for specific answers, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]
+If you're looking for specific answers, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python\:-Getting-started]]
 
 Contents
 ========
