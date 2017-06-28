@@ -41,9 +41,9 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
 
 - Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control
 
-    - The arguments may be named or un-named. If named, the ordering may differ, but named arguments must appear after un-named arguments for Python to accept the method call
+  - The arguments may be named or un-named. If named, the ordering may differ, but named arguments must appear after un-named arguments for Python to accept the method call
 
-    g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
+  g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
 
 - Resume the run
 - Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state
