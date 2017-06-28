@@ -65,6 +65,22 @@ Each of the commands above accepts an optional ``boolean`` parameter. Setting it
 Blocks
 ------
 
+- ``get_blocks``: Gets a list of the currently available blocks
+- ``cshow``:
+    - Given the name of the block (e.g. `g.chsow("MY_BLOCK")`) it will give a string output of the current settings for that block (e.g. ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``)
+    - If called without arguments, it will show the same information for all blocks, with each block on a new line
+- ``cget``: 
+    - Returns settings for a named block as a dictionary of values (e.g. ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``)
+    - Unlike ``cshow``, a block name must be specified``
+    - Values can be accessed as standard Python:
+
+::
+    block_info = g.cget("MY_BLOCK")
+    name = block_info("name")
+    value = block_info("value")
+    print "The value of block {0} is {1}".format(name, value)
+    
+
 Run control
 -----------
 
