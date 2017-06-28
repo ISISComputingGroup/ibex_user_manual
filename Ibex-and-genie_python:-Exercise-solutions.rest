@@ -11,11 +11,11 @@ From [[Getting Started|Ibex-and-genie_python:-Getting started]].
 
 .. image:: StandardStartupOutputOnDemo.png
 
--   Output "Hello, world!" to the console
+-   *Output "Hello, world!" to the console*
 
     - Enter something like ``print "Hello, World!`` and press return
 
--   Calculate and output the square of all the integers between 1 and 10
+-   *Calculate and output the square of all the integers between 1 and 10*
 
     - This is best achieved with the following loop::
 
@@ -28,3 +28,24 @@ Exercise 2
 ==========
 
 From [[Common commands|Ibex-and-genie_python:-Common-commands]]
+
+- *Change the title of the run to "Exercise 2"*
+
+  - Use either ``g.change_title("Exercise 2")`` or ``g.change(title="Exercise 2")``
+
+- Start a run and wait for 1 uamps (maximum wait 10 seconds) before pausing::
+
+    g.begin()
+    g.waitfor(uamps=1, max_wait=10)
+    g.pause()
+
+- Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control
+
+    - The arguments may be named or un-named. If named, the ordering may differ, but named arguments must appear after un-named arguments for Python to accept the method call
+
+    g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
+
+- Resume the run
+- Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state
+- Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
+- End the run
