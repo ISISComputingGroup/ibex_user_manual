@@ -9,8 +9,7 @@ From [[Getting Started|Ibex-and-genie_python:-Getting started]].
     - Ideally the instrument will appear as ``SETUP``
     - The output when the scripting window opens should look a bit like this:
 
-::
-    IMAGE: StandardStartupOutputOnDemo
+.. image:: StandardStartupOutputOnDemo.png
 
 -   Output "Hello, world!" to the console
 
