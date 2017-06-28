@@ -83,8 +83,7 @@ Exercise 1
 ----------
 - Opening a scripting window should hopefully not be problematic
 - Check for any unexpected output while the scripting window sets the instrument
+
 ::
     IMAGE: StandardStartupOutputOnDemo
-::
-    IMAGE: OpenTheScriptingPerspective
 
