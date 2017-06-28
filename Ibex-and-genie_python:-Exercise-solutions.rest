@@ -23,3 +23,8 @@ From [[Getting Started|Ibex-and-genie_python:-Getting started]].
             print i*i
 
     - A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and be executed.
+
+Exercise 2
+==========
+
+From [[Common commands|Ibex-and-genie_python:-Common-commands]]
