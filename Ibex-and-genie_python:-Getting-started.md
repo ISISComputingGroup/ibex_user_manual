@@ -11,7 +11,7 @@ To open a scripting window:
 1. Start the Ibex client
 2. Open the scripting perspective
 
-.. image:: magnetic-balls.jpg 
+.. image:: OpenTheScriptingPerspective.png
     :width: 40pt
 
 3. From here, you can start entering Python code. It will be executed line by line as you enter it.
