@@ -10,13 +10,15 @@ To open a scripting window:
 
 1. Start the Ibex client
 2. Open the scripting perspective
+
 ::
     IMAGE: OpenTheScriptingPerspective
 
 **Exercise 1**
 --------------
 - Open a scripting window in Ibex
-- Write some simple Python commands to calculate the square of all the integers between 1 and 10
+- Output "Hello, world!" to the console
+- Calculate and output the square of all the integers between 1 and 10
 
 You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat``. This will not provide some advanced features such as auto-complete though, and is recommended for advanced users only.
 
@@ -81,9 +83,18 @@ Exercise notes
 
 Exercise 1
 ----------
-- Opening a scripting window should hopefully not be problematic
-- Check for any unexpected output while the scripting window sets the instrument
-
+- Open a scripting window in Ibex
+    - Should be straightforward if Ibex is correctly installed.
+    - Ideally the instrument will appear as ``SETUP``
+    - The output when the scripting window opens should look a bit like this:
 ::
     IMAGE: StandardStartupOutputOnDemo
+- Output "Hello, world!" to the console
+    - Enter something like ``print "Hello, World!`` and press return
+- Calculate and output the square of all the integers between 1 and 10
+    - This is best achieved with the following loop:
+::
+    for i in range(1,11):
+        print i*i
 
+    - A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and execute it
