@@ -34,10 +34,10 @@ You can update and store DAE results using:
 - ``store``: Write the updated DAE information to disk
 - ``updatestore``: Load the data from the DAE into memory and store it to disk
 
-Worked example
---------------
+Worked example: Try it yourself!
+--------------------------------
 
-The following script will begin and run, then stop it once it reaches a running state::
+The following script will begin and run, then stop it once it reaches a running state.::
 
     import time
 
@@ -96,6 +96,42 @@ Blocks
      -    The block can also be passed in by name. This is useful when setting advanced block properties
 
           - Example: ``g.cset("MY_BLOCK", lowlimit=1, highlimit=10, runcontrol=True)``
+
+
+Worked example: Try it yourself!
+--------------------------------
+
+The following script scans a block between its upper and lower limit
+
+    import time
+
+    # Set some parameters
+    interval_time = 0.1
+    max_steps = 100
+    high_limit = 10
+    low_limit = 1
+    block = "MY_BLOCK"
+    abs_step_size = 1
+
+    # Set the initial conditions
+    g.cset(block, lowlimit = low_limit, highlimit = high_limit)
+    step_size = abs_step_size
+
+    # Run the scan
+    for i in range(max_steps)
+        block_properties = g.cget(block)
+        current_value = block_properties['value']
+
+        # Block at or below low limit: Set step positive
+        if current_value <= block_properties['lowlimit']:
+            step_size = abs_step_size
+
+        # Block at or below high limit: Set step negative
+        if current_value  >= block_properties['highlimit']:
+            step_size = -abs_step_size
+
+        g.cset(block=current_value + step_size)
+        time.sleep(interval_time)
 
 
 Run control
