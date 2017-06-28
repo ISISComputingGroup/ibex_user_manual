@@ -1,10 +1,5 @@
-
-
-Exercise notes
-==============
-
 Exercise 1
-----------
+==========
 - Open a scripting window in Ibex
     - Should be straightforward if Ibex is correctly installed.
     - Ideally the instrument will appear as ``SETUP``
