@@ -9,10 +9,10 @@ You should have noticed immediately after you typed ``g.`` that an autocomplete 
 
 The window lists the available commands, and the arguments they take in brackets. You also notice that a description of the highlighted functions and its arguments is also given. The list will be refined as you type more characters.
 
-Instrument control
+Run control
 ==================
 
-Instrument control commands let you switch between experimental states. The most common commands are:
+``genie_python`` provides commands to switch between various run states:
 
 - ``begin``: Begins a new run
 - ``pause``: Pauses the current run
@@ -20,13 +20,21 @@ Instrument control commands let you switch between experimental states. The most
 - ``end``: Ends the current run
 - ``abort``: Aborts the current run
 
-Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE. The default is non-verbose output.
-
-If you need to get the current state, you can use:
+Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE. The default is non-verbose output. You can get the current state with:
 
 - ``get_runstate``: Gets the states of the current run
 
 **WARNING**: Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
+
+If you want to wait for a specific event before executing an action, you can use a ``waitfor`` command:
+
+-    ``waitfor``: Waits for the specified condition to be met. This function supports numerous types of wait. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
+
+     - Example: ``g.waitfor(seconds=10)``. Wait for 10 seconds
+     - Example: ``g.waitfor(minutes=10)``. Wait for 10 minutes
+     - Example: ``g.waitfor(uamps=10)``. Wait for the total received current to reach 10 uamps
+     - Example: ``g.waitfor(uamps=10, maxwait=10)``. Wait for the total received current to reach 10 uamps, but wait no more than 10 seconds
+     - Example: ``g.waitfor(block="MY_BLOCK", lowlimit=10)``. Wait for the block "MY_BLOCK" to be greater than or equal to 10
 
 You can update and store DAE results using:
 
