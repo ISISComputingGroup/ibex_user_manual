@@ -1,7 +1,7 @@
 Accessing ``genie_python`` commands
 ===================================
 
-Where Ibex has been installed correctly on your machine, ``genie_python`` commands can be accessed via the ``g`` namespace. Try entering ``g.get_version()``.
+From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
 
 You should have noticed when you typed ``g.`` that an autocomplete window appeared:
 
