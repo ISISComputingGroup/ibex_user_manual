@@ -4,23 +4,61 @@ Contents
 Starting a scripting session
 ============================
 
-Accessing genie_python commands
-===============================
+The best way to run ``genie_python`` commands is from the scripting perspective of the Ibex client.
 
-Controlling runs with genie_python
-==================================
+To open a scripting window:
 
-Controlling blocks with genie_python
-====================================
+1. Start the Ibex client
+2. Open the scripting perspective::
+    IMAGE: OpenTheScriptingPerspective
 
-Creating scripts
-================
+**Exercise 1**
+--------------
+- Open a scripting window in Ibex
+- Write some simple Python commands to calculate the square of all the integers between 1 and 10
+
+You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat``. This will not provide some advanced features such as auto-complete though, and is recommended for advanced users only.
+
+
+Accessing ``genie_python`` commands
+===================================
+
+Basic commands
+==============
+
+Instrument control
+------------------
+
+Blocks
+------
+
+Run control
+-----------
+
+Experiment setup
+----------------
+
+
+Creating and running scripts
+============================
 
 Instrument scripts
 ------------------
 
+Create
+~~~~~~
+
+Run
+~~~
+
 User scripts
 ------------
+
+Create
+~~~~~~
+
+Run
+~~~
 
 Open Genie: Compare and contrast
 ================================
@@ -36,3 +74,13 @@ Procedures vs. functions
 
 Loops
 -----
+
+Exercise notes
+==============
+
+Exercise 1
+----------
+- Opening a scripting window should hopefully not be problematic
+- Check for any unexpected output while the scripting window sets the instrument::
+    IMAGE: StandardStartupOutputOnDemo
+
