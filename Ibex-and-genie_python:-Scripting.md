@@ -1,20 +1,7 @@
-Creating and running scripts
-============================
 
-Instrument scripts
-------------------
+-------------------------------------------------------------------------------
 
-Create
-~~~~~~
+**Previous**: [[Getting started|Ibex-and-genie_python:-Common-commands]]
 
-Run
-~~~
-
-User scripts
-------------
-
-Create
-~~~~~~
-
-Run
-~~~
+**Next**: [[Converting from OpenGENIE|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
+   
