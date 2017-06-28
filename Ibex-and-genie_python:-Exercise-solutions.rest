@@ -49,7 +49,7 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
 
     g.resume()
 
-- *Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state*
+- *Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state*::
 
     # Can use either way of specifying cset for a single block
     g.cset(MY_BLOCK=20)
