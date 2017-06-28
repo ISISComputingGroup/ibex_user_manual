@@ -33,19 +33,32 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
 
   - Use either ``g.change_title("Exercise 2")`` or ``g.change(title="Exercise 2")``
 
-- Start a run and wait for 1 uamps (maximum wait 10 seconds) before pausing::
+- *Start a run and wait for 1 uamps (maximum wait 10 seconds) before pausing*::
 
     g.begin()
     g.waitfor(uamps=1, max_wait=10)
     g.pause()
 
-- Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control::
+- *Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control*::
 
     g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
 
   - The arguments may be named or un-named. If named, the ordering may differ, but named arguments must appear after un-named arguments for Python to accept the method call
 
-- Resume the run
-- Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state
+- *Resume the run*::
+
+    g.resume()
+
+- *Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state*
+
+    # Can use either way of specifying cset for a single block
+    g.cset(MY_BLOCK=20)
+
+    # Can verify in any sensible way, so long as we're getting g.runstate()
+    if g.runstate()=="WAITING":
+        print "The instrument is waiting"
+    else:
+        print "The instrument is not waiting"
+
 - Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
 - End the run
