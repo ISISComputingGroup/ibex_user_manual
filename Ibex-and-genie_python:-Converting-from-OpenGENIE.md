@@ -15,7 +15,7 @@ Loops
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Closing remarks|Ibex-and-genie_python:-Closing-remarks]]
-
 **Previous**: [[Scripting|Ibex-and-genie_python:-Scripting]]
+
+**Next**: [[Exercise solutions|Ibex-and-genie_python:-Exercise-solutions]]
    
