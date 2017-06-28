@@ -157,9 +157,37 @@ The following script scans a block between its upper and lower limit::
 Experiment setup
 ----------------
 
-You can change various experiment details. This is a list of some of the most common commands:
+You can change various elements of the experiment setup using ``genie_python``. For example:
 
-``
+``change_tcb``: Change the time channel binning
+``change_tables``: Change the wiring, spectra and detector table locations
+``change_monitor``: Change the monitor to a specified spectrum and range
+
+If used on their own, these methods will apply their changes immediately. If you want to apply several changes at once you can use the following commands:
+
+``change_start``: Marks the start of a change
+``change_finish``: Marks that the current set of changes is complete. All changes recorded since ``g.change_start()`` will be applied
+
+Experiment details
+------------------
+
+You can change various experiment details with the ``change`` command. As with the ``waitfor`` command, it supports many options and allows for multiple details to be changed in a single command:
+
+-    ``change``: Modify experiment details
+     
+     - Example: ``g.change(title="New title")``
+     - Example: ``g.change(user="Adrian and John")``
+     - Example: ``g.change(rb=10)``     
+     - Example: ``g.change(title="New title", user="Adrian and John")``
+
+As with ``waitfor``, there are also standalone commands for these properties, as well as others:
+
+- ``change_user``: Change the current user
+- ``change_title``: Change the current title
+- ``change_rb``: Change the current RB number
+
+This is just a sample of the methods available. 
+
 
 **Exercise 2**
 --------------
