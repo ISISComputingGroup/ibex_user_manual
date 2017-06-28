@@ -9,7 +9,8 @@ The best way to run ``genie_python`` commands is from the scripting perspective 
 To open a scripting window:
 
 1. Start the Ibex client
-2. Open the scripting perspective::
+2. Open the scripting perspective
+::
     IMAGE: OpenTheScriptingPerspective
 
 **Exercise 1**
