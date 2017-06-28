@@ -53,7 +53,9 @@ At each point you can get the state of the run as a string using the command:
 
 - ``get_runstate``: Gets the states of the current run
 
-You can also update and store results using:
+**NOTE**: Switching run state is not guaranteed. Executing "g.begin()" could lead to a number of run states (e.g. running, waiting, vetoed, setup). It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
+
+You can update and store DAE results using:
 
 - ``update``: Load the data from the DAE into memory
 - ``store``: Write the updated DAE information to disk
