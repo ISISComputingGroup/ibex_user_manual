@@ -26,8 +26,7 @@ If you need to get the current state, you can use:
 
 - ``get_runstate``: Gets the states of the current run
 
-**WARNING**
-Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
+**WARNING**: Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
 
 You can update and store DAE results using:
 
@@ -35,7 +34,10 @@ You can update and store DAE results using:
 - ``store``: Write the updated DAE information to disk
 - ``updatestore``: Load the data from the DAE into memory and store it to disk
 
-As an example, the following script will begin and run, then stop it once it reaches a running state:
+Worked example
+--------------
+
+The following script will begin and run, then stop it once it reaches a running state:
 
 ::
     import time
