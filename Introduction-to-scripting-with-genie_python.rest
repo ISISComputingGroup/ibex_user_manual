@@ -85,4 +85,6 @@ Exercise 1
 - Check for any unexpected output while the scripting window sets the instrument
 ::
     IMAGE: StandardStartupOutputOnDemo
+::
+    IMAGE: OpenTheScriptingPerspective
 
