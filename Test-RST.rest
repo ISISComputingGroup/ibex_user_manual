@@ -108,10 +108,4 @@ Experiment setup
 - Set the value of "MY_BLOCK" to 20
 - Confirm (using ``genie_python``) that the instrument has entered a waiting state
 - End the run
-
--------------------------------------------------------------------------------
-
-**Previous**: [[Getting started|Ibex-and-genie_python:-Getting-started]]
-
-**Next**: [[Common commands|Ibex-and-genie_python:-Scripting]]
     
