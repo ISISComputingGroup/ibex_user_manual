@@ -12,6 +12,9 @@ The window lists the available commands, and the arguments they take in brackets
 Run control
 ==================
 
+Switch run states
+-----------------
+
 ``genie_python`` provides commands to switch between various run states:
 
 - ``begin``: Begins a new run
@@ -26,6 +29,9 @@ Each of the commands above accepts an optional ``boolean`` parameter. Setting it
 
 **WARNING**: Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
 
+Waiting for conditions
+-----------------------
+
 If you want to wait for a specific event before executing an action, you can use a ``waitfor`` command:
 
 -    ``waitfor``: Waits for the specified condition to be met. This function supports numerous types of wait. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
@@ -35,6 +41,18 @@ If you want to wait for a specific event before executing an action, you can use
      - Example: ``g.waitfor(uamps=10)``. Wait for the total received current to reach 10 uamps
      - Example: ``g.waitfor(uamps=10, maxwait=10)``. Wait for the total received current to reach 10 uamps, but wait no more than 10 seconds
      - Example: ``g.waitfor(block="MY_BLOCK", lowlimit=10)``. Wait for the block "MY_BLOCK" to be greater than or equal to 10
+
+Many ``waitfor`` arguments also have a standalone function, so as to retain equivalence with OpenGENIE. Again, this list is only a subset of the available functions:
+
+-     ``waitfor_block``: Wait for a block value to be in a certain range
+-     ``waitfor_frames``: Wait until the number of good frames reaches a certain value
+
+One special ``waitfor`` function is:
+
+- ``waitfor_move``: Waits for all motors, or a specific motor to finish moving
+
+Update and store
+------------------
 
 You can update and store DAE results using:
 
@@ -46,8 +64,6 @@ Worked example: Try it yourself!
 --------------------------------
 
 The following script will begin and run, then stop it once it reaches a running state::
-
-    import time
 
     # Only start if we're in the correct state
     if g.get_runstate=="SETUP"
@@ -65,7 +81,7 @@ The following script will begin and run, then stop it once it reaches a running 
 
             else:
                 # Wait for a second before checking again
-                time.sleep(1)
+                g.waitfor(seconds=1)
         else:
             "Could not reach a running state"
 
@@ -111,10 +127,7 @@ Worked example: Try it yourself!
 
 The following script scans a block between its upper and lower limit::
 
-    import time
-
     # Set some parameters
-    interval_time = 0.1
     max_steps = 100
     high_limit = 10
     low_limit = 1
@@ -139,7 +152,7 @@ The following script scans a block between its upper and lower limit::
             step_size = -abs_step_size
 
         g.cset(block=current_value + step_size)
-        time.sleep(interval_time)
+        g.waitfor(seconds=0.1)
 
 
 Run control
