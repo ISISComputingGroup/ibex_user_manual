@@ -63,10 +63,13 @@ As an example, the following script will begin and run, then stop it once it rea
     import time
     if g.get_runstate=="SETUP"
         g.begin()
-        # Will run forever if we never reach running
-        while g.get_runstate()!="RUNNING"
+        for i in range(60):
+            if g.get_runstate()=="RUNNING":
+                g.end()
+                break
             time.sleep(1)
-        g.end()
+        else:
+            "Could not reach a running state"
 
 
 Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
