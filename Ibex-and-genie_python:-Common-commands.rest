@@ -64,7 +64,7 @@ The following script will begin and run, then stop it once it reaches a running 
 
 
 Blocks
-------
+========
 
 - ``get_blocks``
     - Gets a list of the currently available blocks
