@@ -41,17 +41,19 @@ Instrument control
 
 Instrument control commands let you switch between experimental states. The most common commands are:
 
-- ``g.begin()``
-- ``g.pause()``
-- ``g.resume()``
-- ``g.end()``
-- ``g.abort()``
+- ``begin``: Begins a new run
+- ``pause``: Pauses the current run
+- ``resume``: Resumes the current run
+- ``end``: Ends the current run
+- ``abort``: Aborts the current run
 
 You can also update and store results using:
 
-- ``g.update()``
-- ``g.store()``
-- ``g.updatestore()`` (does both an update and a store)
+- ``update``: Load the data from the DAE into memory
+- ``store``: Write the updated DAE information to disk
+- ``updatestore``: Load the data from the DAE into memory and store it to disk
+
+Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE.
 
 Blocks
 ------
