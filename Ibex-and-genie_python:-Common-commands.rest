@@ -73,15 +73,14 @@ Blocks
 - ``cget``: 
     - Returns settings for a named block as a dictionary of values (e.g. ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``)
     - Unlike ``cshow``, a block name must be specified``
-    - Properties can be accessed as standard Python:
+    - Properties can be accessed as standard Python::
 
-::
     block_info = g.cget("MY_BLOCK")
     name = block_info("name")
     value = block_info("value")
     print "The value of block {0} is {1}".format(name, value)
 
-- ``cset``
+- ``cset``:
     - Sets the value for a particular block
     - Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint
     - Can be called with block names as named arguments. This is useful for setting multiple blocks
