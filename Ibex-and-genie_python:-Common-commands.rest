@@ -74,6 +74,7 @@ Blocks
      - If called without arguments, it will show the same information for all blocks, with each block on a new line
 
 -    ``cget``: Gets properties of a named block as a dictionary of values
+
      - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
      - Unlike ``cshow``, a block name must be specified
      - Properties can be accessed as standard Python::
@@ -84,6 +85,7 @@ Blocks
           print "The value of block {0} is {1}".format(name, value)
 
 -    ``cset``: Sets the value for a particular block
+
      - Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint
      - Can be called with block names as named arguments. This is useful for setting multiple blocks
           - Example: ``g.cset(MY_BLOCK=1, MY_OTHER_BLOCK=2)``
@@ -98,10 +100,12 @@ Experiment setup
 
 **Exercise 2**
 --------------
-- This exercise requires the following pre-requisites. These should be satisfied if you are following this as part of the Ibex-run training course
+-    This exercise requires the following pre-requisites. These should be satisfied if you are following this as part of the Ibex-run training course
+ 
     - You have permission to begin and end runs on the instrument you're using.
     - The instrument your using has been configured so it can successfully enter a running state
     - You have a settable block called "MY_BLOCK"
+
 - Change the title of the run to "Exercise 2"
 - Begin a new run
 - Pause the run
