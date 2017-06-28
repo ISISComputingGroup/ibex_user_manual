@@ -17,6 +17,7 @@ To open a scripting window:
 3. From here, you can start entering Python code. It will be executed line by line as you enter it.
 
 **Exercise 1**
+--------------
 
 - Open a scripting window in Ibex
 - Output "Hello, world!" to the console
