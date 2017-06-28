@@ -24,4 +24,5 @@ We expect that most people will take this course in a linear fashion, but if you
 - [[Converting from ``OpenGENIE``|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
 - [[Exercise solutions|Ibex-and-genie_python:-Exercise-solutions]]
 
+-----------------------------
 **Next**: [[Getting started|Ibex-and-genie_python:-Getting-started]]
