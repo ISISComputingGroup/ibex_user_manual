@@ -1,13 +1,5 @@
 - Shows the properties of a named block/all blocks
 - Gets properties of a named block as a dictionary of values
-    - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
-    - Unlike ``cshow``, a block name must be specified
-    - Properties can be accessed as standard Python::
-
-        block_info = g.cget("MY_BLOCK")
-        name = block_info("name")
-        value = block_info("value")
-        print "The value of block {0} is {1}".format(name, value)
 
 - Sets the value for a particular block
     - Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint
