@@ -99,10 +99,9 @@ Exercise 4
 
 -   *Put a line at the top of your instrument script outside the function definition that prints the current title*::
 
-    print g.get_title()
-
-    def ramp(block, target):
-        ...
+        print g.get_title()
+        def ramp(block, target):
+            ...
 
 -   *Create a new user script containing a function that runs the new instrument function on two different blocks*::
 
