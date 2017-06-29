@@ -60,5 +60,12 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
     else:
         print "The instrument is not waiting"
 
-- Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
-- End the run
+- *Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 5. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10*::
+
+    for i in range(g.cget("MY_BLOCK")['value'], 4, -1):
+        g.cset(MY_BLOCK=i)
+        g.waitfor(seconds=1)
+        
+- *End the run*::
+
+     g.end()
