@@ -63,6 +63,31 @@ Once you've created your scripts, you need to make sure they're available to use
 
 **IMPORTANT**: When a script is loaded, Python runs all the commands contained within. We strongly recommend keeping all executable code within functions, so that it runs when you call it rather than executing immediately.
 
+Exercise 3c
+===========
+
+- Load your user script ``run_my_experiment.py``
+
+Running scripts
+===============
+
+Remember, scripts are executed when they are loaded. Functions will be loaded immediately, but will only be run when you call them as described below.
+
+Instrument scripts
+------------------
+
+Methods defined in instrument scripts are available via the ``inst`` namespace. For example, if we define a method called ``my_method`` in an instrument script which takes 1 argument, a block name, then I can make it run in the scripting perspective by entering::
+
+    inst.my_method("MY_BLOCK")
+
+As with ``genie_python`` commands, the Ibex scripting perspective will provide auto-completion for instrument methods so you can see what is available
+
+User scripts
+------------
+
+Modifying scripts
+=================
+
 
 -------------------------------------------------------------------------------
 
