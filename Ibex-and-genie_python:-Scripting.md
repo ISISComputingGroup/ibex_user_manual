@@ -119,6 +119,44 @@ Exercise 3f
 Using functions from other files
 ================================
 
+You may find yourself wanting to call a function from one file in another file.
+
+Calling an instrument function from a different instrument script
+-----------------------------------------------------------------
+
+It is recommended that you ``import`` it using standard Python rather than trying to call it with the ``inst.`` prefix. As you don't know the order in which the scripts are loaded, this avoids potential errors in the load order. It also helps to prevent circular dependencies.
+
+For example, if I have one instrument script, ``counts.py``::
+
+    def vanadium(title, duration):
+        g.change(title=title)
+        g.begin()
+        g.waitfor(seconds=duration)
+        g.end()
+
+and another called ``calibrate.py`` that uses the ``vanadium`` function then I would write::
+
+    from counts import vanadium
+    def calibration():
+        for title, duration in [("10 second run", 10), ("1 minute run", 60), ("1 hour run", 3600)]:
+            vanadium(title, duration)
+
+Calling an instrument function from a user script
+-------------------------------------------------
+
+Here you can just use ``inst.`` prefix, for example ``inst.my_function(arg1, arg2)``
+
+Calling a user function from an instrument script
+-------------------------------------------------
+
+This is feasible, but generally not recommended. The user script won't be kept in version control like the instrument script and could be moved or changed unexpectedly.
+
+Calling a user function from a different user script
+----------------------------------------------------
+
+Exactly the same as calling a function in one instrument script from another
+ 
+
 Exercise 4
 ==========
 
