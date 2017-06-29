@@ -82,11 +82,37 @@ Methods defined in instrument scripts are available via the ``inst`` namespace. 
 
 As with ``genie_python`` commands, the Ibex scripting perspective will provide auto-completion for instrument methods so you can see what is available
 
+Exercise 3d
+-----------
+
+- Run the instrument method you wrote in exercise 3c
+
 User scripts
 ------------
 
+Functions loaded from user scripts using the ``g.load_script(...)`` command will be available to call like any other user-defined function. For example, if I defined a function ``my_function``::
+
+    Code example
+
 Modifying scripts
 =================
+
+Every new scripting perspective will be a clean slate. Any previously loaded scripts will be forgotten. When they are loaded, they will be up to date with the current file contents.
+
+Sometimes you might want to change a script and update it without having to change scripting terminal.
+
+- Instrument scripts: Run the command ``reload(inst)``
+- User scripts: Run ``g.load_script("C:\scripts\file_to_reload.py")`` with the appropriate file name
+
+Exercise 3e
+-----------
+
+- Modify your instrument script to output the current at 0.1 second intervals
+- Reload the script
+- Run it again and confirm the behaviour has changed
+
+Using functions from other files
+================================
 
 
 -------------------------------------------------------------------------------
