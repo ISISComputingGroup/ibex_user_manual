@@ -194,7 +194,7 @@ This is just a sample of the methods available.
 -    This exercise requires that:
  
      - You have permission to begin and end runs on the instrument you're using.
-     - The instrument your using has been configured so it can successfully enter a running state
+     - The instrument you're using has been configured so it can successfully enter a running state
      - You have a settable block called "MY_BLOCK"
 
 - Change the title of the run to "Exercise 2"
