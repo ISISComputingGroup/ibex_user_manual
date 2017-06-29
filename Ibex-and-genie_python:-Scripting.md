@@ -19,7 +19,7 @@ We generally classify scripts as:
 - User scripts are placed in the folder: ``C:\scripts``
 
 Exercise 3a
-===========
+-----------
 
 Create two empty scripts:
 
@@ -39,7 +39,7 @@ In general, we recommend all executable code within a script should be contained
 This gives much greater control over when and how custom code is executed.
 
 Exercise 3b
-===========
+-----------
 
 -   Update your instrument script, ``set_up_instrument.py``, so that it contains a single function
 
@@ -64,7 +64,7 @@ Once you've created your scripts, you need to make sure they're available to use
 **IMPORTANT**: When a script is loaded, Python runs all the commands contained within. We strongly recommend keeping all executable code within functions, so that it runs when you call it rather than executing immediately.
 
 Exercise 3c
-===========
+-----------
 
 - Load your user script ``run_my_experiment.py``
 
@@ -85,7 +85,7 @@ As with ``genie_python`` commands, the Ibex scripting perspective will provide a
 Exercise 3d
 -----------
 
-- Run the instrument method you wrote in exercise 3c
+- Run the instrument method you wrote in exercise 3b
 
 User scripts
 ------------
@@ -93,6 +93,11 @@ User scripts
 Functions loaded from user scripts using the ``g.load_script(...)`` command will be available to call like any other user-defined function. For example, if I defined a function ``my_function``::
 
     Code example
+
+Exercise 3e
+-----------
+
+- Run the user script method you wrote in exercise 3b
 
 Modifying scripts
 =================
@@ -104,7 +109,7 @@ Sometimes you might want to change a script and update it without having to chan
 - Instrument scripts: Run the command ``reload(inst)``
 - User scripts: Run ``g.load_script("C:\scripts\file_to_reload.py")`` with the appropriate file name
 
-Exercise 3e
+Exercise 3f
 -----------
 
 - Modify your instrument script to output the current at 0.1 second intervals
