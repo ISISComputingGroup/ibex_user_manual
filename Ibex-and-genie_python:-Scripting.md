@@ -119,6 +119,23 @@ Exercise 3f
 Using functions from other files
 ================================
 
+Exercise 4
+==========
+
+-   Create a new instrument script containing a function
+
+    - The function sets the title to "Ramping [block name] from [initial value] to [final value]"
+    - The method begins a run and then changes the value of the block incrementally in steps of size 1
+    - Once the target is reached, the method ends the run
+
+-   Put a line at the top of your instrument script **outside the function definition** that prints the current title
+
+-   Create a new user script containing a function
+
+    - The function runs the new instrument script on two different blocks
+
+-   Load and run your new user-script function
+-   Where was the print statement at the top of your instrument script executed?
 
 -------------------------------------------------------------------------------
 
