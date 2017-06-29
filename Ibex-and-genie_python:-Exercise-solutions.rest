@@ -97,7 +97,7 @@ Exercise 4
             finally: 
                 g.end()
 
--   *Put a line at the top of your instrument script **outside the function definition** that prints the current title*::
+-   *Put a line at the top of your instrument script outside the function definition that prints the current title*::
 
     print g.get_title()
 
