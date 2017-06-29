@@ -110,14 +110,14 @@ Exercise 4
         for block, target in [("MY_BLOCK", 10), ("MY_OTHER_BLOCK", -10)]:
             inst.ramp(block, target)
 
--   Load and run your new user-script function
+-   *Load and run your new user-script function*
 
     -    From a scripting perspective, assuming the file is called "ramp_blocks.py", run the following::
 
          g.load_script("C:\scripts\ramp_blocks.py")
          ramp_two_blocks()
       
--   Where was the print statement at the top of your instrument script executed?
+-  *Where was the print statement at the top of your instrument script executed?*
 
     - You should have seen the current title printed during the initialisation of the scripting window
     - **PUT AN IMAGE HERE**
