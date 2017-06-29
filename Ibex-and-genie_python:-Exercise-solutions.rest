@@ -116,7 +116,7 @@ Exercise 4
              g.load_script("C:\scripts\ramp_blocks.py")
              ramp_two_blocks()
       
--  *Where was the print statement at the top of your instrument script executed?*
+-   *Where was the print statement at the top of your instrument script executed?*
 
     - You should have seen the current title printed during the initialisation of the scripting window
     - **PUT AN IMAGE HERE**
