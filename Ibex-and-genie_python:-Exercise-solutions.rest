@@ -97,11 +97,27 @@ Exercise 4
             finally: 
                 g.end()
 
--   Put a line at the top of your instrument script **outside the function definition** that prints the current title
+-   *Put a line at the top of your instrument script **outside the function definition** that prints the current title*::
 
--   Create a new user script containing a function
+    print g.get_title()
 
-    - The function runs the new instrument script on two different blocks
+    def ramp(block, target):
+        ...
+
+-   *Create a new user script containing a function that runs the new instrument function on two different blocks*::
+
+    def ramp_two_blocks():
+        for block, target in [("MY_BLOCK", 10), ("MY_OTHER_BLOCK", -10)]:
+            inst.ramp(block, target)
 
 -   Load and run your new user-script function
+
+    -    From a scripting perspective, assuming the file is called "ramp_blocks.py", run the following::
+
+         g.load_script("C:\scripts\ramp_blocks.py")
+         ramp_two_blocks()
+      
 -   Where was the print statement at the top of your instrument script executed?
+
+    - You should have seen the current title printed during the initialisation of the scripting window
+    - **PUT AN IMAGE HERE**
