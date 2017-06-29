@@ -93,8 +93,8 @@ Exercise 4
                 while abs(current-target) > small:
                     current = min(target, current + 1) if initial < final else max(target, current -1)
                     g.cset(block, current)
- 
-            g.end()
+            finally: 
+                g.end()
 
 -   Put a line at the top of your instrument script **outside the function definition** that prints the current title
 
