@@ -1,7 +1,7 @@
 Exercise 1
 ==========
 
-From [[Getting Started|Ibex-and-genie_python:-Getting started]].
+From [[Getting Started|Ibex-and-genie_python:-Getting-started]].
 
 -   *Open a scripting window in Ibex*
 
@@ -70,8 +70,57 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
 
      g.end()
 
+Exercise 3
+==========
+
+From [[Scripting|Ibex-and-genie_python:-Scripting]].
+
+-  *Create two empty scripts:*
+
+   - *An instrument script called ``set_up_instrument.py``*
+   - *A user script called ``run_my_experiment.py``*
+   - **PUT IMAGES OF THE TWO FOLDERS HERE**
+
+-   *Update your instrument script, ``set_up_instrument.py``, so that it contains a single function*
+
+    - *The function should be called "set_up_instrument"*
+    - *It should set the title to "My experiment"*
+    - *It should set the username to your name*::
+
+        def set_up_instrument():
+            g.change(title="My experiment", user="Adrian")
+
+-   *Update your user script, ``run_my_experiment.py`` which contains a function that does the following*
+
+    - *Begins the run*
+    - *Prints the current uamps for the current period over 10 seconds at 1 second intervals*
+    - *Ends the run*::
+
+        def get_uamps_run():
+            g.begin()
+            # Assume this doesn't change
+            period = g.get_period()
+            for i in range(10):
+                print "Total current after {0}s: {1}.format(i+1, g.get_uamps(period))
+            g.end()
+
+-   *Load your user script ``run_my_experiment.py``*
+
+    - Run something like this in the scripting perspective: ``g.load_script("C:\scripts\run_my_experiment.py")``
+
+-   *Run the instrument method you wrote in exercise 3b*
+
+    - Run something like this in the scripting perspective: ``inst.set_up_instrument()``
+
+-   *Run the user script method you wrote in exercise 3b*
+
+    - Run something like this in the scripting perspective: ``get_uamps_run()`` 
+
 Exercise 4
 ==========
+
+From [[Scripting|Ibex-and-genie_python:-Scripting]].
+
 -   *Create a new instrument script containing a function*
 
     - You should create a Python file in "C:\Instrument\Settings\config\[Machine name]\Python\inst"
