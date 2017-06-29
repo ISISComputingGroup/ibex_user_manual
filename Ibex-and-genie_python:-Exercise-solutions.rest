@@ -76,18 +76,19 @@ Exercise 4
 
     - You should create a Python file in "C:\Instrument\Settings\config\[Machine name]\Python\inst"
 
-    - *The function sets the title to "Ramping [block name] from [initial value] to [final value]"
-    - The method begins a run and then changes the value of the block incrementally in steps of size 1
-    - Once the target is reached, the method ends the run*::
+    - *The function sets the title to "Ramping [block name] from [initial value] to [final value]"*
+    - *The method begins a run and then changes the value of the block incrementally in steps of size 1*
+    - *Once the target is reached, the method ends the run*::
 
         def ramp(block, target):
-            g.begin()
-            
             try:
                 initial = g.cget(block)['value']
             except:
                 print "Problem getting value for block {0}. Make sure it exists".format(block)
             else:
+                g.change(title="Ramping {0} from {1} to {2}".format(block, initial, target))
+                g.begin()
+
                 current = initial
                 small = 0.0001
                 while abs(current-target) > small:
