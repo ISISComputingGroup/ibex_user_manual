@@ -233,49 +233,52 @@ As mentioned, the final ``ENDPROCEDURE`` command doesn't need converting. Our fi
 Exercise 5
 ==========
 
--   Translate the following ``OpenGENIE`` script into ``genie_python``::
+-    Translate the following ``OpenGENIE`` script into ``genie_python``::
+   
+     PROCEDURE Scan
+         LOCAL i setpoint max min start step_size title nframes nimages multip
+         
+         max = 200.0
+         min = 100.0
+         
+         setpoint = 0.0
+         start = -100.0
+         setpoint = start
+         nframes = 10000
+         nimages = 100
+         
+         step_size = 20.0
+         
+         LOOP i FROM 1 TO nimages
+             
+             setpoint = setpoint + step_size
+             multip = As_Integer(setpoint/360)
+             setpoint = setpoint - 360*multip
+             PRINTN "New angle is: " + as_string(setpoint)
+             
+             IF (setpoint>=min) OR (setpoint<=max)           
+                 
+                 tempTitle="Image "+as_string(i)+", "+as_string(setpoint)+" degrees"
+                 CHANGE TITLE=tempTitle  
+                 
+                 cset POSITION=setpoint
+                 waitformove
+                 PRINTN "Move Compete. Counting for frames =" + As_String(nframes)
+                 BEGIN
+                     WAITFOR frames=nframes      
+                 END
+                 PRINTN setpoint
+             ELSE    
+                 PRINTIN "Would be out of bounds. NOT in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
+             ENDIF       
+                 
+         ENDLOOP
+     ENDPROCEDURE
+   
+-    State any simplifications you've made
 
-    PROCEDURE Scan
-        LOCAL i setpoint max min start step_size title nframes nimages multip
-        
-        max = 200.0
-        min = 100.0
-        
-        setpoint = 0.0
-        start = -100.0
-        setpoint = start
-        nframes = 10000
-        nimages = 100
-        
-        step_size = 20.0
-        
-        LOOP i FROM 1 TO nimages
-            
-            setpoint = setpoint + step_size
-            multip = As_Integer(setpoint/360)
-            setpoint = setpoint - 360*multip
-            PRINTN "New angle is: " + as_string(setpoint)
-            
-            IF (setpoint>=min) OR (setpoint<=max)           
-                
-                tempTitle="Image "+as_string(i)+", "+as_string(setpoint)+" degrees"
-                CHANGE TITLE=tempTitle  
-                
-                cset POSITION=setpoint
-                waitformove
-                PRINTN "Move Compete. Counting for frames =" + As_String(nframes)
-                BEGIN
-                    WAITFOR frames=nframes      
-                END
-                PRINTN setpoint
-            ELSE    
-                PRINTIN "Would be out of bounds. NOT in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
-            ENDIF       
-                
-        ENDLOOP
-    ENDPROCEDURE
 
--   State any simplifications you've made
+[[Solution|Ibex-and-genie_python:-Exercise-solutions]]
     
 -------------------------------------------------------------------------------
 
