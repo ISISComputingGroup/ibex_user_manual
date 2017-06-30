@@ -32,7 +32,7 @@ Similarly, most arguments will be very similar between ``OpenGENIE`` and ``genie
 
 becomes the following in ``genie_python``::
 
-    g.cset(TEMP1=5, lowlimit=1, highlimit=10)
+    g.cset(TEMP1=5, runcontrol=True, lowlimit=1, highlimit=10)
 
 **NOTE** Python is case sensitive and the arguments, apart from the block name, are in lower case
 
