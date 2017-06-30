@@ -216,7 +216,7 @@ From [[Scripting|Ibex-and-genie_python:-Converting-from-Open-GENIE]].
          ENDLOOP
      ENDPROCEDURE
 
-- In **genie_python** this could be written as::
+- In ``genie_python`` this could be written as::
 
      def scan(start=-100, min=100, max=200, step_size=20, nframes=10000, nimages=100):
          for i in range(1, nimages):
