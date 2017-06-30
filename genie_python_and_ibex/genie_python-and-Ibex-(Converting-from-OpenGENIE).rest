@@ -249,6 +249,9 @@ Exercise 5
          
          step_size = 20.0
          
+
+break::
+
          LOOP i FROM 1 TO nimages
              
              setpoint = setpoint + step_size
