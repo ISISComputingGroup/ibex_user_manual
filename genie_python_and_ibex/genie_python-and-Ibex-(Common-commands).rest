@@ -5,7 +5,7 @@ From an Ibex scripting terminal, ``genie_python`` commands can be accessed via t
 
 You should have noticed immediately after you typed ``g.`` that an autocomplete window appeared:
 
-.. image:: AutoCompleteWindowBasic.png
+.. image:: genie_python_and_ibex/AutoCompleteWindowBasic.png
 
 The window lists the available commands, and the arguments they take in brackets. You also notice that a description of the highlighted functions and its arguments is also given. The list will be refined as you type more characters.
 
