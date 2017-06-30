@@ -4,7 +4,7 @@ Open Genie: Compare and contrast
 Procedures vs. functions
 ------------------------
 
-in ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the ``ENDPROCEDURE`` statement. In Python, we instead define functions using the ``def`` keyword. For example::
+in ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
 
     PROCEDURE my_function
     ...
@@ -15,16 +15,16 @@ becomes::
     def my_function():
        ...
 
-Note that, using Python syntax, we don't need a statement to show where the function ends, the indentation takes care of that for us.
+Note that, using Python syntax, we don't need a statement to show where the function ends; the indentation takes care of that for us.
 
-We can also pass arguments into procedures in ``OpenGENIE`` as below::
+We pass arguments into ``OpenGENIE`` procedures like this::
 
     PROCEDURE my_function
     PARAMETERS x = Integer y = Real z = String
     ...
     ENDPROCEDURE
 
-We can do the same thing in ``genie_python``, but notably we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes::
+We can do the same thing in ``genie_python``, but we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes::
 
     def my_function(x, y, z):
         ...
@@ -38,15 +38,17 @@ In ``OpenGENIE`` a loop is defined using::
     ...
     ENDLOOP
 
-You should already be familiar with defining loops in Python but, as a reminder, the code above would translate into Python as::
+The code above translates into Python as::
 
     for i in range(start, end+1):
         ...
 
+No ``ENDLOOP`` is needed because the indentation makes it implicit.
+
 Conditionals
 ------------
 
-As with loops, you should already be familiar with conditionals in Python. In ``OpenGENIE`` these look like::
+In ``OpenGENIE`` conditionals take the form::
 
    IF [CONDITION]
        ...
@@ -66,7 +68,7 @@ No ``ENDIF`` is needed because the indentation makes it implicit.
 Commands
 --------
 
-The majority of ``OpenGENIE`` instrument control commands have a very close equivalence in ``genie_python``.
+The majority of ``OpenGENIE`` instrument control commands have a very close equivalent in ``genie_python``.
 
 For example, the ``OpenGENIE`` command::
 
@@ -128,15 +130,13 @@ Take the following ``OpenGENIE`` procedure::
     
     ENDPROCEDURE
 
-Let's convert it to ``genie_python``. First of all we start off by making the ``PROCEDURE`` into a Python function::
+Let's convert it to ``genie_python``. First of all we turn the ``PROCEDURE`` into a Python function::
 
     def my_function():
 
 We haven't given any arguments, because the procedure has no parameters. 
 
-The variable definitions remain the same, except we don't need the ``GLOBAL`` line to define our variables.
-
-On inspection, we might consider that this function will be reused with different temperatures and limits, in which case we could change::
+The variable definitions remain the same, except we don't need the ``GLOBAL`` line to define our variables. However this function might be reused with different temperatures and limits, in which case we could change::
 
     def my_function():
         temp = 20
@@ -147,12 +147,12 @@ to::
 
     def my_function(temp, low, high):
 
-and I can always create a function to call specific parameters if I need to::
+We can always create a function to call specific parameters if needed::
 
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
-Further, I can see that my ``WAITFOR`` later in the function waits for 50 microamps. Let's assume we almost always want to wait for 50 microamps but we'd like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so::
+Further, we notice that ``WAITFOR`` later in the function waits for 50 microamps. Let's assume we almost always want to wait for 50 microamps but we'd like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so::
 
     def my_function(temp, low, high, count=50):
 
@@ -204,9 +204,9 @@ We've changed a couple of things:
 
 -  Rather than use the value ``10`` for the number of minutes to wait, we've set it as a variable. That means if we change the value, we only need to change it in one place.
 -  We've used the ``minutes`` argument in ``waitfor_time`` rather than having to apply the conversion factor between minutes and seconds ourselves.
--  We've used the syntax ``"...".format(arg1, arg2)`` to build our output strings. There are lots of ways to build strings in Python, you can just use ``"..." + str(arg1) + "..." + str(arg2) + "..."`` but we like this way because it makes it easier to read and you don't have to remember to use ``str(...)`` to convert the types
+-  We've used the syntax ``"...".format(arg1, arg2)`` to build our output strings. There are lots of ways to build strings in Python. Alternatively you can just use ``"..." + str(arg1) + "..." + str(arg2) + "..."`` but we like this way because it makes it easier to read and you don't have to remember to use ``str(...)`` to convert the types
 
-As mentioned, the final ``ENDPROCEDURE`` command doesn't need converting. Our final script is therefore::
+The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python``. Our final script is therefore::
 
     def my_function(temp, low, high, count=50):
         for block in [TEMP1, TEMP2]:
@@ -268,7 +268,7 @@ Exercise 5
                      WAITFOR frames=nframes      
                  END
              ELSE    
-                 PRINTIN "Not in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
+                 PRINTIN "Value "+As_string(setpoint)+ " not in interval"
              ENDIF       
                  
          ENDLOOP
