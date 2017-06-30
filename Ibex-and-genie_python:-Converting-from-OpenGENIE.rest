@@ -113,7 +113,7 @@ to::
 
     def my_function(temp, low, high):
 
-and I can always create a function to call specific parameters if I need to:
+and I can always create a function to call specific parameters if I need to::
 
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
