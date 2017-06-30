@@ -263,11 +263,10 @@ Exercise 5
                  
                  cset POSITION=setpoint
                  waitformove
-                 PRINTN "Move Compete. Counting for frames =" + As_String(nframes)
+                 PRINTN "Move complete. Counting for "+As_String(nframes)+" frames"
                  BEGIN
                      WAITFOR frames=nframes      
                  END
-                 PRINTN setpoint
              ELSE    
                  PRINTIN "Not in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
              ENDIF       
