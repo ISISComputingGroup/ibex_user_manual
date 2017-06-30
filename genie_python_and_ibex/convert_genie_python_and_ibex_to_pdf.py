@@ -18,7 +18,7 @@ class PDFGenerator(object):
     def _initialise_logging(self):
         from datetime import datetime as dt
         logger = logging.getLogger('pdf_generator')
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.WARNING)
 
         if not os.path.exists(PDFGenerator.LOG_DIR):
             os.mkdir(PDFGenerator.LOG_DIR)
