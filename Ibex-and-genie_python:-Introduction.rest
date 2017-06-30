@@ -11,6 +11,12 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 
 At each stage the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python.
 
+Notably, ``genie_python`` does not cover data analysis. If you wish to do analysis in Python there are several options available:
+
+- Python: The base Python language is very powerful and can do a lot of common mathematical functions. In particular, refer to the ``math`` module.
+- Numpy: This is a numerical analysis module that is very powerful and comes bundled with the distribution of ``genie_python``
+- Mantid: This has extensive coverage of the tools required by neutron and muon experiments. We will not cover it in this course but there is dedicated training available from the Mantid team if you'd like to learn more.
+
 If you're looking for a specific section, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]!
 
 Contents
