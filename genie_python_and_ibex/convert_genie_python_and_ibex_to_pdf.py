@@ -51,6 +51,7 @@ class PDFGenerator(object):
 
             output = os.path.join(PDFGenerator.OUTPUT_DIR,
                                   path.replace(PDFGenerator.REST_EXTENSION, PDFGenerator.PDF_EXTENSION))
+
             try:
                 self.converter.createPdf(text=formatted_text, output=output)
             except Exception as e:
