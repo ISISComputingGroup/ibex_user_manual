@@ -67,7 +67,7 @@ Many ``waitfor`` arguments also have a standalone function, so as to retain equi
 
 One special ``waitfor`` function is:
 
-- ``waitfor_move``: Waits for all motors, or a specific motor to finish moving
+- ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
 
 Update and store
 ------------------
