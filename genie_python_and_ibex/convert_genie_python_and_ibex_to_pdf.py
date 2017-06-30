@@ -18,7 +18,7 @@ class PDFGenerator(object):
     def _initialise_logging(self):
         from datetime import datetime as dt
         logger = logging.getLogger('pdf_generator')
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.DEBUG)
 
         if not os.path.exists(PDFGenerator.LOG_DIR):
             os.mkdir(PDFGenerator.LOG_DIR)
@@ -34,7 +34,7 @@ class PDFGenerator(object):
     def _initialise_output(self):
         if not os.path.exists(PDFGenerator.OUTPUT_DIR):
             os.mkdir(PDFGenerator.OUTPUT_DIR)
-        self.converter = RstToPdf()
+        self.converter = RstToPdf(stylesheets=['training.style'])
 
     def create(self):
         outputs = []
@@ -64,10 +64,14 @@ class PDFGenerator(object):
         return [f for f in os.listdir(os.getcwd()) if f.endswith(PDFGenerator.REST_EXTENSION)]
 
     def format_rst(self, text):
-        formatted = os.linesep.join(text)
 
-        # Take out exercise solution links
-        formatted.replace('[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]', '')
+        # Remove lines starting "Next:", "Previous:" and transitions
+        text = [l for l in text if not any(l.startswith(s) for s in [
+            "**Next**:", "**Previous**:", "--------",
+            "[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]",
+        ])]
+
+        formatted = os.linesep.join(text)
 
         # Replace links with their description text
         p = re.compile('\[\[([^\|]*)\|([^\|]*)\]\]', re.VERBOSE)
