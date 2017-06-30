@@ -29,6 +29,40 @@ We can do the same thing in ``genie_python``, but notably we don't need to defin
     def my_function(x, y, z):
         ...
 
+Loops
+-----
+
+In ``OpenGENIE`` a loop is defined using::
+
+    LOOP I  FROM start TO end
+    ...
+    ENDLOOP
+
+You should already be familiar with defining loops in Python but, as a reminder, the code above would translate into Python as::
+
+    for i in range(start, end+1):
+        ...
+
+Conditionals
+------------
+
+As with loops, you should already be familiar with conditionals in Python. In ``OpenGENIE`` these look like::
+
+   IF [CONDITION]
+       ...
+   ELSE
+       ...
+   ENDIF
+
+In Python this is written as::
+
+   if [CONDITION]:
+      ...
+   else:
+      ...
+
+No ``ENDIF`` is needed because the indentation makes it implicit.
+
 Commands
 --------
 
@@ -196,21 +230,53 @@ As mentioned, the final ``ENDPROCEDURE`` command doesn't need converting. Our fi
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
-Loops
------
+Exercise 5
+==========
 
-In ``OpenGENIE`` a loop is defined using::
+-   Translate the following ``OpenGENIE`` script into ``genie_python``::
 
-    LOOP I  FROM start TO end
-    ...
-    ENDLOOP
+    PROCEDURE Scan
+        LOCAL i setpoint max min start step_size title nframes nimages multip
+        
+        max = 200.0
+        min = 100.0
+        
+        setpoint = 0.0
+        start = -100.0
+        setpoint = start
+        nframes = 10000
+        nimages = 100
+        
+        step_size = 20.0
+        
+        LOOP i FROM 1 TO nimages
+            
+            setpoint = setpoint + step_size
+            multip = As_Integer(setpoint/360)
+            setpoint = setpoint - 360*multip
+            PRINTN "New angle is: " + as_string(setpoint)
+            
+            IF (setpoint>=min) OR (setpoint<=max)           
+                
+                tempTitle="Image "+as_string(i)+", "+as_string(setpoint)+" degrees"
+                CHANGE TITLE=tempTitle  
+                
+                cset POSITION=setpoint
+                waitformove
+                PRINTN "Move Compete. Counting for frames =" + As_String(nframes)
+                BEGIN
+                    WAITFOR frames=nframes      
+                END
+                PRINTN setpoint
+            ELSE    
+                PRINTIN "Would be out of bounds. NOT in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
+            ENDIF       
+                
+        ENDLOOP
+    ENDPROCEDURE
 
-You should already be familiar with defining loops in Python but, as a reminder, the code above would translate into Python as::
-
-    for i in range(start, end+1):
-        ...
-
-
+-   State any simplifications you've made
+    
 -------------------------------------------------------------------------------
 
 **Previous**: [[Scripting|Ibex-and-genie_python:-Scripting]]
