@@ -104,7 +104,7 @@ Functions loaded from user scripts using the ``g.load_script(...)`` command will
 Exercise 3e
 -----------
 
-- Run the user script method you wrote in exercise 3b
+Run the user script method you wrote in exercise 3b
 
 [[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
