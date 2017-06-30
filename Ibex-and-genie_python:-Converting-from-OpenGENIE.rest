@@ -277,11 +277,11 @@ Exercise 5
 -    State any simplifications you've made
 
 
-[[Solution|Ibex-and-genie_python:-Exercise-solutions]]
+[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
     
 -------------------------------------------------------------------------------
 
-**Next**: [[Closing remarks|Ibex-and-genie_python:-Closing-remarks]]
+**Next**: [[Closing remarks|genie_python-and-Ibex-(Closing-remarks)]]
 
-**Previous**: [[Scripting|Ibex-and-genie_python:-Scripting]]
+**Previous**: [[Scripting|genie_python-and-Ibex-(Scripting)]]
    
