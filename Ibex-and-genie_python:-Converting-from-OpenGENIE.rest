@@ -26,11 +26,15 @@ or alternatively::
 
     g.change(title="New title")
 
-Notably, ``genie_python`` does not cover data analysis. If you wish to do analysis in Python there are several options available:
+Similarly, most arguments will be very similar between ``OpenGENIE`` and ``genie_python``. For example, the following ``OpenGENIE`` command::
 
-- Python: The base Python language is very powerful and can do a lot of common mathematical functions. In particular, refer to the ``math`` module.
-- Numpy: This is a numerical analysis module that is very powerful and comes bundled with the distribution of ``genie_python``
-- Mantid: This has extensive coverage of the tools required by neutron and muon experiments. We will not cover it in this course but there is dedicated training available from the Mantid team if you'd like to learn more.
+    CSET/CONTROL TEMP1=5 LOWLIMIT=1 HIGHLIMIT=10
+
+becomes the following in ``genie_python``::
+
+    g.cset(TEMP1=5, lowlimit=1, highlimit=10)
+
+**NOTE** Python is case sensitive and the arguments, apart from the block name, are in lower case
 
 Worked example
 --------------
