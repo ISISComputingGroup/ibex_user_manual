@@ -15,5 +15,5 @@ Loops
 
 -------------------------------------------------------------------------------
 
-**Previous**: [[Converting from OpenGENIE|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
+**Previous**: [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]]
    
