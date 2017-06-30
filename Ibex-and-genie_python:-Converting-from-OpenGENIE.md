@@ -4,8 +4,64 @@ Open Genie: Compare and contrast
 Commands
 --------
 
-Arguments
----------
+The majority of ``OpenGENIE`` instrument control commands have a very close equivalence in ``genie_python``.
+
+For example, the ``OpenGENIE`` command::
+
+    BEGIN
+
+in ``genie_python`` becomes::
+
+    g.begin()
+
+Similarly, the ``OpenGENIE`` command::
+
+    CHANGE TITLE="New title"
+
+in ``genie_python`` becomes::
+
+    g.change_title("New title")
+
+or alternatively::
+
+    g.change(title="New title")
+
+Notably, ``genie_python`` does not cover data analysis. If you wish to do analysis in Python there are several options available:
+
+- Python: The base Python language is very powerful and can do a lot of common mathematical functions. In particular, refer to the ``math`` module.
+- Numpy: This is a numerical analysis module that is very powerful and comes bundled with the distribution of ``genie_python``
+- Mantid: This has extensive coverage of the tools required by neutron and muon experiments. We will not cover it in this course but there is dedicated training available from the Mantid team if you'd like to learn more.
+
+Passing arguments to commands
+=============================
+
+We have already seen how many ``OpenGENIE`` commands have equivalent function calls in ``genie_python``. The arguments for these commands are also often equivalent, but they have to be passed in a way that follows Python syntax. You should already be somewhat familiar with this syntax. To review briefly:
+
+- Arguments are passed to functions as a comma separated list within brackets (e.g. ``my_function(arg1, arg2)``)
+- Arguments may be named or not (e.g. ``my_function(first_arg=arg1, second_arg=arg2)``)
+- Named and un-named arguments can be mixed but the named arguments must appear last (e.g. ``my_function(arg1, second_arg=arg2``)
+- Named arguments will be interpreted in the order of the function definition. Un-named arguments can be in any order. So ``my_function(second_arg=arg2, first_arg=arg1)`` would be valid but  ``my_function(arg2, first_arg=arg1)`` would not.
+- Some arguments may be defaulted in which case they do not need to be included in the argument list.
+
+As an example, the following three calls are all equivalent::
+
+    g.begin()
+    g.begin(False)
+    g.begin(verbose=False)
+
+Some commands support special syntax as we have already seen in the [[common commands|Ibex-and-genie_python:-Common-commands]] chapter. For example, ``cset`` can either take the block name as an argument value, or as a named argument. The following two commands are equivalent::
+
+    g.cset(MY_BLOCK=2)
+    g.cset("MY_BLOCK", 2)
+
+This is a special case, and is not necessarily supported by other commands. For more information, consult the [[common commands|Ibex-and-genie_python:-Common-commands]] chapter or the [[genie_python reference manual|http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html]].
+
+Worked example
+--------------
+
+Take the following sequence of ``OpenGENIE``
+
+
 
 Procedures vs. functions
 ------------------------
