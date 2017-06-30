@@ -6,11 +6,11 @@ Commands
 
 The majority of ``OpenGENIE`` instrument control commands have a very close equivalence in ``genie_python``.
 
-For example, the ``OpenGENIE`` command
+For example, the ``OpenGENIE`` command::
 
     BEGIN
 
-in ``genie_python`` becomes
+in ``genie_python`` becomes::
 
     g.begin()
 
@@ -18,11 +18,11 @@ Similarly, the ``OpenGENIE`` command::
 
     CHANGE TITLE="New title"
 
-in ``genie_python`` becomes
+in ``genie_python`` becomes::
 
     g.change_title("New title")
 
-or alternatively
+or alternatively::
 
     g.change(title="New title")
 
@@ -43,13 +43,13 @@ We have already seen how many ``OpenGENIE`` commands have equivalent function ca
 - Named arguments will be interpreted in the order of the function definition. Un-named arguments can be in any order. So ``my_function(second_arg=arg2, first_arg=arg1)`` would be valid but  ``my_function(arg2, first_arg=arg1)`` would not.
 - Some arguments may be defaulted in which case they do not need to be included in the argument list.
 
-As an example, the following three calls are all equivalent
+As an example, the following three calls are all equivalent::
 
     g.begin()
     g.begin(False)
     g.begin(verbose=False)
 
-Some commands support special syntax as we have already seen in the [[common commands|Ibex-and-genie_python:-Common-commands]] chapter. For example, ``cset`` can either take the block name as an argument value, or as a named argument. The following two commands are equivalent
+Some commands support special syntax as we have already seen in the [[common commands|Ibex-and-genie_python:-Common-commands]] chapter. For example, ``cset`` can either take the block name as an argument value, or as a named argument. The following two commands are equivalent::
 
     g.cset(MY_BLOCK=2)
     g.cset("MY_BLOCK", 2)
