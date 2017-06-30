@@ -175,7 +175,7 @@ Exercise 5
 
 From [[Scripting|Ibex-and-genie_python:-Converting-from-Open-GENIE]].
 
-- *Translate the following ``OpenGENIE`` script into ``genie_python``::*
+- *Translate the following ``OpenGENIE`` script into ``genie_python``*::
 
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip
