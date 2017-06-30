@@ -1,74 +1,85 @@
 import logging
 import os
+import re
 from rst2pdf.createpdf import RstToPdf
 
 
 class PDFGenerator(object):
 
     REST_EXTENSION = ".rest"
-    PYTHON_EXTENSION = ".py"
+    PDF_EXTENSION = ".pdf"
     LOG_DIR = 'logs'
     OUTPUT_DIR = 'output'
 
     def __init__(self):
         self._initialise_logging()
+        self._initialise_output()
 
     def _initialise_logging(self):
         from datetime import datetime as dt
         logger = logging.getLogger('pdf_generator')
         logger.setLevel(logging.DEBUG)
 
-        if not os.path.exists('logs'):
-            os.mkdir('logs')
+        if not os.path.exists(PDFGenerator.LOG_DIR):
+            os.mkdir(PDFGenerator.LOG_DIR)
 
         fh = logging.FileHandler(
             os.path.join(PDFGenerator.LOG_DIR, 'pdf_generator_{0}.log'.format(dt.now().strftime("%y_%m_%d_%H_%M_%S"))))
         fh.setLevel(logging.DEBUG)
-
-        ch = logging.StreamHandler()
-        ch.setLevel(logging.ERROR)
-
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-        fh.setFormatter(formatter)
-        ch.setFormatter(formatter)
-
+        fh.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         logger.addHandler(fh)
-        logger.addHandler(ch)
 
         self.logger = logger
 
-    def create(self):
+    def _initialise_output(self):
+        if not os.path.exists(PDFGenerator.OUTPUT_DIR):
+            os.mkdir(PDFGenerator.OUTPUT_DIR)
+        self.converter = RstToPdf()
 
+    def create(self):
+        outputs = []
         for path in self.get_source_files():
 
             self.logger.info("Reading {0}".format(path))
             try:
                 raw_text = open(path, "r").readlines()
             except Exception as e:
-                self.logger.error("Unknown error reading {0}: {1}".format(path, e.message))
+                self.logger.error("Unknown error reading {0}: {1}".format(path, e))
 
             self.logger.info("Formatting {0}".format(path))
             try:
                 formatted_text = self.format_rst(raw_text)
             except Exception as e:
-                self.logger.error("Unknown error formatting {0}: {1}".format(path, e.message))
+                self.logger.error("Unknown error formatting {0}: {1}".format(path, e))
 
             output = os.path.join(PDFGenerator.OUTPUT_DIR,
-                                  path.replace(PDFGenerator.REST_EXTENSION, PDFGenerator.PYTHON_EXTENSION))
+                                  path.replace(PDFGenerator.REST_EXTENSION, PDFGenerator.PDF_EXTENSION))
             self.logger.info("Creating pdf of {0} at {1}".format(path, output))
             try:
-                RstToPdf.createPdf(text=formatted_text,output=output)
+                self.converter.createPdf(text=formatted_text, output=output)
             except Exception as e:
-                self.logger.error("Unknown error creating pdf of {0}: {1}".format(path, e.message))
+                print e
+                self.logger.error("Unknown error creating pdf of {0}: {1}".format(path, e))
+            else:
+                outputs.append(output)
 
     def get_source_files(self):
         self.logger.info("Getting source files from: {0}".format(os.getcwd()))
-        files = [f for f in os.getcwd() if f.endswith(PDFGenerator.REST_EXTENSION)]
+        files = [f for f in os.listdir(os.getcwd()) if f.endswith(PDFGenerator.REST_EXTENSION)]
         self.logger.info("Found {0} restructured text files for conversion".format(len(files)))
         return files
 
     def format_rst(self, text):
-        return text
+        formatted = os.linesep.join(text)
+
+        # Take out exercise solution links
+        formatted.replace('[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]', '')
+
+        # Replace links with their description text
+        p = re.compile('\[\[([^\|]*)\|([^\|]*)\]\]', re.VERBOSE)
+        formatted = p.sub(r'\1', formatted)
+
+        return formatted
 
 
 if __name__ == "__main__":
