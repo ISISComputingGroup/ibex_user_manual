@@ -1,7 +1,6 @@
 Open Genie: Compare and contrast
 ================================
 
-------------------------
 Procedures vs. functions
 ------------------------
 
@@ -30,7 +29,6 @@ We can do the same thing in ``genie_python``, but we don't need to define the ty
     def my_function(x, y, z):
         ...
 
------
 Loops
 -----
 
@@ -47,7 +45,6 @@ The code above translates into Python as::
 
 No ``ENDLOOP`` is needed because the indentation makes it implicit.
 
-------------
 Conditionals
 ------------
 
