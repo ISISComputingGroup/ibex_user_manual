@@ -140,8 +140,8 @@ Blocks
           - Example: ``g.cset("MY_BLOCK", lowlimit=1, highlimit=10, runcontrol=True)``
 
 
-Worked example: Try it yourself!
---------------------------------
+Worked example
+----------------
 
 The following script scans a block between its upper and lower limit::
 
