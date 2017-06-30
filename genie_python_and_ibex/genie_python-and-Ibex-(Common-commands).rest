@@ -207,6 +207,7 @@ As with ``waitfor``, there are also standalone commands for many properties. For
 
 **Exercise 2**
 ==============
+
 -    This exercise requires that:
  
      - You have permission to begin and end runs on the instrument you're using.
