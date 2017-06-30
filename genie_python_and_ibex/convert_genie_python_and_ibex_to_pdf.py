@@ -71,6 +71,10 @@ class PDFGenerator(object):
             "[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]",
         ])]
 
+        # Correct image paths
+        path_snippet = "genie_python_and_ibex"
+        text = [l.replace("{0}/".format(path_snippet), "") for l in text]
+
         formatted = os.linesep.join(text)
 
         # Replace links with their description text
