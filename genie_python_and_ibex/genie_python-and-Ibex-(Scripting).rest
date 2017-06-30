@@ -135,9 +135,7 @@ You may want to call a function from one file in another file.
 Calling an instrument function from a different instrument script
 -----------------------------------------------------------------
 
-It is recommended that you ``import`` it using standard Python rather than trying to call it with the ``inst.`` prefix. As you don't know the order in which the scripts are loaded, this avoids potential errors in the load order. It also helps to prevent circular dependencies.
-
-For example, if I have one instrument script, ``counts.py``::
+It is recommended that you ``import`` it using standard Python rather than trying to call it with the ``inst.`` because you don't know the order in which the scripts are loaded. For example, if I have one instrument script, ``counts.py``::
 
     def vanadium(title, duration):
         g.change(title=title)
@@ -165,7 +163,7 @@ This is feasible, but generally not recommended. The user script won't be kept i
 Calling a user function from a different user script
 ----------------------------------------------------
 
-Exactly the same as calling a function in one instrument script from another
+The same as calling a function in one instrument script from another.
  
 
 Exercise 4
