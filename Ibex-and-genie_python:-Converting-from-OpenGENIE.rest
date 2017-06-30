@@ -126,7 +126,7 @@ Let's start looking at the content of the PROCEDURE::
 
     CSET/CONTROL TEMP1=temp LOWLIMIT=low HIGHLIMIT=high
 
-In ``genie_python``, this becomes:
+In ``genie_python``, this becomes::
 
     g.cset(TEMP1=temp, lowlimit=low, highlight=high, runcontrol=True)
 
