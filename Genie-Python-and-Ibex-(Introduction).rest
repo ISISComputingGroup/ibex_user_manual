@@ -13,20 +13,20 @@ At each stage the course aims to assist learning with exercises and worked examp
 
 Notably, ``genie_python`` does not cover data analysis. If you wish to do analysis that can't be achieved with basic Python, we recommend the [[Mantid with Python training course|https://www.mantidproject.org/Python_In_Mantid]].
 
-If you're looking for a specific section, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python:-Getting-started]]!
+If you're looking for a specific section, please refer to the course contents below. Otherwise, let's [[get started|Ibex-and-genie_python-(Getting-started)]]!
 
 Contents
 ========
 
 We expect that most people will take this course in a linear fashion, but if you have a specific query, the course is broadly split up into the following topics
 
-- [[Getting started|Ibex-and-genie_python:-Getting-started]]
-- [[Common commands|Ibex-and-genie_python:-Common-commands]]
-- [[Scripting|Ibex-and-genie_python:-Scripting]]
-- [[Converting from ``OpenGENIE``|Ibex-and-genie_python:-Converting-from-OpenGENIE]]
-- [[Closing remarks|Ibex-and-genie_python:-Closing-remarks]]
-- [[Exercise solutions|Ibex-and-genie_python:-Exercise-solutions]]
+- [[Getting started|Ibex-and-genie_python-(Getting-started)]]
+- [[Common commands|Ibex-and-genie_python-(Common-commands)]]
+- [[Scripting|Ibex-and-genie_python-(Scripting)]]
+- [[Converting from ``OpenGENIE``|Ibex-and-genie_python-(Converting-from-OpenGENIE)]]
+- [[Closing remarks|Ibex-and-genie_python-(Closing-remarks)]]
+- [[Exercise solutions|Ibex-and-genie_python-(Exercise-solutions)]]
 
 --------------------------------------------------------------------
 
-**Next**: [[Getting started|Ibex-and-genie_python:-Getting-started]]
+**Next**: [[Getting started|Ibex-and-genie_python-(Getting-started)]]
