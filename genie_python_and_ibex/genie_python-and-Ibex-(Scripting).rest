@@ -77,8 +77,6 @@ Exercise 3c
 Running scripts
 ===============
 
-Remember, scripts are executed when they are loaded. Functions will be loaded immediately, but will only be run when you call them as described below.
-
 Instrument scripts
 ------------------
 
