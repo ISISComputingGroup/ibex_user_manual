@@ -47,8 +47,8 @@ You can get the current state with:
 
 **WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state.
 
-Waiting for conditions
------------------------
+Waiting
+-------
 
 If you want to wait for a specific event before executing an action, you can use a ``waitfor`` command:
 
