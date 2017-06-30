@@ -1,7 +1,7 @@
 Exercise 1
 ==========
 
-From [[Getting Started|Ibex-and-genie_python:-Getting-started]].
+From [[Getting Started|genie_python-and-Ibex-(Getting-started)]].
 
 -   *Open a scripting window in Ibex*
 
@@ -27,7 +27,7 @@ From [[Getting Started|Ibex-and-genie_python:-Getting-started]].
 Exercise 2
 ==========
 
-From [[Common commands|Ibex-and-genie_python:-Common-commands]]
+From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
 - *Change the title of the run to "Exercise 2"*
 
@@ -73,7 +73,7 @@ From [[Common commands|Ibex-and-genie_python:-Common-commands]]
 Exercise 3
 ==========
 
-From [[Scripting|Ibex-and-genie_python:-Scripting]].
+From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
 -  *Create two empty scripts:*
 
@@ -119,7 +119,7 @@ From [[Scripting|Ibex-and-genie_python:-Scripting]].
 Exercise 4
 ==========
 
-From [[Scripting|Ibex-and-genie_python:-Scripting]].
+From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
 -   *Create a new instrument script containing a function*
 
@@ -173,7 +173,7 @@ From [[Scripting|Ibex-and-genie_python:-Scripting]].
 Exercise 5
 ==========
 
-From [[Converting from OpenGENIE|Ibex-and-genie_python:-Converting-from-OpenGENIE]].
+From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]].
 
 - *Translate the following* ``OpenGENIE`` *script into* ``genie_python``::
 
