@@ -269,7 +269,7 @@ Exercise 5
                  END
                  PRINTN setpoint
              ELSE    
-                 PRINTIN "Would be out of bounds. NOT in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
+                 PRINTIN "Not in interval " +As_String(min)+ "<=" As_String(setpoint)+ " >= " +As_String(max) 
              ENDIF       
                  
          ENDLOOP
