@@ -70,7 +70,7 @@ Once you've created your scripts, you need to make sure they're available to use
 Exercise 3c
 -----------
 
-- Load your user script ``run_my_experiment.py``
+Load your user script ``run_my_experiment.py``
 
 [[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
@@ -89,7 +89,7 @@ As with ``genie_python`` commands, the Ibex scripting perspective will provide a
 Exercise 3d
 -----------
 
-- Run the instrument method you wrote in exercise 3b
+Run the instrument method you wrote in exercise 3b
 
 [[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
