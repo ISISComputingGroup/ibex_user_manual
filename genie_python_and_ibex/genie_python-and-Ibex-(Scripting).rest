@@ -15,8 +15,8 @@ We generally classify scripts as:
 
 **NOTE**: Ibex puts all configurations and **Instrument scripts** under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn't true for user scripts.
 
-- Instrument scripts are placed in the folder: ``C:\Instrument\Settings\config\NDX[Instrument name]\Python\inst``
-- User scripts are placed in the folder: ``C:\scripts``
+- Instrument scripts are located in: ``C:\Instrument\Settings\config\NDX[Instrument name]\Python\inst``
+- User scripts are located in: ``C:\scripts``
 
 Exercise 3a
 -----------
