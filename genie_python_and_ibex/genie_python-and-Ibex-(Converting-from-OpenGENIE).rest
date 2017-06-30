@@ -2,6 +2,7 @@
 Open Genie: Compare and contrast
 ================================
 
+------------------------
 Procedures vs. functions
 ------------------------
 
@@ -30,6 +31,7 @@ We can do the same thing in ``genie_python``, but we don't need to define the ty
     def my_function(x, y, z):
         ...
 
+-----
 Loops
 -----
 
@@ -46,6 +48,7 @@ The code above translates into Python as::
 
 No ``ENDLOOP`` is needed because the indentation makes it implicit.
 
+------------
 Conditionals
 ------------
 
@@ -66,6 +69,7 @@ In Python this is written as::
 
 No ``ENDIF`` is needed because the indentation makes it implicit.
 
+--------
 Commands
 --------
 
@@ -101,6 +105,7 @@ becomes the following in ``genie_python``::
 
 **NOTE** Python is case sensitive and the arguments, apart from the block name, are in lower case
 
+--------------
 Worked example
 --------------
 
@@ -231,6 +236,7 @@ The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python`
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
+==========
 Exercise 5
 ==========
 
