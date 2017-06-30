@@ -1,24 +1,22 @@
 Introduction
 ============
 
-Welcome to this introductory course on ``genie_python``, a Python module that enables instrument control using Genie commands with Python. Once you have completed this course, you will be able to do the following using ``genie_python``
+Welcome to this introductory course on ``genie_python``, a Python module that enables instrument control using Genie commands with Python. Once you have completed this course, you will be able to do the following from the scripting perspective in Ibex:
 
 - Start and stop runs
 - Get and set block information
 - Update experiment details
-- Create specialised instrument and user scripts scripts
+- Call specialised instrument and user scripts
 - Convert ``OpenGENIE`` scripts to ``genie_python``
 
-At each stage the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python. If you've never programmed in Python before, we recommend the [[Introduction to Python|https://www.mantidproject.org/Introduction_To_Python]] from the Mantid project.
+At each stage, the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python. If you've never programmed in Python before, we recommend the [[Introduction to Python|https://www.mantidproject.org/Introduction_To_Python]] from the Mantid project.
 
-Notably, ``genie_python`` does not cover data analysis. If you wish to do analysis that can't be achieved with basic Python, we recommend the [[Mantid with Python training course|https://www.mantidproject.org/Python_In_Mantid]].
-
-If you're looking for a specific section, please refer to the course contents below. Otherwise, let's [[get started|genie_python-and-Ibex-(Getting-started)]]!
+``genie_python`` does not cover data analysis. If you want to do analysis that can't be achieved with basic Python, we recommend the [[Mantid with Python training course|https://www.mantidproject.org/Python_In_Mantid]].
 
 Contents
 ========
 
-We expect that most people will take this course in a linear fashion, but if you have a specific query, the course is broadly split up into the following topics
+The course is broadly split up into the following topics
 
 - [[Getting started|genie_python-and-Ibex-(Getting-started)]]
 - [[Common commands|genie_python-and-Ibex-(Common-commands)]]
