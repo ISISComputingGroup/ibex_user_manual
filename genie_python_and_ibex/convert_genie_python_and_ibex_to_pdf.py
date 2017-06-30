@@ -40,13 +40,11 @@ class PDFGenerator(object):
         outputs = []
         for path in self.get_source_files():
 
-            self.logger.info("Reading {0}".format(path))
             try:
                 raw_text = open(path, "r").readlines()
             except Exception as e:
                 self.logger.error("Unknown error reading {0}: {1}".format(path, e))
 
-            self.logger.info("Formatting {0}".format(path))
             try:
                 formatted_text = self.format_rst(raw_text)
             except Exception as e:
@@ -54,7 +52,6 @@ class PDFGenerator(object):
 
             output = os.path.join(PDFGenerator.OUTPUT_DIR,
                                   path.replace(PDFGenerator.REST_EXTENSION, PDFGenerator.PDF_EXTENSION))
-            self.logger.info("Creating pdf of {0} at {1}".format(path, output))
             try:
                 self.converter.createPdf(text=formatted_text, output=output)
             except Exception as e:
@@ -64,10 +61,7 @@ class PDFGenerator(object):
                 outputs.append(output)
 
     def get_source_files(self):
-        self.logger.info("Getting source files from: {0}".format(os.getcwd()))
-        files = [f for f in os.listdir(os.getcwd()) if f.endswith(PDFGenerator.REST_EXTENSION)]
-        self.logger.info("Found {0} restructured text files for conversion".format(len(files)))
-        return files
+        return [f for f in os.listdir(os.getcwd()) if f.endswith(PDFGenerator.REST_EXTENSION)]
 
     def format_rst(self, text):
         formatted = os.linesep.join(text)
