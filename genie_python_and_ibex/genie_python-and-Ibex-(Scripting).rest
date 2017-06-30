@@ -98,7 +98,8 @@ User scripts
 
 Functions loaded from user scripts using the ``g.load_script(...)`` command will be available to call like any other user-defined function. For example, if I defined a function ``my_function``::
 
-    Code example
+    g.load_script("my_script_file.py")
+    my_function()
 
 Exercise 3e
 -----------
