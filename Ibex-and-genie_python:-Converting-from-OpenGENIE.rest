@@ -281,7 +281,6 @@ Exercise 5
     
 -------------------------------------------------------------------------------
 
-**Previous**: [[Scripting|Ibex-and-genie_python:-Scripting]]
-
 **Next**: [[Exercise solutions|Ibex-and-genie_python:-Exercise-solutions]]
+**Previous**: [[Scripting|Ibex-and-genie_python:-Scripting]]
    
