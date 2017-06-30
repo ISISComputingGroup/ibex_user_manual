@@ -196,10 +196,20 @@ As mentioned, the final ``ENDPROCEDURE`` command doesn't need converting. Our fi
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
-
-
 Loops
 -----
+
+In ``OpenGENIE`` a loop is defined using::
+
+    LOOP I  FROM start TO end
+    ...
+    ENDLOOP
+
+You should already be familiar with defining loops in Python but, as a reminder, the code above would translate into Python as::
+
+    for i in range(start, end+1):
+        ...
+
 
 -------------------------------------------------------------------------------
 
