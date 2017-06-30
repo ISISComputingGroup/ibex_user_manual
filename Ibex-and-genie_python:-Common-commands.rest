@@ -223,11 +223,11 @@ This is just a sample of the methods available.
 - Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
 - End the run
 
-[[Solution|Ibex-and-genie_python:-Exercise-solutions]]
+[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Scripting|Ibex-and-genie_python:-Scripting]]
+**Next**: [[Scripting|genie_python-and-Ibex-(Scripting)]]
 
-**Previous**: [[Getting started|Ibex-and-genie_python:-Getting-started]]
+**Previous**: [[Getting started|genie_python-and-Ibex-(Getting-started)]]
     
