@@ -3,7 +3,7 @@ Accessing ``genie_python`` commands
 
 From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
 
-You should have noticed immediately after you typed ``g.`` that an autocomplete window appeared:
+You should have noticed immediately after you typed ``g.`` that an auto-complete window appeared:
 
 .. image:: genie_python_and_ibex/AutoCompleteWindowBasic.png
 
