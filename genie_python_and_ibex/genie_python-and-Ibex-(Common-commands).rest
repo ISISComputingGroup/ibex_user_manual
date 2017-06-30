@@ -41,11 +41,11 @@ Switch run states
 - ``end``: Ends the current run
 - ``abort``: Aborts the current run
 
-Each of the commands above accepts an optional ``boolean`` parameter. Setting it to ``True`` (e.g. ``g.begin(True)``) will give extra output from the DAE. The default is non-verbose output. You can get the current state with:
+You can get the current state with:
 
 - ``get_runstate``: Gets the states of the current run
 
-**WARNING**: Switching states may not always lead to the assumed state. For example, you may run "g.begin()" and then expect the instrument to be running. It could be, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state before continuing.
+**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state.
 
 Waiting for conditions
 -----------------------
