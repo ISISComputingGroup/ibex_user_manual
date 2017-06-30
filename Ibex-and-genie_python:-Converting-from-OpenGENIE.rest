@@ -233,7 +233,7 @@ As mentioned, the final ``ENDPROCEDURE`` command doesn't need converting. Our fi
 Exercise 5
 ==========
 
--    Translate the following ``OpenGENIE`` script into ``genie_python``::
+- Translate the following ``OpenGENIE`` script into ``genie_python``::
    
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip
