@@ -3,8 +3,11 @@ import os
 import re
 from rst2pdf.createpdf import RstToPdf
 
-
 class PDFGenerator(object):
+    """
+    Class for managing the creation of PDFs from the .rest files of the genie_python
+    training course. The PDFs currently don't look very nice!
+    """
 
     REST_EXTENSION = ".rest"
     PDF_EXTENSION = ".pdf"
