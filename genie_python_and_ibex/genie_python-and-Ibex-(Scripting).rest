@@ -130,7 +130,7 @@ Exercise 3f
 Using functions from other files
 ================================
 
-You may find yourself wanting to call a function from one file in another file.
+You may want to call a function from one file in another file.
 
 Calling an instrument function from a different instrument script
 -----------------------------------------------------------------
