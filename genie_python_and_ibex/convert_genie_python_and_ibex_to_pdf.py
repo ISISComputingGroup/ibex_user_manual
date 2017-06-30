@@ -37,7 +37,6 @@ class PDFGenerator(object):
         self.converter = RstToPdf(stylesheets=['training.style'])
 
     def create(self):
-        outputs = []
         for path in self.get_source_files():
 
             try:
@@ -57,8 +56,6 @@ class PDFGenerator(object):
             except Exception as e:
                 print e
                 self.logger.error("Unknown error creating pdf of {0}: {1}".format(path, e))
-            else:
-                outputs.append(output)
 
     def get_source_files(self):
         return [f for f in os.listdir(os.getcwd()) if f.endswith(PDFGenerator.REST_EXTENSION)]
