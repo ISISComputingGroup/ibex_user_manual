@@ -26,7 +26,7 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 - The following code will start the run, wait, and then pause::
 
     g.begin()
-    g.waitfor(uamps=1, max_wait=10)
+    g.waitfor(uamps=1, maxwait=10)
     g.pause()
 
 - This code sets the value, run control, and limits on "MY_BLOCK". Your code may look slightly different depending how you've chosen to pass in the arguments::
