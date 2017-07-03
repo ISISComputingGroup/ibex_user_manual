@@ -1,4 +1,4 @@
-Accessing ``genie_python`` commands
+Calling ``genie_python`` functions
 ===================================
 
 From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
@@ -84,7 +84,7 @@ Worked example
 The following script will begin and run, then stop it once it reaches a running state::
 
     # Only start if we're in the correct state
-    if g.get_runstate=="SETUP"
+    if g.get_runstate=="SETUP":
         g.begin()
 
         maximum_retries = 60
@@ -157,7 +157,7 @@ The following script scans a block between its upper and lower limit::
     step_size = abs_step_size
 
     # Run the scan
-    for i in range(max_steps)
+    for i in range(max_steps):
         block_properties = g.cget(block)
         current_value = block_properties['value']
 
