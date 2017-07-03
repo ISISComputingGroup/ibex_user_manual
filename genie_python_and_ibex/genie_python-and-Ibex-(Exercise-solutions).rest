@@ -143,8 +143,8 @@ From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENI
 
               if min <= setpoint <= max:
                   g.change_title("Image {0}: {1} degrees".format(i, setpoint))
-                  g.cset(POSTITION=setpoint)
-                  g.waitformove()
+                  g.cset(POSITION=setpoint)
+                  g.waitfor_move()
                   
                   print "Move complete. Counting for {0} frames".format(nframes)
                   g.begin()
