@@ -6,5 +6,6 @@
 * [[How To Do Things In IBEX|HowToDoThingsInIBEX]]
 * [[Scripting]]
 * [[Instrument Specific Guidance|InstrumentGuidance]]
+* [[Device Specific Guidance|DeviceGuidance]]
 * [[FAQ]]
 * [[Glossary]]
