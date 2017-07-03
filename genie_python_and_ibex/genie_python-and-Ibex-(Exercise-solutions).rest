@@ -142,7 +142,7 @@ From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENI
               print "New angle is: {0}".format(setpoint)
 
               if min <= setpoint <= max:
-                  g.change_title("Image {0}: {1} degrees".format(i, setpoint)
+                  g.change_title("Image {0}: {1} degrees".format(i, setpoint))
                   g.cset(POSTITION=setpoint)
                   g.waitformove()
                   
@@ -151,7 +151,7 @@ From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENI
                   g.waitfor(frames=nframes)
                   g.end()
               else:
-                  print "Not in interval {1}<={0}<={2}".format(setpoint, min, max)"
+                  print "Not in interval {1}<={0}<={2}".format(setpoint, min, max)
 
 -     We've made the following simplifications:
       
