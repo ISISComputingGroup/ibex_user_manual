@@ -1,0 +1,30 @@
+The Eurotherm is usually used to measure and control temperature; however it has also been used to measure pressures. It measures the resistance of an external sensor. 
+
+Calibration
+-----------
+
+The two measurement modes in which the Eurotherm is used are:
+
+#. Measuring a temperature directly: use the ``None.txt`` calibration file
+
+#. Measuring a resistance and then using a calibration file to convert to a temperature: In which case use the calibration file which is correct for your sensor. The calibration files are in ``C:\Instrument\Settings\config\common\temp_sensors``
+
+The calibration file is set using the `File` box in the `Sensor Calibration` area on the Eurotherm OPI.
+
+Ramping
+-------
+
+The Eurotherm can be made to ramp slowly through a temperature gradient. It achieve this by updating the set point every 5s to create the desired ramp rate; It does not check that the Eurotherm can respond quickly enough. To set it into ramping mode:
+
+#. Set the `Ramp rate` (N.B. The units of this are going to be changed from K/s to K/min soon check what the units are)
+#. Set `Ramp` to be on
+
+When the Eurotherm is ramping the ramping light will be lit.
+
+While the Eurotherm is ramping you can use different P, I, D and heater settings depending on the temperature. To do this:
+
+#. Create or find a ramping file in ``C:\Instrument\Settings\config\common\ramps``
+    #. The ramp file is a space separated file of values for set point temperature, P, I, D and heater (see the example file for the format)
+    #. The file *must* be in set point temperature order small to large
+    #. The set points are the lowest temperature at which the values should be used.
+
