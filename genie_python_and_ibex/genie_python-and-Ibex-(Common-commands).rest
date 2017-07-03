@@ -157,7 +157,7 @@ The following script scans a block between its upper and lower limit::
     step_size = abs_step_size
 
     # Run the scan
-    for i in range(max_steps)
+    for i in range(max_steps):
         block_properties = g.cget(block)
         current_value = block_properties['value']
 
