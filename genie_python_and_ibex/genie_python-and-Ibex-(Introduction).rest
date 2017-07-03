@@ -21,7 +21,7 @@ The course is broadly split up into the following topics
 - [[Getting started|genie_python-and-Ibex-(Getting-started)]]
 - [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 - [[Scripting|genie_python-and-Ibex-(Scripting)]]
-- [[Converting from ``OpenGENIE``|genie_python-and-Ibex-(Converting-from-OpenGENIE)]]
+- [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]]
 - [[Closing remarks|genie_python-and-Ibex-(Closing-remarks)]]
 - [[Exercise solutions|genie_python-and-Ibex-(Exercise-solutions)]]
 
