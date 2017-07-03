@@ -210,7 +210,7 @@ We've changed a couple of things:
 The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python``. Our final script is therefore::
 
     def my_function(temp, low, high, count=50):
-        for block in [TEMP1, TEMP2]:
+        for block in ["TEMP1", "TEMP2"]:
             g.cset(block, temp, lowlimit=low, highlimit=high, runcontrol=True)
 
         g.change_title("Running at temperature {0}".format(temp))
