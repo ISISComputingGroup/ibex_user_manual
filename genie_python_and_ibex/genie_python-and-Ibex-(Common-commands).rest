@@ -169,7 +169,7 @@ The following script scans a block between its upper and lower limit::
         if current_value  >= block_properties['highlimit']:
             step_size = -abs_step_size
 
-        g.cset(block=current_value + step_size)
+        g.cset(block, current_value + step_size)
         g.waitfor(seconds=0.1)
 
 Experiment setup
