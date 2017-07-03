@@ -105,7 +105,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
                 current = initial
                 small = 0.0001
                 while abs(current-target) > small:
-                    current = min(target, current + 1) if initial < final else max(target, current -1)
+                    current = min(target, current + 1) if initial < target else max(target, current -1)
                     g.cset(block, current)
             finally: 
                 g.end()
