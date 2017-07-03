@@ -50,7 +50,7 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
 - The following code will scan the block from its original value down to 4. It assumes the initial value is greater than 4::
 
-    for i in range(g.cget("MY_BLOCK")['value'], 4, -1):
+    for i in range(int(g.cget("MY_BLOCK")['value']), 4, -1):
         g.cset(MY_BLOCK=i)
         g.waitfor(seconds=1)
         
