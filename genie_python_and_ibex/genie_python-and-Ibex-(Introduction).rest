@@ -11,6 +11,8 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 
 At each stage, the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python. If you've never programmed in Python before, we recommend the [[Introduction to Python|https://www.mantidproject.org/Introduction_To_Python]] from the Mantid project.
 
+The slides accompanying this course can be found [[here|genie_python_and_ibex.pptx]]
+
 ``genie_python`` does not cover data analysis. If you want to do analysis that can't be achieved with basic Python, we recommend the [[Mantid with Python training course|https://www.mantidproject.org/Python_In_Mantid]].
 
 Contents
