@@ -42,8 +42,8 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
     # Can use either way of specifying cset for a single block
     g.cset(MY_BLOCK=20)
 
-    # Can verify in any sensible way, so long as we're getting g.runstate()
-    if g.runstate()=="WAITING":
+    # Can verify in any sensible way, so long as we're getting g.get_runstate()
+    if g.get_runstate()=="WAITING":
         print "The instrument is waiting"
     else:
         print "The instrument is not waiting"
