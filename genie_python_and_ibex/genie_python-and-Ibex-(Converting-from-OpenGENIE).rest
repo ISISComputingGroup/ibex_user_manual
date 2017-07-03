@@ -167,7 +167,7 @@ In ``genie_python``, this becomes::
 
 The same goes for ``TEMP2``, but that gives us two commands that do exactly the same thing. That's not generally a good idea because it's prone to typos and changes to one line might not be applied to the other. It would be much better to do the following::
 
-    for block in [TEMP1, TEMP2]:
+    for block in ["TEMP1", "TEMP2"]:
         g.cset(block, temp, lowlimit=low, highlimit=high, runcontrol=True)
 
 Notably we've had to use the alternate ``cset`` argument syntax in this case.
