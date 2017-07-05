@@ -14,7 +14,7 @@ The calibration file is set using the `File` box in the `Sensor Calibration` are
 Ramping
 -------
 
-The Eurotherm can be made to ramp slowly through a temperature gradient. It achieve this by updating the set point every 5s to create the desired ramp rate; It does not check that the Eurotherm can respond quickly enough. To set it into ramping mode:
+The Eurotherm can be made to ramp slowly through a temperature gradient. It achieves this by updating the set point every 5s to create the desired ramp rate; It does not check that the Eurotherm can respond quickly enough. To set it into ramping mode:
 
 #. Set the `Ramp rate` (N.B. The units of this are going to be changed from K/s to K/min soon check what the units are)
 #. Set `Ramp` to be on
