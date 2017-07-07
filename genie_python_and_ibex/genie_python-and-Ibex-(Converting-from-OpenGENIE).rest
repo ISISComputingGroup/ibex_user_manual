@@ -4,7 +4,7 @@ Open Genie: Compare and contrast
 Procedures vs. functions
 ------------------------
 
-in ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
+In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
 
     PROCEDURE my_function
     ...
