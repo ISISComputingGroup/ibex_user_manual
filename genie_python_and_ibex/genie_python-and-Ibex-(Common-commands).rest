@@ -100,6 +100,7 @@ The following script will begin and run, then stop it once it reaches a running 
 
         maximum_retries = 60
         for i in range(maximum_retries):
+            # Check that the run has started successfully
             if g.get_runstate()=="RUNNING":
 
                 # A function that does the sequence of operations associated with the run
