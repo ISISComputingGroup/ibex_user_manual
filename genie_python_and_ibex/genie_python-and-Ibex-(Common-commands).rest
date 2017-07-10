@@ -101,7 +101,7 @@ The following script will begin and run, then stop it once it reaches a running 
                 # Wait for a second before checking again
                 g.waitfor(seconds=1)
         else:
-            "Could not reach a running state"
+            print "Could not reach a running state"
 
 
 
