@@ -111,7 +111,7 @@ Run the user script method you wrote in exercise 3b
 Modifying scripts
 =================
 
-Every new scripting perspective will be a clean slate. Any previously loaded scripts will be forgotten. When they are loaded, they will be up to date with the current file contents.
+Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time Ibex is started, but your scripting session will be preserved if you switch between views without closing the client.
 
 Sometimes you might want to change a script and update it without having to change scripting terminal.
 
