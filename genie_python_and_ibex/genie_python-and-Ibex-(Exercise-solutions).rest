@@ -70,7 +70,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
         def set_up_instrument():
             g.change(title="My experiment", user="Adrian")
 
-A.   The function in ``run_my_experiment.py`` should look something like this::
+-   The function in ``run_my_experiment.py`` should look something like this::
 
         def get_uamps_run():
             g.begin()
