@@ -63,22 +63,22 @@ Exercise 3
 
 From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
-:3a:  After creating the files, you should have one new file in ``C:\scripts`` and another in ``C:\Instrument\Settings\config\[Instrument name]\Python\inst``
+:3a:   After creating the files, you should have one new file in ``C:\scripts`` and another in ``C:\Instrument\Settings\config\[Instrument name]\Python\inst``
 
 :3b:   The function in ``set_up_instrument.py`` should look something like this::
 
-        def set_up_instrument():
-            g.change(title="My experiment", user="Adrian")
+            def set_up_instrument():
+                g.change(title="My experiment", user="Adrian")
 
 :3b:   The function in ``run_my_experiment.py`` should look something like this::
 
-        def get_uamps_run():
-            g.begin()
-            # Assume this doesn't change
-            period = g.get_period()
-            for i in range(10):
-                print "Total current after {0}s: {1}.format(i+1, g.get_uamps(period))
-            g.end()
+            def get_uamps_run():
+                g.begin()
+                # Assume this doesn't change
+                period = g.get_period()
+                for i in range(10):
+                    print "Total current after {0}s: {1}.format(i+1, g.get_uamps(period))
+                g.end()
 
 :3c:   This will load the user script: ``g.load_script("run_my_experiment.py")``
 
