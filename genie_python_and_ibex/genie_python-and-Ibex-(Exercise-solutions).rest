@@ -23,7 +23,7 @@ Exercise 2
 From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
 - Use either ``g.change_title("Exercise 2")`` to change the title
-- The following code will start the run, wait, and then pause::
+- The following code will start the run, wait, and then pause:: python
 
     g.begin()
     g.waitfor_uamps(1)
