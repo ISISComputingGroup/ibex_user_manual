@@ -36,7 +36,7 @@ When writing scripts, you can use any Python and ``genie_python`` functionality 
 In general, we recommend all executable code within a script should be contained within functions and classes. For example::
 
     def my_function(arg1, arg2):
-         print "The first argument is {0}, the second argument is {1}"
+         print "The first argument is {0}, the second argument is {1}".format(arg1, arg2)
 
 This gives much greater control over when and how custom code is executed.
 
