@@ -24,7 +24,6 @@ Arguments are passed to functions using standard Python syntax. You should alrea
 As another example, the following three calls are all equivalent::
 
 .. code-block:: python
-
     g.begin()
     g.begin(False)
     g.begin(verbose=False)
