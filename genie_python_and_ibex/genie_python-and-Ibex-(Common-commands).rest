@@ -51,6 +51,9 @@ You can get the current state with:
 
 .. code-block:: python
 
+    g.begin()
+    g.begin(False)
+    g.begin(verbose=False)
     maximum_retries = 60
     for i in range(maximum_retries):
        if g.get_runstate()=="RUNNING":  
@@ -60,6 +63,7 @@ You can get the current state with:
     else:
         print "Could not reach running state"
 
+dfdfgdfg
 
 Waiting
 -------
