@@ -47,18 +47,18 @@ You can get the current state with:
 
 - ``get_runstate``: Gets the states of the current run
 
-**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. For example:
+**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. For example::
 
-```
-maximum_retries = 60
-for i in range(maximum_retries):
-   if g.get_runstate()=="RUNNING":  
-       break
-   else:
-       g.waitfor_time(seconds=1)
-else:
-   print "Could not reach running state"
-```
+.. code-block:: python
+
+    maximum_retries = 60
+    for i in range(maximum_retries):
+       if g.get_runstate()=="RUNNING":  
+           break
+       else:
+           g.waitfor_time(seconds=1)
+    else:
+        print "Could not reach running state"
 
 Waiting
 -------
