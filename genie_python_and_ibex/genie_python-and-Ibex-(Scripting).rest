@@ -33,7 +33,9 @@ Writing scripts
 
 When writing scripts, you can use any Python and ``genie_python`` functionality that you've already learnt.
 
-In general, we recommend all executable code within a script should be contained within functions and classes. For example::
+In general, we recommend all executable code within a script should be contained within functions and classes. For example:
+
+.. code-block:: python
 
     def my_function(arg1, arg2):
          print "The first argument is {0}, the second argument is {1}".format(arg1, arg2)
@@ -80,7 +82,9 @@ Running scripts
 Instrument scripts
 ------------------
 
-Methods defined in instrument scripts are available via the ``inst`` namespace. For example, if we define a method called ``my_method`` in an instrument script which takes 1 argument, a block name, then I can make it run in the scripting perspective by entering::
+Methods defined in instrument scripts are available via the ``inst`` namespace. For example, if we define a method called ``my_method`` in an instrument script which takes 1 argument, a block name, then I can make it run in the scripting perspective by entering:
+
+.. code-block:: python
 
     inst.my_method("MY_BLOCK")
 
@@ -96,7 +100,9 @@ Run the instrument method you wrote in exercise 3b
 User scripts
 ------------
 
-Functions loaded from user scripts using the ``g.load_script(...)`` command will be available to call like any other user-defined function. For example, if I defined a function ``my_function``::
+Functions loaded from user scripts using the ``g.load_script(...)`` command will be available to call like any other user-defined function. For example, if I defined a function ``my_function``:
+
+.. code-block:: python
 
     g.load_script("my_script_file.py")
     my_function()
@@ -135,7 +141,9 @@ You may want to call a function from one file in another file.
 Calling an instrument function from a different instrument script
 -----------------------------------------------------------------
 
-It is recommended that you ``import`` it using standard Python rather than trying to call it with the ``inst.`` because you don't know the order in which the scripts are loaded. For example, if I have one instrument script, ``counts.py``::
+It is recommended that you ``import`` it using standard Python rather than trying to call it with the ``inst.`` because you don't know the order in which the scripts are loaded. For example, if I have one instrument script, ``counts.py``:
+
+.. code-block:: python
 
     def vanadium(title, duration):
         g.change(title=title)
@@ -143,7 +151,9 @@ It is recommended that you ``import`` it using standard Python rather than tryin
         g.waitfor(seconds=duration)
         g.end()
 
-and another called ``calibrate.py`` that uses the ``vanadium`` function then I would write::
+and another called ``calibrate.py`` that uses the ``vanadium`` function then I would write:
+
+.. code-block:: python
 
     from counts import vanadium
     def calibration():
