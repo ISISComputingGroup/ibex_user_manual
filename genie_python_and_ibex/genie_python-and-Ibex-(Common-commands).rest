@@ -200,6 +200,12 @@ You can change various experiment details with the ``change_...`` commands:
 
 There is a generic `change` command that allows you to change multiple properties simultaneously. However, this is recommended for advanced users only.
 
+You can get the current setup using the equivalent ``get_...`` commands:
+
+- ``get_user``: Get the current user
+- ``get_title``: Get the current title
+- ``get_rb``: Get the current RB number
+
 **Exercise 2**
 ==============
 
