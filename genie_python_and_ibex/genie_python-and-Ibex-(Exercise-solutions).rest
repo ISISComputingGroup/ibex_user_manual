@@ -85,6 +85,8 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
 -   **(c)** The function in ``run_my_experiment.py`` should look something like this::
 
+.. code-block:: python
+
             def get_uamps_run():
                 g.begin()
                 # Assume this doesn't change
