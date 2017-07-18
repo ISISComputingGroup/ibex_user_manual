@@ -23,6 +23,8 @@ Arguments are passed to functions using standard Python syntax. You should alrea
 
 As another example, the following three calls are all equivalent::
 
+.. code-block:: python
+
     g.begin()
     g.begin(False)
     g.begin(verbose=False)
@@ -85,6 +87,8 @@ Worked example
 
 The following script will begin and run, then stop it once it reaches a running state::
 
+.. code-block:: python
+
     # Only start if we're in the correct state
     if g.get_runstate()=="SETUP":
         g.begin()
@@ -126,6 +130,8 @@ Blocks
      - Unlike ``cshow``, a block name must be specified
      - Properties can be accessed as standard Python::
 
+.. code-block:: python
+
           block_info = g.cget("MY_BLOCK")
           name = block_info("name")
           value = block_info("value")
@@ -147,6 +153,8 @@ Worked example
 ----------------
 
 The following script scans a block between its upper and lower limit::
+
+.. code-block:: python
 
     # Set some parameters
     max_steps = 100
