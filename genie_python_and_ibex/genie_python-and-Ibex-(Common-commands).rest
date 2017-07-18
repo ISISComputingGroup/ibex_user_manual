@@ -47,7 +47,7 @@ You can get the current state with:
 
 - ``get_runstate``: Gets the states of the current run
 
-**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. For example::
+**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. For example:
 
 .. code-block:: python
 
@@ -90,7 +90,7 @@ You can update and store DAE results using:
 Worked example
 --------------
 
-The following script will begin and run, then stop it once it reaches a running state::
+The following script will begin and run, then stop it once it reaches a running state:
 
 .. code-block:: python
 
@@ -133,7 +133,7 @@ Blocks
 
      - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
      - Unlike ``cshow``, a block name must be specified
-     - Properties can be accessed as standard Python::
+     - Properties can be accessed as standard Python:
 
 .. code-block:: python
 
@@ -157,7 +157,7 @@ Blocks
 Worked example
 ----------------
 
-The following script scans a block between its upper and lower limit::
+The following script scans a block between its upper and lower limit:
 
 .. code-block:: python
 
