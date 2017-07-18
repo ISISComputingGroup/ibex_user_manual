@@ -4,27 +4,31 @@ Open Genie: Compare and contrast
 Procedures vs. functions
 ------------------------
 
-In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
+In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that:
 
     PROCEDURE my_function
     ...
     ENDPROCEDURE
 
-becomes::
+becomes:
+
+.. code-block:: python
 
     def my_function():
        ...
 
 Note that, using Python syntax, we don't need a statement to show where the function ends; the indentation takes care of that for us.
 
-We pass arguments into ``OpenGENIE`` procedures like this::
+We pass arguments into ``OpenGENIE`` procedures like this:
 
     PROCEDURE my_function
     PARAMETERS x = Integer y = Real z = String
     ...
     ENDPROCEDURE
 
-We can do the same thing in ``genie_python``, but we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes::
+We can do the same thing in ``genie_python``, but we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
+
+.. code-block:: python
 
     def my_function(x, y, z):
         ...
@@ -32,13 +36,15 @@ We can do the same thing in ``genie_python``, but we don't need to define the ty
 Loops
 -----
 
-In ``OpenGENIE`` a loop is defined using::
+In ``OpenGENIE`` a loop is defined using:
 
     LOOP I  FROM start TO end
     ...
     ENDLOOP
 
-The code above translates into Python as::
+The code above translates into Python as:
+
+.. code-block:: python
 
     for i in range(start, end+1):
         ...
@@ -48,7 +54,7 @@ No ``ENDLOOP`` is needed because the indentation makes it implicit.
 Conditionals
 ------------
 
-In ``OpenGENIE`` conditionals take the form::
+In ``OpenGENIE`` conditionals take the form:
 
    IF [CONDITION]
        ...
@@ -56,7 +62,9 @@ In ``OpenGENIE`` conditionals take the form::
        ...
    ENDIF
 
-In Python this is written as::
+In Python this is written as:
+
+.. code-block:: python
 
    if [CONDITION]:
       ...
@@ -75,27 +83,29 @@ For example, the ``OpenGENIE`` command::
 
     BEGIN
 
-in ``genie_python`` becomes::
+in ``genie_python`` becomes:
+
+.. code-block:: python
 
     g.begin()
 
-Similarly, the ``OpenGENIE`` command::
+Similarly, the ``OpenGENIE`` command:
 
     CHANGE TITLE="New title"
 
-in ``genie_python`` becomes::
+in ``genie_python`` becomes:
+
+.. code-block:: python
 
     g.change_title("New title")
-
-or alternatively::
-
-    g.change(title="New title")
 
 Similarly, most arguments will be very similar between ``OpenGENIE`` and ``genie_python``. For example, the following ``OpenGENIE`` command::
 
     CSET/CONTROL TEMP1=5 LOWLIMIT=1 HIGHLIMIT=10
 
-becomes the following in ``genie_python``::
+becomes the following in ``genie_python``:
+
+.. code-block:: python
 
     g.cset(TEMP1=5, runcontrol=True, lowlimit=1, highlimit=10)
 
@@ -131,48 +141,62 @@ Take the following ``OpenGENIE`` procedure::
     
     ENDPROCEDURE
 
-Let's convert it to ``genie_python``. First of all we turn the ``PROCEDURE`` into a Python function::
+Let's convert it to ``genie_python``. First of all we turn the ``PROCEDURE`` into a Python function:
+
+.. code-block:: python
 
     def my_function():
 
 We haven't given any arguments, because the procedure has no parameters. 
 
-The variable definitions remain the same, except we don't need the ``GLOBAL`` line to define our variables. However this function might be reused with different temperatures and limits, in which case we could change::
+The variable definitions remain the same, except we don't need the ``GLOBAL`` line to define our variables. However this function might be reused with different temperatures and limits, in which case we could change:
+
+.. code-block:: python
 
     def my_function():
         temp = 20
         low = 1
         high = 50
 
-to::
+to:
+
+.. code-block:: python
 
     def my_function(temp, low, high):
 
-We can always create a function to call specific parameters if needed::
+We can always create a function to call specific parameters if needed:
+
+.. code-block:: python
 
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
-Further, we notice that ``WAITFOR`` later in the function waits for 50 microamps. Let's assume we almost always want to wait for 50 microamps but we'd like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so::
+Further, we notice that ``WAITFOR`` later in the function waits for 50 microamps. Let's assume we almost always want to wait for 50 microamps but we'd like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so:
+
+.. code-block:: python
 
     def my_function(temp, low, high, count=50):
 
-Let's start looking at the content of the PROCEDURE::
+Let's start looking at the content of the PROCEDURE:
 
     CSET/CONTROL TEMP1=temp LOWLIMIT=low HIGHLIMIT=high
 
-In ``genie_python``, this becomes::
+In ``genie_python``, this becomes:
+
+.. code-block:: python
 
     g.cset(TEMP1=temp, lowlimit=low, highlight=high, runcontrol=True)
 
-The same goes for ``TEMP2``, but that gives us two commands that do exactly the same thing. That's not generally a good idea because it's prone to typos and changes to one line might not be applied to the other. It would be much better to do the following::
+The same goes for ``TEMP2``, but that gives us two commands that do exactly the same thing. That's not generally a good idea because it's prone to typos and changes to one line might not be applied to the other. It would be much better to do the following:
+
+.. code-block:: python
 
     for block in ["TEMP1", "TEMP2"]:
         g.cset(block, temp, lowlimit=low, highlimit=high, runcontrol=True)
 
 Notably we've had to use the alternate ``cset`` argument syntax in this case.
 
-The next block of commands is::
+The next block of commands is:
 
     CHANGE TITLE= "Running at temperature "+As_string(temp)
     BEGIN
@@ -186,7 +210,9 @@ The next block of commands is::
     WAITFOR UAMPS=count
     END
 
-These translate very directly into ``genie_python``::
+These translate very directly into ``genie_python``:
+
+.. code-block:: python
 
     g.change_title("Running at temperature {0}".format(temp))
     g.begin()
@@ -207,7 +233,9 @@ We've changed a couple of things:
 -  We've used the ``minutes`` argument in ``waitfor_time`` rather than having to apply the conversion factor between minutes and seconds ourselves.
 -  We've used the syntax ``"...".format(arg1, arg2)`` to build our output strings. There are lots of ways to build strings in Python. Alternatively you can just use ``"..." + str(arg1) + "..." + str(arg2) + "..."`` but we like this way because it makes it easier to read and you don't have to remember to use ``str(...)`` to convert the types
 
-The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python``. Our final script is therefore::
+The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python``. Our final script is therefore:
+
+.. code-block:: python
 
     def my_function(temp, low, high, count=50):
         for block in ["TEMP1", "TEMP2"]:
@@ -235,7 +263,7 @@ The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python`
 Exercise 5
 ==========
 
-- Translate the following ``OpenGENIE`` script into ``genie_python``::
+- Translate the following ``OpenGENIE`` script into ``genie_python``:
    
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip
