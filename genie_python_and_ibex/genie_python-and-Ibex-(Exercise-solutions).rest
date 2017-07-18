@@ -22,11 +22,11 @@ Exercise 2
 
 From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
-- Use either ``g.change_title("Exercise 2")`` or ``g.change(title="Exercise 2")`` to change the title
+- Use either ``g.change_title("Exercise 2")`` to change the title
 - The following code will start the run, wait, and then pause::
 
     g.begin()
-    g.waitfor(uamps=1, maxwait=10)
+    g.waitfor_uamps(1)
     g.pause()
 
 - This code sets the value, run control, and limits on "MY_BLOCK". Your code may look slightly different depending how you've chosen to pass in the arguments::
@@ -52,7 +52,7 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
     for i in range(int(g.cget("MY_BLOCK")['value']), 4, -1):
         g.cset(MY_BLOCK=i)
-        g.waitfor(seconds=1)
+        g.waitfor_time(seconds=1)
         
 - This function will end the run::
 
@@ -68,7 +68,8 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 -   **(b)** The function in ``set_up_instrument.py`` should look something like this::
 
             def set_up_instrument():
-                g.change(title="My experiment", user="Adrian")
+                g.change_title("My experiment")
+                g.change_user("Adrian")
 
 -   **(c)** The function in ``run_my_experiment.py`` should look something like this::
 
@@ -99,7 +100,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
             except:
                 print "Problem getting value for block {0}. Make sure it exists".format(block)
             else:
-                g.change(title="Ramping {0} from {1} to {2}".format(block, initial, target))
+                g.change_title("Ramping {0} from {1} to {2}".format(block, initial, target))
                 g.begin()
 
                 current = initial
