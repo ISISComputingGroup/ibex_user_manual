@@ -33,13 +33,19 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
 - This code sets the value, run control, and limits on "MY_BLOCK". Your code may look slightly different depending how you've chosen to pass in the arguments::
 
+.. code-block:: python
+
     g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
 
 - The following resumes the run::
 
+.. code-block:: python
+
     g.resume()
 
 - This code will set the block value and check the subsequent state::
+
+.. code-block:: python
 
     # Can use either way of specifying cset for a single block
     g.cset(MY_BLOCK=20)
@@ -52,11 +58,15 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
 - The following code will scan the block from its original value down to 4. It assumes the initial value is greater than 4::
 
+.. code-block:: python
+
     for i in range(int(g.cget("MY_BLOCK")['value']), 4, -1):
         g.cset(MY_BLOCK=i)
         g.waitfor_time(seconds=1)
         
 - This function will end the run::
+
+.. code-block:: python
 
      g.end()
 
@@ -97,6 +107,8 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
 -   You should have created a Python file in ``C:\Instrument\Settings\config\[Machine name]\Python\inst`` that contains something like the following::
 
+.. code-block:: python
+
         def ramp(block, target):
             try:
                 initial = g.cget(block)['value']
@@ -116,17 +128,23 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 
 -   Once you add the line to output the current title, the top of your file should look like this::
 
+.. code-block:: python
+
         print g.get_title()
         def ramp(block, target):
             ...
 
 -   This user-defined function will ramp the two blocks using the instrument function::
 
+.. code-block:: python
+
         def ramp_two_blocks():
             for block, target in [("MY_BLOCK", 10), ("MY_OTHER_BLOCK", -10)]:
                 inst.ramp(block, target)
 
 -   To load the user script, assuming the file is called "ramp_blocks.py", run the following from the scripting perspective::
+
+.. code-block:: python
 
              g.load_script("C:\scripts\ramp_blocks.py")
              ramp_two_blocks()
@@ -139,6 +157,8 @@ Exercise 5
 From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]].
 
 - In ``genie_python``, the ``OpenGENIE`` procedure could be written as::
+
+.. code-block:: python
 
      def scan(start=-100, min=100, max=200, step_size=20, nframes=10000, nimages=100):
          for i in range(1, nimages):
