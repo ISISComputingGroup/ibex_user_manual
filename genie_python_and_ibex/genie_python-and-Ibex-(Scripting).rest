@@ -146,9 +146,9 @@ It is recommended that you ``import`` it using standard Python rather than tryin
 .. code-block:: python
 
     def vanadium(title, duration):
-        g.change(title=title)
+        g.change_title(title)
         g.begin()
-        g.waitfor(seconds=duration)
+        g.waitfor_time(seconds=duration)
         g.end()
 
 and another called ``calibrate.py`` that uses the ``vanadium`` function then I would write:
