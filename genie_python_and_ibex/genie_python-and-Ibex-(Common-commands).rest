@@ -53,7 +53,7 @@ for i in range(maximum_retries):
    if g.get_runstate()=="RUNNING":  
        break
    else:
-       g.waitfor(seconds=1)
+       g.waitfor_time(seconds=1)
 else:
    print "Could not reach running state"
 ```
@@ -61,24 +61,15 @@ else:
 Waiting
 -------
 
-If you want to wait for a specific event before executing an action, you can use a ``waitfor`` command:
-
--    ``waitfor``: Waits for the specified condition to be met. This function supports numerous types of wait. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
-
-     - Example: ``g.waitfor(seconds=10)``. Wait for 10 seconds
-     - Example: ``g.waitfor(minutes=10)``. Wait for 10 minutes
-     - Example: ``g.waitfor(uamps=10)``. Wait for the total received current to reach 10 uamps
-     - Example: ``g.waitfor(uamps=10, maxwait=10)``. Wait for the total received current to reach 10 uamps, but wait no more than 10 seconds
-     - Example: ``g.waitfor(block="MY_BLOCK", lowlimit=10)``. Wait for the block "MY_BLOCK" to be greater than or equal to 10
-
-Many ``waitfor`` arguments also have a standalone function, so as to retain equivalence with OpenGENIE. Again, this list is only a subset of the available functions:
+If you want to wait for a specific event before executing an action, you can use one of the ``waitfor_...`` commands:
 
 -     ``waitfor_block``: Wait for a block value to be in a certain range
 -     ``waitfor_frames``: Wait until the number of good frames reaches a certain value
+-     ``waitfor_uamps``: Wait for the total received current to reach 10 uamps
+-     ``waitfor_time``: Waits for a specified time. The best way to use this function is with named arguments (e.g. ``g.waitfor_time(seconds=10)``) to make it clear what time units the interval is in.
+-     ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
 
-One special ``waitfor`` function is:
-
-- ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
+This is only a subset of the available functions. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
 
 Update and store
 ------------------
@@ -111,7 +102,7 @@ The following script will begin and run, then stop it once it reaches a running 
 
             else:
                 # Wait for a second before checking again
-                g.waitfor(seconds=1)
+                g.waitfor_time(seconds=1)
         else:
             print "Could not reach a running state"
 
@@ -182,7 +173,7 @@ The following script scans a block between its upper and lower limit::
             step_size = -abs_step_size
 
         g.cset(block, current_value + step_size)
-        g.waitfor(seconds=0.1)
+        g.waitfor_time(seconds=0.1)
 
 Experiment setup
 ----------------
@@ -201,21 +192,13 @@ If used on their own, these methods will apply their changes immediately. If you
 Experiment details
 ------------------
 
-You can change various experiment details with the ``change`` command. As with the ``waitfor`` command, it supports many options and allows for multiple details to be changed in a single command:
-
--    ``change``: Modify experiment details
-     
-     - Example: ``g.change(title="New title")``
-     - Example: ``g.change(user="Adrian and John")``
-     - Example: ``g.change(rb=10)``     
-     - Example: ``g.change(title="New title", user="Adrian and John")``
-
-As with ``waitfor``, there are also standalone commands for many properties. For example:
+You can change various experiment details with the ``change_...`` commands:
 
 - ``change_user``: Change the current user
 - ``change_title``: Change the current title
 - ``change_rb``: Change the current RB number
 
+There is a generic `change` command that allows you to change multiple properties simultaneously. However, this is recommended for advanced users only.
 
 **Exercise 2**
 ==============
