@@ -21,7 +21,7 @@ Arguments are passed to functions using standard Python syntax. You should alrea
 - Un-named arguments will be interpreted in the order of the function definition. Named arguments can be in any order. So ``g.add_spectrum(period=2, spectrum=1)`` would be valid but ``g.add_spectrum(2, spectrum=1)`` would not.
 - Some arguments may be defaulted in which case they do not need to be included in the argument list. For example ``g.add_spectrum(1)`` is equivalent to ``g.add_spectrum(1, 1)``. You can find out which parameters are optional and their default values in the [[genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
 
-As another example, the following three calls are all equivalent::::
+As another example, the following three calls are all equivalent::
 
 .. code-block:: python
 
