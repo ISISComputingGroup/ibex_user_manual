@@ -79,6 +79,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
                 period = g.get_period()
                 for i in range(10):
                     print "Total current after {0}s: {1}.format(i+1, g.get_uamps(period))
+                    g.waitfor_time(seconds=1)
                 g.end()
 
 -   **(d)** This will load the user script: ``g.load_script("run_my_experiment.py")``
