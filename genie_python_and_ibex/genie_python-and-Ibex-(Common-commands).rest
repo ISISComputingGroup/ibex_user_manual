@@ -189,6 +189,8 @@ If used on their own, these methods will apply their changes immediately. If you
 - ``change_start``: Marks the start of a change
 - ``change_finish``: Marks that the current set of changes is complete. All changes recorded since ``g.change_start()`` will be applied
 
+Using these commands will stop a run beginning while changes are still being made.
+
 Experiment details
 ------------------
 
