@@ -4,7 +4,7 @@ Open Genie: Compare and contrast
 Procedures vs. functions
 ------------------------
 
-In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that:
+In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
 
     PROCEDURE my_function
     ...
@@ -19,7 +19,7 @@ becomes:
 
 Note that, using Python syntax, we don't need a statement to show where the function ends; the indentation takes care of that for us.
 
-We pass arguments into ``OpenGENIE`` procedures like this:
+We pass arguments into ``OpenGENIE`` procedures like this::
 
     PROCEDURE my_function
     PARAMETERS x = Integer y = Real z = String
@@ -36,7 +36,7 @@ We can do the same thing in ``genie_python``, but we don't need to define the ty
 Loops
 -----
 
-In ``OpenGENIE`` a loop is defined using:
+In ``OpenGENIE`` a loop is defined using::
 
     LOOP I  FROM start TO end
     ...
@@ -54,7 +54,7 @@ No ``ENDLOOP`` is needed because the indentation makes it implicit.
 Conditionals
 ------------
 
-In ``OpenGENIE`` conditionals take the form:
+In ``OpenGENIE`` conditionals take the form::
 
    IF [CONDITION]
        ...
@@ -89,7 +89,7 @@ in ``genie_python`` becomes:
 
     g.begin()
 
-Similarly, the ``OpenGENIE`` command:
+Similarly, the ``OpenGENIE`` command::
 
     CHANGE TITLE="New title"
 
@@ -196,7 +196,7 @@ The same goes for ``TEMP2``, but that gives us two commands that do exactly the 
 
 Notably we've had to use the alternate ``cset`` argument syntax in this case.
 
-The next block of commands is:
+The next block of commands is::
 
     CHANGE TITLE= "Running at temperature "+As_string(temp)
     BEGIN
@@ -263,7 +263,7 @@ The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python`
 Exercise 5
 ==========
 
-- Translate the following ``OpenGENIE`` script into ``genie_python``:
+- Translate the following ``OpenGENIE`` script into ``genie_python``::
    
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip
