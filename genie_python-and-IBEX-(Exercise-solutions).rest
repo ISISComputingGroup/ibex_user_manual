@@ -3,7 +3,7 @@ Exercise 1
 
 From [[Getting Started|genie_python-and-Ibex-(Getting-started)]].
 
--   Opening a scripting window should be straightforward if Ibex is installed correctly. Once you've opened the scripting perspective, check for the following
+-   Opening a scripting window should be straightforward if IBEX is installed correctly. Once you've opened the scripting perspective, check for the following
 
     - Ideally the instrument will appear as ``SETUP``
     - The output when the scripting window opens should look a bit like this:
