@@ -184,7 +184,7 @@ You can change various elements of the experiment setup using ``genie_python``. 
 - ``change_tables``: Change the wiring, spectra and detector table filename used
 - ``change_monitor``: Change the monitor to a specified spectrum and range
 
-If used on their own, these methods will apply their changes immediately. If you want to apply several changes at once you can use the following commands:
+If used on their own, these methods will apply their changes immediately. Sometime a set of changes are only consistent/make sense when considered together. If you want to apply several changes at once you can use the following commands:
 
 - ``change_start``: Marks the start of a change
 - ``change_finish``: Marks that the current set of changes is complete. All changes recorded since ``g.change_start()`` will be applied
