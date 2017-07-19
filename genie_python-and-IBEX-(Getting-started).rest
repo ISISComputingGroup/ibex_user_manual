@@ -15,7 +15,7 @@ To open a scripting window:
 
 3. From here, you can start entering Python code. It will be executed line by line as you enter it.
 
-Outside Ibex
+Outside IBEX
 ------------
 
 You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat``. This will not provide some advanced features such as auto-complete though, and is recommended for advanced users only.
