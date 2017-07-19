@@ -1,7 +1,7 @@
 Exercise 1
 ==========
 
-From [[Getting Started|genie_python-and-Ibex-(Getting-started)]].
+From [[Getting Started|genie_python-and-IBEX-(Getting-started)]].
 
 -   Opening a scripting window should be straightforward if IBEX is installed correctly. Once you've opened the scripting perspective, check for the following
 
@@ -20,7 +20,7 @@ From [[Getting Started|genie_python-and-Ibex-(Getting-started)]].
 Exercise 2
 ==========
 
-From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
+From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
 
 - Use ``g.change_title("Exercise 2")`` to change the title
 - The following code will start the run, wait, and then pause::
@@ -73,7 +73,7 @@ From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 Exercise 3
 ==========
 
-From [[Scripting|genie_python-and-Ibex-(Scripting)]].
+From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
 -   **(a)** After creating the files, you should have one new file in ``C:\scripts`` and another in ``C:\Instrument\Settings\config\[Instrument name]\Python\inst``
 
@@ -105,7 +105,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 Exercise 4
 ==========
 
-From [[Scripting|genie_python-and-Ibex-(Scripting)]].
+From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
 -   You should have created a Python file in ``C:\Instrument\Settings\config\[Machine name]\Python\inst`` that contains something like the following::
 
@@ -156,7 +156,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 Exercise 5
 ==========
 
-From [[Converting from Open GENIE|genie_python-and-Ibex-(Converting-from-Open-GENIE)]].
+From [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GENIE)]].
 
 - In ``genie_python``, the ``Open GENIE`` procedure could be written as::
 

@@ -26,7 +26,7 @@ Create two empty scripts:
 - An **instrument** script called ``set_up_instrument.py``
 - A **user** script called ``run_my_experiment.py``
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 Writing scripts
 ===============
@@ -57,7 +57,7 @@ Exercise 3b
     - Prints the current uamps for the current period over 10 seconds at 1 second intervals
     - Ends the run
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 Loading scripts
 ===============
@@ -74,7 +74,7 @@ Exercise 3c
 
 Load your user script ``run_my_experiment.py``
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 Running scripts
 ===============
@@ -95,7 +95,7 @@ Exercise 3d
 
 Run the instrument method you wrote in exercise 3b
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 User scripts
 ------------
@@ -112,7 +112,7 @@ Exercise 3e
 
 Run the user script method you wrote in exercise 3b
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 Modifying scripts
 =================
@@ -131,7 +131,7 @@ Exercise 3f
 - Reload the script
 - Run it again and confirm the behaviour has changed
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 Using functions from other files
 ================================
@@ -194,10 +194,10 @@ Exercise 4
 -   Load and run your new user-script function
 -   When was the print statement at the top of your instrument script executed?
 
-[[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Converting from Open GENIE|genie_python-and-Ibex-(Converting-from-Open-GENIE)]]
+**Next**: [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GENIE)]]
    
-**Previous**: [[Common commands|genie_python-and-Ibex-(Common-commands)]]
+**Previous**: [[Common commands|genie_python-and-IBEX-(Common-commands)]]
