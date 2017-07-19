@@ -181,7 +181,7 @@ Experiment setup
 You can change various elements of the experiment setup using ``genie_python``. For example:
 
 - ``change_tcb``: Change the time channel boundaries
-- ``change_tables``: Change the wiring, spectra and detector table locations
+- ``change_tables``: Change the wiring, spectra and detector table filename used
 - ``change_monitor``: Change the monitor to a specified spectrum and range
 
 If used on their own, these methods will apply their changes immediately. If you want to apply several changes at once you can use the following commands:
