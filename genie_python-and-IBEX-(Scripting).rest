@@ -192,7 +192,7 @@ Exercise 4
     - The function runs the new instrument script on two different blocks
 
 -   Load and run your new user-script function
--   Where was the print statement at the top of your instrument script executed?
+-   When was the print statement at the top of your instrument script executed?
 
 [[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
