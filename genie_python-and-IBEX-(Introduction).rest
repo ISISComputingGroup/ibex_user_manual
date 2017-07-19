@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Welcome to this introductory course on ``genie_python``, a Python module that enables instrument control using Genie commands with Python. Once you have completed this course, you will be able to do the following from the scripting perspective in Ibex:
+Welcome to this introductory course on ``genie_python``, a Python module that enables instrument control using Genie commands with Python. Once you have completed this course, you will be able to do the following from the scripting perspective in IBEX:
 
 - Start and stop runs
 - Get and set block information
