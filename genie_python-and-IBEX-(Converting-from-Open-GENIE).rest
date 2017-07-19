@@ -26,7 +26,7 @@ We pass arguments into ``Open GENIE`` procedures like this::
     ...
     ENDPROCEDURE
 
-We can do the same thing in ``genie_python``, but we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
+Usually an expected type is given for a parameter, this is not necessary but can trap common errors. We can do a similar  thing in ``genie_python``, but we don't define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
 
 .. code-block:: python
 
