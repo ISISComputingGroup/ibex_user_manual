@@ -91,21 +91,14 @@ The following script will begin and run, then stop it once it reaches a running 
     # Only start if we're in the correct state
     if g.get_runstate()=="SETUP":
         g.begin()
+        g.waitfor_runstate("RUNNING", 60):
 
-        maximum_retries = 60
-        for i in range(maximum_retries):
-            # Check that the run has started successfully
-            if g.get_runstate()=="RUNNING":
+        # Check that the run has started successfully
+        if g.get_runstate()=="RUNNING":
 
-                # A function that does the sequence of operations associated with the run
-                do_experimental_stuff()
+            # A function that does the sequence of operations associated with the run
+            do_experimental_stuff()
 
-                # We're done, exit the loop
-                break
-
-            else:
-                # Wait for a second before checking again
-                g.waitfor_time(seconds=1)
         else:
             print "Could not reach a running state"
 
