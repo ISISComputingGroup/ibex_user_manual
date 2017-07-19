@@ -18,7 +18,7 @@ To open a scripting window:
 Outside IBEX
 ------------
 
-You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat``. This will not provide some advanced features such as auto-complete though, and is recommended for advanced users only.
+You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat`` but this is recommended for advanced users only.
 
 **Exercise 1**
 ==============
