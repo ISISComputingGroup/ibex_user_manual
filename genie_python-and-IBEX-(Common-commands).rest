@@ -68,6 +68,7 @@ If you want to wait for a specific event before executing an action, you can use
 -     ``waitfor_uamps``: Wait for the total received current to reach 10 uamps
 -     ``waitfor_time``: Waits for a specified time. The best way to use this function is with named arguments (e.g. ``g.waitfor_time(seconds=10)``) to make it clear what time units the interval is in.
 -     ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
+-     ``waitfor_runstate``: Wait for the instrument to reach a given state
 
 This is only a subset of the available functions. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
 
