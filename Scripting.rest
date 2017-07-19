@@ -4,7 +4,7 @@ Scripting
 Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_
 gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
-beginner and novice user. For a more in depth discussion, see our [[genie_python and Ibex training course|genie_python-and-Ibex-(Introduction)]].
+beginner and novice user. For a more in depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
 -  `Running genie_python
    commands <#running-genie_python-commands>`__
