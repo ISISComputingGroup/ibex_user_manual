@@ -88,7 +88,7 @@ Methods defined in instrument scripts are available via the ``inst`` namespace. 
 
     inst.my_method("MY_BLOCK")
 
-As with ``genie_python`` commands, the Ibex scripting perspective will provide auto-completion for instrument methods so you can see what is available
+As with ``genie_python`` commands, the IBEX scripting perspective will provide auto-completion for instrument methods so you can see what is available
 
 Exercise 3d
 -----------
@@ -117,7 +117,7 @@ Run the user script method you wrote in exercise 3b
 Modifying scripts
 =================
 
-Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time Ibex is started, but your scripting session will be preserved if you switch between views without closing the client.
+Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time IBEX is started, but your scripting session will be preserved if you switch between views without closing the client.
 
 Sometimes you might want to change a script and update it without having to change scripting terminal.
 
