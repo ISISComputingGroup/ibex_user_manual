@@ -198,6 +198,6 @@ Exercise 4
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]]
+**Next**: [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-Open-GENIE)]]
    
 **Previous**: [[Common commands|genie_python-and-Ibex-(Common-commands)]]
