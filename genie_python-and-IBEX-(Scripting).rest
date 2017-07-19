@@ -13,7 +13,7 @@ We generally classify scripts as:
 1. **Instrument scripts**. These are either aimed at instrument scientists, or put the instrument in a particular state that multiple users may wish to access.
 2. **User scripts**. These are scripts that specific users need for particular experiments. They may be reused to an extent but they don't generally need to be accessed quite so readily.
 
-**NOTE**: Ibex puts all configurations and **Instrument scripts** under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn't true for user scripts.
+**NOTE**: IBEX puts all configurations and **Instrument scripts** under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn't true for user scripts.
 
 - Instrument scripts are located in: ``C:\Instrument\Settings\config\NDX[Instrument name]\Python\inst``
 - User scripts are located in: ``C:\scripts``
