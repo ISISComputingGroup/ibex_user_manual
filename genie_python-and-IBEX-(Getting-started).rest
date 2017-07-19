@@ -1,14 +1,14 @@
 Starting a scripting session
 ============================
 
-From Ibex
+From IBEX
 ---------
 
-The best way to run ``genie_python`` commands is from the scripting perspective of the Ibex client.
+The best way to run ``genie_python`` commands is from the scripting perspective of the IBEX client.
 
 To open a scripting window:
 
-1. Start the Ibex client
+1. Start the IBEX client
 2. Open the scripting perspective
 
 .. image:: genie_python_and_ibex/OpenTheScriptingPerspective.png
@@ -23,7 +23,7 @@ You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\ge
 **Exercise 1**
 ==============
 
-- Open a scripting window in Ibex
+- Open a scripting window in IBEX
 - Output "Hello, world!" to the console
 - Output the square of all the integers between 1 and 10
 
