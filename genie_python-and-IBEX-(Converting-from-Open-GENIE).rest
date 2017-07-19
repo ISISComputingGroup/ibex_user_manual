@@ -1,10 +1,10 @@
-Open Genie: Compare and contrast
+Open GENIE: Compare and contrast
 ================================
 
 Procedures vs. functions
 ------------------------
 
-In ``OpenGENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
+In ``Open GENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
 
     PROCEDURE my_function
     ...
@@ -19,14 +19,14 @@ becomes:
 
 Note that, using Python syntax, we don't need a statement to show where the function ends; the indentation takes care of that for us.
 
-We pass arguments into ``OpenGENIE`` procedures like this::
+We pass arguments into ``Open GENIE`` procedures like this::
 
     PROCEDURE my_function
     PARAMETERS x = Integer y = Real z = String
     ...
     ENDPROCEDURE
 
-We can do the same thing in ``genie_python``, but we don't need to define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
+Usually an expected type is given for a parameter, this is not necessary but can trap common errors. We can do a similar  thing in ``genie_python``, but we don't define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
 
 .. code-block:: python
 
@@ -36,7 +36,7 @@ We can do the same thing in ``genie_python``, but we don't need to define the ty
 Loops
 -----
 
-In ``OpenGENIE`` a loop is defined using::
+In ``Open GENIE`` a loop is defined using::
 
     LOOP I  FROM start TO end
     ...
@@ -54,7 +54,7 @@ No ``ENDLOOP`` is needed because the indentation makes it implicit.
 Conditionals
 ------------
 
-In ``OpenGENIE`` conditionals take the form::
+In ``Open GENIE`` conditionals take the form::
 
    IF [CONDITION]
        ...
@@ -77,9 +77,9 @@ No ``ENDIF`` is needed because the indentation makes it implicit.
 Commands
 --------
 
-The majority of ``OpenGENIE`` instrument control commands have a very close equivalent in ``genie_python``.
+The majority of ``Open GENIE`` instrument control commands have a very close equivalent in ``genie_python``.
 
-For example, the ``OpenGENIE`` command::
+For example, the ``Open GENIE`` command::
 
     BEGIN
 
@@ -89,7 +89,7 @@ in ``genie_python`` becomes:
 
     g.begin()
 
-Similarly, the ``OpenGENIE`` command::
+Similarly, the ``Open GENIE`` command::
 
     CHANGE TITLE="New title"
 
@@ -99,7 +99,7 @@ in ``genie_python`` becomes:
 
     g.change_title("New title")
 
-Similarly, most arguments will be very similar between ``OpenGENIE`` and ``genie_python``. For example, the following ``OpenGENIE`` command::
+Similarly, most arguments will be very similar between ``Open GENIE`` and ``genie_python``. For example, the following ``Open GENIE`` command::
 
     CSET/CONTROL TEMP1=5 LOWLIMIT=1 HIGHLIMIT=10
 
@@ -114,7 +114,7 @@ becomes the following in ``genie_python``:
 Worked example
 --------------
 
-Take the following ``OpenGENIE`` procedure::
+Take the following ``Open GENIE`` procedure::
 
     PROCEDURE my_function
     
@@ -263,7 +263,7 @@ The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python`
 Exercise 5
 ==========
 
-- Translate the following ``OpenGENIE`` script into ``genie_python``::
+- Translate the following ``Open GENIE`` script into ``genie_python``::
    
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip

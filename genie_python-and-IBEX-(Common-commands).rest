@@ -1,7 +1,7 @@
 Calling ``genie_python`` functions
 ===================================
 
-From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
+From an IBEX scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
 
 You should have noticed immediately after you typed ``g.`` that an auto-complete window appeared:
 
@@ -29,7 +29,7 @@ As another example, the following three calls are all equivalent:
     g.begin(False)
     g.begin(verbose=False)
 
-Run control
+Acqusition control
 ==================
 
 Switch run states
@@ -47,21 +47,16 @@ You can get the current state with:
 
 - ``get_runstate``: Gets the states of the current run
 
-**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. For example:
+**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. This can be done with ``waitfor_runstate``:
 
 .. code-block:: python
 
     g.begin()
     g.begin(False)
     g.begin(verbose=False)
-    maximum_retries = 60
-    for i in range(maximum_retries):
-       if g.get_runstate()=="RUNNING":  
-           break
-       else:
-           g.waitfor_time(seconds=1)
-    else:
-        print "Could not reach running state"
+    # Waits for a max of 60 seconds
+    g.waitfor_runstate("RUNNING", 60)
+
 
 Waiting
 -------
@@ -73,6 +68,7 @@ If you want to wait for a specific event before executing an action, you can use
 -     ``waitfor_uamps``: Wait for the total received current to reach 10 uamps
 -     ``waitfor_time``: Waits for a specified time. The best way to use this function is with named arguments (e.g. ``g.waitfor_time(seconds=10)``) to make it clear what time units the interval is in.
 -     ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
+-     ``waitfor_runstate``: Wait for the instrument to reach a given state
 
 This is only a subset of the available functions. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
 
@@ -95,21 +91,14 @@ The following script will begin and run, then stop it once it reaches a running 
     # Only start if we're in the correct state
     if g.get_runstate()=="SETUP":
         g.begin()
+        g.waitfor_runstate("RUNNING", 60):
 
-        maximum_retries = 60
-        for i in range(maximum_retries):
-            # Check that the run has started successfully
-            if g.get_runstate()=="RUNNING":
+        # Check that the run has started successfully
+        if g.get_runstate()=="RUNNING":
 
-                # A function that does the sequence of operations associated with the run
-                do_experimental_stuff()
+            # A function that does the sequence of operations associated with the run
+            do_experimental_stuff()
 
-                # We're done, exit the loop
-                break
-
-            else:
-                # Wait for a second before checking again
-                g.waitfor_time(seconds=1)
         else:
             print "Could not reach a running state"
 
@@ -191,11 +180,11 @@ Experiment setup
 
 You can change various elements of the experiment setup using ``genie_python``. For example:
 
-- ``change_tcb``: Change the time channel binning
-- ``change_tables``: Change the wiring, spectra and detector table locations
+- ``change_tcb``: Change the time channel boundaries
+- ``change_tables``: Change the wiring, spectra and detector table filename used
 - ``change_monitor``: Change the monitor to a specified spectrum and range
 
-If used on their own, these methods will apply their changes immediately. If you want to apply several changes at once you can use the following commands:
+If used on their own, these methods will apply their changes immediately. Sometime a set of changes are only consistent/make sense when considered together. If you want to apply several changes at once you can use the following commands:
 
 - ``change_start``: Marks the start of a change
 - ``change_finish``: Marks that the current set of changes is complete. All changes recorded since ``g.change_start()`` will be applied

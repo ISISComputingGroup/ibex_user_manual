@@ -4,12 +4,12 @@ Scripting
 Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_
 gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
-beginner and novice user. For a more in depth discussion, see our [[genie_python and Ibex training course|genie_python-and-Ibex-(Introduction)]].
+beginner and novice user. For a more in depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
 -  `Running genie_python
    commands <#running-genie_python-commands>`__
 -  `Common genie_python commands <#common-genie_python-commands>`__
--  `Converting Open Genie to
+-  `Converting Open GENIE to
    genie_python <#converting-open-genie-to-genie_python>`__
 -  `Creating and running instrument
    scripts <#creating-and-running-instrument-scripts>`__
@@ -56,7 +56,7 @@ Genie_python can be used in simulation mode. Simulation mode will allow you to r
 Common genie\_python commands
 =============================
 
-Many ``genie_python`` commands share the same name with their Open Genie
+Many ``genie_python`` commands share the same name with their Open GENIE
 equivalent so it will often be very straightforward to find the function
 you're looking for. Still, here is a list of the most commonly used
 ``genie_python`` commands. This is **not a complete list**. For full
@@ -125,10 +125,10 @@ Run control
 | waitfor\_move       | Waits for all motion or specific motion to complete                                     | g.waitfor\_move("NEW\_BLOCK")      |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 
-Converting Open Genie to genie\_python
+Converting Open GENIE to genie\_python
 ======================================
 
-If you know a little bit of Python already, converting Open Genie
+If you know a little bit of Python already, converting Open GENIE
 scripts to ``genie_python`` is very often straightforward. Even if
 you're new to Python, once you know a few simple pieces of syntax,
 you'll be able to convert many scripts without issue.
@@ -146,7 +146,7 @@ list refer to the `genie\_python reference manual`_.
 Indentation
 -----------
 
-One thing where there is no direct comparison between Python and Open Genie is with **indentation**.
+One thing where there is no direct comparison between Python and Open GENIE is with **indentation**.
 In Python, different code blocks are identified by their indentation
 level. In many programming languages, code blocks are encased in curly
 braces (``{...}``), but Python uses indentation. For example:
@@ -165,7 +165,7 @@ braces (``{...}``), but Python uses indentation. For example:
 Typically an ``indent`` is 3 or 4 spaces. Tabs can be used too, but
 Python won't recognise that a tab is the same as 4 spaces so can lead to
 problems. It's often best to avoid them. This might be a new concept if
-you've only ever written Open Genie, but trust us in that it opens up a
+you've only ever written Open GENIE, but trust us in that it opens up a
 lot of ways to make scripts more powerful, easier to read and more
 reliable.
 
@@ -173,11 +173,11 @@ Side-by-side comparison
 -----------------------
 
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Open Genie syntax             | ``genie_python`` syntax                   | Comments                                                                                                                                                                                                                                                                                                                        |
+| Open GENIE syntax             | ``genie_python`` syntax                   | Comments                                                                                                                                                                                                                                                                                                                        |
 +===============================+===========================================+=================================================================================================================================================================================================================================================================================================================================+
 | PROCEDURE my\_func            | def my\_func():                           | This is the standard way to define a function in Python                                                                                                                                                                                                                                                                         |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| begin                         | g.begin()                                 | Many functions in ``genie_python`` have the same name as in Open Genie. In these cases, prepend ``g.`` to idicate the method belongs to ``genie_python`` and append ``()`` to tell Python to execute the method with no arguments                                                                                               |
+| begin                         | g.begin()                                 | Many functions in ``genie_python`` have the same name as in Open GENIE. In these cases, prepend ``g.`` to idicate the method belongs to ``genie_python`` and append ``()`` to tell Python to execute the method with no arguments                                                                                               |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | my\_func\_2 100               | my\_func\_2(100)                          | To execute a function, give its name and then the argument in brackets. This is a user-defined function, not a ``genie_python`` function, so it has no ``g.`` in front.                                                                                                                                                         |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -185,7 +185,7 @@ Side-by-side comparison
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | waitfor seconds=20            | g.waitfor(seconds=20)                     | Some methods can take named arguments. In these cases you simply give named arguments in the form ``[name]=[value]``. Note that you can mix named and unnamed arguments, but unnamed arguments always appear at the start of the argument list. `This section <#argument-ordering>`__ gives a more detailed description         |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| cset/nocontrol MY_BLOCK=value | g.cset('MY_BLOCK',value,runcontrol=False) | Some Open Genie commands take optional arguments. The same principle applies as in the above example.                                                                                                                                                                                                                           |
+| cset/nocontrol MY_BLOCK=value | g.cset('MY_BLOCK',value,runcontrol=False) | Some Open GENIE commands take optional arguments. The same principle applies as in the above example.                                                                                                                                                                                                                           |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | # This is a comment           | # This is a comment                       | Comments are the same in both languages                                                                                                                                                                                                                                                                                         |
 +-------------------------------+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -215,7 +215,7 @@ Everything in the instrument scripts will be executed when
 ``genie_python`` is started. This includes - Making functions available
 to be called later - Setting variables - Running methods. Typically, most
 code in instrument scripts will be contained within functions
-(procedures in Open Genie language), but it's important to be aware that
+(procedures in Open GENIE language), but it's important to be aware that
 anything that isn't will be included too. For example, if an instrument
 script is loaded:
 
@@ -253,7 +253,7 @@ contains the function ``my_function`` you can call:
 
     inst.my_function()
 
-Whilst using the scripting perspective in the Ibex GUI, users will also
+Whilst using the scripting perspective in the IBEX GUI, users will also
 benefit from the same auto-complete feature as they do with
 ``genie_python`` commands.
 
@@ -270,7 +270,7 @@ Creating scripts
 3. Save the file
 
 We have glossed over step 2 because Python is a very powerful scripting
-language. Combined with Open Genie, the potential scope of a script is
+language. Combined with Open GENIE, the potential scope of a script is
 enormous, and well beyond the scope of this guide. For example though,
 here is a simple script that executes a calibration run.
 
@@ -299,10 +299,10 @@ Running
 Once you've created your script, it's time to run it. There are a number
 of ways of launching a Python script.
 
-From Ibex
+From IBEX
 ~~~~~~~~~
 
-1. Launch the Ibex GUI
+1. Launch the IBEX GUI
 2. Navigate to the scripting perspective
 3. Run the command ``g.load_script("C:\path\to\script\my_script.py")``
    where the path and script name are updated appropriately

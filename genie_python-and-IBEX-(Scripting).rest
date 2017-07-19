@@ -13,7 +13,7 @@ We generally classify scripts as:
 1. **Instrument scripts**. These are either aimed at instrument scientists, or put the instrument in a particular state that multiple users may wish to access.
 2. **User scripts**. These are scripts that specific users need for particular experiments. They may be reused to an extent but they don't generally need to be accessed quite so readily.
 
-**NOTE**: Ibex puts all configurations and **Instrument scripts** under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn't true for user scripts.
+**NOTE**: IBEX puts all configurations and **Instrument scripts** under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn't true for user scripts.
 
 - Instrument scripts are located in: ``C:\Instrument\Settings\config\NDX[Instrument name]\Python\inst``
 - User scripts are located in: ``C:\scripts``
@@ -88,7 +88,7 @@ Methods defined in instrument scripts are available via the ``inst`` namespace. 
 
     inst.my_method("MY_BLOCK")
 
-As with ``genie_python`` commands, the Ibex scripting perspective will provide auto-completion for instrument methods so you can see what is available
+As with ``genie_python`` commands, the IBEX scripting perspective will provide auto-completion for instrument methods so you can see what is available
 
 Exercise 3d
 -----------
@@ -117,7 +117,7 @@ Run the user script method you wrote in exercise 3b
 Modifying scripts
 =================
 
-Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time Ibex is started, but your scripting session will be preserved if you switch between views without closing the client.
+Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time IBEX is started, but your scripting session will be preserved if you switch between views without closing the client.
 
 Sometimes you might want to change a script and update it without having to change scripting terminal.
 
@@ -192,12 +192,12 @@ Exercise 4
     - The function runs the new instrument script on two different blocks
 
 -   Load and run your new user-script function
--   Where was the print statement at the top of your instrument script executed?
+-   When was the print statement at the top of your instrument script executed?
 
 [[Solution|genie_python-and-Ibex-(Exercise-solutions)]]
 
 -------------------------------------------------------------------------------
 
-**Next**: [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]]
+**Next**: [[Converting from Open GENIE|genie_python-and-Ibex-(Converting-from-Open-GENIE)]]
    
 **Previous**: [[Common commands|genie_python-and-Ibex-(Common-commands)]]

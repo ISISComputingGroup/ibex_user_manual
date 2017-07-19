@@ -3,7 +3,7 @@ Exercise 1
 
 From [[Getting Started|genie_python-and-Ibex-(Getting-started)]].
 
--   Opening a scripting window should be straightforward if Ibex is installed correctly. Once you've opened the scripting perspective, check for the following
+-   Opening a scripting window should be straightforward if IBEX is installed correctly. Once you've opened the scripting perspective, check for the following
 
     - Ideally the instrument will appear as ``SETUP``
     - The output when the scripting window opens should look a bit like this:
@@ -22,7 +22,7 @@ Exercise 2
 
 From [[Common commands|genie_python-and-Ibex-(Common-commands)]]
 
-- Use either ``g.change_title("Exercise 2")`` to change the title
+- Use ``g.change_title("Exercise 2")`` to change the title
 - The following code will start the run, wait, and then pause::
 
 .. code-block:: python
@@ -83,7 +83,7 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
                 g.change_title("My experiment")
                 g.change_user("Adrian")
 
--   **(c)** The function in ``run_my_experiment.py`` should look something like this::
+-   **(b)** The function in ``run_my_experiment.py`` should look something like this::
 
 .. code-block:: python
 
@@ -96,11 +96,11 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
                     g.waitfor_time(seconds=1)
                 g.end()
 
--   **(d)** This will load the user script: ``g.load_script("run_my_experiment.py")``
+-   **(c)** This will load the user script: ``g.load_script("run_my_experiment.py")``
 
--   **(e)** This will run the instrument script: ``inst.set_up_instrument()``
+-   **(d)** This will run the instrument script: ``inst.set_up_instrument()``
 
--   **(f)** This will run the function from the user script ``get_uamps_run()`` 
+-   **(e)** This will run the function from the user script ``get_uamps_run()`` 
 
 Exercise 4
 ==========
@@ -156,9 +156,9 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
 Exercise 5
 ==========
 
-From [[Converting from OpenGENIE|genie_python-and-Ibex-(Converting-from-OpenGENIE)]].
+From [[Converting from Open GENIE|genie_python-and-Ibex-(Converting-from-Open-GENIE)]].
 
-- In ``genie_python``, the ``OpenGENIE`` procedure could be written as::
+- In ``genie_python``, the ``Open GENIE`` procedure could be written as::
 
 .. code-block:: python
 
