@@ -96,11 +96,11 @@ From [[Scripting|genie_python-and-Ibex-(Scripting)]].
                     g.waitfor_time(seconds=1)
                 g.end()
 
--   **(d)** This will load the user script: ``g.load_script("run_my_experiment.py")``
+-   **(c)** This will load the user script: ``g.load_script("run_my_experiment.py")``
 
--   **(e)** This will run the instrument script: ``inst.set_up_instrument()``
+-   **(d)** This will run the instrument script: ``inst.set_up_instrument()``
 
--   **(f)** This will run the function from the user script ``get_uamps_run()`` 
+-   **(e)** This will run the function from the user script ``get_uamps_run()`` 
 
 Exercise 4
 ==========
