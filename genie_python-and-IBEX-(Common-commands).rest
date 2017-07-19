@@ -1,7 +1,7 @@
 Calling ``genie_python`` functions
 ===================================
 
-From an Ibex scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
+From an IBEX scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
 
 You should have noticed immediately after you typed ``g.`` that an auto-complete window appeared:
 
