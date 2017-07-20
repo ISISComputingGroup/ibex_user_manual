@@ -16,6 +16,7 @@ List of Frequently Asked Questions
 #. `Can I run IBEX and SECI at the same time?`_
 #. `Can I switch from running IBEX to SECI and vice-versa?`_
 #. `Can I write scripts to control my experiment?`_
+#. `Which version of Python does IBEX use?`_
 #. `Where can I learn about Python?`_
 #. `What do I look at if there are no RAW frames when Collecting Data?`_
 #. `What do I look at if there are no GOOD frames when Collecting Data?`_
@@ -82,6 +83,14 @@ Return_
 **Q: Can I write scripts to control my experiment?**
 
 **A:** Yes, you can.  Scripting in IBEX is done using gene_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
+
+Return_
+
+.. _`Which version of Python does IBEX use?`:
+
+**Q: Which version of Python does IBEX use?**
+
+**A:** IBEX currently uses Python 2.7.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 2.7.  genie-python and Mantid will both migrate to Python 3.x at a future date (yet to be determined). 
 
 Return_
 
