@@ -51,7 +51,7 @@ arguments ``period``, ``meas_id``, ``meas_type``, ``meas_subid``,
 Running in simulation mode
 --------------------------
 
-Genie_python can be used in simulation mode. Simulation mode will allow you to run scripts but without changing items on your instrument. It does this by putting dummy commands in for some genie command, it also creates dummy blocks on the fly so that block values can be read and written to. NB This means that simulation can not be this will not validate your block names within the script. To run in simulation mode use the ``genie_python_simulate.bat`` found in ``C:\Instrument\Apps\Python``. 
+Genie_python can be used in simulation mode. Simulation mode will allow you to run scripts but without changing items on your instrument. It does this by putting dummy commands in for some genie command, it also creates dummy blocks on the fly so that block values can be read and written to. **N.B.** This means that simulation can not be this will not validate your block names within the script. To run in simulation mode use the ``genie_python_simulate.bat`` found in ``C:\Instrument\Apps\Python``. 
 
 Common genie\_python commands
 =============================
