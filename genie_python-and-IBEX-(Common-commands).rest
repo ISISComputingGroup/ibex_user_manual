@@ -25,9 +25,9 @@ As another example, the following three calls are all equivalent:
 
 .. code-block:: python
 
-    g.begin()
-    g.begin(False)
-    g.begin(verbose=False)
+    g.end()
+    g.end(False)
+    g.end(verbose=False)
 
 Acqusition control
 ==================
