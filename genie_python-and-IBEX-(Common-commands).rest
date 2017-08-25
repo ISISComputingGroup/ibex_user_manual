@@ -52,8 +52,6 @@ You can get the current state with:
 .. code-block:: python
 
     g.begin()
-    g.begin(False)
-    g.begin(verbose=False)
     # Waits for a max of 60 seconds
     g.waitfor_runstate("RUNNING", 60)
 
