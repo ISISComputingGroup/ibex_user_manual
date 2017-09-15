@@ -111,6 +111,8 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
 .. code-block:: python
 
+        from genie_python import genie as g
+
         def ramp(block, target):
             try:
                 initial = g.cget(block)['value']
