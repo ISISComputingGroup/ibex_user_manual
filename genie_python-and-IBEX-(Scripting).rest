@@ -31,7 +31,11 @@ Create two empty scripts:
 Writing scripts
 ===============
 
-When writing scripts, you can use any Python and ``genie_python`` functionality that you've already learnt.
+When writing scripts, you can use any Python and ``genie_python`` functionality that you've already learnt. **In instrument scripts, you must have this as your first line:**
+
+.. code-block:: python
+
+    from genie_python import genie as g
 
 In general, we recommend all executable code within a script should be contained within functions and classes. For example:
 
