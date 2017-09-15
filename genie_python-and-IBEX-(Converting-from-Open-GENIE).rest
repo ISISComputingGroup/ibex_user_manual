@@ -269,7 +269,7 @@ Exercise 5
          LOCAL i setpoint max min start step_size title nframes nimages multip
          
          max = 200.0; min = 100.0
-         nframes = 10000; nimages = 100; step_size = 20.0; setpoint = 0.0; start = -100.0
+         nframes = 10; nimages = 10; step_size = 20.0; setpoint = 0.0; start = -100.0
          setpoint = start
 
          LOOP i FROM 1 TO nimages             
