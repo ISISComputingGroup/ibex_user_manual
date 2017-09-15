@@ -164,7 +164,7 @@ From [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GE
 
 .. code-block:: python
 
-     def scan(start=-100, min=100, max=200, step_size=20, nframes=10000, nimages=100):
+     def scan(start=-100, min=100, max=200, step_size=20, nframes=10, nimages=10):
          for i in range(1, nimages):
               setpoint = (start + i*step_size) % 360
               print "New angle is: {0}".format(setpoint)
