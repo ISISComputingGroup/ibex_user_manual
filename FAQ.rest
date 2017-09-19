@@ -82,7 +82,7 @@ Return_
 
 **Q: Can I write scripts to control my experiment?**
 
-**A:** Yes, you can.  Scripting in IBEX is done using gene_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
+**A:** Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
 
 Return_
 
@@ -108,7 +108,7 @@ Return_
 **A:** If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
 
 Timing is ISIS:
-    Either ISIS is offor there is a problem with the TOF (ISIS) signal. Check other instruments to find out.
+    Either ISIS is off or there is a problem with the ToF (ISIS) signal. Check other instruments to find out.
 
 Timing is SMP:
     Chopper is not spinning or there is a problem with the signal
