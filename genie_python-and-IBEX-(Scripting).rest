@@ -187,6 +187,9 @@ Exercise 4
 -   Create a new instrument script containing a function
 
     - The function sets the title to "Ramping [block name] from [initial value] to [final value]"
+
+        - The block name, initial and final values should all be provided as input arguments
+
     - The method begins a run and then changes the value of the block incrementally in steps of size 1
     - Once the target is reached, the method ends the run
 
