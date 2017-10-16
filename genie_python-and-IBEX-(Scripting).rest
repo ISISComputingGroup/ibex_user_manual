@@ -69,7 +69,8 @@ Loading scripts
 Once you've created your scripts, you need to make sure they're available to use. This works differently for instrument scripts and user scripts.
 
 - **Instrument scripts** are loaded automatically when you open the scripting perspective
-- **User scripts** can be loaded by using the ``load_script`` method in genie_python. For example, ``g.load_script('C:\script\my_script.py')``
+- **User scripts** can be loaded by using the ``load_script`` method in genie_python. For example, ``g.load_script('C:\scripts\run_my_experiment.py')``. ``g.load_script`` looks automatically in ``C:\scripts``. A full path can be given for other locations
+
 
 **IMPORTANT**: When a script is loaded, Python runs all the commands contained within. We strongly recommend keeping all executable code within functions, so that it runs when you call it rather than executing immediately.
 
@@ -186,6 +187,7 @@ Exercise 4
 -   Create a new instrument script containing a function
 
     - The function sets the title to "Ramping [block name] from [initial value] to [final value]"
+    - The block name, initial and final values should all be provided as input arguments
     - The method begins a run and then changes the value of the block incrementally in steps of size 1
     - Once the target is reached, the method ends the run
 
