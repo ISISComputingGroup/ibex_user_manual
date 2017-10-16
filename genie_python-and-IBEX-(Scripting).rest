@@ -69,7 +69,9 @@ Loading scripts
 Once you've created your scripts, you need to make sure they're available to use. This works differently for instrument scripts and user scripts.
 
 - **Instrument scripts** are loaded automatically when you open the scripting perspective
-- **User scripts** can be loaded by using the ``load_script`` method in genie_python. For example, ``g.load_script('C:\script\my_script.py')``
+- **User scripts** can be loaded by using the ``load_script`` method in genie_python. For example, ``g.load_script('C:\scripts\run_my_experiment.py')``
+    - ``g.load_script`` looks automatically in “C:\scripts”. A full path can be given for other locations
+
 
 **IMPORTANT**: When a script is loaded, Python runs all the commands contained within. We strongly recommend keeping all executable code within functions, so that it runs when you call it rather than executing immediately.
 
