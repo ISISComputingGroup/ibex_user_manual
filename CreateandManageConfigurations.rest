@@ -101,8 +101,8 @@ IOCs need to be explicitly added to the configuration via the IOC tab if you wan
 
 - The "Edit IOC"-button opens a dialog containing all the settings related to the selected IOC: 
 
-  - Auto start: The IOC will be started/restarted whenever the configuration is changed.
-  - Auto restart: This setting only applies if auto start has been selected as well, otherwise it does nothing. If both auto start and auto restart are selected then if the IOC is terminated unexpectedly, it will be automatically restarted. If the IOC is stopped from the client or writing to the appropriate PV then it will not be restarted. 
+  - Auto start: If set, the IOC will be started/restarted whenever the configuration is changed.
+  - Auto restart: If set, the IOC will be automatically restarted if it is terminated unexpectedly. If the IOC is stopped from the client or writing to the appropriate PV then it will not be restarted. 
   - The simulation level: By default, the Sim. level file is set to NONE, meaning that the IOC will not run in simulation mode.  Under normal circumstances, you should not change the default setting. Simulation mode is used for running the IOC without the actual physical device.
   - `IOC Macros`_, `IOC PV Values`_ and `IOC PV Sets`_.
 
