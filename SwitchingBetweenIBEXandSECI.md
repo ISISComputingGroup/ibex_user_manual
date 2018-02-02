@@ -15,4 +15,4 @@ Switching between SECI and IBEX is possible as they both use the same underlying
 ## Post Switch Tasks
 
 * Check and, if necessary, update the RB number, username and run title - either IBEX or SECI may reset this back to what it was last time they were run.
-* if you don't wish your next proper run to contain both IBEX and SECI sample environment data, do a short BEGIN/END to push these into a data file to discard  
+* if you don't wish your next proper run to contain both IBEX and SECI sample environment data, do a short BEGIN/END to push this into a data file to discard  
