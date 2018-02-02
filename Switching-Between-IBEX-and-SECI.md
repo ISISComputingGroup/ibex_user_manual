@@ -5,4 +5,8 @@ Switching between SECI and IBEX is possible as they both use the same underlying
 * Don't have both SECI and IBEX running at the same time, they will likely both try and talk to the same devices
 * 
 
-If SECI is running, close SECI. If IBEX is running (or you are not sure) run stop_ibex_server.bat which will either be in a shortcut on the windows "Start" menu or you can browse with explorer to c:\\Instrument\\apps\\EPICS       
+Procedure
+
+* If SECI is running, close SECI (File Menu + Exit) or run **KillSECI**. If IBEX is running (or you are not sure) run **stop_ibex_server.bat** which will either be a shortcut on the Windows "Start" menu or you can browse with explorer to c:\\Instrument\\apps\\EPICS where it is located
+* To start SECI use either the SECI shortcut in your windows Start menu, or browse to  **c:\\Program Files (x86)\\STFC ISIS Facility\\SECI** where **SECIUserInterface.exe** is located
+* To start IBEX either use the shortcut in the Windows start menu or run **start_ibex_server.bat** located in  **c:\\Instrument\\apps\\EPICS**
