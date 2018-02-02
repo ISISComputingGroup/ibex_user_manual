@@ -20,3 +20,5 @@ In this section of the IBEX User Manual, we describe how to do the most common a
 [[Plot a Block Graph|PlotaBlockGraph]]
 
 [[Create PVs for generic user data|How-to-create-PVs-for-generic-user-data]]
+
+[[Switching between IBEX and SECISwitchingBetweenIBEXandSECI]]
