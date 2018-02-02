@@ -74,7 +74,7 @@ Return_
 
 **Q: Can I switch from running IBEX to SECI and vice-versa?**
 
-**A:** Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful.  You cannot have IBEX and SECI running simultaneously - you must fully shut-down the one control system before you can start running the other control system.  You should be especially careful to ensure that you do not inadvertently leave a run executing on the DAE when switching between control systems.
+**A:** Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[SwitchingBetweenIBEXandSECI]] for details
 
 Return_
 
