@@ -8,14 +8,14 @@ List of Frequently Asked Questions
 
 .. _Return:
 
-#. _`How do I report a problem with IBEX?`
+#. `How do I report a problem with IBEX?`_
 #. `How do I install IBEX Server?`_
 #. `How do I install IBEX Client?`_
 #. `How do I start IBEX Server?`_
 #. `How do I stop IBEX Server?`_
 #. `Can I run IBEX and SECI at the same time?`_
 #. `Can I switch from running IBEX to SECI and vice-versa?`_
-#. _`Can I write scripts to control my experiment?`
+#. `Can I write scripts to control my experiment?`_
 #. `Which version of Python does IBEX use?`_
 #. `Where can I learn about Python?`_
 #. `What do I look at if there are no RAW frames when Collecting Data?`_
