@@ -1,0 +1,11 @@
+# Define a motor position on the engin-x sample stack
+- Using a file explorer, go to the following location on ndxenginx: `C:\Labview Modules\Drivers\Galil DMC2280`
+- Double click on the file Galil – System Functions.llb
+- Double click on the file in the top section called “Galil – Table of motor details.vi”. The following LabVIEW vi will appear – but populated with the motors for ENGINX
+- IMPORTANT: Select the correct motor on the left hand side.
+- Select the tab called Tools. 
+- Select “Enable” 
+- Enter the new position in “Define Motor Position”. 
+- Enter the new position in “Define Encoder Position”
+- Click the two “Apply” buttons next to these controls
+- Minimise the vi (DO NOT STOP the VI). IBEX uses this in the background to perform the motion control for the sample stack.
