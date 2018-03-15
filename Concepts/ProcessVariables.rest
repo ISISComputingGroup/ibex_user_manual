@@ -28,6 +28,7 @@ Not all PVs belong to an instrument.  Items not part of an instrument have a dif
 
 Displaying
 ----------
+You can read a PV outside of IBEX by starting an EPICS terminal and running:
 
 |   ``caget IN:LARMOR:DAE:GOODUAH``
 |   ``camonitor IN:LARMOR:DAE:GOODUAH``
