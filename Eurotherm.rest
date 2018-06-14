@@ -33,7 +33,7 @@ The values for the settings are stored in a file in ``C:\Instrument\Settings\con
 #. The set points are the lowest temperature at which the values should be used.
 #. Any set point lower than the first entry will use the first entry.
 
-For example if your file was:
+For example if your file was::
 
     SP P I D Heater
     100 10 11 12 13
