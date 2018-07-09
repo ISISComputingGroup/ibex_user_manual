@@ -24,6 +24,7 @@ Contents
 #. `Editing a Configuration`_
 #. `Edit Current Configuration ...`_
 #. `Load a Configuration`_
+#. `Recent Configurations`_
 #. `Delete a Configuration`_
 #. `Editing a global setting`_
 
