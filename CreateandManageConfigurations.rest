@@ -283,6 +283,18 @@ To load a configuration:
 
 Return to `Contents`_.
 
+Recent Configurations
+--------------------
+
+To load a recent configuration:
+
+#. Select ``Recent Configurations`` from the ``Configuration`` menu.
+#. IBEX displays the Load Recent Configuration dialog, which lists the last three loaded configurations defined for your instrument.
+#. Select a configuration from the list and press the ``OK`` button
+#. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
+
+Return to `Contents`_.
+
 Delete a Configuration
 ----------------------
 
