@@ -17,26 +17,38 @@ The most user-friendly interface to matplotlib is called `pyplot`. You can impor
 import matplotlib.pyplot as pyplot
 ```
 
-### To create (and show) an example plot
+### Useful pyplot commands:
+- `pyplot.plot()`: Populate a plot with some data. If you want to discard old data first, use `plot.clf()`
+- `pyplot.clf()`: Clear the current figure. Useful if you need to discard old data from the plot.
+- `pyplot.show()`: Shows the matplotlib plotting window.
+- `pyplot.draw()`: Draws any updates. Requires a plot to have been opened by `pyplot.show()` first.
+
+
+### Example: plot and show a trivial graph
 ```python
 pyplot.plot(range(10))
 pyplot.show()
 ```
 
-### To remove all plots and start with a completely clean matplotlib screen.
-```python
-pyplot.close('all')
-```
-
-### To plot a constantly-updating sin wave
+### Example: plot a constantly-updating sin wave
 ```python
 from math import sin
 from time import time, sleep
+
+# Show plot - only need to do this once!
 pyplot.show()
+
 while True:
-    pyplot.clf()
+    # Clear the old data from the figure - we want to completely replace it.
+    pyplot.clf()  
+
+    # Plot our new data onto the figure.
     pyplot.plot([sin(x/1000.0 + time()) for x in range(10000)])
+
+    # Draw the new data to the screen .
     pyplot.draw()
+
+    # Short sleep to avoid going into a tight loop and using 100% processor.
     sleep(0.05)
 ```
 
