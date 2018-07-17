@@ -2,17 +2,16 @@
 
 The `genie_python` distribution of python includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
 
-Matplotlib is a highly customizable, general purpose plotting library capable of producing a wide variety of plot types.
-
-# Matplotlib documentation
-
+Matplotlib is a highly customizable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
 - [`matplotlib.pyplot` API reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
 - [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 
+The implementation of matplotlib in IBEX is _non-blocking_ - that is, a script will continue once a plot has been drawn without the plot needing to be closed first.
+
 # Quick-start
 
-### To import matplotlib
+### To import pyplot
 ```python
 import matplotlib.pyplot as pyplot
 ```
@@ -23,7 +22,7 @@ pyplot.plot(range(10))
 pyplot.show()
 ```
 
-### To remove all plots and start with a completely clean screen
+### To remove all plots and start with a completely clean matplotlib screen.
 ```python
 pyplot.close('all')
 ```
