@@ -7,8 +7,6 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 - [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 
-The implementation of matplotlib in IBEX is _non-blocking_ - that is, a script will continue once a plot has been drawn without the plot needing to be closed first.
-
 # Quick-start
 
 ### To import pyplot
@@ -41,22 +39,30 @@ while True:
 
 # Plotting spectra
 
-genie_python includes commands to quickly plot the neutron spectra on an instrument.
+The `genie_python` library includes commands to quickly plot the neutron spectra on an instrument.
 
-Example usages:
+Plot a single spectrum:
 ```python
-# Open a single plot
 g.plot_spectrum(1)
+```
 
-# Open a figure and add several spectra to it
+Plot several spectra on one graph:
+```python
 graph = g.plot_spectrum(1)
 graph.add_spectrum(2)
 graph.add_spectrum(3, period=2)
 ```
 
+For greater control over the exact presentation or contents of the spectra plots, the raw spectrum data can be acquired using:
+```python
+g.get_spectrum(spectrum=1)
+```
+
 # Using matplotlib within the IBEX GUI
 
-The IBEX user interface includes a python scripting window. When plotting graphs within IBEX, matplotlib is configured to display the plot within the IBEX gui.
+The IBEX user interface includes a python scripting window. When plotting graphs within IBEX, matplotlib is configured to display the plot within the IBEX gui. 
+
+In the IBEX user interface, matplotlib is _non-blocking_ - that is, a script will continue once a plot has been drawn without the plot needing to be closed.
 
 > Note: this is new functionality as of July 2018. If you prefer matplotlib windows to spawn separately from the main IBEX window, you can type the matplotlib command:
 > ```python
