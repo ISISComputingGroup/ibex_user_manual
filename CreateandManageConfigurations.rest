@@ -290,7 +290,7 @@ Recent Configurations
 To load a recent configuration:
 
 #. Select ``Recent Configurations`` from the ``Configuration`` menu.
-#. IBEX displays the Load Recent Configuration dialog, which lists the last three loaded configurations defined for your instrument.
+#. IBEX displays the Load Recent Configuration dialog, which lists the last five loaded configurations defined for your instrument and the time at which they were last loaded.
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
 
