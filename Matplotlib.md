@@ -10,6 +10,9 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 # Quick-start
 
 ### To import pyplot
+
+The most user-friendly interface to matplotlib is called `pyplot`. You can import `pyplot` using the following command:
+
 ```python
 import matplotlib.pyplot as pyplot
 ```
