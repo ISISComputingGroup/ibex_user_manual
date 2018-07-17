@@ -10,6 +10,36 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 - [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 
+# Quick-start
+
+### To import matplotlib
+```python
+import matplotlib.pyplot as pyplot
+```
+
+### To create (and show) an example plot
+```python
+pyplot.plot(range(10))
+pyplot.show()
+```
+
+### To remove all plots and start with a completely clean screen
+```python
+pyplot.close('all')
+```
+
+### To plot a constantly-updating sin wave
+```python
+from math import sin
+from time import time, sleep
+while True:
+    pyplot.clf()
+    pyplot.plot([sin(x/1000.0 + time()) for x in range(10000)])
+    pyplot.draw()
+    sleep(0.05)
+
+```
+
 # Plotting spectra
 
 genie_python includes commands to quickly plot the neutron spectra on an instrument.
