@@ -32,12 +32,12 @@ pyplot.close('all')
 ```python
 from math import sin
 from time import time, sleep
+pyplot.show()
 while True:
     pyplot.clf()
     pyplot.plot([sin(x/1000.0 + time()) for x in range(10000)])
     pyplot.draw()
     sleep(0.05)
-
 ```
 
 # Plotting spectra
