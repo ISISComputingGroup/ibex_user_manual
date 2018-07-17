@@ -18,10 +18,10 @@ import matplotlib.pyplot as pyplot
 ```
 
 ### Useful pyplot commands:
-- `pyplot.plot()`: Populate a plot with some data. If you want to discard old data first, use `plot.clf()`
-- `pyplot.clf()`: Clear the current figure. Useful if you need to discard old data from the plot.
+- `pyplot.plot()`: Populate a plot with some data.
+- `pyplot.clf()`: Clear the current figure, e.g. discard old data from the plot.
 - `pyplot.show()`: Shows the matplotlib plotting window.
-- `pyplot.draw()`: Draws any updates. Requires a plot to have been opened by `pyplot.show()` first.
+- `pyplot.draw()`: Draws updates to a plot that is already open.
 
 
 ### Example: plot and show a trivial graph
