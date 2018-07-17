@@ -294,6 +294,8 @@ To load a recent configuration:
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
 
+**Note**: The current configuration is not displayed as it is already loaded, but will be displayed once another configuration is loaded
+
 Return to `Contents`_.
 
 Delete a Configuration
