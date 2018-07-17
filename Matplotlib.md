@@ -22,6 +22,7 @@ import matplotlib.pyplot as pyplot
 - `pyplot.clf()`: Clear the current figure, e.g. discard old data from the plot.
 - `pyplot.show()`: Shows the matplotlib plotting window.
 - `pyplot.draw()`: Draws updates to a plot that is already open.
+- `pyplot.close('all')`: Closes all plots and removes all data.
 
 
 ### Example: plot and show a trivial graph
