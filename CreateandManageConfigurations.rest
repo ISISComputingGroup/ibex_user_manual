@@ -24,6 +24,7 @@ Contents
 #. `Editing a Configuration`_
 #. `Edit Current Configuration ...`_
 #. `Load a Configuration`_
+#. `Recent Configurations`_
 #. `Delete a Configuration`_
 #. `Editing a global setting`_
 
@@ -115,7 +116,7 @@ Blocks Tab
 ~~~~~~~~~~
 The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariables]]).
 
-To create a new block, click on the ``Add Block`` button.  IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name 
+To create a new block, click on the ``Add Block`` button or use the keyboard shortcut ``Ctrl+A``. Blocks can also be copied using the ``Copy Block`` button or the keyboard shortcut ``Ctrl+D``. Upon creation of a new block, IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name 
 
 * contains only the characters a-z, A-Z, 0-9 and _ (underscore).
 * starts with a character.
@@ -153,7 +154,9 @@ Visible/Local
    The ``Local`` check-box is used when you need to view PVs from another instrument as blocks.  In most circumstances, you will not need to view PVs belonging to another instrument, so you should leave the ``Local`` check-box checked.  Facility PVs are an exception to this rule, but IBEX knows about facility PVs and, in this case, automatically sets the ``Local`` check-box  to unchecked.  If you do need to view PVs belonging another instrument, please consult with the Experiment Controls team.
 
 Run-Control Settings
-   Toggle the ``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is collected only when the block lies within the range) .
+   Toggle the ``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is collected only when the block lies within the range).
+
+   Run control can also be set on non-numbers as boolean or enum values in IBEX are mapped to underlying numbers. For example, a shutter status of OPEN corresponds to a 1 so setting run control of between 0.5 and 1.5 will put the instrument into waiting when the shutter is not open. In most cases a 1 will correspond to true and 0 to false, if you are unsure please consult with the Experiment Controls team.
 
 Logging Settings
    Use the Logging Settings section of the Configure Block dialog to control how the value of the block is logged.
@@ -164,6 +167,8 @@ Logging Settings
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
 **PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
+
+To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
 **Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
@@ -276,6 +281,20 @@ To load a configuration:
 #. IBEX displays the Load Configuration dialog, which list all the configurations defined for your instrument.
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
+
+Return to `Contents`_.
+
+Recent Configurations
+--------------------
+
+To load a recent configuration:
+
+#. Select ``Recent Configurations`` from the ``Configuration`` menu.
+#. IBEX displays the Load Recent Configuration dialog, which lists the last five loaded configurations defined for your instrument and the time at which they were last loaded.
+#. Select a configuration from the list and press the ``OK`` button
+#. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be re-loaded later, if you wish.
+
+**Note**: The current configuration is not displayed as it is already loaded, but will be displayed once another configuration is loaded.
 
 Return to `Contents`_.
 
