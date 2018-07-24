@@ -190,7 +190,7 @@ When you click on the ``Add`` button, the dialog displays which blocks are avail
 
 Use the buttons with the Up and Down arrows to control the ordering of the groups and the order of the blocks within the groups.
 
-You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or Ctrl`` keys on your keyboard.
+You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or ``Ctrl`` keys on your keyboard.
 
 **Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
 
