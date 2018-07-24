@@ -6,7 +6,7 @@ Glossary
 Block
   This is a named piece of information created by the user as part of an instrument configuration. 
   A block is essentially an alias to a process variable.   A block can have logging enabled and
-  will then appear in the final data file.
+  will then appear in the final data file
 
 Blockserver
   This is a :term:`Server` element of the IBEX control system that is responsible for managing 
