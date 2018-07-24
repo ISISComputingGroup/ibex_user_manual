@@ -17,4 +17,4 @@ To start, stop or restart an IOC:
 
 It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the IOC Log (see [[Views]]) as the IOC starts up or shuts down.
 
-NB: The effect of auto-restart has no effect on the stop action. Stop will stop the IOC and it will not restart.
+*Note*: The effect of auto-restart has no effect on the stop action. Stop will stop the IOC and it will not restart.
