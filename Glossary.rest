@@ -10,7 +10,7 @@ Block
 
 Blockserver
   This is a :term:`Server` element of the IBEX control system that is responsible for managing 
-  a :term:`Block` and also a :term:`Configuration`
+  a :term:`Block` and also a :term:`Configuration`.
 
 Client Server
   IBEX, like :term:`EPICS`, is a client-server system. In such systems background processes (servers) 
