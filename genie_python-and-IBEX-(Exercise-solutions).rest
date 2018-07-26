@@ -12,7 +12,7 @@ From [[Getting Started|genie_python-and-IBEX-(Getting-started)]].
 
 -   To print the message, enter something like ``print "Hello, World!`` and press return
 
--   The square of the integers between 1 and 10 can be output with the code below. A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and be executed.::
+-   The square of the integers between 1 and 10 can be output with the code below. A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and be executed.:
 
         for i in range(1,11):
             print i*i
@@ -23,7 +23,7 @@ Exercise 2
 From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
 
 - Use ``g.change_title("Exercise 2")`` to change the title
-- The following code will start the run, wait, and then pause::
+- The following code will start the run, wait, and then pause:
 
 .. code-block:: python
 
@@ -31,19 +31,19 @@ From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
     g.waitfor_uamps(1)
     g.pause()
 
-- This code sets the value, run control, and limits on "MY_BLOCK". Your code may look slightly different depending how you've chosen to pass in the arguments::
+- This code sets the value, run control, and limits on "MY_BLOCK". Your code may look slightly different depending how you've chosen to pass in the arguments:
 
 .. code-block:: python
 
     g.cset("MY_BLOCK", 5, lowlimit=1, highlimit=10, runcontrol=True)
 
-- The following resumes the run::
+- The following resumes the run:
 
 .. code-block:: python
 
     g.resume()
 
-- This code will set the block value and check the subsequent state::
+- This code will set the block value and check the subsequent state:
 
 .. code-block:: python
 
@@ -56,7 +56,7 @@ From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
     else:
         print "The instrument is not waiting"
 
-- The following code will scan the block from its original value down to 4. It assumes the initial value is greater than 4::
+- The following code will scan the block from its original value down to 4. It assumes the initial value is greater than 4:
 
 .. code-block:: python
 
@@ -64,7 +64,7 @@ From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
         g.cset(MY_BLOCK=i)
         g.waitfor_time(seconds=1)
         
-- This function will end the run::
+- This function will end the run:
 
 .. code-block:: python
 
@@ -77,13 +77,13 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
 -   **(a)** After creating the files, you should have one new file in ``C:\scripts`` and another in ``C:\Instrument\Settings\config\[Instrument name]\Python\inst``
 
--   **(b)** The function in ``set_up_instrument.py`` should look something like this::
+-   **(b)** The function in ``set_up_instrument.py`` should look something like this:
 
             def set_up_instrument():
                 g.change_title("My experiment")
                 g.change_user("Adrian")
 
--   **(b)** The function in ``run_my_experiment.py`` should look something like this::
+-   **(b)** The function in ``run_my_experiment.py`` should look something like this:
 
 .. code-block:: python
 
@@ -107,7 +107,7 @@ Exercise 4
 
 From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
--   You should have created a Python file in ``C:\Instrument\Settings\config\[Machine name]\Python\inst`` that contains something like the following::
+-   You should have created a Python file in ``C:\Instrument\Settings\config\[Machine name]\Python\inst`` that contains something like the following:
 
 .. code-block:: python
 
@@ -130,7 +130,7 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
             finally: 
                 g.end()
 
--   Once you add the line to output the current title, the top of your file should look like this::
+-   Once you add the line to output the current title, the top of your file should look like this:
 
 .. code-block:: python
 
@@ -138,7 +138,7 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
         def ramp(block, target):
             ...
 
--   This user-defined function will ramp the two blocks using the instrument function::
+-   This user-defined function will ramp the two blocks using the instrument function:
 
 .. code-block:: python
 
@@ -146,7 +146,7 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
             for block, target in [("MY_BLOCK", 10), ("MY_OTHER_BLOCK", -10)]:
                 inst.ramp(block, target)
 
--   To load the user script, assuming the file is called "ramp_blocks.py", run the following from the scripting perspective::
+-   To load the user script, assuming the file is called "ramp_blocks.py", run the following from the scripting perspective:
 
 .. code-block:: python
 
@@ -160,7 +160,7 @@ Exercise 5
 
 From [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GENIE)]].
 
-- In ``genie_python``, the ``Open GENIE`` procedure could be written as::
+- In ``genie_python``, the ``Open GENIE`` procedure could be written as:
 
 .. code-block:: python
 
