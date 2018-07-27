@@ -27,12 +27,14 @@ import matplotlib.pyplot as pyplot
 
 ### Example: plot and show a trivial graph
 ```python
+import matplotlib.pyplot as pyplot
 pyplot.plot(range(10))
 pyplot.show()
 ```
 
 ### Example: plot a constantly-updating sin wave
 ```python
+import matplotlib.pyplot as pyplot
 from math import sin
 from time import time, sleep
 
@@ -50,7 +52,7 @@ while True:
     pyplot.draw()
 
     # Short sleep to avoid going into a tight loop and using 100% processor.
-    sleep(0.05)
+    sleep(0.5)
 ```
 
 # Plotting spectra
