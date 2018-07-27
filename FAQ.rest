@@ -21,6 +21,7 @@ List of Frequently Asked Questions
 #. `What do I look at if there are no RAW frames when Collecting Data?`_
 #. `What do I look at if there are no GOOD frames when Collecting Data?`_
 #. `Can I change what my graphs look like in the log plotter or OPI?`_
+#. `In the scripting view I don't want the arguments when I autocomplete`_
 
 .. _`How do I report a problem with IBEX?`:  
 
@@ -145,3 +146,9 @@ Return_
     #. On an OPI right click and select Show/Hide Graph Toolbar
 #. The click the settings button (left most icon with a spanner and screwdriver on it)
 #. Click on the tabs to find what you want to change. Graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third
+
+.. _`In the scripting view I don't want the arguments when I autocomplete`:
+
+**Q: #. `In the scripting view I don't want the arguments when I autocomplete`**
+
+**A: In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these, or type to narrow down the possibilities, and press return this will autocomplete the method name including the parameters. However sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return> this will just give the function name without any parenthesis or arguments.
