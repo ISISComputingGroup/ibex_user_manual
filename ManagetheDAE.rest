@@ -77,7 +77,7 @@ Experiment Setup
 
 The Experiment Setup comprises of sub-tabs which will have been configured by an ISIS Instrument Scientist.  Please do not modify their contents without consulting with the instrument scientist.
 
-Any changes made are only sent to the DAE when the ``Apply Changes`` button is pressed. If there is a problem with the setting an error message will appear on the `Run Summary`_ panel.
+Any changes made are only sent to the DAE when the ``Apply Changes`` button is pressed and will be highlighted until the ``Apply Changes`` button is pressed. If there is a problem with the setting an error message will appear on the `Run Summary`_ panel.
 
 Time Channels
 ~~~~~~~~~~~~~
