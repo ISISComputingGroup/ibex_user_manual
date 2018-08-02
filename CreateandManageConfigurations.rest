@@ -116,7 +116,7 @@ Blocks Tab
 ~~~~~~~~~~
 The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariables]]).
 
-To create a new block, click on the ``Add Block`` button or use the keyboard shortcut ``Ctrl+A``. Blocks can also be copied using the ``Copy Block`` button or the keyboard shortcut ``Ctrl+D``. Upon creation of a new block, IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name 
+To create a new block, click on the ``Add Block`` button or use the keyboard shortcut ``Ctrl+A``. Blocks can also be copied using the ``Duplicate Block`` button or the keyboard shortcut ``Ctrl+D``. Upon creation of a new block, IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name 
 
 * contains only the characters a-z, A-Z, 0-9 and _ (underscore).
 * starts with a character.
