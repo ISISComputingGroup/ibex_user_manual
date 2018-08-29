@@ -9,8 +9,10 @@ Switch Instrument
    Select the Switch Instrument menu item to re-direct the IBEX GUI to view a different instrument.
 
    **Please Note:** If you connect to an instrument from outside the instrument's sub-network (i.e. if you are not in the instrument blockhouse or cabin/pod), you will only be able to view the instrument (i.e. you will not be able to make changes to any of the fields).
-Restore Default View
-   Selecting the Restore Default View option resets the IBEX GUI display to its startup view.
+
+Manager Mode
+   Selecting the Manager Mode option allows the user to enter manager mode after entering the manager password.
+
 Exit IBEX Client
    Select the Exit IBEX Client menu item to quit.  Please note, quitting the IBEX Client does not terminate the IBEX server, which will continue to run on the instrument control PC.
 
@@ -25,6 +27,7 @@ Configurations
    * Load - replace the current configuration with a different configuration loaded from a file
    * Edit - edit an existing configuration (independently of the current configuration)
    * Delete - delete a configuration
+   * Recent - select a recently used configuration and make it the current configuration.
 
 Components
    Select the Components menu item to perform one of the following actions:
@@ -33,8 +36,6 @@ Components
    * Edit - edit an existing component
    * Delete - delete a component
 
-Recent Configurations
-   Select a recently used configuration and make it the current configuration.
 
 Synoptic Menu
 -------------
@@ -47,21 +48,30 @@ Delete
 
 IOC Menu
 --------
-Start/Stop IOCs
-   Selecting the Start/Stop IOCs menu item displays a dialog allowing you to start an IOC or to stop an IOC that is currently running.
+Start/stop IOCs
+   Selecting the Start/stop IOCs menu item displays a dialog allowing you to start an IOC or to stop an IOC that is currently running.
 
 Run-Control Menu
 ----------------
-View Run-Control Settings
+View run-control settings
    Selecting the View Run-Control Settings menu item displays a dialog showing you which blocks (if any) are currently under run-control.  You can also assign new run-control settings to blocks and modify or remove existing run-control settings.
 
    The [[BlocksandGroups]] page describes how blocks under run-control are shown in the GUI.
+
+Preferences Menu
+----------------
+
+Colour settings
+    Allows the user to one of the supported colour schemes:
+
+    * Standard colour scheme
+    * Alternative colour scheme 1    
 
 Help Menu
 ---------
 About
    Selecting the About menu item displays a dialog showing the current version of the IBEX client and the current version of the IBEX server (running on the instrument control PC to which you are currently connected).  If you need to report a problem with IBEX, support staff may ask you to look up this information, so that they know which version of the IBEX software you are using.
-User Manual
+User manual
    This will open a web page containing the IBEX user manual.
 Console Log
    The console log is used by support staff to help them diagnose any problems that IBEX might encounter.
