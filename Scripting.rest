@@ -6,7 +6,7 @@ gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
 beginner and novice user. For a more in depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
--  `The Script Server <#script-server>`__
+-  `The Script Server <#the-script-server>`__
 -  `Running genie_python
    commands <#running-genie_python-commands>`__
 -  `Common genie_python commands <#common-genie_python-commands>`__
