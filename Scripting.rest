@@ -1,11 +1,12 @@
 Scripting
 =============================
-
+There are two ways of running scripts in IBEX - locally, and on the IBEX server.
 Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_
 gives a full account of what functions are available in genie\_python.
 This page is intended to give a broad guide to scripting for the
 beginner and novice user. For a more in depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
+-  `The Script Server <#script-server>`__
 -  `Running genie_python
    commands <#running-genie_python-commands>`__
 -  `Common genie_python commands <#common-genie_python-commands>`__
@@ -24,6 +25,17 @@ If you are new to Python, the Mantid team has created an excellent `Introduction
 <http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid web-site.
 
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
+
+The Script Server
+=================
+
+IBEX features a script server, which allows you to write scripts and submit them to the server to run. This allows you to queue multiple scripts which the server will execute for you.
+
+To access this feature, select 'Script Server' on the left-hand menu. This perspective allows you to create and queue scripts, as well as show you which script is currently running and how far it is through its execution.
+
+You can write the script within IBEX, or load a pre-written Python script from elsewhere on the system. You can also save scripts that you have written within IBEX.
+
+Note that you cannot create graphs from the Script Server. 
 
 Running genie\_python commands
 ==============================
