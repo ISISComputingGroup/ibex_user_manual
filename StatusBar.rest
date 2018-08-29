@@ -1,7 +1,0 @@
-Status Bar
-==========
-
-The Status Bar is located at the bottom of the IBEX GUI window.
-
-The Status Bar displays information about the current status of the IBEX GUI. It is primarily used to display the name of the current configuration.
-
