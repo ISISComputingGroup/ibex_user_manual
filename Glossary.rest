@@ -1,7 +1,6 @@
-.. _glossary:
-
 Glossary
 ========
+.. _glossary::
 
 Block
   This is a named piece of information created by the user as part of an instrument configuration. 
@@ -9,16 +8,15 @@ Block
   will then appear in the final data file.
 
 Blockserver
-  This is a Server element of the IBEX control system that is responsible for managing 
+  This is a :term:`Server` element of the IBEX control system that is responsible for managing 
   a :term:`Block` and also a :term:`Configuration`.
 
 Client Server
   IBEX, like :term:`EPICS`, is a client-server system. In such systems background processes (servers) 
-  provide information for clients (such as a GUI or command line). Multiple clients can 
-  communicate with a single server process over the network.
+  provide information for clients (such as a GUI or command line). Multiple clients can communicate with a single server process over the network.
 
 Component
-  A component in IBEX is, essentially, a mini-configuration.  It can be used to create a configuration for a sub-set 
+  A component in IBEX is, essentially, a mini-configuration.  It can be used to create a configuration for a subset 
   of devices attached to an instrument.  When the component is included in a configuration, the configuration "inherits" 
   all the definitions from the component. 
 
@@ -27,26 +25,21 @@ Configuration
   More specifically, a configuration is an information structure which defines and describes an instrument to IBEX. 
 
 DAE (Data Acquisition Electronics)
-  The DAE is a set of electronic cards housed in a VXI/VME crate located in the instrument cabin/pod and 
-  maintained by ISIS electronics group.  The DAE contains two types of card:
+  The DAE is a set of electronic cards housed in a VXI/VME crate located in the instrument cabin/pod and maintained by ISIS electronics group.  The DAE contains two types of card:
 
 #. Detector cards (many): these cards record neutron  counts
 #. Environment/period card (only one): this card distributes timing signals etc. and maintains global 
    counters (e.g. number of ISIS pulses, proton charge delivered (PPP))
 
 EPICS
-  `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted 
-  control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is
-  the underlying framework used to create IBEX.
+  `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is the underlying framework used to create IBEX.
 
 GENIE PYTHON
   :term:`GENIE PYTHON` is a python library for instrument control and scripting, maintained by the IBEX team. There is
   training provided
 
 ICP (Instrument Control Program)
-  The ICP (sometimes called the ISIS ICP) is a :term:`Server` element of the IBEX control system that controls 
-  communication with the DAE.  The ICP is also responsible for writing the RAW experiment data file at the
-  end of a run or experiment.
+  The ICP (sometimes called the ISIS ICP) is a :term:`Server` element of the IBEX control system that controls communication with the DAE.  The ICP is also responsible for writing the RAW experiment data file at the end of a run or experiment.
 
 IOC
   An IOC (Input/Output Controller) is an :term:`EPICS` process that provides some service, often managing a device. 
@@ -54,14 +47,15 @@ IOC
   :term:`Process Variable` for the relevant control elements
 
 OPI
-  OPI stands for Operator Interface.  An OPI is a user interface element of IBEX.  In essence, an OPI is a control
-  panel for an individual device attached to an instrument.  It allows you to view and modify the PVs that define the
-  state of the device.  For example, an OPI is displayed when you click on a device icon on a synoptic view.
+  OPI stands for Operator Interface.  An OPI is a user interface element of IBEX.  In essence, an OPI is a control panel for an individual device attached to an instrument.  It allows you to view and modify the PVs that define the state of the device.  For example, an OPI is displayed when you click on a device icon on a synoptic view.
 
 PV (Process Variable)
   A Process Variable, usually referred to as a PV, is a named piece of information in the EPICS system, such as a
   temperature setpoint or readback.  PVs typically have structured names that uniquely identify them on the network.
   An example of such a name, in this case for a motor, is: ``IN:LARMOR:MOT:MTR0101``
 
-SYNOPTIC
+Server
+  A Server is a program or device that provides functionality to other devices.
+
+Synoptic
   A Synoptic is a view in IBEX that allows users to visualize a beamline, including Hardware Components and PVs.
