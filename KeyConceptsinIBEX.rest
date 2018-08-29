@@ -71,7 +71,7 @@ Message Server
   searched from the GUI.
 
 Script Server
-  The Script Server...
+  The Script Server runs Python scripts submitted by authorised clients. After these scripts are ran, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
   
 MySQL 
   MySQL is an open-source relational database system, which provides database services to 
