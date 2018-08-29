@@ -139,13 +139,13 @@ Return_
 
 **Q: Can I change what my graphs look like in the log plotter or OPI?**
 
-**A: Yes**, there are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings 
+**A: Yes**, there are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings for a graph in an OPI do the following:
 
-#. Show the tool bar 
-    #. In the log plotter view this is already shown
-    #. On an OPI right click and select Show/Hide Graph Toolbar
-#. The click the settings button (left most icon with a spanner and screwdriver on it)
-#. Click on the tabs to find what you want to change. Graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third
+#. To show the toolbar on an OPI graph right click and select Show/Hide Graph Toolbar.
+#. Then click the settings button (leftmost icon with a spanner and screwdriver on it)
+#. Click on the tabs to find what you want to change. The graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third.
+
+To open the settings in a log plotter graph, just right click and click "Open Properties Panel".
 
 Return_
 
@@ -153,6 +153,6 @@ Return_
 
 **Q: In the scripting view I don't want the arguments when I autocomplete**
 
-**A:** In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these, or type to narrow down the possibilities, and press return this will autocomplete the method name including the parameters. However sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return> this will just give the function name without any parenthesis or arguments.
+**A:** In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return>, this will just give the function name without any parenthesis or arguments.
 
 Return_
