@@ -13,6 +13,4 @@ You might find it helpful to refer to a `schematic view of the IBEX UI <http://w
 
 [[Views]]
 
-[[Notification Banner|NotificationBanner]]
-
-[[Status Bar|StatusBar]]
+[[Banner|Banner]]
