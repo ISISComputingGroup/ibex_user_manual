@@ -8,12 +8,13 @@ Block
   will then appear in the final data file.
 
 Blockserver
-  This is a :term:`Server` element of the IBEX control system that is responsible for managing 
-  a :term:`Block` and also a :term:`Configuration`.
+  This is a Server element of the IBEX control system that is responsible for managing 
+  a Block and also a Configuration.
 
 Client Server
-  IBEX, like :term:`EPICS`, is a client-server system. In such systems background processes (servers) 
-  provide information for clients (such as a GUI or command line). Multiple clients can communicate with a single server process over the network.
+  IBEX, like EPICS, is a client-server system. In such systems background processes (servers) 
+  provide information for clients (such as a GUI or command line). Multiple clients can communicate with a 
+  single server process over the network.
 
 Component
   A component in IBEX is, essentially, a mini-configuration.  It can be used to create a configuration for a subset 
@@ -35,16 +36,16 @@ EPICS
   `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is the underlying framework used to create IBEX.
 
 GENIE PYTHON
-  :term:`GENIE PYTHON` is a python library for instrument control and scripting, maintained by the IBEX team. There is
+  GENIE PYTHON is a python library for instrument control and scripting, maintained by the IBEX team. There is
   training provided
 
 ICP (Instrument Control Program)
-  The ICP (sometimes called the ISIS ICP) is a :term:`Server` element of the IBEX control system that controls communication with the DAE.  The ICP is also responsible for writing the RAW experiment data file at the end of a run or experiment.
+  The ICP (sometimes called the ISIS ICP) is a Server element of the IBEX control system that controls communication with the DAE.  The ICP is also responsible for writing the RAW experiment data file at the end of a run or experiment.
 
 IOC
-  An IOC (Input/Output Controller) is an :term:`EPICS` process that provides some service, often managing a device. 
+  An IOC (Input/Output Controller) is an EPICS process that provides some service, often managing a device. 
   For example, access to a Eurotherm temperature controller is controlled via an IOC process that provides 
-  :term:`Process Variable` for the relevant control elements
+  Process Variable for the relevant control elements
 
 OPI
   OPI stands for Operator Interface.  An OPI is a user interface element of IBEX.  In essence, an OPI is a control panel for an individual device attached to an instrument.  It allows you to view and modify the PVs that define the state of the device.  For example, an OPI is displayed when you click on a device icon on a synoptic view.
