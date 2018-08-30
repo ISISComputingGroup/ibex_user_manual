@@ -1,79 +1,56 @@
 In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
 
-.. _Return:
-
 .. contents:: **List of Frequently Asked Questions**
-
 
 How do I report a problem with IBEX?
 =======================================
 
 **A:** To report a problem with IBEX (Client or Server), please use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page.  Using this page helps to ensure that your problem report gets routed to the right person as quickly as possible.  When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client.
 
-Return_
-
 How do I install IBEX Server?
 =============================
 
 To install IBEX Server - see [[InstallingIBEX]]
-
-Return_
 
 How do I install IBEX Client?
 =============================
 
 To install IBEX Client - see [[InstallingIBEX]]
 
-Return_
-
 How do I start IBEX Server?
 ===========================
 
 To start IBEX Server - see [[StartingAndStoppingIBEX]]
-
-Return_
 
 How do I stop IBEX Server?
 ==========================
 
 To stop IBEX Server - see [[StartingAndStoppingIBEX]]
 
-Return_
-
 Can I run IBEX and SECI at the same time?
 =========================================
 
 In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
-
-Return_
 
 Can I switch from running IBEX to SECI and vice-versa?
 ======================================================
 
 Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[SwitchingBetweenIBEXandSECI]] for details
 
-Return_
-
 Can I write scripts to control my experiment?
 =============================================
 
 Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
-
-Return_
 
 Which version of Python does IBEX use?
 ======================================
 
 IBEX currently uses Python 2.7.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 2.7.  genie-python and Mantid will both migrate to Python 3.x at a future date (yet to be determined). 
 
-Return_
-
 Where can I learn about Python?
 ===============================
 
 Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
-
-Return_
 
 What do I look at if there are no RAW frames when Collecting Data?
 ==================================================================
@@ -87,8 +64,6 @@ Timing is SMP:
     Chopper is not spinning or there is a problem with the signal
     
 Consider swapping the timing source to help diagnose the problem. 
-
-Return_
 
 What do I look at if there are no GOOD frames when Collecting Data?
 ===================================================================
@@ -104,8 +79,6 @@ SMP veto:
 External veto{0-3}:
     could be an additional chopper, the shutter or moderator
 
-Return_
-
 Can I change what my graphs look like in the log plotter or OPI?
 ================================================================
 
@@ -117,11 +90,7 @@ Can I change what my graphs look like in the log plotter or OPI?
 
 To open the settings in a log plotter graph, just right click and click "Open Properties Panel".
 
-Return_
-
 In the scripting view I don't want the arguments when I autocomplete
 =====================================================================
 
 In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return>, this will just give the function name without any parenthesis or arguments.
-
-Return_
