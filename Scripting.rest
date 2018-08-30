@@ -1,5 +1,3 @@
-Scripting
-=============================
 There are two ways of running scripts in IBEX - locally, and on the IBEX server.
 Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_
 gives a full account of what functions are available in genie\_python.
