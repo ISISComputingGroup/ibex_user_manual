@@ -1,5 +1,13 @@
 [[Scripting|scripting]] > [[Creating and Running Scripts|creating-and-running-scripts]]
 
+Types of Scripts
+================
+
+-  `Creating and running instrument
+   scripts <#creating-and-running-instrument-scripts>`__
+-  `Creating and running user
+   scripts <#creating-and-running-user-scripts>`__
+
 Creating and running instrument scripts
 =======================================
 
