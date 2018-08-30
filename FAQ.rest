@@ -1,27 +1,8 @@
-IBEX FAQ
-========
-
 In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
-
-List of Frequently Asked Questions
-----------------------------------
 
 .. _Return:
 
-#. `How do I report a problem with IBEX? <#how-do-i-report-a-problem-with-ibex>`_
-#. `How do I install IBEX Server? <#how-do-i-install-ibex-server>`_
-#. `How do I install IBEX Client?`_
-#. `How do I start IBEX Server?`_
-#. `How do I stop IBEX Server?`_
-#. `Can I run IBEX and SECI at the same time?`_
-#. `Can I switch from running IBEX to SECI and vice-versa?`_
-#. `Can I write scripts to control my experiment?`_
-#. `Which version of Python does IBEX use?`_
-#. `Where can I learn about Python?`_
-#. `What do I look at if there are no RAW frames when Collecting Data?`_
-#. `What do I look at if there are no GOOD frames when Collecting Data?`_
-#. `Can I change what my graphs look like in the log plotter or OPI?`_
-#. `In the scripting view, I don't want the arguments when I autocomplete`_
+.. contents:: **List of Frequently Asked Questions**
 
 
 How do I report a problem with IBEX?
