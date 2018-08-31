@@ -16,6 +16,8 @@ while reading this section.
 
 [[Banner|Banner]]
 
+----- 
+
 Below is a screenshot of the IBEX GUI:
 
 .. image:: ibex_client_e4_zoom.png
