@@ -14,6 +14,7 @@ Views
 
 Reset Layout
 =============
+.. container:: clearer
 
 .. image:: reset_layout_button.png
 
