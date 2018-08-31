@@ -18,6 +18,8 @@ Reset Layout
 
 .. image:: reset_layout_button.png
 
+.. container:: clearer
+
 The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed then this button becomes highlighted in red. 
 
 Alarms
