@@ -68,8 +68,8 @@ Colour settings
 Help Menu
 ---------
 About
-   Selecting the About menu item displays a dialog showing the current version of the IBEX client and the current version of the IBEX server (running on the instrument control PC to which you are currently connected).  If you need to report a problem with IBEX, support staff may ask you to look up this information, so that they know which version of the IBEX software you are using.
+   Selecting the "About" menu item displays a dialog showing the current version of the IBEX client and the current version of the IBEX server (running on the instrument control PC to which you are currently connected).  If you need to report a problem with IBEX, support staff may ask you to look up this information, so that they know which version of the IBEX software you are using.
 User manual
-   This will open a web page containing the IBEX user manual.
+   Selecting the "User manual" menu item opens the IBEX user manual in a web browser.
 Console Log
    The console log is used by support staff to help them diagnose any problems that IBEX might encounter.
