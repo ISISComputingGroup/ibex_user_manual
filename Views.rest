@@ -17,11 +17,11 @@ Reset Layout
 
 .. image:: reset_layout_button.png
 
-The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed then this button becomes highlighted in red. If this view is selected, the button will stay highlighted in red if there are alarms.
+The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed then this button becomes highlighted in red. 
 
 Alarms
 =============
-The Alarms View displays the alarm state of all devices attached to the instrument control PC. It will become highlighted in red if there are any alarms. Also, the number of alarms will appear in brackets on the button.
+The Alarms View displays the alarm state of all devices attached to the instrument control PC. It will flash red if there are any alarms. Also, the number of alarms will appear in brackets on the button. If this view is selected and there are alarms, the button will stay highlighted in red if there are alarms.
 
 Beam Status
 ===========
