@@ -1,112 +1,61 @@
-IBEX FAQ
-========
+In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
 
-In this section of the IBEX user manual we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
+.. contents:: **List of Frequently Asked Questions**
 
-List of Frequently Asked Questions
-----------------------------------
-
-.. _Return:
-
-#. `How do I report a problem with IBEX?`_
-#. `How do I install IBEX Server?`_
-#. `How do I install IBEX Client?`_
-#. `How do I start IBEX Server?`_
-#. `How do I stop IBEX Server?`_
-#. `Can I run IBEX and SECI at the same time?`_
-#. `Can I switch from running IBEX to SECI and vice-versa?`_
-#. `Can I write scripts to control my experiment?`_
-#. `Which version of Python does IBEX use?`_
-#. `Where can I learn about Python?`_
-#. `What do I look at if there are no RAW frames when Collecting Data?`_
-#. `What do I look at if there are no GOOD frames when Collecting Data?`_
-#. `Can I change what my graphs look like in the log plotter or OPI?`_
-#. `In the scripting view I don't want the arguments when I autocomplete`_
-
-.. _`How do I report a problem with IBEX?`:  
-
-**Q: How do I report a problem with IBEX?**
+How do I report a problem with IBEX?
+=======================================
 
 **A:** To report a problem with IBEX (Client or Server), please use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page.  Using this page helps to ensure that your problem report gets routed to the right person as quickly as possible.  When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client.
 
-Return_
+How do I install IBEX Server?
+=============================
 
-.. _`How do I install IBEX Server?`:
+To install IBEX Server - see [[InstallingIBEX]]
 
-**Q: How do I install IBEX Server?**
+How do I install IBEX Client?
+=============================
 
-**A:** To install IBEX Server - see [[InstallingIBEX]]
+To install IBEX Client - see [[InstallingIBEX]]
 
-Return_
+How do I start IBEX Server?
+===========================
 
-.. _`How do I install IBEX Client?`:
+To start IBEX Server - see [[StartingAndStoppingIBEX]]
 
-**Q: How do I install IBEX Client?**
+How do I stop IBEX Server?
+==========================
 
-**A:** To install IBEX Client - see [[InstallingIBEX]]
+To stop IBEX Server - see [[StartingAndStoppingIBEX]]
 
-Return_
+Can I run IBEX and SECI at the same time?
+=========================================
 
-.. _`How do I start IBEX Server?`:
+In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
 
-**Q: How do I start IBEX Server?**
+Can I switch from running IBEX to SECI and vice-versa?
+======================================================
 
-**A:** To start IBEX Server - see [[StartingAndStoppingIBEX]]
+Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[SwitchingBetweenIBEXandSECI]] for details
 
-Return_
+Can I write scripts to control my experiment?
+=============================================
 
-.. _`How do I stop IBEX Server?`:
+Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
 
-**Q: How do I stop IBEX Server?**
+Which version of Python does IBEX use?
+======================================
 
-**A:** To stop IBEX Server - see [[StartingAndStoppingIBEX]]
+IBEX currently uses Python 2.7.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 2.7.  genie-python and Mantid will both migrate to Python 3.x at a future date (yet to be determined). 
 
-Return_
+Where can I learn about Python?
+===============================
 
-.. _`Can I run IBEX and SECI at the same time?`:
+Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
 
-**Q: Can I run IBEX and SECI at the same time?**
+What do I look at if there are no RAW frames when Collecting Data?
+==================================================================
 
-**A:** In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
-
-Return_
-
-.. _`Can I switch from running IBEX to SECI and vice-versa?`:
-
-**Q: Can I switch from running IBEX to SECI and vice-versa?**
-
-**A:** Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[SwitchingBetweenIBEXandSECI]] for details
-
-Return_
-
-.. _`Can I write scripts to control my experiment?`:
-
-**Q: Can I write scripts to control my experiment?**
-
-**A:** Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
-
-Return_
-
-.. _`Which version of Python does IBEX use?`:
-
-**Q: Which version of Python does IBEX use?**
-
-**A:** IBEX currently uses Python 2.7.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 2.7.  genie-python and Mantid will both migrate to Python 3.x at a future date (yet to be determined). 
-
-Return_
-
-.. _`Where can I learn about Python?`:
-
-**Q: Where can I learn about Python?**
-
-**A:** Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
-
-Return_
-
-.. _`What do I look at if there are no RAW frames when Collecting Data?`:
-**Q: What do I look at if there are no RAW frames when Collecting Data?**
-
-**A:** If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
+If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
 
 Timing is ISIS:
     Either ISIS is off or there is a problem with the ToF (ISIS) signal. Check other instruments to find out.
@@ -116,13 +65,10 @@ Timing is SMP:
     
 Consider swapping the timing source to help diagnose the problem. 
 
-Return_
+What do I look at if there are no GOOD frames when Collecting Data?
+===================================================================
 
-.. _`What do I look at if there are no GOOD frames when Collecting Data?`:
-
-**Q: What do I look at if there are no GOOD frames when Collecting Data?**
-
-**A:** If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
+If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
 
 FIFO veto:
     Too many counts in a frame, e.g. noisy detector, jaws opened too wide
@@ -133,26 +79,18 @@ SMP veto:
 External veto{0-3}:
     could be an additional chopper, the shutter or moderator
 
-Return_
+Can I change what my graphs look like in the log plotter or OPI?
+================================================================
 
-.. _`Can I change what my graphs look like in the log plotter or OPI?`:
+**Yes!** There are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings for a graph in an OPI do the following:
 
-**Q: Can I change what my graphs look like in the log plotter or OPI?**
+#. To show the toolbar on an OPI graph right click and select Show/Hide Graph Toolbar.
+#. Then click the settings button (leftmost icon with a spanner and screwdriver on it)
+#. Click on the tabs to find what you want to change. The graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third.
 
-**A: Yes**, there are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings 
+To open the settings in a log plotter graph, just right click and click "Open Properties Panel".
 
-#. Show the tool bar 
-    #. In the log plotter view this is already shown
-    #. On an OPI right click and select Show/Hide Graph Toolbar
-#. The click the settings button (left most icon with a spanner and screwdriver on it)
-#. Click on the tabs to find what you want to change. Graph is the first panel, axes on the second and traces (with a drop down to select for which trace) is on the third
+In the scripting view I don't want the arguments when I autocomplete
+=====================================================================
 
-Return_
-
-.. _`In the scripting view I don't want the arguments when I autocomplete`:
-
-**Q: In the scripting view I don't want the arguments when I autocomplete**
-
-**A:** In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these, or type to narrow down the possibilities, and press return this will autocomplete the method name including the parameters. However sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return> this will just give the function name without any parenthesis or arguments.
-
-Return_
+In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return>, this will just give the function name without any parenthesis or arguments.

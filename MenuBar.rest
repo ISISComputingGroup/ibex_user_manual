@@ -27,7 +27,6 @@ Configurations
    * Load - replace the current configuration with a different configuration loaded from a file
    * Edit - edit an existing configuration (independently of the current configuration)
    * Delete - delete a configuration
-   * Recent - select a recently used configuration and make it the current configuration.
 
 Components
    Select the Components menu item to perform one of the following actions:
