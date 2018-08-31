@@ -1,7 +1,6 @@
-IBEX Menu Bar
-=============
-
 The menu bar on the IBEX GUI provides access to the application features described below.
+
+.. contents:: **Contents**
 
 IBEX Menu
 ---------
