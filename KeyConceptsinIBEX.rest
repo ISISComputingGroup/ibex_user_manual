@@ -5,18 +5,7 @@ Key Concepts in IBEX
 
 It is worth taking a few moments to appreciate some of the key concepts behind IBEX.
 
-Contents
---------
-
-#. `Clients & Servers`_
-
-   #. `IBEX Client`_
-   #. `genie_python`_
-   #. `IBEX Server`_
-   #. `Security`_
-
-#. `Blocks & Process Variables`_
-#. `DAE (Data Acquisition Electronics)`_
+.. contents:: **Contents**
 
 Clients & Servers
 -----------------
@@ -32,14 +21,10 @@ IBEX Client
 
 The IBEX Client is a single application, which functions as a GUI for IBEX.
 
-Return to `Contents`_.
-
 genie_python
 ~~~~~~~~~~~~
 
 genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
-
-Return to `Contents`_.
 
 IBEX Server
 ~~~~~~~~~~~
@@ -47,37 +32,26 @@ IBEX Server
 The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon instrument.  The primary components of the IBEX server are:
 
 BlockServer 
-  The core component of the IBEX server.  The BlockServer provides the service that
-  translates [[ProcessVariables]] into [[Blocks]].  It also supports run-control and 
-  serves configuration information. 
+  The core component of the IBEX server.  The BlockServer provides the service that translates [[ProcessVariables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
 
 ICP
   The ICP (Instrument Control Program) is the process which controls the `DAE (Data Acquisition Electronics)`_.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
 
 Archiver 
-  The Archiver, as its name suggests, archives the values of process variables to a database.
-  This service supports strip-chart plots of blocks & process variables and can also be used 
-  to inspect the history of process variables for diagnostic purposes. 
+  The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes. 
 
 IOCs 
-  IOCs (Input/Output Controllers) are processes which control individual devices attached to  
-  the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other 
-  processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].  Typically, there 
-  is one IOC for each device attached to the instrument control PC.
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].  Typically, there is one IOC for each device attached to the instrument control PC.
   
 Message Server 
-  The Message Server intercepts console messages written by IOCs and stores them in a database.
-  It also serves the messages to the IBEX client, so that the message log can be inspected and
-  searched from the GUI.
+  The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
 
-Script Server
+[[Script Server|script-server]]
   The Script Server runs Python scripts submitted by authorised clients. After these scripts are ran, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
   
 MySQL 
   MySQL is an open-source relational database system, which provides database services to 
   the Archiver and the Message Server.
-
-Return to `Contents`_.
 
 Security
 ~~~~~~~~
@@ -108,16 +82,12 @@ Anyone on the ISIS network can view an instrument.  For example:
 * a technician can use IBEX to view the status of a device .
 * a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems.
 
-Return to `Contents`_.
-
 Blocks & Process Variables
 --------------------------
 
 [[ProcessVariables]]
 
 [[Blocks]]
-
-Return to `Contents`_.
 
 DAE (Data Acquisition Electronics)
 ----------------------------------
@@ -196,6 +166,3 @@ TS1, 25Hz running
 * Must choose SMP (chopper) timing as this signal is the one at 25Hz
 * If beam off, chopper continues to run -> RAW frame, but vetoed by SMP veto as no corresponding ISIS pulse
 * Dashboard beam current calculated from DAE pulses, so 25Hz -> half ISIS beam current  
-
-Return to `Contents`_.
-
