@@ -20,7 +20,7 @@ to reset the layout.
 View Selector
 -------------
 
-The View Selector, situated on the left-hand side of the IBEX GUI, is simply a column of buttons. Click on a button to change the view. The blue highlighted button indicates which view is selected.
+The View Selector, situated on the left-hand side of the IBEX GUI, is a column of buttons. Change a to a view by clicking on the associated button. The view button highlighted in blue indicates the currently selected view.
 
 
 Views
