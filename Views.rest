@@ -2,7 +2,7 @@
 
 The main area of the IBEX GUI is reserved for displaying different types of view. Each displays a different aspect of the instrument.
 
-Movable Views
+Movable Windows
 --------------
 
 You can resize windows and move windows around inside of a view in IBEX.
