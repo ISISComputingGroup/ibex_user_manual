@@ -1,5 +1,3 @@
-# Plotting via matplotlib
-
 The `genie_python` distribution of python includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
 
 Matplotlib is a highly customizable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
@@ -42,13 +40,13 @@ from time import time, sleep
 pyplot.show()
 
 while True:
-    # Clear the old data from the figure - we want to completely replace it.
+    # Clear the old data from the figure - we want to replace it completely.
     pyplot.clf()  
 
     # Plot our new data onto the figure.
     pyplot.plot([sin(x/1000.0 + time()) for x in range(10000)])
 
-    # Draw the new data to the screen .
+    # Draw the new data to the screen.
     pyplot.draw()
 
     # Short sleep to avoid going into a tight loop and using 100% processor.
@@ -57,7 +55,7 @@ while True:
 
 # Plotting spectra
 
-The `genie_python` library includes commands to quickly plot the neutron spectra on an instrument.
+The `genie_python` library includes commands to plot the neutron spectra on an instrument quickly.
 
 Plot a single spectrum:
 ```python
