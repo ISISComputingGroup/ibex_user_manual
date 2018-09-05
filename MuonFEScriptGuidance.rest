@@ -1,5 +1,3 @@
-.. MuonFEScriptGuidance:
-
 .. _`genie\_python`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
 
 Guidance on Writing Scripts for the Muon Front-End
@@ -7,13 +5,7 @@ Guidance on Writing Scripts for the Muon Front-End
 
 This page contains guidance on writing scripts for the Muon Front-End control PC (NDEMUONFE).  The information on this page is specific to NDEMUONFE and is not relevant to other control PCs.
 
-Contents
----------
-
-#. `Starting & Stopping Runs Remotely`_
-#. `Using Blocks to Write Tuning Control Scripts`_
-#. `How to Switch between Access Gateway Setups`_
-#. `How to Re-apply Settings`_
+.. contents:: **Contents**
 
 Starting & Stopping Runs Remotely
 ---------------------------------
@@ -69,10 +61,6 @@ The following methods are currently supported:
 - waitfor_frames
 - waitfor_events
 
-    
-
-Return to `Contents`_.
-
 Using Blocks to Write Tuning Control Scripts
 --------------------------------------------
 
@@ -126,8 +114,6 @@ Or to allow for writing to the EMU values:
 
    caput IN:MUONFE:CS:EXCLUSIVE:EMU 0
 
-Return to `Contents`_.
-
 How to Re-apply Settings
 ------------------------
 
@@ -146,5 +132,3 @@ The set-points can be re-applied by reloading the current configuration (which w
    reload_current_config()
 
 Note that the set-points can also be re-applied by restarting the IOCs individually in the IBEX GUI (as long as the ``SP_AT_STARTUP`` macro is set as above).
-
-Return to `Contents`_.
