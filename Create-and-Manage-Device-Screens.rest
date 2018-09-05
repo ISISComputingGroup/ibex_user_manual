@@ -3,8 +3,8 @@
 Creating Device Screens
 -----------------------
 
-Live View
+LiveView
 ~~~~~~~~~~
 .. image:: LiveView.png
 
-You instrument may have access to LiveView - a way to see event data from the DAE in real time. This option is only available if your instrument is set up correctly: it is running in event mode and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact Freddie Akeroyd.
+You instrument may have access to LiveView - a way to see event data from the DAE in real time. This option is only available if your instrument is set up for LiveView: it is running in event mode and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact Freddie Akeroyd.
