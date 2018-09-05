@@ -1,8 +1,3 @@
-.. _KeyConceptsinIBEX:
-
-Key Concepts in IBEX
-====================
-
 It is worth taking a few moments to appreciate some of the key concepts behind IBEX.
 
 .. contents:: **Contents**
@@ -10,7 +5,7 @@ It is worth taking a few moments to appreciate some of the key concepts behind I
 Clients & Servers
 -----------------
 
-A client-server system is one that employs a distributed application architecture.  In a client-server system the workload is partitioned between the providers of information or services (i.e. servers) and requesters or consumers of information or services (i.e. clients).  Clients request information or the use of a resource or service from one or more server hosts.  Each server host runs one or more server programs which share information or resource with clients when requested to do so.  Typically, the server and client run on separate computers connected via a network, but the client and server can also run as separate processes on same computer.
+A client-server system is one that employs a distributed application architecture.  In a client-server system, the workload is partitioned between the providers of information or services (i.e. servers) and requesters or consumers of information or services (i.e. clients).  Clients request information or the use of a resource or service from one or more server hosts.  Each server host runs one or more server programs which share information or resource with clients when requested to do so.  Typically, the server and client run on separate computers connected via a network, but the client and server can also run as separate processes on the same computer.
 
 The design of IBEX follows this model.  IBEX consists of a server component, which runs on the instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <http://www.aps.anl.gov/epics/>`_ framework for creating distributed control systems.
 
@@ -47,7 +42,7 @@ Message Server
   The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
 
 [[Script Server|script-server]]
-  The Script Server runs Python scripts submitted by authorised clients. After these scripts are ran, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
+  The Script Server runs Python scripts submitted by authorised clients. After these scripts are run, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
   
 MySQL 
   MySQL is an open-source relational database system, which provides database services to 
@@ -61,14 +56,14 @@ A critical aspect of any control system is security: in particular, who has cont
 Instrument Sub-Network
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Each instrument controlled by IBEX has its own sub-network.  The sub-network is a self-contained, mini-network which connects the instrument blockhouse, the instrument machine room (which houses the instrument control PC and DAE rack) and the instrument cabin/pod. Each instrument sub-network is independent of the sub-network belonging to any other instrument.  The instrument sub-network is connected to the wider ISIS network by means of a gateway.  In addition, the instrument control PC runs a process called the EPICS Gateway, which controls access to PVs on the instrument sub-network.
+Each instrument controlled by IBEX has its own sub-network.  The sub-network is a self-contained, mini-network which connects the instrument blockhouse, the instrument machine room (which houses the instrument control PC and DAE rack) and the instrument cabin/pod. Each instrument sub-network is independent of the sub-network belonging to any other instrument.  The instrument sub-network is connected to the wider ISIS network using a gateway.  Also, the instrument control PC runs a process called the EPICS Gateway, which controls access to PVs on the instrument sub-network.
 
 This arrangement means that the devices attached to the instrument control PC are isolated from events elsewhere on the network.  For example, should there be a need to shut down a part of the ISIS network (e.g. for maintenance reasons), the instrument sub-network will continue to run without interruption.  Many hardware devices are not designed to be connected directly to busy, general purpose networks; by employing a sub-network, we can insulate these devices from the background traffic that exists on the rest of the network.  A sub-network arrangement helps to make the instrument more resilient.
 
 Who has Control?
 ^^^^^^^^^^^^^^^^
 
-In IBEX, only PCs directly connected to the instrument sub-network can control the instrument.  In order to control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.  
+In IBEX, only PCs directly connected to the instrument sub-network can control the instrument.  To control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.  
 
 Any request from a PC for access to a PV is checked by the EPICS Gateway.  If the request originates from within the instrument sub-network, the EPICS Gateway will allow full (read and write) access to the PV.  If the request originates from outside the instrument sub-network, the EPICS Gateway will allow read-only access to the PV.  Therefore, if your PC is not directly connected to the instrument sub-network, you can only view the status of an instrument.
 
@@ -79,7 +74,7 @@ Anyone on the ISIS network can view an instrument.  For example:
 
 * another scientist, using another instrument, can use IBEX to view what is happening on your instrument.  This is especially useful when instruments share infrastructure (e.g. the muon beamlines).
 * an instrument scientist can use IBEX to view what is happening on your instrument from his or her office.
-* a technician can use IBEX to view the status of a device .
+* a technician can use IBEX to view the status of a device.
 * a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems.
 
 Blocks & Process Variables
@@ -131,7 +126,7 @@ Vetoes
 ~~~~~~
 A veto is a hardware signal that can, on a frame by frame basis, tell the DAE not to collect data.
 
-* The DAE supports four user defined external vetoes (labelled VT0 -> VT3 on crate), which can be connected to choppers, moderator, etc.
+* The DAE supports four user-defined external vetoes (labelled VT0 -> VT3 on a crate), which can be connected to choppers, moderator, etc.
 * Internal (FIFO) veto – triggered if too many counts in a single frame on any card
 * SMP veto – triggered if chopper timing signal out of phase with ISIS
 * Fermi chopper veto: checks for the arrival of a chopper signal within a given window on inelastic chopper spectrometers
@@ -151,12 +146,12 @@ The DAE can use one of three timing sources:
 * First TS1: uses the first ISIS pulse after the missing TS2 pulse (so 10Hz on TS1).
 * Internal Test Clock: 50Hz timing signal provided internally by DAE
 
-  * Used for quiet counts out of cycle
+  * Used for quiet counts out of a cycle
   * Need to turn off SMP veto as test clock is not synchronised to anything
 
 TS1, 50Hz running
 ^^^^^^^^^^^^^^^^^
-* Can choose either ISIS or SMP – however they differ in what happens if beam goes off
+* Can choose either ISIS or SMP – however, they differ in what happens if beam goes off
 * ISIS: beam off -> no signal and so no RAW frame
 * SMP: if chopper continues to run -> RAW frame, which will be vetoed by the SMP veto as 
   there is no corresponding ISIS TOF pulse.
