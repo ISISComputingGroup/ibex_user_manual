@@ -1,7 +1,4 @@
-.. _StartingAndStoppingIBEX:
-
-Starting and Stopping IBEX
-==========================
+.. contents:: **Contents**
 
 Starting and Stopping IBEX Client
 ---------------------------------
@@ -9,11 +6,11 @@ Starting and Stopping IBEX Client
 Starting IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
 
-To start IBEX Client simply select IBEX from the Start icon on the taskbar of your Windows PC.  If you use IBEX regularly, it will appear in the menu of frequently used programs as soon as you click on the Start icon.  
+To start IBEX Client, select IBEX from the Start icon on the taskbar of your Windows PC.  If you use IBEX regularly, it will appear in the menu of frequently used programs as soon as you click on the Start icon.  
 
 If you have not used IBEX for some time, it might not appear on the list of frequently used programs. In this case, you can navigate to IBEX by using the Search box on the Start menu.
 
-Alternatively, if you created a desktop short-cut to the IBEX client, simply double-click on the icon.
+Alternatively, if you created a desktop short-cut to the IBEX client, double-click on the icon.
 
 **Tip:** If you are using Windows Classic theme on your PC, you might prefer to switch to a more modern theme - IBEX looks much better when running in a modern theme.
 
@@ -23,28 +20,28 @@ Alternatively, if you created a desktop short-cut to the IBEX client, simply dou
 
    Java was started but returned exit code=13
 
-it is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[InstallingIBEX]]).
+This is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[InstallingIBEX]]).
 
 Stopping IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
 
-To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Simply confirm that you wish to exit and the IBEX client will shut down.
+To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Confirm that you wish to exit and the IBEX client will shut down.
 
-**Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stopped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
+**Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stoped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
 
 Starting and Stopping IBEX Server
 ---------------------------------
 
 The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis.  
 
-The IBEX Server is actually a collection of mutually cooperating processes.  In order to start and stop the IBEX Server, these processes need to be started and stopped in the correct order - there are scripts which ensure that these processes are started and stopped correctly.  Please use the appropriate script (as described below) to start and stop IBEX Server.
+The IBEX Server is a collection of mutually cooperating processes.  To start and stop the IBEX Server, these processes need to be started and stopped in the correct order - there are scripts which ensure that these processes are started and stopped correctly.  Please use the appropriate script (as described below) to start and stop IBEX Server.
 
 Starting IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
 To start IBEX Server, proceed as follows:
 
-#. Use Windows Remote Desktop Connection to login to your instrument control PC
+#. Use Windows Remote Desktop Connection to log in to your instrument control PC
 #. Open a command window
 #. At the command prompt type the following::
 
@@ -53,7 +50,7 @@ To start IBEX Server, proceed as follows:
     
 #. Allow the ``start_ibex_server`` script a few moments to complete.
 
-If you run this script whilst the server is already running it will restart the server.
+If you run this script while the server is already running, it will restart the server.
 
 You should wait until the ``start_ibex_server`` script has completed before starting IBEX Client.
 
@@ -63,7 +60,7 @@ Stopping IBEX Server
 To stop IBEX Server, proceed as follows:
 
 #. If you are running the IBEX Client, exit before stopping IBEX Server.
-#. Use Windows Remote Desktop Connection to login to your instrument control PC
+#. Use Windows Remote Desktop Connection to log in to your instrument control PC
 #. Open a command window
 #. At the command prompt type the following::
 
