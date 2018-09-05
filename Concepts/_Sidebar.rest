@@ -1,4 +1,4 @@
-* [[What Is IBEX]]
+* [[What Is IBEX|[WhatIsIBEX]]
 * [[Installing IBEX]]
 * [[Starting And Stopping IBEX]]
 * [[Key Concepts in IBEX]]
