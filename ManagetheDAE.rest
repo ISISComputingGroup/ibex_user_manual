@@ -1,26 +1,8 @@
-.. _ManagetheDAE:
-
-Manage the DAE
-==============
-
 The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see [[Key Concepts in IBEX|KeyConceptsinIBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
 
-The DAE view communicates with the ICP to control the DAE. The DAE can be managed from the DAE view in the client. The DAE view is split into a number of tabs and sub tabs which are listed with their functions below.
+The DAE view communicates with the ICP to control the DAE. The DAE can be managed from the DAE view of the client. The DAE view is split into some tabs and sub tabs which are listed with their functions below.
 
-Contents
---------
-
-#. `Run Summary`_
-#. `Experiment Setup`_
-
-   #. `Time Channels`_
-   #. `Data Acquisition`_
-   #. `Periods`_
-
-#. `Run Information`_
-#. `Spectra Plots`_
-#. `Diagnostics`_
-#. `Vetoes`_
+.. contents:: **Contents**
 
 Run Summary
 -----------
@@ -35,9 +17,7 @@ Run Summary Fields
 * ``Run Number``: the current run number
 * ``ISIS Cycle``: the current ISIS cycle
 * ``Title``: you can provide a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file).
-* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the Dataweb dashboard.  This checkbox only affects the Dataweb dashboard; it does not affect display of the title in IBEX, or the inclusion of the title in the data file.
-
-Return to `Contents`_.
+* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the Dataweb dashboard.  This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.
 
 Message Log
 ~~~~~~~~~~~
@@ -46,7 +26,7 @@ The message log area lets you view any messages issued by the ICP.  The message 
 Run Control Buttons
 ~~~~~~~~~~~~~~~~~~~
 
-The Run Summary tab also provides a number of buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the ``Run Status`` field and in the IBEX [[Dashboard]].
+The Run Summary tab also provides some buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the ``Run Status`` field and the IBEX [[Dashboard]].
 
 Begin Run
    Beginning a run instructs the ICP to tell the DAE to start collecting data. The DAE’s run status will change to BEGINNING and then RUNNING.
@@ -61,7 +41,7 @@ Resume Run
    Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The DAE’s run status will return to RUNNING.
 
 Abort Run
-   Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP. If this is done mistakenly the cancel abort button can be used to undo the abort.
+   Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP. If this is done mistakenly, the cancel abort button can be used to undo the abort.
 
 Cancel Abort
    This will instruct the DAE to cancel a previous abort. The DAE will be left in a paused state.
@@ -69,22 +49,17 @@ Cancel Abort
 Save Run
    This will save the current run data without stopping the current run.
 
-Return to `Contents`_.
-
-
 Experiment Setup
 ----------------
 
 The Experiment Setup comprises of sub-tabs which will have been configured by an ISIS Instrument Scientist.  Please do not modify their contents without consulting with the instrument scientist.
 
-Any changes made are only sent to the DAE when the ``Apply Changes`` button is pressed and will be highlighted until the ``Apply Changes`` button is pressed. If there is a problem with the setting an error message will appear on the `Run Summary`_ panel.
+Any changes made are only sent to the DAE when the ``Apply Changes`` button is pressed and will be highlighted until the ``Apply Changes`` button is pressed. If there is a problem with the setting, an error message will appear on the `Run Summary`_ panel.
 
 Time Channels
 ~~~~~~~~~~~~~
 
-The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the [[server settings|InstallingIBEX#installation-layout]] on the instrument.
-
-Return to `Contents`_.
+The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the [[server settings|InstallingIBEX#installation-layout]] on the instrument.
 
 Data Acquisition
 ~~~~~~~~~~~~~~~~
@@ -106,40 +81,28 @@ Muons
 Timing
     Set the source of the [[timing signal|KeyConceptsinIBEX#dae-timing-sources]] and how often the data should be auto saved.
 
-Return to `Contents`_.
-
 Periods
 ~~~~~~~
 
-The period sub-tab allows the period types and needed parameters to be set up within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python's ``change_period`` command. The other options are hardware controlled and these are internal (within the DAE) or external control. 
-
-Return to `Contents`_.
+The period sub-tab allows the period types and needed parameters to be set up within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python's ``change_period`` command. The other options are hardware controlled, and these are internal (within the DAE) or external control. 
 
 Run Information
 ---------------
 
 The Run Information tab provides a more complete summary of the DAE set up than the Run Summary tab.  All the fields on this tab are read-only.
 
-Return to `Contents`_.
-
 Spectra Plots
 -------------
 
-The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were setup using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum`` or ``Period`` fields.
+The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum`` or ``Period`` fields.
 
-
-Return to `Contents`_.
 
 Diagnostics
 -----------
 
 This page in the GUI intentionally left blank :-) (It is a work in progress)
 
-Return to `Contents`_.
-
 Vetoes
 ------
 
-The Vetoes tab shows a summary of the vetoes that are in force and their effect for the current run.  This information is read-only.  Vetoes can only be changed prior to the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
-
-Return to `Contents`_.
+The Vetoes tab shows a summary of the vetoes that are in force and their effect for the current run.  This information is read-only.  Vetoes can only be changed before the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
