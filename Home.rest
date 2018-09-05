@@ -14,9 +14,9 @@
 
 [[Plotting using matplotlib|Matplotlib]]
 
-[[Instrument Specific Guidance|InstrumentGuidance]]
+[[Instrument Specific Guidance|InstrumentSpecificGuidance]]
 
-[[Device Specific Guidance|DeviceGuidance]]
+[[Device Specific Guidance|DeviceSpecificGuidance]]
 
 [[FAQ]]
 
