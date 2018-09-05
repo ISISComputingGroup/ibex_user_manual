@@ -1,6 +1,6 @@
-This page contains information for user on specific devices. The devices on this page have caused trouble or have some subtleties. If you are having trouble with a device and it is not listed below please let us know which device and what your issues were so that we can document it below.
+This page contains information for a user on specific devices. The devices on this page have caused trouble or have some subtleties. If you are having trouble with a device and it is not listed below please let us know which device and what your issues were so that we can document it below.
 
-[[Eurotherm|Eurotherm]]
+[[Eurotherm]]
 
-[[Engin-X sample stack|Enginx_sample_stack]]
+[[Engin-X sample stack]]
 
