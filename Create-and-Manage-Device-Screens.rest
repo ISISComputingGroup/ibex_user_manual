@@ -55,4 +55,4 @@ You instrument may have access to a Live View device screen which shows event da
 Matplotlib Viewer
 ~~~~~~~~~~~~~~~~~~
 
-The matplotlib view cannot be viewed as a device screen. It will only appear when the 'matplotlib.pyplot.show' command is called. For more details see [[PlottingUsingMatplotlib]].
+The matplotlib viewer cannot be viewed as a device screen. It will only appear when the 'matplotlib.pyplot.show' command is called. For more details see [[PlottingUsingMatplotlib]].
