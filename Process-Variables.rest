@@ -1,5 +1,3 @@
-.. _ProcessVariables:
-
 Process Variables
 =================
 
@@ -25,11 +23,9 @@ Not all PVs belong to an instrument.  Items not part of an instrument have a dif
 
 * ``AC:TS1:BEAM:CURR`` is the PV that holds the TS1 beam current
 
-
 Displaying
 ----------
 You can read a PV outside of IBEX by starting an EPICS terminal and running:
 
 |   ``caget IN:LARMOR:DAE:GOODUAH``
 |   ``camonitor IN:LARMOR:DAE:GOODUAH``
-
