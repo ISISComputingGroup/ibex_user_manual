@@ -10,22 +10,22 @@ How do I report a problem with IBEX?
 How do I install IBEX Server?
 =============================
 
-To install IBEX Server - see [[InstallingIBEX]]
+To install IBEX Server - see [[Installing IBEX]]
 
 How do I install IBEX Client?
 =============================
 
-To install IBEX Client - see [[InstallingIBEX]]
+To install IBEX Client - see [[Installing IBEX]]
 
 How do I start IBEX Server?
 ===========================
 
-To start IBEX Server - see [[StartingAndStoppingIBEX]]
+To start IBEX Server - see [[Starting And Stopping IBEX]]
 
 How do I stop IBEX Server?
 ==========================
 
-To stop IBEX Server - see [[StartingAndStoppingIBEX]]
+To stop IBEX Server - see [[Starting And Stopping IBEX]]
 
 Can I run IBEX and SECI at the same time?
 =========================================
@@ -35,7 +35,7 @@ In a word - No.  Running two control programs on any system is a bad idea - whic
 Can I switch from running IBEX to SECI and vice-versa?
 ======================================================
 
-Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[SwitchingBetweenIBEXandSECI]] for details
+Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[Switching Between IBEX and SECI]] for details
 
 Can I write scripts to control my experiment?
 =============================================
