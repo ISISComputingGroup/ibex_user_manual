@@ -1,6 +1,6 @@
 In this section of the IBEX User Manual, we describe how to do the most common and important tasks.
 
-[[Create and Manage Configurations|CreateandManageConfigurations]]
+[[Create and Manage Configurations|CreateAndManageConfigurations]]
 
 [[Create and Manage Components|CreateandManageComponents]]
 
