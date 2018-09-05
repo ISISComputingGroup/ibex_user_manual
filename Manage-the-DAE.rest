@@ -1,4 +1,4 @@
-The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see [[Key Concepts in IBEX|KeyConceptsinIBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
+The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see [[Key Concepts in IBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
 
 The DAE view communicates with the ICP to control the DAE. The DAE can be managed from the DAE view of the client. The DAE view is split into some tabs and sub tabs which are listed with their functions below.
 
@@ -59,7 +59,7 @@ Any changes made are only sent to the DAE when the ``Apply Changes`` button is p
 Time Channels
 ~~~~~~~~~~~~~
 
-The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the [[server settings|InstallingIBEX#installation-layout]] on the instrument.
+The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the [[server settings|Installing-IBEX#installation-layout]] on the instrument.
 
 Data Acquisition
 ~~~~~~~~~~~~~~~~
@@ -67,19 +67,19 @@ Data Acquisition
 The data acquisition sub-tab allows you to set up how the DAE will collect the data. The page is split into several sections:
 
 Tables
-    The wiring table, detector table and spectra table set the files used when turning signals generated in the detectors into spectra. These files are stored in the ``configurations/tables`` directory in [[server settings|InstallingIBEX#installation-layout]] on the instrument.
+    The wiring table, detector table and spectra table set the files used when turning signals generated in the detectors into spectra. These files are stored in the ``configurations/tables`` directory in [[server settings|Installing-IBEX#installation-layout]] on the instrument.
 
 Monitor
     Set which spectra number is used for the monitor counts and between which times the spectra should be integrated to return the monitor counts.
 
 Vetoes
-    Set which [[vetoes|KeyConceptsinIBEX#vetoes]] are active.
+    Set which [[vetoes|Key-Concepts-in-IBEX#vetoes]] are active.
 
 Muons
     Set if and how to collect muon data.
 
 Timing
-    Set the source of the [[timing signal|KeyConceptsinIBEX#dae-timing-sources]] and how often the data should be auto saved.
+    Set the source of the [[timing signal|Key-Concepts-in-IBEX#dae-timing-sources]] and how often the data should be auto saved.
 
 Periods
 ~~~~~~~
