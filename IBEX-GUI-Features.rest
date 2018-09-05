@@ -4,11 +4,11 @@ This section summarises the main features of IBEX as presented by the IBEX GUI c
 
 You might find it helpful to refer to a `schematic view of the IBEX UI <http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/IBEX%20E4%20schematic.png>`_ while reading this section.
 
-[[Menu Bar|MenuBar]]
+[[Menu Bar]]
 
 [[Dashboard]]
 
-[[Blocks and Groups|BlocksandGroups]]
+[[Blocks and Groups]]
 
 [[Views]]
 
