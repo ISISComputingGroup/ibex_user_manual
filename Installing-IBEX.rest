@@ -1,11 +1,11 @@
-.. _InstallingIBEX:
+.. contents:: **Contents**
 
 Installing IBEX Server
 ----------------------
 
-The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, prior to the physical installation, a significant amount of preparation work is required.  For example:
+The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, before the physical installation, a significant amount of preparation work is required.  For example:
 
-* for an existing instrument, SECI configs need to be converted to their IBEX equivalents and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
+* for an existing instrument, SECI configs need to be converted to their IBEX equivalents, and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
 * for a new instrument, the list of devices that comprise the instrument needs to be understood, new IOCs and OPIs will need to be created; configurations and scripts can be developed during commissioning.
 
 If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
@@ -18,10 +18,10 @@ Installation of IBEX client on a PC is simple and straightforward.
 Pre-requisites for running IBEX Client
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to run IBEX client, your PC must meet the following pre-requisites
+To run IBEX client, your PC must meet the following pre-requisites
 
 #. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 (or higher), or Windows 10 (Professional or Enterprise), Build 10586 (or higher).
-#. Your PC must also be running an up-to-date version of Java version 8, update 101 (or later). If you need to install an up-to-date version of Java, you can obtain a copy from the Java web-site (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
+#. Your PC must also be running an up-to-date version of Java version 8, update 101 (or later). If you need to install an up-to-date version of Java, you can obtain a copy from the Java website (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
 
 Installation
 ~~~~~~~~~~~~
@@ -35,13 +35,13 @@ Installation
       mkdir C:\Instrument\Apps\Python
       cd C:\Instrument
 
-2. If your your PC is in the ISIS domain (i.e. it is an ISIS PC) then in the command window type:
+2. If your PC is in the ISIS domain (i.e. it is an ISIS PC) then in the command window type:
 
 ::
 
       net use Z: \\isis\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
 
-If your your PC is not in the ISIS domain (i.e. it is not an ISIS PC) then in the command window type:
+If your PC is not in the ISIS domain (i.e. it is not an ISIS PC) then in the command window type:
 
 ::
 
@@ -67,8 +67,7 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in t
 
 4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
 
-5. Run the command ``install_client.bat``. This will copy the contents of the above directory 
-   to ``C:\Instrument\Apps\Client``. It will also install genie_python.
+5. Run the command ``install_client.bat`` to copy the contents of the above directory to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
 6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``
 
@@ -81,7 +80,7 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in t
 Installation Layout
 -------------------
 
-After installation the current paths are used by the various components.
+After installation, the current paths are used by the various components.
 
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | Item                                                  | Path                                                              |
