@@ -31,7 +31,7 @@ Save as...
    * The name must also start with a character.
    * The name of the configuration must be unique (on your instrument).
 
-   The Save as... dialog also includes an option to save a configuration as a component.  The [[CreateandManageComponents]] page describes more details about this option.
+   The Save as... dialog also includes an option to save a configuration as a component.  The [[Create and Manage Components]] page describes more details about this option.
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
@@ -57,7 +57,7 @@ Synoptic
 Components Tab
 ~~~~~~~~~~~~~~
 
-Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[CreateandManageComponents]].
+Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[Create and Manage Components]].
 
 The Components tab displays two lists of components.  The left-hand list shows which components are available to be included in your configuration.  The right-hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
 
@@ -66,7 +66,7 @@ Use the arrow buttons to move components between the two lists.
 IOCs Tab
 ~~~~~~~~
 
-The [[KeyConceptsinIBEX]] page describes what an IOC is. In general, you will only wish to include a subset of these in your configuration (i.e. those that correspond to devices on your instrument).
+The [[Key Concepts in IBEX]] page describes what an IOC is. In general, you will only wish to include a subset of these in your configuration (i.e. those that correspond to devices on your instrument).
 
 IOCs need to be explicitly added to the configuration via the IOC tab if you want to change any of their settings such as macros. The IOCs tab shows an overview of all IOCs that are part of the currently viewed configuration. Below the overview table, there are three buttons to add, edit or delete an IOC.
 
@@ -82,7 +82,7 @@ IOCs need to be explicitly added to the configuration via the IOC tab if you wan
 
 Blocks Tab
 ~~~~~~~~~~
-The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[ProcessVariables]]).
+The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block is, essentially, an alias to a PV ([[Process Variables]]).
 
 To create a new block, click on the ``Add Block`` button or use the keyboard shortcut ``Ctrl+A``. Blocks can also be copied using the ``Duplicate Block`` button or the keyboard shortcut ``Ctrl+D``. Upon creation of a new block, IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name:
 
@@ -137,7 +137,7 @@ Logging Settings
 
 To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
-**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[Create and Manage Components]]).
 
 Groups Tab
 ~~~~~~~~~~
@@ -157,7 +157,7 @@ Use the buttons with the Up and Down arrows to control the ordering of the group
 
 You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or ``Ctrl`` keys on your keyboard.
 
-**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[CreateandManageComponents]]).
+**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[Create and Manage Components]]).
 
 IOC Macros
 ~~~~~~~~~~
