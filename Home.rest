@@ -12,8 +12,6 @@
 
 [[Scripting]]
 
-[[Plotting using matplotlib|Matplotlib]]
-
 [[Instrument Specific Guidance|InstrumentSpecificGuidance]]
 
 [[Device Specific Guidance|DeviceSpecificGuidance]]
