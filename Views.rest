@@ -2,23 +2,25 @@
 
 The main area of the IBEX GUI is reserved for displaying different types of view. Each displays a different aspect of the instrument.
 
-Movable Views
+Movable Windows
 --------------
 
-You can resize views and move views around inside of IBEX.
+You can resize windows and move windows around inside of a view in IBEX.
 
 .. image:: ibex_client_windows_moved.png
 
-If you want to return to the default view arrangement, click on the `Reset Layout`_ button in the top left-hand corner
+If you want to return to the default window arrangement within a view, click on the `Reset Layout`_ button in the top left-hand corner
 
 .. image:: reset_layout_button.png
 
 to reset the layout.
 
+**Note:** If you switch views then the layout is kept in the previous view. Each view will keep its window layout until IBEX client is closed or the `Reset Layout`_ button is pressed.
+
 View Selector
 -------------
 
-The View Selector, situated on the left-hand side of the IBEX GUI, is simply a column of buttons. Click on a button to change the view. The blue highlighted button indicates which view is selected.
+The View Selector, situated on the left-hand side of the IBEX GUI, is a column of buttons. Change a to a view by clicking on the associated button. The view button highlighted in blue indicates the currently selected view.
 
 
 Views
