@@ -1,10 +1,12 @@
 There are two ways of running scripts in IBEX - locally, and on the IBEX server.
-Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_
-gives a full account of what functions are available in genie\_python.
+
+Scripting in IBEX is done using genie\_python. The `genie\_python reference manual`_ gives a full account of what functions are available in genie\_python.
+
 This page is intended to give a broad guide to scripting for the
-beginner and novice user. For a more in depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
+beginner and novice user. For a more in-depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
 - [[Script Server|script-server]]
+- [[Plotting using matplotlib|Matplotlib]]
 - [[genie_python Commands|genie_python-commands]]
 - [[Converting Open GENIE to genie_python|converting-open-genie-to-genie_python]]
 - [[Creating and running scripts|creating-and-running-scripts]]
@@ -13,14 +15,6 @@ beginner and novice user. For a more in depth discussion, see our [[genie_python
 There is some specific [[scripting advice for the Muon Front End|MuonFEScriptGuidance]]
 
 If you are new to Python, the Mantid team has created an excellent `Introduction to Python 
-<http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid web-site.
+<http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid website.
 
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
-
-
-
-
-
-
-
-
