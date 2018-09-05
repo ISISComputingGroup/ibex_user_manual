@@ -10,6 +10,8 @@ In this section of the IBEX User Manual, we describe how to do the most common a
 
 [[Create and Manage Synoptics|CreateandManageSynoptics]]
 
+[[Craete and Manage Device Screens]]
+
 [[Manage the DAE|ManagetheDAE]]
 
 [[Plot a Block Graph|PlotaBlockGraph]]
