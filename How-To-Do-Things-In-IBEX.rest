@@ -1,11 +1,6 @@
-.. _HowToDoThingsInIBEX:
-
-How To Do Things In IBEX
-========================
-
 In this section of the IBEX User Manual, we describe how to do the most common and important tasks.
 
-[[Create and Manage Configurations|CreateandManageConfigurations]]
+[[Create and Manage Configurations|Create and Manage Configurations]]
 
 [[Create and Manage Components|CreateandManageComponents]]
 
