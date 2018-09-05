@@ -1,0 +1,10 @@
+.. contents:: **Contents**
+
+Creating Device Screens
+-----------------------
+
+Live View
+~~~~~~~~~~
+.. image:: LiveView.png
+
+You instrument may have access to LiveView - a way to see event data from the DAE in real time. This option is only available as a device screen if your instrument is set up for LiveView.
