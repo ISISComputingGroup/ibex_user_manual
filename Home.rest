@@ -1,20 +1,20 @@
-[[What Is IBEX|WhatIsIBEX]]
+[[What Is IBEX]]
 
-[[Installing IBEX|InstallingIBEX]]
+[[Installing IBEX]]
 
-[[Starting And Stopping IBEX|StartingAndStoppingIBEX]]
+[[Starting And Stopping IBEX]]
 
-[[Key Concepts in IBEX|KeyConceptsInIBEX]]
+[[Key Concepts in IBEX]]
 
-[[IBEX GUI Features|IBEXGUIFeatures]]
+[[IBEX GUI Features]]
 
-[[How To Do Things In IBEX|HowToDoThingsInIBEX]]
+[[How To Do Things In IBEX]]
 
 [[Scripting]]
 
-[[Instrument Specific Guidance|InstrumentSpecificGuidance]]
+[[Instrument Specific Guidance]]
 
-[[Device Specific Guidance|DeviceSpecificGuidance]]
+[[Device Specific Guidance]]
 
 [[FAQ]]
 
