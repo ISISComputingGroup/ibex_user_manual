@@ -85,4 +85,3 @@ In the IBEX user interface, matplotlib is _non-blocking_ - that is, a script wil
 > matplotlib.use('Qt4Agg')
 > ```
 > This needs to be typed before any matplotlib functionality is used for it to take effect.
-
