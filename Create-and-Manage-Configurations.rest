@@ -1,8 +1,3 @@
-.. _CreateandManageConfigurations:
-
-Create & Manage Configurations
-================================
-
 A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments. In some cases, there are macro settings which are global for the instrument. These are set outside of the GUI and override the values in the configuration. These are setting which should not change, e.g. the IP address of the Galil motors (see the section below on how to alter these). 
 
 **Please note:** An IBEX configuration is **not** the same as a Mantid configuration.  IBEX and Mantid view instruments in fundamentally different ways, which means that their respective configurations are not interchangeable.
