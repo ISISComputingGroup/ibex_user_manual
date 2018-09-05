@@ -66,8 +66,6 @@ Use the New Synoptic dialog as follows:
 
 #. Toggle the ``Show Beam`` check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.
 
-Return to `Contents`_.
-
 Editing a Synoptic View
 ------------------------
 
@@ -92,8 +90,6 @@ Cancel
 
 Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in `Creating a Synoptic View`_).
 
-Return to `Contents`_.
-
 Deleting a Synoptic View
 ------------------------
 
@@ -107,5 +103,3 @@ To delete a synoptic:
 **Note 1:** If you attempt to delete the current synoptic, IBEX will indeed delete it (you might have to click the ``Refresh Synoptic`` button to see that IBEX really has deleted the current synoptic).
 
 **Note 2:** When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic, please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experimental Controls team - it may be possible to recover the deleted synoptic.
-
-Return to `Contents`_.
