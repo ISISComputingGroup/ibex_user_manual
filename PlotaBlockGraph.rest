@@ -13,7 +13,9 @@ To plot a graph of a block:
 
 The graph axes will automatically adjust to the range of values that the selected block has experienced.  The graph axes are labelled with the name of the underlying PV (remember, blocks are aliases to PVs).
 
-Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph. For more advanced adjustments, you can right-click and select 'Open Properties Panel' which will open a panel to the right of the graph (by default), which give you more granular control of the appearance of your graph or plot.
+Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph. 
+
+For more advanced adjustments, you can right-click and select 'Open Properties Panel' which will open a panel to the right of the graph (by default), which give you more granular control of the appearance of your graph or plot.
 
 Plot a Graph of a PV
 --------------------
