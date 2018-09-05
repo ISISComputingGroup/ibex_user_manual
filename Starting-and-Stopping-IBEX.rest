@@ -20,7 +20,7 @@ Alternatively, if you created a desktop short-cut to the IBEX client, double-cli
 
    Java was started but returned exit code=13
 
-This is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[InstallingIBEX]]).
+This is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[Installing IBEX]]).
 
 Stopping IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
