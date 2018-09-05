@@ -35,7 +35,7 @@ Many ``genie_python`` commands share the same name with their Open GENIE
 equivalent so it will often be very straightforward to find the function
 you're looking for. Still, here is a list of the most commonly used
 ``genie_python`` commands. This is **not a complete list**. For full
-information, consult the `genie\_python reference manual`_.
+information, consult the `genie_python reference manual`_.
 
 
 Starting and stopping a run
