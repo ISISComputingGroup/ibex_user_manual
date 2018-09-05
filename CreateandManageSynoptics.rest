@@ -1,8 +1,3 @@
-.. _CreateandManageSynoptics:
-
-Create & Manage Synoptic Views
-==============================
-
 In IBEX, synoptic views provide you with interactive, schematic views of your instrument.  Each icon on a synoptic view represents a device attached to your instrument.  You can tailor the synoptic view to display key PVs next to the device icons.   By double-clicking on an item, you can drill down to see more detail.
 
 You can define as many synoptic views as you wish for your instrument.  
@@ -11,12 +6,7 @@ A synoptic need not encompass the whole instrument.  You can define synoptic vie
 
 You can also associate a synoptic view with a particular configuration, so that, in effect, the chosen synoptic becomes the default synoptic for that configuration.
 
-Contents
---------
-
-#. `Creating a Synoptic View`_
-#. `Editing a Synoptic View`_
-#. `Deleting a Synoptic View`_
+.. contents:: **Contents**
 
 Creating a Synoptic View
 ------------------------
@@ -42,7 +32,7 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the dialog without saving your changes.
 
-**Please note:** After exiting the New Synoptic dialog, you will need explicitly select the synoptic you have just created in order to see it displayed in the synoptic display area.
+**Please note:** After exiting the New Synoptic dialog, you will need explicitly select the synoptic you have just created to see it displayed in the synoptic display area.
 
 Use the New Synoptic dialog as follows:
 
@@ -55,12 +45,12 @@ Use the New Synoptic dialog as follows:
       * Select the type of device it represents.  Click on the drop-down menu to select the device type.
       * Click on the ``Add New PV`` button to add blocks or PVs to be associated with the component (remember - blocks are just aliases to PVs).  Any blocks or PVs you select will be displayed below the component in the synoptic view.
       * Remove any blocks or PVs previously associated with the component.
-      * You can change the order of components in the synoptic view by dragging & dropping any component to the desired position.  As you drag a component, a black line will appear to indicate the you can drop the component and it will be positioned between the two components immediately above and below the black line.  
+      * You can change the order of components in the synoptic view by dragging & dropping any component to the desired position.  As you drag a component, a black line will appear to indicate that you can drop the component and it will be positioned between the two components immediately above and below the black line.  
       * If you drop a component on top of another component, it will be positioned as "sub-component".  "Sub-components" are useful if you have several components that can usefully be grouped together as a composite unit.  "Sub-components" are also useful if you have a complex instrument; you can  use "sub-components" to create a degree of hierarchy in the synoptic.
 
-   #. If you add an associated block or PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the the ``Select Block`` or ``Select PV`` buttons to choose a specific block or PV to associated with the component.
+   #. If you add an associated block or PV (using the ``Add New PV`` button), its details appear in the PV Details pane.  Use the ``Select Block`` or ``Select PV`` buttons to choose a specific block or PV to associated with the component.
 
-   #. Use the Component Target Details pane to adjust the specific properties of the component (e.g. which model of device the component represents, which component properties are needed).
+   #. Use the Component Target Details pane to adjust the specific properties of the component (e.g. which model of a device the component represents, which component properties are needed).
 
       * The ``Name:`` field is a drop-down menu.  Select the name/model of the device.  Some names on the list refer to general classes of device (e.g. ``Eurotherm`` refers to all Eurotherm temperature controllers); other names refer to specific models (e.g. ``Julabo FP300`` refers to a specific model of Julabo water bath).  Whether a name is general or specific depends on whether the manufacturer of the device has chosen a common interface to all models of a device or interfaces that are unique to individual models.  When you have made your selection, a short description of the component will be displayed in the ``Description:`` field.
       * If you are not sure which name/model to select for the ``Name:`` field, click on the ``Default Target`` button.  IBEX will then display a list of names/models filtered by the Component Type field (see Component Details pane).  This will significantly reduce the size of the list (often there will be only one choice).  Choose the most appropriate name/model.
@@ -90,10 +80,10 @@ Editing a synoptic view is similar to creating a synoptic view, except that you 
 #. This time the Edit Synoptic dialog has three buttons at the bottom of the dialog.
 
 Save
-   Clicking on the ``Save`` button immediately saves your changes without any further prompting.  
+   Clicking on the ``Save`` button  saves your changes without any further prompting.
 
 Save as...
-   Clicking on the ``Save as...`` button operates as described in the previous section.  You can use the ``Save as...`` button to save the synoptic with a new name, prior to making further changes.
+   Clicking on the ``Save as...`` button operates as described in the previous section.  You can use the ``Save as...`` button to save the synoptic with a new name before making further changes.
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Synoptic dialog without saving your changes. 
