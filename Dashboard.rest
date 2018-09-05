@@ -1,6 +1,3 @@
-IBEX Dashboard
-==============
-
 The dashboard occupies the top left-hand corner of the IBEX GUI.  It provides a brief summary of the current status of the instrument.
 
 The top part of the dashboard shows the name of the instrument to which the IBEX GUI is connected and the current state of the instrument, along with the current Run number and the state of the instrument shutter.
