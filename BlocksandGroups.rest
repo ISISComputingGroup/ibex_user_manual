@@ -1,7 +1,6 @@
-Blocks & Groups
-===============
-
 The blocks & groups area of the IBEX GUI is situated to the right of the [[Dashboard]].  It displays all the blocks defined for the currently loaded instrument configuration.  The blocks are arranged in groups.
+
+.. contents:: **Contents**
 
 Blocks
 ------
@@ -14,7 +13,7 @@ A tick mark or an X mark next to a block indicates that the block is under run c
 
 * An unadorned block (i.e. no symbol next to the value of the block) means the block is not under run control.
 * An icon featuring a black check mark on a green background next to the value means the block is under run control and within its limits.
-* An icon featuring a white X on a red background next to the value means is under run control and outside its limits.
+* An icon featuring a white X on a red background next to the value means that the block is under run control and outside its limits.
 
 Alarm State Indicators
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -40,6 +39,6 @@ The last of these possibilities is the least likely to occur.  It is good practi
 
 Groups
 ------
-Blocks can be arranged in groups.  This provides a convenient way to group related blocks together.  You can create as many groups as you need to categorise your blocks.  
+Blocks can be arranged in groups.  This provides a convenient way to group related blocks.  You can create as many groups as you need to categorise your blocks.  
 
 If you do not explicitly assign a block to a group, it will, by default, be assigned to a group called "Other".
