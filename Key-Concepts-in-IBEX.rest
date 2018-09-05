@@ -9,8 +9,6 @@ A client-server system is one that employs a distributed application architectur
 
 The design of IBEX follows this model.  IBEX consists of a server component, which runs on the instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <http://www.aps.anl.gov/epics/>`_ framework for creating distributed control systems.
 
-Return to `Contents`_.
-
 IBEX Client
 ~~~~~~~~~~~
 
@@ -27,7 +25,7 @@ IBEX Server
 The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon instrument.  The primary components of the IBEX server are:
 
 BlockServer 
-  The core component of the IBEX server.  The BlockServer provides the service that translates [[ProcessVariables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
+  The core component of the IBEX server.  The BlockServer provides the service that translates [[Process Variables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
 
 ICP
   The ICP (Instrument Control Program) is the process which controls the `DAE (Data Acquisition Electronics)`_.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
@@ -36,12 +34,12 @@ Archiver
   The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes. 
 
 IOCs 
-  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via [[ProcessVariables]].  Typically, there is one IOC for each device attached to the instrument control PC.
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via [[Process Variables]].  Typically, there is one IOC for each device attached to the instrument control PC.
   
 Message Server 
   The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
 
-[[Script Server|script-server]]
+[[Script Server]]
   The Script Server runs Python scripts submitted by authorised clients. After these scripts are run, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
   
 MySQL 
@@ -80,7 +78,7 @@ Anyone on the ISIS network can view an instrument.  For example:
 Blocks & Process Variables
 --------------------------
 
-[[ProcessVariables]]
+[[Process Variables]]
 
 [[Blocks]]
 
@@ -98,7 +96,7 @@ Environment/Period Card
 
 The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.
 
-Settings for the DAE can be read and changed either through the [[IBEX client|ManagetheDAE]] or commands [[issued in scripts|scripting]].
+Settings for the DAE can be read and changed either through the [[IBEX client|Manage the DAE]] or commands [[issued in scripts|scripting]].
 
 What does the DAE do?
 ~~~~~~~~~~~~~~~~~~~~~
