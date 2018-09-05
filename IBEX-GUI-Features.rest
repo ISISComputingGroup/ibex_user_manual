@@ -1,6 +1,3 @@
-IBEX GUI Features
-=================
-
 .. image:: ibex_client_e4_zoom.png
 
 This section summarises the main features of IBEX as presented by the IBEX GUI client.
