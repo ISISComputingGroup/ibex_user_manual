@@ -1,18 +1,14 @@
-.. _PVNamingConventions:
+Facilities running `EPICS <http://www.aps.anl.gov/epics/>`_ usually adopt a convention for naming PVs ([[Process Variables]]).  ISIS is no exception.
 
-PV Naming Conventions
-=====================
+The purpose of the naming convention is to:
 
-Facilities running `EPICS <http://www.aps.anl.gov/epics/>`_ usually adopt a convention for naming PVs [[ProcessVariables]].  ISIS is no exception.
-
-The purpose of the naming convention is to
-a. provide a systematic means of describing the PV
-b. ensure that the name of the PV is unique (within the facility).
+a. Provide a systematic means of describing the PV,
+b. Ensure that the name of the PV is unique (within the facility).
 
 ISIS Naming Convention
 ----------------------
 
-At ISIS, PV names are chosen to describe function, not hardware/technology - the PV name is the purpose of a channel and is abstracted from the underlying hardware; the name of the IOC (to which the PV belongs) can however reflect technology/hardware/implementation. 
+At ISIS, PV names are chosen to describe a function, not hardware/technology - the PV name is the purpose of a channel and is abstracted from the underlying hardware; the name of the IOC (to which the PV belongs) can, however, reflect technology/hardware/implementation. 
 
 The essential format of the ISIS naming convention is ``DOMAIN:SUBDOMAIN:TECHNICALAREA:DEVICE:SUBDEVICE:SIGNAL``
 
@@ -47,7 +43,7 @@ Technical Area and Device Names
 Technical Area and Device Names reflect the nature of the device that owns the PV in question.  For example:
 
 * ``IN:GEM:MOT`` relates to PVs associated with motion control equipment on GEM.
-* ``IN:ZOOM:VAC`` relates to PVs associated with vacuum equipment equipment on ZOOM
+* ``IN:ZOOM:VAC`` relates to PVs associated with vacuum equipment on ZOOM
 * ``IN:IRIS:DAE`` relates to PVs associated with the DAE on IRIS
 * ``IN:IMAT:MOT:MTRccmm`` relates to EPICS motor records on IMAT for a motor on controller number cc, motor number mm. These numbers are zero padded to two digits and start from 1 (e.g. MTR0101 is the first motor on the first controller).
 * ``IN:LARMOR:MOT:JAWSmm`` mm-th set of jaws on LARMOR (e.g. JAWS01 is the first set of jaws, etc.).
@@ -87,7 +83,7 @@ Standard signal names include:
 | FIELD       | Magnetic field          |                                                                                              |
 +-------------+-------------------------+----------------------------------------------------------------------------------------------+ 
 
-If a value can fluctuate, these refer to the current measured value of a quantity and the signal qualifiers SP and RBV are used to indicated the desired value software requested (setpoint) and the desired value being used in the hardware (RBV)
+If a value can fluctuate, these refer to the current measured value of a quantity and the signal qualifiers SP and RBV are used to indicate the desired value software requested (setpoint) and the desired value being used in the hardware (RBV)
 
 For example, for a TEMP signal
 
