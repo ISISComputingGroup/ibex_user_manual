@@ -1,19 +1,19 @@
 In this section of the IBEX User Manual, we describe how to do the most common and important tasks.
 
-[[Create and Manage Configurations|CreateAndManageConfigurations]]
+[[Create and Manage Configurations]]
 
-[[Create and Manage Components|CreateandManageComponents]]
+[[Create and Manage Components]]
 
-[[Start and Stop IOCs|StartandStopIOCs]]
+[[Start and Stop IOCs]]
 
-[[Navigate Synoptics|NavigateSynoptics]]
+[[Navigate Synoptics]]
 
-[[Create and Manage Synoptics|CreateandManageSynoptics]]
+[[Create and Manage Synoptics]]
 
 [[Create and Manage Device Screens]]
 
-[[Manage the DAE|ManagetheDAE]]
+[[Manage the DAE]]
 
-[[Plot a Block Graph|PlotaBlockGraph]]
+[[Plot a Block Graph]]
 
-[[Create PVs for generic user data|How-to-create-PVs-for-generic-user-data]]
+[[How to create PVs for generic user data]]
