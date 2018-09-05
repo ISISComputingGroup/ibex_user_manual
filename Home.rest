@@ -1,22 +1,22 @@
-[[What Is IBEX|WhatIsIBEX]]
+[[What Is IBEX]]
 
-[[Installing IBEX|InstallingIBEX]]
+[[Installing IBEX]]
 
-[[Starting And Stopping IBEX|StartingAndStoppingIBEX]]
+[[Starting And Stopping IBEX]]
 
-[[Key Concepts in IBEX|KeyConceptsinIBEX]]
+[[Key Concepts in IBEX]]
 
-[[IBEX GUI Features|IBEXGUIFeatures]]
+[[IBEX GUI Features]]
 
-[[How To Do Things In IBEX|HowToDoThingsInIBEX]]
+[[How To Do Things In IBEX]]
 
 [[Scripting]]
 
 [[Plotting using matplotlib|Matplotlib]]
 
-[[Instrument Specific Guidance|InstrumentGuidance]]
+[[Instrument Specific Guidance]]
 
-[[Device Specific Guidance|DeviceGuidance]]
+[[Device Specific Guidance]]
 
 [[FAQ]]
 
