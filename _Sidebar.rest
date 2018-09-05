@@ -5,8 +5,8 @@
 * [[IBEX GUI Features|IBEXGUIFeatures]]
 * [[How To Do Things In IBEX|HowToDoThingsInIBEX]]
 * [[Scripting]]
-* [[Instrument Specific Guidance|InstrumentGuidance]]
-* [[Device Specific Guidance|DeviceGuidance]]
+* [[Instrument Specific Guidance|InstrumentSpecificGuidance]]
+* [[Device Specific Guidance|DeviceSpecificGuidance]]
 * [[FAQ]]
 * [[Glossary]]
 
