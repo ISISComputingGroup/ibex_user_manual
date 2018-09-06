@@ -1,6 +1,6 @@
-.. contents:: **Contents**
-
 The main area of the IBEX GUI is reserved for displaying different types of view. Each displays a different aspect of the instrument.
+
+.. contents:: **Contents**
 
 Movable Panels
 --------------
