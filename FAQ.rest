@@ -1,4 +1,4 @@
-In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If you have a question about IBEX that is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
+In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If your question about IBEX is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
 
 .. contents:: **List of Frequently Asked Questions**
 
@@ -10,22 +10,22 @@ How do I report a problem with IBEX?
 How do I install IBEX Server?
 =============================
 
-To install IBEX Server - see [[Installing IBEX Server|Installing-IBEX#installing-ibex-server]]
+To install the IBEX Server - see [[Installing IBEX Server|Installing-IBEX#installing-ibex-server]].
 
 How do I install IBEX Client?
 =============================
 
-To install IBEX Client - see [[Installing IBEX Client|Installing-IBEX#installing-ibex-client]]
+To install IBEX Client - see [[Installing the IBEX Client|Installing-IBEX#installing-ibex-client]].
 
 How do I start IBEX Server?
 ===========================
 
-To start IBEX Server - see [[Starting IBEX Server | Starting-and-Stopping-IBEX#starting-ibex-server]]
+To start IBEX Server - see [[Starting the IBEX Server | Starting-and-Stopping-IBEX#starting-ibex-server]].
 
 How do I stop IBEX Server?
 ==========================
 
-To stop IBEX Server - see [[Stopping IBEX Server|Starting-and-Stopping-IBEX#stopping-ibex-server]]
+To stop IBEX Server - see [[Stopping the IBEX Server|Starting-and-Stopping-IBEX#stopping-ibex-server]].
 
 Can I run IBEX and SECI at the same time?
 =========================================
@@ -35,7 +35,7 @@ In a word - No.  Running two control programs on any system is a bad idea - whic
 Can I switch from running IBEX to SECI and vice-versa?
 ======================================================
 
-Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[Switching Between IBEX and SECI]] for details
+Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[Switching Between IBEX and SECI]] for details.
 
 Can I write scripts to control my experiment?
 =============================================
@@ -55,13 +55,13 @@ Python (extended by genie_python) is the scripting language used by IBEX.  If yo
 What do I look at if there are no RAW frames when Collecting Data?
 ==================================================================
 
-If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dash board) then:
+If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dashboard) then:
 
 Timing is ISIS:
-    Either ISIS is off or there is a problem with the ToF (ISIS) signal. Check other instruments to find out.
+    Either ISIS is off, or there is a problem with the ToF (ISIS) signal. Check other instruments to find out.
 
 Timing is SMP:
-    Chopper is not spinning or there is a problem with the signal
+    Chopper is not spinning, or there is a problem with the signal
     
 Consider swapping the timing source to help diagnose the problem. 
 
@@ -82,7 +82,7 @@ External veto{0-3}:
 Can I change what my graphs look like in the log plotter or OPI?
 ================================================================
 
-**Yes!** There are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type and line width. To reach these settings for a graph in an OPI do the following:
+**Yes!** There are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type, and line width. To reach these settings for a graph in an OPI do the following:
 
 #. To show the toolbar on an OPI graph right click and select Show/Hide Graph Toolbar.
 #. Then click the settings button (leftmost icon with a spanner and screwdriver on it)
@@ -93,4 +93,4 @@ To open the settings in a log plotter graph, just right click and click "Open Pr
 In the scripting view I don't want the arguments when I autocomplete
 =====================================================================
 
-In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters so instead of pressing <return> press <crtl> + <return>, this will just give the function name without any parenthesis or arguments.
+In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
