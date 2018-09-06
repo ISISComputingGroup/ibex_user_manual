@@ -4,7 +4,7 @@ This section summarises the main features of IBEX as presented by the IBEX GUI c
 
 You might find it helpful to refer to the schematic view below of the IBEX UI while reading this section.
 
-..image:: IBEX_E4_schematic.png
+.. image:: IBEX_E4_schematic.png
 
 [[Menu Bar]]
 
