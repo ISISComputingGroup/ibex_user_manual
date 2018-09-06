@@ -51,8 +51,3 @@ Live View Device Screen
 .. image:: LiveView.png
 
 You instrument may have access to a Live View device screen which shows event data from the DAE in real time. This option is only available if your instrument is set up for Live View: it is running in event mode, and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact Freddie Akeroyd.
-
-Matplotlib Viewer
-~~~~~~~~~~~~~~~~~~
-
-The matplotlib viewer cannot be viewed as a device screen. It will only appear when the 'matplotlib.pyplot.show' command is called. For more details see [[Plotting Using Matplotlib]].
