@@ -2,10 +2,10 @@
 
 .. image:: script-server.png
 
-IBEX features a script server, which allows you to write scripts and submit them to the server to run. This allows you to queue multiple scripts which the server will execute for you.
+IBEX features a script server, which allows you to write scripts and submit them to the server to run, which enables you to queue multiple scripts which the server will execute for you. Note that you can still use the [[scripting]] view to run your scripts. If you'd like us to disable either view button (script server or scripting) on your instrument, please let us know.
 
-To access this feature, select 'Script Server' on the left-hand menu (see [[Views]]). This view allows you to create and queue scripts, as well as show you which script is currently running and how far it is through its execution.
+To access the script server, click 'Script Server' on the view selector on the left-hand side (see [[Views]]). This view allows you to create and queue scripts, as well as show which script is currently running and which line the script server is currently executing.
 
-You can write the script within IBEX, or load a pre-written Python script from elsewhere on the system. You can also save scripts that you have written within IBEX.
+You can write scripts within the Script Server view in IBEX or load a pre-written script from elsewhere on the system. You can also save scripts that you have written within IBEX.
 
-Note that you cannot create graphs from the Script Server.
+Do not use matplotlib commands in scripts which you send to the Script Server because matplotlib will spawn a plot window on the server and your script will pause until the plot window is closed.
