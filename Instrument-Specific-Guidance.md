@@ -2,6 +2,6 @@ Owing to the highly varied nature of the instruments that IBEX supports, some in
 
 [[Muon Front End scripting|MuonFEScriptGuidance]]
 
-[[Engin-X sample stack|Enginx_sample_stack]]
+[[Engin-X sample stack]]
 
 [[IMAT motors|IMAT-motors]]
