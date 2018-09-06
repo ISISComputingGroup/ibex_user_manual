@@ -6,7 +6,7 @@ This page is intended to give a broad guide to scripting for the
 beginner and novice user. For a more in-depth discussion, see our [[genie_python and IBEX training course|genie_python-and-Ibex-(Introduction)]].
 
 - [[Script Server]]
-- [[Plotting Using Matplotlib]]
+- [[Plotting Using Matplotlib|Matplotlib]]
 - [[genie_python Commands]]
 - [[Converting Open GENIE to genie_python]]
 - [[Creating and running scripts]]
