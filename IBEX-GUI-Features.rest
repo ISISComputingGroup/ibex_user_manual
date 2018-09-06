@@ -2,7 +2,9 @@
 
 This section summarises the main features of IBEX as presented by the IBEX GUI client.
 
-You might find it helpful to refer to a `schematic view of the IBEX UI <http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/IBEX%20E4%20schematic.png>`_ while reading this section.
+You might find it helpful to refer to the schematic view below of the IBEX UI while reading this section.
+
+..image:: IBEX_E4_schematic.png
 
 [[Menu Bar]]
 
