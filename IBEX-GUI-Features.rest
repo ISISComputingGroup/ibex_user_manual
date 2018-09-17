@@ -1,4 +1,5 @@
 .. image:: ibex_client_e4_zoom.png
+   :target: ibex_client_large.png
 
 This section summarises the main features of IBEX as presented by the IBEX GUI client.
 
