@@ -1,5 +1,7 @@
 The Eurotherm is usually used to measure and control temperature; however it has also been used to measure pressures. It measures the resistance of an external sensor. 
 
+.. contents:: **Contents**
+
 Calibration
 -----------
 
