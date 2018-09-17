@@ -1,5 +1,3 @@
-[[Home|Home]] > [[Installing IBEX|installing-IBEX]]
-
 .. contents:: **Contents**
 
 Installing IBEX Server
