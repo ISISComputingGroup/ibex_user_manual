@@ -1,7 +1,7 @@
 [[Scripting|scripting]] > [[Script Server|script-server]]
 
 .. image:: script-server.png
-   :target: script_server.png
+   :target: script_server_large.png
 
 Click for larger image
 
