@@ -1,7 +1,7 @@
 [[Scripting|scripting]] > [[Script Server|script-server]]
 
 .. image:: script-server.png
-   :width: 1000px
+   :target: script-server.png
 
 IBEX features a script server, which allows you to write scripts and submit them to the server to run, which enables you to queue multiple scripts which the server will execute for you. Note that you can still use the [[scripting]] view to run your scripts. If you'd like us to disable either view button (script server or scripting) on your instrument, please let us know.
 
