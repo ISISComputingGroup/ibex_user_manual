@@ -8,6 +8,7 @@ Movable Panels
 You can resize panels and move panels around inside of a view in IBEX.
 
 .. image:: ibex_client_windows_moved.png
+   :target: perspectives_moved_large.png
 
 If you want to return to the default panel arrangement within a view, click on the `Reset Layout`_ button in the top left-hand corner
 
