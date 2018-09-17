@@ -5,7 +5,7 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 - [`matplotlib.pyplot` command reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
 
-# Contents
+### Contents
 - [Quick-start](##quick-start)
     - [To import pyplot](#to-import-pyplot)
     - [Useful pyplot commands](#useful-pyplot-commands)
