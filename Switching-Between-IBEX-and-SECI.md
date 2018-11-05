@@ -9,7 +9,7 @@ Switching between SECI and IBEX is possible as they both use the same underlying
 ### If SECI is running and you want to start IBEX:
 
 1. Check that the Instrument is in SETUP and previous run data files saved and copied to an archive.
-2. Then close SECI (File Menu + Exit).
+2. Then close SECI (`File Menu->Exit`).
 3. Then to start IBEX Server, use the shortcut in the Windows start menu or run `start_ibex_server.bat` located in `c:\Instrument\Apps\EPICS`.
 4. To start IBEX client, click on the IBEX shortcut in the Windows start menu or the taskbar.
 
