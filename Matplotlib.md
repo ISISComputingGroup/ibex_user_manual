@@ -5,6 +5,15 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 - [`matplotlib.pyplot` command reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
 
+### Contents
+- [Quick-start](#quick-start)
+    - [To import pyplot](#to-import-pyplot)
+    - [Useful pyplot commands](#useful-pyplot-commands)
+    - [Example: Plot and show a trivial graph](#example-plot-and-show-a-trivial-graph)
+    - [Example: Plot a constantly updating sin wave](#example-plot-a-constantly-updating-sin-wave)
+- [Plotting Spectra](#plotting-spectra)
+- [Using matplotlib within the IBEX GUI](#using-matplotlib-within-the-ibex-gui)
+
 # Quick-start
 
 ### To import pyplot
