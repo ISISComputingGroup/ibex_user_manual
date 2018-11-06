@@ -1,6 +1,6 @@
 In this section of the IBEX User Manual, we describe how to do the most common and important tasks. 
 
-We regularly run training sessions on IBEX. The slides from this course can be found [[here|genie_python_and_ibex/IBEX%20Initial%20Training.pptx]].
+We regularly run training sessions on IBEX. The slides from this course can be found [[here|genie_python_and_ibex/IBEX_initial_training.pptx]].
 
 [[Create and Manage Configurations]]
 
