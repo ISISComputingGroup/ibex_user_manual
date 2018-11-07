@@ -27,7 +27,7 @@ Stopping IBEX Client
 
 To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Confirm that you wish to exit and the IBEX client will shut down.
 
-**Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stoped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
+**Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stopped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
 
 Starting and Stopping IBEX Server
 ---------------------------------
