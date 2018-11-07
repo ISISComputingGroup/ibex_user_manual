@@ -29,19 +29,19 @@ Run Control Buttons
 The Run Summary tab also provides some buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the ``Run Status`` field and the IBEX [[Dashboard]].
 
 Begin Run
-   Beginning a run instructs the ICP to tell the DAE to start collecting data. The DAE’s run status will change to BEGINNING and then RUNNING.
+   Beginning a run instructs the ICP to tell the DAE to start collecting data. The run status of the DAE will change to BEGINNING and then RUNNING.
 
 End Run
-   Ending a run instructs the ICP to tell the DAE to stop collecting data and save the data. The DAE’s run status will change to ENDING (while it saves the data) and then SETUP when it is ready to be started again.
+   Ending a run instructs the ICP to tell the DAE to stop collecting data and save the data. The run status of the DAE will change to ENDING (while it saves the data) and then SETUP when it is ready to be started again.
 
 Pause Run
-   Pausing a run instructs the ICP to tell the DAE to pause data collection indefinitely. The DAE’s run status will change to PAUSED.  The DAE's status will remain PAUSED until it is instructed to resume, end or abort the run.
+   Pausing a run instructs the ICP to tell the DAE to pause data collection indefinitely. The run status of the DAE will change to PAUSED.  The status will remain PAUSED until it is instructed to resume, end or abort the run.
 
 Resume Run
-   Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The DAE’s run status will return to RUNNING.
+   Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The run status of the DAE will return to RUNNING.
 
 Abort Run
-   Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The DAE’s run status will change to SETUP. If this is done mistakenly, the cancel abort button can be used to undo the abort.
+   Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The run status of the DAE will change to SETUP. If this is done mistakenly, the cancel abort button can be used to undo the abort.
 
 Cancel Abort
    This will instruct the DAE to cancel a previous abort. The DAE will be left in a paused state.
