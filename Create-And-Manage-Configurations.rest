@@ -249,7 +249,7 @@ To load a recent configuration:
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be reloaded later, if you wish.
 
-**Note**: As the current configuration is alread loaded, it is not displayed in the list. However, it will be displayed after loading another configuration.
+**Note**: As the current configuration is already loaded, it is not displayed in the list. However, it will be displayed after loading another configuration.
 
 Delete a Configuration
 ----------------------
