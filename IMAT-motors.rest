@@ -3,7 +3,7 @@ There are many motors on IMAT this page contains some details about what happens
 Jaws
 ----
 
-There are jaws on Galil 1 (axis 5,6,7,8) and then all axes on Galil controlers 2 and 3. These all have homing routines and can be homed together (there is a script :code:`g.home_`) which will home all axis. If the axis appears not to move the IOC should be restarted; this will reload programs and settings into the Galil controller.
+There are jaws on Galil 1 (axis 5,6,7,8) and then all axes on Galil controllers 2 and 3. These all have homing routines and can be homed together (there is a script :code:`g.home_`) which will home all axis. If the axis appears not to move the IOC should be restarted; this will reload programs and settings into the Galil controller.
 
 Sample Stack
 ------------
