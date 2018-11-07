@@ -29,7 +29,7 @@ As another example, the following three calls are all equivalent:
     g.end(False)
     g.end(verbose=False)
 
-Acqusition control
+Acquisition control
 ==================
 
 Switch run states
