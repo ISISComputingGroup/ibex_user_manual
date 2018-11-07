@@ -31,7 +31,7 @@ DAE (Data Acquisition Electronics)
    counters (e.g. number of ISIS pulses, proton charge delivered (PPP))
 
 EPICS
-  `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distruibuted control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is the underlying framework used to create IBEX.
+  `EPICS <http://www.aps.anl.gov/epics/>`_ is an open-source software framework for creating distributed control systems (i.e. for controlling devices which may be distributed across a network).  EPICS is the underlying framework used to create IBEX.
 
 GENIE PYTHON
   GENIE PYTHON is a python library for instrument control and scripting, maintained by the IBEX team. There is
