@@ -13,13 +13,13 @@ However, the following points should be born in mind:
 
 1. Check that the Instrument is in SETUP and previous run data files saved and copied to an archive.
 2. Then close SECI (`File Menu->Exit`).
-3. Then to start IBEX Server, use the shortcut in the Windows start menu or run `start_ibex_server.bat` located in `c:\Instrument\Apps\EPICS`. This will close any open IBEX clients.
+3. Then to start IBEX Server, use the shortcut in the Windows start menu or run `start_ibex_server.bat` located in `c:\Instrument\Apps\EPICS`. This will close any open IBEX client windows.
 4. To start IBEX client, click on the IBEX shortcut in the Windows start menu or the taskbar.
 
 ### If IBEX is running and you want to start SECI:
 
 1.	Check that the Instrument is in SETUP and previous run data files saved and copied to an archive.
-2.	Then run stop_ibex_server.bat which will either be a shortcut on the Windows Start menu, or you can browse with explorer to `c:\Instrument\Apps\EPICS` where it is located. This will close the client as well.
+2.	Then run stop_ibex_server.bat which will either be a shortcut on the Windows Start menu, or you can browse with explorer to `c:\Instrument\Apps\EPICS` where it is located. This will close any open IBEX client windows as well.
 3.	Next browse to `c:\Program Files (x86)\STFC ISIS Facility\SECI` where `SECIUserInterface.exe` is located. Click on `SECIUserInterface.exe` to start SECI.
 
 ## Post Switch Tasks
