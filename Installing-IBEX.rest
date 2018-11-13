@@ -1,15 +1,5 @@
 .. contents:: **Contents**
 
-Installing IBEX Server
-----------------------
-
-The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, before the physical installation, a significant amount of preparation work is required.  For example:
-
-* for an existing instrument, SECI configs need to be converted to their IBEX equivalents, and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
-* for a new instrument, the list of devices that comprise the instrument needs to be understood, new IOCs and OPIs will need to be created; configurations and scripts can be developed during commissioning.
-
-If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
-
 Installing IBEX Client
 ----------------------
 
@@ -21,35 +11,20 @@ Pre-requisites for running IBEX Client
 To run IBEX client, your PC must meet the following pre-requisites
 
 #. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 (or higher), or Windows 10 (Professional or Enterprise), Build 10586 (or higher).
-#. Your PC must also be running an up-to-date version of Java version 8, update 101 (or later). If you need to install an up-to-date version of Java, you can obtain a copy from the Java website (http://www.java.com/en/).  Please be sure to choose the 64-bit version of Java.
 
 Installation
 ~~~~~~~~~~~~
 
-1. Open a command window on your PC and use the following commands to create the 
-   following folders on your ``C:`` drive:
-
-::
-
-      mkdir C:\Instrument\Apps\Client
-      mkdir C:\Instrument\Apps\Python
-      cd C:\Instrument
-
-2. If your PC is in the ISIS domain (i.e. it is an ISIS PC) then in the command window type:
-
-::
-
-      net use Z: \\isis\inst$\Kits$\CompGroup\ICP\Releases  /user:my_fed_id
-
-If your PC is not in the ISIS domain (i.e. it is not an ISIS PC) then in the command window type:
+1. Create a network drive to the installation kit:
 
 ::
 
       net use Z: \\isis.cclrc.ac.uk\inst$\Kits$\CompGroup\ICP\Releases  /user:CLRC\my_fed_id
 
-In either case, substitute your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as the drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters exactly as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
+substitute your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as the drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters exactly as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
 
-Change to the ``Z:`` drive:
+2. Change to the ``Z:`` drive:
+
 ::
 
       Z:
@@ -69,7 +44,7 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in t
 
 5. Run the command ``install_client.bat`` to copy the contents of the above directory to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
-6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client\ibex-client.exe``
+6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client_E4\ibex-client.exe``
 
 7. Open up the firewall ports needed by the client by running the following command as Administrator in a command window:
 
@@ -85,7 +60,7 @@ After installation, the current paths are used by the various components.
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | Item                                                  | Path                                                              |
 +=======================================================+===================================================================+
-|IBEX Client                                            |  ``C:\Instrument\Apps\Client``                                    | 
+|IBEX Client                                            |  ``C:\Instrument\Apps\Client_E4``                                    | 
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python``                                     |
 +-------------------------------------------------------+-------------------------------------------------------------------+
@@ -99,3 +74,14 @@ After installation, the current paths are used by the various components.
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | Server logs, autosave and database files              |  ``C:\Instrument\Var``                                            |
 +-------------------------------------------------------+-------------------------------------------------------------------+
+
+Installing IBEX Server
+----------------------
+
+The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, before the physical installation, a significant amount of preparation work is required.  For example:
+
+* for an existing instrument, SECI configs need to be converted to their IBEX equivalents, and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
+* for a new instrument, the list of devices that comprise the instrument needs to be understood, new IOCs and OPIs will need to be created; configurations and scripts can be developed during commissioning.
+
+If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
+
