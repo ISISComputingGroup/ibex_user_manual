@@ -40,11 +40,11 @@ this will open a drop-down:
 
 .. image:: scripting_view_new_console_dropdown.png
 
-choose `PyDev console` which opens the pop UP:
+choose `PyDev console` which opens the pop-up:
 
 .. image:: scripting_view_new_console_popup.png
 
-then from the popup choose `Python console` and OK. **Note:** At this point all open console views will switch to viewing the new console.
+Choose `Python console` from this pop-up and then OK. **Note:** At this point all open console views will switch to viewing the new console.
 
 **New console view**
 
@@ -60,7 +60,7 @@ choose `New Console View`.
 
 **Stop genie_python console**
 
-To stop a genie_python console click on the stop button (red on the leftmost):
+To stop a genie_python console click on the stop button (red left most square):
 
 .. image:: scripting_view_stop_button.png
 
@@ -72,13 +72,13 @@ All but the last view can be closed using the cross on the tab.
 
 **Stop execution**
 
-Execution of python can be stopped by pressing `<ctrl> + x` or clicking on the interrupt button (yellow 3rd from left)
+Execution of python can be stopped by pressing `<ctrl> + x` or clicking on the interrupt button (yellow right most square)
 
 .. image:: scripting_view_stop_execution.png
 
 **Change console being viewed in a console view**
 
-To select which console to view click on the console drop-down arrow (click on the icon cycles through consoles). 
+To select which console to view click on the console drop-down arrow (clicking on the icon cycles through consoles). 
 
 .. image:: scripting_view_console_view_dropdown.png
 
@@ -92,6 +92,6 @@ A console can be cleared by clicking on clear console button:
 
 **Save python console output**
 
-All the commands and output from a python console can be saved to a file using the save console view button:
+All the commands and outputs from a python console can be saved to a file using the save console view button:
 
 .. image:: scripting_view_console_view_save.png
