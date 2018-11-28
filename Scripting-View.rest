@@ -18,6 +18,8 @@ Tool Bar
 
 The tools bar at the top of every python console view looks like:
 
+.. image:: genie_python_tool_bar.png
+
 This has multiple functions, from left to right:
 
 - Stop genie_python console
