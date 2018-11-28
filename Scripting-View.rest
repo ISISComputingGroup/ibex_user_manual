@@ -18,7 +18,7 @@ Tool Bar
 
 The tools bar at the top of every python console view looks like:
 
-.. image:: genie_python_tool_bar.png
+.. image:: scripting_view_genie_python_tool_bar.png
 
 This has multiple functions, from left to right:
 
@@ -50,7 +50,7 @@ then from the popup choose `Python console` and OK. **Note:** At this point all 
 
 To create a new view on a console click on the add console button:
 
-.. image:: new_console_button.png
+.. image:: scripting_view_new_console_button.png
 
 this will open a drop down:
 
