@@ -34,15 +34,15 @@ This has multiple functions, from left to right:
 
 To start a new genie_python click on the add console button:
 
-.. image:: new_console_button.png
+.. image:: scripting_view_new_console_button.png
 
 this will open a drop down:
 
-.. image:: new_console_dropdown.png
+.. image:: scripting_view_new_console_dropdown.png
 
 choose `PyDev console` which opens the pop UP:
 
-.. image:: new_console_popup.png
+.. image:: scripting_view_new_console_popup.png
 
 then from the popup choose `Python console` and OK. **Note:** At this point all open console views will switch to viewing the new console.
 
@@ -54,7 +54,7 @@ To create a new view on a console click on the add console button:
 
 this will open a drop down:
 
-.. image:: new_console_dropdown.png
+.. image:: scripting_view_new_console_button.png
 
 choose `New Console View`.
 
@@ -62,25 +62,25 @@ choose `New Console View`.
 
 To stop a genie_python console click on the stop button (red on the leftmost):
 
-.. image:: stop_button_on_bar.png
+.. image:: scripting_view_stop_button.png
 
 **Close Console View**
 
 All but the last view can be closed using the cross on the tab.
 
-.. image:: cross_on_tab.png
+.. image:: scripting_view_cross.png
 
 **Stop execution**
 
-Execution of python can be stopped by pressing `<ctrl> + x` or clicking on the interupt button (yellow 3rd from left)
+Execution of python can be stopped by pressing `<ctrl> + x` or clicking on the interrupt button (yellow 3rd from left)
 
-.. image:: stop_button_on_bar.png
+.. image:: scripting_view_stop_execution.png
 
 **Change console being viewed in a console view**
 
-To select which console to view click on the consle drop down arrow (click on the icon cycles through consoles). 
+To select which console to view click on the console drop-down arrow (click on the icon cycles through consoles). 
 
-.. image:: console_view_dropdown.png
+.. image:: scripting_view_console_view_dropdown.png
 
 This will give you a list of active consoles running in this client. Select the one you wish to view.
 
@@ -88,10 +88,10 @@ This will give you a list of active consoles running in this client. Select the 
 
 A console can be cleared by clicking on clear console button:
 
-.. image:: console_view_dropdown.png
+.. image:: scripting_view_console_clear.png
 
 **Save python console output**
 
 All the commands and output from a python console can be saved to a file using the save console view button:
 
-.. image:: console_view_save.png
+.. image:: scripting_view_console_view_save.png
