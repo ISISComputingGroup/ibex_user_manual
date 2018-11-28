@@ -11,7 +11,7 @@ Experimental runs should, where possible, be run on the [[script server|Script-S
 Multiple Consoles and Views
 ---------------------------
 
-The IBEX Gui supports both multiple consoles and multiple views on those consoles. This is not as user friendly as it could be but is inherited from open source component that we use. You should think of this as multiple versions of genie_python, each runing in a console, which you can view through one or many windows. To see how to uatlise this read the following tool bar section.
+The IBEX Gui supports both multiple consoles and multiple views on those consoles. This is not as user-friendly as it could be but is inherited from an open source component that we use. You should think of this as multiple versions of genie_python, each running in a console, which you can view through one or many windows. To see how to utilise this read the following toolbar section.
 
 Tool Bar
 --------
@@ -26,7 +26,7 @@ This has multiple functions, from left to right:
 - Save python console output
 - Stop execution
 - Clear the console
-- Pin console: does nothig
+- Pin console: does nothing
 - Change console being viewed in a console view
 - New console (genie_python console or console view)
 
@@ -36,7 +36,7 @@ To start a new genie_python click on the add console button:
 
 .. image:: scripting_view_new_console_button.png
 
-this will open a drop down:
+this will open a drop-down:
 
 .. image:: scripting_view_new_console_dropdown.png
 
@@ -52,9 +52,9 @@ To create a new view on a console click on the add console button:
 
 .. image:: scripting_view_new_console_button.png
 
-this will open a drop down:
+this will open a drop-down:
 
-.. image:: scripting_view_new_console_button.png
+.. image:: scripting_view_new_console_dropdown.png
 
 choose `New Console View`.
 
