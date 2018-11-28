@@ -72,7 +72,7 @@ The Script Server View displays the current script being run, the queue of scrip
 
 Scripting
 =========
-Selecting the Scripting View displays a Python console, allowing you to load and execute Python or genie_python scripts. **Note**: Scripts running in the Scripting View are independent of scripts running on the Script Server.
+Selecting the [[Scripting View|Scripting-View]] displays a Python console, allowing you to load and execute Python or genie_python scripts. **Note**: Scripts running in the Scripting View are independent of scripts running on the Script Server.
 
 Synoptic
 ========
