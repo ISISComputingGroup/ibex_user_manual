@@ -6,7 +6,7 @@ This window should be used for:
 - Running visualisation and plotting routines
 - Developing scripts. 
 
-Experimental runs should, where possible, be run on the [[script server|Script-Server]] because these are independent of the client and only one such script can run at any time.
+Experimental runs should, where possible, be run on the [[script server|Script-Server]] because these are independent of the client and only one script sever script can run at any one time (you can still run console scripts when the script server script is running).
 
 Multiple Consoles and Views
 ---------------------------
@@ -72,7 +72,7 @@ All but the last view can be closed using the cross on the tab.
 
 **Stop execution**
 
-Execution of python can be stopped by pressing `<ctrl> + x` or clicking on the interrupt button (yellow right most square)
+Execution of python can be stopped by pressing `<ctrl> + c` or clicking on the interrupt button (yellow right most square)
 
 .. image:: scripting_view_stop_execution.png
 
