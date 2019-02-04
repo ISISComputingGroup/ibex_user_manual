@@ -11,6 +11,7 @@ beginner and novice user. For a more in-depth discussion, see our [[genie_python
 - [[Converting Open GENIE to genie_python]]
 - [[Creating and running scripts]]
 - [[Tips and Examples]]
+- [[The Scripting Console]]
 
 There is some specific [[scripting advice for the Muon Front End|Guidance on Writing Scripts for the Muon Front End]]
 
