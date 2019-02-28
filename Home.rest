@@ -16,6 +16,8 @@
 
 [[Device Specific Guidance]]
 
+[[The Web Dashboard]]
+
 [[FAQ]]
 
 [[Glossary]]
