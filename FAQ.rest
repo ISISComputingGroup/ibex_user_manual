@@ -95,7 +95,12 @@ In the scripting view I don't want the arguments when I autocomplete
 
 In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
 
+How do I find a specific PV?
+============================
+
+PVs in IBEX should all follow the naming convention as specified in [[PV Naming Conventions]]. You can search for PVs that are available on your instrument by using the `Select PV` button in the [[Blocks Tab|Create and Manage Configurations#blocks-tab]]. Finally, if you can see the value that you want on an OPI you can hover over it to get the PV name or right click and `Show PV Info`.
+
 How do I set a value to change when I change configuration/component?
 =====================================================================
 
-This can be accomplished by using [[IOC PV Values|https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Create-and-Manage-Configurations#ioc-pv-values]].
+This can be accomplished by using [[IOC PV Values|Create and-Manage-Configurations#ioc-pv-values]].
