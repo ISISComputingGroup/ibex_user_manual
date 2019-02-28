@@ -94,3 +94,8 @@ In the scripting view I don't want the arguments when I autocomplete
 =====================================================================
 
 In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
+
+How do I set a value to change when I change configuration/component?
+=====================================================================
+
+This can be accomplished by using [[IOC PV Values|https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Create-and-Manage-Configurations#ioc-pv-values]].
