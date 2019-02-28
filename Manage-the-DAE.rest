@@ -17,7 +17,7 @@ Run Summary Fields
 * ``Run Number``: the current run number
 * ``ISIS Cycle``: the current ISIS cycle
 * ``Title``: you can provide a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file).
-* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the (Dataweb dashboard)[The-Web-Dashboard].  This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.
+* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the [[Dataweb dashboard|The-Web-Dashboard]]. This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.
 
 Message Log
 ~~~~~~~~~~~
