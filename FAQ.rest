@@ -104,3 +104,8 @@ How do I set a value to change when I change configuration/component?
 =====================================================================
 
 This can be accomplished by using [[IOC PV Values|Create and-Manage-Configurations#ioc-pv-values]].
+
+Why are some blocks and their PV addresses greyed-out in the `Edit Configuration` dialogue box?
+===============================================================================================
+
+This is because they are part of a component and can't be edited from a host configuration.  Open the relevant component from `Configuration - Components - Edit Component` to make changes to the "master" copy.  See the note at the bottom of [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
