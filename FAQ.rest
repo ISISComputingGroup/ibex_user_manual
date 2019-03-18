@@ -108,4 +108,4 @@ This can be accomplished by using [[IOC PV Values|Create and-Manage-Configuratio
 Why are some blocks and their PV addresses greyed-out in the "Edit Configuration" dialogue box?
 ===============================================================================================
 
-This is because they are part of a `component` and can't be edited from a host configuration.  Open the relevant component from the menu `Configuration -> Components -> Edit Component` to make changes to the "master" copy.  See the note at the bottom of [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
+This is because they are part of a `component` and can't be edited from a host configuration.  To make changes to the "master" copy, open the relevant component from the menu `Configuration -> Components -> Edit Component`.  See the note at the bottom of the [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
