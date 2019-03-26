@@ -7,7 +7,9 @@ Genie python can be used inside the IBEX client by using the scripting console. 
 
 ![Toolbar](genie_python_and_ibex/OpenTheScriptingPerspective.png)
 
-This console will let you type genie commands. The toolbar in the top right provides additional functionality.
+This console will let you type genie commands.  Pressing "Page Up" will display a window containing the command history.  Previous commands can be selected from the list or searched for using the text box at the bottom.
+
+The toolbar in the top right provides additional functionality.
 
 ![Toolbar](genie_python_and_ibex/TheScriptingPerspectiveToolbar.png)
 
