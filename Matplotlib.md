@@ -94,3 +94,13 @@ In the IBEX user interface, matplotlib is _non-blocking_ - that is, a script wil
 > matplotlib.use('Qt4Agg')
 > ```
 > This needs to be typed before any matplotlib functionality is used for it to take effect.
+
+# Troubleshooting
+
+### Only 6 plots can be opened at once
+
+By default, only 6 plots can be opened at a time. This is a limitation of the internet explorer view which displays the plot. The limit can be increased by an administrator on individual instruments by running the following command:
+
+`reg add "\\<ndxinstname>\HKLM\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_WEBSOCKET_MAXCONNECTIONSPERSERVER"  /v iexplore.exe /t REG_DWORD /d 48`
+
+Contact computing group if the limit is set too low on your instrument and they will be able to run the command above (it will require admin privileges).
