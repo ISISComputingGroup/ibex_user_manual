@@ -51,13 +51,10 @@ pyplot.show()
 while True:
     # Clear the old data from the figure - we want to replace it completely.
     pyplot.clf()  
-
     # Plot our new data onto the figure.
     pyplot.plot([sin(x/1000.0 + time()) for x in range(10000)])
-
     # Draw the new data to the screen.
     pyplot.draw()
-
     # Short sleep to avoid going into a tight loop and using 100% processor.
     sleep(0.5)
 ```
