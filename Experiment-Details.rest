@@ -8,11 +8,11 @@ RB Number
 
 If you know the RB number of your experiment you can input it here. Once you press the Set button IBEX will automatically update the experiment team with the appropriate users. If you don't know your RB number clicking the search button will open a dialog box where you can search for your name:
 
-.. image:: ExperimentDetails/RBNameSearch.png
+.. image:: ExperimentDetails/RBNameSearch.PNG
 
 Experiment Team
 ---------------
-.. image:: ExperimentDetails/ExperimentTeams.png
+.. image:: ExperimentDetails/ExperimentTeams.PNG
 
 Here you can see, and edit, the details of everyone involved in your experiment. By clicking on any of the text in the table you can modify it. You can also use the following buttons to make changes:
 
