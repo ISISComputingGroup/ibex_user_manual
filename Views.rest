@@ -44,7 +44,7 @@ The Beam Status View displays the status of the synchrotron, TS1 and TS2 beams. 
 
 DAE
 ===
-The DAE View allows you to set up and control the DAE.  See [[Manage the DAE]] for further details.
+The DAE View allows you to set up and control the DAE. See [[Manage the DAE]] for further details.
 
 Device Screens
 ==============
@@ -52,7 +52,7 @@ The Device Screens view allows you to set up, control and view OPIs for differen
 
 Experiment Details
 ===================
-The Experiment Details View allows you to look up details of your current experiment using the RB number.
+The Experiment Details View allows you to look up details of your current experiment using the RB number. See [[Experiment Details]] for further details.
 
 IOC Log
 =======
