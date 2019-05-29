@@ -4,11 +4,11 @@ The experiment details view gives you the ability to input meta data about your 
 
 RB Number
 ---------
-.. image:: ExperimentDetails/RBNumber.png
+.. image:: ExperimentDetails/RBNumber.PNG
 
 If you know the RB number of your experiment you can input it here. Once you press the Set button IBEX will automatically update the experiment team with the appropriate users. If you don't know your RB number clicking the search button will open a dialog box where you can search for your name:
 
-.. image:: ExperimentDetails/RBNumberSearch.png
+.. image:: ExperimentDetails/RBNameSearch.png
 
 Experiment Team
 ---------------
