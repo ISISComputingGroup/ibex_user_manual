@@ -264,7 +264,7 @@ Exercise 5
 ==========
 
 - Translate the following ``Open GENIE`` script into ``genie_python``::
-  ```
+  
      PROCEDURE Scan
          LOCAL i setpoint max min start step_size title nframes nimages multip
          
@@ -293,7 +293,7 @@ Exercise 5
              ENDIF    
          ENDLOOP
      ENDPROCEDURE
-   ```
+
 -    State any simplifications you've made
 
 
