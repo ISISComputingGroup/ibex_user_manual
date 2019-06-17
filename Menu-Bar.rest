@@ -74,3 +74,7 @@ User manual
    Selecting the "User manual" menu item opens the IBEX user manual in a web browser.
 Console Log
    The console log is used by support staff to help them diagnose any problems that IBEX might encounter.
+Icon Licences
+   View the licences for the icons used in IBEX
+Get help
+   Displays support telephone numbers and how to get help or report problems.
