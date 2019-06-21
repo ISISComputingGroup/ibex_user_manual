@@ -30,6 +30,9 @@ import matplotlib.pyplot as pyplot
 - `pyplot.show()`: Shows the matplotlib plotting window.
 - `pyplot.draw()`: Draws updates to a plot that is already open.
 - `pyplot.close('all')`: Closes all plots and removes all data.
+- `pyplot.close(n)`: Close a specific figure.
+- `pyplot.figure()`: Creates a new figure.
+- `pyplot.figure(n)`: Creates or switches to figure n.
 
 
 ### Example: plot and show a trivial graph
@@ -45,7 +48,10 @@ import matplotlib.pyplot as pyplot
 from math import sin
 from time import time, sleep
 
-# Show plot - only need to do this once!
+# Create a new figure.
+pyplot.figure()
+
+# Show plot - only need to do this once,! (this will display the blank figure)
 pyplot.show()
 
 while True:
@@ -75,6 +81,12 @@ graph.add_spectrum(2)
 graph.add_spectrum(3, period=2)
 ```
 
+Plot several spectra on different graphs:
+```python
+g.plot_spectrum(1)
+g.plot_spectrum(2)
+```
+
 For greater control over the exact presentation or contents of the spectra plots, the raw spectrum data can be acquired using:
 ```python
 g.get_spectrum(spectrum=1)
@@ -101,3 +113,5 @@ By default, only 6 plots can be opened at a time. This is a limitation of the in
 `reg add "\\<ndxinstname>\HKLM\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_WEBSOCKET_MAXCONNECTIONSPERSERVER"  /v iexplore.exe /t REG_DWORD /d 48`
 
 Contact computing group if the limit is set too low on your instrument and they will be able to run the command above (it will require admin privileges).
+
+As of Release Version 5.5, only 6 plots can be opened at a time, and if this limit is exceeded, the oldest plot will be automatically removed.
