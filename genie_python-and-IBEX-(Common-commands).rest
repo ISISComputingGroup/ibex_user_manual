@@ -122,8 +122,8 @@ Blocks
 .. code-block:: python
 
           block_info = g.cget("MY_BLOCK")
-          name = block_info("name")
-          value = block_info("value")
+          name = block_info["name"]
+          value = block_info["value"]
           print "The value of block {0} is {1}".format(name, value)
 
 -    ``cset``: Sets the value for a particular block
