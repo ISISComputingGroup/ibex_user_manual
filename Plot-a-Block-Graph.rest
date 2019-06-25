@@ -22,7 +22,9 @@ You can choose a PV to be plotted from any OPI, in the same way as choosing a bl
 Changing the Appearance of a Graph
 --------------------
 
-Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph. 
+Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.
+
+Right clicking on the y-axis allows you to quickly toggle settings such as auto-scale and grid lines, or to edit the axis name and range.
 
 For more advanced adjustments, you can right-click and select 'Open Properties Panel' which will open a panel to the right of the graph (by default), which give you more granular control of the appearance of your graph or plot.
 
@@ -32,5 +34,5 @@ The log plotter allows you to display multiple traces on the same value axis so 
 
 1. Right click on the graph and select ``Open Properties Panel``
 2. In the ``Traces`` tab, find the column titled ``Axis``
-3. In the row of any trace, select the axis of the trace you want to add it to.
+3. In the row of any trace, click the axis entry, then select the axis of the trace you want to add it to from the drop-down list.
 4. They will now be displayed along the same value axis.
