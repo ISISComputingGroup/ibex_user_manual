@@ -28,6 +28,8 @@ Right clicking on the y-axis allows you to quickly toggle settings such as auto-
 
 For more advanced adjustments, you can right-click and select 'Open Properties Panel' which will open a panel to the right of the graph (by default), which give you more granular control of the appearance of your graph or plot.
 
+The 'When archived data arrives, perform stagger' option under 'Value Axis', when selected, will re-scale and stagger the graph whenever it fetches archived data, for example when adding another block to the graph or increasing the time window.
+
 Plotting Multiple Traces on the Same Axis
 ~~~~~~~~~~~~~~~~~
 The log plotter allows you to display multiple traces on the same value axis so they scale together. The way to do this is as follows:
