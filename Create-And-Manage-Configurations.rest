@@ -171,6 +171,8 @@ To set an IOC macro:
 
    #. Macro Name: the name of the macro (e.g. ``PORT``, ``BAUD`` or ``IPADDRESS``)
    #. Value: the current value of the macro (e.g. ``COM3``, ``9600`` or ``192.83.42.106``)
+   #. Use Default?: whether to not set a value and use the default, if one exists
+   #. Default: the default value if one exists, otherwise (no default) or (default unknown)
    #. Description: a short description of the macro's purpose
    #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is in the form of a "regular expression").
 
@@ -179,6 +181,8 @@ To set an IOC macro:
 #. Edit the ``Value:`` field to change the macro value.  Please note that the value you enter will be validated against the pattern.  If the macro does not conform to the pattern, IBEX will display a warning message.  IBEX will refuse to accept any values that do not conform to the pattern.
 
 #. Click on the ``Set Macro`` button to set the macro value.  The table of macros will be updated with the new value.  You can also use the ``Clear Macro`` button to clear the contents of the ``Value:`` field.
+
+As of version 5.5, values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
 
 If you are not sure about how to correctly configure macro values for a device, please consult with the Experimental Controls team.
 
