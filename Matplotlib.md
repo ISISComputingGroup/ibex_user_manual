@@ -16,7 +16,7 @@ Matplotlib is a highly customizable, general purpose plotting library capable of
 
 # Quick-start
 
-### To import pyplot
+### To import `pyplot`
 
 The most user-friendly interface to matplotlib is called `pyplot`. You can import `pyplot` using the following command:
 
@@ -24,7 +24,7 @@ The most user-friendly interface to matplotlib is called `pyplot`. You can impor
 import matplotlib.pyplot as pyplot
 ```
 
-### Useful pyplot commands:
+### Useful `pyplot` commands:
 - `pyplot.plot()`: Populate a plot with some data.
 - `pyplot.clf()`: Clear the current figure, e.g. discard old data from the plot.
 - `pyplot.show()`: Shows the matplotlib plotting window.
