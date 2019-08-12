@@ -2,10 +2,10 @@ The `INSTETC` [IOC](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/
 
 There are three types of data that a user PV can hold: integer, real and string. The corresponding process variables are:
 - `IN:<instrument>:PARS:USER:I0` for integers
-- `IN:<instrument>:PARS:USER:R0` for reals
+- `IN:<instrument>:PARS:USER:R0` for real types
 - `IN:<instrument>:PARS:USER:S0` for strings
 
-The counter at the end of the PV is an index. By default, instruments are set up to have 5 of each type of user PV (indexes 0-4 inclusive). If you find you need more than 5 of any one datatype, it is configurable.
+The counter at the end of the PV is an index. By default, instruments are set up to have 5 of each type of user PV (indexes 0-4 inclusive). If you find you need more than 5 of any one data type, it is configurable.
 - Go to `C:\Instrument\Settings\config\NDX<instrument>\configurations`
 - Locate a file called `globals.txt` (if it does not exist, create it)
 - Add the following line to the file: `INSTETC_01__NUM_USER_VARS=25`, where `25` should be replaced by the maximum number of user variables you want for any given type.
