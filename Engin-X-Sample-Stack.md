@@ -1,5 +1,5 @@
 # Define a Motor Position on the Engin-X Sample Stack
-- Using a file explorer, go to the following location on ndxenginx: `C:\Labview Modules\Drivers\Galil DMC2280`
+- Using a file explorer, go to the following location on `ndxenginx`: `C:\Labview Modules\Drivers\Galil DMC2280`
 ![](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/enginx_sample_stack_1.png)
 - Double click on the file Galil – System Functions.llb
 ![](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/enginx_sample_stack_2.png)
