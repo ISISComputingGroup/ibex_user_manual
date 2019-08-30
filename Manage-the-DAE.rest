@@ -97,12 +97,28 @@ Spectra Plots
 The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum`` or ``Period`` fields.
 
 
-Diagnostics
------------
+Detector Diagnostics
+--------------------
 
-This page in the GUI intentionally left blank :-) (It is a work in progress)
+This tab shows detector diagnostics, the count rate, max and integral for a range of detectors set above. It is possible to show all spectrum with zero or non-zero counts or all the spectra. This can be useful for identifying broken detector tubes. 
+
+The page only updates when it is open on an instrument, so if you are viewing it remotely you may have no information. This is to reduce the load on the server and DAE.
 
 Vetoes
 ------
 
 The Vetoes tab shows a summary of the vetoes that are in force and their effect for the current run.  This information is read-only.  Vetoes can only be changed before the start of a run, via the `Data Acquisition`_ sub-tab on the `Experiment Setup`_ tab.
+
+Simulated DAE
+-------------
+
+The DAE can be placed into a simulation mode if you want to do an off-line experiment or test something out when not in cycle. In simulation mode the DAE will count frames as normal and has a spectrum count in some spectra but it is not realistic. To turn this on use in genie_python:
+
+    g.set_dae_simulation_mode(True)
+
+to switch it off:
+
+    g.set_dae_simulation_mode(False)
+
+In simulation mode the dashboard should be coloured correctly and `SIMULATION MODE` is shown in large black letters.
+NB All instruments can be placed in simulation mode but some are not set up correctly. If you are having problems please contact us.
