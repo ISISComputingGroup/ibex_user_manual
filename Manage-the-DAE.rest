@@ -123,4 +123,4 @@ to switch it off:
 In simulation mode the dashboard should be coloured correctly and `SIMULATION MODE` is shown in large black letters.
 NB All instruments can be placed in simulation mode but some are not set up correctly. If you are having problems please contact us.
 
-It is also possible to run the DAE and do real counts without the timing signal from ISIS. The setting for this are on [Experimental Setup -> Data Aquisition tab under Timing](Manage-the-DAE#Data Acquisition)
+It is also possible to run the DAE and do real counts without the timing signal from ISIS. The setting for this are on [[Experimental Setup -> Data Aquisition tab under Timing|Manage-the-DAE#Data Acquisition]]
