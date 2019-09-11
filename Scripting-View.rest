@@ -94,4 +94,4 @@ A console can be cleared by clicking on clear console button:
 
 All the commands and outputs from a python console can be saved to a file using the save console view button:
 
-.. image:: scripting_view_console_view_save.png
+.. image:: log_plotter_adjustable_time.png
