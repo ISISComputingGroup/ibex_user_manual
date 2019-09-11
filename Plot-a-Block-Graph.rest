@@ -47,4 +47,4 @@ Adjusting Time Axis on Log Plotter
 The time axis can be manipulated to adjust its start and end time using the ``time`` option. This option could be found under the plotted PVs tab. 
 
 .. image:: Log_Plotter_Adjustable_Time.png
-	:target: Log_Plotter_Adjustable_Time.png
+   :target: Log_Plotter_Adjustable_Time.png
