@@ -40,3 +40,10 @@ The log plotter allows you to display multiple traces on the same value axis so 
 4. They will now be displayed along the same value axis.
 
 As of Release Version 5.5, you can right click on the block you want to add and select the option to add to an existing axis.
+
+
+Adjusting Time Axis on Log Plotter
+-----------------------
+The time axis can be manipulated to adjust its start and end time using the ``time`` option. This option could be found under the plotted PVs tab. 
+
+
