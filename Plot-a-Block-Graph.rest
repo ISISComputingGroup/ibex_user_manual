@@ -44,7 +44,7 @@ As of Release Version 5.5, you can right click on the block you want to add and 
 
 Adjusting Time Axis on Log Plotter
 -----------------------
-The time axis can be manipulated to adjust its start and end time using the ``time`` option. This option could be found under the plotted PVs tab. 
+The time axis can be manipulated to adjust its start and end time using the ``Time`` option. This option could be found under the plotted PVs tab. 
 
 .. image:: log_plotter_adjustable_time.PNG
 
