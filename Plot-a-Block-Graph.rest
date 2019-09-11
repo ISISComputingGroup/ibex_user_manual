@@ -48,6 +48,3 @@ The time axis can be manipulated to adjust its start and end time using the ``ti
 
 .. image:: Log_Plotter_Adjustable_Time.png
 	:target: Log_Plotter_Adjustable_Time.png
-
-
-
