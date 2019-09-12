@@ -97,7 +97,7 @@ The following script will begin and run, then stop it once it reaches a running 
             do_experimental_stuff()
 
         else:
-            print "Could not reach a running state"
+            print ("Could not reach a running state")
 
 
 
@@ -124,7 +124,7 @@ Blocks
           block_info = g.cget("MY_BLOCK")
           name = block_info["name"]
           value = block_info["value"]
-          print "The value of block {0} is {1}".format(name, value)
+          print ("The value of block {0} is {1}".format(name, value))
 
 -    ``cset``: Sets the value for a particular block
 
