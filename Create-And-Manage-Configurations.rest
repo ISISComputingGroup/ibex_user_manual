@@ -159,35 +159,40 @@ You can select multiple blocks to be added (or removed) from a group using the `
 
 **Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[Create and Manage Components]]).
 
+Edit/Add IOC Dialog
+-------------------
+
+The Edit/Add IOC dialogue is opened from the IOC on the New/Edit Configurations/Components dialog. 
+
 IOC Macros
 ~~~~~~~~~~
-*Note: In Ibex versions newer than 3.1.0 the IOC macros are directly set from the new "Edit IOC"-Dialog. See also section* `IOCs Tab`_.
 
 IOC Macros are configurable values that IBEX can supply to the IOC when the IOC is started.  For example, if the IOC is controlling a serial device attached to a COM port, you can use a macro to identify the appropriate port to the IOC.  This is especially useful if the device moves between instruments and may be attached to different COM ports on different instruments.  Another example of an IOC macro might be the name of a calibration file.
 
 To set an IOC macro:
 
-#. Select the IOC Macros tab and choose an IOC from the drop-down menu list of IOCs.  If the IOC has any configurable macro parameters, they will be displayed in the table below.  The table contains four columns:
+#. Select the IOC Macros tab for the IOC they will be displayed in the table.  The columns in the table are:
 
    #. Macro Name: the name of the macro (e.g. ``PORT``, ``BAUD`` or ``IPADDRESS``)
    #. Value: the current value of the macro (e.g. ``COM3``, ``9600`` or ``192.83.42.106``)
-   #. Use Default?: whether to not set a value and use the default, if one exists
-   #. Default: the default value if one exists, otherwise (no default) or (default unknown)
+   #. *v3.7+* Use Default?: whether to not set a value and use the default, if one exists
+   #. *v3.7+* Default: the default value if one exists, otherwise (no default) or (default unknown)
    #. Description: a short description of the macro's purpose
-   #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is in the form of a "regular expression").
+   #. Pattern: macro values need to be defined correctly.  IBEX uses the pattern to validate the macro value. (For those familiar with such things, the pattern is a "regular expression").
 
 #. Choose a macro from the table.  The ``Name:`` field (read-only) is populated with the macro name and the ``Value:`` field is populated with the current value of the macro.
 
 #. Edit the ``Value:`` field to change the macro value.  Please note that the value you enter will be validated against the pattern.  If the macro does not conform to the pattern, IBEX will display a warning message.  IBEX will refuse to accept any values that do not conform to the pattern.
 
-#. Click on the ``Set Macro`` button to set the macro value.  The table of macros will be updated with the new value.  You can also use the ``Clear Macro`` button to clear the contents of the ``Value:`` field.
+#. The table of macros will be updated with the new value.  You can also use the ``Clear Macro`` button to clear the contents of the ``Value:`` field.
 
-As of version 5.5, values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
+As of version 5.7, values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
 
 If you are not sure about how to correctly configure macro values for a device, please consult with the Experimental Controls team.
 
 IOC PV Values
 ~~~~~~~~~~~~~
+
 IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example, you may have a CCR in one configuration but a Furnace in another, both using the same Eurotherm. However, the Eurotherm may require the Furnace.txt sensor file for the furnace and the CCR.txt file for the CCR. In this case the we would add a PV Value of 
 
 *IN:INST:EUROTHRM_01:A01:CAL:SEL* *Furnace.txt*
@@ -202,6 +207,7 @@ to the CCR config. If you are unsure what PVs you need to write to see [[here|FA
 
 IOC PV Sets
 ~~~~~~~~~~~
+
 IOC PV Sets is an experimental feature within IBEX **do not** use this before talking to the IBEX team. It can be used to load in autosaved values from a specific file setup beforehand.
 
 **Note**: The value of any PVs will remain until it is set to something else. So if a configuration does this auto-load then loading another configuration will not set it back to what it was before.
