@@ -85,3 +85,8 @@ The physical installation of IBEX server on an instrument control PC is a modera
 
 If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
 
+
+Uninstalling IBEX
+-----------------
+
+Uninstallation of IBEX is performed by manually deleting the relevant directories as listed in `Installation Layout <https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Installing-IBEX/_edit#installation-layout>`_.
