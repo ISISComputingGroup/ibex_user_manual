@@ -6,7 +6,9 @@ RB Number
 ---------
 .. image:: ExperimentDetails/RBNumber.PNG
 
-If you know the RB number of your experiment you can input it here. Once you press the Set button IBEX will automatically update the experiment team with the appropriate users. If you don't know your RB number clicking the search button will open a dialog box where you can search for your name:
+If you know the RB number of your experiment you can input it here. Once you press the Set button IBEX will automatically update the experiment team with the appropriate users if the run has been previously scheduled. **The RB number for Xpress runs should also be put in here but you will have to add users for it manually** 
+
+If you don't know your RB number (and the experiment has been scheduled) clicking the search button will open a dialog box where you can search for your name:
 
 .. image:: ExperimentDetails/RBNameSearch.PNG
 
