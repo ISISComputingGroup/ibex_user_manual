@@ -86,15 +86,15 @@ Run control
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 | get\_totalcounts    | Gets the total counts for the current run                                               | g.get\_totalcounts()               |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor             | Interrupts execution until certain conditions are met                                   | g.waitfor("NEW\_BLOCK",value=1)    |
+| waitfor             | Waits until certain conditions are met                                   | g.waitfor("NEW\_BLOCK",value=1)    |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_block      | Interrupts execution until block reaches specific value                                 | g.waitfor\_block("NEW\_BLOCK",1)   |
+| waitfor\_block      | Waits until block reaches specific value                                 | g.waitfor\_block("NEW\_BLOCK",1)   |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_time       | Interrupts execution for a specified amount of time                                     | g.waitfor\_time(1)                 |
+| waitfor\_time       | Waits for a specified amount of time                                     | g.waitfor\_time(1)                 |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_frames     | Interrupts execution to wait for number of total good frames to reach parameter value   | g.waitfor\_frames(1000)            |
+| waitfor\_frames     | Waits for a number of total good frames to reach parameter value   | g.waitfor\_frames(1000)            |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_uamps      | Interrupts execution to wait for a specific total charge                                | g.waitfor\_uamps(9.9)              |
+| waitfor\_uamps      | Waits for a specific total charge                                | g.waitfor\_uamps(9.9)              |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 | waitfor\_runstate   | Waits for a particular instrument run state                                             | g.waitfor\_runstate("paused")      |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
