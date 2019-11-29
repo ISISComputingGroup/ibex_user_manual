@@ -109,3 +109,8 @@ Why are some blocks and their PV addresses greyed-out in the "Edit Configuration
 ===============================================================================================
 
 This is because they are part of a `component` and can't be edited from a host configuration.  To make changes to the "master" copy, open the relevant component from the menu `Configuration -> Components -> Edit Component`.  See the note at the bottom of the [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
+
+How do I view which new ibex features have been requested or are being worked on?
+=================================================================================
+
+To view prioritised issues which are currently being worked on, the best way to view it is in the project view on github: https://github.com/ISISComputingGroup/IBEX/projects/1 . For issues which have been requested but not yet prioritised, it's possible to search the github issues view at https://github.com/ISISComputingGroup/IBEX/issues , but this is a rather long list and not very friendly to browse through unless you already know what you're looking for (e.g. a device name).
