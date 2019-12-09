@@ -17,7 +17,7 @@ Now it should suggest some changes, to overwrite your current file with the sugg
 
 
 ### Translating multiple files at once
-You have to manually create a list of python scripts you want to translate and place them in a folder. Replace `path\to\your\recently\created\folder` with the name of the folder where you have bundled all your script.
+You have to manually create a list of python scripts you want to translate and place them in a separate folder. Replace `path\to\your\recently\created\folder` with the name of the folder where you have bundled all your script.
 
 * Open Command Prompt
 * **cd** `C:\Instrument\Apps\Python\Scripts`
