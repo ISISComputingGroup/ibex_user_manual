@@ -20,8 +20,8 @@ Now it should suggest some changes, to overwrite your current file with the sugg
 You have to manually create a list of python scripts you want to translate and place them in a separate folder. Replace `path\to\your\recently\created\folder` with the name of the folder where you have bundled all your script.
 
 * Open Command Prompt
-* **cd** `C:\Instrument\Apps\Python\Scripts`
-* **futurize** `path\to\your\recently\created\folder` **-wno** `name_of_your_output_folder`
+* `cd C:\Instrument\Apps\Python\Scripts`
+* `futurize path\to\your\recently\created\folder -wno name_of_your_output_folder`
 
 `name_of_your_output_folder` = name of the folder where you want to save the output, does not require to be created beforehand.
 
