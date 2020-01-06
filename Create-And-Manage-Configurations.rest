@@ -120,10 +120,14 @@ Visible/Local
 
    The ``Local`` check-box is used when you need to view PVs from another instrument as blocks.  In most circumstances, you will not need to view PVs belonging to another instrument, so you should leave the ``Local`` check-box checked.  Facility PVs are an exception to this rule, but IBEX knows about facility PVs and, in this case, automatically sets the ``Local`` check-box to unchecked.  If you do need to view PVs belonging another instrument, please consult with the Experiment Controls team.
 
- # Run-Control Settings
+Run-Control Settings
    Toggle the ``Enabled`` check-box to enable run-control on this block.  Use the Low Limit and High Limit fields to define the run-control range (i.e. data is only collected when the block lies within the range).
 
-   Run control can also be set on non-numbers as boolean or enum values in IBEX are mapped to underlying numbers. For example, a shutter status of OPEN corresponds to a 1 so setting run control of between 0.5 and 1.5 will put the instrument into waiting when the shutter is not open. In most cases, a 1 will correspond to true and 0 to false, if you are unsure, please consult with the Experiment Controls team.
+   Run control can also be set on non-numbers as boolean or enum values in IBEX are mapped to underlying numbers. For example, a shutter status of OPEN corresponds to a 1 and CLOSED to 0, so setting run control of between 0.5 and 1.5 will put the instrument into waiting when the shutter is not open. In most cases, a 1 will correspond to true and 0 to false, if you are unsure, please consult with the Experiment Controls team.
+
+   When you create a run control for a block it will be used as the default for that configuration, however if you set a run control using the ``Run Control`` menu from the GUIs top bar it will temporarily override this until the configuration has been reloaded. 
+
+   Run controls set on blocks are unique to the configuration. Blocks (even if named the same) in different configurations are unique, therefore if you would like identical run controls on a block for all configurations, you must set the run control for that block in each configuration. 
 
 Logging Settings
    Use the Logging Settings section of the Configure Block dialog to control how the value of the block is logged.
