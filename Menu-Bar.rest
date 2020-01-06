@@ -55,7 +55,7 @@ Run-Control Menu
 View run-control settings
    Selecting the View Run-Control Settings menu item displays a dialog showing you which blocks (if any) are currently under run-control.  You can also assign new run-control settings to blocks and modify or remove existing run-control settings.
 
-   Run-controls that have been created using this menu will override the default set for the block in the configuration. This new run-control is temporary and will persist until the configuration is reloaded. Defaults can be restored using the ``Restore Configuration Values`` for the selected block or ``Restore All Configuration Values``.
+   Run-controls that have been created using this menu will override the default set for the block in the configuration. This new run-control is temporary and will persist until the configuration is reloaded. Defaults can be restored using the ``Restore Configuration Values`` for the selected block or ``Restore All Configuration Values`` buttons.
 
    The [[Blocks and Groups]] page describes how blocks under run-control are shown in the GUI.
 
