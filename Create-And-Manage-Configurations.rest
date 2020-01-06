@@ -127,7 +127,7 @@ Run-Control Settings
 
    When you create a run control for a block it will be used as the default for that configuration. You can temporarily override these values using the `Run-Control menu <https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Menu-Bar#run-control-menu>`_.
 
-   Run controls set on blocks are unique to the configuration. Blocks (even if named the same) in different configurations are unique, therefore if you would like identical run controls on a block for all configurations, you must set the run control for that block in each configuration. 
+   Run controls set on blocks are unique to the configuration. If you would like identical run controls on a block for all configurations, you must set the run control for that block in each individual configuration. 
 
 Logging Settings
    Use the Logging Settings section of the Configure Block dialog to control how the value of the block is logged.
