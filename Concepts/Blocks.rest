@@ -14,7 +14,8 @@ Disconnected
 
 A disconnected status implies that the user interface cannot access the variable which has been requested.
 
-This could be because:
+Examples:
+
 * The relevant IOC is not running - for example, the relevant ioc is not listed in the current configuration
 * The IOC is running on another computer, and there is no network availability
 
