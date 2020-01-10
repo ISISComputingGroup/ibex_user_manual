@@ -9,6 +9,15 @@ Alarms
 
 An IBEX block may be in alarm as well as having a value. Alarms signify potential problems with the data
 
+Disconnected
+-------------
+
+A disconnected status implies that the user interface cannot access the variable which has been requested.
+
+This could be because:
+- The relevant IOC is not running - for example, the relevant ioc is not listed in the current configuration
+- The IOC is running on another computer, and there is no network availability
+
 Invalid alarm
 -------------
 
@@ -28,7 +37,7 @@ A major alarm signifies that there is a serious problem with the data being repo
 Examples:
 
 * A fault status is being reported by the hardware
-* Helium level in a cryostat falling critically low
+* A chopper is not in the correct operation mode
 
 *Note: it is possible to set your own limits on a value going into major alarm - please ask the IBEX team if you would like help setting this up*
 
