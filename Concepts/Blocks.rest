@@ -19,6 +19,8 @@ Examples:
 * The relevant IOC is not running - for example, the relevant ioc is not listed in the current configuration
 * The IOC is running on another computer, and there is no network availability
 
+These alarms appear with either a purple border or a solid purple background in the user interface.
+
 Invalid alarm
 -------------
 
@@ -29,6 +31,8 @@ Examples:
 * The hardware has become unplugged or switched off
 * The hardware replied in an unexpected way
 * A setpoint has not been set (it will remain in an undefined state until set)
+
+These alarms appear with a purple border in the user interface.
 
 Major alarm
 -----------
@@ -42,6 +46,8 @@ Examples:
 
 *Note: it is possible to set your own limits on a value going into major alarm - please ask the IBEX team if you would like help setting this up*
 
+These alarms appear with a red border in the user interface.
+
 Minor alarm
 -----------
 
@@ -53,3 +59,5 @@ Examples:
 * Helium level in a cryostat falling low
 
 *Note: it is possible to set your own limits on a value going into minor alarm - please ask the IBEX team if you would like help setting this up*
+
+These alarms appear with an orange border in the user interface.
