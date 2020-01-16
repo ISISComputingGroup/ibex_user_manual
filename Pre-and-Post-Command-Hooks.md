@@ -13,7 +13,7 @@ This is done passing functions to genie python setter commands. There are setter
 - `set_resume_precmd(func)`
 - `set_resume_postcmd(func)`
 
-You only ever need to call the `set_<RUN_ACTION>_<>cmd(func)` once and func will then always be called for RUN_ACTIONs.
+You only ever need to call the `set_<RUN_ACTION>_<>cmd(func)` once and func will then always be called for subsequent RUN_ACTIONs.
 
 An example of usage would be:
 
