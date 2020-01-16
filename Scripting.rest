@@ -8,6 +8,7 @@ beginner and novice user. For a more in-depth discussion, see our [[genie_python
 - [[Script Server]]
 - [[Plotting Using Matplotlib|Matplotlib]]
 - [[genie_python Commands]]
+- [[Pre and Post Command Hooks]]
 - [[Converting Open GENIE to genie_python]]
 - [[Creating and running scripts]]
 - [[Tips and Examples]]
