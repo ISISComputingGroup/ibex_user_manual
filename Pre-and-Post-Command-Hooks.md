@@ -13,12 +13,16 @@ This is done passing functions to genie python setter commands. There are setter
 - `set_resume_precmd(func)`
 - `set_resume_postcmd(func)`
 
+You only ever need to call the `set_<RUN_ACTION>_<>cmd(func)` once and func will then always be called for RUN_ACTIONs.
+
 An example of usage would be:
 
 ```python
 >>> def before_begin_func(**pars):
-  >>> cset(block1=100, wait=True) // Wait for block 1 to get to 100
+...    print("About to begin!!")
 >>>
->>> set_begin_pre_cmd(before_begin_func)
+>>> set_begin_pre_cmd(before_begin_func) # Note the lack of brackets on before_begin_func here
 >>> begin()
+About to begin!!
+** Beginning Run...
 ```
