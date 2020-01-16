@@ -55,10 +55,6 @@ Starting and stopping a run
 | resume    | Resumes the current run after it has been paused   | g.resume()   |
 +-----------+----------------------------------------------------+--------------+
 
-Pre and post command hooks
---------------------------
-It is possible to hook in functions that run pre and post the execution of the starting and stopping run commands above (begin, end, abort, pause, resume). This is done passing functions to genie python setter commands. For each of the start and stop run commands there are two setters of the form :code:`set_<command>_precmd(func)` and :code:`set_<command>_postcmd(func)`. For example :code:`set_begin_precmd(func)` and :code:`set_begin_postcmd(func)`. Where :code:`func` is a loaded function.
-
 Updating blocks and PVs
 -----------------------
 
