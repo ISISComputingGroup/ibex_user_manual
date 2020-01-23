@@ -1,0 +1,45 @@
+If you are writing action definitions (configs) please check out [[Writing Action Definitions (Configs)]].
+
+If you are using predefined action definitions (configs) to generate scripts please check out [[Using the Script Generator]]
+
+If you are having issues see [[Troubleshooting the Script Generator]]
+
+If you would like the script generator to load configs or generate scripts to different areas please check out [[Script Generator Customisation]]
+
+# Writing Action Definitions (Configs)
+
+# Using the script generator
+
+# Troubleshooting
+
+## Warning: Could not load any configs from 
+
+- The configs have not been loaded into the correct place in the filesystem
+   - To fix simply move them into the location that is given in the warning message
+- The place IBEX is looking for configs in the fil
+   - See "Want your configs to be loaded from ...?" below
+- It is possible the configs have errors in them
+   - The script generator will display a table detailing these errors if this is the case
+   - Please review your configs keeping in mind the errors detailed in the table
+- If it is none of these there is a chance it is because part of the script generator has crashed
+   - Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
+
+## Some of my configs have not loaded
+
+- The config may be placed in the wrong place 
+   - Please place your config on the filesystem where your configs are loaded from
+- One of the locations where configs are loaded from may be incorrect 
+   - See "Want your configs to be loaded from ...?" below
+- Some of the configs may have errors in the and so failed to load
+   - These errors will be displayed in a table in the script generator graphical user interface
+   - Please fix the script or ask the maintainer of the script to fix it
+
+## I get a blank screen where the script generator should be
+
+Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
+
+# Customisation
+
+## Want your configs to be loaded from or your scripts to be generated to a different place on the file system?
+
+Let the IBEX team know at ISISExperimentControls@stfc.ac.uk and we can set that up for you.
