@@ -1,6 +1,6 @@
 Here we will talk you through what you need to know to use the script generator.
 
-![ScriptGeneratorUI](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UI.JPG)
+![ScriptGenerator UI](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UI.JPG)
 
 1. This table may not appear in your script generator. However, if it does this means there have been errors loading some of your configs. The error message may tell you there is an error in one of your configs (action definitions) or there has been an error loading from a specific location.
 2. From the drop-down here you may select a config (action definition) to use to generate a script.
@@ -13,4 +13,4 @@ Here we will talk you through what you need to know to use the script generator.
 9. Create a new action (row in the script generator table) with the "Add Action" button.
 10. Select an action in the table by clicking on the row and click the "Delete Action" button to delete the row.
 
-![ScriptGeneratorUISuccess](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UIScriptGenGenerated.JPG)
+![ScriptGenerator UI Success](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UIScriptGenGenerated.JPG)
