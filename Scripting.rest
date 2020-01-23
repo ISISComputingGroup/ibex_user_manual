@@ -14,6 +14,7 @@ beginner and novice user. For a more in-depth discussion, see our [[genie_python
 - [[Tips and Examples]]
 - [[The Scripting Console]]
 - [[Using Futurize]]
+- [[Script Generator]]
 
 There is some specific [[scripting advice for the Muon Front End|Guidance on Writing Scripts for the Muon Front End]]
 
