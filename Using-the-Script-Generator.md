@@ -12,5 +12,7 @@ Here we will talk you through what you need to know to use the script generator.
 8. The script generator table is to contain the experimental parameters that will be used by the generated script.
 9. Create a new action (row in the script generator table) with the "Add Action" button.
 10. Select an action in the table by clicking on the row and click the "Delete Action" button to delete the row.
+11. The button to generate a script is greyed out when the parameters aren't valid.
+12. Select an action in the table by clicking on the row and click the "Duplicate Action" button to duplicate that row into the next row down.
 
 ![ScriptGenerator UI Success](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UIScriptGenGenerated.JPG)
