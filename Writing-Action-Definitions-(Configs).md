@@ -51,3 +51,12 @@ To say we cannot cast the argument we raise a ValueError which tells cast_parame
 
 # Using python, genie and inst
 
+The script generator uses the python that we bundle with it which comes preinstalled with everything you would expect on an instrument (except int) so you can easily write genie commands into your config etc. 
+
+However, it does not come with installed instrument scripts that you obtain via inst. Due to this, if you try to import inst outside of your `run` method your config will produce errors for your users and fail to load when not on the instrument itself. Our suggestion is to use import_lib's method import_module to import inst inside the run function and use it as normal in there: 
+
+```python
+def run(...):
+   inst = import_module("inst")
+   inst.instrument_script_method()
+```
