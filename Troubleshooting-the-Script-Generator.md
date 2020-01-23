@@ -14,7 +14,7 @@ def run(...):
 
 - The configs have not been loaded into the correct place in the filesystem
    - To fix simply move them into the location that is given in the warning message
-- The place IBEX is looking for configs in the fil
+- The place IBEX is looking for configs in the file
    - See "Want your configs to be loaded from ...?" below
 - It is possible the configs have errors in them
    - The script generator will display a table detailing these errors if this is the case
