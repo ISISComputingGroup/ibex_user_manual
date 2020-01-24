@@ -46,10 +46,10 @@ def magnet_device_type(magnet_device):
         return magnet_device
     elif magnet_device == "N/A":
         return magnet_device
-    raise ValueError
+    raise ValueError("Magnet device must be one of {} or N/A".format(magnet_devices))
 ```
 
-To say we cannot cast the argument we raise a ValueError which tells cast_parameters_to that we have failed to cast the argument (this will be propagated back up to the user).
+To say we cannot cast the argument we raise a ValueError which tells cast_parameters_to that we have failed to cast the argument. The string you type into the ValueError (e.g. "Magnet device must be one of {} or N/A".format(magnet_devices))  will be propagated back up to the user.
 
 # Using python, genie and inst
 
