@@ -1,3 +1,5 @@
+These must be python 2/3 compatible see https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Using-Futurize
+
 # ActionDefinition
 
 A config is defined by creating a class implementing an ActionDefinition (a python interface) `class DoRun(ActionDefinition):`. ActionDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ActionDefinition`. 
