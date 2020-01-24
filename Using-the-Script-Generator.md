@@ -1,5 +1,7 @@
 Here we will talk you through what you need to know to use the script generator.
 
+# A tour of the UI
+
 ![ScriptGenerator UI](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UI.JPG)
 
 1. This table may not appear in your script generator. However, if it does this means there have been errors loading some of your configs. The error message may tell you there is an error in one of your configs (action definitions) or there has been an error loading from a specific location.
@@ -22,3 +24,7 @@ Here we will talk you through what you need to know to use the script generator.
 3. Click "Open File" to open the file in notepad++ (alternatively copy and paste the file location to open it in your preferred editor).
 4. The file message box which notifies you that a script has been generated after clicking the "Generate Script" button. Here you can copy and paste the file location or click open file to open in notepad++.
 5. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
+
+# Loading scripts into the scripting window
+
+Say we have generated a script named "my_script.py". We can open the scripting perspective in the ibex gui and type `g.load_script("my_script.py")`. This will then load a function called `runscript()` into the console which you can call by simply typing `runscript()` and pressing enter.
