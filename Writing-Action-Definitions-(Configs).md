@@ -4,14 +4,24 @@ These must be python 2/3 compatible see https://github.com/ISISComputingGroup/ib
 
 A config is defined by creating a class implementing an ActionDefinition (a python interface) `class DoRun(ActionDefinition):`. ActionDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ActionDefinition`. 
 
-To implement an ActionDefinition this DoRun class must have methods `run`, `parameters_valid` and `get_help`, for example, `def run(self, temp="1", field="1"):`, `def parameters_valid(self, temp="1", field="1"):` and:
+To implement an ActionDefinition this DoRun class must have methods `run`, `parameters_valid` and `get_help`. With `run` and `parameters_valid` signatures may look like this: `def run(self, temp="1", field="1"):`, `def parameters_valid(self, temp="1", field="1"):`.
+
+Both `run` and `parameters_valid` methods must take the same arguments (in this case `temp="1", field="1"`) and must have the `self` argument first. All the arguments except self must have a default value in our example "1" is the defaults. All the arguments taken except for `self` are of type string, if you want to change this see "Casting Parameters" below.
+
+When defining a `get_help` method we are returning a string that we want to be displayed to the users in the script generator UI, for example:
 
 ```python
 def get_help(self):
    return "My help string"
 ``` 
 
-Both `run` and `parameters_valid` methods must take the same arguments (in this case `temp="1", field="1"`) and must have the `self` argument first. All the arguments except self must have a default value in our example "1" is the defaults. All the arguments taken except for `self` are of type string, if you want to change this see "Casting Parameters" below.
+If we do not want to display a string to the user we return None:
+
+
+```python
+def get_help(self):
+   return None
+``` 
 
 
 # Casting Parameters
