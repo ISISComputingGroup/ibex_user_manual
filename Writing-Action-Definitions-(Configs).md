@@ -4,9 +4,14 @@ These must be python 2/3 compatible see https://github.com/ISISComputingGroup/ib
 
 A config is defined by creating a class implementing an ActionDefinition (a python interface) `class DoRun(ActionDefinition):`. ActionDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ActionDefinition`. 
 
-To implement an ActionDefinition this DoRun class must have methods `run` and `parameters_valid`, for example, `def run(self, temp="1", field="1"):` and  `def parameters_valid(self, temp="1", field="1")`. 
+To implement an ActionDefinition this DoRun class must have methods `run`, `parameters_valid` and `get_help`, for example, `def run(self, temp="1", field="1"):`, `def parameters_valid(self, temp="1", field="1"):` and:
 
-Both these methods must take the same arguments (in this case `temp="1", field="1"`) and must have the `self` argument first. All the arguments except self must have a default value in our example "1" is the defaults. All the arguments taken except for `self` are of type string, if you want to change this see "Casting Parameters" below.
+```python
+def get_help(self):
+   return "My help string"
+``` 
+
+Both `run` and `parameters_valid` methods must take the same arguments (in this case `temp="1", field="1"`) and must have the `self` argument first. All the arguments except self must have a default value in our example "1" is the defaults. All the arguments taken except for `self` are of type string, if you want to change this see "Casting Parameters" below.
 
 
 # Casting Parameters
