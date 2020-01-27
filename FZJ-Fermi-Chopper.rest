@@ -34,7 +34,7 @@ MAPS       maps                   18.0          *The controller on MAPS does not
 
 Diagnostic logs
 -----------------
-The logs for the Fermi chopper are kept in ``C:\\Instrument\\var\\logs\\ioc\\FERMCHOP_01-<date>``. These logs contain the following information:
+The logs for the Fermi chopper are kept in ``C:\Instrument\var\logs\ioc\FERMCHOP_01-<date>``. These logs contain the following information:
 
 - All commands that are used to start the driver. Whenever the driver first starts, there will be a large block of ``epicsEnvSet`` commands. The startup process is finished when an ``epics>`` prompt comes up in the log (there will be lots of commands in between - these can be ignored)
 - Communication conditions and problems, for example unexpected replies from the chopper. These messages may include parts of the raw (hexadecimal) response from the chopper.
