@@ -16,15 +16,12 @@ Settings
 
 Depending on which specific Fermi chopper system is being used, there are slight variations in the communications protocol of the choppers. The expected settings are:
 
-+----------+--------------+-------------+------------------+
-| Beamline | `INST` macro | `MHZ` macro | Drive parameters |
-+==========+==============+=============+==================+
-| MERLIN   | merlin       | 50.4        | "MERLIN small parameters" or "MERLIN large parameters" (*) |
-+----------+--------------+-------------+------------------+
-| MARI     | merlin (**)  | 50.4        | "MERLIN large parameters" (***) |
-+----------+--------------+-------------+------------------+
-| MAPS     | maps         | 18.0        | _The controller on MAPS does not support changing parameters_ |
-+----------+--------------+-------------+------------------+
+========== ============== ============= ==================
+Beamline   `INST` macro   `MHZ` macro   Drive parameters
+---------- -------------- ------------- ------------------
+MERLIN     merlin         50.4         "MERLIN small parameters" or "MERLIN large parameters" (*)
+MARI       merlin (**)    50.4         "MERLIN large parameters" (***)
+MAPS       maps           18.0         *The controller on MAPS does not support changing parameters.*
 
 (*) I believe this choice depends on which physical rotor is installed into the chopper
 
