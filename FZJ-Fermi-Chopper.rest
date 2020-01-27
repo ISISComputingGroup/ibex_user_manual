@@ -105,16 +105,20 @@ There are a variety of hardware & software conditions that can cause the chopper
 Firstly, check in the "advanced" tab of the OPI - any of the following will cause the device to spin down:
 
 - Interlock open (the scientists know how to reset this)
+
   * Note, the interlock only has to report "open" for a moment for the chopper to spin down. If the vacuum gauge is faulty, it may trip the interlock momentarily, which will cause the chopper to spin down but when subsequently looking at the OPI the interlock will appear OK. If this is the case then contact the chopper group as this is a hardware fault and is not something we can compensate for in software.
 - Electronics or motor temperatures too hot (not sure where the firmware limit is - may be 50C according to manual but this is not clear) 
 - A few other (less common) conditions indicated by red interlock LEDs on the OPI
 
 **Software conditions**
 There are (equipment) safety checks in the IOC which will cause the IOC to request a spin down. Hitting any of these conditions will cause a message to be logged containing the words `this will cause the chopper to spin down` - this can be searched for in the log file if it is believed that the IBEX driver has caused the chopper to spin down.
+
 - If the electronics temperatures or motor temperatures go above 45 Celsius. 
+
   * **Electronics overheats occur somewhat frequently on MERLIN, especially during hot weather.**
   * Need to wait for create to cool sufficiently and then spin the chopper back up as normal.
   * Instrument scientists aware of this and know how to reset it.
+
 - If the auto zero voltages are out of range (absolute value higher than 3 volts)
 - If the actual chopper speed is above 606Hz
 - If the magnetic bearing is off while the chopper is at speed
@@ -124,6 +128,7 @@ Crate does not respond / Crate responds infrequently
 
 **VISA vs Asyn serial [Specific to Maps]**
 An issue was seen when first commissioning the MAPS Fermi under EPICS. Symptoms were very odd:
+
 - Cannot communicate using VISA nor Asyn under EPICS
 - If chopper crate and instrument PC are power cycled, may need to run labview driver once before epics can talk. We are still not sure why this is.
 - If EPICS+Visa is subsequently run, it will upset the comms and will need to run the labview to "clear" the error
