@@ -1,3 +1,4 @@
+
 FZJ Fermi chopper (used on MERLIN, MAPS, MARI)
 ----------------------------------------------
 
@@ -17,7 +18,7 @@ Settings
 Depending on which specific Fermi chopper system is being used, there are slight variations in the communications protocol of the choppers. The expected settings are:
 
 ========== ===================== ============= ================================================================
-Beamline   `INST` macro          `MHZ` macro   Drive parameters
+Beamline   ``INST`` macro        ``MHZ`` macro Drive parameters
 ========== ===================== ============= ================================================================
 MERLIN     merlin                 50.4          "MERLIN small parameters" or "MERLIN large parameters" (see Note 1)
 MARI       merlin (see Note 2)    50.4          "MERLIN large parameters" (See Note 3)
@@ -33,13 +34,13 @@ MAPS       maps                   18.0          *The controller on MAPS does not
 
 Diagnostic logs
 -----------------
-The logs for the Fermi chopper are kept in `C:\\Instrument\\var\\logs\\ioc\\FERMCHOP_01-<date>`. These logs contain the following information:
+The logs for the Fermi chopper are kept in ``C:\\Instrument\\var\\logs\\ioc\\FERMCHOP_01-<date>``. These logs contain the following information:
 
-- All commands that are used to start the driver. Whenever the driver first starts, there will be a large block of `epicsEnvSet` commands. The startup process is finished when an `epics>` prompt comes up in the log (there will be lots of commands in between - these can be ignored)
+- All commands that are used to start the driver. Whenever the driver first starts, there will be a large block of ``epicsEnvSet`` commands. The startup process is finished when an ``epics>`` prompt comes up in the log (there will be lots of commands in between - these can be ignored)
 - Communication conditions and problems, for example unexpected replies from the chopper. These messages may include parts of the raw (hexadecimal) response from the chopper.
-- Information about the chopper state (e.g. interlock statuses, temperatures out of range) **when they transition between valid/invalid states**. These messages are prefixed with `Chopper status: `
-- Information about actions that the driver is taking to ensure the settings stay correct. There is a state machine that detects when the chopper forgets it's settings and resends the correct settings. These messages are prefixed with `Keep SP and RBV in sync`.
-- Messages regarding whether certain commands were accepted by the driver. These messages are prefixed with `commandCheck`. The driver will reject commands (and print a message in the log) if:
+- Information about the chopper state (e.g. interlock statuses, temperatures out of range) **when they transition between valid/invalid states**. These messages are prefixed with ``Chopper status: ``
+- Information about actions that the driver is taking to ensure the settings stay correct. There is a state machine that detects when the chopper forgets it's settings and resends the correct settings. These messages are prefixed with ``Keep SP and RBV in sync``.
+- Messages regarding whether certain commands were accepted by the driver. These messages are prefixed with ``commandCheck``. The driver will reject commands (and print a message in the log) if:
 
   * The user attempts to spin up the chopper with the bearings off
   * The user attempts to resend a "spin-up" command while the chopper is set and spinning at 600Hz. This is a mitigation for the 600Hz issue experienced on MERLIN, details further down this page.
@@ -72,7 +73,7 @@ Occasionally the device will get confused and reset its gate width to a semi-ran
 
 Sometimes the chopper crate simply ignores a setpoint which was sent. Unfortunately the crate does not respond to a set command so we can't tell if there was a comms error. This problem is mitigated in the driver by having state machines which keep the setpoints and their readbacks in sync for gate width, phase delay and chopper speed.
 
-Additionally, the chopper speed is now put under run control as part of MERLIN's `set_ei` script to make it more obvious if the chopper speed isn't in the expected range.
+Additionally, the chopper speed is now put under run control as part of MERLIN's ``set_ei`` script to make it more obvious if the chopper speed isn't in the expected range.
 
 **600Hz issue [Specific to MERLIN]**
 
@@ -94,7 +95,7 @@ The phase delay of the chopper is a delay between the synchrotron pulse and the 
 
 Occasionally the chopper will get into a state where it can't phase correctly. The symptom is that the phase readback fluctuates wildly and never settles on the phase setpoint. We are unsure of the root cause. Sending the chopper to a different speed setpoint and then back to the original setpoint seems to let the chopper phase correctly.
 
-When plotting the phase using the instrument archive, you may see a "beating" pattern like below. Here the amplitude of the oscillation is ~30us, a typical phase window would be ~10us so this will result in the DAE vetoing a percentage of frames based on the chopper being "out of phase" at that time. As noted in issue #4764 the `set_ei` method on MERLIN will attempt to correct for this.
+When plotting the phase using the instrument archive, you may see a "beating" pattern like below. Here the amplitude of the oscillation is ~30us, a typical phase window would be ~10us so this will result in the DAE vetoing a percentage of frames based on the chopper being "out of phase" at that time. As noted in issue #4764 the ``set_ei`` method on MERLIN will attempt to correct for this.
 
 Drive turns off unexpectedly
 ----------------------------
@@ -111,7 +112,7 @@ Firstly, check in the "advanced" tab of the OPI - any of the following will caus
 - A few other (less common) conditions indicated by red interlock LEDs on the OPI
 
 **Software conditions**
-There are (equipment) safety checks in the IOC which will cause the IOC to request a spin down. Hitting any of these conditions will cause a message to be logged containing the words `this will cause the chopper to spin down` - this can be searched for in the log file if it is believed that the IBEX driver has caused the chopper to spin down.
+There are (equipment) safety checks in the IOC which will cause the IOC to request a spin down. Hitting any of these conditions will cause a message to be logged containing the words ``this will cause the chopper to spin down`` - this can be searched for in the log file if it is believed that the IBEX driver has caused the chopper to spin down.
 
 - If the electronics temperatures or motor temperatures go above 45 Celsius. 
 
@@ -134,7 +135,7 @@ An issue was seen when first commissioning the MAPS Fermi under EPICS. Symptoms 
 - If EPICS+Visa is subsequently run, it will upset the comms and will need to run the labview to "clear" the error
 
 **Shortened status command [Specific to Maps]**
-On MAPS, the crate's communications layer can fail, causing the device to ignore the standard polling command (`#0000000$`). To recover from this state, send the shortened command `0$` repeatedly until you get a response. The IOC should automatically do this whenever it detects no response to the standard command.
+On MAPS, the crate's communications layer can fail, causing the device to ignore the standard polling command (``#0000000$``). To recover from this state, send the shortened command ``0$`` repeatedly until you get a response. The IOC should automatically do this whenever it detects no response to the standard command.
 
 Chopper refuses to spin up
 ----------------------------
@@ -158,4 +159,4 @@ Chopper run control settings incorrect
 
 **Configurations have been reloaded**
 
-The `set_ei` script (at least on MERLIN) puts the chopper under run control. If a config is reloaded then these settings will be lost. To recover, simply re-run `set_ei`.
+The ``set_ei`` script (at least on MERLIN) puts the chopper under run control. If a config is reloaded then these settings will be lost. To recover, simply re-run ``set_ei``.
