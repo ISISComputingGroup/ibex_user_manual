@@ -1,15 +1,12 @@
-
-
 FZJ Fermi chopper (used on MERLIN, MAPS, MARI)
 ----------------------------------------------
 
 The FZJ Fermi Chopper has a relatively complex IOC due to its somewhat idiosyncratic communications behaviour. The following things are non-standard:
-
 - Custom checksum algorithm in stream device. This is specific to this style of Fermi chopper.
-- `aSub` record to parse a response string from the hardware.
-- `aSub` record to decide how to send the speed setpoint to the device
-- `aSub` record to decide whether a given command is allowed to be sent
-- `SNL` state machine to ensure that setpoints and their readbacks stay in sync (for both gate width and phase delay)
+- ``aSub`` record to parse a response string from the hardware.
+- ``aSub`` record to decide how to send the speed setpoint to the device
+- ``aSub`` record to decide whether a given command is allowed to be sent
+- ``SNL`` state machine to ensure that setpoints and their readbacks stay in sync (for both gate width and phase delay)
 - There is logic in the DB records to prevent sending a speed setpoint that is equal to the current speed setpoint readback.
 - There is (equipment) safety logic in the IOC. For more details see below.
 
@@ -36,7 +33,8 @@ Depending on which specific Fermi chopper system is being used, there are slight
 
 Diagnostic logs
 -----------------
-The logs for the Fermi chopper are kept in `C:\Instrument\var\logs\ioc\FERMCHOP_01-<date>`. These logs contain the following information:
+The logs for the Fermi chopper are kept in `C:\\Instrument\\var\\logs\\ioc\\FERMCHOP_01-<date>`. These logs contain the following information:
+
 - All commands that are used to start the driver. Whenever the driver first starts, there will be a large block of `epicsEnvSet` commands. The startup process is finished when an `epics>` prompt comes up in the log (there will be lots of commands in between - these can be ignored)
 - Communication conditions and problems, for example unexpected replies from the chopper. These messages may include parts of the raw (hexadecimal) response from the chopper.
 - Information about the chopper state (e.g. interlock statuses, temperatures out of range) **when they transition between valid/invalid states**. These messages are prefixed with `Chopper status: `
