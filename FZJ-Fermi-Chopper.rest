@@ -2,6 +2,7 @@ FZJ Fermi chopper (used on MERLIN, MAPS, MARI)
 ----------------------------------------------
 
 The FZJ Fermi Chopper has a relatively complex IOC due to its somewhat idiosyncratic communications behaviour. The following things are non-standard:
+
 - Custom checksum algorithm in stream device. This is specific to this style of Fermi chopper.
 - ``aSub`` record to parse a response string from the hardware.
 - ``aSub`` record to decide how to send the speed setpoint to the device
