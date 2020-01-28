@@ -6,8 +6,8 @@ Therefore we cannot use inst outside of the `run` function. Our suggestion is to
 
 ```python
 def run(...):
-   import inst
-   inst.instrument_script_method()
+    import inst
+    inst.instrument_script_method()
 ```
 
 ## Warning: Could not load any configs from 
