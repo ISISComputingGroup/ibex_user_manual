@@ -54,11 +54,14 @@ def float_or_keep(temp):
 Say we have a set of magnets that we are wanting the user to select in an argument (or no magnet "N/A") we can define the below caster:
 
 ```python 
-magnet_devices = ["Active ZF", "Danfysik", "T20 Coils"]
+magnet_devices = {"ZF": "Active ZF", "LF": "Danfysik", "TF": "T20 Coils"}
 
+# Convert to magnet device type if possible, if not they have input an incorrect magnet_device
+# Raise a ValueError and this will be caught and displayed to the user that the conversion is incorrect 
 def magnet_device_type(magnet_device):
-    if magnet_device in magnet_devices:
-        return magnet_device
+    magnet_device = magnet_device.upper()
+    if magnet_device in magnet_devices.keys():
+        return magnet_devices[magnet_device]
     elif magnet_device == "N/A":
         return magnet_device
     raise ValueError("Magnet device must be one of {} or N/A".format(magnet_devices))
