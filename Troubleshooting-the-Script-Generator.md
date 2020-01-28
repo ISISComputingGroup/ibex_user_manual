@@ -2,11 +2,11 @@
 
 When using the script generator not on an instrument the instrument scripts will not be available. This means we cannot import inst.
 
-Therefore we cannot use inst outside of the `run` function. Our suggestion is to use import_lib's method import_module to import inst inside the run function and use it as normal in there: 
+Therefore we cannot use inst outside of the `run` function. Our suggestion is to `import inst` inside the run function and use it as normal in there: 
 
 ```python
 def run(...):
-   inst = import_module("inst")
+   import inst
    inst.instrument_script_method()
 ```
 
