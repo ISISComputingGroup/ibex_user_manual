@@ -77,6 +77,6 @@ However, it does not come with installed instrument scripts that you obtain via 
 
 ```python
 def run(...):
-   inst = import_module("inst")
+   import inst
    inst.instrument_script_method()
 ```
