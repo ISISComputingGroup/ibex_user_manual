@@ -18,12 +18,14 @@ Here we will talk you through what you need to know to use the script generator.
 12. Select an action in the table by clicking on the row and click the "Duplicate Action" button to duplicate that row into the next row down.
 
 ![ScriptGenerator UI Success](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UIScriptGenGenerated.JPG)
-
 1. When all parameters are valid the get validity errors button is greyed out.
 2. All parameters are valid when there are ticks in the validity columns and no rows are red.
-3. Click "Open File" to open the file in notepad++ (alternatively copy and paste the file location to open it in your preferred editor).
-4. The file message box which notifies you that a script has been generated after clicking the "Generate Script" button. Here you can copy and paste the file location or click open file to open in notepad++.
-5. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
+3. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
+4. - When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
+    - They are provided with a create default filename which uses the config and a timestamp.
+    - Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite).
+    - Opens the file in notepad++ if notepad++ can be found.
+
 
 # Loading scripts into the scripting window
 
