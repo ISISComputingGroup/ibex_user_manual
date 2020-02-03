@@ -48,9 +48,9 @@ To start IBEX Server, proceed as follows:
     cd c:\Instrument\Apps\EPICS
     start_ibex_server
     
-#. Allow the ``start_ibex_server`` script a few moments to complete.
+#. Allow the ``start_ibex_server`` script a few minutes to complete.
 
-If you run this script while the server is already running, it will restart the server.
+If you run this script while the server is already running, it will restart the server. If the server was not already running, you may see some errors while the script tries to kill any currently running server - this is normal and can safely be ignored.
 
 You should wait until the ``start_ibex_server`` script has completed before starting IBEX Client.
 
@@ -67,4 +67,4 @@ To stop IBEX Server, proceed as follows:
     cd c:\Instrument\Apps\EPICS
     stop_ibex_server
     
-#. Allow the ``stop_ibex_server`` script a few moments to complete.
+#. Allow the ``stop_ibex_server`` script a few minutes to complete.
