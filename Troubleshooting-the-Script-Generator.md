@@ -35,3 +35,7 @@ def run(...):
 ## I get a blank screen where the script generator should be
 
 Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
+
+## My script generator never finished loading
+
+Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
