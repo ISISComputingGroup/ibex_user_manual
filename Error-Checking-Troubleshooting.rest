@@ -1,5 +1,5 @@
 Scripts are now “linted” on load, which means they are checked for validity against a variety of conditions. This means that more mistakes in the code can be caught before the script is run. The script is linted on load and if there are issues the output from `g.load_script` will look something like:
-
+::
     W:  2: Found indentation with tabs instead of spaces (mixed-indentation)
     E:  4: Unable to import 'my_file_in_inst' (import-error)
 
@@ -8,8 +8,8 @@ Where the initial *W:* indicates a warning or *E:* indicates an error and the nu
 If loading a script produces warnings only, it will still be loaded successfully and can be used thereafter, whereas any errors will prevent a script from being loaded altogether.
 
 We do provide the option to disable linting by setting the check_script argument to false, i.e.:
-
-      g.load_script(“some_script.py”, check_script=False)
+::
+    g.load_script(“some_script.py”, check_script=False)
 
 However, doing this is at your own discretion and with the understanding that you are exposing yourself to issues, either immediately or further down the line. We recommend fixing issues in scripts before running it.
 
