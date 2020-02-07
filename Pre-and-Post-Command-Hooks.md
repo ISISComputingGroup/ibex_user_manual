@@ -3,6 +3,8 @@ It is possible to hook in functions that run pre and post the execution of some 
 This is done passing functions to genie python setter commands. There are setter commands for begin, end, abort, pause and resume (func is the function you wish to run before or after the command):
 
 - `set_begin_precmd(func)`
+    - This has a special case where the function returns None to say that after the function we should execute begin.
+    - If anything else is returned the run does not begin but a string representation of whatever is returned will be printed to the user. A possible use of this is returning a string saying "Run already in progress, continuing run".
 - `set_begin_postcmd(func)`
 - `set_end_precmd(func)`
 - `set_end_postcmd(func)`
