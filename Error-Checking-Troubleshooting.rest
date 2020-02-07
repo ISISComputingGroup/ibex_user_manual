@@ -29,7 +29,7 @@ This may work at the command line but does not work with the checker/linter. A b
 ::
     from inst.file_in_inst import my_function
 
-The checker does not know of this spacial case of allowing `inst` modules on the command line unprefixed.
+The checker does not know of this special case of allowing `inst` modules on the command line unprefixed.
 
 Warnings
 --------
