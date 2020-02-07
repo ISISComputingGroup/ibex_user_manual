@@ -24,11 +24,12 @@ This happens when the script contains something like
 :: 
     from file_in_inst import my_function
 
-This may work at the command line but a better way of writing this is
+where *file_in_inst* is a file in your *NDX/Python/inst* directory, such as *inst_routines* 
+This may work at the command line but does not work with the checker/linter. A better way of writing this is
 ::
     from inst.file_in_inst import my_function
 
-The checker does not know of this spacial case of allowing `inst` modules on the command line.
+The checker does not know of this spacial case of allowing `inst` modules on the command line unprefixed.
 
 Warnings
 --------
