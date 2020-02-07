@@ -15,9 +15,11 @@ However, doing this is at your own discretion and with the understanding that yo
 
 We have found that there are some common warnings and errors which we have listed below with suggestions of what might be wrong. If you find something that is not included let us know and we can add it to this page to help others.
 
-## Errors
+Errors
+======
 
-### Unable to import 'file_in_inst' (import-error)
+Unable to import 'file_in_inst' (import-error)
+----------------------------------------------
 
 This happens when the script contains something like
 :: 
@@ -29,9 +31,11 @@ This may work at the command line but a better way of writing this is
 
 The checker does not know of this spacial case of allowing `inst` modules on the command line.
 
-## Warnings
+Warnings
+========
 
-## Found indentation with tabs instead of spaces (mixed-indentation)
+Found indentation with tabs instead of spaces (mixed-indentation)
+-----------------------------------------------------------------
 
 Here the script file you are loading contains both spaces and tabs. This can upset the python interpreter although this is usually caught on import; we recommend using spaces for indent. 
 
