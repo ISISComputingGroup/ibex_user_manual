@@ -19,7 +19,7 @@ Errors
 ======
 
 Unable to import 'file_in_inst' (import-error)
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This happens when the script contains something like
 :: 
