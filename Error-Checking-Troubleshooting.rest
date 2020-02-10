@@ -41,7 +41,7 @@ Here the script file you are loading contains both spaces and tabs. This can ups
 If you are using Notepad++ as your editor it can be made to use spaces instead of tabs when you press tab. This is done by
 
 #. Select from the menu bar Settings -> Preferences. 
-#. Select Language in the lefthand box
+#. Select Language in the left-hand box
 #. In "Tab Settings" box select "python"
 #. Untick "Use default value" and tick "Replace by space".
 
