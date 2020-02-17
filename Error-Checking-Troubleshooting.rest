@@ -45,7 +45,7 @@ If you are using Notepad++ as your editor it can be made to use spaces instead o
 #. In "Tab Settings" box select "python"
 #. Untick "Use default value" and tick "Replace by space".
 
-** Unused import XXXX from wildcard import (unused-wildcard-import)**
+**Unused import XXXX from wildcard import (unused-wildcard-import)**
 
 Although wildcard imports are not recommended because of the possibility of name collisions if you want to use it the linter will give you lots of warning about anything you didn't use from the package. To disable these warnings place the following comment on the import line which will suppress these warnings:
 ::
