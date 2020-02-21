@@ -2,7 +2,7 @@ These must be python 2/3 compatible see https://github.com/ISISComputingGroup/ib
 
 # ScriptDefinition
 
-A config is defined by creating a class implementing a ScriptDefinition (a python interface) `class DoRun(ScriptDefinition):`. ScriptDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ScriptDefinition `. 
+A script definition is defined by creating a class implementing a ScriptDefinition (a python interface) `class DoRun(ScriptDefinition):`. ScriptDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ScriptDefinition `. 
 
 To implement an ScriptDefinition this DoRun class must have methods `run`, `parameters_valid` and `get_help`. With `run` and `parameters_valid` signatures may look like this: `def run(self, temp="1", field="1"):`, `def parameters_valid(self, temp="1", field="1"):`.
 
@@ -71,9 +71,9 @@ To say we cannot cast the argument we raise a ValueError which tells cast_parame
 
 # Using python, genie and inst
 
-The script generator uses the python that we bundle with it which comes pre-installed with everything you would expect on an instrument (except inst) so you can easily write genie commands into your config etc. 
+The script generator uses the python that we bundle with it which comes pre-installed with everything you would expect on an instrument (except inst) so you can easily write genie commands into your script definition etc. 
 
-However, it does not come with installed instrument scripts that you obtain via inst. Due to this, if you try to import inst outside of your `run` method your config will produce errors for your users and fail to load when not on the instrument itself. Our suggestion is to import inst inside the run function and use it as normal in there: 
+However, it does not come with installed instrument scripts that you obtain via inst. Due to this, if you try to import inst outside of your `run` method your script definition will produce errors for your users and fail to load when not on the instrument itself. Our suggestion is to import inst inside the run function and use it as normal in there: 
 
 ```python
 def run(...):
