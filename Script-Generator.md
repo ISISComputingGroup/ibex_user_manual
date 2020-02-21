@@ -1,4 +1,4 @@
-If you are writing script definitions please check out [[Writing Action Definitions (Configs)]].
+If you are writing script definitions please check out [[Writing Script Definitions]].
 
 If you are using predefined script definitions to generate scripts please check out [[Using the Script Generator]]
 
