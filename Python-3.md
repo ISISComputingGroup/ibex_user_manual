@@ -1,6 +1,6 @@
 From January 1, 2020 python 2.x.x is no longer supported. Therefore we have decided that IBEX migrate to only use Python 3 from the cycle 28th April 2020.
 
-The materials used for Python 2 to 3 migration workshop could be found here: http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.
+The materials used for Python 2 to 3 migration workshop could be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
 
 The material is trimmed down to only target python 2 to 3 migration for IBEX users.
 
