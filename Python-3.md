@@ -1,4 +1,4 @@
-From January 1, 2020 python 2.x.x is no longer supported. Therefore we have decided that IBEX migrate to only use Python 3 from the cycle 28th April 2020.
+From January 1, 2020 python 2.x.x is no longer supported. Therefore we have decided that IBEX to only use Python 3 from the cycle 28th April 2020.
 
 The materials used for Python 2 to 3 migration workshop could be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
 
@@ -6,7 +6,7 @@ The material is trimmed down to only target python 2 to 3 migration for IBEX use
 
 ## Why Python 3?
 
-One of the main reasons for migration is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features its support community is growing and it makes it easier for users to learn Python 3.
+One of the main reasons for migration is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features and its support community is growing making it easier for users to learn Python 3.
 
 ## Python 3 major changes:
 
@@ -23,6 +23,28 @@ In Python 3, text and binary data are distinct types which users are not allowed
 String literals such as `var = "Python"` are `Unicode` by default in Python 3 whereas in Python 2 they were of type `bytes`. Comparison between of type `bytes` and `Unicode` for e.g. `b"test2" == u"test"` would return true in Python 2 whereas in Python 3 it would return false.
 
 ### Banker’s Rounding
-Python 3 way of rounding is the standard of way of rounding decimals when it has resulted in a tie(.5). Python 3 will now round to the nearest even number unlike Python 2 which rounds up to a large number. For e.g. `round(16.5)` will result to `16` in Python 3 whereas in Python 2 it will result in `17`.
+Python 3 way of rounding is the standard of way of rounding decimals when it has resulted in a tie(.5). Python 3 will now round to the nearest even number unlike Python 2 which rounds up to a large number. For e.g. `round(16.5)` will result in `16` in Python 3 whereas in Python 2 it will result in `17`.
 
 ## Porting to Python 3
+### Futurize
+Future module eases the process of making python 2 code compatible with python 3 as well. Introduction to futurize could be found in workshop slides.
+
+To run futurize in more than one files you have to make sure that all the `.py` files you want to convert is in the same directory for e.g. `C:\example\allPythonScripts` all my scripts to be converted are in the folder `allPythonScripts`. Once you have collected the scripts you want to convert in a single directory, run the command `futurize –w C:\example\allPythonScripts`. 
+
+This will then convert all scripts present in `allPythonScripts` to python2/3 compatible script. It will also generate a file with extension `.py.bak` which is a backup file. If you require original python file then you can simply rename the file extension from `.py.bak` to `.py`. If you want to be careful about what futurize might do to your python file, running the command without `-m` flag `futurize C:\example\allPythonScripts` will only suggest you some changes without overwriting it. Please do make sure manually that changes made by `futurize` are valid.
+
+## Writing Python 2/3 compatible code
+There are some modules available which make it easier for users to write Python 3 code and make it compatible with python 2 at the same time. 
+
+### `__future__ module`
+`__future__` module allows users who are still on python 2 to get features from "future" python 3.
+
+
+## Topics not covered but might be worth reading
+
+Python 3 has disallowed implicit relative import and only the following two imports are allowed. 
+* [Absolute Imports](https://realpython.com/absolute-vs-relative-python-imports/#absolute-imports)
+
+* [Relative Imports](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports)
+
+[Common Stumbling Blocks](https://docs.python.org/3/whatsnew/3.0.html#common-stumbling-blocks)
