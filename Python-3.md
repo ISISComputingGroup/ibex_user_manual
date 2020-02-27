@@ -6,7 +6,7 @@ The material is trimmed down to only target python 2 to 3 migration for IBEX use
 
 ## Why Python 3?
 
-One of the main reasons for migration is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features and also the Python 3 support community is growing and it makes it easier for scientists to learn Python 3.
+One of the main reasons for migration is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features its support community is growing and it makes it easier for scientists to learn Python 3.
 
 ## Python 3 major changes:
 
