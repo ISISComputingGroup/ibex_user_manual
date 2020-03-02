@@ -33,13 +33,6 @@ To run futurize in more than one files you have to make sure that all the `.py` 
 
 This will then convert all scripts present in `allPythonScripts` to python2/3 compatible script. It will also generate a file with extension `.py.bak` which is a backup file. If you require original python file then you can simply rename the file extension from `.py.bak` to `.py`. If you want to be careful about what futurize might do to your python file, running the command without `-m` flag `futurize C:\example\allPythonScripts` will only suggest you some changes without overwriting it. Please do make sure manually that changes made by `futurize` are valid.
 
-## Writing Python 2/3 compatible code
-There are some modules available which make it easier for users to write Python 3 code and make it compatible with python 2 at the same time. 
-
-### `__future__ module`
-`__future__` module allows users who are still on python 2 to get features from "future" python 3.
-
-
 ## Topics not covered but might be worth reading
 
 Python 3 has disallowed implicit relative import and only the following two imports are allowed. 
