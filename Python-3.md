@@ -25,6 +25,9 @@ String literals such as `var = "Python"` are `Unicode` by default in Python 3 wh
 ### Banker’s Rounding
 Python 3 way of rounding is the standard of way of rounding decimals when it has resulted in a tie(.5). Python 3 will now round to the nearest even number unlike Python 2 which rounds up to a large number. For e.g. `round(16.5)` will result in `16` in Python 3 whereas in Python 2 it will result in `17`.
 
+### Range in Python 3
+Python 2 `xrange` is now equivalent to Python 3 `range`. `range` cannot be used as list object for e.g. `range(0,10)` will no longer return a list of `[0,1...,9]`. It can still be used in for loop `for x in range(10)`. If you need a list you using `range()` you can still do `list(range(0, 10))` which will then return a list.
+
 ## Porting to Python 3
 ### Futurize
 Future module eases the process of making python 2 code compatible with python 3 as well. Introduction to futurize could be found in workshop slides.
