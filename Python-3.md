@@ -13,6 +13,7 @@ Python 3 introduces a number of changes, but the 3 main changes you need to be a
    1. changes to the syntax of print statements
    1. behaviour of the division operator
    1. changes to text and binary data
+
 There are some other changes.  We've listed the most common ones below.  If your  scripts rely on behaviour that changes in Python 3, you need to update your scripts to the new Python 3 behaviour.
 
 ### Print Statements
