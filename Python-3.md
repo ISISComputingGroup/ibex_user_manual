@@ -1,36 +1,43 @@
-From January 1, 2020 python 2.x.x is no longer supported. Therefore we have decided that IBEX to only use Python 3 from the cycle 28th April 2020.
+From January 1, 2020 Python 2 is no longer supported. Therefore, from cycle 2020/01 (28th April 2020), IBEX will move to Python 3 only.  Mantid is also migrating to Python 3 on the same timescale.
 
-The materials used for Python 2 to 3 migration workshop could be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
+The materials used for Python 2 to 3 migration workshop can be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
 
 The material is trimmed down to only target python 2 to 3 migration for IBEX users.
 
 ## Why Python 3?
 
-One of the main reasons for migration is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features and its support community is growing making it easier for users to learn Python 3.
+The main reason for migrating is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features and its support community is growing making it easier for users to learn Python 3.
 
 ## Python 3 major changes:
+Python 3 introduces a number of changes, but the 3 main changes you need to be aware of are:
+   1. changes to the syntax of print statements
+   1. behaviour of the division operator
+   1. changes to text and binary data
+There are some other changes.  We've listed the most common ones below.  If your  scripts rely on behaviour that changes in Python 3, you need to update your scripts to the new Python 3 behaviour.
 
 ### Print Statements
-In Python 3, the `print` statement is changed to a function. Therefore, you need to pass parentheses  for e.g. `print("Hi this is Python3)` instead of `print "Hi this is Python2"`
+In Python 3, the `print` statement is becomes a function. Therefore, you need to pass the string you wish to print in parentheses.  For example:<br>
+   * in Python 2 you would write: `print "Hi this is Python 2"`
+   * in Python 3 you write: `print("Hi this is Python 3)`
 
 ### Division:
-In python 3 the division between two `int` values will result in `float` for example: `5/2` will result in `2.5`.
+In Python 3 the division of two `int` values will result in `float` for example: `5/2` will result in `2.5`.  
 
 ### Text and Binary Data
 This is one of the main reasons why Python 3 is not backwards compatible.
-In Python 3, text and binary data are distinct types which users are not allowed to mix together. for example ` var = b"python" + u"three"` will be an illegal operation whereas in python 2 users would be allowed to do so. 
+In Python 3, text and binary data are distinct types which users are not allowed to mix together. For example ` var = b"python" + u"three"` is an illegal operation, whereas in Python 2 this was a permitted operation. 
 
-String literals such as `var = "Python"` are `Unicode` by default in Python 3 whereas in Python 2 they were of type `bytes`. Comparison between of type `bytes` and `Unicode` for e.g. `b"test2" == u"test"` would return true in Python 2 whereas in Python 3 it would return false.
+String literals such as `var = "Python"` are `Unicode` by default in Python 3,  whereas in Python 2 they were of type `bytes`. Comparison between of type `bytes` and `Unicode` for e.g. `b"test2" == u"test"` would return true in Python 2 whereas in Python 3 it returns false.
 
 ### Banker’s Rounding
-Python 3 way of rounding is the standard of way of rounding decimals when it has resulted in a tie(.5). Python 3 will now round to the nearest even number unlike Python 2 which rounds up to a large number. For e.g. `round(16.5)` will result in `16` in Python 3 whereas in Python 2 it will result in `17`.
+Python 3 way of rounding is the standard of way of rounding decimals when it has resulted in a tie(.5). Python 3 will now round to the nearest even number, unlike Python 2 which rounds up to the next largest integer. For e.g. `round(16.5)` will result in `16` in Python 3 whereas in Python 2 it will result in `17`.
 
 ### Range in Python 3
 Python 2 `xrange` is now equivalent to Python 3 `range`. `range` cannot be used as list object for e.g. `range(0,10)` will no longer return a list of `[0,1...,9]`. It can still be used in for loop `for x in range(10)`. If you need a list you using `range()` you can still do `list(range(0, 10))` which will then return a list.
 
 ## Porting to Python 3
 ### Futurize
-Future module eases the process of making python 2 code compatible with python 3 as well. Introduction to futurize could be found in workshop slides.
+The Future module eases the process of making Python 2 code compatible with Python 3 as well.  The [Workshop Slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.) provide an introduction to futurize.
 
 To run futurize in more than one files you have to make sure that all the `.py` files you want to convert is in the same directory for e.g. `C:\example\allPythonScripts` all my scripts to be converted are in the folder `allPythonScripts`. Once you have collected the scripts you want to convert in a single directory, run the command `futurize –w C:\example\allPythonScripts`. 
 
@@ -43,4 +50,4 @@ Python 3 has disallowed implicit relative import and only the following two impo
 
 * [Relative Imports](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports)
 
-[Common Stumbling Blocks](https://docs.python.org/3/whatsnew/3.0.html#common-stumbling-blocks)
+* [Common Stumbling Blocks](https://docs.python.org/3/whatsnew/3.0.html#common-stumbling-blocks)
