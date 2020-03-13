@@ -23,6 +23,12 @@ def get_help(self):
    return None
 ``` 
 
+# Default values
+
+The initial value of an action in the table can be defined within your script definition. Simply set the default values of the run method and these will be converted into a string for the initial value in the table. 
+
+Please note that the value you put as a default will be passed through any casters when running. So for example with our `magnet_device_type` caster below the valid inputs into the action table are LF, TF, ZF or N/A which are cast to Danfysik, T20, Active ZF and N/A. When defining the default you should use the valid inputs for the actions table e.g. LF, TF, ZF or N/A.
+
 
 # Casting Parameters
 
