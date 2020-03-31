@@ -17,7 +17,7 @@ Python 3 introduces a number of changes, but the 3 main changes you need to be a
 There are some other changes.  We've listed the most common ones below.  If your  scripts rely on behaviour that changes in Python 3, you need to update your scripts to the new Python 3 behaviour.
 
 ### Print Statements
-In Python 3, the `print` statement is becomes a function. Therefore, you need to pass the string you wish to print in parentheses.  For example:<br>
+In Python 3, the `print` statement becomes a function. Therefore, you need to pass the string you wish to print in parentheses.  For example:<br>
    * in Python 2 you would write: `print "Hi this is Python 2"`
    * in Python 3 you write: `print("Hi this is Python 3)`
 
