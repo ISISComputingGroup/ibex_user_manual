@@ -25,7 +25,7 @@ In Python 3, the `print` statement becomes a function. Therefore, you need to pa
 In Python 3, the division of two `int` values will result in `float`: for example: `5/2` will result in `2.5`.  If you want the division of two `int` values to result in an integer, use the `//` operator: for example `5//2` will result in a value of `2`.
 
 ### Text and Binary Data
-The handling of text and binary data chnages in Python 2.  This is one of the main reasons why Python 3 is not backwards compatible with Python 2.  In Python 3, text and binary data are distinct types which users are not allowed to mix together. For example ` var = b"python" + u"three"` is an illegal operation, whereas in Python 2 this was a permitted operation. 
+The handling of text and binary data changes in Python 2.  This is one of the main reasons why Python 3 is not backwards compatible with Python 2.  In Python 3, text and binary data are distinct types which users are not allowed to mix together. For example ` var = b"python" + u"three"` is an illegal operation, whereas in Python 2 this was a permitted operation. 
 
 String literals such as `var = "Python"` are `Unicode` by default in Python 3,  whereas in Python 2 they were of type `bytes`. Comparison between of type `bytes` and `Unicode` for e.g. `b"test2" == u"test"` would return true in Python 2 whereas in Python 3 it returns false.
 
