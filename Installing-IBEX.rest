@@ -83,7 +83,7 @@ The physical installation of IBEX server on an instrument control PC is a modera
 * for an existing instrument, SECI configs need to be converted to their IBEX equivalents, and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
 * for a new instrument, the list of devices that comprise the instrument needs to be understood, new IOCs and OPIs will need to be created; configurations and scripts can be developed during commissioning.
 
-If you want to install IBEX server on your instrument, please contact the Experimental Controls team.
+If you want to install IBEX server on your instrument, please contact the Experiment Controls team.
 
 
 Uninstalling IBEX

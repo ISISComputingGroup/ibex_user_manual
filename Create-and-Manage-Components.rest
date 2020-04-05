@@ -39,4 +39,4 @@ To delete a component:
 #. Select a component from the list and press the ``OK`` button
 #. IBEX deletes the selected component.
 
-**Note:** When you delete a component it really is deleted. It is no longer available to be used by IBEX. Before deleting a component, please be sure that you really do want to delete it. If you unintentionally delete a component, please contact the Experimental Controls team - it may be possible to recover the deleted component.
+**Note:** When you delete a component it really is deleted. It is no longer available to be used by IBEX. Before deleting a component, please be sure that you really do want to delete it. If you unintentionally delete a component, please contact the Experiment Controls team - it may be possible to recover the deleted component.

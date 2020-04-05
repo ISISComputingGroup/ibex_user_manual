@@ -1,4 +1,4 @@
-In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If your question about IBEX is not answered below, please let us (the Experimental Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
+In this section of the IBEX user manual, we have compiled a list of frequently asked questions.  If your question about IBEX is not answered below, please let us (the Experiment Controls team) know.  If your question is likely to be asked by others, we'll add it to the list.
 
 .. contents:: **List of Frequently Asked Questions**
 
