@@ -281,7 +281,7 @@ To delete a configuration:
 
 **Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration you need to load a different configuration, then delete the previously loaded configuration.
 
-**Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experimental Controls team - it may be possible to recover the deleted configuration.
+**Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experiment Controls team - it may be possible to recover the deleted configuration.
 
 Editing a global setting
 ------------------------
