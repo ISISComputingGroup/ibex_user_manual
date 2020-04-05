@@ -192,7 +192,7 @@ To set an IOC macro:
 
 As of version 5.7, values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
 
-If you are not sure about how to correctly configure macro values for a device, please consult with the Experimental Controls team.
+If you are not sure about how to correctly configure macro values for a device, please consult with the Experiment Controls team.
 
 IOC PV Values
 ~~~~~~~~~~~~~
