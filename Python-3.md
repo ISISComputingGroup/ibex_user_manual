@@ -12,13 +12,16 @@ The main reason for migrating is that Python 2 is no longer supported by its cre
 
 Under python 3, the mechanism by which instrument scripts are imported has changed.
 
-For instruments with simple single-file scripts, we have migrated your scripts from ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\xxx_routines.py`` to ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py``
+For instruments with single-file ``inst`` modules, we have migrated your scripts from ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\xxx_routines.py`` to ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py``.
 
-For instruments with more complex scripts, they are still in the same location as before. However, when adding new functions, in most cases you will also need to import them in ``__init__.py`` before they are available in ``inst``.
+For instruments with multi-file ``inst`` modules, they are still in the same location as before. However, when adding new functions, in most cases you will also need to import them in ``__init__.py`` before they are available in ``inst``.
 
-This change has been made because our previous approach (which attempted to emulate ``from * import *``) is increasingly difficult to maintain in python 3, and has caused confusion in a number of instances due to functions accidentally overwriting previously defined functions of the same name.
+This change has been made because our previous approach (which attempted to emulate ``from * import *``) is increasingly difficult to maintain in python 3, and has caused confusion in a number of instances due to functions accidentally overwriting previously defined functions of the same name. 
 
-## Python 3 major changes:
+You can learn more about the structure of python modules at https://docs.python.org/3/tutorial/modules.html#packages
+
+## Changes in Python 3
+
 Python 3 introduces a number of changes, but the 3 main changes you need to be aware of are:
    1. changes to the syntax of print statements
    1. behaviour of the division operator
