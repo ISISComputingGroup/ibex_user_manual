@@ -21,10 +21,14 @@ Creating scripts
 For the most part, this is the same as
 `creating-user-scripts <#creating-and-running-user-scripts>`__.
 
-Script directory
+Script module
 ~~~~~~~~~~~~~~~~
 
-Instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst``.
+For instruments where a single file is sufficient, instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py``. 
+
+For instruments with complex scripts which need more than one file, you should put your scripts in the inst folder, for example ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\my_functions.py``. 
+
+When using a multi-file ``inst`` module, to make the functions available under the ``inst`` namespace as ``inst.do_thing()`` as opposed to ``inst.my_functions.do_thing()``, you will need to add the special file ``__init__.py``. Anything which is imported into this file (using normal python ``import`` statements) will be available under the ``inst`` namespace.
 
 Script structure
 ~~~~~~~~~~~~~~~~
