@@ -61,7 +61,7 @@ Sequentially sets a position (e.g. sample changer) and waits for a fixed number 
 ::
 
 
-    from genie_python import genie as g    
+    from genie_python import genie as g, BLOCK_NAMES as b
     
     def loop_over_samples(block_name, position_names, charge_to_wait_for):
         """
@@ -84,7 +84,7 @@ Reads the value of a block and moves it through a series of intervals to a new v
 
 ::
 
-    from genie_python import genie as g
+    from genie_python import genie as g, BLOCK_NAMES as b
     
     def ramp(time, block_name, steps=100, final_value=0.0):
         """
