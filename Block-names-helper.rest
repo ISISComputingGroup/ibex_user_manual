@@ -10,7 +10,7 @@ usually as part of the genie import:
 from genie_python import genie as g, BLOCK_NAMES as b
 ```
 
-The typing `b.` will give you a list of current blocks; in the console you need to press tab. This can be user in place of a normal string in something like cget. For example
+The typing `b.` will give you a list of current blocks; in the console you need to press tab. This can be used in place of a normal string in something like cget. For example
 
 ```
 from genie_python import genie as g, BLOCK_NAMES as b
