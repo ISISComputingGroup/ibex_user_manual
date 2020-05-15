@@ -8,7 +8,7 @@ The material is trimmed down to only target python 2 to 3 migration for IBEX use
 
 The main reason for migrating is that Python 2 is no longer supported by its creators. Python 3 also has implemented many useful features and its support community is growing making it easier for users to learn Python 3.
 
-## Changes in IBEX due to Python 3
+## Changes with Instrument Scripts due to Python 3
 
 Under python 3, the mechanism by which instrument scripts are imported has changed.
 
