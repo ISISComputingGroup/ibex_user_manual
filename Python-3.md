@@ -2,9 +2,9 @@ From January 1, 2020 Python 2 is no longer supported. Therefore, from cycle 2020
 
 The materials used for Python 2 to 3 migration workshop can be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
 
-NOTE: This is not for converting your script from python2 to 3. This is only for making your script compatible with 2 and 3.
-
 The material is trimmed down to only target python 2 to 3 migration for IBEX users.
+
+_**Note: This guide is not for converting your script from python 2 to 3. This is only for making your script compatible with 2 and 3.**_
 
 ## Why Python 3?
 
