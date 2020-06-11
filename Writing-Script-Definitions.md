@@ -23,6 +23,8 @@ def get_help(self):
    return None
 ``` 
 
+Optionally a script definition can specify an `estimate_time` method, which will take the same arguments as `run` and `parameters_valid` and return a float giving an estimate of how long a script will take (in seconds).
+
 # Default values
 
 The initial value of an action in the table can be defined within your script definition. Simply set the default values of the run method and these will be converted into a string for the initial value in the table. 
