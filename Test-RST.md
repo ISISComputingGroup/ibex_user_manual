@@ -11,10 +11,10 @@
      - Unlike ``cshow``, a block name must be specified
      - Properties can be accessed as standard Python::
 
-          block_info = g.cget("MY_BLOCK")
-          name = block_info("name")
-          value = block_info("value")
-          print "The value of block {0} is {1}".format(name, value)
+          ```block_info = g.cget("MY_BLOCK")
+          name = block_info["name"]
+          value = block_info["value"]
+          print "The value of block {0} is {1}".format(name, value)```
 
 -    ``cset``: Sets the value for a particular block
 
