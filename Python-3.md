@@ -22,7 +22,7 @@ to
 
 ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py``.
 
-No further changes are required in this case - all new functions added to `inst.py` will be available in the `inst` module after doing `reload(inst)` in the python scripting console.
+No further changes are required in this case - all new functions added to `inst.py` will be available in the `inst` module after doing `import importlib;importlib.reload(inst)` in the python scripting console.
 
 **For instruments with multi-file ``inst`` modules**, your instrument scripts are still in the same location as before, which is: 
 
@@ -32,7 +32,7 @@ However, when adding new functions, they will additionally need to be imported i
 
 ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\__init__.py``
 
-before they are available in ``inst``. As before, you will still need to perform ``reload(inst)`` in the scripting console to be able to use these new functions.
+before they are available in ``inst``. As before, you will still need to perform ``import importlib;importlib.reload(inst)`` in the scripting console to be able to use these new functions.
 
 This change has been made because our previous approach (which attempted to emulate ``from * import *``) is increasingly difficult to maintain in python 3, and has caused confusion in a number of instances due to functions accidentally overwriting previously defined functions of the same name. 
 
