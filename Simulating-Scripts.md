@@ -3,7 +3,7 @@
 Simulated Genie Python
 ======================
 
-Before running a script on real hardware you may want to check that the script will behave as expected and contains no errors. To help do this `genie_python` has a simulated mode where commands that would normally communicate with hardware instead print what they are doing. To get in and out of simulation mode there is a [context manager](https://www.geeksforgeeks.org/context-manager-in-python/) that can be used like:
+Before running a script on real hardware you may want to check that the script will behave as expected and contains no errors. To help do this `genie_python` has a simulated mode where commands that would normally communicate with hardware instead print what they are doing. To get in and out of simulation mode there is a [context manager](https://www.geeksforgeeks.org/context-manager-in-python/) which will turn simulation mode on only for the code inside it's scope and will then turn it off for you after. This can be used like:
 
 ```python
 with g.sim.Simulate():
