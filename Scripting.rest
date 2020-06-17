@@ -12,6 +12,7 @@ beginner and novice user. For a more in-depth discussion, see our [[genie_python
 - [[Converting Open GENIE to genie_python]]
 - [[Creating and running scripts]]
 - [[Block names helper]]
+- [[Simulating Scripts]]
 - [[Tips and Examples]]
 - [[The Scripting Console]]
 - [[Using Futurize]]
