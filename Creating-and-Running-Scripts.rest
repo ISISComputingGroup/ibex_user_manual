@@ -98,6 +98,8 @@ here is a simple script that executes a calibration run.
 
 ::
 
+    from genie_python import genie as g, BLOCK_NAMES as b
+
     # Change the title
     calibration_run_title = "Calibration run 1, 29th September"
     g.change(title=calibration_run_title)
