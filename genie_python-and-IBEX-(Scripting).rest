@@ -35,7 +35,7 @@ When writing scripts, you can use any Python and ``genie_python`` functionality 
 
 .. code-block:: python
 
-    from genie_python import genie as g
+    from genie_python import genie as g, BLOCK_NAMES as b
 
 In general, we recommend all executable code within a script should be contained within functions and classes. For example:
 
