@@ -55,6 +55,14 @@ In Python 3, the `print` statement becomes a function. Therefore, you need to pa
 ### Division:
 In Python 3, the division of two `int` values will result in `float`: for example: `5/2` will result in `2.5`.  If you want the division of two `int` values to result in an integer, use the `//` operator: for example `5//2` will result in a value of `2`.
 
+### Text
+
+In Python 3 there are more escape sequences so make sure that any strings with escape characters are correct. To put a `\` in a string you must either use `\\` or place an `r` character before the string. Be especially careful of paths like `"C:\instrument\setting\NDX.."` where the `\` are acting as escape characters this should become one of
+
+- `r"C:\instrument\setting\NDX.."` 
+- `"C:\\instrument\\setting\\NDX.."` 
+- `os.path.join("c:\\", "instrument", "setting" "NDX")`.
+
 ### Text and Binary Data
 The handling of text and binary data changes in Python 2.  This is one of the main reasons why Python 3 is not backwards compatible with Python 2.  In Python 3, text and binary data are distinct types which users are not allowed to mix together. For example ` var = b"python" + u"three"` is an illegal operation, whereas in Python 2 this was a permitted operation. 
 
