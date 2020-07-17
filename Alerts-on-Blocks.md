@@ -12,4 +12,7 @@ g.alerts.set_range("block2", -10.0, 20.0, 5.0, 5.0)
 
 # enable alerts
 g.alerts.enable("block1", True)
+
+# print alert status to screen
+g.alerts.status()
 ```
