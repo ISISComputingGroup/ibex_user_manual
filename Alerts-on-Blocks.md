@@ -23,7 +23,7 @@ g.alerts.status()
 g.cset("block1", -50) # With above settings, a message would be sent to say the block has gone out of range
 g.cset("block1", 0) # With above settings, a message would be sent to say the block has gone back in range
 ```
-Alerts are saved across IBEX restarts, but the saving is not part of a configuration. The alert will remain so long as the block exists, so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose the alert settings
+Alerts are saved across IBEX restarts, but the saving is not part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose the alert settings for that block.
 
 ## Future enhancements
 * Create GUI for managing alerts, similar to how run control is done now
