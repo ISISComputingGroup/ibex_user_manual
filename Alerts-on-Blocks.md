@@ -1,6 +1,6 @@
 [[Scripting|scripting]] > [[Alerting on blocks|Alerts-on-Blocks]]
 
-Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. Am alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent. 
+Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent. 
 ```
 ## set mobiles and emails to alert
 g.alerts.set_sms(["123456789", "987654321"])
