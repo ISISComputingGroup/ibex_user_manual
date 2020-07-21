@@ -2,15 +2,22 @@
 
 Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message (via sms text and/or email) is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent. 
 ```python
-## set mobiles and emails to alert
+## set mobiles and emails to send alerts to
+## this only needs to be repeated if values change 
 g.alerts.set_sms(["123456789", "987654321"])
 g.alerts.set_email(["a@b", "c@d"])
 
-## set alert on block1 with default delay_in and delay_out (2 seconds)
+## set alert on block1 with default delay_in and delay_out (which is no delay)
 ## setting a range automatically enabled the alert
 g.alerts.set_range("block1", -10.0, 20.0)
+
 ## set alert on block2 with specified delay_in and delay_out times
-g.alerts.set_range("block2", -10.0, 20.0, delay_in=5.0, delay_out=5.0)
+## if you have a block value that may temporarily spike, but you are only
+## interested in sustained periods out of range, then specify a delay_out
+## so here it must be out of range for at least 15 seconds to trigger
+## an out of range alert and back in range for at least 5 seconds to trigger
+## an in range alert 
+g.alerts.set_range("block2", -10.0, 20.0, delay_in=5.0, delay_out=15.0)
 
 ## alerts can be separately enabled and disabled
 g.alerts.enable("block1", True)
