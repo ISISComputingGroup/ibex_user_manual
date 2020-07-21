@@ -25,10 +25,17 @@ g.cset("block1", 0) # With above settings, a message would be sent to say the bl
 ```
 Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings.
 
+Alerts, like run control, are normally set on floating point (or integer) value blocks. They can, however, be used on some "state" items that are symbolic names mapped to integers (enums). One example of this is the instrument state (SETUP=1,RUNNING=2,PAUSED=3,WAITING=4,VETOING=5) so if a block called `RunState` is attached to the process variable `IN:myinst:DAE:RUNSTATE` then
+```python
+g.alerts.set_range("RunState", -1.0, 3.5, delay_in=5.0, delay_out=300.0)
+```   
+will send an alert if the instrument has been WAITING or VETOING (>3.5) for more than 300 seconds.
+ 
 ## Sending alerts from scripts
 You can also send an immediate alert as part of a script by doing the following
 ```python
-## set mobiles and emails to alert, these aren't required if the email/phone numbers have already been set at some point on your instrument
+## set mobiles and emails to alert, these aren't required if the email/phone numbers
+## have already been set at some point on your instrument
 g.alerts.set_sms(["123456789", "987654321"])
 g.alerts.set_email(["a@b", "c@d"])
 
