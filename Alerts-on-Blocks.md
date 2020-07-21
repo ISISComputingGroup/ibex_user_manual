@@ -1,7 +1,7 @@
 [[Scripting|scripting]] > [[Alerting on blocks|Alerts-on-Blocks]]
 
 Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent. 
-```
+```python
 ## set mobiles and emails to alert
 g.alerts.set_sms(["123456789", "987654321"])
 g.alerts.set_email(["a@b", "c@d"])
@@ -24,6 +24,17 @@ g.cset("block1", -50) # With above settings, a message would be sent to say the 
 g.cset("block1", 0) # With above settings, a message would be sent to say the block has gone back in range
 ```
 Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings.
+
+## Sending alerts from scripts
+You can also send an immediate alert as part of a script by doing the following
+```python
+## set mobiles and emails to alert, these aren't required if the email/phone numbers have already been set at some point on your instrument
+g.alerts.set_sms(["123456789", "987654321"])
+g.alerts.set_email(["a@b", "c@d"])
+
+if bad_thing_happed:
+    g.alerts.send("Help, a bad thing has happened!")
+```
 
 ## Future enhancements
 * Create GUI for managing alerts, similar to how run control is done now
