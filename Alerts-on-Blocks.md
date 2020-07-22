@@ -39,7 +39,7 @@ g.alerts.set_range("RunState", -1.0, 3.5, delay_in=5.0, delay_out=300.0)
 ```   
 will send an alert if the instrument has been WAITING or VETOING (>3.5) for more than 300 seconds.
  
-## Sending alerts from scripts
+## Sending alert messages directly from scripts
 You can also send an immediate alert message from an executing script by doing the following
 ```python
 ## set mobiles and emails to alert, these aren't required if the email/phone numbers
