@@ -22,9 +22,9 @@ g.alerts.set_range("block1", -10.0, 20.0)
 ## an in range alert 
 g.alerts.set_range("block2", -10.0, 20.0, delay_in=5.0, delay_out=15.0)
 
-## alerts can be separately enabled and disabled, previous ranges
-## and in/out delays are used
-g.alerts.enable("block1")         # enable alerts on block1 using previous limits/delays
+## alerts can be separately enabled and disabled, any previous
+## specified ranges and in/out delays are applied
+g.alerts.enable("block1")         # enable alerts on block1
 g.alerts.enable("block2", False)  # disable alerts on block2
 
 ## print status of all configured alerts to screen
