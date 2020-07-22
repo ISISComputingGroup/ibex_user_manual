@@ -47,7 +47,7 @@ You can also send an immediate alert message from an executing script by doing t
 g.alerts.set_sms(["123456789", "987654321"])
 g.alerts.set_email(["a@b", "c@d"])
 
-if bad_thing_happed:
+if bad_thing_happened:
     g.alerts.send("Help, a bad thing has happened!")
 ```
 
