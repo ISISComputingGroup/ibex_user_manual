@@ -23,7 +23,12 @@ def get_help(self):
    return None
 ``` 
 
-Optionally a script definition can specify an `estimate_time` method, which will take the same arguments as `run` and `parameters_valid` and return a float giving an estimate of how long a script will take (in seconds).
+Optionally a script definition can specify an `estimate_time` method, which will take the same arguments as `run` and `parameters_valid` and return a float giving an estimate of how long a script will take (in seconds). When defining this method we are returning how long each row in the script generator table will take to run.
+```python
+    def estimate_time(self, field1="1", field2="2"):
+        return float(field1) * float(field2)
+```
+In order for this method to perform arithmetic operations on scientific notations, it is mandatory to cast the argument as float for e.g. `float(field1)`.
 
 # Default values
 
