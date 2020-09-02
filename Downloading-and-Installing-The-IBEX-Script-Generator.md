@@ -1,1 +1,1 @@
-The IBEX Script Generator can be downloaded as a zip file from github (https://github.com/ISISComputingGroup/ScriptGeneratorReleases/releases) and then unzipped and used.
+The IBEX Script Generator can be downloaded as a zip file from GitHub (https://github.com/ISISComputingGroup/ScriptGeneratorReleases/releases) and then unzipped and used.
