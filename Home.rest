@@ -12,6 +12,8 @@
 
 [[Scripting]]
 
+[[The IBEX Script Generator]]
+
 [[Instrument Specific Guidance]]
 
 [[Device Specific Guidance]]
