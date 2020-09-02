@@ -1,7 +1,7 @@
 # Downloading and installing
 
-Please see: 
+Please see: [[Downloading and Installing The IBEX Script Generator]]
 
 # Usage documentation
 
-Please see: 
+Please see: [[Script Generator]]
