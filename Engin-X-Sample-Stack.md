@@ -1,4 +1,4 @@
-The Engin X Sample Stack is controlled through IBEX but underneath IBEX link back into labview VIs from SECI hence why there are some speacil steps you need to use when looking at it. If you can't find the answer you are looking for in this page there is more information in the [developer wiki but beware this is quite low level](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/EnginX-Sample-Positioner).
+The Engin X Sample Stack is controlled through IBEX but underneath IBEX link back into labview VIs from SECI hence why there are some special steps you need to use when looking at it. If you can't find the answer you are looking for in this page there is more information in the [developer wiki but beware this is quite low level](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/EnginX-Sample-Positioner).
 
 # Define a Motor Position on the Engin-X Sample Stack
 - Using a file explorer, go to the following location on `ndxenginx`: `C:\Labview Modules\Drivers\Galil DMC2280`
