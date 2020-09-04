@@ -1,3 +1,12 @@
+**Most common problem that everyone is facing at this moment when trying to use futurize is `failed to create process`. If you are having this issue with futurize please reinstall futurize. This can be done by uninstalling and installing it again using the following steps.**
+
+**1. Python -m pip uninstall future**
+
+**2. Python -m pip install future**
+
+***
+
+
 From January 1, 2020 Python 2 is no longer supported. Therefore, from cycle 2020/01 (28th April 2020), IBEX will move to Python 3 only.  Mantid is also migrating to Python 3 on the same timescale.
 
 The materials used for Python 2 to 3 migration workshop can be found here: [Workshop slides](http://www.facilities.rl.ac.uk/isis/computing/ICPdiscussions/Forms/AllItems.aspx?RootFolder=%2Fisis%2Fcomputing%2FICPdiscussions%2FPython3&FolderCTID=0x01200027AD8F05966A2748B3B04C98BB5B442B&View=%7bF2C33C51-70E6-4343-B937-2C59A2568306%7d.)
