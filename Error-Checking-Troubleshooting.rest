@@ -31,6 +31,15 @@ This may work at the command line but does not work with the checker/linter. A b
 
 The checker does not know of this special case of allowing `inst` modules on the command line unprefixed.
 
+**Undefined variable `g` or `inst`**
+
+You need to add the following lines to the top of your user script:
+::
+    from genie_python import genie as g
+    import inst
+
+This is so that the linter knows what is being referenced when you call functions on the g or inst modules.
+
 Warnings
 --------
 
