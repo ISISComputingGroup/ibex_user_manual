@@ -1,4 +1,4 @@
-**Most common problem that everyone is facing at this moment when trying to use futurize is `failed to create process`. If you are having this issue with futurize please reinstall futurize. This can be done by uninstalling and installing it again using the following steps.**
+**Most common error that everyone is getting right now when trying to use futurize is `failed to create process`. If you are having this issue with futurize, please reinstall futurize. This can be done by uninstalling and installing it again using the following steps.**
 
 **1. Python -m pip uninstall future**
 
