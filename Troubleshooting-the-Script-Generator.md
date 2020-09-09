@@ -39,3 +39,5 @@ Please contact the IBEX team to see if it is a bug: see [How do I report a probl
 ## My script generator never finished loading
 
 Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
+
+- One possible issue is that a dependency called git has not been loaded correctly. A workaround for this may be to install git separately to the script generator, please see https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
