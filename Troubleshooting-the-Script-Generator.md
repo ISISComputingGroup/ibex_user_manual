@@ -10,25 +10,25 @@ def run(...):
     inst.instrument_script_method()
 ```
 
-## Warning: Could not load any configs from 
+## Warning: Could not load any script definitions from 
 
-- The configs have not been loaded into the correct place in the filesystem
+- The definitions have not been loaded into the correct place in the filesystem
    - To fix simply move them into the location that is given in the warning message
-- The place IBEX is looking for configs in the file
-   - See "Want your configs to be loaded from ...?" below
-- It is possible the configs have errors in them
+- The place IBEX is looking for script definitions in the file
+   - See "Want your script definitions to be loaded from ...?" below
+- It is possible the script definitions have errors in them
    - The script generator will display a table detailing these errors if this is the case
-   - Please review your configs keeping in mind the errors detailed in the table
+   - Please review your definitions keeping in mind the errors detailed in the table
 - If it is none of these there is a chance it is because part of the script generator has crashed
    - Please contact the IBEX team to see if it is a bug: see [How do I report a problem with IBEX?](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/FAQ#id1)
 
-## Some of my configs have not loaded
+## Some of my script definitions have not loaded
 
-- The config may be placed in the wrong place 
-   - Please place your config on the filesystem where your configs are loaded from
-- One of the locations where configs are loaded from may be incorrect 
-   - See "Want your configs to be loaded from ...?" below
-- Some of the configs may have errors in the and so failed to load
+- The definitions may be placed in the wrong place 
+   - Please place your definitions on the filesystem where your definitions are loaded from
+- One of the locations where definitions are loaded from may be incorrect 
+   - See "Want your script definitions to be loaded from ...?" below
+- Some of the script definitions may have errors in the and so failed to load
    - These errors will be displayed in a table in the script generator graphical user interface
    - Please fix the script or ask the maintainer of the script to fix it
 
