@@ -40,6 +40,18 @@ You need to add the following lines to the top of your user script:
 
 This is so that the linter knows what is being referenced when you call functions on the g or inst modules.
 
+**Undefined variable <variable_name>...**
+
+If <variable_name> is a genie_python or instrument script function that you are trying to use then you should add the following lines to the top of your script:
+::
+    from genie_python.genie import *
+    from inst import *
+    # pylint: disable=wildcard-import, unused-wildcard-import    
+
+The first two lines are so the linter knows where <variable_name> comes from and the third line removes unwanted linter warnings about this style of import.
+ 
+
+
 Warnings
 --------
 
