@@ -143,9 +143,9 @@ SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in positio
 The problem is you have not escaped the string correctly, in python the slash character, `\`, is an escape. In this command the `\N` is causing python trouble. You can either:
 
 #. Place an `r` before the string this makes it ignore escapes except for quote marks
-    - `g.load_script(r'c:\scripts\NiceScript.py')`
+    - `g.load_script(r'c:\\scripts\\NiceScript.py')`
 #. Escape the slashes
-    - `g.load_script('c:\\scripts\\NiceScript.py')`
+    - `g.load_script('c:\\\\scripts\\\\NiceScript.py')`
 #. Just use the default script path so:
     - `g.load_script('NiceScript.py')`
 
