@@ -22,7 +22,7 @@
 
 [[Python-3]]
 
-[[FAQ]]
+[[FAQ]] Including scripting
 
 [[Glossary]]
 
