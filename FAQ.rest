@@ -140,7 +140,7 @@ If you try to load a script and you get the following error:
 SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 10-11: malformed \N character escape
 ```
 
-The problem is you have not escaped the string correctly, in python the slash character, `\`, is an escape. In this command the `\N` is causing python trouble. You can either:
+The problem is you have not escaped the string correctly, in python the slash character, `\\`, is an escape. In this command, the `\\N` is causing python trouble. You can either:
 
 #. Place an `r` before the string this makes it ignore escapes except for quote marks
     - `g.load_script(r'c:\\scripts\\NiceScript.py')`
