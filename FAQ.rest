@@ -2,58 +2,71 @@ In this section of the IBEX user manual, we have compiled a list of frequently a
 
 .. contents:: **List of Frequently Asked Questions**
 
+IBEX Processes and Support
+==========================
+
 How do I report a problem with IBEX?
-=======================================
+------------------------------------
 
 **A:** To report a problem with IBEX (Client or Server), please use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page.  Using this page helps to ensure that your problem report gets routed to the right person as quickly as possible.  When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client.
 
 How do I install IBEX Server?
-=============================
+-----------------------------
 
 To install the IBEX Server - see [[Installing IBEX Server|Installing-IBEX#installing-ibex-server]].
 
 How do I install IBEX Client?
-=============================
+-----------------------------
 
 To install IBEX Client - see [[Installing the IBEX Client|Installing-IBEX#installing-ibex-client]].
 
+Can I run IBEX and SECI at the same time?
+-----------------------------------------
+
+In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
+
+Which version of Python does IBEX use?
+--------------------------------------
+
+IBEX currently uses Python 3.8.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 3. 
+
+Where can I learn about Python?
+-------------------------------
+
+Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
+
+
+How do I view which new ibex features have been requested or are being worked on?
+---------------------------------------------------------------------------------
+
+To view prioritised issues which are currently being worked on, the best way to view it is in the project view on github: https://github.com/ISISComputingGroup/IBEX/projects/1 . For issues which have been requested but not yet prioritised, it's possible to search the github issues view at https://github.com/ISISComputingGroup/IBEX/issues , but this is a rather long list and not very friendly to browse through unless you already know what you're looking for (e.g. a device name).
+
+
+Running IBEX
+============
+
 How do I start IBEX Server?
-===========================
+---------------------------
 
 To start IBEX Server - see [[Starting the IBEX Server | Starting-and-Stopping-IBEX#starting-ibex-server]].
 
 How do I stop IBEX Server?
-==========================
+--------------------------
 
 To stop IBEX Server - see [[Stopping the IBEX Server|Starting-and-Stopping-IBEX#stopping-ibex-server]].
 
-Can I run IBEX and SECI at the same time?
-=========================================
-
-In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
-
 Can I switch from running IBEX to SECI and vice-versa?
-======================================================
+------------------------------------------------------
 
 Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[Switching Between IBEX and SECI]] for details.
 
 Can I write scripts to control my experiment?
-=============================================
+---------------------------------------------
 
 Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
 
-Which version of Python does IBEX use?
-======================================
-
-IBEX currently uses Python 2.7.  This is a deliberate choice; we wish to remain compatible with Mantid, which also uses Python 2.7.  genie-python and Mantid will both migrate to Python 3.x at a future date (yet to be determined). 
-
-Where can I learn about Python?
-===============================
-
-Python (extended by genie_python) is the scripting language used by IBEX.  If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
-
 What do I look at if there are no RAW frames when Collecting Data?
-==================================================================
+------------------------------------------------------------------
 
 If when collecting data no raw frames are counted (see `Good / Raw` Frames on the dashboard) then:
 
@@ -66,7 +79,7 @@ Timing is SMP:
 Consider swapping the timing source to help diagnose the problem. 
 
 What do I look at if there are no GOOD frames when Collecting Data?
-===================================================================
+-------------------------------------------------------------------
 
 If there are RAW frames but no good frames then the count is being vetoed. Open the DAE perspective and select the Vetoes tab to see what is vetoing the frame. 
 
@@ -80,7 +93,7 @@ External veto{0-3}:
     could be an additional chopper, the shutter or moderator
 
 Can I change what my graphs look like in the log plotter or OPI?
-================================================================
+----------------------------------------------------------------
 
 **Yes!** There are lots of setting exposed by the native control. These include graph title, axis font type and size, trace line colour, line type, and line width. To reach these settings for a graph in an OPI do the following:
 
@@ -90,27 +103,49 @@ Can I change what my graphs look like in the log plotter or OPI?
 
 To open the settings in a log plotter graph, just right click and click "Open Properties Panel".
 
-In the scripting view I don't want the arguments when I autocomplete
-=====================================================================
-
-In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
-
 How do I find a specific PV?
-============================
+----------------------------
 
 PVs in IBEX should all follow the naming convention as specified in [[PV Naming Conventions]]. You can search for PVs that are available on your instrument by using the `Select PV` button in the [[Blocks Tab|Create and Manage Configurations#blocks-tab]]. Finally, if you can see the value that you want on an OPI you can hover over it to get the PV name or right click and `Show PV Info`.
 
 How do I set a value to change when I change configuration/component?
-=====================================================================
+---------------------------------------------------------------------
 
 This can be accomplished by using [[IOC PV Values|Create and-Manage-Configurations#ioc-pv-values]].
 
 Why are some blocks and their PV addresses greyed-out in the "Edit Configuration" dialogue box?
-===============================================================================================
+-----------------------------------------------------------------------------------------------
 
 This is because they are part of a `component` and can't be edited from a host configuration.  To make changes to the "master" copy, open the relevant component from the menu `Configuration -> Components -> Edit Component`.  See the note at the bottom of the [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
 
-How do I view which new ibex features have been requested or are being worked on?
-=================================================================================
 
-To view prioritised issues which are currently being worked on, the best way to view it is in the project view on github: https://github.com/ISISComputingGroup/IBEX/projects/1 . For issues which have been requested but not yet prioritised, it's possible to search the github issues view at https://github.com/ISISComputingGroup/IBEX/issues , but this is a rather long list and not very friendly to browse through unless you already know what you're looking for (e.g. a device name).
+Scripting in IBEX
+=================
+
+In the scripting view I don't want the arguments when I autocomplete
+--------------------------------------------------------------------
+
+In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometime you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
+
+When I load script I get an error complaining about unicodeescape
+-----------------------------------------------------------------
+
+If you try to load a script and you get the following error:
+
+```
+>>> `g.load_script('c:\scripts\NiceScript.py')`
+  File "<ipython-input-7-c5705547e6ca>", line 1
+    g.load_script('c:\scripts\NiceScript.py')
+                  ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 10-11: malformed \N character escape
+```
+
+The problem is you have not escaped the string correctly, in python the slash character, `\`, is an escape. In this command the `\N` is causing python trouble. You can either:
+
+#. Place an `r` before the string this makes it ignore escapes except for quote marks
+    - `g.load_script(r'c:\scripts\NiceScript.py')`
+#. Escape the slashes
+    - `g.load_script('c:\\scripts\\NiceScript.py')`
+#. Just use the default script path so:
+    - `g.load_script('NiceScript.py')`
+
