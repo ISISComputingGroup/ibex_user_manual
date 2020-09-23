@@ -26,3 +26,5 @@ From left to right these buttons do the following:
 As of September 2019, there is a limit on the amount of output that can be kept in the console. This limit is enforced to prevent a long output log from claiming too much memory and slowing down the rest of the control system. 
 
 The console output can also be manually saved & cleared by using the right-click console context menu.
+
+You can search console text by right-clicking on the console, clicking "Find/Replace...", typing your search query in the "Find:" text field and pressing the "Find" button.
