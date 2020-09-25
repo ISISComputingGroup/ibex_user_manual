@@ -74,7 +74,7 @@ Sequentially sets a position (e.g. sample changer) and waits for a fixed number 
         g.begin()
         total_charge_to_wait_for = 0
         for position_name in position_names:
-            print "Moving sample changer to position: {0}".format(position_name)
+            print("Moving sample changer to position: {0}".format(position_name))
             g.cset(block_name, position_name)
             total_charge_to_wait_for += charge_to_wait_for
             g.waitfor_uamps(total_charge_to_wait_for)
@@ -98,7 +98,7 @@ Reads the value of a block and moves it through a series of intervals to a new v
         
         initial_value = g.cget(block_name)['value']
         if initial_value is None:
-            print "Unable to determine temperature from block {0}. No action will be taken".format(block_name)
+            print("Unable to determine temperature from block {0}. No action will be taken".format(block_name))
             return
             
         def values_match(v1, v2):
@@ -110,11 +110,11 @@ Reads the value of a block and moves it through a series of intervals to a new v
         for i in range(1, steps+1):
             step_value = initial_value + (final_value - initial_value)/steps*i
             g.cset(block_name, step_value)
-            print "Ramping to: {0} Target value: {1}".format(step_value, final_value)
+            print("Ramping to: {0} Target value: {1}".format(step_value, final_value))
             g.waitfor_time(seconds=step_duration)
             new_block_value = g.cget(block_name)['value']
             if not values_match(new_block_value, step_value):
-                print "WARNING: The current value for block {0}, {1}, does not match the target value of {2}".format(block_name, new_block_value, step_value)
+                print("WARNING: The current value for block {0}, {1}, does not match the target value of {2}".format(block_name, new_block_value, step_value))
         
-        print "Ramp complete"
+        print("Ramp complete")
             
