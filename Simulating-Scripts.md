@@ -43,6 +43,27 @@ True
 False
 ```
 
+## Initial Block Values in simulation mode
+
+By default when entering simulation mode all blocks have the value `INITIAL_VALUE`. However, you may want to provide some defaults of your own so that you can simulate how the script will run from various starting conditions. You can do this by providing a dictionary of values when creating the context manager e.g.:
+
+```python
+with g.sim.Simulate(initial_block_values={'TEST_BLOCK': 42.42}):
+    test_block_data = g.cget("TEST_BLOCK")
+    print(test_block_data['value'])
+```
+```
+42.42
+```
+
+You could also provide the current state of the instrument by using `cgets` before starting simulation mode:
+
+```python
+current_block_values = {"TEST_BLOCK": g.cget("TEST_BLOCK")}
+with g.sim.Simulate(initial_block_values=current_block_values):
+    ...
+```
+
 What is and is not simulated
 ============================
 
