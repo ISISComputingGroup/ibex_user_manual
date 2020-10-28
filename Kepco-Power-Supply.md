@@ -12,6 +12,14 @@ KEPCO PSUs run in two modes:
     - Setting a current will mean the KEPCO will supply the given current.
     - In current mode, the voltage that is set will be the maximum allowed current.
 
+## Macros
+
+`RESET_ON_START` This macro controls whether the ioc resets and resends parameters on start of the IOC and can be set to 0, 1 or 2. 
+
+- 0 tells the IOC to not reset and resend setpoints on startup
+- 1 tells the IOC to reset and resend setpoints if the firmware is less than version 2.0
+- 2 tells the IOC to reset and resend setpoints no matter what the firmware version is
+
 Troubleshooting
 ---------------
 
