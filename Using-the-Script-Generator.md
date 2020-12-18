@@ -1,5 +1,10 @@
 Here we will talk you through what you need to know to use the script generator.
 
+# Keyboard Shortcuts
+
+- Ctrl-click on multiple lines to select them all
+- Tab onto the next cell (tabbing from the last cell creates a new line)
+
 # Common questions
 
 ### How do I delete multiple lines?
