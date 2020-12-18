@@ -1,5 +1,23 @@
 Here we will talk you through what you need to know to use the script generator.
 
+# Common questions
+
+### How do I delete multiple lines?
+
+Hold shift and click the lines to select them, then click the delete actions button.
+
+### How do I insert an action at a given point?
+
+Click the line you wish to insert the new line below and click duplicate action.
+
+### How do I add a new line to the end?
+
+Click the add action button.
+
+### Can I tab between cells?
+
+Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created. 
+
 # A tour of the UI
 
 ![ScriptGenerator UI](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UI.JPG)
