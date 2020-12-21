@@ -1,5 +1,3 @@
-Here we will talk you through what you need to know to use the script generator.
-
 # Keyboard Shortcuts
 
 - Ctrl-click on multiple lines to select them all
