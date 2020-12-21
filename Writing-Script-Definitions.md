@@ -82,6 +82,23 @@ def magnet_device_type(magnet_device):
 
 To say we cannot cast the argument we raise a ValueError which tells cast_parameters_to that we have failed to cast the argument. The string you type into the ValueError (e.g. "Magnet device must be one of {} or N/A".format(magnet_devices))  will be propagated back up to the user.
 
+## Copying from previous rows
+
+`CopyPreviousRow` instances can be used to specify parameters in functions which should copy any previous row's value. This could be used to avoid re-specifying the values manually when creating a script. 
+
+Usage: 
+
+```python
+from genie_python.genie_script_generator import ScriptDefinition, cast_parameters_to, CopyPreviousRow
+
+class DoRun(ScriptDefinition):
+    @cast_parameters_to(temperature=float_or_keep, field=float_or_keep, mevents=int, magnet_device=magnet_device_type)
+    def run(self, temperature=CopyPreviousRow(1.0), field=1.0, mevents=10, magnet_device="N/A"):
+       ...
+```
+
+The `temperature` field here would still have a default value of 1.0 if no actions exist, however if a user changes this value and adds another row it will be copied over to the next row.
+
 # Using python, genie and inst
 
 The script generator uses the python that we bundle with it which comes pre-installed with everything you would expect on an instrument (except inst) so you can easily write genie commands into your script definition etc. 
