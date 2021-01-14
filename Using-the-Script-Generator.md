@@ -6,7 +6,7 @@
 # Common questions
 ### How do I copy and paste lines?
 
-* Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` to copy. Press `Ctrl+v` after selecting the line where you want to
+Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` to copy. Press `Ctrl+v` after selecting the line where you want to
 paste.
 
 ### How do I delete multiple lines?
