@@ -54,6 +54,12 @@ Description
 Synoptic
    IBEX allows you to create different synoptic views for use with different configurations.  Therefore, it is convenient to associate a synoptic view with a configuration - it saves you from having to remember the association.  Your chosen synoptic will be used as the default synoptic whenever you use this configuration.  
 
+Protected
+    Selecting this checkbox will restrict editing of this configuration to users in "manager mode". Manager mode can be enabled under the IBEX menu, by inputting the password (please ask experiment controls group if you are unsure about the password)
+
+Dynamic
+    Mark this configuration or component as dynamic, meaning that it can be edited automatically in response to certain events. Note that this is advanced functionality which requires other IBEX components to be configured; please ask experiment controls group if you believe you need this functionality on your instrument.
+
 Components Tab
 ~~~~~~~~~~~~~~
 
