@@ -70,6 +70,10 @@ Motors
 ======
 The Motors View displays the status of all motors connected to the instrument control PC.  You can also control all motors from this view.  The Motors View is most useful for instruments with large numbers of motors.
 
+Reflectometry
+=============
+The [[reflectometry view|Reflectometry-View]] is available to reflectometers that combines all the components needing to run most experiments for a reflectometer in one place. Typically this view replaces the scripting view.
+
 Script Server
 =============
 The Script Server View displays the current script being run, the queue of scripts to be run on the Script server and the output of any scripts. See [[Script Server]] for more details.
