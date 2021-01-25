@@ -2,4 +2,25 @@ The reflectometry view is available to reflectometers that combines all the comp
 
 .. image:: reflectometry/FullScreen.png
 
-<UNDER CONSTRUCTION>
+This screen is split into 3 main areas shown in this schematic rendering:
+
+.. image:: reflectometry/FullScreenSchematic.png
+
+1. Scripting Window: This is a python console which allow you to issue commands to the reflectometry IOC. These commands range in complexity from getting the value of a parameter to allowing alignment of multiple axes
+2. Plotting Window: This shows the latest number of plots created using matplotlib in the scripting window. The `scan` command also plots its output here because it uses matplotlib.
+3. Reflectometry Window: This is the main view of the reflectometer. It displays where the reflectometer is and allow you to set where it should move to. This view consists of multiple tabs all serving a specific purpose; the next sections will look at those.
+
+Reflectometry View Tabs
+=======================
+
+Front Panel
+-----------
+
+Each instrument has a unique front panel but they all have a similar layout. The one shown in the first view is from a simulation of POLREF cira 2021.The schematic view shows the main areas of the panel.
+
+.. image:: reflectometry/FrontPanelSchematic.png
+
+
+
+
+< PAGE UNDER CONSTRUCTION>
