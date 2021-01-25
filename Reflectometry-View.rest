@@ -1,0 +1,5 @@
+The reflectometry view is available to reflectometers that combines all the components needing to run most experiments for a reflectometer in one place. Typically this view replaces the scripting view. A typical example of this view is shown here:
+
+.. image:: reflectometry\FullScreen.png
+
+<UNDER CONSTRUCTION>
