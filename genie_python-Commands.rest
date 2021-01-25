@@ -86,19 +86,28 @@ Run control
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 | get\_totalcounts    | Gets the total counts for the current run                                               | g.get\_totalcounts()               |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor             | Waits until certain conditions are met                                   | g.waitfor("NEW\_BLOCK",value=1)    |
+| waitfor             | Waits until certain conditions are met                                                  | g.waitfor("NEW\_BLOCK",value=1)    |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_block      | Waits until block reaches specific value                                 | g.waitfor\_block("NEW\_BLOCK",1)   |
+| waitfor\_block      | Waits until block reaches specific value                                                | g.waitfor\_block("NEW\_BLOCK",1)   |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_time       | Waits for a specified amount of time                                     | g.waitfor\_time(1)                 |
+| waitfor\_time       | Waits for a specified amount of time                                                    | g.waitfor\_time(1)                 |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_frames     | Waits for a number of total good frames to reach parameter value   | g.waitfor\_frames(1000)            |
+| waitfor\_frames     | Waits for a number of total good frames to reach parameter value                        | g.waitfor\_frames(1000)            |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
-| waitfor\_uamps      | Waits for a specific total charge                                | g.waitfor\_uamps(9.9)              |
+| waitfor\_uamps      | Waits for a specific total charge                                                       | g.waitfor\_uamps(9.9)              |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 | waitfor\_runstate   | Waits for a particular instrument run state                                             | g.waitfor\_runstate("paused")      |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
 | waitfor\_move       | Waits for all motion or specific motion to complete                                     | g.waitfor\_move("NEW\_BLOCK")      |
 +---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+
+
+Toggling options
+----------------
+Various options can be toggled with the ``toggle`` command.
+
+For example, toggling the verbosity of all calls to a command using ``toggle.cset_verbose(True)``. This can be convenient, as there will be no need to explicitly set ``verbose=True`` for each ``cset`` call.
+
+There are also advanced options such as ``toggle.exceptions_raised(True)``, which will allow exceptions to propagate instead of genie handling them, in case you want to handle exceptions yourself.
 
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
