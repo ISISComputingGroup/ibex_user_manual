@@ -108,6 +108,6 @@ Various options can be toggled with the ``toggle`` command.
 
 For example, toggling the verbosity of all calls to a command using ``toggle.cset_verbose(True)``. This can be convenient, as there will be no need to explicitly set ``verbose=True`` for each ``cset`` call.
 
-There are also advanced options such as ``toggle.exceptions_raised(True)``, which will allow exceptions to propagate instead of genie handling them, in case you want to handle exceptions yourself.
+There are also advanced options such as ``toggle.exceptions_raised(True)``, which will allow exceptions to propagate instead of genie handling them, in case you want to handle exceptions yourself. WARNING: If you have this toggled to True and there is an exception within genie_python it will stop your script from running unless you catch the exception yourself.
 
 .. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html
