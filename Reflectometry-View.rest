@@ -10,6 +10,55 @@ This screen is split into 3 main areas shown in this schematic rendering:
 2. Plotting Window: This shows the latest number of plots created using matplotlib in the scripting window. The `scan` command also plots its output here because it uses matplotlib.
 3. Reflectometry Window: This is the main view of the reflectometer. It displays where the reflectometer is and allow you to set where it should move to. This view consists of multiple tabs all serving a specific purpose; the next sections will look at those.
 
+Conventions
+===========
+
+Parameters
+----------
+
+Lots of screens show lists of parameters these all have a similar form:
+
+.. image:: reflectometry/Parameter.png
+.. image:: reflectometry/ParameterInOut.png
+
+The parts of this starting on the left are:
+
+- Letters: 
+    - M means that the parameter is in the current mode (see Operation Mode below)
+    - Other letters may be added later
+- Label (bold text): this is the name of the parameter. Usually the block name will have the same name.
+- RBV Value: This is the readback value, the current position of the reflectometer. Usually this is relative to the beam. It can have several border colours indicating problems see below.
+- SP:RBV Value: This is the setpoint that the reflectometer will move to when the move all button is pressed or a parameter move button is pressed and this parameter is in the mode. If the setpoint is changed then it will move to this position instead when move all is pressed.
+- SP Box/Button/Drop Down: This is the setpoint that the motor will move to if the parameter move button is pressed or the move all button is pressed.
+- Move button: This is the parameters move button, it will cause its setpoint to be applied and then the reflectometer to move to this position. If it is in the mode then all other parameters in the mode will be move to (strictly those order after this).
+
+**Parameter Colours**
+
+.. image:: reflectometry/ParameterMoving.png
+
+RBV has a green background: an underlying motor for the parameter is moving
+
+.. image:: reflectometry/ParameterChanged.png
+
+SP has a yellow background: the setpoint has been changed but not yet applied to the reflectometer. It will be applied when either the move all button is pressed or the parameters move button is pressed
+
+.. image:: reflectometry/ParameterNotInPosition.png
+
+All parameters have a single large red border: this shows that the movement has stopped but that the setpoint and readback do not agree. This could be because the tolerance is too tight (motors can only achieve a certain accuracy) but more likely is that a motor has not stopped at the right place. Check the positions and if necessary re set the parameter. This should be reported to an Instrument scientist as it may be a problem with an underlying motor.
+
+.. image:: reflectometry/ParameterMinor.png
+
+RBV has an orange border (tool tip include the word MINOR): there is a minor error with the parameter, check it looks sensible. This can be that the underlying motor has hit a limit switch and stopped. This is fine for some motors and positions.
+
+.. image:: reflectometry/ParameterMajor.png
+
+RBV has an red border (tool tip include the word MAJOR): there is a major error with the parameter. Stop using it until you find out what is wrong.
+
+.. image:: reflectometry/ParameterInvalid.png
+
+RBV has an purple border (tool tip include the word INVALID): the parameter is invalid. This is usually because the underlying motor has stopped responding. Stop using the reflectometer and find out what has gone wrong
+
+
 Reflectometry View Tabs
 =======================
 
@@ -20,7 +69,105 @@ Each instrument has a unique front panel but they all have a similar layout. The
 
 .. image:: reflectometry/FrontPanelSchematic.png
 
+For peculiarities of instruments see the [[instrument specific pages|https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Reflectometry-IOC#specific-reflectometers]]
 
+**Vertical Slits / Horizontal Slits**
 
+This section allows the slits to be set in the various direction, the parameters are displayed and set as standard parameters. There are two difference in this section:
 
-< PAGE UNDER CONSTRUCTION>
+1. Polref can have the sample horizontal or vertical, the slits controlling the collimation of the beam are always top left (i.e. vertical when the sample is horizontal and horizontal when the sample is vertical).
+1. Several instruments have a beam blocker mode. Beam blocker mode can be set using the drop down. In this mode the user controls the slit positions directly and not the gaps; to help with this the gaps are no longer displayed and the blades are displayed instead.
+
+**Important Parameters**
+
+This section contains parameters that are important for the beamline setup. For instance theta is normally top right (and on some instruments the label is slightly larger). This section may also contain super mirror angles, and whether the beam line is in laser mode. Laser mode is where components, e.g. the monitor are removed from the beam to allow the laser to travel through the system for alignment.
+
+**Sample Stack**
+
+These parameters control the position of the sample. In general the sample stack is not included in the mode so will not be automatically set when you change the rest of the parameters. E.g. if you change the super mirror angle the sample stack will not track the beam. Instead you must set the parameters or click the move button to make the sample stack move to its new position. The degrees of freedom depend on the beamline common degrees of freedom are:
+
+- Phi: angle in the same plan as theta, this is relative to the incoming beam before theta and so should be set to be the same as theta when you want to maintain the elastic scattering condition.
+- Psi/Chi: twist the sample in the other direction for alignment.
+- Height: Distance between the beam and the centre of rotation; usually set a 0. This moves the course z stage tracking the beam.
+- Height2: Distance from the sample centre of rotation to the sample. This is used to align the sample with the beam. Some instruments do not have a height2 and so should use height for this purpose as well.
+- Trans: Distance perpendicular to the beam for the sample
+
+**Footprint Calculator**
+
+Given parameters about your sample this will estimate the resolution and beam footprint for the current setpoint, setpoint rbv and readback for your sample.
+
+**Operation Mode**
+
+This allows you to set what mode you want to run the beamline in. A mode consists of two part, initial condition and which parameters are in the mode. Initial conditions can be which components are in the beam (super mirror in or out) and where components are positioned relative to the beam. If the apply mode inits on move is set then these will be reapplied every time the beam line is moved. Which parameters are in the mode determines which parameters will be kept set on beam moves. So if a slit is in the mode as the beam moves its distance to the beam will be kept constant. If the slit was not in the mode it would not move its position unless a new set point was set or the move button is pressed. Common modes are:
+
+- NR: Neutron reflection, no super mirror just reflect from the sample
+- PNR: Polarised neutron reflection, this mode uses a super mirror to reflect or polarise the beam
+- DISABLED: In this mode the tracking is disabled, components only move relative to their positions when entering the mode (with the exception of theta which will still move the detector or bench). For instance, if you where at 0 theta and 0 supermirror angle and entered DISABLE mode then a move of supermirror angle would just change that angle, a change in a slit offset would still be relative to the 0 position even though the beam has moved. This mode is used during super mirror alignment and when the experiment is outside of the normal parameters for other mode.
+
+**Server Status**
+
+This reports information, warnings and error that occur in the IOC. If there is a warning or error it should be taken seriously and the fault should be fixed before taking data. The status is cleared before each move.
+
+Known errors that can be ignored (and will be fixed in upcoming releases):
+
+- None
+
+**Move All button**
+
+This sets all currently changed parameters (in yellow) and move the beamline to these positions. This is different from the smaller move button which will just set the parameter it is associated with.
+
+**Apply move inits on mode**
+
+When ticket and move all is pressed all mode inits for the mode will set before the move (this will override any you have set) and move to that position. 
+
+** Motion light**
+
+This is green when someone is moving on the beamline. Currently it will also flicker if one of the motors encoders is flicking between two values, this often happens when the motor stops between two values; we hope to fix this issue in the future.
+
+** STOP ALL MOTION**
+
+If something is going wrong press this button and all motors will stop their movement.
+
+Collimation Plane Parameters
+----------------------------
+
+These are parameters which related to positions in the collimation plane. For example if the beam moves in the vertical plane these will be height offsets from the beam and phi angles to the beam.
+
+Activation Parameters
+---------------------
+
+These parameter set whether components are active in the beam. For example whether the super mirror is in the beam or not.
+
+Slit Parameters
+---------------
+
+These parameters control the slit gaps and positions both horizontally and vertically .
+
+Other Parameters
+----------------
+
+These parameters are those not found on other tabs, they tend to control movement in the non collimation plan, e.g. translation of the sample.
+
+Driver Corrections
+------------------
+
+.. image:: reflectometry/DriverCorrections.png
+
+This displays the value of any engineering corrections that are currently being applied to the motors. [[Engineering corrections are set in the configuration file|https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Reflectometry-Composite-Driving-Layer#engineering-offset]] and allow the instrument scientist to provide corrections to motor positions for better accuracy.
+
+Constants
+---------
+
+.. image:: reflectometry/Constants.png
+
+This shows the constants for the current instrument and configuration and can be accessed in scripts if needed. 
+
+Error Log
+---------
+
+The error log tab shows a more detailed view of errors reported in the instrument status panel.
+
+Redefine Motors
+---------------
+
+This panel is for Instrument Scientists only. It allows them to align the instrument.
