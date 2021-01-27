@@ -24,7 +24,6 @@ Most screens show lists of parameters. Each of those parameters has a similar fo
 
 1. Real number parameter
 .. image:: reflectometry/Parameter.png
-   :height: 704
 
 1. IN Out of beam parameter
 .. image:: reflectometry/ParameterInOut.png
