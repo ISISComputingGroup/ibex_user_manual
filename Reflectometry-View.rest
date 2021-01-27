@@ -3,6 +3,8 @@
 The reflectometry view combines all the components needing to run most experiments for a reflectometer in one place; it is only available on reflectometers and replaces the scripting view. Below is an example of this view from POLREF.
 
 .. image:: reflectometry/FullScreen.png
+   :alt: full screen screenshot of reflectometry view
+   :height: 704
 
 This screen is split into 3 main areas shown in this schematic rendering.
 
