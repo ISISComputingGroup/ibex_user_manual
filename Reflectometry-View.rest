@@ -86,7 +86,8 @@ Each instrument has a unique front panel but they all have a similar layout. The
 
 .. image:: reflectometry/FrontPanelSchematic.png
 
-**Vertical Slits / Horizontal Slits**
+Vertical Slits / Horizontal Slits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The vertical and horizontal slit sections allows the slits to be set in the various direction, the parameters are displayed and set as standard parameters. Note that:
 
@@ -94,11 +95,13 @@ The vertical and horizontal slit sections allows the slits to be set in the vari
 
 - POLREF can have the sample horizontal or vertical, the slits controlling the collimation of the beam are always top left (i.e. vertical when the sample is horizontal and horizontal when the sample is vertical).
 
-**Important Parameters**
+Important Parameters
+~~~~~~~~~~~~~~~~~~~~
 
 The important parameters section contains parameters that control the overall beam path. For instance theta is normally top right (and on some instruments the label is slightly larger). This section may also contain super mirror angles, and whether the beam line is in laser mode. Laser mode is where components, e.g. the monitor are removed from the beam to allow the laser to travel through the system for alignment.
 
-**Sample Stack**
+Sample Stack
+~~~~~~~~~~~~
 
 These parameters control the position of the sample. In general the sample stack is not included in the mode so will not be automatically set when you change the rest of the parameters. E.g. if you change the super mirror angle the sample stack will not track the beam. Instead you must set the parameters or click the move button to make the sample stack move to its new position. The degrees of freedom depend on the beamline, some common degrees of freedom are:
 
@@ -108,11 +111,13 @@ These parameters control the position of the sample. In general the sample stack
 - Height2: Distance from the sample centre of rotation to the sample. This is used to align the sample with the beam. Some instruments do not have a height2 and so should use height for this purpose as well.
 - Trans: Distance perpendicular to the beam for the sample
 
-**Footprint Calculator**
+Footprint Calculator
+~~~~~~~~~~~~~~~~~~~~
 
 The footprint calculator calculates the resolution and beam footprint given parameters about your sample. There are three calculation, one for the setpoint, one for setpoint RBV and one for the readback.
 
-**Operation Mode**
+Operation Mode
+~~~~~~~~~~~~~~
 
 The operation mode panel allows you to set the mode that beamline should run in. A mode consists of two part, initial value and a list of parameters that are in the mode. Initial values are the value for parameters, e.g. whether a components is in the beam or the values position of a slit. If the `apply mode inits on move` checkbox is checked then the initial values will be reapplied every time the beam line is moved. Which parameters are in the mode determines which parameters will be reapplied as the beam moves. So if a slit is in the mode as the beam moves its distance to the beam will be kept constant. Whereas if the slit is not in the mode it will not move its position unless a new set point is set or the move button is pressed. 
 
@@ -122,7 +127,8 @@ Common modes are:
 - PNR: Polarised neutron reflection, this mode uses a super mirror to reflect or polarise the beam
 - DISABLED: In this mode the tracking is disabled, components move relative to their positions at the point the mode is selected (with the exception of theta which will still move the detector or bench). For instance, if you where at 0 theta and 0 supermirror angle and entered DISABLE mode then a move of supermirror angle would just change that angle, a change in a slit offset would still be relative to the 0 position not the current beam position. This mode is used during super mirror alignment and when the experiment is outside of the normal parameters for other modes.
 
-**Server Status**
+Server Status
+~~~~~~~~~~~~~
 
 The server status panel reports information, warnings and error that occur in the IOC. If there is a warning or error it should be taken seriously and the fault should be fixed before taking data. The status is cleared before each move.
 
@@ -130,19 +136,23 @@ Known errors that can be ignored (and will be fixed in upcoming releases):
 
 - None
 
-**Move All button**
+Move All button
+~~~~~~~~~~~~~~~
 
 The move `all button` sets all currently changed parameters (in yellow) and moves the beamline to these positions. This is different from the smaller parameter move button which will set only the associated parameter.
 
-**`Apply move inits on mode`**
+Apply move inits on mode
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 When `Apply move inits on mode` is ticked and move all is pressed then all the initial values for the mode will be set before the move, this will override any you have set. The move will then commence normally to that position. This is usually the correct when running an experiment because the initial values set up most components to track the beam with an offset of 0.
 
-**Motion Indicator**
+Motion Indicator
+~~~~~~~~~~~~~~~~
 
 The motion indicator is green when a motor is moving somewhere on the beamline. Currently it will also flicker if one of the motor encoders is changing between two values, this often happens when the motor stops between two values; we hope to fix this issue in the future.
 
-**STOP ALL MOTION**
+STOP ALL MOTION
+~~~~~~~~~~~~~~~
 
 Press the `STOP ALL MOTION` button if something is going wrong, it will stop all motors.
 
