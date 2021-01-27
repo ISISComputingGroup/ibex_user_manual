@@ -98,29 +98,31 @@ The important parameters section contains parameters that control the overall be
 
 **Sample Stack**
 
-These parameters control the position of the sample. In general the sample stack is not included in the mode so will not be automatically set when you change the rest of the parameters. E.g. if you change the super mirror angle the sample stack will not track the beam. Instead you must set the parameters or click the move button to make the sample stack move to its new position. The degrees of freedom depend on the beamline common degrees of freedom are:
+These parameters control the position of the sample. In general the sample stack is not included in the mode so will not be automatically set when you change the rest of the parameters. E.g. if you change the super mirror angle the sample stack will not track the beam. Instead you must set the parameters or click the move button to make the sample stack move to its new position. The degrees of freedom depend on the beamline, some common degrees of freedom are:
 
-- Phi: angle in the same plan as theta, this is relative to the incoming beam before theta and so should be set to be the same as theta when you want to maintain the elastic scattering condition.
-- Psi/Chi: twist the sample in the other direction for alignment.
+- Phi: angle in the same direction as theta, this is relative to the incoming beam to the sample and so should be the same as theta when you want to maintain the elastic scattering condition.
+- Psi/Chi: rotate the sample in the planes other than theta for alignment.
 - Height: Distance between the beam and the centre of rotation; usually set a 0. This moves the course z stage tracking the beam.
 - Height2: Distance from the sample centre of rotation to the sample. This is used to align the sample with the beam. Some instruments do not have a height2 and so should use height for this purpose as well.
 - Trans: Distance perpendicular to the beam for the sample
 
 **Footprint Calculator**
 
-Given parameters about your sample this will estimate the resolution and beam footprint for the current setpoint, setpoint rbv and readback for your sample.
+The footprint calculator calculates the resolution and beam footprint given parameters about your sample. There are three calculation, one for the setpoint, one for setpoint RBV and one for the readback.
 
 **Operation Mode**
 
-This allows you to set what mode you want to run the beamline in. A mode consists of two part, initial condition and which parameters are in the mode. Initial conditions can be which components are in the beam (super mirror in or out) and where components are positioned relative to the beam. If the apply mode inits on move is set then these will be reapplied every time the beam line is moved. Which parameters are in the mode determines which parameters will be kept set on beam moves. So if a slit is in the mode as the beam moves its distance to the beam will be kept constant. If the slit was not in the mode it would not move its position unless a new set point was set or the move button is pressed. Common modes are:
+The operation mode panel allows you to set the mode that beamline should run in. A mode consists of two part, initial value and a list of parameters that are in the mode. Initial values are the value for parameters, e.g. whether a components is in the beam or the values position of a slit. If the `apply mode inits on move` checkbox is checked then the initial values will be reapplied every time the beam line is moved. Which parameters are in the mode determines which parameters will be reapplied as the beam moves. So if a slit is in the mode as the beam moves its distance to the beam will be kept constant. Whereas if the slit is not in the mode it will not move its position unless a new set point is set or the move button is pressed. 
+
+Common modes are:
 
 - NR: Neutron reflection, no super mirror just reflect from the sample
 - PNR: Polarised neutron reflection, this mode uses a super mirror to reflect or polarise the beam
-- DISABLED: In this mode the tracking is disabled, components only move relative to their positions when entering the mode (with the exception of theta which will still move the detector or bench). For instance, if you where at 0 theta and 0 supermirror angle and entered DISABLE mode then a move of supermirror angle would just change that angle, a change in a slit offset would still be relative to the 0 position even though the beam has moved. This mode is used during super mirror alignment and when the experiment is outside of the normal parameters for other mode.
+- DISABLED: In this mode the tracking is disabled, components move relative to their positions at the point the mode is selected (with the exception of theta which will still move the detector or bench). For instance, if you where at 0 theta and 0 supermirror angle and entered DISABLE mode then a move of supermirror angle would just change that angle, a change in a slit offset would still be relative to the 0 position not the current beam position. This mode is used during super mirror alignment and when the experiment is outside of the normal parameters for other modes.
 
 **Server Status**
 
-This reports information, warnings and error that occur in the IOC. If there is a warning or error it should be taken seriously and the fault should be fixed before taking data. The status is cleared before each move.
+The server status panel reports information, warnings and error that occur in the IOC. If there is a warning or error it should be taken seriously and the fault should be fixed before taking data. The status is cleared before each move.
 
 Known errors that can be ignored (and will be fixed in upcoming releases):
 
@@ -128,53 +130,53 @@ Known errors that can be ignored (and will be fixed in upcoming releases):
 
 **Move All button**
 
-This sets all currently changed parameters (in yellow) and move the beamline to these positions. This is different from the smaller move button which will just set the parameter it is associated with.
+The move `all button` sets all currently changed parameters (in yellow) and moves the beamline to these positions. This is different from the smaller parameter move button which will set only the associated parameter.
 
-**Apply move inits on mode**
+**`Apply move inits on mode`**
 
-When ticket and move all is pressed all mode inits for the mode will set before the move (this will override any you have set) and move to that position. 
+When `Apply move inits on mode` is ticked and move all is pressed then all the initial values for the mode will be set before the move, this will override any you have set. The move will then commence normally to that position. This is usually the correct when running an experiment because the initial values set up most components to track the beam with an offset of 0.
 
-** Motion light**
+**Motion Indicator**
 
-This is green when someone is moving on the beamline. Currently it will also flicker if one of the motors encoders is flicking between two values, this often happens when the motor stops between two values; we hope to fix this issue in the future.
+The motion indicator is green when a motor is moving somewhere on the beamline. Currently it will also flicker if one of the motor encoders is changing between two values, this often happens when the motor stops between two values; we hope to fix this issue in the future.
 
-** STOP ALL MOTION**
+**STOP ALL MOTION**
 
-If something is going wrong press this button and all motors will stop their movement.
+Press the `STOP ALL MOTION` button if something is going wrong, it will stop all motors.
 
 Collimation Plane Parameters
 ----------------------------
 
-These are parameters which related to positions in the collimation plane. For example if the beam moves in the vertical plane these will be height offsets from the beam and phi angles to the beam.
+Parameters on the collimation plane parameters tab are parameters which related to positions in the collimation plane. For example if the beam moves in the vertical plane these will be height offsets and phi/theta like angles.
 
 Activation Parameters
 ---------------------
 
-These parameter set whether components are active in the beam. For example whether the super mirror is in the beam or not.
+Parameters on the activation parameters tab set whether components are active in the beam. For example whether the super mirror is in the beam or not.
 
 Slit Parameters
 ---------------
 
-These parameters control the slit gaps and positions both horizontally and vertically .
+The slit parameters tab contains parameters that control the slit gaps and positions for both horizontal and vertical slits.
 
 Other Parameters
 ----------------
 
-These parameters are those not found on other tabs, they tend to control movement in the non collimation plan, e.g. translation of the sample.
+The other parameters tab displays parameter which are those not found on other tabs, they tend to control movement in the non collimation plan, e.g. translation of the sample.
 
 Driver Corrections
 ------------------
 
 .. image:: reflectometry/DriverCorrections.png
 
-This displays the value of any engineering corrections that are currently being applied to the motors. [[Engineering corrections are set in the configuration file|https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Reflectometry-Composite-Driving-Layer#engineering-offset]] and allow the instrument scientist to provide corrections to motor positions for better accuracy.
+The driver correction tab displays the value of any engineering corrections that are currently being applied to the motors. [[Engineering corrections are set in the configuration file|https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Reflectometry-Composite-Driving-Layer#engineering-offset]] and allow the instrument scientist to correct the positions of components which do not follow the geometric calculation of the reflectometry IOC. This is one of the reasons why a motor position may be different from a geometric calculation of the beam.
 
 Constants
 ---------
 
 .. image:: reflectometry/Constants.png
 
-This shows the constants for the current instrument and configuration and can be accessed in scripts if needed. 
+The constants panel shows the constants for the current instrument and configuration and can be accessed in scripts if needed. These contains mostly positions of the components along the beamline.
 
 Error Log
 ---------
@@ -184,4 +186,4 @@ The error log tab shows a more detailed view of errors reported in the instrumen
 Redefine Motors
 ---------------
 
-This panel is for Instrument Scientists only. It allows them to align the instrument.
+The redefine motors panel is for Instrument Scientists only. It allows them to more easily align the instrument.
