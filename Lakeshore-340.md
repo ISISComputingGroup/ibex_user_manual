@@ -1,6 +1,6 @@
 Guide on Lakeshore 340 excitation thresholds.
 
-They are loaded from the instrument config area for example on LET `NDXLET\configurations\excitation_thresholds`. They are `.txt` files where each line is a pair of temperature threshold and excitation value in that order separated by a comma, for example:
+They are loaded from the instrument config area for example on MUSR `Instrument\Settings\config\NDXMUSR\configurations\excitation_thresholds`. They are `.txt` files where each line is a pair of temperature threshold and excitation value in that order separated by a comma, for example:
 
 ```
 20,30 nA
