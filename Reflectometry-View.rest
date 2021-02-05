@@ -23,10 +23,16 @@ Parameters
 Most screens show lists of parameters. Each of those parameters has a similar form, for example:
 
 1. Real number parameter
-.. image:: reflectometry/Parameter.png
 
-1. IN Out of beam parameter
-.. image:: reflectometry/ParameterInOut.png
+    .. image:: reflectometry/Parameter.png
+
+2. IN Out of beam parameter
+
+    .. image:: reflectometry/ParameterInOut.png
+
+3. Real number parameter with a characteristic value
+
+    .. image:: reflectometry/ParameterCharacteriticValue.png   
 
 Each parameter has multiple bits and these are (starting on the left):
 
@@ -36,6 +42,7 @@ Each parameter has multiple bits and these are (starting on the left):
 - SP:RBV Value: The setpoint readback, this where the reflectometer will move to when the move all button is pressed or when another parameter's move button is pressed and this parameter is in the mode. If the setpoint is set then it would move to that value instead.
 - SP Box/Button/Drop Down: The setpoint, this is the value that the motor will move to if the parameter move button is pressed or the move all button is pressed.
 - Move button: The parameters move button, when pressed it will cause the parameter's setpoint to be applied and the reflectometer to move to the new position. If it is in the mode then all other parameters in the mode will also be set.
+- Characteristic Value (Optional): This is a value which is a characteristic value you might want to consider when reading the parameter. Often this is the motor position which most represents the parameter.
 
 Parameter States
 ----------------
