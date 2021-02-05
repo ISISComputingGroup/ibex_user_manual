@@ -24,15 +24,15 @@ Most screens show lists of parameters. Each of those parameters has a similar fo
 
 1. Real number parameter
 
-    .. image:: reflectometry/Parameter.png
+.. image:: reflectometry/Parameter.png
 
 2. IN Out of beam parameter
 
-    .. image:: reflectometry/ParameterInOut.png
+.. image:: reflectometry/ParameterInOut.png
 
 3. Real number parameter with a characteristic value
 
-    .. image:: reflectometry/ParameterCharacteriticValue.png   
+.. image:: reflectometry/ParameterCharacteriticValue.png   
 
 Each parameter has multiple bits and these are (starting on the left):
 
