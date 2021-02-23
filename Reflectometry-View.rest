@@ -59,6 +59,12 @@ Readback value (RBV) has a green background: an underlying motor for the paramet
 
 Set point (SP) has a yellow background: the setpoint has been changed but not yet applied to the reflectometer. It will be applied when either the move all button is pressed or the parameters move button is pressed
 
+**Disabled**
+
+.. image:: reflectometry/ParameterDisabled.png
+
+Set Point (SP) and individual parameter move button are greyed out and input is disabled. This indicates that the component for the axis this parameter controls is currently parked out of beam.
+
 **Not in Position**
 
 .. image:: reflectometry/ParameterNotInPosition.png
@@ -82,6 +88,7 @@ Readback (RBV) has an red border (tool tip include the word MAJOR): there is a m
 .. image:: reflectometry/ParameterInvalid.png
 
 Readback (RBV) has an purple border (tool tip include the word INVALID): the parameter is invalid. This is usually because the underlying motor has stopped responding. Stop using the reflectometer and find out what has gone wrong
+
 
 Reflectometry View Tabs
 =======================
