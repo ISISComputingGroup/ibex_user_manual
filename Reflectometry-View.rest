@@ -63,7 +63,7 @@ Set point (SP) has a yellow background: the setpoint has been changed but not ye
 
 .. image:: reflectometry/ParameterDisabled.png
 
-Set Point (SP) and individual parameter move button are greyed out and input is disabled. This indicates that the component for the axis this parameter controls is currently parked out of beam.
+Individual parameter move button is replaced with an "Out" label. This indicates that the component for the axis this parameter controls is currently parked out of beam. You can still enter set points but they will not be applied to the axis until the component is moved back into the beam.
 
 **Not in Position**
 
