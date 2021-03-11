@@ -59,11 +59,17 @@ Readback value (RBV) has a green background: an underlying motor for the paramet
 
 Set point (SP) has a yellow background: the setpoint has been changed but not yet applied to the reflectometer. It will be applied when either the move all button is pressed or the parameters move button is pressed
 
-**Disabled**
+**Component Out of the Beam**
 
 .. image:: reflectometry/ParameterDisabled.png
 
 Individual parameter move button is replaced with an "Out" label. This indicates that the component for the axis this parameter controls is currently parked out of beam. You can still enter set points but they will not be applied to the axis until the component is moved back into the beam.
+
+**Set-point mirrors Readback**
+
+.. image:: reflectometry/Parameter_sp_mirrors_rbv.png
+
+This parameter is setup so that the setpoint mirrors the readback value, every move the setpoint get set to the current readback value. The readback setpoint (`RBV:SP`) can be different to the readback value (`RBV`) because it is only set when the parameter is moved to, i.e. the underlying motor has moved since last beamline move.
 
 **Not in Position**
 
