@@ -69,7 +69,7 @@ Individual parameter move button is replaced with an "Out" label. This indicates
 
 .. image:: reflectometry/Parameter_sp_mirrors_rbv.png
 
-This parameter is setup so that the setpoint mirrors the readback value, every move the setpoint get set to the current readback value. The readback setpoint (`RBV:SP`) can be different to the readback value (`RBV`) because it is only set when the parameter is moved to, i.e. the underlying motor has moved since last beamline move.
+This parameter is setup so that the setpoint mirrors the readback value, on every move the setpoint gets set to the current readback value. This is useful for an axis that can affect position calculations but cannot be actively moved by the reflectometry server. The readback setpoint (`RBV:SP`) can be different to the readback value (`RBV`) because it is only set when the parameter is moved to, i.e. the underlying motor has moved since last beamline move.
 
 **Not in Position**
 
