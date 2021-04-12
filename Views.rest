@@ -64,7 +64,7 @@ The Journal Viewer displays information about previous runs made on the instrume
 
 Log Plotter
 ===========
-The Log Plotter View allows you to plot a strip-chart graph of any block or process variable. See [here](Plot-a-Block-Graph)
+The Log Plotter View allows you to plot a strip-chart graph of any block or process variable. See [[here | Plot-a-Block-Graph]] for more details.
 
 Motors
 ======
