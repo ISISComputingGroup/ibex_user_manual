@@ -28,6 +28,8 @@ Currently the runstate is not easily plottable from a context menu but you can a
 #. PAUSED
 #. WAITING
 
+Higher numbers are transitional states, beginning etc.
+
 Changing the Appearance of a Graph
 --------------------
 
