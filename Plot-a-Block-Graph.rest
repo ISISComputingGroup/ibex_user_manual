@@ -22,6 +22,7 @@ Plot a Graph of the Runstate
 --------------------
 
 Currently the runstate is not easily plottable from a context menu but you can add it manually to a plot. You can do this by right clicking on a plot and selecting ``Add PV`` then enter under name ``IN:%INST%:DAE:RUNSTATE.VAL``, replacing %INST% with the name of your instrument (e.g. ``IN:IMAT:DAE:RUNSTATE.VAL``. This will then show the runstate on the graph with the following values:
+
 #. SETUP
 #. RUNNING
 #. PAUSED
