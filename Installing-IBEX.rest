@@ -62,9 +62,9 @@ After installation, the current paths are used by the various components.
 +=======================================================+===================================================================+
 |IBEX Client                                            |  ``C:\Instrument\Apps\Client_E4``                                 | 
 +-------------------------------------------------------+-------------------------------------------------------------------+
-| genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python``                                     |
+| genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python3``                                     |
 +-------------------------------------------------------+-------------------------------------------------------------------+
-| EPICS utilities                                       | ``C:\Instrument\Apps\Python\EPICS_UTILS``                         |
+| EPICS utilities                                       | ``C:\Instrument\Apps\Python3\EPICS_UTILS``                         |
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | Server Code and executables                           | ``c:\Instrument\Apps\EPICS``                                      |
 +-------------------------------------------------------+-------------------------------------------------------------------+
