@@ -6,8 +6,7 @@
 # Common questions
 ### How do I copy and paste lines?
 
-Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` to copy. Press `Ctrl+v` after selecting the line where you want to
-paste.
+Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` or use the "Copy Selected Actions" button to copy. Press `Ctrl+v` or use the "Paste Actions" button after selecting the line where you want to paste.
 
 ### How do I delete multiple lines?
 
@@ -15,11 +14,11 @@ Hold shift and click the lines to select them, then click the delete actions but
 
 ### How do I insert an action at a given point?
 
-Click the line you wish to insert the new line below and click duplicate action.
+Click the line you wish to insert the new line below and click the "Insert Action Below" button.
 
 ### How do I add a new line to the end?
 
-Click the add action button.
+Click the "Add Action to End" button.
 
 ### Can I tab between cells?
 
