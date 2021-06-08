@@ -26,8 +26,7 @@ Click the add action button.
 Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created. 
 
 # A tour of the UI
-
-![ScriptGenerator UI](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/script_generator/script_generator_ui.JPG)
+[[/script_generator/script_generator_ui.jpg|ScriptGenerator UI]]
 
 1. From the drop-down here you may select a script definitions to use to generate a script.
 2. This text box displays the help provided by the currently selected script definition.
