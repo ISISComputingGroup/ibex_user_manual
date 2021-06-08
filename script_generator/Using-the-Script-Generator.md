@@ -56,13 +56,15 @@ Yes, pressing tab to move between cells will move the focus from left to right a
 
 
 [[/script_generator/UIScriptGenGenerated.JPG|ScriptGenerator UI Success]]
-1. When all parameters are valid the get validity errors button is greyed out.
-2. All parameters are valid when there are ticks in the validity columns and no rows are red.
-3. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
-4.  When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
+1. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
+    - When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
     - They are provided with a create default filename which uses the script definition and a timestamp.
     - Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite).
-    - Opens the file in notepad++ if notepad++ can be found.
+2. Opens the file in notepad++ if notepad++ can be found.
+3. Do not open the file.
+4. Estimated time for running of script, this is calculated based off the script definition.
+
+
 
 
 # Loading scripts into the scripting window
