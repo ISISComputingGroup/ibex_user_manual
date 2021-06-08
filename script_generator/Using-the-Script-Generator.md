@@ -56,7 +56,7 @@ Yes, pressing tab to move between cells will move the focus from left to right a
 
 
 
-![ScriptGenerator UI Success](https://raw.githubusercontent.com/wiki/ISISComputingGroup/ibex_user_manual/UIScriptGenGenerated.JPG)
+[[/script_generator/UIScriptGenGenerated.JPG|ScriptGenerator UI Success]]
 1. When all parameters are valid the get validity errors button is greyed out.
 2. All parameters are valid when there are ticks in the validity columns and no rows are red.
 3. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
