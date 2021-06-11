@@ -25,7 +25,7 @@ Click the "Add Action to End" button.
 Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created. 
 
 # A tour of the UI
-[[/script_generator/script_generator_ui.jpg|ScriptGenerator UI]]
+![ScriptGenerator UI](/script_generator/script_generator_ui.jpg)
 
 1. From the drop-down here you may select a script definitions to use to generate a script.
 2. This text box displays the help provided by the currently selected script definition.
@@ -55,7 +55,7 @@ Yes, pressing tab to move between cells will move the focus from left to right a
 
 
 
-[[/script_generator/UIScriptGenGenerated.JPG|ScriptGenerator UI Success]]
+![ScriptGenerator UI Success](/script_generator/UIScriptGenGenerated.JPG)
 1. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
     - When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
     - They are provided with a create default filename which uses the script definition and a timestamp.
