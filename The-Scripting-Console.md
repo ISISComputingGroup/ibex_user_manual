@@ -9,7 +9,7 @@ Genie python can be used inside the IBEX client by using the scripting console. 
 
 ### Command History
 
-This console will let you type genie commands. Pressing Up/Down arrow keys lets you cycle through previous commands. You can also filter those commands by typing in the start of a line first.
+This console will let you type genie commands. Pressing Up/Down arrow keys lets you cycle through previous commands, filtered by what you have started typing into the prompt.
 
 Additionally, pressing "Page Up" will display a window containing the entire command history. Previous commands can be selected from the list or searched for using the text box at the bottom. If you want to search for terms anywhere inside the command (not just at the start), you can do this by prefixing the search term with the * symbol ("match anything"). So the search term `H20` will not match the command `g.load_script("H2O.py")`, but `*H20` will.
 
