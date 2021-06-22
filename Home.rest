@@ -1,5 +1,7 @@
 [[What Is IBEX]]
 
+[[Getting Help / Reporting Problems|FAQ#how-do-i-report-a-problem-or-get-help-with-ibex]]
+
 [[Installing IBEX]]
 
 [[Starting And Stopping IBEX]]

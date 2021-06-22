@@ -110,3 +110,16 @@ def run(...):
    import inst
    inst.instrument_script_method()
 ```
+
+# Global parameters
+
+In a script definition you can define a number of global parameters by creating an ordered dictionary field for your `DoRun` class named `global_params_definition` e.g. 
+
+```python
+class DoRun(ScriptDefinition):
+
+    global_params_definition = OrderedDict({"example param:": ("0", int), "example param 2:": ("2", float),
+                                            "example param 3:": ("any string", str)})
+```
+
+These global parameters can then be accessed in the `run`, `parameters_valid` and other methods by calling `self.global_params["example param 2:"]`. The global parameters will appear above the actions table in the user interface and can be set by the user. The set value is applied for the entirety of the script.

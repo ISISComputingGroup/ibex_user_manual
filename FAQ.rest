@@ -5,11 +5,14 @@ In this section of the IBEX user manual, we have compiled a list of frequently a
 IBEX Processes and Support
 ==========================
 
-How do I report a problem with IBEX?
-------------------------------------
+How do I report a problem or get help with IBEX?
+------------------------------------------------
 
-**A:** To report a problem with IBEX (Client or Server), please use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page.  Using this page helps to ensure that your problem report gets routed to the right person as quickly as possible.  When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client. Alternatively, contact us at ISISExperimentControls@stfc.ac.uk
+**A:** For a non-urgent issue use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page or email ISISExperimentControls@stfc.ac.uk
+When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client.
 
+For urgent issues call **1763** (RAL site landline or ZOOM phone) or **01235394488**
+ 
 How do I install IBEX Server?
 -----------------------------
 
