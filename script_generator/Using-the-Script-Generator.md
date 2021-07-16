@@ -12,6 +12,8 @@ Select the line you want to copy (does not have to contiguous) and press `Ctrl+c
 
 Select the lines individually (by holding `Ctrl` and clicking) or as a group (by holding `Shift` and clicking), then click the _Delete Selected Actions_ button or press the `Delete` key.
 
+To delete all lines, click the _Clear All Actions_ button or select all lines with `Ctrl+a` before deleting.
+
 ### How do I insert an action at a given point?
 
 Click the line you wish to insert the new line below and click the "Insert Action Below" button.
