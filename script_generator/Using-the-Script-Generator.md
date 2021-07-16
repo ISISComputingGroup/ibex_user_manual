@@ -10,7 +10,7 @@ Select the line you want to copy (does not have to contiguous) and press `Ctrl+c
 
 ### How do I delete multiple lines?
 
-Hold shift and click the lines to select them, then click the delete actions button.
+Select the lines individually (by holding `Ctrl` and clicking) or as a group (by holding `Shift` and clicking), then click the _Delete Selected Actions_ button or press the `Delete` key.
 
 ### How do I insert an action at a given point?
 
