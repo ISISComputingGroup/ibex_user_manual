@@ -41,6 +41,7 @@ The Alarms View displays the alarm state of all devices attached to the instrume
 Beam Status
 ===========
 The Beam Status View displays the status of the synchrotron, TS1 and TS2 beams.  It also displays MCR news.
+To add/log a PV to the configuration, right-click to the text box next to the PV name.
 
 DAE
 ===
