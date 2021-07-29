@@ -10,7 +10,7 @@ be accessed by using the prefix ``g.[COMMAND_NAME]``. For example:
 
 ::
 
-    g.start()
+    g.begin()
     g.cset("BLOCK_1",1)
     g.abort()
 
