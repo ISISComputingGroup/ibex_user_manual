@@ -123,3 +123,25 @@ class DoRun(ScriptDefinition):
 ```
 
 These global parameters can then be accessed in the `run`, `parameters_valid` and other methods by calling `self.global_params["example param 2:"]`. The global parameters will appear above the actions table in the user interface and can be set by the user. The set value is applied for the entirety of the script.
+
+## Validating global parameters
+
+You can provide a validation function for global parameters. For example with `"example param 2:": ("2", float)` if we want to force it to be between 1 and 3, we can change `float` to be a function say `param2_validator` which we define in our script definition:
+
+```python
+from genie_python.genie_script_generator import ScriptDefinition, GlobalParamValidationError
+from collections import OrderedDict
+
+def param2_validator(param2) :
+    param2 = float(param2)
+    if param2 < 1 or param2 > 3:
+        raise GlobalParamValidationError("Param 2 must be between 1 and 3")
+    return param2
+
+
+class DoRun(ScriptDefinition):
+    global_params_definition = OrderedDict({"example param:": ("1", int), "example param 2:": ("1.23", param2_validator),
+                                            "example param 3:": ("hello", str), "example param 4:": ("0", int)})
+```
+
+When `example param 2` is then set in the script generator, it will be validated using `param2_validator`.
