@@ -73,7 +73,7 @@ You can change run-control settings in 3 different ways (2 temporary and 1 perma
 * Permanent change
     You can set default run-controls settings that will remain, unless you change it temporarily.
 
-    1. From Run-Control menu, select the block you would like to change and click ``Edit Host Configuration`` to change the settings.
+    1. From ``Run-Control`` menu, select the block you would like to change and click ``Edit Host Configuration`` to change the settings.
 
 The [[Blocks and Groups]] page describes how blocks under run-control are shown in the GUI.
 
