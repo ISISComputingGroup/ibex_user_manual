@@ -23,6 +23,8 @@ View Selector
 
 The View Selector, situated on the left-hand side of the IBEX GUI, is a column of buttons. Change a to a view by clicking on the associated button. The view button highlighted in blue indicates the currently selected view.
 
+Which views are visible to select is dependent on the settings which can be changed in: Main Toolbar -> Preferences -> Select visible perspectives
+
 
 Views
 ------
