@@ -42,7 +42,7 @@ Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in t
 
 4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
 
-5. Run the command ``install_client.bat`` to copy the contents of the above directory to ``C:\Instrument\Apps\Client``. It will also install genie_python.
+5. Run the command ``install_gui_and_python.bat`` to copy the contents of the above directory to ``C:\Instrument\Apps\Client``. It will also install genie_python.
 
 6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client_E4\ibex-client.exe``
 
