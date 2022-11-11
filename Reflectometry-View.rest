@@ -215,7 +215,7 @@ Error Log
 
 The error log tab shows a more detailed view of errors reported in the instrument status panel.
 
-Redefine Motors
+Advanced
 ---------------
 
-The redefine motors panel is for Instrument Scientists only. It allows them to more easily align the instrument.
+The advanced panel is for Instrument Scientists only. It allows them to more easily align the instrument.
