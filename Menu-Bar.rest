@@ -32,6 +32,7 @@ Components
    Select the Components menu item to perform one of the following actions:
 
    * New - create a new component
+   * Import - import a component from another instrument
    * Edit - edit an existing component
    * Delete - delete a component
 

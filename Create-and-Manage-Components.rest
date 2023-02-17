@@ -21,6 +21,25 @@ Create a New Component
    
    The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the New Component dialog.
 
+Import a Component
+----------------
+
+To import a component:
+
+#. Select ``Components > Import`` from the ``Configuration`` menu.
+#. IBEX displays the import component selection dialog, which lists all available instruments and their components.
+#. Select an instrument you want to import a component from.
+#. Select a component you want to import from that instrument and then press the ``Import`` button.
+#. IBEX displays the Import Component dialog which is identical to the New Component dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+
+Before saving the imported component, please check the following:
+   * The communication settings for each IOC are correct. (COM port, IP address, etc.)
+   * Make sure that any remote IOCs (mobile devices not part of any beamline) in the imported component are needed and configured correctly.
+   * Check for any IOCs which may rely on autosave or settings area items.
+   * Check if the instrument prefix of non-local blocks is correct.
+
+**Note:** You will not be able to import a component from an instrument that is on a different version.
+
 Edit a Component
 ----------------
 
