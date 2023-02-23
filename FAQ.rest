@@ -152,3 +152,9 @@ The problem is you have not escaped the string correctly, in python the slash ch
 #. Just use the default script path so:
     - `g.load_script('NiceScript.py')`
 
+Can I run scripts from Mantid?
+-----------------------------------------------------------------
+
+`genie_python` - the library which provides convenience functions such as `cset` and `cget` in order to run scripts can be copied into Mantid's python `site-packages` area in order to use within Mantid's scripting window. 
+
+To do this, run `Kits$\CompGroup\ICP\Releases\<latest release>\genie_python_3\Python\add_genie_python_to_mantid.bat` on the machine you are using Mantid on. You will then need to import the genie_python module from python. 
