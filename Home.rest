@@ -4,7 +4,7 @@
 
 [[Installing IBEX|Installing-IBEX]]
 
-[[Starting And Stopping IBEX|Starting-And-Stopping-IBEX]]
+[[Starting And Stopping IBEX|Starting-and-Stopping-IBEX]]
 
 [[Key Concepts in IBEX|Key-Concepts-in-IBEX]]
 
