@@ -1,26 +1,26 @@
-[[What Is IBEX]]
+[[What Is IBEX|What-Is-IBEX]]
 
 [[Getting Help / Reporting Problems|FAQ#how-do-i-report-a-problem-or-get-help-with-ibex]]
 
 [[Installing IBEX|Installing-IBEX]]
 
-[[Starting And Stopping IBEX]]
+[[Starting And Stopping IBEX|Starting-And-Stopping-IBEX]]
 
-[[Key Concepts in IBEX]]
+[[Key Concepts in IBEX|Key-Concepts-in-IBEX]]
 
-[[IBEX GUI Features]]
+[[IBEX GUI Features|IBEX-GUI-Features]]
 
-[[How To Do Things In IBEX]]
+[[How To Do Things In IBEX|How-To-Do-Things-In-IBEX]]
 
 [[Scripting]]
 
-[[The IBEX Script Generator]]
+[[The IBEX Script Generator|The-IBEX-Script-Generator]]
 
-[[Instrument Specific Guidance]]
+[[Instrument Specific Guidance|Instrument-Specific-Guidance]]
 
-[[Device Specific Guidance]]
+[[Device Specific Guidance|Device-Specific-Guidance]]
 
-[[The Web Dashboard]]
+[[The Web Dashboard|The-Web-Dashboard]]
 
 [[Python-3]]
 
