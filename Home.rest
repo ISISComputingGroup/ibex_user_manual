@@ -14,7 +14,7 @@
 
 [[Scripting]]
 
-[[The IBEX Script Generator|script_generator/The-IBEX-Script-Generator]]
+[[The IBEX Script Generator|The-IBEX-Script-Generator]]
 
 [[Instrument Specific Guidance|Instrument-Specific-Guidance]]
 
