@@ -10,4 +10,4 @@ The counter at the end of the PV is an index. By default, instruments are set up
 - Locate a file called `globals.txt` (if it does not exist, create it)
 - Add the following line to the file: `INSTETC_01__NUM_USER_VARS=25`, where `25` should be replaced by the maximum number of user variables you want for any given type.
 - Ensure that `globals.txt` ends with at least one blank line, otherwise, the last line will not be read.
-- To pick up the changes, IBEX will need to be restarted. Follow the process detailed [here](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Starting-And-Stopping-IBEX#starting-ibex-server).
+- To pick up the changes, IBEX will need to be restarted. Follow the process detailed here: [Starting the IBEX Server](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Starting-And-Stopping-IBEX#starting-ibex-server).
