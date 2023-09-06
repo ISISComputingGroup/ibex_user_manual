@@ -96,6 +96,11 @@ Spectra Plots
 
 The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum`` or ``Period`` fields.
 
+Combined Spectra Plot
+---------------------
+
+The Combined Spectra Plot Tab displays up to 4 spectra plots on the *same graph*. This allows for more direct comparison with one another. The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab. You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot and make each plot visible or hidden with its corresponding ``Checkbox`` field.
+
 
 Detector Diagnostics
 --------------------
