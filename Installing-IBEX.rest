@@ -8,49 +8,16 @@ Installation of IBEX client on a PC is simple and straightforward.
 Pre-requisites for running IBEX Client
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To run IBEX client, your PC must meet the following pre-requisites
+The IBEX client is designed to run on Windows 10, and so long as that is up to date that should be enough for the client.
+It may run on Windows 11, but there is no support for that at present.
+It can run on Linux, and there is a build available for use on IDAAS, it is not supported in other Linus environments at present.
 
-#. Your PC must be running Windows 7 (Professional or Enterprise), Service Pack 1 (or higher), or Windows 10 (Professional or Enterprise), Build 10586 (or higher).
 
 Installation
 ~~~~~~~~~~~~
 
-1. Create a network drive to the installation kit:
+There is a network drive location that the experiment controls group can direct you to.
 
-::
-
-      net use Z: \\isis.cclrc.ac.uk\inst$\Kits$\CompGroup\ICP\Releases  /user:CLRC\my_fed_id
-
-substitute your federal-ID instead of ``my_fed_id``.  The command will prompt you for your password.  This command will map the shared folder ``\\isis\inst$\Kits$\CompGroup\ICP\Releases`` to the ``Z:`` drive.  You don't have to choose ``Z:`` as the drive letter, you can choose any drive letter you wish (provided it is not already in use on your PC).  Please take care to use the ``\`` and ``/`` characters exactly as shown in the above example, otherwise the command will not work (hint: it is easiest to cut/paste the above command into the command window).
-
-2. Change to the ``Z:`` drive:
-
-::
-
-      Z:
-
-3. On the ``Z:`` drive you will see a list of folders resembling the following:
-
-::
-
-      2.0.0
-      2.1.0
-      2.2.0
-      ... etc.
-
-Change to the folder with the highest value of ``N.M.O`` (e.g. ``cd 2.2.0`` in the above example).
-
-4. In the folder ``N.M.O``, change to the Client folder: ``cd Client``
-
-5. Run the command ``install_gui_and_python.bat`` to copy the contents of the above directory to ``C:\Instrument\Apps\Client``. It will also install genie_python.
-
-6. You might find it convenient to create a desktop shortcut to use to launch the IBEX client.  The path to the IBEX Client executable is ``C:\Instrument\Apps\Client_E4\ibex-client.exe``
-
-7. Open up the firewall ports needed by the client by running the following command as Administrator in a command window:
-
-::
-
-    netsh advfirewall firewall add rule name="Control SVCS Machine" dir=in action=allow protocol=UDP remoteip=130.246.51.171 remoteport=5064 profile=any
 
 Installation Layout
 -------------------
@@ -78,13 +45,9 @@ After installation, the current paths are used by the various components.
 Installing IBEX Server
 ----------------------
 
-The physical installation of IBEX server on an instrument control PC is a moderately complex task, requiring the installation and configuration of several software components.  However, before the physical installation, a significant amount of preparation work is required.  For example:
-
-* for an existing instrument, SECI configs need to be converted to their IBEX equivalents, and Open-Genie scripts need to be migrated to genie_python, new IOCs and OPIs may also need to be created.
-* for a new instrument, the list of devices that comprise the instrument needs to be understood, new IOCs and OPIs will need to be created; configurations and scripts can be developed during commissioning.
-
-If you want to install IBEX server on your instrument, please contact the Experiment Controls team.
-
+Most instruments at ISIS are now using at IBEX, with the last few being migrated at the moment.
+If you need to install the server on an Instrument, please contact the Experiment Controls team.
+The developers manual (https://github.com/ISISComputingGroup/ibex_developers_manual/wiki) holds more detailed information should it be needed.
 
 Uninstalling IBEX
 -----------------
