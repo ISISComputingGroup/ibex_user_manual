@@ -12,27 +12,19 @@ If you have not used IBEX for some time, it might not appear on the list of freq
 
 Alternatively, if you created a desktop short-cut to the IBEX client, double-click on the icon.
 
-**Tip:** If you are using Windows Classic theme on your PC, you might prefer to switch to a more modern theme - IBEX looks much better when running in a modern theme.
-
-**Tip:** If you see the following message on attempting to start the IBEX Client:
-
-::
-
-   Java was started but returned exit code=13
-
-This is because you are running the 32-bit version of Java.  You need to install the 64-bit version of Java (see [[Installing IBEX]]).
+If you are on an Instrument control computer, then there may well be a shortcut pinned to the taskbar as well which you can click to launch the client.
 
 Stopping IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
 
-To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu.  IBEX will prompt you to confirm that you are sure you wish to exit.  Confirm that you wish to exit and the IBEX client will shut down.
+To stop the IBEX client, select ``Exit IBEX Client`` from the ``IBEX`` menu, or clock on the ``close`` button in the top right hand corner.  IBEX will prompt you to confirm that you are sure you wish to exit.  Confirm that you wish to exit and the IBEX client will shut down.
 
 **Please Note:**  Stopping the IBEX client does not stop the IBEX server.  The IBEX server will continue to run after you have stopped the IBEX client.  You can re-connect to the IBEX server the next time to start the IBEX client.
 
 Starting and Stopping IBEX Server
 ---------------------------------
 
-The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis.  
+The IBEX Server is designed to run continuously.  There is no particular need for it to be started and stopped on a regular basis. If you find yourself doing so please do ensure that you have informed the experiment controls team about this, and what the trigger may be. 
 
 The IBEX Server is a collection of mutually cooperating processes.  To start and stop the IBEX Server, these processes need to be started and stopped in the correct order - there are scripts which ensure that these processes are started and stopped correctly.  Please use the appropriate script (as described below) to start and stop IBEX Server.
 
@@ -40,35 +32,17 @@ The IBEX Server is a collection of mutually cooperating processes.  To start and
 Starting IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
-To start IBEX Server, proceed as follows:
+On the instrument control PC, there should be a shortcut which will allow you to start the server in the programs list. This is called ``start_ibex_server.bat``. This shortcut will point to a file of that name in ``C:\Instruments\Apps\EPICS``.
 
-#. Use Windows Remote Desktop Connection to log in to your instrument control PC
-#. Open a command window
-#. At the command prompt type the following::
-
-    cd c:\Instrument\Apps\EPICS
-    start_ibex_server
-    
-#. Allow the ``start_ibex_server`` script a few minutes to complete.
-
-If you run this script while the server is already running, it will restart the server. If the server was not already running, you may see some errors while the script tries to kill any currently running server - this is normal and can safely be ignored.
-
-You should wait until the ``start_ibex_server`` script has completed before starting IBEX Client.
+This will start the server, and prompt you to wait for the ``IBEX Server Started`` message, wait for that message and then you can proceed to start the client and use the system.
 
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
 
-To stop IBEX Server, proceed as follows:
+If you want to stop running the server, it is probably best to make sure you have stopped your client.
 
-#. If you are running the IBEX Client, exit before stopping IBEX Server.
-#. Use Windows Remote Desktop Connection to log in to your instrument control PC
-#. Open a command window
-#. At the command prompt type the following::
+Similar to the ``start_ibex_server.bat`` there is a ``stop_ibex_server.bat`` which you can usually access in the same ways. There will either be a shortcut in your start menu, which points to a file in the EPICS directory.
 
-    cd c:\Instrument\Apps\EPICS
-    stop_ibex_server
-    
-#. Allow the ``stop_ibex_server`` script a few minutes to complete.
 
 Starting and Stopping IBEX Server After/Before Running SECI
 -----------------------------------------------------------
