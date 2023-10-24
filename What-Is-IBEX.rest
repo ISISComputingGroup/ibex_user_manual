@@ -1,38 +1,28 @@
-IBEX is the new instrument control program; it is intended to replace SECI. 
+IBEX is the name of a suite of software which helps to control the beamlines for experiments at ISIS, as well as generating the data files which are then digested and made available via the ISIS Data Gateway (https://data.isis.stfc.ac.uk/datagateway).
 
-Before the development of IBEX, most device control was performed using LabVIEW, with SECI providing an integrated view of the various LabVIEW VIs.  IBEX, on the other hand, is designed to use EPICS to provide device control.  LabVIEW will not disappear entirely; when LabVIEW is required, it can be wrapped in EPICS.
+IBEX consists of a server and Graphical User Interface (GUI) system, which can be run on separate computers if appropriate. 
 
-IBEX also uses genie_python as its scripting language.
+IBEX uses genie_python as its scripting language. genie_python is a python directory that allows the scripts written for IBEX to match closely in format to those in the previous control system used at ISIS.
 
 .. contents:: **Contents**
 
+The IBEX Server
+---------------
 
-IBEX and SECI Similarities
---------------------------
+You can find out more about the IBEX server here: https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Key-Concepts-in-IBEX#id4
 
-IBEX and SECI both provide integrated views for controlling neutron & muon instruments.  SECI integrates information from LabVIEW VIs; IBEX integrates information from EPICS IOCs.  In SECI, it is the LabVIEW VIs that directly control the individual devices attached to an instrument.  In IBEX, the EPICS IOCs fulfil the role performed by the LabVIEW VIs.
+The IBEX GUI
+------------
 
-IBEX and SECI also share similar UIs, partly because they perform similar functions, but mainly by design - if they behave in similar ways, then it is easier to switch from SECI to IBEX. 
-
-IBEX and SECI Differences
---------------------------
-
-IBEX is a client-server based system.  The server components of IBEX run on the instrument control PC and directly control the instrument.  The IBEX client is a GUI, which provides an integrated view of the information provided by the server components.  The IBEX client typically runs on a separate PC (which could be in the instrument cabin, pod, or even your office).  
-
-It is important to realise that the IBEX client is not the instrument control program. The server components of IBEX collectively constitute the instrument control program.  The IBEX client provides a convenient way to communicate with the server components.  You can thus close the IBEX client without stopping control of devices; you can even run multiple instances of the client on the same or different computers.  You can also run the IBEX client on the instrument control PC.
-
-In SECI, the LabVIEW VIs all run as processes on a single PC - the instrument control PC.  By contrast, in IBEX, all the server components (and the IBEX client, for that matter) are independent processes that can run anywhere on the ISIS network.  Because of this, IBEX has a more flexible architecture - new components can be introduced into the architecture more easily, control processes can be distributed across multiple PCs (if necessary), instruments can more easily share infrastructure.  
-
-In practice, in most cases, the IBEX server components will continue to run (as independent processes) on a single control PC.  However, depending on individual circumstances, we will choose to run some server components on further control PCs.  For example, some devices have their own dedicated control PC (e.g. cameras on IMAT).  By contrast, some instruments (e.g. muon instruments) need to share infrastructure (again, controlled by a dedicated PC).  The IBEX architecture provides the flexibility to accommodate both types of arrangement in a transparent fashion.
+Using the IBEX GUI is the primary focus of this whole manual, as it is through the GUI that you will typically interact with IBEX.
 
 Introduction to genie_python
 ------------------------------------------------
 
 A full reference to genie_python is available here: http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html.
 
-Differences between Open Genie and genie_python
+Previous Instrument Control at ISIS
 ------------------------------------------------
-
-A detailed description of the differences is available on the [[Scripting page|Scripting]].
+You can find out more about the previous control system, SECI, and how it relates to IBEX here: https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Previous-Instrument-Control-at-ISIS-%E2%80%90-SECI
 
 
