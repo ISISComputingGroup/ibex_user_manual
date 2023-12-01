@@ -7,9 +7,9 @@ Clients & Servers
 
 A client-server system is one that employs a distributed application architecture.  In a client-server system, the workload is partitioned between the providers of information or services (i.e. servers) and requesters or consumers of information or services (i.e. clients).  Clients request information or the use of a resource or service from server hosts.  Each server host runs server programs which share information or resources with clients when requested to do so.  Typically, the server and client run on separate computers connected via a network, but the client and server can also run as separate processes on the same computer.
 
-The design of IBEX follows this model.  IBEX consists of a server component, which runs on the instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <https://epics-controls.org/>`_ framework for creating distributed control systems.
+The design of IBEX follows this model:  IBEX consists of a server component, which runs on the Instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <https://epics-controls.org/>`_ framework for creating distributed control systems.
 
-All instruments should be installed in a consistent manner, these are detailed on the [[IBEX File Paths page]].
+All Instruments should be installed in a consistent manner, these are detailed on the [[IBEX File Paths page]].
 
 IBEX Client
 ~~~~~~~~~~~
@@ -24,7 +24,7 @@ genie_python can also be thought of as a client of IBEX server.  It operates as 
 IBEX Server
 ~~~~~~~~~~~
 
-The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon instrument.  The primary components of the IBEX server are:
+The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon Instrument. The primary components of the IBEX server are:
 
 BlockServer 
   The core component of the IBEX server.  The BlockServer provides the service that translates [[Process Variables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
