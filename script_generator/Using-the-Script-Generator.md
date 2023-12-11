@@ -26,6 +26,10 @@ Click the "Add Action to End" button.
 
 Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created. 
 
+### What does `Transfer Compatible Parameters` option do?
+
+When this option is selected and the user selects a different script definition the actions are transferred if possible (i.e. when parameters match and they are not set to copy previous row). The matching parameters are transferred and the rest are populated with their default values. It is possible that none of the parameters can be transferred in which case the actions are cleared.
+
 # A tour of the UI
 ![ScriptGenerator UI](script_generator/script_generator_ui.jpg)
 
