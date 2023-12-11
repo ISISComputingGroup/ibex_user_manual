@@ -3,32 +3,45 @@
 - Ctrl-click on multiple lines to select them all
 - Tab onto the next cell (tabbing from the last cell creates a new line)
 
-# Common questions
-### How do I copy and paste lines?
+# FAQ
 
+<details>
+<summary><b>How do I copy and paste lines?<b></summary>
+<br>
 Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` or use the "Copy Selected Actions" button to copy. Press `Ctrl+v` or use the "Paste Actions" button after selecting the line where you want to paste.
+</details>
 
-### How do I delete multiple lines?
-
+<details>
+<summary><b>How do I delete multiple lines?<b></summary>
+<br>
 Select the lines individually (by holding `Ctrl` and clicking) or as a group (by holding `Shift` and clicking), then click the _Delete Selected Actions_ button or press the `Delete` key.
 
 To delete all lines, click the _Clear All Actions_ button or select all lines with `Ctrl+a` before deleting.
+</details>
 
-### How do I insert an action at a given point?
-
+<details>
+<summary><b>How do I insert an action at a given point?<b></summary>
+<br>
 Click the line you wish to insert the new line below and click the "Insert Action Below" button.
+</details>
 
-### How do I add a new line to the end?
-
+<details>
+<summary><b>How do I add a new line to the end?<b></summary>
+<br>
 Click the "Add Action to End" button.
+</details>
 
-### Can I tab between cells?
+<details>
+<summary><b>Can I tab between cells?<b></summary>
+<br>
+Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created.
+</details>
 
-Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created. 
-
-### What does `Transfer Compatible Parameters` option do?
-
+<details>
+<summary><b>What does `Transfer Compatible Parameters` option do?<b></summary>
+<br>
 When this option is selected and the user selects a different script definition the actions are transferred if possible (i.e. when parameters match and they are not set to copy previous row). The matching parameters are transferred and the rest are populated with their default values. It is possible that none of the parameters can be transferred in which case the actions are cleared.
+</details>
 
 # A tour of the UI
 ![ScriptGenerator UI](script_generator/script_generator_ui.jpg)
