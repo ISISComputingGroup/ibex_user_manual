@@ -117,7 +117,7 @@ The Vetoes tab shows a summary of the vetoes that are in force and their effect 
 Simulated DAE
 -------------
 
-The DAE can be placed into a simulation mode if you want to do an off-line experiment or test something out when the physical DAE is not usable. In simulation mode the DAE will count frames as normal and has a spectrum count in some spectra but it is not realistic. To turn this on use in genie_python:
+The DAE can be placed into a simulation/simulate mode if you want to do an off-line experiment or test something out when the physical DAE is not usable. In simulation mode the DAE will count frames as normal and has a spectrum count in some spectra but it is not realistic. To turn this on use in genie_python:
 
     g.set_dae_simulation_mode(True)
 
