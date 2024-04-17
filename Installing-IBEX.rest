@@ -10,7 +10,7 @@ Pre-requisites for running IBEX Client
 
 The IBEX client is designed to run on Windows 10, and so long as that is up to date that should be enough for the client.
 It may run on Windows 11, but there is no support for that at present.
-It can run on Linux, and there is a build available for use on IDAAS, it is not supported in other Linus environments at present.
+It can run on Linux, and there is a build available for use on IDAAS, it is not supported in other Linux environments at present.
 
 
 Installation
