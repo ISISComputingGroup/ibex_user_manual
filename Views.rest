@@ -62,7 +62,7 @@ IOC Log
 The IOC Log View displays a log of all the messages sent by the IOCs which control the devices attached to the instrument control PC.
 
 Journal Viewer
-===========
+==============
 The Journal Viewer displays information about previous runs made on the instrument.
 
 Log Plotter
