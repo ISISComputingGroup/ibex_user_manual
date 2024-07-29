@@ -111,7 +111,7 @@ Here are some examples of scripts that may not have produced load-time errors be
 **Example 2: Incompatible Type Assignment**
 ::
     c: int | float = 3.4 # Python is being told c is either an int or a float of value 3.4.
-    c = None # c is defined as nothing. So pyright throws error.
+    c = None # c is defined as nothing. So Pyright throws error.
 
 *[PR] E: 2: Expression of type "None" is incompatible with declared type "int | float"*
 
