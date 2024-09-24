@@ -34,7 +34,7 @@ g.alerts.status()
 g.cset("block1", -50) # With above settings, message sent to say the block has gone out of range
 g.cset("block1", 0) # With above settings, message sent to say the block has gone back in range
 ```
-Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings. So it is best to create the blocks used for alerts as part of a common component included in all configurations.
+Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings. So it is best to create the blocks used for alerts as part of a common base component included in all configurations.
 
 Alerts, like run control, are normally set on floating point (or integer) value blocks. They can, however, be used on some "state" items that are symbolic names mapped to integers (enums). One example of this is the instrument state (SETUP=1,RUNNING=2,PAUSED=3,WAITING=4,VETOING=5) so if a block called `RunState` is attached to the process variable `IN:myinst:DAE:RUNSTATE` then
 ```python
