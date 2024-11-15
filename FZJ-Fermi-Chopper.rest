@@ -143,6 +143,10 @@ Chopper refuses to spin up
 
 There is logic in the IOC to prevent sending commands which would put the chopper into a disallowed state. For example, it is not permitted to send "switch drive on and run" if the magnetic bearings are off. Check the IOC log - there should be entries saying either "...sending command to device..." or "...refusing to send command to device...".
 
+**Bearings need power cycling**
+
+First CAREFULLY check that the chopper is stopped. The chopper will be damaged if bearings get turned off while it is spinning. Then hit "turn drive off and stop" in IBEX, wait a few seconds, delevitate the chopper by switching off the magnetic bearings, wait a few seconds, turn the bearings on again, wait a few seconds, and hit "switch drive on and run".
+
 Chopper veto stuck on
 ---------------------
 
