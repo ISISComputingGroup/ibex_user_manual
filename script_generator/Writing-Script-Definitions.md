@@ -1,5 +1,3 @@
-These must be python 2/3 compatible see https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Using-Futurize
-
 # ScriptDefinition
 
 For an example script definition see: [The ScriptDefinition Class (with Example)](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Script-generator-high-level-design#the-scriptdefinition-class). A script definition is defined by creating a class implementing a ScriptDefinition (a python interface) `class DoRun(ScriptDefinition):`. ScriptDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ScriptDefinition `. 
