@@ -22,8 +22,6 @@
 
 [[The Web Dashboard|The-Web-Dashboard]]
 
-[[Python-3]]
-
 [[FAQ]] Including scripting
 
 [[Glossary]]
