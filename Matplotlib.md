@@ -1,4 +1,4 @@
-The `genie_python` distribution of python includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
+The python distribution deployed on instruments includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
 
 Matplotlib is a highly customizable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
 - [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
@@ -106,12 +106,6 @@ In the IBEX user interface, matplotlib is _non-blocking_ - that is, a script wil
 
 # Troubleshooting
 
-### Only 6 plots can be opened at once
+### Only 3 plots can be opened at once
 
-By default, only 6 plots can be opened at a time. This is a limitation of the internet explorer view which displays the plot. The limit can be increased by an administrator on individual instruments by running the following command:
-
-`reg add "\\<ndxinstname>\HKLM\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_WEBSOCKET_MAXCONNECTIONSPERSERVER"  /v iexplore.exe /t REG_DWORD /d 48`
-
-Contact computing group if the limit is set too low on your instrument and they will be able to run the command above (it will require admin privileges).
-
-As of Release Version 5.5, only 6 plots can be opened at a time, and if this limit is exceeded, the oldest plot will be automatically removed.
+By default, only 3 plots can be opened at a time. If this limit is exceeded, the oldest plot will be automatically removed.
