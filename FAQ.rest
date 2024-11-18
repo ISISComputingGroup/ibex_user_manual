@@ -69,7 +69,7 @@ Yes, it is possible to switch from running IBEX to SECI or to switch from SECI t
 Can I write scripts to control my experiment?
 ---------------------------------------------
 
-Yes, you can.  Scripting in IBEX is done using genie_python (essentially Python, extended by a module called genie_python).  See [[Scripting]] for more details.
+Yes, you can.  Scripting in IBEX is done using python (with support from a library called genie_python).  See [[Scripting]] for more details.
 
 What do I look at if there are no RAW frames when Collecting Data?
 ------------------------------------------------------------------
