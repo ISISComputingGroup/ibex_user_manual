@@ -150,3 +150,10 @@ In this example:
 
 - *numbers* is annotated as a list of integers *(List[int])*.
 - *person* is annotated as a dictionary with string keys and integer values *(Dict[str, int])*.
+
+==============
+What do I do if I can't fix my Pyright error??
+==============
+
+> If it is just the one line that is causing an issue then you can always write a "# type: ignore" at the end of the line to have it ignored by Pyright.
+> If all else fails, when you make a call to "g.load_script('script.py')", you can add a second argument to disable linting and type checking as follows "g.load_script('script.py', check_script=False)"
