@@ -15,6 +15,7 @@
           name = block_info["name"]
           value = block_info["value"]
           print "The value of block {0} is {1}".format(name, value)
+          ```
 -    ``cset``: Sets the value for a particular block
 
      - Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint
