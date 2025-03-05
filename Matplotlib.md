@@ -1,6 +1,6 @@
 The python distribution deployed on instruments includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
 
-Matplotlib is a highly customizable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
+Matplotlib is a highly customisable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
 - [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 - [`matplotlib.pyplot` command reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
