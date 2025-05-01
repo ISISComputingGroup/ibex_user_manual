@@ -18,7 +18,7 @@ The installation of IBEX is common for most instruments you shouldn't need to de
 
 * Common calibration files: ``C:\Instrument\Settings\config\common`` calibration files for instruments e.g. Eurotherm sensors
 
-* Log files: These are in various places depending on the source see [[Log File locations|https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Log-file-location]]
+* Log files: These are in various places depending on the source see [[Log File locations|https://isiscomputinggroup.github.io/ibex_developers_manual/iocs/troubleshooting/Log-file-location.html]]
 
 * User scripts: instrument dependent often in ``c:\scripts``
 
