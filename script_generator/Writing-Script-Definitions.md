@@ -1,6 +1,6 @@
 # ScriptDefinition
 
-For an example script definition see: [The ScriptDefinition Class (with Example)](https://github.com/ISISComputingGroup/ibex_developers_manual/wiki/Script-generator-high-level-design#the-scriptdefinition-class). A script definition is defined by creating a class implementing a ScriptDefinition (a python interface) `class DoRun(ScriptDefinition):`. ScriptDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ScriptDefinition `. 
+For an example script definition see: [The ScriptDefinition Class (with Example)](https://isiscomputinggroup.github.io/ibex_developers_manual/script_generator/Script-generator-high-level-design.html#scriptgenerator-script-definition). A script definition is defined by creating a class implementing a ScriptDefinition (a python interface) `class DoRun(ScriptDefinition):`. ScriptDefinition must be imported before doing this so add at the top of your file `from genie_python.genie_script_generator import ScriptDefinition `. 
 
 To implement an ScriptDefinition this DoRun class must have methods `run`, `parameters_valid` and `get_help`. With `run` and `parameters_valid` signatures may look like this: `def run(self, temp="1", field="1"):`, `def parameters_valid(self, temp="1", field="1"):`.
 
