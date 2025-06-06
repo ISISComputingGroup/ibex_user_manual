@@ -1,3 +1,6 @@
+Scripting View
+##############
+
 The Scripting-View displays a Python console, allowing you to load and execute Python or genie_python scripts. **Note**: Scripts running in the Scripting View are independent of scripts running on the Script Server and independent of scripts running in other consoles and clients.
 
 This window should be used for:

@@ -8,6 +8,7 @@ In this section of the IBEX user manual, we have compiled a list of frequently a
 IBEX Processes and Support
 ==========================
 
+.. _report_a_problem:
 How do I report a problem or get help with IBEX?
 ------------------------------------------------
 

@@ -8,3 +8,17 @@
 .wy-nav-content {
     max-width: 1000px !important;
 }
+
+@keyframes highlight {
+    0% {
+        background: #70f10e;
+    }
+    100% {
+        background: #e3fccf;
+    }
+}
+
+:target {
+    animation: highlight 3s;
+    background: #e3fccf;
+}

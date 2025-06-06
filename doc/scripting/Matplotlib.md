@@ -7,18 +7,10 @@ Matplotlib is a highly customisable, general purpose plotting library capable of
 - [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
 - [`matplotlib.pyplot` command reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
 
-## Contents
-- [Quick-start](#quick-start)
-    - [To import pyplot](#to-import-pyplot)
-    - [Useful pyplot commands](#useful-pyplot-commands)
-    - [Example: Plot and show a trivial graph](#example-plot-and-show-a-trivial-graph)
-    - [Example: Plot a constantly updating sin wave](#example-plot-a-constantly-updating-sin-wave)
-- [Plotting Spectra](#plotting-spectra)
-- [Using matplotlib within the IBEX GUI](#using-matplotlib-within-the-ibex-gui)
+```{contents}
+```
 
-# Quick-start
-
-## To import pyplot
+## Import pyplot
 
 The most user-friendly interface to matplotlib is called `pyplot`. You can import `pyplot` using the following command:
 
@@ -26,7 +18,7 @@ The most user-friendly interface to matplotlib is called `pyplot`. You can impor
 import matplotlib.pyplot as pyplot
 ```
 
-## Useful pyplot commands:
+## Useful pyplot commands
 - `pyplot.plot()`: Populate a plot with some data.
 - `pyplot.clf()`: Clear the current figure, e.g. discard old data from the plot.
 - `pyplot.show()`: Shows the matplotlib plotting window.
