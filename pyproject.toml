@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibex_user_manual"
+dynamic = ["version"]
+description = "IBEX User's manual"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+  {name = "ISIS Experiment Controls", email = "ISISExperimentControls@stfc.ac.uk" }
+]
+maintainers = [
+  {name = "ISIS Experiment Controls", email = "ISISExperimentControls@stfc.ac.uk" }
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+  "sphinx", 
+  "sphinx_rtd_theme",
+  "myst_parser",
+  "sphinx-autobuild",
+  "linkify-it-py",
+  "sphinxcontrib-spelling",
+  "sphinx-reredirects",
+  "pytest",
+  "sphinxcontrib-mermaid"
+]
+
+[project.optional-dependencies]
+doc = []
+dev = []
+
+[project.urls]
+"Homepage" = "https://github.com/isiscomputinggroup/ibex_user_manual/"
+"Bug Reports" = "https://github.com/isiscomputinggroup/ibex_user_manual/issues"
+"Source" = "https://github.com/isiscomputinggroup/ibex_user_manual/"
+
+[tool.build_sphinx]
