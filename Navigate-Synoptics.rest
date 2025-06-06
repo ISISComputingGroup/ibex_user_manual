@@ -1,0 +1,28 @@
+In IBEX, synoptic views provide you with interactive, schematic views of your instrument.  Each icon on a synoptic view represents a device attached to your instrument.  You can tailor the synoptic view to display key PVs next to the device icons.  By double-clicking on an item, you can drill down to see more detail.
+
+The focus of this page is navigating synoptic views.  If you wish to create your own synoptic view see [[Create and Manage Synoptics]].
+
+.. contents:: **Contents**
+
+Selecting a Synoptic View
+-------------------------
+
+#. To view an instrument synoptic, click on the ``Synoptic`` button on the View Selector (see [[Views]]).
+#. If a default synoptic has been defined for your current configuration, IBEX will display it.  The name of the synoptic will be displayed in the drop-down menu in the area labelled ``Synoptic Selection`` at the top of the synoptic display area.
+#. If no default synoptic has been defined for your current configuration, IBEX will display ``--NONE--`` in the drop-down menu in the ``Synoptic Selection`` area and the synoptic display will be blank. 
+#. You can choose to view any synoptic defined for your instrument by clicking on the drop-down menu in ``Synoptic Selection`` area and choosing any of the synoptics listed.  IBEX will refresh the synoptic display to show your chosen synoptic.
+
+Navigating a Synoptic View
+--------------------------
+
+The synoptic view represents an instrument in a simplified, schematic form - as a linear sequence of devices.  Each device is represented by an icon.  Below each icon is an optional set of PVs, which allow you to monitor and/or control aspects of the device represented by the icon.
+
+If the synoptic is too long to fit in the display area, IBEX will activate a scroll bar at the bottom of the display, to allow you to scroll left and right.
+
+Clicking on an icon displays a control panel (or OPI) for the device represented by the icon.  The device control panel is displayed in a tab on the right-hand side of the IBEX window.  Screen space limitations make it impossible to show the full synoptic view alongside a device control panel so, when viewing device control panels, the display area of the synoptic view is reduced, but the left-right scroll bar is activated.
+
+If you click on a second icon, the control panel for the second device is displayed in a new tab alongside the tab for the first device control panel.  You can repeat this action to view the controls panels for further devices.
+
+You can also display a device control panel by using the drop-down menu in the area labelled ``Synoptic Navigation`` at the top of the synoptic display area.  This is a convenient way of displaying a device control panel on large synoptics without having to scroll to find the appropriate device icon.
+
+When you no longer need to view a control panel, click on the "X" icon at the top right-hand corner of the tab.

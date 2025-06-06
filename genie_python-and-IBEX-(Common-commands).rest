@@ -1,0 +1,232 @@
+Calling ``genie_python`` functions
+===================================
+
+From an IBEX scripting terminal, ``genie_python`` commands can be accessed via the ``g`` namespace. For example: ``g.get_version()`` 
+
+You should have noticed immediately after you typed ``g.`` that an auto-complete window appeared:
+
+.. image:: genie_python_and_ibex/AutoCompleteWindowBasic.png
+
+The window lists the available commands, and the arguments they take, in brackets. A description of the highlighted functions and its arguments is also given. The list will be refined as you type more characters.
+
+
+Passing arguments to commands
+=============================
+
+Arguments are passed to functions using standard Python syntax. You should already be somewhat familiar with this but here is a quick recap:
+
+- Arguments are passed to functions as a comma-separated list within brackets. For example ``g.add_spectrum(1, 2)``
+- Arguments may be named or not. For example ``g.add_spectrum(spectrum=1, period=2)``
+- Named and un-named arguments can be mixed but the named arguments must appear last. For example ``g.add_spectrum(1, period=2)``
+- Un-named arguments will be interpreted in the order of the function definition. Named arguments can be in any order. So ``g.add_spectrum(period=2, spectrum=1)`` would be valid but ``g.add_spectrum(2, spectrum=1)`` would not.
+- Some arguments may be defaulted in which case they do not need to be included in the argument list. For example ``g.add_spectrum(1)`` is equivalent to ``g.add_spectrum(1, 1)``. You can find out which parameters are optional and their default values in the [[genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
+
+As another example, the following three calls are all equivalent:
+
+.. code-block:: python
+
+    g.end()
+    g.end(False)
+    g.end(verbose=False)
+
+Acquisition control
+==================
+
+Switch run states
+-----------------
+
+``genie_python`` provides commands to switch between various run states:
+
+- ``begin``: Begins a new run
+- ``pause``: Pauses the current run
+- ``resume``: Resumes the current run
+- ``end``: Ends the current run
+- ``abort``: Aborts the current run
+
+You can get the current state with:
+
+- ``get_runstate``: Gets the states of the current run
+
+**WARNING**: Be careful not to assume the resultant state when using these commands. For example, you may run ``g.begin()`` and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It's a good idea to put checks into your scripts that you've reached the expected state. This can be done with ``waitfor_runstate``:
+
+.. code-block:: python
+
+    g.begin()
+    # Waits for a max of 60 seconds
+    g.waitfor_runstate("RUNNING", 60)
+
+
+Waiting
+-------
+
+If you want to wait for a specific event before executing an action, you can use one of the ``waitfor_...`` commands:
+
+-     ``waitfor_block``: Wait for a block value to be in a certain range
+-     ``waitfor_frames``: Wait until the number of good frames reaches a certain value
+-     ``waitfor_uamps``: Wait for the total received current to reach 10 uamps
+-     ``waitfor_time``: Waits for a specified time. The best way to use this function is with named arguments (e.g. ``g.waitfor_time(seconds=10)``) to make it clear what time units the interval is in.
+-     ``waitfor_move``: Waits for all motors, or a specific motor, to finish moving
+-     ``waitfor_runstate``: Wait for the instrument to reach a given state
+
+This is only a subset of the available functions. For a full list see [[the genie_python reference manual|http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html]].
+
+Update and store
+------------------
+
+You can update and store DAE results using:
+
+- ``update``: Load the data from the DAE into memory
+- ``store``: Write the updated DAE information to disk
+- ``updatestore``: Load the data from the DAE into memory and store it to disk
+
+Worked example
+--------------
+
+The following script will begin and run, then stop it once it reaches a running state:
+
+.. code-block:: python
+
+    # Only start if we're in the correct state
+    if g.get_runstate()=="SETUP":
+        g.begin()
+
+        # Check that the run has started successfully
+        if g.get_runstate()=="RUNNING":
+
+            # A function that does the sequence of operations associated with the run
+            do_experimental_stuff()
+
+        else:
+            print ("Could not reach a running state")
+
+
+
+Blocks
+========
+
+-    ``get_blocks``: Gets a list of the currently available blocks
+-    ``cshow``: Shows the properties of a named block/all blocks
+
+     -    If given a name (e.g. ``MY_BLOCK``) it will return a string containing properties of the block 
+
+          - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
+
+     - If called without arguments, it will show the same information for all blocks, with each block on a new line
+
+-    ``cget``: Gets properties of a named block as a dictionary of values
+
+     - Example: ``MY_BLOCK = 10 (runcontrol = NO, lowlimit = 0.0, highlimit = 0.0)``
+     - Unlike ``cshow``, a block name must be specified
+     - Properties can be accessed as standard Python:
+
+.. code-block:: python
+
+          block_info = g.cget("MY_BLOCK")
+          name = block_info["name"]
+          value = block_info["value"]
+          print ("The value of block {0} is {1}".format(name, value))
+
+-    ``cset``: Sets the value for a particular block
+
+     - Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint
+     -   Can be called with block names as named arguments. This is useful for setting multiple blocks 
+
+         - Example: ``g.cset(MY_BLOCK=1, MY_OTHER_BLOCK=2)``
+
+     -    The block can also be passed in by name. This is useful when setting advanced block properties
+
+          - Example: ``g.cset("MY_BLOCK", lowlimit=1, highlimit=10, runcontrol=True)``
+
+
+Worked example
+----------------
+
+The following script scans a block between its upper and lower limit:
+
+.. code-block:: python
+
+    # Set some parameters
+    max_steps = 100
+    high_limit = 10
+    low_limit = 1
+    block = "MY_BLOCK"
+    abs_step_size = 1
+
+    # Set the initial conditions
+    g.cset(block, lowlimit = low_limit, highlimit = high_limit)
+    step_size = abs_step_size
+
+    # Run the scan
+    for i in range(max_steps):
+        block_properties = g.cget(block)
+        current_value = block_properties['value']
+
+        # Block at or below low limit: Set step positive
+        if current_value <= block_properties['lowlimit']:
+            step_size = abs_step_size
+
+        # Block at or below high limit: Set step negative
+        if current_value  >= block_properties['highlimit']:
+            step_size = -abs_step_size
+
+        g.cset(block, current_value + step_size)
+        g.waitfor_time(seconds=0.1)
+
+Experiment setup
+----------------
+
+You can change various elements of the experiment setup using ``genie_python``. For example:
+
+- ``change_tcb``: Change the time channel boundaries
+- ``change_tables``: Change the wiring, spectra and detector table filename used
+- ``change_monitor``: Change the monitor to a specified spectrum and range
+
+If used on their own, these methods will apply their changes immediately. Sometime a set of changes are only consistent/make sense when considered together. If you want to apply several changes at once you can use the following commands:
+
+- ``change_start``: Marks the start of a change
+- ``change_finish``: Marks that the current set of changes is complete. All changes recorded since ``g.change_start()`` will be applied
+
+Using these commands will stop a run beginning while changes are still being made.
+
+Experiment details
+------------------
+
+You can change various experiment details with the ``change_...`` commands:
+
+- ``change_user``: Change the current user
+- ``change_title``: Change the current title
+- ``change_rb``: Change the current RB number
+
+There is a generic `change` command that allows you to change multiple properties simultaneously. However, this is recommended for advanced users only.
+
+You can get the current setup using the equivalent ``get_...`` commands:
+
+- ``get_user``: Get the current user
+- ``get_title``: Get the current title
+- ``get_rb``: Get the current RB number
+
+**Exercise 2**
+==============
+
+-    This exercise requires that:
+ 
+     - You have permission to begin and end runs on the instrument you're using.
+     - The instrument you're using has been configured so it can successfully enter a running state
+     - You have a settable block called "MY_BLOCK"
+
+- Change the title of the run to "Exercise 2"
+- Start a run and wait for 1 uamps before pausing
+- Set the value of "MY_BLOCK" to 5, with a high limit of 10, a low limit of 1 and put it under run control
+- Resume the run
+- Set the value of "MY_BLOCK" to 20 and confirm (using ``genie_python``) that the instrument has entered a waiting state
+- Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
+- End the run
+
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+
+-------------------------------------------------------------------------------
+
+**Next**: [[Scripting|genie_python-and-IBEX-(Scripting)]]
+
+**Previous**: [[Getting started|genie_python-and-IBEX-(Getting-started)]]
+    

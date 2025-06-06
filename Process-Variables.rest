@@ -1,0 +1,28 @@
+A key concept in EPICS, and hence IBEX, is the process variable.
+In the underlying `EPICS <http://www.aps.anl.gov/epics/>`_ framework, a process variable (usually abbreviated to PV) is a named piece of information that can be read/monitored/changed. Information from hardware devices and elsewhere is exposed as process variables, and devices are controlled by writing to the appropriate process variables.
+
+Naming
+------
+
+A process variable name is simply a string of alpha-numeric characters.  However, PV names are usually structured to conform to a naming convention, so that individual PV names are unique.  The colon ":" character is used to separate the different sections of a PV name.  At ISIS we use the following convention:
+
+* For an instrument all process variables relevant to that instrument will start with the ``IN:`` prefix, 
+* followed by the instrument name, 
+* followed by the device specific details (usually device name and variable name).
+ 
+For example 
+
+* ``IN:LARMOR:DAE:GOODUAH`` is the PV that holds the good microamps on LARMOR
+* ``IN:IMAT:DAE:GOODUAH`` is the PV that holds the good microamps on IMAT
+* ``IN:LARMOR:MK3CHOPPER_01:CH1:FREQ`` is the PV that holds the frequency of the Mk3 Chopper on LARMOR
+
+Not all PVs belong to an instrument.  Items not part of an instrument have a different prefix.  For example, the accelerator generates values with a top-level prefix of ``AC:`` such as 
+
+* ``AC:TS1:BEAM:CURR`` is the PV that holds the TS1 beam current
+
+Displaying
+----------
+You can read a PV outside of IBEX by starting an EPICS terminal and running:
+
+|   ``caget IN:LARMOR:DAE:GOODUAH``
+|   ``camonitor IN:LARMOR:DAE:GOODUAH``

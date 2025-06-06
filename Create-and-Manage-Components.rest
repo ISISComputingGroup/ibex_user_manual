@@ -1,0 +1,61 @@
+Many instrument configurations have a number of devices and settings in common.  A component is a mini configuration (or sub-configuration) which provides a means of defining a selection of IOCs, Blocks, Groups, etc. that can be treated as a single object. Other configurations can then include the component which means that common IOCs, Block and other settings do not have to be repeatedly added to each configuration. It also means that changes need only be made to a single object - if a component is changed the changes will be inherited by all the configurations that use that component.
+
+One of the most common and useful ways to use a component is to create a "base" component.  A "base" component defines a configuration for all the devices permanently attached to an instrument.  Any new configuration can then include the "base" component and inherit all the IOCs, blocks, groups, macros, etc. associated with the permanent devices.
+
+Components are also frequently used to describe equipment (either a single device or a group of devices) that move between different instruments (e.g. a cryostat and associated temperature controllers).  By defining a component to describe the equipment on the first instrument, the component can be copied across to the second instrument at the same time as the equipment is moved.  This saves having to re-define all the relevant blocks, groups, etc. in a new configuration on the second instrument.
+
+.. contents:: **Contents**
+
+Create a Component
+------------------
+
+There are several ways to create a component:
+
+Save an existing Configuration as a Component
+   You can save an existing configuration as a component.  When you click on the ``Save as...`` button on the Edit Configuration dialog (see [[Create and Manage Configurations]]) the resulting Save As... dialog contains a check-box labelled ``Save the configuration as a component``.  By default, this check-box is unchecked.  Click on the ``Save the configuration as a component`` check-box and then click the ``OK`` button to save the configuration as a component.
+
+   Once you have saved the configuration as a component, you can edit it as a component.
+
+Create a New Component
+   You can create a new component directly from the ``Configuration`` menu.  Simply select ``Configurations > New`` from the ``Configuration`` menu.  IBEX will then display the `New Configuration` dialog.
+   
+   The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the New Component dialog.
+
+Import a Component
+----------------
+
+To import a component:
+
+#. Select ``Components > Import`` from the ``Configuration`` menu.
+#. IBEX displays the import component selection dialog, which lists all available instruments and their components.
+#. Select an instrument you want to import a component from.
+#. Select a component you want to import from that instrument and then press the ``Import`` button.
+#. IBEX displays the Import Component dialog which is identical to the New Component dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+
+Before saving the imported component, please check the following:
+   * The communication settings for each IOC are correct. (COM port, IP address, etc.)
+   * Make sure that any remote IOCs (mobile devices not part of any beamline) in the imported component are needed and configured correctly.
+   * Check for any IOCs which may rely on autosave or settings area items.
+   * Check if the instrument prefix of non-local blocks is correct.
+
+**Note:** You will not be able to import a component from an instrument that is on a different version.
+
+Edit a Component
+----------------
+
+To edit a component:
+
+#. Select ``Components > Edit`` from the ``Configuration`` menu.
+#. IBEX displays the Edit Component dialog which is identical to the New Component dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+
+Delete a Component
+------------------
+
+To delete a component:
+
+#. Select ``Components > Delete`` from the ``Configuration`` menu.
+#. IBEX displays the Delete Component dialog, which lists all the components defined for your instrument.
+#. Select a component from the list and press the ``OK`` button
+#. IBEX deletes the selected component.
+
+**Note:** When you delete a component it really is deleted. It is no longer available to be used by IBEX. Before deleting a component, please be sure that you really do want to delete it. If you unintentionally delete a component, please contact the Experiment Controls team - it may be possible to recover the deleted component.

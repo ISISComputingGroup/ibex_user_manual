@@ -1,0 +1,21 @@
+In this section of the IBEX User Manual, we describe how to do the most common and important tasks. 
+
+We regularly run training sessions on IBEX. The slides from this course can be found [[here|genie_python_and_ibex/IBEX_initial_training.pptx]].
+
+[[Create and Manage Configurations]]
+
+[[Create and Manage Components]]
+
+[[Start and Stop IOCs]]
+
+[[Navigate Synoptics]]
+
+[[Create and Manage Synoptics]]
+
+[[Create and Manage Device Screens]]
+
+[[Manage the DAE]]
+
+[[Plot a Block Graph]]
+
+[[How to create PVs for generic user data]]
