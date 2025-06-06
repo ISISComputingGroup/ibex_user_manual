@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 
-project = "IBEX User's Manual"
+project = "IBEX User Manual"
 copyright = ""
 author = "ISIS Experiment Controls"
 release = "0.1"
@@ -61,7 +61,7 @@ html_context = {
     "conf_py_path": "/doc/",  # Path in the checkout to the docs root
 }
 
-html_title = "IBEX Users's Manual"
+html_title = "IBEX User Manual"
 html_short_title = "User Manual"
 html_theme = "sphinx_rtd_theme"
 html_logo = "logo.svg"

@@ -1,3 +1,6 @@
+Experiment Details
+##################
+
 The experiment details view gives you the ability to input meta data about your experiment, such as RB number, experiment team and sample/beamline parameters.
 
 .. contents:: **Contents**

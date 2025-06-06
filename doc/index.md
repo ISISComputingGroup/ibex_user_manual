@@ -1,6 +1,6 @@
-# IBEX User's Manual
+# IBEX User Manual
 
-Welcome to the IBEX User's manual.
+Welcome to the IBEX user manual.
 
 - **Not sure what IBEX is?** Start [here](introduction/What-Is-IBEX).
 - **Asking for help or reporting a problem?** The instructions for doing so are [here](#report_a_problem).
