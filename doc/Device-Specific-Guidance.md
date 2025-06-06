@@ -1,0 +1,12 @@
+# Device-specific guidance
+    
+This page contains information for a user on specific devices. The devices on this page have caused trouble or have some subtleties. If you are having trouble with a device and it is not listed below please let us know which device and what your issues were so that we can document it below.
+
+```{toctree}
+:maxdepth: 1
+:titlesonly:
+:glob:
+
+device_specific/*
+```
+

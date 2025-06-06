@@ -1,0 +1,310 @@
+Converting from OpenGENIE
+#########################
+
+Open GENIE: Compare and contrast
+================================
+
+Procedures vs. functions
+------------------------
+
+In ``Open GENIE``, procedures are defined by the keyword ``PROCEDURE`` and end with the keyword ``ENDPROCEDURE``. In Python we instead define functions using the ``def`` keyword so that::
+
+    PROCEDURE my_function
+    ...
+    ENDPROCEDURE
+
+becomes:
+
+.. code-block:: python
+
+    def my_function():
+       ...
+
+Note that, using Python syntax, we don't need a statement to show where the function ends; the indentation takes care of that for us.
+
+We pass arguments into ``Open GENIE`` procedures like this::
+
+    PROCEDURE my_function
+    PARAMETERS x = Integer y = Real z = String
+    ...
+    ENDPROCEDURE
+
+Usually an expected type is given for a parameter, this is not necessary but can trap common errors. We can do a similar  thing in ``genie_python``, but we don't define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In ``genie_python``, the code above becomes:
+
+.. code-block:: python
+
+    def my_function(x, y, z):
+        ...
+
+Loops
+-----
+
+In ``Open GENIE`` a loop is defined using::
+
+    LOOP I  FROM start TO end
+    ...
+    ENDLOOP
+
+The code above translates into Python as:
+
+.. code-block:: python
+
+    for i in range(start, end+1):
+        ...
+
+No ``ENDLOOP`` is needed because the indentation makes it implicit.
+
+Conditionals
+------------
+
+In ``Open GENIE`` conditionals take the form::
+
+   IF [CONDITION]
+       ...
+   ELSE
+       ...
+   ENDIF
+
+In Python this is written as:
+
+.. code-block:: python
+
+   if [CONDITION]:
+      ...
+   else:
+      ...
+
+No ``ENDIF`` is needed because the indentation makes it implicit.
+
+
+Commands
+--------
+
+The majority of ``Open GENIE`` instrument control commands have a very close equivalent in ``genie_python``.
+
+For example, the ``Open GENIE`` command::
+
+    BEGIN
+
+in ``genie_python`` becomes:
+
+.. code-block:: python
+
+    g.begin()
+
+Similarly, the ``Open GENIE`` command::
+
+    CHANGE TITLE="New title"
+
+in ``genie_python`` becomes:
+
+.. code-block:: python
+
+    g.change_title("New title")
+
+Similarly, most arguments will be very similar between ``Open GENIE`` and ``genie_python``. For example, the following ``Open GENIE`` command::
+
+    CSET/CONTROL TEMP1=5 LOWLIMIT=1 HIGHLIMIT=10
+
+becomes the following in ``genie_python``:
+
+.. code-block:: python
+
+    g.cset(TEMP1=5, runcontrol=True, lowlimit=1, highlimit=10)
+
+**NOTE** Python is case sensitive and the arguments, apart from the block name, are in lower case
+
+Worked example
+--------------
+
+Take the following ``Open GENIE`` procedure::
+
+    PROCEDURE my_function
+    
+    GLOBAL temp high low pow count
+    
+    temp = 20
+    low = 1
+    high = 50
+    
+    CSET/CONTROL TEMP1=temp LOWLIMIT=low HIGHLIMIT=high    
+    CSET/CONTROL TEMP2=temp LOWLIMIT=low HIGHLIMIT=high
+    
+    CHANGE TITLE= "Running at temperature "+As_string(temp)
+    BEGIN
+    WAITFOR UAMPS=0.2
+    ABORT
+    PRINTN "waiting 10 minutes"
+    WAITFOR SECONDS=60*10
+    BEGIN
+    WAITFOR SECONDS=10
+    PRINTN "Waiting for "+As_string(count)+"uAh"
+    WAITFOR UAMPS=count
+    END
+    
+    ENDPROCEDURE
+
+Let's convert it to ``genie_python``. First of all we turn the ``PROCEDURE`` into a Python function:
+
+.. code-block:: python
+
+    def my_function():
+
+We haven't given any arguments, because the procedure has no parameters. 
+
+The variable definitions remain the same, except we don't need the ``GLOBAL`` line to define our variables. However this function might be reused with different temperatures and limits, in which case we could change:
+
+.. code-block:: python
+
+    def my_function():
+        temp = 20
+        low = 1
+        high = 50
+
+to:
+
+.. code-block:: python
+
+    def my_function(temp, low, high):
+
+We can always create a function to call specific parameters if needed:
+
+.. code-block:: python
+
+    def my_specific_function():
+        my_function(temp=20, low=1, high=50)
+
+Further, we notice that ``WAITFOR`` later in the function waits for 50 microamps. Let's assume we almost always want to wait for 50 microamps but we'd like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so:
+
+.. code-block:: python
+
+    def my_function(temp, low, high, count=50):
+
+Let's start looking at the content of the PROCEDURE:
+
+    CSET/CONTROL TEMP1=temp LOWLIMIT=low HIGHLIMIT=high
+
+In ``genie_python``, this becomes:
+
+.. code-block:: python
+
+    g.cset(TEMP1=temp, lowlimit=low, highlight=high, runcontrol=True)
+
+The same goes for ``TEMP2``, but that gives us two commands that do exactly the same thing. That's not generally a good idea because it's prone to typos and changes to one line might not be applied to the other. It would be much better to do the following:
+
+.. code-block:: python
+
+    for block in ["TEMP1", "TEMP2"]:
+        g.cset(block, temp, lowlimit=low, highlimit=high, runcontrol=True)
+
+Notably we've had to use the alternate ``cset`` argument syntax in this case.
+
+The next block of commands is::
+
+    CHANGE TITLE= "Running at temperature "+As_string(temp)
+    BEGIN
+    WAITFOR UAMPS=0.2
+    ABORT
+    PRINTN "waiting 10 minutes"
+    WAITFOR SECONDS=60*10
+    BEGIN
+    WAITFOR SECONDS=10
+    PRINTN "Waiting for "+As_string(count)+"uAh"
+    WAITFOR UAMPS=count
+    END
+
+These translate very directly into ``genie_python``:
+
+.. code-block:: python
+
+    g.change_title("Running at temperature {0}".format(temp))
+    g.begin()
+    g.waitfor_uamps(0.2)
+    g.abort()
+    minutes_to_wait = 10
+    print "Waiting {0} minutes".format(minutes_to_wait)
+    g.waitfor_time(minutes=minutes_to_wait)
+    g.begin()
+    g.waitfor_time(seconds=10)
+    print "Waiting for {0}uAh".format(count)
+    g.waitfor_uamps(count)
+    g.end()
+
+We've changed a couple of things:
+
+-  Rather than use the value ``10`` for the number of minutes to wait, we've set it as a variable. That means if we change the value, we only need to change it in one place.
+-  We've used the ``minutes`` argument in ``waitfor_time`` rather than having to apply the conversion factor between minutes and seconds ourselves.
+-  We've used the syntax ``"...".format(arg1, arg2)`` to build our output strings. There are lots of ways to build strings in Python. Alternatively you can just use ``"..." + str(arg1) + "..." + str(arg2) + "..."`` but we like this way because it makes it easier to read and you don't have to remember to use ``str(...)`` to convert the types
+
+The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python``. Our final script is therefore:
+
+.. code-block:: python
+
+    def my_function(temp, low, high, count=50):
+        for block in ["TEMP1", "TEMP2"]:
+            g.cset(block, temp, lowlimit=low, highlimit=high, runcontrol=True)
+
+        g.change_title("Running at temperature {0}".format(temp))
+        g.begin()
+        g.waitfor_uamps(0.2)
+        g.abort()
+
+        minutes_to_wait = 10
+        print "Waiting {0} minutes".format(minutes_to_wait)
+        g.waitfor_time(minutes=minutes_to_wait)
+
+        g.begin()
+        g.waitfor_time(seconds=10)
+        print "Waiting for {0}uAh".format(count)
+        g.waitfor_uamps(count)
+        g.end()
+
+    def my_specific_function():
+        my_function(temp=20, low=1, high=50)
+
+
+Exercise 5
+==========
+
+- Translate the following ``Open GENIE`` script into ``genie_python``::
+  
+     PROCEDURE Scan
+         LOCAL i setpoint max min start step_size title nframes nimages multip
+         
+         max = 200.0; min = 100.0
+         nframes = 10; nimages = 10; step_size = 20.0; setpoint = 0.0; start = -100.0
+         setpoint = start
+
+         LOOP i FROM 1 TO nimages             
+             setpoint = setpoint + step_size
+             multip = As_Integer(setpoint/360)
+             setpoint = setpoint - 360*multip
+             PRINTN "New angle is: " + as_string(setpoint)
+             
+             IF (setpoint>=min) OR (setpoint<=max)           
+                 
+                 tempTitle="Image "+as_string(i)+", "+as_string(setpoint)+" degrees"
+                 CHANGE TITLE=tempTitle                   
+                 cset POSITION=setpoint
+                 waitformove
+                 PRINTN "Move complete. Counting for "+As_String(nframes)+" frames"
+                 BEGIN
+                     WAITFOR frames=nframes      
+                 END
+             ELSE    
+                 PRINTIN "Value "+As_string(setpoint)+ " not in interval"
+             ENDIF    
+         ENDLOOP
+     ENDPROCEDURE
+
+-    State any simplifications you've made
+
+
+[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+    
+-------------------------------------------------------------------------------
+
+**Next**: [[Closing remarks|genie_python-and-IBEX-(Closing-remarks)]]
+
+**Previous**: [[Scripting|genie_python-and-IBEX-(Scripting)]]
+   

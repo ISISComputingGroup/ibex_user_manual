@@ -1,0 +1,114 @@
+Genie Python Commands
+#####################
+
+Running genie\_python commands
+==============================
+
+When running ``python`` from an interactive console such as from
+the GUI or after running ``C:\Instrument\Apps\Python3\genie_python.bat``,
+the ``genie`` module will be aliased to ``g``. Genie commands can then
+be accessed by using the prefix ``g.[COMMAND_NAME]``. For example:
+
+::
+
+    g.begin()
+    g.cset("BLOCK_1",1)
+    g.abort()
+
+This is particularly useful from the GUI which will auto-complete
+commands and provide tool tips describing each function and its
+arguments.
+
+Note that in many cases, arguments will be optional. For instance,
+``begin`` can be used as ``g.begin()`` despite supporting all of the
+arguments ``period``, ``meas_id``, ``meas_type``, ``meas_subid``,
+``sample_id``, ``delayed``, ``quiet``, ``paused``, and ``verbose``.
+
+Running in simulation mode
+--------------------------
+
+Genie_python can be used in simulation mode. Simulation mode will allow you to run scripts but without changing items on your instrument. It does this by putting dummy commands in for some genie command, it also creates dummy blocks on the fly so that block values can be read and written to. **N.B.** This means that simulation can not be this will not validate your block names within the script. To run in simulation mode use the ``genie_python_simulate.bat`` found in ``C:\Instrument\Apps\Python3``. 
+
+Common genie\_python commands
+=============================
+
+Many ``genie_python`` commands share the same name with their Open GENIE
+equivalent so it will often be very straightforward to find the function
+you're looking for. Still, here is a list of the most commonly used
+``genie_python`` commands. This is **not a complete list**. For full
+information, consult the `genie\_python reference manual`_.
+
+
+Starting and stopping a run
+---------------------------
+
++-----------+----------------------------------------------------+--------------+
+| Command   | Description                                        | Example      |
++===========+====================================================+==============+
+| begin     | Starts a new run                                   | g.begin()    |
++-----------+----------------------------------------------------+--------------+
+| end       | Ends the current run                               | g.end()      |
++-----------+----------------------------------------------------+--------------+
+| abort     | Aborts the current run                             | g.abort()    |
++-----------+----------------------------------------------------+--------------+
+| pause     | Pauses the current run                             | g.pause()    |
++-----------+----------------------------------------------------+--------------+
+| resume    | Resumes the current run after it has been paused   | g.resume()   |
++-----------+----------------------------------------------------+--------------+
+
+Updating blocks and PVs
+-----------------------
+
++-----------+--------------------------------------------------------+-------------------------------------------+
+| Command   | Description                                            | Example                                   |
++===========+========================================================+===========================================+
+| cget      | Gets the useful values associated with a block         | g.cget("NEW\_BLOCK")                      |
++-----------+--------------------------------------------------------+-------------------------------------------+
+| cset      | Sets the setpoint and runcontrol settings for blocks   | g.cset("NEW\_BLOCK",1)                    |
++-----------+--------------------------------------------------------+-------------------------------------------+
+| get\_pv   | Gets the value for the specified PV                    | g.get\_pv("IN:INSTNAME:IOC\_01:STAT")     |
++-----------+--------------------------------------------------------+-------------------------------------------+
+| set\_pv   | Sets the value for the specified PV                    | g.set\_pv("IN:INSTNAME:IOC\_01:STAT",1)   |
++-----------+--------------------------------------------------------+-------------------------------------------+
+
+Run control
+-----------
+
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| Command             | Description                                                                             | Example                            |
++=====================+=========================================================================================+====================================+
+| get\_uamps          | Gets the current number of micro-amp hours                                              | g.get\_uamps()                     |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| get\_frames         | Gets the current number of good frames                                                  | g.get\_frames()                    |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| get\_runstate       | Gets the current status of the instrument as a string                                   | g.get\_runstate()                  |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| get\_mevents        | Gets the total counts for all the detectors                                             | g.get\_mevents()                   |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| get\_totalcounts    | Gets the total counts for the current run                                               | g.get\_totalcounts()               |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor             | Waits until certain conditions are met                                                  | g.waitfor("NEW\_BLOCK",value=1)    |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_block      | Waits until block reaches specific value                                                | g.waitfor\_block("NEW\_BLOCK",1)   |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_time       | Waits for a specified amount of time                                                    | g.waitfor\_time(1)                 |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_frames     | Waits for a number of total good frames to reach parameter value                        | g.waitfor\_frames(1000)            |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_uamps      | Waits for a specific total charge                                                       | g.waitfor\_uamps(9.9)              |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_runstate   | Waits for a particular instrument run state                                             | g.waitfor\_runstate("paused")      |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+| waitfor\_move       | Waits for all motion or specific motion to complete                                     | g.waitfor\_move("NEW\_BLOCK")      |
++---------------------+-----------------------------------------------------------------------------------------+------------------------------------+
+
+
+Toggling options
+----------------
+Various options can be toggled with the ``toggle`` command.
+
+For example, toggling the verbosity of all calls to a command using ``toggle.cset_verbose(True)``. This can be convenient, as there will be no need to explicitly set ``verbose=True`` for each ``cset`` call.
+
+There are also advanced options such as ``toggle.exceptions_raised(True)``, which will allow exceptions to propagate instead of genie handling them, in case you want to handle exceptions yourself. WARNING: If you have this toggled to True and there is an exception within genie_python it will stop your script from running unless you catch the exception yourself.
+
+.. _`genie\_python reference manual`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html

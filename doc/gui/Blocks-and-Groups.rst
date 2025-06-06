@@ -1,0 +1,47 @@
+Blocks & Groups
+###############
+
+The blocks & groups area of the IBEX GUI is situated to the right of the [[Dashboard]].  It displays all the blocks defined for the currently loaded instrument configuration.  The blocks are arranged in groups.
+
+.. contents:: **Contents**
+
+Blocks
+------
+A block is, in effect, an alias for a process variable.  Process variables are defined in more detail on the [[Process Variables]] page.  Any process variable can be assigned to a block.  Blocks are defined in more detail on the [[Blocks]] page.
+
+Run Control Indicators
+~~~~~~~~~~~~~~~~~~~~~~
+
+A tick mark or an X mark next to a block indicates that the block is under run control.  
+
+* An unadorned block (i.e. no symbol next to the value of the block) means the block is not under run control.
+* An icon featuring a black check mark on a green background next to the value means the block is under run control and within its limits.
+* An icon featuring a white X on a red background next to the value means that the block is under run control and outside its limits.
+
+Alarm State Indicators
+~~~~~~~~~~~~~~~~~~~~~~
+
+A coloured box surrounding the block indicates that the block is in an alarm state (or, more correctly, that the underlying PV is in an alarm state).
+
+* No border means the block is connected and is not in an alarm state.
+* An orange border around the block value means the block is under minor alarm.
+* A red border around the block value means the block is under major alarm.
+* A purple border around the block value means the block is disconnected.
+
+If a block is in an alarm state, you should check the Alarms View to find out why an alarm has been raised.
+
+If a block is flagged as being disconnected, it typically means there is a problem with the device which provides the value of the block or with the IOC which controls the device:
+
+#. the IOC is not running. 
+#. the IOC has not been correctly configured and, therefore, is not communicating correctly with the device.
+#. the device is not connected to the instrument control PC (e.g. a cable is disconnected). 
+#. the device is switched off.
+#. there is a fault with the device.
+
+The last of these possibilities is the least likely to occur.  It is good practice to rule out the other possibilities before concluding that there is a fault with the device.
+
+Groups
+------
+Blocks can be arranged in groups.  This provides a convenient way to group related blocks.  You can create as many groups as you need to categorise your blocks.  
+
+If you do not explicitly assign a block to a group, it will, by default, be assigned to a group called "Other".

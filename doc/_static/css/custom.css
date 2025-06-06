@@ -2,13 +2,9 @@
     white-space: inherit;
 }
 
-a:hover {
-    color: #01afec;
-}
-
 .wy-menu-vertical p.caption {
-    color: #01afec;
+    color: #70f10e;
 }
 .wy-nav-content {
-    max-width: 1200px !important;
+    max-width: 1000px !important;
 }

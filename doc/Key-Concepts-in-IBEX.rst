@@ -1,0 +1,168 @@
+Concepts
+########
+
+It is worth taking a few moments to appreciate some of the key concepts behind IBEX.
+
+.. contents:: **Contents**
+
+Clients & Servers
+-----------------
+
+A client-server system is one that employs a distributed application architecture.  In a client-server system, the workload is partitioned between the providers of information or services (i.e. servers) and requesters or consumers of information or services (i.e. clients).  Clients request information or the use of a resource or service from server hosts.  Each server host runs server programs which share information or resources with clients when requested to do so.  Typically, the server and client run on separate computers connected via a network, but the client and server can also run as separate processes on the same computer.
+
+The design of IBEX follows this model:  IBEX consists of a server component, which runs on the Instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <https://epics-controls.org/>`_ framework for creating distributed control systems.
+
+All Instruments should be installed in a consistent manner, these are detailed on the [[IBEX File Paths page]].
+
+IBEX Client
+~~~~~~~~~~~
+
+The IBEX Client is a single application, which functions as a GUI for IBEX.
+
+genie_python
+~~~~~~~~~~~~
+
+genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
+
+IBEX Server
+~~~~~~~~~~~
+
+The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon Instrument. The primary components of the IBEX server are:
+
+BlockServer 
+  The core component of the IBEX server.  The BlockServer provides the service that translates [[Process Variables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
+
+ICP
+  The ICP (Instrument Control Program) is the process which controls the `DAE (Data Acquisition Electronics)`_.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
+
+Archiver 
+  The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes. 
+
+IOCs 
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via [[Process Variables]].  Typically, there is one IOC for each device attached to the instrument control PC.
+  
+Message Server 
+  The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
+
+[[Script Server]]
+  The Script Server runs Python scripts submitted by authorised clients. After these scripts are run, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
+  
+MySQL 
+  MySQL is an open-source relational database system, which provides database services to 
+  the Archiver and the Message Server.
+
+Security
+~~~~~~~~
+
+A critical aspect of any control system is security: in particular, who has control of an instrument at any point in time.  By control, we mean the ability to change PVs or start/stop the collection of data.  The security model in IBEX reflects current working practices at ISIS.
+
+Instrument Sub-Network
+^^^^^^^^^^^^^^^^^^^^^^
+
+Each instrument controlled by IBEX has its own sub-network.  The sub-network is a self-contained, mini-network which connects the instrument blockhouse, the instrument machine room (which houses the instrument control PC and DAE rack) and the instrument cabin/pod. Each instrument sub-network is independent of the sub-network belonging to any other instrument.  The instrument sub-network is connected to the wider ISIS network using a gateway.  Also, the instrument control PC runs a process called the EPICS Gateway, which controls access to PVs on the instrument sub-network.
+
+This arrangement means that the devices attached to the instrument control PC are isolated from events elsewhere on the network.  For example, should there be a need to shut down a part of the ISIS network (e.g. for maintenance reasons), the instrument sub-network will continue to run without interruption.  Many hardware devices are not designed to be connected directly to busy, general purpose networks; by employing a sub-network, we can insulate these devices from the background traffic that exists on the rest of the network.  A sub-network arrangement helps to make the instrument more resilient.
+
+Who has Control?
+^^^^^^^^^^^^^^^^
+
+In IBEX, typically only PCs directly connected to the instrument sub-network can control the instrument.  To control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.  
+
+Any request from a PC for access to a PV is checked by the EPICS Gateway.  If the request originates from within the instrument sub-network, the EPICS Gateway will allow full (read and write) access to the PV.  If the request originates from outside the instrument sub-network, the EPICS Gateway will allow read-only access to the PV.  Therefore, if your PC is not directly connected to the instrument sub-network, you can only view the status of an instrument.
+
+Who can View an Instrument?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Anyone on the ISIS network can view an instrument.  For example:
+
+* another scientist, using another instrument, can use IBEX to view what is happening on your instrument.  This is especially useful when instruments share infrastructure (e.g. the muon beamlines).
+* an instrument scientist can use IBEX to view what is happening on your instrument from his or her office.
+* a technician can use IBEX to view the status of a device.
+* a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems.
+
+Blocks & Process Variables
+--------------------------
+
+.. toctree::
+    :titlesonly:
+
+    concepts/Blocks
+    concepts/Process-Variables
+
+DAE (Data Acquisition Electronics)
+----------------------------------
+
+The DAE is a collection of electronic cards housed in a VXI/VME crate, which is located in the instrument cabin or pod.  The DAE is maintained by the ISIS electronics group.  There are two types of card in the DAE:
+
+Detector Cards
+   The DAE contains many detector cards, which are connected to the instrument detectors, and record neutron counts.
+
+Environment/Period Card
+   The DAE contains a single environment/period card, which distributes timing signals etc. and maintains global 
+   counters (e.g. number of ISIS pulses, proton charge delivered (PPP))
+
+The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.
+
+Settings for the DAE can be read and changed either through the [[IBEX client|Manage the DAE]] or commands [[issued in scripts|scripting]].
+
+What does the DAE do?
+~~~~~~~~~~~~~~~~~~~~~
+The DAE:
+
+* Records the arrival time of neutrons at detectors relative to the ISIS pulse
+* Histograms the neutron counts based on their time of arrival into “bins” chosen by scientists
+* If desired, groups (gangs) detectors together
+* If necessary, rejects (vetoes) data based on pre-defined criteria
+* Saves all of this in “detector card memory” to be later read by the PC
+
+GOOD Frames and RAW Frames
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DAE will only record data if it receives a “start pulse” signal.
+
+RAW Frame
+   A RAW Frame means the DAE received a “start pulse” signal, but data may or may not have been saved to the detector card.
+
+GOOD Frame
+   A GOOD Frame is a RAW frame where data was histogrammed and written to the detector card.
+
+RAW frames that do not become GOOD frames are called VETOED frames 
+
+Vetoes
+~~~~~~
+A veto is a hardware signal that can, on a frame by frame basis, tell the DAE not to collect data.
+
+* The DAE supports four user-defined external vetoes (labelled VT0 -> VT3 on a crate), which can be connected to choppers, moderator, etc.
+* Internal (FIFO) veto – triggered if too many counts in a single frame on any card
+* SMP veto – triggered if chopper timing signal out of phase with ISIS
+* Fermi chopper veto: checks for the arrival of a chopper signal within a given window on inelastic chopper spectrometers
+
+  * Used on MERLIN, MAPS, MARI. On LET handled by chopper crate and so just an external veto. 
+
+* ISIS 50Hz veto: vetoes frames when accelerator not running at 50Hz (e.g. during beam run up or diagnostics) 
+
+  * Used on IRIS/OSIRIS, but they also use ISISFREQ SECI block 
+
+DAE Timing Sources
+~~~~~~~~~~~~~~~~~~
+The DAE can use one of three timing sources:
+
+* ISIS: uses the ISIS accelerator pulse from the cable plugged into the TOF socket
+* SMP: uses the “secondary master pulse”, usually a chopper plugged into the SMP socket
+* First TS1: uses the first ISIS pulse after the missing TS2 pulse (so 10Hz on TS1).
+* Internal Test Clock: 50Hz timing signal provided internally by DAE
+
+  * Used for quiet counts out of a cycle
+  * Need to turn off SMP veto as test clock is not synchronised to anything
+
+TS1, 50Hz running
+^^^^^^^^^^^^^^^^^
+* Can choose either ISIS or SMP – however, they differ in what happens if beam goes off
+* ISIS: beam off -> no signal and so no RAW frame
+* SMP: if chopper continues to run -> RAW frame, which will be vetoed by the SMP veto as 
+  there is no corresponding ISIS TOF pulse.
+
+TS1, 25Hz running
+^^^^^^^^^^^^^^^^^
+* Must choose SMP (chopper) timing as this signal is the one at 25Hz
+* If beam off, chopper continues to run -> RAW frame, but vetoed by SMP veto as no corresponding ISIS pulse
+* Dashboard beam current calculated from DAE pulses, so 25Hz -> half ISIS beam current  
