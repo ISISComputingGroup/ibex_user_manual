@@ -24,6 +24,8 @@ genie_python
 
 genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.
 
+.. _ibex_server:
+
 IBEX Server
 ~~~~~~~~~~~
 
@@ -85,9 +87,11 @@ Blocks & Process Variables
 
 .. toctree::
     :titlesonly:
+    :maxdepth: 1
 
     concepts/Blocks
     concepts/Process-Variables
+    concepts/PV-Naming-Conventions
 
 DAE (Data Acquisition Electronics)
 ----------------------------------

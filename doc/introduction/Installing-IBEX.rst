@@ -3,6 +3,7 @@ Installing IBEX
 
 .. contents:: **Contents**
 
+.. _installing_ibex_client:
 Installing IBEX Client
 ----------------------
 
@@ -21,7 +22,7 @@ Installation
 
 There is a network drive location that the experiment controls group can direct you to.
 
-
+.. _installation_layout:
 Installation Layout
 -------------------
 
@@ -32,9 +33,9 @@ After installation, the current paths are used by the various components.
 +=======================================================+===================================================================+
 |IBEX Client                                            |  ``C:\Instrument\Apps\Client_E4``                                 | 
 +-------------------------------------------------------+-------------------------------------------------------------------+
-| genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python3``                                     |
+| genie_python (include python and dependencies)        | ``C:\Instrument\Apps\Python3``                                    |
 +-------------------------------------------------------+-------------------------------------------------------------------+
-| EPICS utilities                                       | ``C:\Instrument\Apps\Python3\EPICS_UTILS``                         |
+| EPICS utilities                                       | ``C:\Instrument\Apps\Python3\EPICS_UTILS``                        |
 +-------------------------------------------------------+-------------------------------------------------------------------+
 | Server Code and executables                           | ``c:\Instrument\Apps\EPICS``                                      |
 +-------------------------------------------------------+-------------------------------------------------------------------+
@@ -45,14 +46,15 @@ After installation, the current paths are used by the various components.
 | Server logs, autosave and database files              |  ``C:\Instrument\Var``                                            |
 +-------------------------------------------------------+-------------------------------------------------------------------+
 
+.. _installing_ibex_server:
 Installing IBEX Server
 ----------------------
 
 Most instruments at ISIS are now using at IBEX, with the last few being planned for migration during 2024 and early 2025.
 If you need to install the server on an Instrument, please contact the Experiment Controls team.
-The developers manual (https://isiscomputinggroup.github.io/ibex_developers_manual/index.html) holds more detailed information should it be needed.
+`The developers manual <https://isiscomputinggroup.github.io/ibex_developers_manual/index.html>`_ holds more detailed information should it be needed.
 
 Uninstalling IBEX
 -----------------
 
-Uninstallation of IBEX is performed by manually deleting the relevant directories as listed in `Installation Layout <https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Installing-IBEX/_edit#installation-layout>`_.
+Uninstallation of IBEX is performed by manually deleting the relevant directories as listed in :ref:`installation_layout`.

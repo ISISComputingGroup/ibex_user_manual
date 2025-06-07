@@ -9,10 +9,12 @@ IBEX Processes and Support
 ==========================
 
 .. _report_a_problem:
+
 How do I report a problem or get help with IBEX?
 ------------------------------------------------
 
 **A:** For a non-urgent issue use the `Instrument Problem/Bug Report <http://sparrowhawk.nd.rl.ac.uk/footprints/?product=PC%20Instrument%20Control&amp;format=pcinst>`_ page or email ISISExperimentControls@stfc.ac.uk
+
 When reporting a problem, it is helpful to include the version numbers of your IBEX Client and Server in your report.  To view the version numbers select ``Help > About`` from the menu bar in the IBEX Client.
 
 For urgent issues call **1763** (RAL site landline or ZOOM phone) or **01235394488**
@@ -20,12 +22,12 @@ For urgent issues call **1763** (RAL site landline or ZOOM phone) or **012353944
 How do I install IBEX Server?
 -----------------------------
 
-To install the IBEX Server - see [[Installing IBEX Server|Installing-IBEX#installing-ibex-server]].
+To install the IBEX Server - see :ref:`installing_ibex_server`.
 
 How do I install IBEX Client?
 -----------------------------
 
-To install IBEX Client - see [[Installing the IBEX Client|Installing-IBEX#installing-ibex-client]].
+To install IBEX Client - see :ref:`installing_ibex_client`.
 
 Can I run IBEX and SECI at the same time?
 -----------------------------------------
@@ -58,22 +60,22 @@ Running IBEX
 How do I start IBEX Server?
 ---------------------------
 
-To start IBEX Server - see [[Starting the IBEX Server | Starting-and-Stopping-IBEX#starting-ibex-server]].
+To start IBEX Server - see :ref:`starting_ibex_server`.
 
 How do I stop IBEX Server?
 --------------------------
 
-To stop IBEX Server - see [[Stopping the IBEX Server|Starting-and-Stopping-IBEX#stopping-ibex-server]].
+To stop IBEX Server - see :ref:`stopping_ibex_server`.
 
 Can I switch from running IBEX to SECI and vice-versa?
 ------------------------------------------------------
 
-Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See [[Switching Between IBEX and SECI]] for details.
+Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See :doc:`obsolete/Switching-Between-IBEX-and-SECI` for details.
 
 Can I write scripts to control my experiment?
 ---------------------------------------------
 
-Yes, you can.  Scripting in IBEX is done using python (with support from a library called genie_python).  See [[Scripting]] for more details.
+Yes, you can.  Scripting in IBEX is done using python (with support from a library called genie_python).  See :doc:`Scripting` for more details.
 
 What do I look at if there are no RAW frames when Collecting Data?
 ------------------------------------------------------------------
@@ -142,13 +144,13 @@ When I load script I get an error complaining about unicodeescape
 
 If you try to load a script and you get the following error:
 
-```
->>> `g.load_script('c:\scripts\NiceScript.py')`
-  File "<ipython-input-7-c5705547e6ca>", line 1
-    g.load_script('c:\scripts\NiceScript.py')
-                  ^
-SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 10-11: malformed \N character escape
-```
+.. code-block::
+
+    >>> `g.load_script('c:\scripts\NiceScript.py')`
+      File "<ipython-input-7-c5705547e6ca>", line 1
+        g.load_script('c:\scripts\NiceScript.py')
+                      ^
+    SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 10-11: malformed \N character escape
 
 The problem is you have not escaped the string correctly, in python the slash character, `\\`, is an escape character used to create things like newline characters. In this command, the `\\N` is a newline character and is causing python trouble. You can either:
 

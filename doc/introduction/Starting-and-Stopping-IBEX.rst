@@ -6,6 +6,8 @@ Starting and Stopping IBEX
 Starting and Stopping IBEX Client
 ---------------------------------
 
+.. _starting_ibex_client:
+
 Starting IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -16,6 +18,8 @@ If you have not used IBEX for some time, it might not appear on the list of freq
 Alternatively, if you created a desktop short-cut to the IBEX client, double-click on the icon.
 
 If you are on an Instrument control computer, then there may well be a shortcut pinned to the taskbar as well which you can click to launch the client.
+
+.. _stopping_ibex_client:
 
 Stopping IBEX Client
 ~~~~~~~~~~~~~~~~~~~~
@@ -31,6 +35,7 @@ The IBEX Server is designed to run continuously.  There is no particular need fo
 
 The IBEX Server is a collection of mutually cooperating processes.  To start and stop the IBEX Server, these processes need to be started and stopped in the correct order - there are scripts which ensure that these processes are started and stopped correctly.  Please use the appropriate script (as described below) to start and stop IBEX Server.
 
+.. _starting_ibex_server:
 
 Starting IBEX Server
 ~~~~~~~~~~~~~~~~~~~~
@@ -38,6 +43,8 @@ Starting IBEX Server
 On the instrument control PC, there should be a shortcut which will allow you to start the server in the programs list. This is called ``start_ibex_server.bat``. This shortcut will point to a file of that name in ``C:\Instruments\Apps\EPICS``.
 
 This will start the server, and prompt you to wait for the ``IBEX Server Started`` message, wait for that message and then you can proceed to start the client and use the system.
+
+.. _stopping_ibex_server:
 
 Stopping IBEX Server
 ~~~~~~~~~~~~~~~~~~~~

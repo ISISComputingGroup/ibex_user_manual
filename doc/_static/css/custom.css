@@ -11,14 +11,13 @@
 
 @keyframes highlight {
     0% {
-        background: #70f10e;
+        background: #e3fccf;
     }
     100% {
-        background: #e3fccf;
+        background: none;
     }
 }
 
 :target {
-    animation: highlight 3s;
-    background: #e3fccf;
+    animation: highlight 5s;
 }
