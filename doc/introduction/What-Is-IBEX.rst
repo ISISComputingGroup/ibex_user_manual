@@ -3,7 +3,7 @@ What is IBEX
 
 IBEX is the name of a suite of software which helps to control the beamlines for experiments at ISIS, as well as generating the data files which are then digested and made available via the `ISIS Data Gateway <https://data.isis.stfc.ac.uk/datagateway>`_.
 
-IBEX consists of a server and Graphical User Interface (GUI) system, which can be run on separate computers if appropriate. 
+IBEX consists of a server and Graphical User Interface (GUI) system, which can be run on separate computers if appropriate.
 
 IBEX uses python as its scripting language. genie_python is a python library that allows the scripts written for IBEX to match closely in format to those in the previous control system used at ISIS.
 

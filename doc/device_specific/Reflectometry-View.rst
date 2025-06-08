@@ -105,7 +105,7 @@ Reflectometry View Tabs
 Front Panel
 -----------
 
-Each instrument has a unique front panel but they all have a similar layout. The schematic view shows the main areas of the panel. For peculiarities of instruments see the [[instrument specific pages|https://isiscomputinggroup.github.io/ibex_developers_manual/specific_iocs/reflectometry/Beamlines.html]]
+Each instrument has a unique front panel but they all have a similar layout. The schematic view shows the main areas of the panel. For peculiarities of instruments see the :external+ibex_developers_manual:doc:`instrument specific pages in the dev manual<specific_iocs/reflectometry/Beamlines>`
 
 .. image:: reflectometry/FrontPanelSchematic.png
 
@@ -204,7 +204,7 @@ Driver Corrections
 
 .. image:: reflectometry/DriverCorrections.png
 
-The driver correction tab displays the value of any engineering corrections that are currently being applied to the motors. [[Engineering corrections are set in the configuration file|https://isiscomputinggroup.github.io/ibex_developers_manual/specific_iocs/reflectometry/Reflectometry-Composite-Driving-Layer.html#reflectometry-engineering-offset]] and allow the instrument scientist to correct the positions of components which do not follow the geometric calculation of the reflectometry IOC. This is one of the reasons why a motor position may be different from a geometric calculation of the beam.
+The driver correction tab displays the value of any engineering corrections that are currently being applied to the motors. :external+ibex_developers_manual:ref:`Engineering corrections are set in the configuration file<reflectometry_engineering_offset>` and allow the instrument scientist to correct the positions of components which do not follow the geometric calculation of the reflectometry IOC. This is one of the reasons why a motor position may be different from a geometric calculation of the beam.
 
 Constants
 ---------

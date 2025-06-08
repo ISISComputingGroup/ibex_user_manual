@@ -300,11 +300,4 @@ Exercise 5
 -    State any simplifications you've made
 
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
-    
--------------------------------------------------------------------------------
-
-**Next**: [[Closing remarks|genie_python-and-IBEX-(Closing-remarks)]]
-
-**Previous**: [[Scripting|genie_python-and-IBEX-(Scripting)]]
-   
+:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`

@@ -86,3 +86,8 @@ spelling_filters = ["enchant.tokenize.MentionFilter"]
 spelling_warning = True
 spelling_show_suggestions = True
 spelling_suggestion_limit = 3
+
+intersphinx_mapping = {
+    "ibex_developers_manual": ("https://isiscomputinggroup.github.io/ibex_developers_manual/", None),
+    "mantid": ("https://docs.mantidproject.org/", None),
+}

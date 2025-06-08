@@ -5,7 +5,7 @@ The installation of IBEX is common for most instruments you shouldn't need to de
 
 * IBEX Client: ``C:\Instrument\Apps\Client_E4\ibex-client.exe`` there should be a shortcut on the task bar
 
-* IBEX Server: ``C:\Instrument\Apps\EPICS`` to start and stop the server see [[Starting-and-Stopping-IBEX]]
+* IBEX Server: ``C:\Instrument\Apps\EPICS`` to start and stop the server; see :doc:`introduction/Starting-and-Stopping-IBEX`.
 
 * genie_python: ``C:\Instrument\Apps\Python3\genie_python.bat`` usually python is accessed through the client scripting console
 
@@ -19,13 +19,13 @@ The installation of IBEX is common for most instruments you shouldn't need to de
 
 * Common calibration files: ``C:\Instrument\Settings\config\common`` calibration files for instruments e.g. Eurotherm sensors
 
-* Log files: These are in various places depending on the source see [[Log File locations|https://isiscomputinggroup.github.io/ibex_developers_manual/iocs/troubleshooting/Log-file-location.html]]
+* Log files: These are in various places depending on the source see :external+ibex_developers_manual:doc:`iocs/troubleshooting/Log-file-location` on the developer's manual.
 
 * User scripts: instrument dependent often in ``c:\scripts``
 
 * Instrument scripts: ``C:\Instrument\Settings\config\<computer>\Python`` version controlled instrument scripts which are accessed through ``inst.``. Either as a single file called ``inst.py`` or a folder called ``inst``
 
-* Shared instrument scripts: ``C:\Instrument\scripts`` these are scripts shared between multiple instruments [[see shared instrument scripts.|https://github.com/ISISNeutronMuon/InstrumentScripts/wiki]]
+* Shared instrument scripts: ``C:\Instrument\scripts`` these are scripts shared between multiple instruments `see shared instrument scripts <https://github.com/ISISNeutronMuon/InstrumentScripts/wiki>`_
 
 * Data: ``C:\data`` the data recorded by the instrument
 

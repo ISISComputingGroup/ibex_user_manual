@@ -52,7 +52,7 @@ Installing IBEX Server
 
 Most instruments at ISIS are now using at IBEX, with the last few being planned for migration during 2024 and early 2025.
 If you need to install the server on an Instrument, please contact the Experiment Controls team.
-`The developers manual <https://isiscomputinggroup.github.io/ibex_developers_manual/index.html>`_ holds more detailed information should it be needed.
+`The developers manual <https://isiscomputinggroup.github.io/ibex_developers_manual/>`_ holds more detailed information should it be needed.
 
 Uninstalling IBEX
 -----------------

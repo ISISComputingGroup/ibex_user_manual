@@ -225,11 +225,4 @@ You can get the current setup using the equivalent ``get_...`` commands:
 - Decrease the value of "MY_BLOCK" down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.
 - End the run
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
-
--------------------------------------------------------------------------------
-
-**Next**: [[Scripting|genie_python-and-IBEX-(Scripting)]]
-
-**Previous**: [[Getting started|genie_python-and-IBEX-(Getting-started)]]
-    
+:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`

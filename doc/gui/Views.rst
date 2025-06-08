@@ -50,7 +50,7 @@ To add/log a PV to the configuration, right-click to the text box next to the PV
 
 DAE
 ===
-The DAE View allows you to set up and control the DAE. See [[Manage the DAE]] for further details.
+The DAE View allows you to set up and control the DAE. See :doc:`/how_to/Manage-the-DAE` for further details.
 
 Device Screens
 ==============
@@ -58,7 +58,7 @@ The Device Screens view allows you to set up, control and view OPIs for differen
 
 Experiment Details
 ===================
-The Experiment Details View allows you to look up details of your current experiment using the RB number. See [[Experiment Details]] for further details.
+The Experiment Details View allows you to look up details of your current experiment using the RB number. See :doc:`Experiment-Details` for further details.
 
 IOC Log
 =======
@@ -70,7 +70,7 @@ The Journal Viewer displays information about previous runs made on the instrume
 
 Log Plotter
 ===========
-The Log Plotter View allows you to plot a strip-chart graph of any block or process variable. See [[here | Plot-a-Block-Graph]] for more details. If the buttons to add PVs to Log Plotter don't work, it is probably because Log Plotter perspective is disabled. It can be re-enabled from settings at the top bar.
+The Log Plotter View allows you to plot a strip-chart graph of any block or process variable. See :doc:`/how_to/Plot-a-Block-Graph` for more details. If the buttons to add PVs to Log Plotter don't work, it is probably because Log Plotter perspective is disabled. It can be re-enabled from settings at the top bar.
 
 Motors
 ======
@@ -82,7 +82,7 @@ The [[reflectometry view|Reflectometry-View]] is available to reflectometers tha
 
 Script Server
 =============
-The Script Server View displays the current script being run, the queue of scripts to be run on the Script server and the output of any scripts. See [[Script Server]] for more details.
+The Script Server View displays the current script being run, the queue of scripts to be run on the Script server and the output of any scripts. See :doc:`Script-Server` for more details.
 
 Scripting
 =========
@@ -90,7 +90,7 @@ Selecting the [[Scripting View|Scripting-View]] displays a Python console, allow
 
 Synoptic
 ========
-The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC. The [[Create and Manage Synoptics]] page provide more detail on how to create and manage synoptics.
+The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC. The :doc:`/how_to/Create-and-Manage-Synoptics` page provide more detail on how to create and manage synoptics.
 
 Web Links
 =========

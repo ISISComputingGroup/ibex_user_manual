@@ -42,7 +42,7 @@ IBEX currently uses Python 3.11.2.
 Where can I learn about Python?
 -------------------------------
 
-Python is the scripting language used by IBEX. `genie_python` is a python library implementing ISIS-specific functions. If you are new to Python, we suggest you consult the excellent `Introduction to Python <http://www.mantidproject.org/Introduction_To_Python>`_ created by the Mantid team.
+Python is the scripting language used by IBEX. `genie_python` is a python library implementing ISIS-specific functions. If you are new to Python, we suggest you consult the excellent :external+mantid:ref:`introduction_to_python` created by the Mantid team.
 
 
 How do I view which new IBEX features have been requested or are being worked on?

@@ -9,8 +9,7 @@ scripts to ``genie_python`` is very often straightforward. Even if
 you're new to Python, once you know a few simple pieces of syntax,
 you'll be able to convert many scripts without issue.
 
-**Note:** If you are new to Python, consult the `Introduction to Python 
-<http://www.mantidproject.org/Introduction_To_Python>`_ on the Mantid web-site.
+**Note:** If you are new to Python, consult the :external+mantid:ref:`introduction_to_python` on the Mantid web-site.
 
 List of functions
 -----------------

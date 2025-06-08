@@ -30,10 +30,4 @@ You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\ge
 - Output "Hello, world!" to the console
 - Output the square of all the integers between 1 and 10
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
-
--------------------------------------------------------------------------------
-
-**Next**: [[Common commands|genie_python-and-IBEX-(Common-commands)]]
-
-**Previous**: [[Course introduction|genie_python-and-IBEX-(Introduction)]]
+:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`

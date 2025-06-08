@@ -1,7 +1,7 @@
 Manage the DAE
 ##############
 
-The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see [[Key Concepts in IBEX]]), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
+The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see :doc:`/Key-Concepts-in-IBEX`), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.
 
 The DAE view communicates with the ICP to control the DAE. The DAE can be managed from the DAE view of the client. The DAE view is split into some tabs and sub tabs which are listed with their functions below.
 

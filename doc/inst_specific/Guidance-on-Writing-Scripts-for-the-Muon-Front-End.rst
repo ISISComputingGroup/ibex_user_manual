@@ -90,9 +90,7 @@ For any system in R55 which requires full control of all aspects of NDEMUONFE en
 
 You can specify up to four of these. 
 
-Gateway settings have been set up to allow NDX and NDL systems to control each instrument respectively (so the items used by MUSR have  write access from MUSR). There are more detailed instructions on how to set up these aspects of the gateway in:
-
-https://isiscomputinggroup.github.io/ibex_developers_manual/system_components/Gateway.html
+Gateway settings have been set up to allow NDX and NDL systems to control each instrument respectively (so the items used by MUSR have  write access from MUSR). There are more detailed instructions on how to set up these aspects of the gateway :external+ibex_developers_manual:doc:`in the developer's manual <system_components/Gateway>`
 
 Machines listed in the globals.txt can be restricted to read-only access by sending the following command:
 

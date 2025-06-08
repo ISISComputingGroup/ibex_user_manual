@@ -34,4 +34,4 @@ In practice, in most cases, the IBEX server components will continue to run (as 
 Differences between Open Genie and genie_python
 ------------------------------------------------
 
-A detailed description of the differences is available on the [[Scripting page|Scripting]].
+A detailed description of the differences is available in :doc:`/Scripting`.

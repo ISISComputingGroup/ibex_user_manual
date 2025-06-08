@@ -9,7 +9,7 @@ This window should be used for:
 - Running visualisation and plotting routines
 - Developing scripts. 
 
-Experimental runs should, where possible, be run on the [[script server|Script-Server]] because these are independent of the client and only one script sever script can run at any one time (you can still run console scripts when the script server script is running).
+Experimental runs should, where possible, be run on the :doc:`script server<Script-Server>` because these are independent of the client and only one script sever script can run at any one time (you can still run console scripts when the script server script is running).
 
 Multiple Consoles and Views
 ---------------------------

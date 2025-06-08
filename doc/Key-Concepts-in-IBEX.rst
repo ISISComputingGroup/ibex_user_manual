@@ -12,7 +12,7 @@ A client-server system is one that employs a distributed application architectur
 
 The design of IBEX follows this model:  IBEX consists of a server component, which runs on the Instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the `EPICS <https://epics-controls.org/>`_ framework for creating distributed control systems.
 
-All Instruments should be installed in a consistent manner, these are detailed on the [[IBEX File Paths page]].
+All Instruments should be installed in a consistent manner, these are detailed in :doc:`the 'Where is ...?' guide<IBEX-File-Paths-page>`.
 
 IBEX Client
 ~~~~~~~~~~~
