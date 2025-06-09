@@ -46,7 +46,7 @@ When this option is selected and the user selects a different script definition 
 </details>
 
 ## A tour of the UI
-![ScriptGenerator UI](script_generator/script_generator_ui.jpg)
+![ScriptGenerator UI](script_generator_ui.jpg)
 
 1. From the drop-down here you may select a script definitions to use to generate a script.
 2. This text box displays the help provided by the currently selected script definition.
@@ -86,7 +86,7 @@ When this option is selected and the user selects a different script definition 
 3.     pens the file in notepad++ if notepad++ can be found.
 
 
-![ScriptGenerator UI Success](script_generator/UIScriptGenGenerated.JPG)
+![ScriptGenerator UI Success](UIScriptGenGenerated.JPG)
 1. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
     - When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
     - They are provided with a create default filename which uses the script definition and a timestamp.

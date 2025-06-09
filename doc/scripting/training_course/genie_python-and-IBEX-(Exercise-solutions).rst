@@ -13,7 +13,7 @@ From :ref:`gp_and_ibex_ex1`.
     - Ideally the instrument will appear as ``SETUP``
     - The output when the scripting window opens should look a bit like this:
 
-.. image:: genie_python_and_ibex/StandardStartupOutputOnDemo.png
+.. image:: StandardStartupOutputOnDemo.png
 
 -   To print the message, enter something like ``print "Hello, World!`` and press return
 
