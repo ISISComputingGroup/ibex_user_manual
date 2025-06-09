@@ -15,14 +15,14 @@ Create a Component
 There are several ways to create a component:
 
 Save an existing Configuration as a Component
-   You can save an existing configuration as a component.  When you click on the ``Save as...`` button on the Edit Configuration dialog (see [[Create and Manage Configurations]]) the resulting Save As... dialog contains a check-box labelled ``Save the configuration as a component``.  By default, this check-box is unchecked.  Click on the ``Save the configuration as a component`` check-box and then click the ``OK`` button to save the configuration as a component.
+   You can save an existing configuration as a component.  When you click on the ``Save as...`` button on the Edit Configuration dialog (see :doc:`Create-and-Manage-Configurations`) the resulting Save As... dialog contains a check-box labelled ``Save the configuration as a component``.  By default, this check-box is unchecked.  Click on the ``Save the configuration as a component`` check-box and then click the ``OK`` button to save the configuration as a component.
 
    Once you have saved the configuration as a component, you can edit it as a component.
 
 Create a New Component
    You can create a new component directly from the ``Configuration`` menu.  Simply select ``Configurations > New`` from the ``Configuration`` menu.  IBEX will then display the `New Configuration` dialog.
    
-   The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the New Component dialog.
+   The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to :doc:`Create-and-Manage-Configurations` for a full description of how to use the various tabs on the New Component dialog.
 
 Import a Component
 ----------------
@@ -33,7 +33,7 @@ To import a component:
 #. IBEX displays the import component selection dialog, which lists all available instruments and their components.
 #. Select an instrument you want to import a component from.
 #. Select a component you want to import from that instrument and then press the ``Import`` button.
-#. IBEX displays the Import Component dialog which is identical to the New Component dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+#. IBEX displays the Import Component dialog which is identical to the New Component dialog.  Refer to :doc:`Create-and-Manage-Configurations` for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
 
 Before saving the imported component, please check the following:
    * The communication settings for each IOC are correct. (COM port, IP address, etc.)
@@ -49,7 +49,7 @@ Edit a Component
 To edit a component:
 
 #. Select ``Components > Edit`` from the ``Configuration`` menu.
-#. IBEX displays the Edit Component dialog which is identical to the New Component dialog.  Refer to [[Create and Manage Configurations]] for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
+#. IBEX displays the Edit Component dialog which is identical to the New Component dialog.  Refer to :doc:`Create-and-Manage-Configurations` for a full description of how to use the various tabs on the Edit Component dialog (as described in `Create a Component`_).
 
 Delete a Component
 ------------------

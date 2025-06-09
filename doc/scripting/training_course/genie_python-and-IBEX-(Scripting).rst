@@ -21,6 +21,8 @@ We generally classify scripts as:
 - Instrument scripts are located in: ``C:\Instrument\Settings\config\NDX[Instrument name]\Python\inst``
 - User scripts are located in: ``C:\scripts``
 
+.. _gp_and_ibex_ex3:
+
 Exercise 3a
 -----------
 
@@ -29,7 +31,7 @@ Create two empty scripts:
 - An **instrument** script called ``set_up_instrument.py``
 - A **user** script called ``run_my_experiment.py``
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`
 
 Writing scripts
 ===============
@@ -64,7 +66,7 @@ Exercise 3b
     - Prints the current uamps for the current period over 10 seconds at 1 second intervals
     - Ends the run
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:ref:`Solution<gp_and_ibex_ex3_solution>`
 
 Loading scripts
 ===============
@@ -82,7 +84,7 @@ Exercise 3c
 
 Load your user script ``run_my_experiment.py``
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:ref:`Solution<gp_and_ibex_ex3_solution>`
 
 Running scripts
 ===============
@@ -103,7 +105,7 @@ Exercise 3d
 
 Run the instrument method you wrote in exercise 3b
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:ref:`Solution<gp_and_ibex_ex3_solution>`
 
 User scripts
 ------------
@@ -120,7 +122,7 @@ Exercise 3e
 
 Run the user script method you wrote in exercise 3b
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:ref:`Solution<gp_and_ibex_ex3_solution>`
 
 Modifying scripts
 =================
@@ -139,7 +141,7 @@ Exercise 3f
 - Reload the script
 - Run it again and confirm the behaviour has changed
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
+:ref:`Solution<gp_and_ibex_ex3_solution>`
 
 Using functions from other files
 ================================
@@ -182,7 +184,8 @@ Calling a user function from a different user script
 ----------------------------------------------------
 
 The same as calling a function in one instrument script from another.
- 
+
+.. _gp_and_ibex_ex4:
 
 Exercise 4
 ==========
@@ -203,10 +206,4 @@ Exercise 4
 -   Load and run your new user-script function
 -   When was the print statement at the top of your instrument script executed?
 
-[[Solution|genie_python-and-IBEX-(Exercise-solutions)]]
-
--------------------------------------------------------------------------------
-
-**Next**: [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GENIE)]]
-   
-**Previous**: [[Common commands|genie_python-and-IBEX-(Common-commands)]]
+:ref:`Solution<gp_and_ibex_ex4_solution>`

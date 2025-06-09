@@ -1,4 +1,4 @@
->[User Manual](Home) > [Manage the DAE](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Manage-the-DAE) > [Add blocks to run title](Add-blocks-to-run-title)
+# Add blocks to run title
 
 The value of a block can be embedded in a run title. This can be useful to differentiate the content of a run quickly at a glance.
 

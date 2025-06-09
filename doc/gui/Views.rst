@@ -39,58 +39,86 @@ Reset Layout
 
 The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed, then this button becomes highlighted in red. 
 
+.. _view_alarms:
+
 Alarms
 =============
 The Alarms View displays the alarm state of all devices attached to the instrument control PC. It will flash red if there are any alarms. Also, the number of alarms will appear in brackets on the button. If this view is selected and there are alarms, the button will stay highlighted in red if there are alarms.
+
+.. _view_beam_status:
 
 Beam Status
 ===========
 The Beam Status View displays the status of the synchrotron, TS1 and TS2 beams.  It also displays MCR news.
 To add/log a PV to the configuration, right-click to the text box next to the PV name.
 
+.. _view_dae:
+
 DAE
 ===
 The DAE View allows you to set up and control the DAE. See :doc:`/how_to/Manage-the-DAE` for further details.
+
+.. _view_device_screens:
 
 Device Screens
 ==============
 The Device Screens view allows you to set up, control and view OPIs for different devices.
 
+.. _view_exp_details:
+
 Experiment Details
 ===================
 The Experiment Details View allows you to look up details of your current experiment using the RB number. See :doc:`Experiment-Details` for further details.
+
+.. _view_ioc_log:
 
 IOC Log
 =======
 The IOC Log View displays a log of all the messages sent by the IOCs which control the devices attached to the instrument control PC.
 
+.. _view_journal_viewer:
+
 Journal Viewer
 ==============
 The Journal Viewer displays information about previous runs made on the instrument.
+
+.. _view_log_plotter:
 
 Log Plotter
 ===========
 The Log Plotter View allows you to plot a strip-chart graph of any block or process variable. See :doc:`/how_to/Plot-a-Block-Graph` for more details. If the buttons to add PVs to Log Plotter don't work, it is probably because Log Plotter perspective is disabled. It can be re-enabled from settings at the top bar.
 
+.. _view_motors:
+
 Motors
 ======
 The Motors View displays the status of all motors connected to the instrument control PC.  You can also control all motors from this view.  The Motors View is most useful for instruments with large numbers of motors.
 
+.. _view_reflectometry:
+
 Reflectometry
 =============
-The [[reflectometry view|Reflectometry-View]] is available to reflectometers that combines all the components needing to run most experiments for a reflectometer in one place. Typically this view replaces the scripting view.
+The :doc:`Reflectometry-View` is available to reflectometers that combines all the components needing to run most experiments for a reflectometer in one place. Typically this view replaces the scripting view.
+
+.. _view_script_server:
 
 Script Server
 =============
 The Script Server View displays the current script being run, the queue of scripts to be run on the Script server and the output of any scripts. See :doc:`Script-Server` for more details.
 
+.. _view_scripting:
+
 Scripting
 =========
-Selecting the [[Scripting View|Scripting-View]] displays a Python console, allowing you to load and execute Python or genie_python scripts. **Note**: Scripts running in the Scripting View are independent of scripts running on the Script Server.
+Selecting the :doc:`Scripting-View` displays a Python console, allowing you to load and execute Python or genie_python scripts. **Note**: Scripts running in the Scripting View are independent of scripts running on the Script Server.
+
+.. _view_synoptic:
 
 Synoptic
 ========
 The Synoptic View provides a schematic overview of your instrument.  It is a convenient way to navigate to any device attached to the instrument control PC. The :doc:`/how_to/Create-and-Manage-Synoptics` page provide more detail on how to create and manage synoptics.
+
+.. _view_web_links:
 
 Web Links
 =========

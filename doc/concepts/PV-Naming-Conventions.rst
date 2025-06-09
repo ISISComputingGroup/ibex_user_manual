@@ -1,7 +1,7 @@
 PV Naming Conventions
 #####################
 
-Facilities running `EPICS <http://www.aps.anl.gov/epics/>`_ usually adopt a convention for naming PVs ([[Process Variables]]).  ISIS is no exception.
+Facilities running `EPICS <http://www.aps.anl.gov/epics/>`_ usually adopt a convention for naming PVs (:doc:`Process-Variables`).  ISIS is no exception.
 
 The purpose of the naming convention is to:
 

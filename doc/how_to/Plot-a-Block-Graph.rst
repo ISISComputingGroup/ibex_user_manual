@@ -9,7 +9,7 @@ Plot a Graph of a Block
 To plot a graph of a block:
 
 #. Enable Log Plotter perspective in Preferences -> Select visible perspectives
-#. Select ``Log Plotter`` from the ``View Selector`` (see [[Views]]).
+#. Select :ref:`Log Plotter<view_log_plotter>` from the view selector
 #. If you have not previously plotted a block, IBEX displays an empty view, prompting you to select a block.  If you have already plotted a block, IBEX restores the graph.
 #. To plot a block, simply right-click on a block displayed in the Blocks & Groups view at the top of the IBEX window.
 #. Right-clicking displays a pop-up menu and choose ``Display block history`` from the menu. Here you can either add the trace for this block to an existing plot, or create a new, separate plot.

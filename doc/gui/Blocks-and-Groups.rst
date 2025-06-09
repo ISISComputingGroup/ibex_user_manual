@@ -1,13 +1,13 @@
 Blocks & Groups
 ###############
 
-The blocks & groups area of the IBEX GUI is situated to the right of the [[Dashboard]].  It displays all the blocks defined for the currently loaded instrument configuration.  The blocks are arranged in groups.
+The blocks & groups area of the IBEX GUI is situated to the right of the :doc:`Dashboard`.  It displays all the blocks defined for the currently loaded instrument configuration.  The blocks are arranged in groups.
 
 .. contents:: **Contents**
 
 Blocks
 ------
-A block is, in effect, an alias for a process variable.  Process variables are defined in more detail on the [[Process Variables]] page.  Any process variable can be assigned to a block.  Blocks are defined in more detail on the [[Blocks]] page.
+A block is, in effect, an alias for a process variable.  Process variables are defined in more detail on the :doc:`/concepts/Process-Variables` page.  Any process variable can be assigned to a block.  Blocks are defined in more detail on the :doc:`/concepts/Blocks` page.
 
 Run Control Indicators
 ~~~~~~~~~~~~~~~~~~~~~~

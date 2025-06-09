@@ -1,10 +1,12 @@
 Exercise Solutions
 ##################
 
+.. _gp_and_ibex_ex1_solution:
+
 Exercise 1
 ==========
 
-From [[Getting Started|genie_python-and-IBEX-(Getting-started)]].
+From :ref:`gp_and_ibex_ex1`.
 
 -   Opening a scripting window should be straightforward if IBEX is installed correctly. Once you've opened the scripting perspective, check for the following
 
@@ -20,10 +22,12 @@ From [[Getting Started|genie_python-and-IBEX-(Getting-started)]].
         for i in range(1,11):
             print i*i
 
+.. _gp_and_ibex_ex2_solution:
+
 Exercise 2
 ==========
 
-From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
+From :ref:`gp_and_ibex_ex2`
 
 - Use ``g.change_title("Exercise 2")`` to change the title
 - The following code will start the run, wait, and then pause:
@@ -73,10 +77,12 @@ From [[Common commands|genie_python-and-IBEX-(Common-commands)]]
 
      g.end()
 
+.. _gp_and_ibex_ex3_solution:
+
 Exercise 3
 ==========
 
-From [[Scripting|genie_python-and-IBEX-(Scripting)]].
+From :ref:`gp_and_ibex_ex3`.
 
 -   **(a)** After creating the files, you should have one new file in ``C:\scripts`` and another in ``C:\Instrument\Settings\config\[Instrument name]\Python\inst``
 
@@ -103,12 +109,14 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
 
 -   **(d)** This will run the instrument script: ``inst.set_up_instrument()``
 
--   **(e)** This will run the function from the user script ``get_uamps_run()`` 
+-   **(e)** This will run the function from the user script ``get_uamps_run()``
+
+.. _gp_and_ibex_ex4_solution:
 
 Exercise 4
 ==========
 
-From [[Scripting|genie_python-and-IBEX-(Scripting)]].
+From :ref:`gp_and_ibex_ex4`.
 
 -   You should have created a Python file in ``C:\Instrument\Settings\config\[Machine name]\Python\inst`` that contains something like the following:
 
@@ -158,10 +166,12 @@ From [[Scripting|genie_python-and-IBEX-(Scripting)]].
       
 -   You should have seen the current title printed during the initialisation of the scripting window
 
+.. _gp_and_ibex_ex5_solution:
+
 Exercise 5
 ==========
 
-From [[Converting from Open GENIE|genie_python-and-IBEX-(Converting-from-Open-GENIE)]].
+From :ref:`gp_and_ibex_ex5`.
 
 - In ``genie_python``, the ``Open GENIE`` procedure could be written as:
 

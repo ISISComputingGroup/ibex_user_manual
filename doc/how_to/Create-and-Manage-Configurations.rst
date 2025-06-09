@@ -34,7 +34,7 @@ Save as...
    * The name must also start with a character.
    * The name of the configuration must be unique (on your instrument).
 
-   The Save as... dialog also includes an option to save a configuration as a component.  The [[Create and Manage Components]] page describes more details about this option.
+   The Save as... dialog also includes an option to save a configuration as a component.  The :doc:`Create-and-Manage-Components` page describes more details about this option.
 
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes.
@@ -63,19 +63,23 @@ Protected
 Dynamic
     Mark this configuration or component as dynamic, meaning that it can be edited automatically in response to certain events. Note that this is advanced functionality which requires other IBEX components to be configured; please ask experiment controls group if you believe you need this functionality on your instrument.
 
+.. _manage_configs_components:
+
 Components Tab
 ~~~~~~~~~~~~~~
 
-Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in [[Create and Manage Components]].
+Components are, in essence, mini configurations.  You can use components to "pre-configure" a device (or group of devices) and then include the components in a configuration. The process of creating and managing components is described in :doc:`Create-and-Manage-Components`.
 
 The Components tab displays two lists of components.  The left-hand list shows which components are available to be included in your configuration.  The right-hand list shows which components are already included in your configuration.   You can only include a component once in a configuration.
 
 Use the arrow buttons to move components between the two lists.  
 
+.. _manage_configs_iocs:
+
 IOCs Tab
 ~~~~~~~~
 
-The [[Key Concepts in IBEX]] page describes what an IOC is. In general, you will only wish to include a subset of these in your configuration (i.e. those that correspond to devices on your instrument).
+The :doc:`/Key-Concepts-in-IBEX` page describes what an IOC is. In general, you will only wish to include a subset of these in your configuration (i.e. those that correspond to devices on your instrument).
 
 IOCs need to be explicitly added to the configuration via the IOC tab if you want to change any of their settings such as macros. The IOCs tab shows an overview of all IOCs that are part of the currently viewed configuration. Below the overview table, there are three buttons to add, edit or delete an IOC.
 
@@ -89,9 +93,11 @@ IOCs need to be explicitly added to the configuration via the IOC tab if you wan
 - The "Add IOC"-button opens a dialog which lets you choose from a list of all IOCs available on the instrument. Confirming your selection will take you to the "Edit IOC" dialog for the selected IOC.
 - The "Delete IOC"-button allows you to delete IOCs from the list and the configuration. This works with multiple selections, too.
 
+.. _manage_configs_blocks:
+
 Blocks Tab
 ~~~~~~~~~~
-The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A block (See [[Blocks]]) is, essentially, an alias to a PV ([[Process Variables]]).
+The Blocks tab lists all the blocks that have been defined for the current configuration.  When creating a new configuration, the list of blocks will be empty.  A :doc:`block </concepts/Blocks>` is, essentially, an alias to a :doc:`PV</concepts/Process-Variables>`.
 
 
 To create a new block, click on the ``Add Block`` button or use the keyboard shortcut ``Ctrl+A``. Blocks can also be copied using the ``Duplicate Block`` button or the keyboard shortcut ``Ctrl+D``. Upon creation of a new block, IBEX displays a dialog to allow you to define the new block.  By default, the new block is given the name ``NEW_BLOCK``.  You can give the block any name you like, provided the name:
@@ -151,7 +157,9 @@ Logging Settings
 
 To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
-**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see [[Create and Manage Components]]).
+**Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
+
+.. _manage_configs_groups:
 
 Groups Tab
 ~~~~~~~~~~
@@ -171,12 +179,16 @@ Use the buttons with the Up and Down arrows to control the ordering of the group
 
 You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or ``Ctrl`` keys on your keyboard.
 
-**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see [[Create and Manage Components]]).
+**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
+
+.. _manage_configs_add_ioc:
 
 Edit/Add IOC Dialog
 -------------------
 
 The Edit/Add IOC dialogue is opened from the IOC on the New/Edit Configurations/Components dialog. 
+
+.. _manage_configs_ioc_macros:
 
 IOC Macros
 ~~~~~~~~~~
@@ -204,6 +216,8 @@ As of version 5.7, values can be edited directly in the table. Pressing enter or
 
 If you are not sure about how to correctly configure macro values for a device, please consult with the Experiment Controls team.
 
+.. _manage_configs_pv_values:
+
 IOC PV Values
 ~~~~~~~~~~~~~
 
@@ -215,9 +229,11 @@ to the furnace config and
 
 *IN:INST:EUROTHRM_01:A01:CAL:SEL* *CCR.txt*
 
-to the CCR config. If you are unsure what PVs you need to write to see [[here|FAQ#how-do-i-find-a-specific-pv]].
+to the CCR config. If you are unsure what PVs you need to write to see :ref:`faq_find_pv`
 
 **Note**: The value of a PV will remain until it is set to something else. So if a configuration sets it loading another configuration will not set it back to what it was before.
+
+.. _manage_configs_pv_sets:
 
 IOC PV Sets
 ~~~~~~~~~~~
@@ -226,6 +242,7 @@ IOC PV Sets is an experimental feature within IBEX **do not** use this before ta
 
 **Note**: The value of any PVs will remain until it is set to something else. So if a configuration does this auto-load then loading another configuration will not set it back to what it was before.
 
+.. _manage_configs_edit_config:
 
 Editing a Configuration
 -----------------------
@@ -245,16 +262,18 @@ Save as...
 Cancel
    Click on the ``Cancel`` button to exit the Edit Configuration dialog without saving your changes. 
 
+.. _manage_configs_edit_current_config:
+
 Edit Current Configuration ...
 ------------------------------
 
 To edit the current configuration select ``Edit Current Configuration ...`` from the ``Configuration`` menu.  This avoids the need to select the current configuration from a list of configurations.  Otherwise, this option behaves in the same way as `Editing a Configuration`_.
 
-It is always a good idea to check the name of the current configuration before you start editing it - to be sure that you are about to edit the configuration you intended to edit. The [[Banner]] displays the name of the current configuration
+It is always a good idea to check the name of the current configuration before you start editing it - to be sure that you are about to edit the configuration you intended to edit. The :doc:`/gui/Banner` displays the name of the current configuration
 
 **Note:** When you click on the ``Save`` button when editing the current configuration, the changes you make are applied immediately.  There will be a short pause while IBEX re-loads the current configuration and refreshes the display.
 
-Return to `Contents`_.
+.. _manage_configs_load_config:
 
 Load a Configuration
 --------------------
@@ -266,6 +285,7 @@ To load a configuration:
 #. Select a configuration from the list and press the ``OK`` button
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be reloaded later, if you wish.
 
+.. _manage_configs_recent_config:
 
 Recent Configurations
 --------------------
@@ -278,6 +298,8 @@ To load a recent configuration:
 #. IBEX discards the currently loaded configuration and loads the selected configuration.  The discarded configuration is not lost - it still exists as a saved configuration and can be reloaded later, if you wish.
 
 **Note**: As the current configuration is already loaded, it is not displayed in the list. However, it will be displayed after loading another configuration.
+
+.. _manage_configs_delete_config:
 
 Delete a Configuration
 ----------------------
@@ -292,6 +314,8 @@ To delete a configuration:
 **Note 1:** If you try to delete the currently loaded configuration, IBEX will do nothing.  It will not delete the current configuration, because that would leave IBEX unable to communicate with the instrument.  If you want to delete the current configuration you need to load a different configuration, then delete the previously loaded configuration.
 
 **Note 2:** When you delete a configuration it really is deleted.  It is no longer available to be used by IBEX. Before deleting a configuration, please be sure that you really do want to delete it.  If you unintentionally delete a configuration, please contact the Experiment Controls team - it may be possible to recover the deleted configuration.
+
+.. _manage_configs_globals:
 
 Editing a global setting
 ------------------------

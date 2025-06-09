@@ -23,6 +23,8 @@ Outside IBEX
 
 You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\genie_python.bat`` but this is recommended for advanced users only.
 
+.. _gp_and_ibex_ex1:
+
 **Exercise 1**
 ==============
 
@@ -30,4 +32,4 @@ You can also open a scripting terminal by running ``C:\Instrument\Apps\Python\ge
 - Output "Hello, world!" to the console
 - Output the square of all the integers between 1 and 10
 
-:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`
+:ref:`Solution<gp_and_ibex_ex1_solution>`

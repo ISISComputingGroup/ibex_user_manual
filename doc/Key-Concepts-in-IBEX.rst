@@ -5,6 +5,8 @@ It is worth taking a few moments to appreciate some of the key concepts behind I
 
 .. contents:: **Contents**
 
+.. _concept_client_server:
+
 Clients & Servers
 -----------------
 
@@ -14,10 +16,14 @@ The design of IBEX follows this model:  IBEX consists of a server component, whi
 
 All Instruments should be installed in a consistent manner, these are detailed in :doc:`the 'Where is ...?' guide<IBEX-File-Paths-page>`.
 
+.. _concept_client:
+
 IBEX Client
 ~~~~~~~~~~~
 
 The IBEX Client is a single application, which functions as a GUI for IBEX.
+
+.. _concept_genie:
 
 genie_python
 ~~~~~~~~~~~~
@@ -31,32 +37,36 @@ IBEX Server
 
 The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon Instrument. The primary components of the IBEX server are:
 
-BlockServer 
-  The core component of the IBEX server.  The BlockServer provides the service that translates [[Process Variables]] into [[Blocks]].  It also supports run-control and serves configuration information. 
+BlockServer
+  The core component of the IBEX server.  The BlockServer provides the service that translates :doc:`/concepts/Process-Variables` into :doc:`/concepts/Blocks`.  It also supports run-control and serves configuration information.
 
 ICP
   The ICP (Instrument Control Program) is the process which controls the `DAE (Data Acquisition Electronics)`_.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.
 
-Archiver 
-  The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes. 
+Archiver
+  The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes.
 
-IOCs 
-  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via [[Process Variables]].  Typically, there is one IOC for each device attached to the instrument control PC.
-  
-Message Server 
+IOCs
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via :doc:`/concepts/Process-Variables`.  Typically, there is one IOC for each device attached to the instrument control PC.
+
+Message Server
   The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
 
-[[Script Server]]
+:doc:`Script Server</gui/Script-Server>`
   The Script Server runs Python scripts submitted by authorised clients. After these scripts are run, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.
-  
-MySQL 
-  MySQL is an open-source relational database system, which provides database services to 
+
+MySQL
+  MySQL is an open-source relational database system, which provides database services to
   the Archiver and the Message Server.
+
+.. _concept_security:
 
 Security
 ~~~~~~~~
 
 A critical aspect of any control system is security: in particular, who has control of an instrument at any point in time.  By control, we mean the ability to change PVs or start/stop the collection of data.  The security model in IBEX reflects current working practices at ISIS.
+
+.. _concept_subnet:
 
 Instrument Sub-Network
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -65,12 +75,16 @@ Each instrument controlled by IBEX has its own sub-network.  The sub-network is 
 
 This arrangement means that the devices attached to the instrument control PC are isolated from events elsewhere on the network.  For example, should there be a need to shut down a part of the ISIS network (e.g. for maintenance reasons), the instrument sub-network will continue to run without interruption.  Many hardware devices are not designed to be connected directly to busy, general purpose networks; by employing a sub-network, we can insulate these devices from the background traffic that exists on the rest of the network.  A sub-network arrangement helps to make the instrument more resilient.
 
+.. _concept_control_permission:
+
 Who has Control?
 ^^^^^^^^^^^^^^^^
 
 In IBEX, typically only PCs directly connected to the instrument sub-network can control the instrument.  To control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.  
 
 Any request from a PC for access to a PV is checked by the EPICS Gateway.  If the request originates from within the instrument sub-network, the EPICS Gateway will allow full (read and write) access to the PV.  If the request originates from outside the instrument sub-network, the EPICS Gateway will allow read-only access to the PV.  Therefore, if your PC is not directly connected to the instrument sub-network, you can only view the status of an instrument.
+
+.. _concept_view_permission:
 
 Who can View an Instrument?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,6 +96,8 @@ Anyone on the ISIS network can view an instrument.  For example:
 * a technician can use IBEX to view the status of a device.
 * a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems.
 
+.. _concept_blocks_pvs:
+
 Blocks & Process Variables
 --------------------------
 
@@ -92,6 +108,8 @@ Blocks & Process Variables
     concepts/Blocks
     concepts/Process-Variables
     concepts/PV-Naming-Conventions
+
+.. _concept_dae:
 
 DAE (Data Acquisition Electronics)
 ----------------------------------
@@ -107,7 +125,7 @@ Environment/Period Card
 
 The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.
 
-Settings for the DAE can be read and changed either through the [[IBEX client|Manage the DAE]] or commands [[issued in scripts|scripting]].
+Settings for the DAE can be read and changed either through the :doc:`IBEX client </how_to/Manage-the-DAE>` or commands :doc:`issued in scripts <Scripting>`.
 
 What does the DAE do?
 ~~~~~~~~~~~~~~~~~~~~~
@@ -118,6 +136,8 @@ The DAE:
 * If desired, groups (gangs) detectors together
 * If necessary, rejects (vetoes) data based on pre-defined criteria
 * Saves all of this in “detector card memory” to be later read by the PC
+
+.. _concept_good_raw_frames:
 
 GOOD Frames and RAW Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,6 +150,8 @@ GOOD Frame
    A GOOD Frame is a RAW frame where data was histogrammed and written to the detector card.
 
 RAW frames that do not become GOOD frames are called VETOED frames 
+
+.. _concept_veto:
 
 Vetoes
 ~~~~~~
@@ -145,6 +167,8 @@ A veto is a hardware signal that can, on a frame by frame basis, tell the DAE no
 * ISIS 50Hz veto: vetoes frames when accelerator not running at 50Hz (e.g. during beam run up or diagnostics) 
 
   * Used on IRIS/OSIRIS, but they also use ISISFREQ SECI block 
+
+.. _concept_timing:
 
 DAE Timing Sources
 ~~~~~~~~~~~~~~~~~~

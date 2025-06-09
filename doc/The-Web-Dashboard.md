@@ -14,7 +14,7 @@ The block names displayed should be links to a block history display plot - if t
 * For ISIS staff, enter your federal ID username (or stfc email address), and password
 * For ISIS Users, you should enter your ISIS user office login details. In addition, you need to have created a visit (even if you are not coming to site) at https://users.facilities.rl.ac.uk/visits covering the dates that your experiment is in progress.
 
-For ISIS staff there is an enhanced plotting option available via the [Grafana Dashboard](Grafana-Dashboard)
+For ISIS staff there is an enhanced plotting option available via the [Grafana Dashboard](web_dashboard/Grafana-Dashboard)
 
 ```{toctree}
 :hidden:

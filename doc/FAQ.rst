@@ -115,20 +115,22 @@ Can I change what my graphs look like in the log plotter or OPI?
 
 To open the settings in a log plotter graph, just right click and click "Open Properties Panel".
 
+.. _faq_find_pv:
+
 How do I find a specific PV?
 ----------------------------
 
-PVs in IBEX should all follow the naming convention as specified in [[PV Naming Conventions]]. You can search for PVs that are available on your instrument by using the `Select PV` button in the [[Blocks Tab|Create and Manage Configurations#blocks-tab]]. Finally, if you can see the value that you want on an OPI you can hover over it to get the PV name or right click and `Show PV Info`.
+PVs in IBEX should all follow the naming convention as specified in :doc:`/concepts/PV-Naming-Conventions`. You can search for PVs that are available on your instrument by using the `Select PV` button in the :ref:`manage_configs_blocks`. Finally, if you can see the value that you want on an OPI you can hover over it to get the PV name or right click and `Show PV Info`.
 
 How do I set a value to change when I change configuration/component?
 ---------------------------------------------------------------------
 
-This can be accomplished by using [[IOC PV Values|Create and-Manage-Configurations#ioc-pv-values]].
+This can be accomplished by using :ref:`manage_configs_pv_values`.
 
 Why are some blocks and their PV addresses greyed-out in the "Edit Configuration" dialogue box?
 -----------------------------------------------------------------------------------------------
 
-This is because they are part of a `component` and can't be edited from a host configuration.  To make changes to the "master" copy, open the relevant component from the menu `Configuration -> Components -> Edit Component`.  See the note at the bottom of the [[Blocks Tab|Create and Manage Configurations#blocks-tab]] section for more information.
+This is because they are part of a `component` and can't be edited from a host configuration.  To make changes to the "master" copy, open the relevant component from the menu `Configuration -> Components -> Edit Component`.  See the note at the bottom of the :ref:`manage_configs_blocks` section for more information.
 
 
 Scripting in IBEX

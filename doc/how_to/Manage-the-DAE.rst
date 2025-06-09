@@ -19,8 +19,8 @@ Run Summary Fields
 * ``Run Status``: status of the current run
 * ``Run Number``: the current run number
 * ``ISIS Cycle``: the current ISIS cycle
-* ``Title``: you can provide a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file). To embed block values within the run title see [[Add blocks to run title|Add-blocks-to-run-title]].
-* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the [[Dataweb dashboard|The-Web-Dashboard]]. This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.
+* ``Title``: you can provide a short description of the current run in the ``Title`` field.  Click on the ``Set`` button to commit the change (i.e. send it to the ICP, so that it gets included in the data file). To embed block values within the run title see :doc:`/how_to/Add-blocks-to-run-title`.
+* ``Show Title in Dataweb Dashboard Page``: set whether to display the title in the :doc:`/The-Web-Dashboard`. This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.
 
 Message Log
 ~~~~~~~~~~~
@@ -29,7 +29,7 @@ The message log area lets you view any messages issued by the ICP.  The message 
 Run Control Buttons
 ~~~~~~~~~~~~~~~~~~~
 
-The Run Summary tab also provides some buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the ``Run Status`` field and the IBEX [[Dashboard]].
+The Run Summary tab also provides some buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the ``Run Status`` field and the IBEX :doc:`/gui/Dashboard`.
 
 Begin Run
    Beginning a run instructs the ICP to tell the DAE to start collecting data. The run status of the DAE will change to BEGINNING and then RUNNING.
@@ -62,7 +62,9 @@ Any changes made are only sent to the DAE when the ``Apply Changes`` button is p
 Time Channels
 ~~~~~~~~~~~~~
 
-The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the [[server settings|Installing-IBEX#installation-layout]] on the instrument.
+The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the ``configurations/tcb`` directory in the :ref:`installation_layout` on the instrument.
+
+.. _dae_data_acquisition:
 
 Data Acquisition
 ~~~~~~~~~~~~~~~~
@@ -70,19 +72,19 @@ Data Acquisition
 The data acquisition sub-tab allows you to set up how the DAE will collect the data. The page is split into several sections:
 
 Tables
-    The wiring table, detector table and spectra table set the files used when turning signals generated in the detectors into spectra. These files are stored in the ``configurations/tables`` directory in [[server settings|Installing-IBEX#installation-layout]] on the instrument.
+    The wiring table, detector table and spectra table set the files used when turning signals generated in the detectors into spectra. These files are stored in the ``configurations/tables`` directory in :ref:`server settings <installation_layout>` on the instrument.
 
 Monitor
     Set which spectra number is used for the monitor counts and between which times the spectra should be integrated to return the monitor counts.
 
 Vetoes
-    Set which [[vetoes|Key-Concepts-in-IBEX#vetoes]] are active.
+    Set which :ref:`vetoes <concept_veto>` are active.
 
 Muons
     Set if and how to collect muon data.
 
 Timing
-    Set the source of the [[timing signal|Key-Concepts-in-IBEX#dae-timing-sources]] and how often the data should be auto saved.
+    Set the source of the :ref:`timing signal <concept_timing>` and how often the data should be auto saved.
 
 Periods
 ~~~~~~~
@@ -131,4 +133,4 @@ to switch it off:
 In simulation mode the dashboard should be coloured correctly and `SIMULATION MODE` is shown in large black letters.
 NB All instruments can be placed in simulation mode but some are not set up correctly. If you are having problems please contact us.
 
-It is also possible to run the DAE and do real counts without the timing signal from ISIS. The setting for this are on [[Experimental Setup -> Data Acquisition tab under Timing|Manage-the-DAE#Data Acquisition]]
+It is also possible to run the DAE and do real counts without the timing signal from ISIS. The setting for this are on :ref:`Experimental Setup -> Data Acquisition tab under Timing <dae_data_acquisition>`

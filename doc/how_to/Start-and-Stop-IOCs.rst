@@ -13,6 +13,6 @@ To start, stop or restart an IOC:
 #. IBEX displays a dialog containing a list of all the IOCs available on the instrument.  The list shows whether each IOC is running or stopped.
 #. Find the IOC you want in the list and use the buttons at the bottom to start, stop or restart that IOC.
 
-It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the IOC Log (see [[Views]]) as the IOC starts up or shuts down.
+It might take a few moments from pressing the button for the selected IOC to fully start itself up or fully shut itself down.  You might also see a number of messages written to the :ref:`IOC Log<view_ioc_log>` as the IOC starts up or shuts down.
 
 **Note**: The effect of auto-restart has no effect on the stop action. Stop will stop the IOC and it will not restart.

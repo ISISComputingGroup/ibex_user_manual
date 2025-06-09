@@ -23,6 +23,7 @@ Installation
 There is a network drive location that the experiment controls group can direct you to.
 
 .. _installation_layout:
+
 Installation Layout
 -------------------
 
@@ -47,6 +48,7 @@ After installation, the current paths are used by the various components.
 +-------------------------------------------------------+-------------------------------------------------------------------+
 
 .. _installing_ibex_server:
+
 Installing IBEX Server
 ----------------------
 

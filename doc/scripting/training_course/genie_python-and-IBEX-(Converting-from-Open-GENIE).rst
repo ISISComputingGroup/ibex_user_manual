@@ -262,6 +262,7 @@ The final ``ENDPROCEDURE`` command doesn't need an equivalent in ``genie_python`
     def my_specific_function():
         my_function(temp=20, low=1, high=50)
 
+.. _gp_and_ibex_ex5:
 
 Exercise 5
 ==========
@@ -300,4 +301,4 @@ Exercise 5
 -    State any simplifications you've made
 
 
-:doc:`Solution<genie_python-and-IBEX-(Exercise-solutions)>`
+:ref:`Solution<gp_and_ibex_ex5_solution>`

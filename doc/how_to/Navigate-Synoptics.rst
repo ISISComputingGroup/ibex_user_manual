@@ -3,14 +3,14 @@ Navigate a Synoptic
 
 In IBEX, synoptic views provide you with interactive, schematic views of your instrument.  Each icon on a synoptic view represents a device attached to your instrument.  You can tailor the synoptic view to display key PVs next to the device icons.  By double-clicking on an item, you can drill down to see more detail.
 
-The focus of this page is navigating synoptic views.  If you wish to create your own synoptic view see :doc:`Create and Manage Synoptics`.
+The focus of this page is navigating synoptic views.  If you wish to create your own synoptic view see :doc:`Create-and-Manage-Synoptics`.
 
 .. contents:: **Contents**
 
 Selecting a Synoptic View
 -------------------------
 
-#. To view an instrument synoptic, click on the ``Synoptic`` button on the View Selector (see [[Views]]).
+#. To view an instrument synoptic, click on the :ref:`Synoptic<view_synoptic>` button on the view selector
 #. If a default synoptic has been defined for your current configuration, IBEX will display it.  The name of the synoptic will be displayed in the drop-down menu in the area labelled ``Synoptic Selection`` at the top of the synoptic display area.
 #. If no default synoptic has been defined for your current configuration, IBEX will display ``--NONE--`` in the drop-down menu in the ``Synoptic Selection`` area and the synoptic display will be blank. 
 #. You can choose to view any synoptic defined for your instrument by clicking on the drop-down menu in ``Synoptic Selection`` area and choosing any of the synoptics listed.  IBEX will refresh the synoptic display to show your chosen synoptic.
