@@ -288,7 +288,7 @@ To load a configuration:
 .. _manage_configs_recent_config:
 
 Recent Configurations
---------------------
+---------------------
 
 To load a recent configuration:
 

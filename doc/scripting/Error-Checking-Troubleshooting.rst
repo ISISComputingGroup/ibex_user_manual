@@ -1,12 +1,14 @@
 Error Checking Troubleshooting
 ##############################
 
-=================
+======
 Pylint
-=================
+======
 
 Scripts are now “linted” on load, which means they are checked for validity against a variety of conditions. This means that more mistakes in the code can be caught before the script is run. The script is linted on load and if there are issues the output from `g.load_script` will look something like:
-::
+
+.. code-block::
+
     W:  2: Found indentation with tabs instead of spaces (mixed-indentation)
     E:  4: Unable to import 'my_file_in_inst' (import-error)
 
@@ -15,8 +17,10 @@ Where the initial *W:* indicates a warning or *E:* indicates an error and the nu
 If loading a script produces warnings only, it will still be loaded successfully and can be used thereafter, whereas any errors will prevent a script from being loaded altogether.
 
 We do provide the option to disable linting by setting the check_script argument to false, i.e.:
-::
-    g.load_script(“some_script.py”, check_script=False)
+
+.. code-block:: python
+
+    g.load_script("some_script.py", check_script=False)
 
 However, doing this is at your own discretion and with the understanding that you are exposing yourself to issues, either immediately or further down the line. We recommend fixing issues in scripts before running it.
 
@@ -28,12 +32,16 @@ Errors
 **Unable to import 'file_in_inst' (import-error)**
 
 This happens when the script contains something like
-:: 
+
+.. code-block:: python
+
     from file_in_inst import my_function
 
 where *file_in_inst* is a file in your *NDX/Python/inst* directory, such as *inst_routines* 
 This may work at the command line but does not work with the checker/linter. A better way of writing this is
-::
+
+.. code-block:: python
+
     from inst.file_in_inst import my_function
 
 The checker does not know of this special case of allowing `inst` modules on the command line unprefixed.
@@ -41,7 +49,9 @@ The checker does not know of this special case of allowing `inst` modules on the
 **Undefined variable `g` or `inst`**
 
 You need to add the following lines to the top of your user script:
-::
+
+.. code-block:: python
+
     from genie_python import genie as g
     import inst
 
@@ -52,18 +62,21 @@ This is so that the linter knows what is being referenced when you call function
 If <variable_name> is a genie_python or instrument script function that you are trying to use then there are two options. 
 
 You can add the following lines to the top of your script:
-::
+
+.. code-block:: python
+
     from genie_python import genie as g
     import inst
 
 You will then need to replace <variable_name> with g.<variable_name> or inst.<variable_name> in your script.
 
 Alternatively import the functions directly:
-::
+
+.. code-block:: python
+
     from genie_python.genie import <variable_name>
     from inst import <variable_name>
  
-
 
 Warnings
 --------
@@ -82,29 +95,36 @@ If you are using Notepad++ as your editor it can be made to use spaces instead o
 **Unused import XXXX from wildcard import (unused-wildcard-import)**
 
 Although wildcard imports are not recommended because of the possibility of name collisions if you want to use it the linter will give you lots of warning about anything you didn't use from the package. To disable these warnings place the following comment on the import line which will suppress these warnings:
-::
+
+.. code-block:: python
+
     from XXXX import *  # pylint: disable=unused-wildcard-import 
 
 You will still get a warning about wildcards which is good but not the warning about unused methods.
 
-=================
+============
 New: Pyright
-=================
+============
+
 As well as being 'linted', scripts are now checked against Pyright on load. This means that there will be fewer errors during runtime, as they will be caught when the script is being loaded. This is beneficial as it means that if your script has an inherent problem that could affect your equipment and you try to load and run it, it is more likely now that IBEX will not let your script be run. However, this may also mean that scripts that once worked may not anymore.
 
 Why Pyright?
----------------
+------------
+
 Pyright is a static type checker for Python. It helps ensure that your code is type-safe and adheres to the type annotations you’ve provided. By integrating Pyright into the script checking process, we aim to catch more errors at the time of script loading, reducing the likelihood of runtime errors that could cause issues with your equipment or experiments.
 
 Implications for Current and Future Scripts
----------------
+-------------------------------------------
+
 Current Scripts: Scripts that previously loaded without errors may now produce errors due to type inconsistencies or other issues that Pyright detects. These scripts will need to be updated to resolve these issues before they can be loaded and run successfully.
 Future Scripts: When writing new scripts, it is good to pay closer attention to adding type annotations. This will help avoid errors when the script is loaded. Note that Pyright errors will take the same format as the previously mentioned Pylint errors, but will be preceded by a [PR] representing Pyright.
 Examples of Common Pyright Errors
 Here are some examples of scripts that may not have produced load-time errors before but will now do so due to Pyright's checks.
 
 **Example 1: Invalid Range**
-::
+
+.. code-block:: python
+
     def wrong():
         for i in range(1, 3.5): # Invalid range. Upper bound should be an integer.
             print(i)
@@ -112,14 +132,18 @@ Here are some examples of scripts that may not have produced load-time errors be
 *[PR] E: 2: Argument of type "float" cannot be assigned to parameter "stop" of type "SupportsIndex" in function "__new__"*
 
 **Example 2: Incompatible Type Assignment**
-::
+
+.. code-block:: python
+
     c: int | float = 3.4 # Python is being told c is either an int or a float of value 3.4.
     c = None # c is defined as nothing. So Pyright throws error.
 
 *[PR] E: 2: Expression of type "None" is incompatible with declared type "int | float"*
 
 **Example 3: Incorrect Argument Types**
-::
+
+.. code-block:: python
+
     from genie_python import genie as g
     def wrong():
         g.begin(1,2,3,4,5,6,7,8,9) # Correct number of arguments but of wrong type.
@@ -127,37 +151,45 @@ Here are some examples of scripts that may not have produced load-time errors be
 *[PR] E: 3: Argument of type "Literal[3]" cannot be assigned to parameter "meas_type" of type "str" ...*
 
 Using Type Annotations
--------------------------
+----------------------
+
 Type annotations in Python allow you to explicitly declare the expected data types of variables, function arguments, and return values. This helps in catching type-related errors early and improves the readability and maintainability of your code. Here’s a brief guide on how to use type annotations effectively:
 
 Function Arguments and Return Types
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You can specify the types of function arguments and return values using type hints.
-::
+
+.. code-block:: python
+
     def greet(name: str) -> str:
         return f"Hello, {name}!"
+
 In this example:
 
-- *name: str* indicates that the name parameter should be of type str (string).
-- *-> str* indicates that the function returns a str.
+- ``name: str`` indicates that the name parameter should be of type str (string).
+- ``-> str`` indicates that the function returns a str.
 
 Complex Types
 ~~~~~~~~~~~~~~
 For more complex types, such as lists, dictionaries, or custom objects, you can use annotations from the typing module.
-::
+
+.. code-block:: python
+
     from typing import List, Dict
 
     numbers: List[int] = [1, 2, 3, 4]
     person: Dict[str, int] = {"age": 30, "height": 175}
+
 In this example:
 
-- *numbers* is annotated as a list of integers *(List[int])*.
-- *person* is annotated as a dictionary with string keys and integer values *(Dict[str, int])*.
+- *numbers* is annotated as a list of integers ``List[int]``.
+- *person* is annotated as a dictionary with string keys and integer values ``Dict[str, int]``.
 
-==============
+==============================================
 What do I do if I can't fix my Pyright error??
-==============
+==============================================
 
 > If it is just the one line that is causing an issue then you can always write a "# type: ignore" at the end of the line to have it ignored by Pyright.
 
-> If all else fails, when you make a call to "g.load_script('script.py')", you can add a second argument to disable linting and type checking as follows "g.load_script('script.py', check_script=False)"
+> If all else fails, when you make a call to ``g.load_script('script.py')``, you can add a second argument to disable linting and type checking as follows: ``g.load_script('script.py', check_script=False)``

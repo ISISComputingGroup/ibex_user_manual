@@ -12,7 +12,7 @@ To view the device screen, double-click on the device in the device screens tabl
 .. contents:: **Contents**
 
 Creating a Device Screen
------------------------
+------------------------
 
 Click on the 'Edit Device Screens' button just below the Device screens tab to opens the 'Configure Device Screens' dialog box. 
 
@@ -37,7 +37,7 @@ Click on the 'Edit Device Screens' button just below the Device screens tab to o
 * Click 'OK' to save the changes you've made to the device screens. Clicking 'Cancel' will close the dialog without saving the changes.
 
 Deleting a Device Screen
------------------------
+------------------------
 
 Click on the 'Edit Device Screens' button just below the Device screens tab to opens the 'Configure Device Screens' dialog box. 
 

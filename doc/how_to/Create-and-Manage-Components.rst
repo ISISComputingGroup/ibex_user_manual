@@ -25,7 +25,7 @@ Create a New Component
    The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to :doc:`Create-and-Manage-Configurations` for a full description of how to use the various tabs on the New Component dialog.
 
 Import a Component
-----------------
+------------------
 
 To import a component:
 

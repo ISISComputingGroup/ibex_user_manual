@@ -4,6 +4,7 @@ Installing IBEX
 .. contents:: **Contents**
 
 .. _installing_ibex_client:
+
 Installing IBEX Client
 ----------------------
 

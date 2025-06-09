@@ -16,7 +16,7 @@ List of functions
 
 We've included some `common genie_python
 commands <#common-genie_python-commands>`__ on this page, but for a full
-list refer to the `genie\_python reference manual`_.
+list refer to the :external+genie_python:py:mod:`genie` reference documentation.
 
 Indentation
 -----------

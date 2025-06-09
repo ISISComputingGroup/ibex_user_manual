@@ -1,7 +1,7 @@
 Starting and Stopping IBEX
 ##########################
 
-    .. contents:: **Contents**
+.. contents:: **Contents**
 
 Starting and Stopping IBEX Client
 ---------------------------------
@@ -74,7 +74,7 @@ To start IBEX Server after running SECI, proceed as follows:
 #. Allow the script a few minutes to complete.
 
 Stopping IBEX Server before running SECI
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To stop IBEX Server and then start SECI, proceed as follows:
 

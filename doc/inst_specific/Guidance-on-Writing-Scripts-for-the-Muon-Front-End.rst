@@ -78,7 +78,7 @@ You should now get a list of blocks on the remote system. These can then be used
 Return to `Contents`_.
 
 How to alter write access to blocks for each instrument
--------------------------------------------
+-------------------------------------------------------
 
 The initial gateway setup has been undertaken. Should the computers being provided control need to be changed, then the gateway should be restarted at the very least, and it would be wise to consider restarting the whole server.
 

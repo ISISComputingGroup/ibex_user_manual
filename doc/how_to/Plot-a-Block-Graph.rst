@@ -23,7 +23,7 @@ Plot a Graph of a PV
 You can choose a PV to be plotted from any OPI, in the same way as choosing a block.  Simply right-click on the PV and select ``Process Variable`` > ``Log Plotter`` from the menu.
 
 Plot a Graph of the Runstate
---------------------
+----------------------------
 
 Currently the runstate is not easily plottable from a context menu but you can add it manually to a plot. You can do this by right clicking on a plot and selecting ``Add PV`` then enter under name ``IN:%INST%:DAE:RUNSTATE.VAL``, replacing %INST% with the name of your instrument (e.g. ``IN:IMAT:DAE:RUNSTATE.VAL``. This will then show the runstate on the graph with the following values:
 
@@ -35,7 +35,7 @@ Currently the runstate is not easily plottable from a context menu but you can a
 Higher numbers are transitional states, beginning etc.
 
 Changing the Appearance of a Graph
---------------------
+----------------------------------
 
 Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.
 
@@ -46,7 +46,7 @@ For more advanced adjustments, you can right-click and select 'Open Properties P
 The 'When archived data arrives, perform stagger' option under 'Value Axis', when selected, will re-scale and stagger the graph whenever it fetches archived data, for example when adding another block to the graph or increasing the time window.
 
 Plotting Multiple Traces on the Same Axis
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The log plotter allows you to display multiple traces on the same value axis so they scale together. The way to do this is as follows:
 
 1. Right click on the graph and select ``Open Properties Panel``
@@ -58,7 +58,7 @@ As of Release Version 5.5, you can right click on the block you want to add and 
 
 
 Adjusting Time Axis on Log Plotter
------------------------
+----------------------------------
 The time axis can be manipulated to adjust its start and end time using the ``Time`` option. This option could be found under the plotted PVs tab. 
 
 .. image:: log_plotter_time.png

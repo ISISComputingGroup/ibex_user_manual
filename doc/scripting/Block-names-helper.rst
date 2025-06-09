@@ -3,25 +3,25 @@ Block Names Helper
 
 There is a block name helper which can save you typing block names as strings and potentially making mistakes. This can be imported into your script or console with:
 
-```
-from genie_python import BLOCK_NAMES as b
-```
+.. code-block:: python
+
+    from genie_python import BLOCK_NAMES as b
 
 usually as part of the genie import:
 
-```
-from genie_python import genie as g, BLOCK_NAMES as b
-```
+.. code-block:: python
+
+    from genie_python import genie as g, BLOCK_NAMES as b
 
 The typing `b.` will give you a list of current blocks; in the console you need to press tab. This can be used in place of a normal string in something like cget. For example
 
-```
-from genie_python import genie as g, BLOCK_NAMES as b
+.. code-block:: python
 
-g.cset(b.TEMP, 10)
-g.cget(b.TEMP)
-g.show(b.TEMP)
-```
+    from genie_python import genie as g, BLOCK_NAMES as b
+
+    g.cset(b.TEMP, 10)
+    g.cget(b.TEMP)
+    g.show(b.TEMP)
 
 Advanced
 --------
