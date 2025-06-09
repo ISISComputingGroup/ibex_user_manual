@@ -124,9 +124,13 @@ Simulated DAE
 
 The DAE can be placed into a **simulation**/**simulate** mode if you want to do an off-line experiment or test something out when the physical DAE is not usable. In simulation mode the DAE will count frames as normal and has a spectrum count in some spectra but it is not realistic. To turn this on use in genie_python:
 
+.. code-block:: python
+
     g.set_dae_simulation_mode(True)
 
 to switch it off:
+
+.. code-block:: python
 
     g.set_dae_simulation_mode(False)
 

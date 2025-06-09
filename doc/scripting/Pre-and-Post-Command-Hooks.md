@@ -4,18 +4,18 @@ It is possible to hook in functions that run pre and post the execution of some 
 
 This is done passing functions to genie python setter commands. There are setter commands for begin, end, abort, pause and resume (func is the function you wish to run before or after the command):
 
-- `set_begin_precmd(func)`
+- {external+genie_python:py:obj}`genie_advanced.set_begin_precmd`
     - This has a special case where the function returns None to say that after the function we should execute begin.
     - If anything else is returned the run does not begin but a string representation of whatever is returned will be printed to the user. A possible use of this is returning a string saying "Run already in progress, continuing run".
-- `set_begin_postcmd(func)`
-- `set_end_precmd(func)`
-- `set_end_postcmd(func)`
-- `set_abort_precmd(func)`
-- `set_abort_postcmd(func)`
-- `set_pause_precmd(func)`
-- `set_pause_postcmd(func)`
-- `set_resume_precmd(func)`
-- `set_resume_postcmd(func)`
+- {external+genie_python:py:obj}`genie_advanced.set_begin_postcmd`
+- {external+genie_python:py:obj}`genie_advanced.set_end_precmd`
+- {external+genie_python:py:obj}`genie_advanced.set_end_postcmd`
+- {external+genie_python:py:obj}`genie_advanced.set_abort_precmd`
+- {external+genie_python:py:obj}`genie_advanced.set_abort_postcmd`
+- {external+genie_python:py:obj}`genie_advanced.set_pause_precmd`
+- {external+genie_python:py:obj}`genie_advanced.set_pause_postcmd`
+- {external+genie_python:py:obj}`genie_advanced.set_resume_precmd`
+- {external+genie_python:py:obj}`genie_advanced.set_resume_postcmd`
 
 You only ever need to call the `set_<RUN_ACTION>_<>cmd(func)` once and func will then always be called for subsequent RUN_ACTIONs.
 

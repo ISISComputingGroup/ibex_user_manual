@@ -8,13 +8,13 @@
 ## FAQ
 
 <details>
-<summary><b>How do I copy and paste lines?<b></summary>
+<summary><b>How do I copy and paste lines?</b></summary>
 <br>
 Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` or use the "Copy Selected Actions" button to copy. Press `Ctrl+v` or use the "Paste Actions" button after selecting the line where you want to paste.
 </details>
 
 <details>
-<summary><b>How do I delete multiple lines?<b></summary>
+<summary><b>How do I delete multiple lines?</b></summary>
 <br>
 Select the lines individually (by holding `Ctrl` and clicking) or as a group (by holding `Shift` and clicking), then click the _Delete Selected Actions_ button or press the `Delete` key.
 
@@ -22,30 +22,31 @@ To delete all lines, click the _Clear All Actions_ button or select all lines wi
 </details>
 
 <details>
-<summary><b>How do I insert an action at a given point?<b></summary>
+<summary><b>How do I insert an action at a given point?</b></summary>
 <br>
 Click the line you wish to insert the new line below and click the "Insert Action Below" button.
 </details>
 
 <details>
-<summary><b>How do I add a new line to the end?<b></summary>
+<summary><b>How do I add a new line to the end?</b></summary>
 <br>
 Click the "Add Action to End" button.
 </details>
 
 <details>
-<summary><b>Can I tab between cells?<b></summary>
+<summary><b>Can I tab between cells?</b></summary>
 <br>
 Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created.
 </details>
 
 <details>
-<summary><b>What does `Transfer Compatible Parameters` option do?<b></summary>
+<summary><b>What does `Transfer Compatible Parameters` option do?</b></summary>
 <br>
 When this option is selected and the user selects a different script definition the actions are transferred if possible (i.e. when parameters match and they are not set to copy previous row). The matching parameters are transferred and the rest are populated with their default values. It is possible that none of the parameters can be transferred in which case the actions are cleared.
 </details>
 
 ## A tour of the UI
+
 ![ScriptGenerator UI](script_generator_ui.jpg)
 
 1. From the drop-down here you may select a script definitions to use to generate a script.
@@ -71,19 +72,15 @@ When this option is selected and the user selects a different script definition 
 21. Click the "Save Parameters As ..." button to save the current parameters to a file that can be loaded in at another time, specifying the file to save to rather than saving to the file last saved to or loaded. The button to generate a script is greyed out when the parameters aren't valid.
 22. Click the "Load Parameters" button to load previously saved parameters in from a file.
 
+![](/script_generator/UIScriptGenGenerated.JPG)
 
-
-
-
-
-[[/script_generator/UIScriptGenGenerated.JPG|ScriptGenerator UI Success]]
 1. When all parameters are valid the get validity errors button is greyed out.
 2. All parameters are valid when there are ticks in the validity columns and no rows are red.
 3. Press the "Generate Script" button to generate a script from your experimental parameters and get a file message box pop up.
 4. When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).
     1. They are provided with a create default filename which uses the script definition and a timestamp.
-2.     Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite).
-3.     pens the file in notepad++ if notepad++ can be found.
+5. Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite). 
+6. Opens the file in notepad++ if notepad++ can be found.
 
 
 ![ScriptGenerator UI Success](UIScriptGenGenerated.JPG)

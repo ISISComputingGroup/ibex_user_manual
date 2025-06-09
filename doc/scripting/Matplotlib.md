@@ -1,32 +1,30 @@
 # Matplotlib
 
-The python distribution deployed on instruments includes a powerful plotting library called [matplotlib](https://matplotlib.org/).
+The python distribution deployed on instruments includes a powerful plotting library called {external+matplotlib:py:mod}`matplotlib`.
 
 Matplotlib is a highly customisable, general purpose plotting library capable of producing a wide variety of plot types. There are lots of tutorials and examples online, such as:
-- [Matplotlib tutorials](https://matplotlib.org/2.2.2/tutorials/index.html)
-- [Matplotlib examples](https://matplotlib.org/2.2.2/gallery/index.html)
-- [`matplotlib.pyplot` command reference](https://matplotlib.org/2.2.2/api/pyplot_summary.html)
+- {external+matplotlib:ref}`Matplotlib tutorials <tutorials>`
+- {external+matplotlib:ref}`Matplotlib examples <examples-index>`
+- {external+matplotlib:py:mod}`matplotlib.pyplot` command reference
 
 ```{contents}
 ```
 
 ## Import pyplot
 
-The most user-friendly interface to matplotlib is called `pyplot`. You can import `pyplot` using the following command:
+The most user-friendly interface to matplotlib is called {external+matplotlib:py:mod}`matplotlib.pyplot`. You can import {external+matplotlib:py:mod}`pyplot <matplotlib.pyplot>` using the following command:
 
 ```python
 import matplotlib.pyplot as pyplot
 ```
 
 ## Useful pyplot commands
-- `pyplot.plot()`: Populate a plot with some data.
-- `pyplot.clf()`: Clear the current figure, e.g. discard old data from the plot.
-- `pyplot.show()`: Shows the matplotlib plotting window.
-- `pyplot.draw()`: Draws updates to a plot that is already open.
-- `pyplot.close('all')`: Closes all plots and removes all data.
-- `pyplot.close(n)`: Close a specific figure.
-- `pyplot.figure()`: Creates a new figure.
-- `pyplot.figure(n)`: Creates or switches to figure n.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.plot`: Populate a plot with some data.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.clf`: Clear the current figure, e.g. discard old data from the plot.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.show`: Shows the matplotlib plotting window.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.draw`: Draws updates to a plot that is already open.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.close`: Closes plots and removes all data.
+- {external+matplotlib:py:obj}`matplotlib.pyplot.figure`: Creates or switches to figure n.
 
 
 ## Example: plot and show a trivial graph

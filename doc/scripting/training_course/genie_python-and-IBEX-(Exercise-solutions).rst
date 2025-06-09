@@ -19,6 +19,8 @@ From :ref:`gp_and_ibex_ex1`.
 
 -   The square of the integers between 1 and 10 can be output with the code below. A **blank line** will indicate to the scripting window that you've finished writing the loop and it can go ahead and be executed.:
 
+.. code-block:: python
+
         for i in range(1,11):
             print i*i
 
