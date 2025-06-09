@@ -9,7 +9,7 @@ the GUI or after running ``C:\Instrument\Apps\Python3\genie_python.bat``,
 the ``genie`` module will be aliased to ``g``. Genie commands can then
 be accessed by using the prefix ``g.[COMMAND_NAME]``. For example:
 
-::
+.. code-block:: python
 
     g.begin()
     g.cset("BLOCK_1",1)

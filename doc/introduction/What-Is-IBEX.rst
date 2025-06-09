@@ -22,7 +22,7 @@ Using the IBEX GUI is the primary focus of this whole manual, as it is through t
 Introduction to genie_python
 ------------------------------------------------
 
-A full reference to genie_python is available `on github <https://isiscomputinggroup.github.io/genie/genie_python>`_ or internally `on shadow <http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html>`_.
+A full reference to genie_python is available `on GitHub <https://isiscomputinggroup.github.io/genie/genie_python>`_ or internally `on shadow <http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html>`_.
 
 Previous Instrument Control at ISIS
 ------------------------------------------------

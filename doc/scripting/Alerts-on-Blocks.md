@@ -1,6 +1,6 @@
 # Alerts on Blocks
 
-Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message (via sms text and/or email) is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent.
+Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified `lowlimit,highlimit` range for the specified `delay_out` time, it is like run control but rather than putting the DAE into WAITING a message (via SMS text and/or email) is sent. When the value comes back in range, it must be in range for `delay_in` seconds until an in-range alert is sent.
 
 Note that this system is in addition to and independent of run control, it just uses some of the same underlying software. Alerts can be added to blocks that are not under run control, and both run control and alerts can bet set on the same block. The limits and delay times need not be the same for the run control and alert elements, so the instrument could be configured to go into a WAITING state when a block exceeded 100K but not send an alert until it exceeded 120K for a given length of time etc. (see below for how to set an alert on how long an instrument has been in a WAITING state)   
   
@@ -34,7 +34,7 @@ g.alerts.status()
 g.cset("block1", -50) # With above settings, message sent to say the block has gone out of range
 g.cset("block1", 0) # With above settings, message sent to say the block has gone back in range
 ```
-Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the email and sms parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings. So it is best to create the blocks used for alerts as part of a common base component included in all configurations.
+Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the ``email`` and ``sms`` parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings. So it is best to create the blocks used for alerts as part of a common base component included in all configurations.
 
 Alerts, like run control, are normally set on floating point (or integer) value blocks. They can, however, be used on some "state" items that are symbolic names mapped to integers (enums). One example of this is the instrument state (SETUP=1,RUNNING=2,PAUSED=3,WAITING=4,VETOING=5) so if a block called `RunState` is attached to the process variable `IN:myinst:DAE:RUNSTATE` then
 ```python

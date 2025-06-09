@@ -50,7 +50,7 @@ Glossary
       For example, access to a Eurotherm temperature controller is controlled via an IOC process that provides
       Process Variable for the relevant control elements
 
-    OPI (OPerator Interface)
+    OPI (Operator Interface)
       An OPI is a user interface element of IBEX.  In essence, an OPI is a control panel for an individual device attached to an instrument.  It allows you to view and modify the PVs that define the state of the device.  For example, an OPI is displayed when you click on a device icon on a synoptic view.
 
     PV (Process Variable)

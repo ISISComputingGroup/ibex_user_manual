@@ -130,8 +130,8 @@ Crate does not respond / Crate responds infrequently
 An issue was seen when first commissioning the MAPS Fermi under EPICS. Symptoms were very odd:
 
 - Cannot communicate using VISA nor Asyn under EPICS
-- If chopper crate and instrument PC are power cycled, may need to run labview driver once before epics can talk. We are still not sure why this is.
-- If EPICS+Visa is subsequently run, it will upset the comms and will need to run the labview to "clear" the error
+- If chopper crate and instrument PC are power cycled, may need to run LabVIEW driver once before epics can talk. We are still not sure why this is.
+- If EPICS+Visa is subsequently run, it will upset the comms and will need to run the LabVIEW to "clear" the error
 
 **Shortened status command [Specific to Maps]**
 On MAPS, the crate's communications layer can fail, causing the device to ignore the standard polling command (``#0000000$``). To recover from this state, send the shortened command ``0$`` repeatedly until you get a response. The IOC should automatically do this whenever it detects no response to the standard command.

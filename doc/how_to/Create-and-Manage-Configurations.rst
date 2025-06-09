@@ -112,7 +112,7 @@ On clicking the ``Select PV`` button, IBEX will display a list of PVs available 
 
    ``All IOCs`` to see PVs from all IOCs on your instrument (this can result in a very long list of PVs).
 
-   ``Active IOCs`` to see PVs only from IOcs that are currently running on your instrument.
+   ``Active IOCs`` to see PVs only from IOCs that are currently running on your instrument.
 
    ``Config IOCs`` to see PVs only from IOCs included in the current configuration.
 

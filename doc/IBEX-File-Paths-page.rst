@@ -11,11 +11,11 @@ The installation of IBEX is common for most instruments you shouldn't need to de
 
 * Configurations: ``C:\Instrument\Settings\config\<computer>\configurations`` this directory contains configuration, components and IOC specific configuration. The IOC specific configurations include:
 
-  - galil: ``galil`` galil motor configurations for all controllers, including jaws, axes and motion setpoint commands but not value
+  - Galil: ``galil`` Galil motor configurations for all controllers, including jaws, axes and motion setpoint commands but not value
   - motion setpoints: ``motionSetPoints`` the motion setpoints
   - refl: ``refl\config.py`` default reflectometry configuration
   - DAE tables: ``tables`` contains wiring, spectra and detector tables for the DAE
-  - TCB files: ``tcb`` contains the tcb files
+  - TCB files: ``tcb`` contains the TCB files
 
 * Common calibration files: ``C:\Instrument\Settings\config\common`` calibration files for instruments e.g. Eurotherm sensors
 

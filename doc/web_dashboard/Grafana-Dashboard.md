@@ -1,6 +1,6 @@
 # Grafana Dashboard
 
-ISIS staff are able to access an enhanced web dashboard plotting mechanism via the site https://svr2.nd.rl.ac.uk/grafana/ - login must be by federal id (without clrc prefix).  
+ISIS staff are able to access an enhanced web dashboard plotting mechanism via the site https://svr2.nd.rl.ac.uk/grafana/ - login must be by federal id (without CLRC prefix).  
 
 ## Plotting Multiple Traces 
 

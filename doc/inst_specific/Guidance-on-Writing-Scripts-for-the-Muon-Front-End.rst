@@ -10,7 +10,7 @@ Starting & Stopping Runs Remotely
 
 Ensuring the control machine has sufficient permission to begin a run
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The relevant code can be found in the github repository:
+The relevant code can be found in the GitHub repository:
 
 https://github.com/ISISComputingGroup/mfe_control_scripts
 

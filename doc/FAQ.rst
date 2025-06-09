@@ -50,8 +50,8 @@ How do I view which new IBEX features have been requested or are being worked on
 
 There are internal lists showing priorities available covering the work which will feed into IBEX, please ask the experiment controls group or your group leader if you need to see these. These lists give you an idea of the long term work, and the priorities at that level.
 IBEX is released and deployed to each instrument at least once a year, with patches as required. To see what is being worked on for the next release, you will need to find the most recent PI project on https://github.com/orgs/ISISComputingGroup/projects, note that these are in the format PI_YYYY_MM, with the month being the one the PI starts in.
-The shortest time scale we consider is a sprint, and you can view this information on github at https://github.com/ISISComputingGroup/IBEX/projects/1.
-There is also a long list of issues on github that can be viewed at https://github.com/ISISComputingGroup/IBEX/issues. Please note, this is a rather long list and not very friendly to browse through unless you already know what you're looking for (e.g. a device name).
+The shortest time scale we consider is a sprint, and you can view this information on GitHub at https://github.com/ISISComputingGroup/IBEX/projects/1.
+There is also a long list of issues on GitHub that can be viewed at https://github.com/ISISComputingGroup/IBEX/issues. Please note, this is a rather long list and not very friendly to browse through unless you already know what you're looking for (e.g. a device name).
 
 
 Running IBEX
@@ -139,7 +139,7 @@ Scripting in IBEX
 In the scripting view I don't want the arguments when I autocomplete
 --------------------------------------------------------------------
 
-In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometimes you will not want all the parameters, so instead of pressing <return> press <crtl> + <return>, this will give only the function name without any parenthesis or arguments.
+In the scripting console type `g.` will show a list of possible genie_python commands. If you select one of these or type to narrow down the possibilities, pressing return will autocomplete the method name including the parameters. However, sometimes you will not want all the parameters, so instead of pressing <return> press <ctrl> + <return>, this will give only the function name without any parenthesis or arguments.
 
 When I load script I get an error complaining about unicodeescape
 -----------------------------------------------------------------
