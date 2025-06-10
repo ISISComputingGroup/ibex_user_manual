@@ -157,11 +157,11 @@ If you try to load a script and you get the following error:
 The problem is you have not escaped the string correctly, in python the slash character, `\\`, is an escape character used to create things like newline characters. In this command, the `\\N` is a newline character and is causing python trouble. You can either:
 
 #. Place an `r` before the string (called a raw string) this makes it ignore escapes except for quote marks
-    - `g.load_script(r'c:\\scripts\\NiceScript.py')`
+    - ``g.load_script(r'c:\\scripts\\NiceScript.py')``
 #. Escape the slashes
-    - `g.load_script('c:\\\\scripts\\\\NiceScript.py')`
+    - ``g.load_script('c:\\\\scripts\\\\NiceScript.py')``
 #. Just use the default script path so:
-    - `g.load_script('NiceScript.py')`
+    - ``g.load_script('NiceScript.py')``
 
 Can I run scripts from Mantid?
 -----------------------------------------------------------------
