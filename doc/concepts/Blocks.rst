@@ -1,0 +1,66 @@
+Blocks
+######
+
+The IBEX concept of a block is similar to SECI, in that it is a relevant piece of information chosen by the scientist that will be displayed on the instrument dashboard and, if required, can be logged into the datafile.
+
+In IBEX, a block is, to all intents and purposes, an alias to a process variable.  For example, the block ``Chop1Freq`` on LARMOR is defined to be the process variable ``IN:LARMOR:CS:SB:Chop1Freq``.  It is much simpler to refer to a block than to refer to a process variable.  Utilities like genie_python know about blocks, and you can use commands such as ``cset`` to access ``Chop1Freq``. However, you can access blocks using the name ``IN:LARMOR:CS:SB:Chop1Freq``  with any standard EPICS tool.
+
+Process variables are defined in more detail on the :doc:`/concepts/Process-Variables` page.
+
+Alarms
+======
+
+An IBEX block may be in alarm as well as having a value. Alarms signify potential problems with the data
+
+Disconnected
+-------------
+
+A disconnected status implies that the user interface cannot access the variable which has been requested.
+
+Examples:
+
+* The relevant IOC is not running - for example, the relevant ioc is not listed in the current configuration
+* The IOC is running on another computer, and there is no network availability
+
+These alarms appear with either a purple border or a solid purple background in the user interface.
+
+Invalid alarm
+-------------
+
+An invalid alarm signifies that there was a problem acquiring this piece of data. Data marked with an invalid alarm should generally not be trusted.
+
+Examples:
+
+* The hardware has become unplugged or switched off
+* The hardware replied in an unexpected way
+* A setpoint has not been set (it will remain in an undefined state until set)
+
+These alarms appear with a purple border in the user interface.
+
+Major alarm
+-----------
+
+A major alarm signifies that there is a serious problem with the data being reported by a device. Data marked with an major alarm may require attention from an equipment expert.
+
+Examples:
+
+* A fault status is being reported by the hardware
+* A chopper is not in the correct operation mode
+
+*Note: it is possible to set your own limits on a value going into major alarm - please ask the IBEX team if you would like help setting this up*
+
+These alarms appear with a red border in the user interface.
+
+Minor alarm
+-----------
+
+A minor alarm signifies a warning with the data being reported by a device. Data marked with a minor alarm should be checked, but if you are confident that the data is correct and within the expected ranges, can be ignored.
+
+Examples:
+
+* Motor parked on a limit switch
+* Helium level in a cryostat falling low
+
+*Note: it is possible to set your own limits on a value going into minor alarm - please ask the IBEX team if you would like help setting this up*
+
+These alarms appear with an orange border in the user interface.
