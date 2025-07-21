@@ -54,7 +54,7 @@ IOC Menu
 Start/stop IOCs
    Selecting the Start/stop IOCs menu item displays a dialog allowing you to start an IOC or to stop an IOC that is currently running.
 
-Run-Control Menu
+Block Actions Menu
 ----------------
 View run-control settings
    Selecting the View Run-Control Settings menu item displays a dialog showing you which blocks (if any) are currently under run-control.  You can also assign new run-control settings to blocks and modify or remove existing run-control settings.
@@ -80,6 +80,11 @@ You can change run-control settings in 3 different ways (2 temporary and 1 perma
     1. From ``Run-Control`` menu, select the block you would like to change and click ``Edit Host Configuration`` to change the settings.
 
 The :doc:`Blocks-and-Groups` page describes how blocks under run-control are shown in the GUI.
+
+Alert on blocks settings
+   1. Selecting the "Alert on blocks settings" menu item displays a dialog showing us blocks in current configuration and the facilitates configuring the alert parameters for individual blocks. 
+   2. The dialog also shows the emails and mobiles configured for receiving the alerts. We can change change these values.
+   3. We can also send a test message of our choice. This message is changed by the server, once a new alert condition happens.
 
 Preferences Menu
 ----------------
