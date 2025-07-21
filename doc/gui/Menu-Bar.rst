@@ -55,7 +55,7 @@ Start/stop IOCs
    Selecting the Start/stop IOCs menu item displays a dialog allowing you to start an IOC or to stop an IOC that is currently running.
 
 Block Actions Menu
-----------------
+------------------
 View run-control settings
    Selecting the View Run-Control Settings menu item displays a dialog showing you which blocks (if any) are currently under run-control.  You can also assign new run-control settings to blocks and modify or remove existing run-control settings.
 
