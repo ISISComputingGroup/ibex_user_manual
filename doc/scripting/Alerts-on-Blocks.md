@@ -41,7 +41,12 @@ Alerts, like run control, are normally set on floating point (or integer) value 
 g.alerts.set_range("RunState", -1.0, 3.5, delay_in=5.0, delay_out=300.0)
 ```   
 will send an alert if the instrument has been WAITING or VETOING (>3.5) for more than 300 seconds.
- 
+
+##  GUI for managing alerts
+ There is a convenient way to configure alerts details using the IBEX client.
+ The GUI is available from the top-level menu item "Block Actions", which was previously called Run-control.
+ <img width="1213" height="691" alt="image" src="https://github.com/user-attachments/assets/58258fe2-1efd-4956-a0d6-ffeb8aebcb05" />
+
 ## Sending alert messages directly from scripts
 You can also send an immediate alert message from an executing script by doing the following
 ```python
@@ -53,8 +58,10 @@ g.alerts.set_email(["a@b", "c@d"])
 if bad_thing_happened:
     g.alerts.send("Help, a bad thing has happened!")
 ```
+## Sending alert messages from the GUI
+Use the Send Message button (highlighted in blue below) in the Alert Settings GUI to send a custom message to the configured emails and/or mobiles.
+<img width="1213" height="691" alt="image" src="https://github.com/user-attachments/assets/dbe2304d-ad36-4551-959a-803127ac5745" />
 
 ## Future enhancements
-* Create GUI for managing alerts, similar to how run control is done now
 * Allow saving alerts into a configuration/component
     
