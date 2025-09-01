@@ -1,0 +1,23 @@
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: inherit;
+}
+
+.wy-menu-vertical p.caption {
+    color: #70f10e;
+}
+.wy-nav-content {
+    max-width: 1000px !important;
+}
+
+@keyframes highlight {
+    0% {
+        background: #e3fccf;
+    }
+    100% {
+        background: none;
+    }
+}
+
+:target {
+    animation: highlight 5s;
+}

@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tips &amp; Examples &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Genie Python Commands" href="genie_python-Commands.html" />
+    <link rel="prev" title="The Scripting Console" href="The-Scripting-Console.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Scripting.html">Scripting</a></li>
+      <li class="breadcrumb-item active">Tips &amp; Examples</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/Tips-and-Examples.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tips-examples">
+<h1>Tips &amp; Examples<a class="headerlink" href="#tips-examples" title="Link to this heading"></a></h1>
+<section id="tips-from-the-developers">
+<h2>Tips from the developers<a class="headerlink" href="#tips-from-the-developers" title="Link to this heading"></a></h2>
+<p>Even with correct syntax, a working script can become bug-prone and difficult for users to update. Here we document some tips
+to help keep your scripts working as expected and easy to modify in the future.</p>
+<section id="argument-ordering">
+<h3>Argument ordering<a class="headerlink" href="#argument-ordering" title="Link to this heading"></a></h3>
+<p>As this is Python, <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> conforms to the standard pattern of
+calling Python functions. The arguments to the function are contained
+within brackets and the variables passed in as a comma-separated list.
+Ordering is important but can be overridden by using named variables,
+for instance the following are all correct and equivalent:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="s2">&quot;PAR1&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;PAR1&quot;</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;PAR1&quot;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="s2">&quot;PAR1&quot;</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In the last example, named and unnamed variables are mixed. Unnamed
+variables must precede named variables. The following examples are not
+valid</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;PAR1&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Named variable before unnamed</span>
+<span class="n">g</span><span class="o">.</span><span class="n">change_beamline_pars</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;PAR1&quot;</span><span class="p">)</span> <span class="c1"># Cannot change order of unnamed variables</span>
+</pre></div>
+</div>
+<p>Using named variables can be <strong>very useful in avoiding mistakes</strong>. For
+instance, getting the order of high and low limits the wrong way round.
+For instance this example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_monitor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is wrong and wouldn’t work. Instead, we could have written:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_monitor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>which would have worked and makes it clear for whoever comes to edit the
+code in future (hint: that person might be you!).</p>
+</section>
+<section id="making-errors-standout-in-python-console">
+<h3>Making Errors Standout in Python Console<a class="headerlink" href="#making-errors-standout-in-python-console" title="Link to this heading"></a></h3>
+<p>Python console will display most output in black this is from the standard out but will display error information in red. Error information should be written to standard error using <cite>sys.stderr.write(“errorn”)</cite>.</p>
+</section>
+</section>
+<section id="some-examples">
+<h2>Some examples<a class="headerlink" href="#some-examples" title="Link to this heading"></a></h2>
+<p>Sequentially sets a position (e.g. sample changer) and waits for a fixed number of uamps</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python</span><span class="w"> </span><span class="kn">import</span> <span class="n">genie</span> <span class="k">as</span> <span class="n">g</span><span class="p">,</span> <span class="n">BLOCK_NAMES</span> <span class="k">as</span> <span class="n">b</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">loop_over_samples</span><span class="p">(</span><span class="n">block_name</span><span class="p">,</span> <span class="n">position_names</span><span class="p">,</span> <span class="n">charge_to_wait_for</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Begins a run. Loops over a set of sample positions. Ends the run</span>
+
+<span class="sd">    :param block_name: The name of the block containing the sample position</span>
+<span class="sd">    :param position_names: A collection of the positions to loop over</span>
+<span class="sd">    :param uamps_to_wait_for: The number of uamps to wait for between samples</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="n">total_charge_to_wait_for</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">position_name</span> <span class="ow">in</span> <span class="n">position_names</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Moving sample changer to position: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">position_name</span><span class="p">))</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block_name</span><span class="p">,</span> <span class="n">position_name</span><span class="p">)</span>
+        <span class="n">total_charge_to_wait_for</span> <span class="o">+=</span> <span class="n">charge_to_wait_for</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="n">total_charge_to_wait_for</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Reads the value of a block and moves it through a series of intervals to a new values taking a fixed time</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python</span><span class="w"> </span><span class="kn">import</span> <span class="n">genie</span> <span class="k">as</span> <span class="n">g</span><span class="p">,</span> <span class="n">BLOCK_NAMES</span> <span class="k">as</span> <span class="n">b</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ramp</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">block_name</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">final_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Moves a block between an initial and target value over a sequence of steps, waiting a fixed time at each step.</span>
+
+<span class="sd">    :param time: The overall time to take to ramp. Time will be split evenly between steps</span>
+<span class="sd">    :param nsteps: The number of steps to take during the ramp</span>
+<span class="sd">    :param block_name: The name of the block whose value to set</span>
+<span class="sd">    :param final_value: The value we want to ramp to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">initial_value</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="n">block_name</span><span class="p">)[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">initial_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unable to determine temperature from block </span><span class="si">{0}</span><span class="s2">. No action will be taken&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">block_name</span><span class="p">))</span>
+        <span class="k">return</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">values_match</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+        <span class="n">tolerance</span> <span class="o">=</span> <span class="mf">0.001</span>
+        <span class="n">small</span> <span class="o">=</span> <span class="mf">1.0e-20</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">v1</span><span class="o">-</span><span class="n">v2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span><span class="o">+</span><span class="nb">abs</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span><span class="o">+</span><span class="n">small</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">tolerance</span>
+
+    <span class="n">step_duration</span> <span class="o">=</span> <span class="n">time</span><span class="o">/</span><span class="n">steps</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">steps</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">step_value</span> <span class="o">=</span> <span class="n">initial_value</span> <span class="o">+</span> <span class="p">(</span><span class="n">final_value</span> <span class="o">-</span> <span class="n">initial_value</span><span class="p">)</span><span class="o">/</span><span class="n">steps</span><span class="o">*</span><span class="n">i</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block_name</span><span class="p">,</span> <span class="n">step_value</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ramping to: </span><span class="si">{0}</span><span class="s2"> Target value: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">step_value</span><span class="p">,</span> <span class="n">final_value</span><span class="p">))</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">step_duration</span><span class="p">)</span>
+        <span class="n">new_block_value</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="n">block_name</span><span class="p">)[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">values_match</span><span class="p">(</span><span class="n">new_block_value</span><span class="p">,</span> <span class="n">step_value</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;WARNING: The current value for block </span><span class="si">{0}</span><span class="s2">, </span><span class="si">{1}</span><span class="s2">, does not match the target value of </span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">block_name</span><span class="p">,</span> <span class="n">new_block_value</span><span class="p">,</span> <span class="n">step_value</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ramp complete&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="The-Scripting-Console.html" class="btn btn-neutral float-left" title="The Scripting Console" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="genie_python-Commands.html" class="btn btn-neutral float-right" title="Genie Python Commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripting &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alerts on Blocks" href="scripting/Alerts-on-Blocks.html" />
+    <link rel="prev" title="Views" href="gui/Views.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scripting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Scripting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/Scripting.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="scripting">
+<h1>Scripting<a class="headerlink" href="#scripting" title="Link to this heading"></a></h1>
+<p>There are two ways of running scripts in IBEX - locally, and on the IBEX server.</p>
+<p>Scripting in IBEX is done using python, with the <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> library. The <a class="reference external" href="https://isiscomputinggroup.github.io/genie/genie_python.html#module-genie" title="(in genie_python v0.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">genie_python</span></code></a> reference documentation gives a full account of what functions are available.</p>
+<p>This page is intended to give a broad guide to scripting for the
+beginner and novice user. For a more in-depth discussion, see our <a class="reference internal" href="scripting/training_course/genie_python-and-IBEX-%28Introduction%29.html"><span class="doc std std-doc">genie_python and IBEX training course</span></a>.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</div>
+<p>There is some specific <a class="reference internal" href="inst_specific/Guidance-on-Writing-Scripts-for-the-Muon-Front-End.html"><span class="doc std std-doc">scripting advice for the Muon Front End</span></a></p>
+<p>If you are new to Python, the Mantid team has created an excellent <a class="reference external" href="https://docs.mantidproject.org/nightly/tutorials/introduction_to_python/index.html#introduction-to-python" title="(in MantidProject v6.13)"><span class="xref std std-ref">Introduction to Python</span></a> on the Mantid website.</p>
+<p>See also the <a class="reference external" href="https://isiscomputinggroup.github.io/genie/genie_python.html#module-genie" title="(in genie_python v0.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">genie</span></code></a> reference documentation.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gui/Views.html" class="btn btn-neutral float-left" title="Views" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="scripting/Alerts-on-Blocks.html" class="btn btn-neutral float-right" title="Alerts on Blocks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

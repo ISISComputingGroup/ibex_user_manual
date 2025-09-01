@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using the Script Generator &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Writing Script Definitions" href="Writing-Script-Definitions.html" />
+    <link rel="prev" title="Script Generator Troubleshooting" href="Troubleshooting-the-Script-Generator.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Script-Generator.html">Script Generator</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Downloading-and-Installing-The-IBEX-Script-Generator.html">Downloading &amp; Installing the IBEX Script Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script-Generator-Customisation.html">Script Generator customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-IBEX-Script-Generator.html">The IBEX Script Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Troubleshooting-the-Script-Generator.html">Script Generator Troubleshooting</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using the Script Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Writing-Script-Definitions.html">Writing Script Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Script-Generator.html">Script Generator</a></li>
+      <li class="breadcrumb-item active">Using the Script Generator</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/script_generator/Using-the-Script-Generator.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="using-the-script-generator">
+<h1>Using the Script Generator<a class="headerlink" href="#using-the-script-generator" title="Link to this heading"></a></h1>
+<section id="keyboard-shortcuts">
+<h2>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Ctrl-click on multiple lines to select them all</p></li>
+<li><p>Tab onto the next cell (tabbing from the last cell creates a new line)</p></li>
+</ul>
+</section>
+<section id="faq">
+<h2>FAQ<a class="headerlink" href="#faq" title="Link to this heading"></a></h2>
+<details>
+<summary><b>How do I copy and paste lines?</b></summary>
+<br>
+Select the line you want to copy (does not have to contiguous) and press `Ctrl+c` or use the "Copy Selected Actions" button to copy. Press `Ctrl+v` or use the "Paste Actions" button after selecting the line where you want to paste.
+</details>
+<details>
+<summary><b>How do I delete multiple lines?</b></summary>
+<br>
+Select the lines individually (by holding `Ctrl` and clicking) or as a group (by holding `Shift` and clicking), then click the _Delete Selected Actions_ button or press the `Delete` key.
+<p>To delete all lines, click the <em>Clear All Actions</em> button or select all lines with <code class="docutils literal notranslate"><span class="pre">Ctrl+a</span></code> before deleting.</p>
+</details>
+<details>
+<summary><b>How do I insert an action at a given point?</b></summary>
+<br>
+Click the line you wish to insert the new line below and click the "Insert Action Below" button.
+</details>
+<details>
+<summary><b>How do I add a new line to the end?</b></summary>
+<br>
+Click the "Add Action to End" button.
+</details>
+<details>
+<summary><b>Can I tab between cells?</b></summary>
+<br>
+Yes, pressing tab to move between cells will move the focus from left to right and then onto the next line. If you tab off the end of the last line a new line will be created.
+</details>
+<details>
+<summary><b>What does `Transfer Compatible Parameters` option do?</b></summary>
+<br>
+When this option is selected and the user selects a different script definition the actions are transferred if possible (i.e. when parameters match and they are not set to copy previous row). The matching parameters are transferred and the rest are populated with their default values. It is possible that none of the parameters can be transferred in which case the actions are cleared.
+</details>
+</section>
+<section id="a-tour-of-the-ui">
+<h2>A tour of the UI<a class="headerlink" href="#a-tour-of-the-ui" title="Link to this heading"></a></h2>
+<p><img alt="ScriptGenerator UI" src="../_images/script_generator_ui.jpg" /></p>
+<ol class="arabic simple">
+<li><p>From the drop-down here you may select a script definitions to use to generate a script.</p></li>
+<li><p>This text box displays the help provided by the currently selected script definition.</p></li>
+<li><p>Help options, click the arrow to open a drop down allowing access to a link to this page and an about section which contains the current version, Java version, and the Java Path.</p></li>
+<li><p>If the data entered in one of the global parameters text box is not the correct type it will highlight in red, mousing over the text box will display the error.</p></li>
+<li><p>Text box to enter global parameters, these are only displayed if they are defined by the selected script definition.</p></li>
+<li><p>This table may not appear in your script generator. However, if it does this means there have been errors loading some of your script definitions. The error message may tell you there is an error in one of your script definitions or there has been an error loading from a specific location.</p></li>
+<li><p>The script generator table is to contain the experimental parameters that will be used by the generated script.</p></li>
+<li><p>The validity column will contain a tick and be coloured green if the row is valid.</p></li>
+<li><p>The validity column will contain a cross and be coloured a deeper red if the row is invalid.  This is dependent on the script definitions parameters_valid method.</p></li>
+<li><p>Hovering over a row that is invalid (highlighted in red and with a cross mark in the validation column) will display the reason this row is invalid.  This is dependent on the script definitions parameters_valid method.</p></li>
+<li><p>Select a row and press the up or down button to reorder rows.</p></li>
+<li><p>Select an action or actions and click the “Copy selected actions” button to add the selected actions to the clipboard.</p></li>
+<li><p>Select a row and click “Paste actions” to add the actions in the clipboard to the table.</p></li>
+<li><p>Create a new action (row in the script generator table) at the bottom of the table with the “Add Action To End” button.</p></li>
+<li><p>Select a row and click the “Insert Action Below” button to add a new action directly below the current action.</p></li>
+<li><p>Select an action or actions and click the “Duplicate Selected Actions Below” button to create a copy of all currently selected actions directly below the last selected item.</p></li>
+<li><p>Select an action or actions and click the “Delete Selected Actions” button to remove the selected actions from the table.</p></li>
+<li><p>Click the “Clear All Actions” button to remove all actions from the table.</p></li>
+<li><p>Click the “Generate Script” button to save out the script when all actions are ready. The button to generate a script is greyed out when the parameters aren’t valid.</p></li>
+<li><p>Click the “Save Parameters” button to save the current parameters to a file that can be loaded in at another time. The button to generate a script is greyed out when the parameters aren’t valid.</p></li>
+<li><p>Click the “Save Parameters As …” button to save the current parameters to a file that can be loaded in at another time, specifying the file to save to rather than saving to the file last saved to or loaded. The button to generate a script is greyed out when the parameters aren’t valid.</p></li>
+<li><p>Click the “Load Parameters” button to load previously saved parameters in from a file.</p></li>
+</ol>
+<p><img alt="" src="../_images/UIScriptGenGenerated.JPG" /></p>
+<ol class="arabic simple">
+<li><p>When all parameters are valid the get validity errors button is greyed out.</p></li>
+<li><p>All parameters are valid when there are ticks in the validity columns and no rows are red.</p></li>
+<li><p>Press the “Generate Script” button to generate a script from your experimental parameters and get a file message box pop up.</p></li>
+<li><p>When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).</p>
+<ol class="arabic simple">
+<li><p>They are provided with a create default filename which uses the script definition and a timestamp.</p></li>
+</ol>
+</li>
+<li><p>Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite).</p></li>
+<li><p>Opens the file in notepad++ if notepad++ can be found.</p></li>
+</ol>
+<p><img alt="ScriptGenerator UI Success" src="../_images/UIScriptGenGenerated.JPG" /></p>
+<ol class="arabic simple">
+<li><p>Press the “Generate Script” button to generate a script from your experimental parameters and get a file message box pop up.</p>
+<ul class="simple">
+<li><p>When the script has been generated in the backend a user can provide a filename (without file path prefix or file extension).</p></li>
+<li><p>They are provided with a create default filename which uses the script definition and a timestamp.</p></li>
+<li><p>Can then save or save and open the file (at this stage if there is another file of the same name in the same place the user is asked if they want to overwrite).</p></li>
+</ul>
+</li>
+<li><p>Opens the file in notepad++ if notepad++ can be found.</p></li>
+<li><p>Do not open the file.</p></li>
+<li><p>Estimated time for running of script, this is calculated based off the script definition.</p></li>
+</ol>
+</section>
+<section id="loading-scripts-into-the-scripting-window">
+<h2>Loading scripts into the scripting window<a class="headerlink" href="#loading-scripts-into-the-scripting-window" title="Link to this heading"></a></h2>
+<p>Say we have generated a script named “my_script.py”. We can open the scripting perspective in the ibex gui and type <code class="docutils literal notranslate"><span class="pre">g.load_script(&quot;my_script.py&quot;)</span></code>. This will then load a function called <code class="docutils literal notranslate"><span class="pre">runscript()</span></code> into the console which you can call by simply typing <code class="docutils literal notranslate"><span class="pre">runscript()</span></code> and pressing enter.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Troubleshooting-the-Script-Generator.html" class="btn btn-neutral float-left" title="Script Generator Troubleshooting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Writing-Script-Definitions.html" class="btn btn-neutral float-right" title="Writing Script Definitions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

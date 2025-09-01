@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create PVs for generic user data &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Manage the DAE" href="Manage-the-DAE.html" />
+    <link rel="prev" title="Create and Manage Synoptics" href="Create-and-Manage-Synoptics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Components.html">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Device-Screens.html">Create and Manage Device Screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Synoptics.html">Create and Manage Synoptics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create PVs for generic user data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage-the-DAE.html">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plot-a-Block-Graph.html">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Create PVs for generic user data</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/How-to-create-PVs-for-generic-user-data.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="create-pvs-for-generic-user-data">
+<h1>Create PVs for generic user data<a class="headerlink" href="#create-pvs-for-generic-user-data" title="Link to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">INSTETC</span></code> <a class="reference external" href="https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Start-and-Stop-IOCs">IOC</a> contains <a class="reference external" href="https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Process-Variables">PVs</a> intended to be user-settable values. These PVs can have blocks pointed at them <a class="reference external" href="https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Create-and-Manage-Configurations#blocks-tab">via the configurations screen</a>. These PVs could, for example, be used to hold data about equipment which is manually controlled, but should be put in a nexus file.</p>
+<p>There are three types of data that a user PV can hold: integer, real and string. The corresponding process variables are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:&lt;instrument&gt;:PARS:USER:I0</span></code> for integers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:&lt;instrument&gt;:PARS:USER:R0</span></code> for real types</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:&lt;instrument&gt;:PARS:USER:S0</span></code> for strings</p></li>
+</ul>
+<p>The counter at the end of the PV is an index. By default, instruments are set up to have 5 of each type of user PV (indexes 0-4 inclusive). If you find you need more than 5 of any one data type, it is configurable.</p>
+<ul class="simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\NDX&lt;instrument&gt;\configurations</span></code></p></li>
+<li><p>Locate a file called <code class="docutils literal notranslate"><span class="pre">globals.txt</span></code> (if it does not exist, create it)</p></li>
+<li><p>Add the following line to the file: <code class="docutils literal notranslate"><span class="pre">INSTETC_01__NUM_USER_VARS=25</span></code>, where <code class="docutils literal notranslate"><span class="pre">25</span></code> should be replaced by the maximum number of user variables you want for any given type.</p></li>
+<li><p>Ensure that <code class="docutils literal notranslate"><span class="pre">globals.txt</span></code> ends with at least one blank line, otherwise, the last line will not be read.</p></li>
+<li><p>To pick up the changes, IBEX will need to be restarted. Follow the process detailed here: <a class="reference external" href="https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Starting-And-Stopping-IBEX#starting-ibex-server">Starting the IBEX Server</a>.</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Create-and-Manage-Synoptics.html" class="btn btn-neutral float-left" title="Create and Manage Synoptics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Manage-the-DAE.html" class="btn btn-neutral float-right" title="Manage the DAE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

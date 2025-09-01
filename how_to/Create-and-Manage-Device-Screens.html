@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create and Manage Device Screens &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create and Manage Synoptics" href="Create-and-Manage-Synoptics.html" />
+    <link rel="prev" title="Create and Manage Configurations" href="Create-and-Manage-Configurations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Components.html">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create and Manage Device Screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Synoptics.html">Create and Manage Synoptics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-to-create-PVs-for-generic-user-data.html">Create PVs for generic user data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage-the-DAE.html">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plot-a-Block-Graph.html">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Create and Manage Device Screens</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/Create-and-Manage-Device-Screens.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-and-manage-device-screens">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Create and Manage Device Screens</a><a class="headerlink" href="#create-and-manage-device-screens" title="Link to this heading"></a></h1>
+<p>In IBEX, device screens give you access to a graphical interface to interact with each IOC running on your instrument.</p>
+<p>If the IOC is not running, the device screen will show that the device is disconnected.</p>
+<p>You can have as many device screens as you wish. The device screens need not be for devices in your configuration.</p>
+<p>To view the device screen, double-click on the device in the device screens table and it will appear to the right of the ‘Device screens’ table by default.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#create-and-manage-device-screens" id="id1">Create and Manage Device Screens</a></p>
+<ul>
+<li><p><a class="reference internal" href="#creating-a-device-screen" id="id2">Creating a Device Screen</a></p></li>
+<li><p><a class="reference internal" href="#editing-a-device-screen" id="id3">Editing a Device Screen</a></p></li>
+<li><p><a class="reference internal" href="#deleting-a-device-screen" id="id4">Deleting a Device Screen</a></p></li>
+<li><p><a class="reference internal" href="#special-device-screens" id="id5">Special Device Screens</a></p>
+<ul>
+<li><p><a class="reference internal" href="#live-view-device-screen" id="id6">Live View Device Screen</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="creating-a-device-screen">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Creating a Device Screen</a><a class="headerlink" href="#creating-a-device-screen" title="Link to this heading"></a></h2>
+<p>Click on the ‘Edit Device Screens’ button just below the Device screens tab to opens the ‘Configure Device Screens’ dialog box.</p>
+<ul class="simple">
+<li><p>To create a device screen, click ‘Add’ in the bottom left-hand corner.</p></li>
+<li><p>You can rename the device in ‘Name’ box in the top right-hand corner. The default name is “Screen”.</p></li>
+<li><p>To select a device to view, click on the ‘Target’ drop down box to select the device you want to view. The device does not need to be in your current configuration list of IOCs. However, if the device’s IOC is not running, the device screen will show that the device is disconnected.</p></li>
+<li><p>Enter the values of any macros needed for the device in the ‘Value’ box.</p></li>
+<li><p>Select ‘Save this device screen’ to save the device screen to IBEX server. Otherwise, select “Remove this device screen when IBEX is closed”.</p></li>
+<li><p>Click ‘OK’ to save the changes you’ve made to the device screens. Clicking ‘Cancel’ will close the dialog without saving the changes.</p></li>
+</ul>
+</section>
+<section id="editing-a-device-screen">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Editing a Device Screen</a><a class="headerlink" href="#editing-a-device-screen" title="Link to this heading"></a></h2>
+<p>Click on the ‘Edit Device Screens’ button just below the Device screens tab to opens the ‘Configure Device Screens’ dialog box.</p>
+<ul class="simple">
+<li><p>To edit a device screen, click device screen you want to edit.</p></li>
+<li><p>You can then edit the name of the device screen by clicking in the ‘Name’ box</p></li>
+<li><p>You can switch to a different device by clicking the ‘Target’ drop down box and selecting a different device.</p></li>
+<li><p>You can edit the value of any macro by selecting the macro in the ‘Properties’ table and entering the value of the macro in the ‘Value’ box.</p></li>
+<li><p>Select ‘Save this device screen’ to save the device screen to IBEX server. Otherwise, select “Remove this device screen when IBEX is closed”.</p></li>
+<li><p>Click ‘OK’ to save the changes you’ve made to the device screens. Clicking ‘Cancel’ will close the dialog without saving the changes.</p></li>
+</ul>
+</section>
+<section id="deleting-a-device-screen">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Deleting a Device Screen</a><a class="headerlink" href="#deleting-a-device-screen" title="Link to this heading"></a></h2>
+<p>Click on the ‘Edit Device Screens’ button just below the Device screens tab to opens the ‘Configure Device Screens’ dialog box.</p>
+<ul class="simple">
+<li><p>To delete a device screen, click device screen you want to delete. You can delete several different device screens at once by holding down the Ctrl key and selecting the device screens to delete.</p></li>
+<li><p>Then click ‘Delete’ on the bottom left-hand</p></li>
+<li><p>Click ‘OK’ to save the changes you’ve made to the device screens. Clicking ‘Cancel’ will close the dialog without saving the changes.</p></li>
+</ul>
+</section>
+<section id="special-device-screens">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Special Device Screens</a><a class="headerlink" href="#special-device-screens" title="Link to this heading"></a></h2>
+<section id="live-view-device-screen">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Live View Device Screen</a><a class="headerlink" href="#live-view-device-screen" title="Link to this heading"></a></h3>
+<a class="reference external image-reference" href="LiveView_large.png"><img alt="../_images/LiveView.png" src="../_images/LiveView.png" />
+</a>
+<p>You instrument may have access to a Live View device screen which shows event data from the DAE in real time. This option is only available if your instrument is set up for Live View: it is running in event mode, and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact Freddie Akeroyd.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Create-and-Manage-Configurations.html" class="btn btn-neutral float-left" title="Create and Manage Configurations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Create-and-Manage-Synoptics.html" class="btn btn-neutral float-right" title="Create and Manage Synoptics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

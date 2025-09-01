@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripting View &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Views" href="Views.html" />
+    <link rel="prev" title="Script Server" href="Script-Server.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Banner.html">Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Blocks-and-Groups.html">Blocks &amp; Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Experiment-Details.html">Experiment Details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Menu-Bar.html">Menu Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Reflectometry-View.html">Reflectometry View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script-Server.html">Script Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Views.html">Views</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+      <li class="breadcrumb-item active">Scripting View</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/gui/Scripting-View.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scripting-view">
+<h1>Scripting View<a class="headerlink" href="#scripting-view" title="Link to this heading"></a></h1>
+<p>The Scripting-View displays a Python console, allowing you to load and execute Python or genie_python scripts. <strong>Note</strong>: Scripts running in the Scripting View are independent of scripts running on the Script Server and independent of scripts running in other consoles and clients.</p>
+<p>This window should be used for:</p>
+<ul class="simple">
+<li><p>Quick functionality, e.g. set the jaws up for a number of runs</p></li>
+<li><p>Running visualisation and plotting routines</p></li>
+<li><p>Developing scripts.</p></li>
+</ul>
+<p>Experimental runs should, where possible, be run on the <a class="reference internal" href="Script-Server.html"><span class="doc">script server</span></a> because these are independent of the client and only one script sever script can run at any one time (you can still run console scripts when the script server script is running).</p>
+<section id="multiple-consoles-and-views">
+<h2>Multiple Consoles and Views<a class="headerlink" href="#multiple-consoles-and-views" title="Link to this heading"></a></h2>
+<p>The IBEX Gui supports both multiple consoles and multiple views on those consoles. This is not as user-friendly as it could be but is inherited from an open source component that we use. You should think of this as multiple versions of genie_python, each running in a console, which you can view through one or many windows. To see how to utilise this read the following toolbar section.</p>
+</section>
+<section id="tool-bar">
+<h2>Tool Bar<a class="headerlink" href="#tool-bar" title="Link to this heading"></a></h2>
+<p>The tools bar at the top of every python console view looks like:</p>
+<img alt="../_images/scripting_view_genie_python_tool_bar.png" src="../_images/scripting_view_genie_python_tool_bar.png" />
+<p>This has multiple functions, from left to right:</p>
+<ul class="simple">
+<li><p>Stop genie_python console</p></li>
+<li><p>Save python console output</p></li>
+<li><p>Stop execution</p></li>
+<li><p>Clear the console</p></li>
+<li><p>Pin console: does nothing</p></li>
+<li><p>Change console being viewed in a console view</p></li>
+<li><p>New console (genie_python console or console view)</p></li>
+</ul>
+<p><strong>New genie_python console</strong></p>
+<p>To start a new genie_python click on the add console button:</p>
+<img alt="../_images/scripting_view_new_console_button.png" src="../_images/scripting_view_new_console_button.png" />
+<p>this will open a drop-down:</p>
+<img alt="../_images/scripting_view_new_console_dropdown.png" src="../_images/scripting_view_new_console_dropdown.png" />
+<p>choose <cite>PyDev console</cite> which opens the pop-up:</p>
+<img alt="../_images/scripting_view_new_console_popup.png" src="../_images/scripting_view_new_console_popup.png" />
+<p>Choose <cite>Python console</cite> from this pop-up and then OK. <strong>Note:</strong> At this point all open console views will switch to viewing the new console.</p>
+<p><strong>New console view</strong></p>
+<p>To create a new view on a console click on the add console button:</p>
+<img alt="../_images/scripting_view_new_console_button.png" src="../_images/scripting_view_new_console_button.png" />
+<p>this will open a drop-down:</p>
+<img alt="../_images/scripting_view_new_console_dropdown.png" src="../_images/scripting_view_new_console_dropdown.png" />
+<p>choose <cite>New Console View</cite>.</p>
+<p><strong>Stop genie_python console</strong></p>
+<p>To stop a genie_python console click on the stop button (red left most square):</p>
+<img alt="../_images/scripting_view_stop_button.png" src="../_images/scripting_view_stop_button.png" />
+<p><strong>Close Console View</strong></p>
+<p>All but the last view can be closed using the cross on the tab.</p>
+<img alt="../_images/scripting_view_cross.png" src="../_images/scripting_view_cross.png" />
+<p><strong>Stop execution</strong></p>
+<p>Execution of python can be stopped by pressing <cite>&lt;ctrl&gt; + c</cite> or clicking on the interrupt button (yellow right most square)</p>
+<img alt="../_images/scripting_view_stop_execution.png" src="../_images/scripting_view_stop_execution.png" />
+<p><strong>Change console being viewed in a console view</strong></p>
+<p>To select which console to view click on the console drop-down arrow (clicking on the icon cycles through consoles).</p>
+<img alt="../_images/scripting_view_console_view_dropdown.png" src="../_images/scripting_view_console_view_dropdown.png" />
+<p>This will give you a list of active consoles running in this client. Select the one you wish to view.</p>
+<p><strong>Clear the console</strong></p>
+<p>A console can be cleared by clicking on clear console button:</p>
+<img alt="../_images/scripting_view_console_clear.png" src="../_images/scripting_view_console_clear.png" />
+<p><strong>Save python console output</strong></p>
+<p>All the commands and outputs from a python console can be saved to a file using the save console view button:</p>
+<img alt="../_images/scripting_view_console_view_save.png" src="../_images/scripting_view_console_view_save.png" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Script-Server.html" class="btn btn-neutral float-left" title="Script Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Views.html" class="btn btn-neutral float-right" title="Views" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

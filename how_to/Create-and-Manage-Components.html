@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create and Manage Components &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create and Manage Configurations" href="Create-and-Manage-Configurations.html" />
+    <link rel="prev" title="Add blocks to run title" href="Add-blocks-to-run-title.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Device-Screens.html">Create and Manage Device Screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Synoptics.html">Create and Manage Synoptics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-to-create-PVs-for-generic-user-data.html">Create PVs for generic user data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage-the-DAE.html">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plot-a-Block-Graph.html">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Create and Manage Components</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/Create-and-Manage-Components.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-and-manage-components">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Create and Manage Components</a><a class="headerlink" href="#create-and-manage-components" title="Link to this heading"></a></h1>
+<p>Many instrument configurations have a number of devices and settings in common.  A component is a mini configuration (or sub-configuration) which provides a means of defining a selection of IOCs, Blocks, Groups, etc. that can be treated as a single object. Other configurations can then include the component which means that common IOCs, Block and other settings do not have to be repeatedly added to each configuration. It also means that changes need only be made to a single object - if a component is changed the changes will be inherited by all the configurations that use that component.</p>
+<p>One of the most common and useful ways to use a component is to create a “base” component.  A “base” component defines a configuration for all the devices permanently attached to an instrument.  Any new configuration can then include the “base” component and inherit all the IOCs, blocks, groups, macros, etc. associated with the permanent devices.</p>
+<p>Components are also frequently used to describe equipment (either a single device or a group of devices) that move between different instruments (e.g. a cryostat and associated temperature controllers).  By defining a component to describe the equipment on the first instrument, the component can be copied across to the second instrument at the same time as the equipment is moved.  This saves having to re-define all the relevant blocks, groups, etc. in a new configuration on the second instrument.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#create-and-manage-components" id="id1">Create and Manage Components</a></p>
+<ul>
+<li><p><a class="reference internal" href="#create-a-component" id="id2">Create a Component</a></p></li>
+<li><p><a class="reference internal" href="#import-a-component" id="id3">Import a Component</a></p></li>
+<li><p><a class="reference internal" href="#edit-a-component" id="id4">Edit a Component</a></p></li>
+<li><p><a class="reference internal" href="#delete-a-component" id="id5">Delete a Component</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="create-a-component">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Create a Component</a><a class="headerlink" href="#create-a-component" title="Link to this heading"></a></h2>
+<p>There are several ways to create a component:</p>
+<dl>
+<dt>Save an existing Configuration as a Component</dt><dd><p>You can save an existing configuration as a component.  When you click on the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> button on the Edit Configuration dialog (see <a class="reference internal" href="Create-and-Manage-Configurations.html"><span class="doc">Create and Manage Configurations</span></a>) the resulting Save As… dialog contains a check-box labelled <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">the</span> <span class="pre">configuration</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">component</span></code>.  By default, this check-box is unchecked.  Click on the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">the</span> <span class="pre">configuration</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">component</span></code> check-box and then click the <code class="docutils literal notranslate"><span class="pre">OK</span></code> button to save the configuration as a component.</p>
+<p>Once you have saved the configuration as a component, you can edit it as a component.</p>
+</dd>
+<dt>Create a New Component</dt><dd><p>You can create a new component directly from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu.  Simply select <code class="docutils literal notranslate"><span class="pre">Configurations</span> <span class="pre">&gt;</span> <span class="pre">New</span></code> from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu.  IBEX will then display the <cite>New Configuration</cite> dialog.</p>
+<p>The process of defining a component is essentially the same as the process of defining a configuration - the New Component dialog is identical to the New Configuration dialog.  Refer to <a class="reference internal" href="Create-and-Manage-Configurations.html"><span class="doc">Create and Manage Configurations</span></a> for a full description of how to use the various tabs on the New Component dialog.</p>
+</dd>
+</dl>
+</section>
+<section id="import-a-component">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Import a Component</a><a class="headerlink" href="#import-a-component" title="Link to this heading"></a></h2>
+<p>To import a component:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Components</span> <span class="pre">&gt;</span> <span class="pre">Import</span></code> from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu.</p></li>
+<li><p>IBEX displays the import component selection dialog, which lists all available instruments and their components.</p></li>
+<li><p>Select an instrument you want to import a component from.</p></li>
+<li><p>Select a component you want to import from that instrument and then press the <code class="docutils literal notranslate"><span class="pre">Import</span></code> button.</p></li>
+<li><p>IBEX displays the Import Component dialog which is identical to the New Component dialog.  Refer to <a class="reference internal" href="Create-and-Manage-Configurations.html"><span class="doc">Create and Manage Configurations</span></a> for a full description of how to use the various tabs on the Edit Component dialog (as described in <a class="reference internal" href="#create-a-component">Create a Component</a>).</p></li>
+</ol>
+<dl class="simple">
+<dt>Before saving the imported component, please check the following:</dt><dd><ul class="simple">
+<li><p>The communication settings for each IOC are correct. (COM port, IP address, etc.)</p></li>
+<li><p>Make sure that any remote IOCs (mobile devices not part of any beamline) in the imported component are needed and configured correctly.</p></li>
+<li><p>Check for any IOCs which may rely on autosave or settings area items.</p></li>
+<li><p>Check if the instrument prefix of non-local blocks is correct.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Note:</strong> You will not be able to import a component from an instrument that is on a different version.</p>
+</section>
+<section id="edit-a-component">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Edit a Component</a><a class="headerlink" href="#edit-a-component" title="Link to this heading"></a></h2>
+<p>To edit a component:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Components</span> <span class="pre">&gt;</span> <span class="pre">Edit</span></code> from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu.</p></li>
+<li><p>IBEX displays the Edit Component dialog which is identical to the New Component dialog.  Refer to <a class="reference internal" href="Create-and-Manage-Configurations.html"><span class="doc">Create and Manage Configurations</span></a> for a full description of how to use the various tabs on the Edit Component dialog (as described in <a class="reference internal" href="#create-a-component">Create a Component</a>).</p></li>
+</ol>
+</section>
+<section id="delete-a-component">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Delete a Component</a><a class="headerlink" href="#delete-a-component" title="Link to this heading"></a></h2>
+<p>To delete a component:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Components</span> <span class="pre">&gt;</span> <span class="pre">Delete</span></code> from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu.</p></li>
+<li><p>IBEX displays the Delete Component dialog, which lists all the components defined for your instrument.</p></li>
+<li><p>Select a component from the list and press the <code class="docutils literal notranslate"><span class="pre">OK</span></code> button</p></li>
+<li><p>IBEX deletes the selected component.</p></li>
+</ol>
+<p><strong>Note:</strong> When you delete a component it really is deleted. It is no longer available to be used by IBEX. Before deleting a component, please be sure that you really do want to delete it. If you unintentionally delete a component, please contact the Experiment Controls team - it may be possible to recover the deleted component.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Add-blocks-to-run-title.html" class="btn btn-neutral float-left" title="Add blocks to run title" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Create-and-Manage-Configurations.html" class="btn btn-neutral float-right" title="Create and Manage Configurations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

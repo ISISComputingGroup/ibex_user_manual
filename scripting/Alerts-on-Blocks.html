@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alerts on Blocks &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Block Names Helper" href="Block-names-helper.html" />
+    <link rel="prev" title="Scripting" href="../Scripting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Scripting.html">Scripting</a></li>
+      <li class="breadcrumb-item active">Alerts on Blocks</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/Alerts-on-Blocks.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="alerts-on-blocks">
+<h1>Alerts on Blocks<a class="headerlink" href="#alerts-on-blocks" title="Link to this heading"></a></h1>
+<p>Alerts can be configured on blocks using genie python, there is no GUI for this at the moment. An alert will trigger when a block is outside of the specified <code class="docutils literal notranslate"><span class="pre">lowlimit,highlimit</span></code> range for the specified <code class="docutils literal notranslate"><span class="pre">delay_out</span></code> time, it is like run control but rather than putting the DAE into WAITING a message (via SMS text and/or email) is sent. When the value comes back in range, it must be in range for <code class="docutils literal notranslate"><span class="pre">delay_in</span></code> seconds until an in-range alert is sent.</p>
+<p>Note that this system is in addition to and independent of run control, it just uses some of the same underlying software. Alerts can be added to blocks that are not under run control, and both run control and alerts can be set on the same block. The limits and delay times need not be the same for the run control and alert elements, so the instrument could be configured to go into a WAITING state when a block exceeded 100K but not send an alert until it exceeded 120K for a given length of time etc. (see below for how to set an alert on how long an instrument has been in a WAITING state)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## set mobiles and emails to send alerts to</span>
+<span class="c1">## this is remembered and only needs to be repeated if values change </span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_sms</span><span class="p">([</span><span class="s2">&quot;123456789&quot;</span><span class="p">,</span> <span class="s2">&quot;987654321&quot;</span><span class="p">])</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_email</span><span class="p">([</span><span class="s2">&quot;a@b&quot;</span><span class="p">,</span> <span class="s2">&quot;c@d&quot;</span><span class="p">])</span>
+
+<span class="c1">## set alert on block1 with default delay_in and delay_out (which is no delay)</span>
+<span class="c1">## setting a range automatically enables the alert</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_range</span><span class="p">(</span><span class="s2">&quot;block1&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">)</span>
+
+<span class="c1">## set alert on block2 with specified delay_in and delay_out times</span>
+<span class="c1">## if you have a block value that may temporarily spike, but you are only</span>
+<span class="c1">## interested in sustained periods out of range, then specify a delay_out</span>
+<span class="c1">## so that e.g. it must be out of range for at least 15 seconds to trigger</span>
+<span class="c1">## an out of range alert and back in range for at least 5 seconds to trigger</span>
+<span class="c1">## an in range alert </span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_range</span><span class="p">(</span><span class="s2">&quot;block2&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="n">delay_in</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">delay_out</span><span class="o">=</span><span class="mf">15.0</span><span class="p">)</span>
+
+<span class="c1">## alerts can be separately enabled and disabled, any previous</span>
+<span class="c1">## specified ranges and in/out delays are applied</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="s2">&quot;block1&quot;</span><span class="p">)</span>         <span class="c1"># enable alerts on block1</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="s2">&quot;block2&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>  <span class="c1"># disable alerts on block2</span>
+
+<span class="c1">## print status of all configured alerts to screen</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>
+
+<span class="c1">## test</span>
+<span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="s2">&quot;block1&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># With above settings, message sent to say the block has gone out of range</span>
+<span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="s2">&quot;block1&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># With above settings, message sent to say the block has gone back in range</span>
+</pre></div>
+</div>
+<p>Alerts are saved across IBEX restarts, but the saving is not currently part of a configuration. The block related alert parameters will remain so long as the block exists (the <code class="docutils literal notranslate"><span class="pre">email</span></code> and <code class="docutils literal notranslate"><span class="pre">sms</span></code> parameters are always preserved), so you can change configuration and maintain an alert so long as the block continues to exists. If you change to a configuration where the block does not exist, then you lose those block specific alert settings. So it is best to create the blocks used for alerts as part of a common base component included in all configurations.</p>
+<p>Alerts, like run control, are normally set on floating point (or integer) value blocks. They can, however, be used on some “state” items that are symbolic names mapped to integers (enums). One example of this is the instrument state (SETUP=1,RUNNING=2,PAUSED=3,WAITING=4,VETOING=5) so if a block called <code class="docutils literal notranslate"><span class="pre">RunState</span></code> is attached to the process variable <code class="docutils literal notranslate"><span class="pre">IN:myinst:DAE:RUNSTATE</span></code> then</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_range</span><span class="p">(</span><span class="s2">&quot;RunState&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="n">delay_in</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">delay_out</span><span class="o">=</span><span class="mf">300.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will send an alert if the instrument has been WAITING or VETOING (&gt;3.5) for more than 300 seconds.</p>
+<section id="gui-for-managing-alerts">
+<h2>GUI for managing alerts<a class="headerlink" href="#gui-for-managing-alerts" title="Link to this heading"></a></h2>
+<p>There is a convenient way to configure alerts details using the IBEX client.
+The GUI is available from the top-level menu item “Block Actions”, which was previously called Run-control.
+<a class="reference internal" href="https://github.com/user-attachments/assets/58258fe2-1efd-4956-a0d6-ffeb8aebcb05"><img alt="image" src="https://github.com/user-attachments/assets/58258fe2-1efd-4956-a0d6-ffeb8aebcb05" style="width: 1213px; height: 691px;" /></a></p>
+</section>
+<section id="sending-alert-messages-directly-from-scripts">
+<h2>Sending alert messages directly from scripts<a class="headerlink" href="#sending-alert-messages-directly-from-scripts" title="Link to this heading"></a></h2>
+<p>You can also send an immediate alert message from an executing script by doing the following</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## set mobiles and emails to alert, these aren&#39;t required if the email/phone numbers</span>
+<span class="c1">## have already been set at some other point on your instrument</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_sms</span><span class="p">([</span><span class="s2">&quot;123456789&quot;</span><span class="p">,</span> <span class="s2">&quot;987654321&quot;</span><span class="p">])</span>
+<span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">set_email</span><span class="p">([</span><span class="s2">&quot;a@b&quot;</span><span class="p">,</span> <span class="s2">&quot;c@d&quot;</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">bad_thing_happened</span><span class="p">:</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">alerts</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Help, a bad thing has happened!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sending-alert-messages-from-the-gui">
+<h2>Sending alert messages from the GUI<a class="headerlink" href="#sending-alert-messages-from-the-gui" title="Link to this heading"></a></h2>
+<p>Use the Send Message button (highlighted in blue below) in the Alert Settings GUI to send a custom message to the configured emails and/or mobiles.
+<a class="reference internal" href="https://github.com/user-attachments/assets/dbe2304d-ad36-4551-959a-803127ac5745"><img alt="image" src="https://github.com/user-attachments/assets/dbe2304d-ad36-4551-959a-803127ac5745" style="width: 1213px; height: 691px;" /></a></p>
+</section>
+<section id="future-enhancements">
+<h2>Future enhancements<a class="headerlink" href="#future-enhancements" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Allow saving alerts into a configuration/component</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Scripting.html" class="btn btn-neutral float-left" title="Scripting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Block-names-helper.html" class="btn btn-neutral float-right" title="Block Names Helper" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

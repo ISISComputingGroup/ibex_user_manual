@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Converting from OpenGENIE &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Closing remarks" href="genie_python-and-IBEX-%28Closing-remarks%29.html" />
+    <link rel="prev" title="Scripting" href="genie_python-and-IBEX-%28Scripting%29.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Genie-Python-Training.html">Genie Python Training Course</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Introduction%29.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Getting-started%29.html">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Common-commands%29.html">Common commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Scripting%29.html">Scripting</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Converting from OpenGENIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Closing-remarks%29.html">Closing remarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html">Exercise Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../Scripting.html">Scripting</a></li>
+          <li class="breadcrumb-item"><a href="../Genie-Python-Training.html">Genie Python Training Course</a></li>
+      <li class="breadcrumb-item active">Converting from OpenGENIE</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/training_course/genie_python-and-IBEX-(Converting-from-Open-GENIE).rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="converting-from-opengenie">
+<h1>Converting from OpenGENIE<a class="headerlink" href="#converting-from-opengenie" title="Link to this heading"></a></h1>
+<section id="open-genie-compare-and-contrast">
+<h2>Open GENIE: Compare and contrast<a class="headerlink" href="#open-genie-compare-and-contrast" title="Link to this heading"></a></h2>
+<section id="procedures-vs-functions">
+<h3>Procedures vs. functions<a class="headerlink" href="#procedures-vs-functions" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code>, procedures are defined by the keyword <code class="docutils literal notranslate"><span class="pre">PROCEDURE</span></code> and end with the keyword <code class="docutils literal notranslate"><span class="pre">ENDPROCEDURE</span></code>. In Python we instead define functions using the <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword so that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROCEDURE</span> <span class="n">my_function</span>
+<span class="o">...</span>
+<span class="n">ENDPROCEDURE</span>
+</pre></div>
+</div>
+<p>becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
+   <span class="o">...</span>
+</pre></div>
+</div>
+<p>Note that, using Python syntax, we don’t need a statement to show where the function ends; the indentation takes care of that for us.</p>
+<p>We pass arguments into <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> procedures like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROCEDURE</span> <span class="n">my_function</span>
+<span class="n">PARAMETERS</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Integer</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Real</span> <span class="n">z</span> <span class="o">=</span> <span class="n">String</span>
+<span class="o">...</span>
+<span class="n">ENDPROCEDURE</span>
+</pre></div>
+</div>
+<p>Usually an expected type is given for a parameter, this is not necessary but can trap common errors. We can do a similar  thing in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>, but we don’t define the type of the parameters. Python will only complain at run time if you call an unsupported operation on the input arguments. In <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>, the code above becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="loops">
+<h3>Loops<a class="headerlink" href="#loops" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> a loop is defined using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LOOP</span> <span class="n">I</span>  <span class="n">FROM</span> <span class="n">start</span> <span class="n">TO</span> <span class="n">end</span>
+<span class="o">...</span>
+<span class="n">ENDLOOP</span>
+</pre></div>
+</div>
+<p>The code above translates into Python as:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>No <code class="docutils literal notranslate"><span class="pre">ENDLOOP</span></code> is needed because the indentation makes it implicit.</p>
+</section>
+<section id="conditionals">
+<h3>Conditionals<a class="headerlink" href="#conditionals" title="Link to this heading"></a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> conditionals take the form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">[</span><span class="n">CONDITION</span><span class="p">]</span>
+    <span class="o">...</span>
+<span class="n">ELSE</span>
+    <span class="o">...</span>
+<span class="n">ENDIF</span>
+</pre></div>
+</div>
+<p>In Python this is written as:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span><span class="n">CONDITION</span><span class="p">]:</span>
+   <span class="o">...</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="o">...</span>
+</pre></div>
+</div>
+<p>No <code class="docutils literal notranslate"><span class="pre">ENDIF</span></code> is needed because the indentation makes it implicit.</p>
+</section>
+<section id="commands">
+<h3>Commands<a class="headerlink" href="#commands" title="Link to this heading"></a></h3>
+<p>The majority of <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> instrument control commands have a very close equivalent in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>.</p>
+<p>For example, the <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BEGIN</span>
+</pre></div>
+</div>
+<p>in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Similarly, the <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CHANGE</span> <span class="n">TITLE</span><span class="o">=</span><span class="s2">&quot;New title&quot;</span>
+</pre></div>
+</div>
+<p>in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="s2">&quot;New title&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Similarly, most arguments will be very similar between <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> and <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>. For example, the following <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CSET</span><span class="o">/</span><span class="n">CONTROL</span> <span class="n">TEMP1</span><span class="o">=</span><span class="mi">5</span> <span class="n">LOWLIMIT</span><span class="o">=</span><span class="mi">1</span> <span class="n">HIGHLIMIT</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<p>becomes the following in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">TEMP1</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">runcontrol</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lowlimit</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">highlimit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>NOTE</strong> Python is case sensitive and the arguments, apart from the block name, are in lower case</p>
+</section>
+<section id="worked-example">
+<h3>Worked example<a class="headerlink" href="#worked-example" title="Link to this heading"></a></h3>
+<p>Take the following <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> procedure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROCEDURE</span> <span class="n">my_function</span>
+
+<span class="n">GLOBAL</span> <span class="n">temp</span> <span class="n">high</span> <span class="n">low</span> <span class="nb">pow</span> <span class="n">count</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">low</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">high</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="n">CSET</span><span class="o">/</span><span class="n">CONTROL</span> <span class="n">TEMP1</span><span class="o">=</span><span class="n">temp</span> <span class="n">LOWLIMIT</span><span class="o">=</span><span class="n">low</span> <span class="n">HIGHLIMIT</span><span class="o">=</span><span class="n">high</span>
+<span class="n">CSET</span><span class="o">/</span><span class="n">CONTROL</span> <span class="n">TEMP2</span><span class="o">=</span><span class="n">temp</span> <span class="n">LOWLIMIT</span><span class="o">=</span><span class="n">low</span> <span class="n">HIGHLIMIT</span><span class="o">=</span><span class="n">high</span>
+
+<span class="n">CHANGE</span> <span class="n">TITLE</span><span class="o">=</span> <span class="s2">&quot;Running at temperature &quot;</span><span class="o">+</span><span class="n">As_string</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="n">BEGIN</span>
+<span class="n">WAITFOR</span> <span class="n">UAMPS</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="n">ABORT</span>
+<span class="n">PRINTN</span> <span class="s2">&quot;waiting 10 minutes&quot;</span>
+<span class="n">WAITFOR</span> <span class="n">SECONDS</span><span class="o">=</span><span class="mi">60</span><span class="o">*</span><span class="mi">10</span>
+<span class="n">BEGIN</span>
+<span class="n">WAITFOR</span> <span class="n">SECONDS</span><span class="o">=</span><span class="mi">10</span>
+<span class="n">PRINTN</span> <span class="s2">&quot;Waiting for &quot;</span><span class="o">+</span><span class="n">As_string</span><span class="p">(</span><span class="n">count</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;uAh&quot;</span>
+<span class="n">WAITFOR</span> <span class="n">UAMPS</span><span class="o">=</span><span class="n">count</span>
+<span class="n">END</span>
+
+<span class="n">ENDPROCEDURE</span>
+</pre></div>
+</div>
+<p>Let’s convert it to <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>. First of all we turn the <code class="docutils literal notranslate"><span class="pre">PROCEDURE</span></code> into a Python function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
+</pre></div>
+</div>
+<p>We haven’t given any arguments, because the procedure has no parameters.</p>
+<p>The variable definitions remain the same, except we don’t need the <code class="docutils literal notranslate"><span class="pre">GLOBAL</span></code> line to define our variables. However this function might be reused with different temperatures and limits, in which case we could change:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">low</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">high</span> <span class="o">=</span> <span class="mi">50</span>
+</pre></div>
+</div>
+<p>to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>We can always create a function to call specific parameters if needed:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_specific_function</span><span class="p">():</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">temp</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">low</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Further, we notice that <code class="docutils literal notranslate"><span class="pre">WAITFOR</span></code> later in the function waits for 50 microamps. Let’s assume we almost always want to wait for 50 microamps but we’d like the possibility to override it sometimes. In that case, we can make it a 4th parameter with a default value, like so:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Let’s start looking at the content of the PROCEDURE:</p>
+<blockquote>
+<div><p>CSET/CONTROL TEMP1=temp LOWLIMIT=low HIGHLIMIT=high</p>
+</div></blockquote>
+<p>In <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>, this becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">TEMP1</span><span class="o">=</span><span class="n">temp</span><span class="p">,</span> <span class="n">lowlimit</span><span class="o">=</span><span class="n">low</span><span class="p">,</span> <span class="n">highlight</span><span class="o">=</span><span class="n">high</span><span class="p">,</span> <span class="n">runcontrol</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The same goes for <code class="docutils literal notranslate"><span class="pre">TEMP2</span></code>, but that gives us two commands that do exactly the same thing. That’s not generally a good idea because it’s prone to typos and changes to one line might not be applied to the other. It would be much better to do the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;TEMP1&quot;</span><span class="p">,</span> <span class="s2">&quot;TEMP2&quot;</span><span class="p">]:</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">lowlimit</span><span class="o">=</span><span class="n">low</span><span class="p">,</span> <span class="n">highlimit</span><span class="o">=</span><span class="n">high</span><span class="p">,</span> <span class="n">runcontrol</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notably we’ve had to use the alternate <code class="docutils literal notranslate"><span class="pre">cset</span></code> argument syntax in this case.</p>
+<p>The next block of commands is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CHANGE</span> <span class="n">TITLE</span><span class="o">=</span> <span class="s2">&quot;Running at temperature &quot;</span><span class="o">+</span><span class="n">As_string</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="n">BEGIN</span>
+<span class="n">WAITFOR</span> <span class="n">UAMPS</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="n">ABORT</span>
+<span class="n">PRINTN</span> <span class="s2">&quot;waiting 10 minutes&quot;</span>
+<span class="n">WAITFOR</span> <span class="n">SECONDS</span><span class="o">=</span><span class="mi">60</span><span class="o">*</span><span class="mi">10</span>
+<span class="n">BEGIN</span>
+<span class="n">WAITFOR</span> <span class="n">SECONDS</span><span class="o">=</span><span class="mi">10</span>
+<span class="n">PRINTN</span> <span class="s2">&quot;Waiting for &quot;</span><span class="o">+</span><span class="n">As_string</span><span class="p">(</span><span class="n">count</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;uAh&quot;</span>
+<span class="n">WAITFOR</span> <span class="n">UAMPS</span><span class="o">=</span><span class="n">count</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>These translate very directly into <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="s2">&quot;Running at temperature </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+<span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">abort</span><span class="p">()</span>
+<span class="n">minutes_to_wait</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span> <span class="s2">&quot;Waiting </span><span class="si">{0}</span><span class="s2"> minutes&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minutes_to_wait</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">minutes_to_wait</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s2">&quot;Waiting for </span><span class="si">{0}</span><span class="s2">uAh&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>We’ve changed a couple of things:</p>
+<ul class="simple">
+<li><p>Rather than use the value <code class="docutils literal notranslate"><span class="pre">10</span></code> for the number of minutes to wait, we’ve set it as a variable. That means if we change the value, we only need to change it in one place.</p></li>
+<li><p>We’ve used the <code class="docutils literal notranslate"><span class="pre">minutes</span></code> argument in <code class="docutils literal notranslate"><span class="pre">waitfor_time</span></code> rather than having to apply the conversion factor between minutes and seconds ourselves.</p></li>
+<li><p>We’ve used the syntax <code class="docutils literal notranslate"><span class="pre">&quot;...&quot;.format(arg1,</span> <span class="pre">arg2)</span></code> to build our output strings. There are lots of ways to build strings in Python. Alternatively you can just use <code class="docutils literal notranslate"><span class="pre">&quot;...&quot;</span> <span class="pre">+</span> <span class="pre">str(arg1)</span> <span class="pre">+</span> <span class="pre">&quot;...&quot;</span> <span class="pre">+</span> <span class="pre">str(arg2)</span> <span class="pre">+</span> <span class="pre">&quot;...&quot;</span></code> but we like this way because it makes it easier to read and you don’t have to remember to use <code class="docutils literal notranslate"><span class="pre">str(...)</span></code> to convert the types</p></li>
+</ul>
+<p>The final <code class="docutils literal notranslate"><span class="pre">ENDPROCEDURE</span></code> command doesn’t need an equivalent in <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>. Our final script is therefore:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;TEMP1&quot;</span><span class="p">,</span> <span class="s2">&quot;TEMP2&quot;</span><span class="p">]:</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">lowlimit</span><span class="o">=</span><span class="n">low</span><span class="p">,</span> <span class="n">highlimit</span><span class="o">=</span><span class="n">high</span><span class="p">,</span> <span class="n">runcontrol</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="s2">&quot;Running at temperature </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">abort</span><span class="p">()</span>
+
+    <span class="n">minutes_to_wait</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="nb">print</span> <span class="s2">&quot;Waiting </span><span class="si">{0}</span><span class="s2"> minutes&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minutes_to_wait</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">minutes_to_wait</span><span class="p">)</span>
+
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="s2">&quot;Waiting for </span><span class="si">{0}</span><span class="s2">uAh&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">my_specific_function</span><span class="p">():</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">temp</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">low</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="exercise-5">
+<span id="gp-and-ibex-ex5"></span><h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading"></a></h2>
+<ul>
+<li><p>Translate the following <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> script into <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROCEDURE</span> <span class="n">Scan</span>
+    <span class="n">LOCAL</span> <span class="n">i</span> <span class="n">setpoint</span> <span class="nb">max</span> <span class="nb">min</span> <span class="n">start</span> <span class="n">step_size</span> <span class="n">title</span> <span class="n">nframes</span> <span class="n">nimages</span> <span class="n">multip</span>
+
+    <span class="nb">max</span> <span class="o">=</span> <span class="mf">200.0</span><span class="p">;</span> <span class="nb">min</span> <span class="o">=</span> <span class="mf">100.0</span>
+    <span class="n">nframes</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">nimages</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">step_size</span> <span class="o">=</span> <span class="mf">20.0</span><span class="p">;</span> <span class="n">setpoint</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">start</span> <span class="o">=</span> <span class="o">-</span><span class="mf">100.0</span>
+    <span class="n">setpoint</span> <span class="o">=</span> <span class="n">start</span>
+
+    <span class="n">LOOP</span> <span class="n">i</span> <span class="n">FROM</span> <span class="mi">1</span> <span class="n">TO</span> <span class="n">nimages</span>
+        <span class="n">setpoint</span> <span class="o">=</span> <span class="n">setpoint</span> <span class="o">+</span> <span class="n">step_size</span>
+        <span class="n">multip</span> <span class="o">=</span> <span class="n">As_Integer</span><span class="p">(</span><span class="n">setpoint</span><span class="o">/</span><span class="mi">360</span><span class="p">)</span>
+        <span class="n">setpoint</span> <span class="o">=</span> <span class="n">setpoint</span> <span class="o">-</span> <span class="mi">360</span><span class="o">*</span><span class="n">multip</span>
+        <span class="n">PRINTN</span> <span class="s2">&quot;New angle is: &quot;</span> <span class="o">+</span> <span class="n">as_string</span><span class="p">(</span><span class="n">setpoint</span><span class="p">)</span>
+
+        <span class="n">IF</span> <span class="p">(</span><span class="n">setpoint</span><span class="o">&gt;=</span><span class="nb">min</span><span class="p">)</span> <span class="n">OR</span> <span class="p">(</span><span class="n">setpoint</span><span class="o">&lt;=</span><span class="nb">max</span><span class="p">)</span>
+
+            <span class="n">tempTitle</span><span class="o">=</span><span class="s2">&quot;Image &quot;</span><span class="o">+</span><span class="n">as_string</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;, &quot;</span><span class="o">+</span><span class="n">as_string</span><span class="p">(</span><span class="n">setpoint</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; degrees&quot;</span>
+            <span class="n">CHANGE</span> <span class="n">TITLE</span><span class="o">=</span><span class="n">tempTitle</span>
+            <span class="n">cset</span> <span class="n">POSITION</span><span class="o">=</span><span class="n">setpoint</span>
+            <span class="n">waitformove</span>
+            <span class="n">PRINTN</span> <span class="s2">&quot;Move complete. Counting for &quot;</span><span class="o">+</span><span class="n">As_String</span><span class="p">(</span><span class="n">nframes</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; frames&quot;</span>
+            <span class="n">BEGIN</span>
+                <span class="n">WAITFOR</span> <span class="n">frames</span><span class="o">=</span><span class="n">nframes</span>
+            <span class="n">END</span>
+        <span class="n">ELSE</span>
+            <span class="n">PRINTIN</span> <span class="s2">&quot;Value &quot;</span><span class="o">+</span><span class="n">As_string</span><span class="p">(</span><span class="n">setpoint</span><span class="p">)</span><span class="o">+</span> <span class="s2">&quot; not in interval&quot;</span>
+        <span class="n">ENDIF</span>
+    <span class="n">ENDLOOP</span>
+<span class="n">ENDPROCEDURE</span>
+</pre></div>
+</div>
+</li>
+<li><p>State any simplifications you’ve made</p></li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex5-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="genie_python-and-IBEX-%28Scripting%29.html" class="btn btn-neutral float-left" title="Scripting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="genie_python-and-IBEX-%28Closing-remarks%29.html" class="btn btn-neutral float-right" title="Closing remarks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise Solutions &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Matplotlib" href="../Matplotlib.html" />
+    <link rel="prev" title="Closing remarks" href="genie_python-and-IBEX-%28Closing-remarks%29.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Genie-Python-Training.html">Genie Python Training Course</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Introduction%29.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Getting-started%29.html">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Common-commands%29.html">Common commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Scripting%29.html">Scripting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html">Converting from OpenGENIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Closing-remarks%29.html">Closing remarks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Exercise Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../Scripting.html">Scripting</a></li>
+          <li class="breadcrumb-item"><a href="../Genie-Python-Training.html">Genie Python Training Course</a></li>
+      <li class="breadcrumb-item active">Exercise Solutions</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/training_course/genie_python-and-IBEX-(Exercise-solutions).rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="exercise-solutions">
+<h1>Exercise Solutions<a class="headerlink" href="#exercise-solutions" title="Link to this heading"></a></h1>
+<section id="exercise-1">
+<span id="gp-and-ibex-ex1-solution"></span><h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading"></a></h2>
+<p>From <a class="reference internal" href="genie_python-and-IBEX-%28Getting-started%29.html#gp-and-ibex-ex1"><span class="std std-ref">Exercise 1</span></a>.</p>
+<ul class="simple">
+<li><p>Opening a scripting window should be straightforward if IBEX is installed correctly. Once you’ve opened the scripting perspective, check for the following</p>
+<ul>
+<li><p>Ideally the instrument will appear as <code class="docutils literal notranslate"><span class="pre">SETUP</span></code></p></li>
+<li><p>The output when the scripting window opens should look a bit like this:</p></li>
+</ul>
+</li>
+</ul>
+<img alt="../../_images/StandardStartupOutputOnDemo.png" src="../../_images/StandardStartupOutputOnDemo.png" />
+<ul class="simple">
+<li><p>To print the message, enter something like <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">&quot;Hello,</span> <span class="pre">World!</span></code> and press return</p></li>
+<li><p>The square of the integers between 1 and 10 can be output with the code below. A <strong>blank line</strong> will indicate to the scripting window that you’ve finished writing the loop and it can go ahead and be executed.:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-2">
+<span id="gp-and-ibex-ex2-solution"></span><h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading"></a></h2>
+<p>From <a class="reference internal" href="genie_python-and-IBEX-%28Common-commands%29.html#gp-and-ibex-ex2"><span class="std std-ref">Exercise 2</span></a></p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">g.change_title(&quot;Exercise</span> <span class="pre">2&quot;)</span></code> to change the title</p></li>
+<li><p>The following code will start the run, wait, and then pause:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_uamps</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">pause</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This code sets the value, run control, and limits on “MY_BLOCK”. Your code may look slightly different depending how you’ve chosen to pass in the arguments:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="s2">&quot;MY_BLOCK&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">lowlimit</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">highlimit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">runcontrol</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The following resumes the run:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">resume</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This code will set the block value and check the subsequent state:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Can use either way of specifying cset for a single block</span>
+<span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">MY_BLOCK</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Can verify in any sensible way, so long as we&#39;re getting g.get_runstate()</span>
+<span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">get_runstate</span><span class="p">()</span><span class="o">==</span><span class="s2">&quot;WAITING&quot;</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s2">&quot;The instrument is waiting&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s2">&quot;The instrument is not waiting&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The following code will scan the block from its original value down to 4. It assumes the initial value is greater than 4:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;MY_BLOCK&quot;</span><span class="p">)[</span><span class="s1">&#39;value&#39;</span><span class="p">]),</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">MY_BLOCK</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This function will end the run:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-3">
+<span id="gp-and-ibex-ex3-solution"></span><h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading"></a></h2>
+<p>From <a class="reference internal" href="genie_python-and-IBEX-%28Scripting%29.html#gp-and-ibex-ex3"><span class="std std-ref">Exercise 3a</span></a>.</p>
+<ul>
+<li><p><strong>(a)</strong> After creating the files, you should have one new file in <code class="docutils literal notranslate"><span class="pre">C:\scripts</span></code> and another in <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\[Instrument</span> <span class="pre">name]\Python\inst</span></code></p></li>
+<li><p><strong>(b)</strong> The function in <code class="docutils literal notranslate"><span class="pre">set_up_instrument.py</span></code> should look something like this:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>def set_up_instrument():</dt><dd><p>g.change_title(“My experiment”)
+g.change_user(“Adrian”)</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p><strong>(b)</strong> The function in <code class="docutils literal notranslate"><span class="pre">run_my_experiment.py</span></code> should look something like this:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_uamps_run</span><span class="p">():</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="c1"># Assume this doesn&#39;t change</span>
+    <span class="n">period</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">get_period</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Total current after </span><span class="si">{0}</span><span class="s2">s: </span><span class="si">{1}</span><span class="s2">.format(i+1, g.get_uamps(period))</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>(c)</strong> This will load the user script: <code class="docutils literal notranslate"><span class="pre">g.load_script(&quot;run_my_experiment.py&quot;)</span></code></p></li>
+<li><p><strong>(d)</strong> This will run the instrument script: <code class="docutils literal notranslate"><span class="pre">inst.set_up_instrument()</span></code></p></li>
+<li><p><strong>(e)</strong> This will run the function from the user script <code class="docutils literal notranslate"><span class="pre">get_uamps_run()</span></code></p></li>
+</ul>
+</section>
+<section id="exercise-4">
+<span id="gp-and-ibex-ex4-solution"></span><h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading"></a></h2>
+<p>From <a class="reference internal" href="genie_python-and-IBEX-%28Scripting%29.html#gp-and-ibex-ex4"><span class="std std-ref">Exercise 4</span></a>.</p>
+<ul class="simple">
+<li><p>You should have created a Python file in <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\[Machine</span> <span class="pre">name]\Python\inst</span></code> that contains something like the following:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python</span><span class="w"> </span><span class="kn">import</span> <span class="n">genie</span> <span class="k">as</span> <span class="n">g</span><span class="p">,</span> <span class="n">BLOCK_NAMES</span> <span class="k">as</span> <span class="n">b</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ramp</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">initial</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="n">block</span><span class="p">)[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="s2">&quot;Problem getting value for block </span><span class="si">{0}</span><span class="s2">. Make sure it exists&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="s2">&quot;Ramping </span><span class="si">{0}</span><span class="s2"> from </span><span class="si">{1}</span><span class="s2"> to </span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">initial</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+
+        <span class="n">current</span> <span class="o">=</span> <span class="n">initial</span>
+        <span class="n">small</span> <span class="o">=</span> <span class="mf">0.0001</span>
+        <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">current</span><span class="o">-</span><span class="n">target</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">small</span><span class="p">:</span>
+            <span class="n">current</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">initial</span> <span class="o">&lt;</span> <span class="n">target</span> <span class="k">else</span> <span class="nb">max</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">current</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">current</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Once you add the line to output the current title, the top of your file should look like this:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="n">g</span><span class="o">.</span><span class="n">get_title</span><span class="p">()</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ramp</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This user-defined function will ramp the two blocks using the instrument function:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ramp_two_blocks</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">block</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="p">[(</span><span class="s2">&quot;MY_BLOCK&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;MY_OTHER_BLOCK&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">)]:</span>
+        <span class="n">inst</span><span class="o">.</span><span class="n">ramp</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>To load the user script, assuming the file is called “ramp_blocks.py”, run the following from the scripting perspective:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">load_script</span><span class="p">(</span><span class="s2">&quot;C:\scripts</span><span class="se">\r</span><span class="s2">amp_blocks.py&quot;</span><span class="p">)</span>
+<span class="n">ramp_two_blocks</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>You should have seen the current title printed during the initialisation of the scripting window</p></li>
+</ul>
+</section>
+<section id="exercise-5">
+<span id="gp-and-ibex-ex5-solution"></span><h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading"></a></h2>
+<p>From <a class="reference internal" href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html#gp-and-ibex-ex5"><span class="std std-ref">Exercise 5</span></a>.</p>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>, the <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">GENIE</span></code> procedure could be written as:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">scan</span><span class="p">(</span><span class="n">start</span><span class="o">=-</span><span class="mi">100</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">nframes</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">nimages</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nimages</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+         <span class="n">setpoint</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">i</span><span class="o">*</span><span class="n">step_size</span><span class="p">)</span> <span class="o">%</span> <span class="mi">360</span>
+         <span class="nb">print</span> <span class="s2">&quot;New angle is: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">setpoint</span><span class="p">)</span>
+
+         <span class="k">if</span> <span class="nb">min</span> <span class="o">&lt;=</span> <span class="n">setpoint</span> <span class="o">&lt;=</span> <span class="nb">max</span><span class="p">:</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="s2">&quot;Image </span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1}</span><span class="s2"> degrees&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">setpoint</span><span class="p">))</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">POSITION</span><span class="o">=</span><span class="n">setpoint</span><span class="p">)</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">waitfor_move</span><span class="p">()</span>
+
+             <span class="nb">print</span> <span class="s2">&quot;Move complete. Counting for </span><span class="si">{0}</span><span class="s2"> frames&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nframes</span><span class="p">)</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">waitfor</span><span class="p">(</span><span class="n">frames</span><span class="o">=</span><span class="n">nframes</span><span class="p">)</span>
+             <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+         <span class="k">else</span><span class="p">:</span>
+             <span class="nb">print</span> <span class="s2">&quot;Not in interval </span><span class="si">{1}</span><span class="s2">&lt;=</span><span class="si">{0}</span><span class="s2">&lt;=</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">setpoint</span><span class="p">,</span> <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We’ve made the following simplifications:</p>
+<ul>
+<li><p>We’ve put the key variables as defaulted input arguments. This allows for maximal flexibility. In reality, which variables we put as arguments and which we default will depend on context. It’s not recommended to put everything as an argument and always provide defaults</p></li>
+<li><p>We’ve taken advantage of several pieces of Python syntax to simplify the logic</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;...&quot;.format(*args)</span></code> for constructing strings</p></li>
+<li><p>Defining a range as a single condition <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;=</span> <span class="pre">b</span> <span class="pre">&lt;=</span> <span class="pre">c</span></code></p></li>
+<li><p>Taking the modulo of a number using <code class="docutils literal notranslate"><span class="pre">%</span></code> to avoid extra calculations</p></li>
+<li><p>Removing the unused line <code class="docutils literal notranslate"><span class="pre">setpoint</span> <span class="pre">=</span> <span class="pre">0.0</span></code></p></li>
+<li><p>Several commands are unnecessary in Python, namely <code class="docutils literal notranslate"><span class="pre">LOCAL</span></code>, <code class="docutils literal notranslate"><span class="pre">ENDLOOP</span></code>, <code class="docutils literal notranslate"><span class="pre">ENDIF</span></code>, <code class="docutils literal notranslate"><span class="pre">ENDPROCEDURE</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="genie_python-and-IBEX-%28Closing-remarks%29.html" class="btn btn-neutral float-left" title="Closing remarks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Matplotlib.html" class="btn btn-neutral float-right" title="Matplotlib" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

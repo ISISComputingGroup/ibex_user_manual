@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create and Manage Synoptics &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create PVs for generic user data" href="How-to-create-PVs-for-generic-user-data.html" />
+    <link rel="prev" title="Create and Manage Device Screens" href="Create-and-Manage-Device-Screens.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Components.html">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Device-Screens.html">Create and Manage Device Screens</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Create and Manage Synoptics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-to-create-PVs-for-generic-user-data.html">Create PVs for generic user data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage-the-DAE.html">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plot-a-Block-Graph.html">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Create and Manage Synoptics</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/Create-and-Manage-Synoptics.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-and-manage-synoptics">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Create and Manage Synoptics</a><a class="headerlink" href="#create-and-manage-synoptics" title="Link to this heading"></a></h1>
+<p>In IBEX, synoptic views provide you with interactive, schematic views of your instrument.  Each icon on a synoptic view represents a device attached to your instrument.  You can tailor the synoptic view to display key PVs next to the device icons.   By double-clicking on an item, you can drill down to see more detail.</p>
+<p>You can define as many synoptic views as you wish for your instrument.</p>
+<p>A synoptic need not encompass the whole instrument.  You can define synoptic views that focus on specific aspects of your instrument - for example, just the beam optics, or just the sample stack and equipment mounted on the sample stack.</p>
+<p>You can also associate a synoptic view with a particular configuration, so that, in effect, the chosen synoptic becomes the default synoptic for that configuration.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#create-and-manage-synoptics" id="id1">Create and Manage Synoptics</a></p>
+<ul>
+<li><p><a class="reference internal" href="#creating-a-synoptic-view" id="id2">Creating a Synoptic View</a></p></li>
+<li><p><a class="reference internal" href="#editing-a-synoptic-view" id="id3">Editing a Synoptic View</a></p></li>
+<li><p><a class="reference internal" href="#deleting-a-synoptic-view" id="id4">Deleting a Synoptic View</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="creating-a-synoptic-view">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Creating a Synoptic View</a><a class="headerlink" href="#creating-a-synoptic-view" title="Link to this heading"></a></h2>
+<p>To create a synoptic view:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">New</span></code> from the <code class="docutils literal notranslate"><span class="pre">Synoptic</span></code> menu.</p></li>
+<li><p>IBEX displays the New Synoptic dialog, which is divided into four panes.</p>
+<ol class="arabic simple">
+<li><p>Instrument Tree</p></li>
+<li><p>Component Details</p></li>
+<li><p>Component  Target Details</p></li>
+<li><p>PV Details</p></li>
+</ol>
+</li>
+<li><p>At the bottom of the dialog are three buttons</p></li>
+</ol>
+<dl class="simple">
+<dt>Synoptic Preview</dt><dd><p>Click on the <code class="docutils literal notranslate"><span class="pre">Synoptic</span> <span class="pre">Preview</span></code> button to get a preview of how your synoptic will appear.  You can click on the <code class="docutils literal notranslate"><span class="pre">Synoptic</span> <span class="pre">Preview</span></code> button at any time.</p>
+</dd>
+<dt>Save as…</dt><dd><p>Click on the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> button to save your changes.  You must provide a name for the synoptic view.  The name of the synoptic can contain only the characters a-z, A-Z, 0-9 and _ (underscore).  The name must also start with a character.</p>
+</dd>
+<dt>Cancel</dt><dd><p>Click on the <code class="docutils literal notranslate"><span class="pre">Cancel</span></code> button to exit the dialog without saving your changes.</p>
+</dd>
+</dl>
+<p><strong>Please note:</strong> After exiting the New Synoptic dialog, you will need explicitly select the synoptic you have just created to see it displayed in the synoptic display area.</p>
+<p>Use the New Synoptic dialog as follows:</p>
+<ol class="arabic simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Component</span></code> button to add a new component to the Instrument Tree.</p>
+<ol class="arabic simple">
+<li><p>When you add a new component, its details are shown in the Component Details pane.  It is given the default name <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Component</span></code> and a default type of <code class="docutils literal notranslate"><span class="pre">UNKNOWN</span></code>.</p></li>
+<li><p>In the Component Details pane, you can adjust the general properties of the component.</p>
+<ul class="simple">
+<li><p>Give it a suitable name</p></li>
+<li><p>Select the type of device it represents.  Click on the drop-down menu to select the device type.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">New</span> <span class="pre">PV</span></code> button to add blocks or PVs to be associated with the component (remember - blocks are just aliases to PVs).  Any blocks or PVs you select will be displayed below the component in the synoptic view.</p></li>
+<li><p>Remove any blocks or PVs previously associated with the component.</p></li>
+<li><p>You can change the order of components in the synoptic view by dragging &amp; dropping any component to the desired position.  As you drag a component, a black line will appear to indicate that you can drop the component and it will be positioned between the two components immediately above and below the black line.</p></li>
+<li><p>If you drop a component on top of another component, it will be positioned as “sub-component”.  “Sub-components” are useful if you have several components that can usefully be grouped together as a composite unit.  “Sub-components” are also useful if you have a complex instrument; you can  use “sub-components” to create a degree of hierarchy in the synoptic.</p></li>
+</ul>
+</li>
+<li><p>If you add an associated block or PV (using the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">New</span> <span class="pre">PV</span></code> button), its details appear in the PV Details pane.  Use the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Block</span></code> or <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">PV</span></code> buttons to choose a specific block or PV to associated with the component.</p></li>
+<li><p>Use the Component Target Details pane to adjust the specific properties of the component (e.g. which model of a device the component represents, which component properties are needed).</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Name:</span></code> field is a drop-down menu.  Select the name/model of the device.  Some names on the list refer to general classes of device (e.g. <code class="docutils literal notranslate"><span class="pre">Eurotherm</span></code> refers to all Eurotherm temperature controllers); other names refer to specific models (e.g. <code class="docutils literal notranslate"><span class="pre">Julabo</span> <span class="pre">FP300</span></code> refers to a specific model of Julabo water bath).  Whether a name is general or specific depends on whether the manufacturer of the device has chosen a common interface to all models of a device or interfaces that are unique to individual models.  When you have made your selection, a short description of the component will be displayed in the <code class="docutils literal notranslate"><span class="pre">Description:</span></code> field.</p></li>
+<li><p>If you are not sure which name/model to select for the <code class="docutils literal notranslate"><span class="pre">Name:</span></code> field, click on the <code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Target</span></code> button.  IBEX will then display a list of names/models filtered by the Component Type field (see Component Details pane).  This will significantly reduce the size of the list (often there will be only one choice).  Choose the most appropriate name/model.</p></li>
+<li><p>Clicking on the <code class="docutils literal notranslate"><span class="pre">Clear</span> <span class="pre">Target</span></code> button will clear any selection in the <code class="docutils literal notranslate"><span class="pre">Name:</span></code> field.</p></li>
+<li><p>Below the <code class="docutils literal notranslate"><span class="pre">Description:</span></code> field is a table of <code class="docutils literal notranslate"><span class="pre">Properties:</span></code>, which lists the properties belonging to the selected component.  Each property has a name and a value.  Select each property in turn to edit the value.</p></li>
+<li><p>On selecting a property, the value of the property will  appear <code class="docutils literal notranslate"><span class="pre">Value:</span></code> field.  A description of the value is provided in the <code class="docutils literal notranslate"><span class="pre">Description:</span></code> field below the <code class="docutils literal notranslate"><span class="pre">Value:</span></code> field.  The default value might be blank.</p></li>
+<li><p>Set the property value.</p></li>
+<li><p><strong>Please note:</strong> Component properties are very specific to individual devices - it is impractical to give definitive advice in a user manual on the correct value for a component property.  The  <code class="docutils literal notranslate"><span class="pre">Description:</span></code> field will provide general advice on the type of value to be entered in the <code class="docutils literal notranslate"><span class="pre">Value:</span></code> field.  If you are unsure about the correct value to choose, please consult with the Experiment Controls team.</p></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Component</span></code> button to duplicate the currently selected component.  If no component is selected, the <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Component</span></code> button is inactive.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Component</span></code> button to delete the currently selected component.  If no component is selected, the <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Component</span></code> button is inactive.</p></li>
+<li><p>Toggle the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Beam</span></code> check-box to show or hide the schematic representation of the beam in the synoptic view.  By default, the beam will be shown.</p></li>
+</ol>
+</section>
+<section id="editing-a-synoptic-view">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Editing a Synoptic View</a><a class="headerlink" href="#editing-a-synoptic-view" title="Link to this heading"></a></h2>
+<p>Editing a synoptic view is similar to creating a synoptic view, except that you are working from an existing synoptic:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Edit</span></code> from the <code class="docutils literal notranslate"><span class="pre">Synoptic</span></code> menu.</p></li>
+<li><p>IBEX displays the Edit Synoptic dialog, which lists all the synoptics defined for your instrument.</p></li>
+<li><p>Choose a synoptic from the list and press the <code class="docutils literal notranslate"><span class="pre">OK</span></code> button.</p></li>
+<li><p>IBEX then displays the Edit Synoptic dialog.</p></li>
+<li><p>This time the Edit Synoptic dialog has three buttons at the bottom of the dialog.</p></li>
+</ol>
+<dl class="simple">
+<dt>Save</dt><dd><p>Clicking on the <code class="docutils literal notranslate"><span class="pre">Save</span></code> button  saves your changes without any further prompting.</p>
+</dd>
+<dt>Save as…</dt><dd><p>Clicking on the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> button operates as described in the previous section.  You can use the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> button to save the synoptic with a new name before making further changes.</p>
+</dd>
+<dt>Cancel</dt><dd><p>Click on the <code class="docutils literal notranslate"><span class="pre">Cancel</span></code> button to exit the Edit Synoptic dialog without saving your changes.</p>
+</dd>
+</dl>
+<p><strong>Please note:</strong> After exiting the Edit Synoptic dialog, you might need to click on the <code class="docutils literal notranslate"><span class="pre">Refresh</span> <span class="pre">Synoptic</span></code> button at the top of the synoptic display area to see the changes you have made.</p>
+<p>Using the Edit Synoptic dialog is the same as the New Synoptic dialog (as described in <a class="reference internal" href="#creating-a-synoptic-view">Creating a Synoptic View</a>).</p>
+</section>
+<section id="deleting-a-synoptic-view">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Deleting a Synoptic View</a><a class="headerlink" href="#deleting-a-synoptic-view" title="Link to this heading"></a></h2>
+<p>To delete a synoptic:</p>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Delete</span></code> from the <code class="docutils literal notranslate"><span class="pre">Synoptic</span></code> menu.</p></li>
+<li><p>IBEX displays the Delete Synoptic dialog, which lists all the synoptics defined for your instrument.</p></li>
+<li><p>Select a synoptic from the list and press the <code class="docutils literal notranslate"><span class="pre">OK</span></code> button</p></li>
+<li><p>IBEX deletes the selected synoptic.</p></li>
+</ol>
+<p><strong>Note 1:</strong> If you attempt to delete the current synoptic, IBEX will indeed delete it (you might have to click the <code class="docutils literal notranslate"><span class="pre">Refresh</span> <span class="pre">Synoptic</span></code> button to see that IBEX really has deleted the current synoptic).</p>
+<p><strong>Note 2:</strong> When you delete a synoptic it really is deleted.  It is no longer available to be used by IBEX. Before deleting a synoptic, please be sure that you really do want to delete it.  If you unintentionally delete a synoptic, please contact the Experiment Controls team - it may be possible to recover the deleted synoptic.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Create-and-Manage-Device-Screens.html" class="btn btn-neutral float-left" title="Create and Manage Device Screens" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="How-to-create-PVs-for-generic-user-data.html" class="btn btn-neutral float-right" title="Create PVs for generic user data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grafana Dashboard &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How do I …?" href="../How-To.html" />
+    <link rel="prev" title="Web Dashboard" href="../The-Web-Dashboard.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Grafana Dashboard</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+      <li class="breadcrumb-item active">Grafana Dashboard</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/web_dashboard/Grafana-Dashboard.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="grafana-dashboard">
+<h1>Grafana Dashboard<a class="headerlink" href="#grafana-dashboard" title="Link to this heading"></a></h1>
+<p>ISIS staff are able to access an enhanced web dashboard plotting mechanism via the site <a class="reference external" href="https://svr2.nd.rl.ac.uk/grafana/">https://svr2.nd.rl.ac.uk/grafana/</a> - login must be by federal id (without CLRC prefix).</p>
+<section id="plotting-multiple-traces">
+<h2>Plotting Multiple Traces<a class="headerlink" href="#plotting-multiple-traces" title="Link to this heading"></a></h2>
+<p>Once logged in, if you click on the “compass” icon on the left (called “explore”) at the top of the page you will then see a “metrics browser” where you can choose a logged item from an instrument. You can either type something into the box to search box (case sensitive) or click on the “metrics browser” menu and choose an item. Logged Blocks on instruments will start with the instrument name and end with <code class="docutils literal notranslate"><span class="pre">_value</span></code> e.g.  <code class="docutils literal notranslate"><span class="pre">IMAT_block_C1D1_FREQ_value</span></code>. After that, you can then add further queries to the same graph to get multiple traces (you may need to press <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Query</span></code> after adding a new trace). These additions are then remembered in the “query history”, when you “clear all” it starts a new item in the query history. This query history is per browser, so if you log in again with the same browser you should be able to go straight to a previous query you made (query history is saved for a few weeks). If you add multiple traces to a graph, you can click on individual trace names displayed below the graph to see just that line, and then click again to evert back. At one time i though “control click” gave additional control, but maybe not anymore.</p>
+</section>
+<section id="creating-and-saving-dashboards">
+<h2>Creating and Saving Dashboards<a class="headerlink" href="#creating-and-saving-dashboards" title="Link to this heading"></a></h2>
+<p><strong>Note:</strong> you are welcome to experiment with this feature, but <strong>please do not invest too much time</strong> at the moment in creating dashboards as the Grafana system is still in evaluation and may not be the permanent eventual solution to web dashboard history.</p>
+<p>It is possible for you to create, save and share your own custom panels of plots - these are called dashboards. To see an example click on the 4 squares icon that gives you the dashboard menu, choose Manage, then click on the IBEX folder and then on “example” – this dashboard displays two panels, a graph and a table. It is possible to create lots of separate dashboards with panels and tables and save them to the server in a folder. You just click on the “+” icon to create a dashboard, which can later be made visible to all or just selected people. It is best to create dashboards in a folder, then permissions can be applied to the folder rather than each individual dashboard in it. So keep dashboards for “users + staff” and “staff only” in separate folders. You will need to contact ISIS Experiment Controls group to change folder permissions if you wish to remove default user access.</p>
+<p>See <a class="reference external" href="https://grafana.com/docs/grafana/latest/getting-started/getting-started/">https://grafana.com/docs/grafana/latest/getting-started/getting-started/</a> for more details</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../The-Web-Dashboard.html" class="btn btn-neutral float-left" title="Web Dashboard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../How-To.html" class="btn btn-neutral float-right" title="How do I …?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

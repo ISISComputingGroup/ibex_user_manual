@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PV Naming Conventions &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FAQ" href="../FAQ.html" />
+    <link rel="prev" title="Process Variables" href="Process-Variables.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Process-Variables.html">Process Variables</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PV Naming Conventions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+      <li class="breadcrumb-item active">PV Naming Conventions</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/concepts/PV-Naming-Conventions.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pv-naming-conventions">
+<h1>PV Naming Conventions<a class="headerlink" href="#pv-naming-conventions" title="Link to this heading"></a></h1>
+<p>Facilities running <a class="reference external" href="http://www.aps.anl.gov/epics/">EPICS</a> usually adopt a convention for naming PVs (<a class="reference internal" href="Process-Variables.html"><span class="doc">Process Variables</span></a>).  ISIS is no exception.</p>
+<p>The purpose of the naming convention is to:</p>
+<ol class="loweralpha simple">
+<li><p>Provide a systematic means of describing the PV,</p></li>
+<li><p>Ensure that the name of the PV is unique (within the facility).</p></li>
+</ol>
+<section id="isis-naming-convention">
+<h2>ISIS Naming Convention<a class="headerlink" href="#isis-naming-convention" title="Link to this heading"></a></h2>
+<p>At ISIS, PV names are chosen to describe a function, not hardware/technology - the PV name is the purpose of a channel and is abstracted from the underlying hardware; the name of the IOC (to which the PV belongs) can, however, reflect technology/hardware/implementation.</p>
+<p>The essential format of the ISIS naming convention is <code class="docutils literal notranslate"><span class="pre">DOMAIN:SUBDOMAIN:TECHNICALAREA:DEVICE:SUBDEVICE:SIGNAL</span></code></p>
+<p>PV names should contain only the following characters <code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, <code class="docutils literal notranslate"><span class="pre">0-9</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code>, <code class="docutils literal notranslate"><span class="pre">:</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>. Notice that lowercase characters are not allowed.  The colon character <code class="docutils literal notranslate"><span class="pre">:</span></code> is used to separate different elements of the PV name; therefore, do not use the <code class="docutils literal notranslate"><span class="pre">:</span></code> for other purposes (e.g. as part of an IOC name).  To break up individual components of a PV name into readable segments, use the underscore, <code class="docutils literal notranslate"><span class="pre">_</span></code> character.</p>
+<p>In addition, PV names must start with a letter and must not end with <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
+<section id="domain-subdomain-names">
+<h3>Domain &amp; Subdomain Names<a class="headerlink" href="#domain-subdomain-names" title="Link to this heading"></a></h3>
+<p>Names appearing in the domain &amp; subdomain levels include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AC</p></td>
+<td><p>ISIS Accelerator/synchrotron related parameter</p></td>
+</tr>
+<tr class="row-odd"><td><p>TG</p></td>
+<td><p>ISIS Target related parameter</p></td>
+</tr>
+<tr class="row-even"><td><p>IN</p></td>
+<td><p>Instrument related parameter</p></td>
+</tr>
+<tr class="row-odd"><td><p>BL</p></td>
+<td><p>Beamline – used if multiple instruments are sharing a common set of equipment; e.g, the muon beamlines</p></td>
+</tr>
+<tr class="row-even"><td><p>TE</p></td>
+<td><p>Testing domain, used by local EPICS developers</p></td>
+</tr>
+</tbody>
+</table>
+<p>In the instrument domain, the sub-domain is the full instrument name.  For example: <code class="docutils literal notranslate"><span class="pre">IN:GEM</span></code> or <code class="docutils literal notranslate"><span class="pre">IN:POLREF</span></code>.</p>
+</section>
+<section id="technical-area-and-device-names">
+<h3>Technical Area and Device Names<a class="headerlink" href="#technical-area-and-device-names" title="Link to this heading"></a></h3>
+<p>Technical Area and Device Names reflect the nature of the device that owns the PV in question.  For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:GEM:MOT</span></code> relates to PVs associated with motion control equipment on GEM.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:ZOOM:VAC</span></code> relates to PVs associated with vacuum equipment on ZOOM</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:IRIS:DAE</span></code> relates to PVs associated with the DAE on IRIS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:IMAT:MOT:MTRccmm</span></code> relates to EPICS motor records on IMAT for a motor on controller number cc, motor number mm. These numbers are zero padded to two digits and start from 1 (e.g. MTR0101 is the first motor on the first controller).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN:LARMOR:MOT:JAWSmm</span></code> mm-th set of jaws on LARMOR (e.g. JAWS01 is the first set of jaws, etc.).</p></li>
+</ul>
+</section>
+<section id="signal-names">
+<h3>Signal Names<a class="headerlink" href="#signal-names" title="Link to this heading"></a></h3>
+<p>Standard signal names include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Signal Name</p></th>
+<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Valid Units</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>POS</p></td>
+<td><p>Position</p></td>
+<td><p>M, mm, cm</p></td>
+</tr>
+<tr class="row-odd"><td><p>STAT</p></td>
+<td><p>Status, State</p></td>
+<td><p>Open, Closed, On, Off, Ok, Error</p></td>
+</tr>
+<tr class="row-even"><td><p>CURR</p></td>
+<td><p>Current</p></td>
+<td><p>A, mA, uA</p></td>
+</tr>
+<tr class="row-odd"><td><p>VOLT</p></td>
+<td><p>Voltage</p></td>
+<td><p>kV, V</p></td>
+</tr>
+<tr class="row-even"><td><p>CMD</p></td>
+<td><p>Device command</p></td>
+<td><p>e.g. write to this to perform an action, such as start/stop a run</p></td>
+</tr>
+<tr class="row-odd"><td><p>SEL</p></td>
+<td><p>Select mode or position</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>TEMP</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-odd"><td><p>COUNT</p></td>
+<td><p>Counter value</p></td>
+<td><p>neutron counts</p></td>
+</tr>
+<tr class="row-even"><td><p>COUNTD</p></td>
+<td><p>Counter value</p></td>
+<td><p>as a distribution, i.e. divided by bin width - so neutron counts per microsecond for example</p></td>
+</tr>
+<tr class="row-odd"><td><p>P, I, D</p></td>
+<td><p>P, I, D values</p></td>
+<td><p>e.g. on a Eurotherm</p></td>
+</tr>
+<tr class="row-even"><td><p>TOF</p></td>
+<td><p>Time of flight</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TIME</p></td>
+<td><p>An absolute timestamp</p></td>
+<td><p>preferably in ISO8601 format</p></td>
+</tr>
+<tr class="row-even"><td><p>FIELD</p></td>
+<td><p>Magnetic field</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>If a value can fluctuate, these refer to the current measured value of a quantity and the signal qualifiers SP and RBV are used to indicate the desired value software requested (setpoint) and the desired value being used in the hardware (RBV)</p>
+<p>For example, for a TEMP signal</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">...:HEATER:TEMP</span></code> Current temperature</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">...:HEATER:TEMP:SP</span></code> Temperature set point (requested value) – this is the value that was input in software and sent to the equipment. Writing to this PV will cause the setpoint to change</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">...:HEATER:TEMP:SP:RBV</span></code>  This is the setpoint “readback”  from hardware, which may differ from SP sent above if, for example, the hardware was unable to exactly match the requested value.  By definition, a readback PV is read-only.  Also if the SP was changed by some other mechanism (e.g. manually on the hardware) <code class="docutils literal notranslate"><span class="pre">:SP</span></code> would not reflect this, but <code class="docutils literal notranslate"><span class="pre">:SP:RBV</span></code> would.</p></li>
+</ul>
+<p><strong>Note:</strong> The RBV suffix can be used more generally e.g. For P,I,D values you could have <code class="docutils literal notranslate"><span class="pre">...:P</span></code> and <code class="docutils literal notranslate"><span class="pre">...:P:RBV</span></code></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Process-Variables.html" class="btn btn-neutral float-left" title="Process Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../FAQ.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

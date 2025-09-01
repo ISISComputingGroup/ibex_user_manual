@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common commands &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Scripting" href="genie_python-and-IBEX-%28Scripting%29.html" />
+    <link rel="prev" title="Getting Started" href="genie_python-and-IBEX-%28Getting-started%29.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Genie-Python-Training.html">Genie Python Training Course</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Introduction%29.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Getting-started%29.html">Getting Started</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Common commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Scripting%29.html">Scripting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html">Converting from OpenGENIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Closing-remarks%29.html">Closing remarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html">Exercise Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../Scripting.html">Scripting</a></li>
+          <li class="breadcrumb-item"><a href="../Genie-Python-Training.html">Genie Python Training Course</a></li>
+      <li class="breadcrumb-item active">Common commands</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/training_course/genie_python-and-IBEX-(Common-commands).rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="common-commands">
+<h1>Common commands<a class="headerlink" href="#common-commands" title="Link to this heading"></a></h1>
+<section id="calling-genie-python-functions">
+<h2>Calling <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> functions<a class="headerlink" href="#calling-genie-python-functions" title="Link to this heading"></a></h2>
+<p>From an IBEX scripting terminal, <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> commands can be accessed via the <code class="docutils literal notranslate"><span class="pre">g</span></code> namespace. For example: <code class="docutils literal notranslate"><span class="pre">g.get_version()</span></code></p>
+<p>You should have noticed immediately after you typed <code class="docutils literal notranslate"><span class="pre">g.</span></code> that an auto-complete window appeared:</p>
+<img alt="../../_images/AutoCompleteWindowBasic.png" src="../../_images/AutoCompleteWindowBasic.png" />
+<p>The window lists the available commands, and the arguments they take, in brackets. A description of the highlighted functions and its arguments is also given. The list will be refined as you type more characters.</p>
+</section>
+<section id="passing-arguments-to-commands">
+<h2>Passing arguments to commands<a class="headerlink" href="#passing-arguments-to-commands" title="Link to this heading"></a></h2>
+<p>Arguments are passed to functions using standard Python syntax. You should already be somewhat familiar with this but here is a quick recap:</p>
+<ul class="simple">
+<li><p>Arguments are passed to functions as a comma-separated list within brackets. For example <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(1,</span> <span class="pre">2)</span></code></p></li>
+<li><p>Arguments may be named or not. For example <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(spectrum=1,</span> <span class="pre">period=2)</span></code></p></li>
+<li><p>Named and un-named arguments can be mixed but the named arguments must appear last. For example <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(1,</span> <span class="pre">period=2)</span></code></p></li>
+<li><p>Un-named arguments will be interpreted in the order of the function definition. Named arguments can be in any order. So <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(period=2,</span> <span class="pre">spectrum=1)</span></code> would be valid but <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(2,</span> <span class="pre">spectrum=1)</span></code> would not.</p></li>
+<li><p>Some arguments may be defaulted in which case they do not need to be included in the argument list. For example <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(1)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">g.add_spectrum(1,</span> <span class="pre">1)</span></code>. You can find out which parameters are optional and their default values in <a class="reference external" href="https://isiscomputinggroup.github.io/genie/genie_python.html#module-genie" title="(in genie_python v0.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">genie</span></code></a>.</p></li>
+</ul>
+<p>As another example, the following three calls are all equivalent:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="acquisition-control">
+<h2>Acquisition control<a class="headerlink" href="#acquisition-control" title="Link to this heading"></a></h2>
+<section id="switch-run-states">
+<h3>Switch run states<a class="headerlink" href="#switch-run-states" title="Link to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">genie_python</span></code> provides commands to switch between various run states:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">begin</span></code>: Begins a new run</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pause</span></code>: Pauses the current run</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resume</span></code>: Resumes the current run</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">end</span></code>: Ends the current run</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">abort</span></code>: Aborts the current run</p></li>
+</ul>
+<p>You can get the current state with:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">get_runstate</span></code>: Gets the states of the current run</p></li>
+</ul>
+<p><strong>WARNING</strong>: Be careful not to assume the resultant state when using these commands. For example, you may run <code class="docutils literal notranslate"><span class="pre">g.begin()</span></code> and then expect the instrument to be running. That may be true, but it could also be waiting, vetoing, or still setup. It’s a good idea to put checks into your scripts that you’ve reached the expected state. This can be done with <code class="docutils literal notranslate"><span class="pre">waitfor_runstate</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+<span class="c1"># Waits for a max of 60 seconds</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor_runstate</span><span class="p">(</span><span class="s2">&quot;RUNNING&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="waiting">
+<h3>Waiting<a class="headerlink" href="#waiting" title="Link to this heading"></a></h3>
+<p>If you want to wait for a specific event before executing an action, you can use one of the <code class="docutils literal notranslate"><span class="pre">waitfor_...</span></code> commands:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_block</span></code>: Wait for a block value to be in a certain range</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_frames</span></code>: Wait until the number of good frames reaches a certain value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_uamps</span></code>: Wait for the total received current to reach 10 uamps</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_time</span></code>: Waits for a specified time. The best way to use this function is with named arguments (e.g. <code class="docutils literal notranslate"><span class="pre">g.waitfor_time(seconds=10)</span></code>) to make it clear what time units the interval is in.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_move</span></code>: Waits for all motors, or a specific motor, to finish moving</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waitfor_runstate</span></code>: Wait for the instrument to reach a given state</p></li>
+</ul>
+<p>This is only a subset of the available functions. For a full list see <a class="reference external" href="https://isiscomputinggroup.github.io/genie/genie_python.html#module-genie" title="(in genie_python v0.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">genie</span></code></a>.</p>
+</section>
+<section id="update-and-store">
+<h3>Update and store<a class="headerlink" href="#update-and-store" title="Link to this heading"></a></h3>
+<p>You can update and store DAE results using:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">update</span></code>: Load the data from the DAE into memory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">store</span></code>: Write the updated DAE information to disk</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">updatestore</span></code>: Load the data from the DAE into memory and store it to disk</p></li>
+</ul>
+</section>
+<section id="worked-example">
+<h3>Worked example<a class="headerlink" href="#worked-example" title="Link to this heading"></a></h3>
+<p>The following script will begin and run, then stop it once it reaches a running state:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Only start if we&#39;re in the correct state</span>
+<span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">get_runstate</span><span class="p">()</span><span class="o">==</span><span class="s2">&quot;SETUP&quot;</span><span class="p">:</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+
+    <span class="c1"># Check that the run has started successfully</span>
+    <span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">get_runstate</span><span class="p">()</span><span class="o">==</span><span class="s2">&quot;RUNNING&quot;</span><span class="p">:</span>
+
+        <span class="c1"># A function that does the sequence of operations associated with the run</span>
+        <span class="n">do_experimental_stuff</span><span class="p">()</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Could not reach a running state&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="blocks">
+<h2>Blocks<a class="headerlink" href="#blocks" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">get_blocks</span></code>: Gets a list of the currently available blocks</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cshow</span></code>: Shows the properties of a named block/all blocks</p>
+<ul>
+<li><p>If given a name (e.g. <code class="docutils literal notranslate"><span class="pre">MY_BLOCK</span></code>) it will return a string containing properties of the block</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">MY_BLOCK</span> <span class="pre">=</span> <span class="pre">10</span> <span class="pre">(runcontrol</span> <span class="pre">=</span> <span class="pre">NO,</span> <span class="pre">lowlimit</span> <span class="pre">=</span> <span class="pre">0.0,</span> <span class="pre">highlimit</span> <span class="pre">=</span> <span class="pre">0.0)</span></code></p></li>
+</ul>
+</li>
+<li><p>If called without arguments, it will show the same information for all blocks, with each block on a new line</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cget</span></code>: Gets properties of a named block as a dictionary of values</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">MY_BLOCK</span> <span class="pre">=</span> <span class="pre">10</span> <span class="pre">(runcontrol</span> <span class="pre">=</span> <span class="pre">NO,</span> <span class="pre">lowlimit</span> <span class="pre">=</span> <span class="pre">0.0,</span> <span class="pre">highlimit</span> <span class="pre">=</span> <span class="pre">0.0)</span></code></p></li>
+<li><p>Unlike <code class="docutils literal notranslate"><span class="pre">cshow</span></code>, a block name must be specified</p></li>
+<li><p>Properties can be accessed as standard Python:</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">block_info</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;MY_BLOCK&quot;</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">block_info</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">block_info</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">]</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;The value of block </span><span class="si">{0}</span><span class="s2"> is </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cset</span></code>: Sets the value for a particular block</p>
+<ul>
+<li><p>Assumes that either a setpoint exists for the underlying value or the block itself points at a setpoint</p></li>
+<li><p>Can be called with block names as named arguments. This is useful for setting multiple blocks</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">g.cset(MY_BLOCK=1,</span> <span class="pre">MY_OTHER_BLOCK=2)</span></code></p></li>
+</ul>
+</li>
+<li><p>The block can also be passed in by name. This is useful when setting advanced block properties</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">g.cset(&quot;MY_BLOCK&quot;,</span> <span class="pre">lowlimit=1,</span> <span class="pre">highlimit=10,</span> <span class="pre">runcontrol=True)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section id="id1">
+<h3>Worked example<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>The following script scans a block between its upper and lower limit:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set some parameters</span>
+<span class="n">max_steps</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">high_limit</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">low_limit</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">block</span> <span class="o">=</span> <span class="s2">&quot;MY_BLOCK&quot;</span>
+<span class="n">abs_step_size</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Set the initial conditions</span>
+<span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">lowlimit</span> <span class="o">=</span> <span class="n">low_limit</span><span class="p">,</span> <span class="n">highlimit</span> <span class="o">=</span> <span class="n">high_limit</span><span class="p">)</span>
+<span class="n">step_size</span> <span class="o">=</span> <span class="n">abs_step_size</span>
+
+<span class="c1"># Run the scan</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_steps</span><span class="p">):</span>
+    <span class="n">block_properties</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+    <span class="n">current_value</span> <span class="o">=</span> <span class="n">block_properties</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Block at or below low limit: Set step positive</span>
+    <span class="k">if</span> <span class="n">current_value</span> <span class="o">&lt;=</span> <span class="n">block_properties</span><span class="p">[</span><span class="s1">&#39;lowlimit&#39;</span><span class="p">]:</span>
+        <span class="n">step_size</span> <span class="o">=</span> <span class="n">abs_step_size</span>
+
+    <span class="c1"># Block at or below high limit: Set step negative</span>
+    <span class="k">if</span> <span class="n">current_value</span>  <span class="o">&gt;=</span> <span class="n">block_properties</span><span class="p">[</span><span class="s1">&#39;highlimit&#39;</span><span class="p">]:</span>
+        <span class="n">step_size</span> <span class="o">=</span> <span class="o">-</span><span class="n">abs_step_size</span>
+
+    <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">current_value</span> <span class="o">+</span> <span class="n">step_size</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="experiment-setup">
+<h3>Experiment setup<a class="headerlink" href="#experiment-setup" title="Link to this heading"></a></h3>
+<p>You can change various elements of the experiment setup using <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>. For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">change_tcb</span></code>: Change the time channel boundaries</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">change_tables</span></code>: Change the wiring, spectra and detector table filename used</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">change_monitor</span></code>: Change the monitor to a specified spectrum and range</p></li>
+</ul>
+<p>If used on their own, these methods will apply their changes immediately. Sometime a set of changes are only consistent/make sense when considered together. If you want to apply several changes at once you can use the following commands:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">change_start</span></code>: Marks the start of a change</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">change_finish</span></code>: Marks that the current set of changes is complete. All changes recorded since <code class="docutils literal notranslate"><span class="pre">g.change_start()</span></code> will be applied</p></li>
+</ul>
+<p>Using these commands will stop a run beginning while changes are still being made.</p>
+</section>
+<section id="experiment-details">
+<h3>Experiment details<a class="headerlink" href="#experiment-details" title="Link to this heading"></a></h3>
+<p>You can change various experiment details with the <code class="docutils literal notranslate"><span class="pre">change_...</span></code> commands:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">change_user</span></code>: Change the current user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">change_title</span></code>: Change the current title</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">change_rb</span></code>: Change the current RB number</p></li>
+</ul>
+<p>There is a generic <cite>change</cite> command that allows you to change multiple properties simultaneously. However, this is recommended for advanced users only.</p>
+<p>You can get the current setup using the equivalent <code class="docutils literal notranslate"><span class="pre">get_...</span></code> commands:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">get_user</span></code>: Get the current user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_title</span></code>: Get the current title</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_rb</span></code>: Get the current RB number</p></li>
+</ul>
+</section>
+</section>
+<section id="exercise-2">
+<span id="gp-and-ibex-ex2"></span><h2><strong>Exercise 2</strong><a class="headerlink" href="#exercise-2" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>This exercise requires that:</p>
+<ul>
+<li><p>You have permission to begin and end runs on the instrument you’re using.</p></li>
+<li><p>The instrument you’re using has been configured so it can successfully enter a running state</p></li>
+<li><p>You have a settable block called “MY_BLOCK”</p></li>
+</ul>
+</li>
+<li><p>Change the title of the run to “Exercise 2”</p></li>
+<li><p>Start a run and wait for 1 uamps before pausing</p></li>
+<li><p>Set the value of “MY_BLOCK” to 5, with a high limit of 10, a low limit of 1 and put it under run control</p></li>
+<li><p>Resume the run</p></li>
+<li><p>Set the value of “MY_BLOCK” to 20 and confirm (using <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>) that the instrument has entered a waiting state</p></li>
+<li><p>Decrease the value of “MY_BLOCK” down in steps of 1 until it reaches 10. Wait for 1 second between steps. Notice how the run state changes back to running when the block value drops below 10.</p></li>
+<li><p>End the run</p></li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex2-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="genie_python-and-IBEX-%28Getting-started%29.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="genie_python-and-IBEX-%28Scripting%29.html" class="btn btn-neutral float-right" title="Scripting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

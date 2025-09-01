@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plot a graph of a block &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Start and Stop IOCs" href="Start-and-Stop-IOCs.html" />
+    <link rel="prev" title="Navigate a Synoptic" href="Navigate-Synoptics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Components.html">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Device-Screens.html">Create and Manage Device Screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Synoptics.html">Create and Manage Synoptics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-to-create-PVs-for-generic-user-data.html">Create PVs for generic user data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Manage-the-DAE.html">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Plot a graph of a block</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/Plot-a-Block-Graph.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="plot-a-graph-of-a-block">
+<h1>Plot a graph of a block<a class="headerlink" href="#plot-a-graph-of-a-block" title="Link to this heading"></a></h1>
+<p>IBEX provides a quick, easy way to plot a graph of a block or PV as a function of time (i.e. a “strip-chart”).</p>
+<section id="id1">
+<h2>Plot a Graph of a Block<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>To plot a graph of a block:</p>
+<ol class="arabic simple">
+<li><p>Enable Log Plotter perspective in Preferences -&gt; Select visible perspectives</p></li>
+<li><p>Select <a class="reference internal" href="../gui/Views.html#view-log-plotter"><span class="std std-ref">Log Plotter</span></a> from the view selector</p></li>
+<li><p>If you have not previously plotted a block, IBEX displays an empty view, prompting you to select a block.  If you have already plotted a block, IBEX restores the graph.</p></li>
+<li><p>To plot a block, simply right-click on a block displayed in the Blocks &amp; Groups view at the top of the IBEX window.</p></li>
+<li><p>Right-clicking displays a pop-up menu and choose <code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">block</span> <span class="pre">history</span></code> from the menu. Here you can either add the trace for this block to an existing plot, or create a new, separate plot.</p></li>
+<li><p>IBEX displays a graph of the selected block as a function of time.</p></li>
+</ol>
+<p>The graph axes will automatically adjust to the range of values that the selected block has experienced.  The graph axes are labelled with the name of the underlying PV (remember, blocks are aliases to PVs).</p>
+</section>
+<section id="plot-a-graph-of-a-pv">
+<h2>Plot a Graph of a PV<a class="headerlink" href="#plot-a-graph-of-a-pv" title="Link to this heading"></a></h2>
+<p>You can choose a PV to be plotted from any OPI, in the same way as choosing a block.  Simply right-click on the PV and select <code class="docutils literal notranslate"><span class="pre">Process</span> <span class="pre">Variable</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Log</span> <span class="pre">Plotter</span></code> from the menu.</p>
+</section>
+<section id="plot-a-graph-of-the-runstate">
+<h2>Plot a Graph of the Runstate<a class="headerlink" href="#plot-a-graph-of-the-runstate" title="Link to this heading"></a></h2>
+<p>Currently the runstate is not easily plottable from a context menu but you can add it manually to a plot. You can do this by right clicking on a plot and selecting <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">PV</span></code> then enter under name <code class="docutils literal notranslate"><span class="pre">IN:%INST%:DAE:RUNSTATE.VAL</span></code>, replacing %INST% with the name of your instrument (e.g. <code class="docutils literal notranslate"><span class="pre">IN:IMAT:DAE:RUNSTATE.VAL</span></code>. This will then show the runstate on the graph with the following values:</p>
+<ol class="arabic simple">
+<li><p>SETUP</p></li>
+<li><p>RUNNING</p></li>
+<li><p>PAUSED</p></li>
+<li><p>WAITING</p></li>
+</ol>
+<p>Higher numbers are transitional states, beginning etc.</p>
+</section>
+<section id="changing-the-appearance-of-a-graph">
+<h2>Changing the Appearance of a Graph<a class="headerlink" href="#changing-the-appearance-of-a-graph" title="Link to this heading"></a></h2>
+<p>Along the top of the graph are a series of buttons which allow you to adjust the appearance of the graph.</p>
+<p>Right clicking on the y-axis allows you to quickly toggle settings such as auto-scale and grid lines, or to edit the axis name and range.</p>
+<p>For more advanced adjustments, you can right-click and select ‘Open Properties Panel’ which will open a panel to the right of the graph (by default), which give you more granular control of the appearance of your graph or plot.</p>
+<p>The ‘When archived data arrives, perform stagger’ option under ‘Value Axis’, when selected, will re-scale and stagger the graph whenever it fetches archived data, for example when adding another block to the graph or increasing the time window.</p>
+<section id="plotting-multiple-traces-on-the-same-axis">
+<h3>Plotting Multiple Traces on the Same Axis<a class="headerlink" href="#plotting-multiple-traces-on-the-same-axis" title="Link to this heading"></a></h3>
+<p>The log plotter allows you to display multiple traces on the same value axis so they scale together. The way to do this is as follows:</p>
+<ol class="arabic simple">
+<li><p>Right click on the graph and select <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Properties</span> <span class="pre">Panel</span></code></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Traces</span></code> tab, find the column titled <code class="docutils literal notranslate"><span class="pre">Axis</span></code></p></li>
+<li><p>In the row of any trace, click the axis entry, then select the axis of the trace you want to add it to from the drop-down list.</p></li>
+<li><p>They will now be displayed along the same value axis.</p></li>
+</ol>
+<p>As of Release Version 5.5, you can right click on the block you want to add and select the option to add to an existing axis.</p>
+</section>
+</section>
+<section id="adjusting-time-axis-on-log-plotter">
+<h2>Adjusting Time Axis on Log Plotter<a class="headerlink" href="#adjusting-time-axis-on-log-plotter" title="Link to this heading"></a></h2>
+<p>The time axis can be manipulated to adjust its start and end time using the <code class="docutils literal notranslate"><span class="pre">Time</span></code> option. This option could be found under the plotted PVs tab.</p>
+<img alt="../_images/log_plotter_time.png" src="../_images/log_plotter_time.png" />
+<p>The following pop-up window will show up once the <code class="docutils literal notranslate"><span class="pre">Time</span></code> option is chosen.</p>
+<img alt="../_images/time_scale_menu_open.png" src="../_images/time_scale_menu_open.png" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Navigate-Synoptics.html" class="btn btn-neutral float-left" title="Navigate a Synoptic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Start-and-Stop-IOCs.html" class="btn btn-neutral float-right" title="Start and Stop IOCs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

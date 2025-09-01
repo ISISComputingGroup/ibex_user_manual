@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FZJ Fermi chopper (used on MERLIN, MAPS, MARI) &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KEPCO Power Supply" href="Kepco-Power-Supply.html" />
+    <link rel="prev" title="Eurotherm" href="Eurotherm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Eurotherm.html">Eurotherm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">FZJ Fermi chopper (used on MERLIN, MAPS, MARI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kepco-Power-Supply.html">KEPCO Power Supply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Lakeshore-340.html">Lakeshore 340</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+      <li class="breadcrumb-item active">FZJ Fermi chopper (used on MERLIN, MAPS, MARI)</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/device_specific/FZJ-Fermi-Chopper.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fzj-fermi-chopper-used-on-merlin-maps-mari">
+<h1>FZJ Fermi chopper (used on MERLIN, MAPS, MARI)<a class="headerlink" href="#fzj-fermi-chopper-used-on-merlin-maps-mari" title="Link to this heading"></a></h1>
+<p>The FZJ Fermi Chopper has a relatively complex IOC due to its somewhat idiosyncratic communications behaviour. The following things are non-standard:</p>
+<ul class="simple">
+<li><p>Custom checksum algorithm in stream device. This is specific to this style of Fermi chopper.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aSub</span></code> record to parse a response string from the hardware.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aSub</span></code> record to decide how to send the speed setpoint to the device</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aSub</span></code> record to decide whether a given command is allowed to be sent</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SNL</span></code> state machine to ensure that setpoints and their readbacks stay in sync (for both gate width and phase delay)</p></li>
+<li><p>There is logic in the DB records to prevent sending a speed setpoint that is equal to the current speed setpoint readback.</p></li>
+<li><p>There is (equipment) safety logic in the IOC. For more details see below.</p></li>
+</ul>
+<section id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h2>
+<p>Depending on which specific Fermi chopper system is being used, there are slight variations in the communications protocol of the choppers. The expected settings are:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Beamline</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">INST</span></code> macro</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">MHZ</span></code> macro</p></th>
+<th class="head"><p>Drive parameters</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MERLIN</p></td>
+<td><p>merlin</p></td>
+<td><p>50.4</p></td>
+<td><p>“MERLIN small parameters” or “MERLIN large parameters” (see Note 1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>MARI</p></td>
+<td><p>merlin (see Note 2)</p></td>
+<td><p>50.4</p></td>
+<td><p>“MERLIN large parameters” (See Note 3)</p></td>
+</tr>
+<tr class="row-even"><td><p>MAPS</p></td>
+<td><p>maps</p></td>
+<td><p>18.0</p></td>
+<td><p><em>The controller on MAPS does not support changing parameters</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note 1:</strong> I believe this choice depends on which physical rotor is installed into the chopper</p>
+<p><strong>Note 2:</strong> The controller on MARI is identical to MERLIN’s from a communications perspective - hence re-using MERLIN’s communications code.</p>
+<p><strong>Note 3:</strong>  I believe the “HET/MARI” parameters refer to a very old version of the hardware, before the chopper was upgraded to be more like MERLIN’s. Chopper group may be able to give a more definitive answer.</p>
+</section>
+<section id="diagnostic-logs">
+<h2>Diagnostic logs<a class="headerlink" href="#diagnostic-logs" title="Link to this heading"></a></h2>
+<p>The logs for the Fermi chopper are kept in <code class="docutils literal notranslate"><span class="pre">C:\Instrument\var\logs\ioc\FERMCHOP_01-&lt;date&gt;</span></code>. These logs contain the following information:</p>
+<ul class="simple">
+<li><p>All commands that are used to start the driver. Whenever the driver first starts, there will be a large block of <code class="docutils literal notranslate"><span class="pre">epicsEnvSet</span></code> commands. The startup process is finished when an <code class="docutils literal notranslate"><span class="pre">epics&gt;</span></code> prompt comes up in the log (there will be lots of commands in between - these can be ignored)</p></li>
+<li><p>Communication conditions and problems, for example unexpected replies from the chopper. These messages may include parts of the raw (hexadecimal) response from the chopper.</p></li>
+<li><p>Information about the chopper state (e.g. interlock statuses, temperatures out of range) <strong>when they transition between valid/invalid states</strong>. These messages are prefixed with <code class="docutils literal notranslate"><span class="pre">Chopper</span> <span class="pre">status:</span></code></p></li>
+<li><p>Information about actions that the driver is taking to ensure the settings stay correct. There is a state machine that detects when the chopper forgets it’s settings and resends the correct settings. These messages are prefixed with <code class="docutils literal notranslate"><span class="pre">Keep</span> <span class="pre">SP</span> <span class="pre">and</span> <span class="pre">RBV</span> <span class="pre">in</span> <span class="pre">sync</span></code>.</p></li>
+<li><p>Messages regarding whether certain commands were accepted by the driver. These messages are prefixed with <code class="docutils literal notranslate"><span class="pre">commandCheck</span></code>. The driver will reject commands (and print a message in the log) if:</p>
+<ul>
+<li><p>The user attempts to spin up the chopper with the bearings off</p></li>
+<li><p>The user attempts to resend a “spin-up” command while the chopper is set and spinning at 600Hz. This is a mitigation for the 600Hz issue experienced on MERLIN, details further down this page.</p></li>
+<li><p>The user attempts to switch off the magnetic bearings while the actual chopper speed is &gt;10Hz.</p></li>
+<li><p>When the driver sends a command successfully, it will also print a message in the log with the numeric command that it has send. The translation for these numeric commands is:</p>
+<ul>
+<li><p>1: Switch drive on/stop mode</p></li>
+<li><p>2: Switch drive off</p></li>
+<li><p>3: Switch drive on/run mode</p></li>
+<li><p>4: Switch magnetic bearings on</p></li>
+<li><p>5: Switch magnetic bearings off</p></li>
+<li><p>6: Use MERLIN large chopper parameters</p></li>
+<li><p>7: Use MARI chopper parameters</p></li>
+<li><p>8: Use MERLIN small chopper parameters</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="unexpected-delay-speed-gate-width-settings">
+<h2>Unexpected Delay / Speed / Gate Width settings<a class="headerlink" href="#unexpected-delay-speed-gate-width-settings" title="Link to this heading"></a></h2>
+<p><strong>Delay: high and low byte ordering</strong></p>
+<p>The delay setpoint can be wrong if the high byte and low byte of the setpoint are received in the wrong order. The observed behaviour in this state is that the setpoint readback will appear to be correct, but the actual delay will home in on a different (incorrect) value. Resending the delay setpoint in the correct order fixes this state.</p>
+<p>This problem has been solved by defining the order of the packets in the stream device protocol, including an appropriate wait between them. For more details, see issue #2628.</p>
+<p><strong>Gate width setpoint readback is wrong</strong></p>
+<p>Occasionally the device will get confused and reset its gate width to a semi-random value. Resending the gate width causes it to pick up the correct value again. This problem is mitigated in the driver by having a state machine which keeps the gate width and gate width readback in sync.</p>
+<p><strong>Set commands are ignored</strong></p>
+<p>Sometimes the chopper crate simply ignores a setpoint which was sent. Unfortunately the crate does not respond to a set command so we can’t tell if there was a comms error. This problem is mitigated in the driver by having state machines which keep the setpoints and their readbacks in sync for gate width, phase delay and chopper speed.</p>
+<p>Additionally, the chopper speed is now put under run control as part of MERLIN’s <code class="docutils literal notranslate"><span class="pre">set_ei</span></code> script to make it more obvious if the chopper speed isn’t in the expected range.</p>
+<p><strong>600Hz issue [Specific to MERLIN]</strong></p>
+<p>At 600Hz, the chopper exhibits strange behaviour:
+- If the speed setpoint is already 600Hz and a speed setpoint of 600Hz is resent, the chopper gets confused. The phase delay will appear to be zero forever. To get out of this state, you need to send a different setpoint, wait for the actual device speed to drop (e.g. to 599Hz), and then 600Hz can be set successfully. This problem is mitigated in the driver by not sending a speed setpoint which is equal to the current speed setpoint readback.</p>
+<ul class="simple">
+<li><p>If the device is at 600Hz and already spinning, sending the “switch drive on and run” command causes the same bug as above. This problem is mitigated in the driver by disallowing the “switch drive on and run” command from being sent if the chopper speed is &gt;595Hz and the setpoint readback is 600Hz and the drive generator is already on.</p></li>
+</ul>
+<p>For more details, see issue #2741.</p>
+</section>
+<section id="won-t-phase-correctly-delay-is-fluctuating">
+<h2>Won’t phase correctly / delay is fluctuating<a class="headerlink" href="#won-t-phase-correctly-delay-is-fluctuating" title="Link to this heading"></a></h2>
+<p><strong>Synchrotron off</strong></p>
+<p>The phase delay of the chopper is a delay between the synchrotron pulse and the the chopper being in a specific position. If the synchrotron is not running the delay will appear to fluctuate wildly as there is no reference synchrotron pulse. This should rectify itself without intervention and the chopper will re-phase once the synchrotron timing pulse comes back online.</p>
+<p><strong>Won’t phase correctly (unknown causes)</strong></p>
+<p>Occasionally the chopper will get into a state where it can’t phase correctly. The symptom is that the phase readback fluctuates wildly and never settles on the phase setpoint. We are unsure of the root cause. Sending the chopper to a different speed setpoint and then back to the original setpoint seems to let the chopper phase correctly.</p>
+<p>When plotting the phase using the instrument archive, you may see a “beating” pattern like below. Here the amplitude of the oscillation is ~30us, a typical phase window would be ~10us so this will result in the DAE vetoing a percentage of frames based on the chopper being “out of phase” at that time. As noted in issue #4764 the <code class="docutils literal notranslate"><span class="pre">set_ei</span></code> method on MERLIN will attempt to correct for this.</p>
+</section>
+<section id="drive-turns-off-unexpectedly">
+<h2>Drive turns off unexpectedly<a class="headerlink" href="#drive-turns-off-unexpectedly" title="Link to this heading"></a></h2>
+<p>There are a variety of hardware &amp; software conditions that can cause the chopper to spin down.</p>
+<p><strong>Hardware / firmware conditions</strong>
+Firstly, check in the “advanced” tab of the OPI - any of the following will cause the device to spin down:</p>
+<ul class="simple">
+<li><p>Interlock open (the scientists know how to reset this)</p>
+<ul>
+<li><p>Note, the interlock only has to report “open” for a moment for the chopper to spin down. If the vacuum gauge is faulty, it may trip the interlock momentarily, which will cause the chopper to spin down but when subsequently looking at the OPI the interlock will appear OK. If this is the case then contact the chopper group as this is a hardware fault and is not something we can compensate for in software.</p></li>
+</ul>
+</li>
+<li><p>Electronics or motor temperatures too hot (not sure where the firmware limit is - may be 50C according to manual but this is not clear)</p></li>
+<li><p>A few other (less common) conditions indicated by red interlock LEDs on the OPI</p></li>
+</ul>
+<p><strong>Software conditions</strong>
+There are (equipment) safety checks in the IOC which will cause the IOC to request a spin down. Hitting any of these conditions will cause a message to be logged containing the words <code class="docutils literal notranslate"><span class="pre">this</span> <span class="pre">will</span> <span class="pre">cause</span> <span class="pre">the</span> <span class="pre">chopper</span> <span class="pre">to</span> <span class="pre">spin</span> <span class="pre">down</span></code> - this can be searched for in the log file if it is believed that the IBEX driver has caused the chopper to spin down.</p>
+<ul class="simple">
+<li><p>If the electronics temperatures or motor temperatures go above 45 Celsius.</p>
+<ul>
+<li><p><strong>Electronics overheats occur somewhat frequently on MERLIN, especially during hot weather.</strong></p></li>
+<li><p>Need to wait for create to cool sufficiently and then spin the chopper back up as normal.</p></li>
+<li><p>Instrument scientists aware of this and know how to reset it.</p></li>
+</ul>
+</li>
+<li><p>If the auto zero voltages are out of range (absolute value higher than 3 volts)</p></li>
+<li><p>If the actual chopper speed is above 606Hz</p></li>
+<li><p>If the magnetic bearing is off while the chopper is at speed</p></li>
+</ul>
+</section>
+<section id="crate-does-not-respond-crate-responds-infrequently">
+<h2>Crate does not respond / Crate responds infrequently<a class="headerlink" href="#crate-does-not-respond-crate-responds-infrequently" title="Link to this heading"></a></h2>
+<p><strong>VISA vs Asyn serial [Specific to Maps]</strong>
+An issue was seen when first commissioning the MAPS Fermi under EPICS. Symptoms were very odd:</p>
+<ul class="simple">
+<li><p>Cannot communicate using VISA nor Asyn under EPICS</p></li>
+<li><p>If chopper crate and instrument PC are power cycled, may need to run LabVIEW driver once before epics can talk. We are still not sure why this is.</p></li>
+<li><p>If EPICS+Visa is subsequently run, it will upset the comms and will need to run the LabVIEW to “clear” the error</p></li>
+</ul>
+<p><strong>Shortened status command [Specific to Maps]</strong>
+On MAPS, the crate’s communications layer can fail, causing the device to ignore the standard polling command (<code class="docutils literal notranslate"><span class="pre">#0000000$</span></code>). To recover from this state, send the shortened command <code class="docutils literal notranslate"><span class="pre">0$</span></code> repeatedly until you get a response. The IOC should automatically do this whenever it detects no response to the standard command.</p>
+</section>
+<section id="chopper-refuses-to-spin-up">
+<h2>Chopper refuses to spin up<a class="headerlink" href="#chopper-refuses-to-spin-up" title="Link to this heading"></a></h2>
+<p><strong>IOC command logic</strong></p>
+<p>There is logic in the IOC to prevent sending commands which would put the chopper into a disallowed state. For example, it is not permitted to send “switch drive on and run” if the magnetic bearings are off. Check the IOC log - there should be entries saying either “…sending command to device…” or “…refusing to send command to device…”.</p>
+<p><strong>Bearings need power cycling</strong></p>
+<p>First CAREFULLY check that the chopper is stopped. The chopper will be damaged if bearings get turned off while it is spinning. Then hit “turn drive off and stop” in IBEX, wait a few seconds, delevitate the chopper by switching off the magnetic bearings, wait a few seconds, turn the bearings on again, wait a few seconds, and hit “switch drive on and run”.</p>
+</section>
+<section id="chopper-veto-stuck-on">
+<h2>Chopper veto stuck on<a class="headerlink" href="#chopper-veto-stuck-on" title="Link to this heading"></a></h2>
+<p><strong>Veto cable not properly plugged in</strong></p>
+<p>Ask DAE experts to unplug and re-plug in the veto cable.</p>
+<p><strong>Chopper phase fluctuating causing intermittent veto</strong></p>
+<p>If you are getting a fluctuating Fermi chopper veto, e.g. it is vetoing 50% of frames, it may be because the phase is fluctuating in and out of range. See section above about delay fluctuating for possible resolutions.</p>
+</section>
+<section id="chopper-run-control-settings-incorrect">
+<h2>Chopper run control settings incorrect<a class="headerlink" href="#chopper-run-control-settings-incorrect" title="Link to this heading"></a></h2>
+<p><strong>Configurations have been reloaded</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">set_ei</span></code> script (at least on MERLIN) puts the chopper under run control. If a config is reloaded then these settings will be lost. To recover, simply re-run <code class="docutils literal notranslate"><span class="pre">set_ei</span></code>.</p>
+</section>
+<section id="chopper-speed-stuck-between-1-49hz">
+<h2>Chopper speed stuck between 1-49Hz<a class="headerlink" href="#chopper-speed-stuck-between-1-49hz" title="Link to this heading"></a></h2>
+<p><strong>Broken speed sensor</strong></p>
+<p>The symptom is that the chopper will be stuck at a specific speed, e.g. <code class="docutils literal notranslate"><span class="pre">28</span> <span class="pre">Hz</span></code> indefinitely when attempting to spin down, or for a few minutes (until it physically passes the relevant speed) when spinning up. The choppers cannot be commanded by IBEX to run at speeds that are not multiples of 50Hz. This will also cause the chopper lift to be inoperative (as the chopper lift still believes the chopper is spinning and therefore inhibits motion).</p>
+<p>The actual speed shown on the front panel of the chopper is shown in <code class="docutils literal notranslate"><span class="pre">rpm</span></code>, but IBEX works in <code class="docutils literal notranslate"><span class="pre">Hz</span></code>, therefore you can compare the two by multiplying/dividing by 60. If the front panel of the chopper also shows the same issue with a stuck speed, then it is likely a mechanical problem - e.g. a broken speed sensor - consult with the chopper team.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Eurotherm.html" class="btn btn-neutral float-left" title="Eurotherm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Kepco-Power-Supply.html" class="btn btn-neutral float-right" title="KEPCO Power Supply" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

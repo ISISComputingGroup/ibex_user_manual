@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muon Front End Scripting &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="IMAT Motors" href="IMAT-motors.html" />
+    <link rel="prev" title="Engin-X Sample Stack" href="Engin-X-Sample-Stack.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Engin-X-Sample-Stack.html">Engin-X Sample Stack</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Muon Front End Scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMAT-motors.html">IMAT Motors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+      <li class="breadcrumb-item active">Muon Front End Scripting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/inst_specific/Guidance-on-Writing-Scripts-for-the-Muon-Front-End.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="muon-front-end-scripting">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Muon Front End Scripting</a><a class="headerlink" href="#muon-front-end-scripting" title="Link to this heading"></a></h1>
+<p>This page contains guidance on writing scripts for the Muon Front-End control PC (NDEMUONFE).  The information on this page is specific to NDEMUONFE and is not relevant to other control PCs.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#muon-front-end-scripting" id="id1">Muon Front End Scripting</a></p>
+<ul>
+<li><p><a class="reference internal" href="#starting-stopping-runs-remotely" id="id2">Starting &amp; Stopping Runs Remotely</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ensuring-the-control-machine-has-sufficient-permission-to-begin-a-run" id="id3">Ensuring the control machine has sufficient permission to begin a run</a></p></li>
+<li><p><a class="reference internal" href="#using-the-script-to-control-the-runs" id="id4">Using the script to control the runs</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#using-blocks-to-write-tuning-control-scripts" id="id5">Using Blocks to Write Tuning Control Scripts</a></p></li>
+<li><p><a class="reference internal" href="#how-to-alter-write-access-to-blocks-for-each-instrument" id="id6">How to alter write access to blocks for each instrument</a></p></li>
+<li><p><a class="reference internal" href="#how-to-re-apply-settings" id="id7">How to Re-apply Settings</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="starting-stopping-runs-remotely">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Starting &amp; Stopping Runs Remotely</a><a class="headerlink" href="#starting-stopping-runs-remotely" title="Link to this heading"></a></h2>
+<section id="ensuring-the-control-machine-has-sufficient-permission-to-begin-a-run">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Ensuring the control machine has sufficient permission to begin a run</a><a class="headerlink" href="#ensuring-the-control-machine-has-sufficient-permission-to-begin-a-run" title="Link to this heading"></a></h3>
+<p>The relevant code can be found in the GitHub repository:</p>
+<p><a class="reference external" href="https://github.com/ISISComputingGroup/mfe_control_scripts">https://github.com/ISISComputingGroup/mfe_control_scripts</a></p>
+<p>The code is written in Python and relies on the win32com module. Please ensure this module is installed before running.</p>
+<p>There is a file, run_interactively.py, which can be used to trigger commands on multiple machines interactively. It is currently set up to run on the 3 MFE instrument PCs. You can adjust it by changing the list of machine names in the variable MACHINES. To run just launch the script with Python.</p>
+<p>Note that the script relies on the host machine and user having sufficient DCOM permissions to talk to the three instrument machines which can be achieved through the Windows credential manager.</p>
+<ol class="arabic simple">
+<li><p>Go to the start menu</p></li>
+<li><p>Type “Credential Manager” and open the Credential Manager</p></li>
+<li><p>You will need the credentials for all the machines you want to connect too. The “Persistence” field for the credentials must be “Enterprise” or higher (not “Local machine”).</p></li>
+<li><dl class="simple">
+<dt>To add a new credential</dt><dd><ol class="arabic simple">
+<li><p>Click “Add a Windows credential”</p></li>
+<li><p>Enter the credentials (e.g. NDXMUSR, NDXMUSR\spudulike, [PASSWORD])</p></li>
+<li><p>Click “OK”</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="using-the-script-to-control-the-runs">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Using the script to control the runs</a><a class="headerlink" href="#using-the-script-to-control-the-runs" title="Link to this heading"></a></h3>
+<p>To write your scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">multiple_dae_controller</span><span class="w"> </span><span class="kn">import</span> <span class="n">MultipleDaeController</span>
+<span class="n">controller</span> <span class="o">=</span> <span class="n">MultipleDaeController</span><span class="p">()</span>
+<span class="n">waitfor_seconds</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;NDXHIFI&quot;</span><span class="p">,</span><span class="s2">&quot;NDXMUSR&quot;</span><span class="p">,</span><span class="s2">&quot;NDXEMU&quot;</span><span class="p">]:</span>
+    <span class="n">controller</span><span class="o">.</span><span class="n">add_machine</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">waitfor_seconds</span><span class="p">)</span>
+<span class="n">controller</span><span class="o">.</span><span class="n">run_on_all</span><span class="p">(</span><span class="s2">&quot;get_run_state&quot;</span><span class="p">)</span>
+<span class="n">controller</span><span class="o">.</span><span class="n">run_on_machines</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,[</span><span class="s2">&quot;NDXHIFI&quot;</span><span class="p">,</span><span class="s2">&quot;NDXMUSR&quot;</span><span class="p">])</span>
+<span class="n">controller</span><span class="o">.</span><span class="n">run_on_machine</span><span class="p">(</span><span class="s2">&quot;begin&quot;</span><span class="p">,</span><span class="s2">&quot;NDXEMU&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following methods are currently supported:</p>
+<ul class="simple">
+<li><p>begin</p></li>
+<li><p>end</p></li>
+<li><p>pause</p></li>
+<li><p>resume</p></li>
+<li><p>abort</p></li>
+<li><p>get_run_state</p></li>
+<li><p>get_events</p></li>
+<li><p>get_frames</p></li>
+<li><p>get_counts</p></li>
+<li><p>waitfor_counts</p></li>
+<li><p>waitfor_frames</p></li>
+<li><p>waitfor_events</p></li>
+</ul>
+</section>
+</section>
+<section id="using-blocks-to-write-tuning-control-scripts">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Using Blocks to Write Tuning Control Scripts</a><a class="headerlink" href="#using-blocks-to-write-tuning-control-scripts" title="Link to this heading"></a></h2>
+<p>A <a class="reference external" href="CreateandManageConfigurations">configuration</a> with blocks should be created as for any IBEX instrument on NDEMUONFE.</p>
+<p>On an appropriate system, import <a class="reference external" href="http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html">genie_python</a> to Mantid, and set your instrument to be “MUONFE”, then get the associated blocks.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_instrument</span><span class="p">(</span><span class="s2">&quot;MUONFE&quot;</span><span class="p">)</span>
+<span class="n">get_blocks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You should now get a list of blocks on the remote system. These can then be used as standard for scripting by writing to and from those values.</p>
+<p>Return to <a class="reference internal" href="#contents">Contents</a>.</p>
+</section>
+<section id="how-to-alter-write-access-to-blocks-for-each-instrument">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">How to alter write access to blocks for each instrument</a><a class="headerlink" href="#how-to-alter-write-access-to-blocks-for-each-instrument" title="Link to this heading"></a></h2>
+<p>The initial gateway setup has been undertaken. Should the computers being provided control need to be changed, then the gateway should be restarted at the very least, and it would be wise to consider restarting the whole server.</p>
+<p>For any system in R55 which requires full control of all aspects of NDEMUONFE ensure that there is an entry in globals.txt on NDEMUONFE of the format</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ACF_IH1</span><span class="o">=</span><span class="n">computer_name</span>
+</pre></div>
+</div>
+<p>You can specify up to four of these.</p>
+<p>Gateway settings have been set up to allow NDX and NDL systems to control each instrument respectively (so the items used by MUSR have  write access from MUSR). There are more detailed instructions on how to set up these aspects of the gateway <a class="reference external" href="https://isiscomputinggroup.github.io/ibex_developers_manual/system_components/Gateway.html" title="(in IBEX Developer's Manual)"><span class="xref std std-doc">in the developer’s manual</span></a></p>
+<p>Machines listed in the globals.txt can be restricted to read-only access by sending the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caput</span> <span class="n">IN</span><span class="p">:</span><span class="n">MUONFE</span><span class="p">:</span><span class="n">CS</span><span class="p">:</span><span class="n">EXCLUSIVE</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>There is a similar PV for each instrument, so to limit HIFI to read-only:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caput</span> <span class="n">IN</span><span class="p">:</span><span class="n">MUONFE</span><span class="p">:</span><span class="n">CS</span><span class="p">:</span><span class="n">EXCLUSIVE</span><span class="p">:</span><span class="n">HIFI</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Or to allow for writing to the EMU values:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caput</span> <span class="n">IN</span><span class="p">:</span><span class="n">MUONFE</span><span class="p">:</span><span class="n">CS</span><span class="p">:</span><span class="n">EXCLUSIVE</span><span class="p">:</span><span class="n">EMU</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</section>
+<section id="how-to-re-apply-settings">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">How to Re-apply Settings</a><a class="headerlink" href="#how-to-re-apply-settings" title="Link to this heading"></a></h2>
+<p>IOCs controlling Power Supply Units (PSUs) have the option to re-apply their set-points (current, voltage, status on/off) the next time they are restarted. The following may be useful if, for any reason, the PSUs are restarted and lose their set-points, and you need a quick way to re-apply them all at once rather than manually one by one.</p>
+<p>The relevant configuration must be set up in the following way:</p>
+<ol class="arabic simple">
+<li><p>Open the Edit Configuration dialog (by selecting <code class="docutils literal notranslate"><span class="pre">Configurations</span> <span class="pre">&gt;</span> <span class="pre">Edit</span></code> from the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> menu).</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">IOCs</span></code> tab, locate the correct IOC and make sure both the <code class="docutils literal notranslate"><span class="pre">Auto-start?</span></code> and <code class="docutils literal notranslate"><span class="pre">Auto-restart?</span></code> boxes for the IOC are checked.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">IOC</span> <span class="pre">Macros</span></code> tab, select the correct IOC and set the macro <code class="docutils literal notranslate"><span class="pre">SP_AT_STARTUP</span></code> to <code class="docutils literal notranslate"><span class="pre">YES</span></code> (default is <code class="docutils literal notranslate"><span class="pre">NO</span></code>).</p></li>
+</ol>
+<p>The set-points can be re-applied by reloading the current configuration (which will restart the IOCs), with the following <a class="reference external" href="http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html">genie_python</a> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">reload_current_config</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that the set-points can also be re-applied by restarting the IOCs individually in the IBEX GUI (as long as the <code class="docutils literal notranslate"><span class="pre">SP_AT_STARTUP</span></code> macro is set as above).</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Engin-X-Sample-Stack.html" class="btn btn-neutral float-left" title="Engin-X Sample Stack" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="IMAT-motors.html" class="btn btn-neutral float-right" title="IMAT Motors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

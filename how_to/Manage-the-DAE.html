@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage the DAE &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Navigate a Synoptic" href="Navigate-Synoptics.html" />
+    <link rel="prev" title="Create PVs for generic user data" href="How-to-create-PVs-for-generic-user-data.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../How-To.html">How do I …?</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Add-blocks-to-run-title.html">Add blocks to run title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Components.html">Create and Manage Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Configurations.html">Create and Manage Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Device-Screens.html">Create and Manage Device Screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Create-and-Manage-Synoptics.html">Create and Manage Synoptics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="How-to-create-PVs-for-generic-user-data.html">Create PVs for generic user data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Manage the DAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigate-Synoptics.html">Navigate a Synoptic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plot-a-Block-Graph.html">Plot a graph of a block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Start-and-Stop-IOCs.html">Start and Stop IOCs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../How-To.html">How do I …?</a></li>
+      <li class="breadcrumb-item active">Manage the DAE</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/how_to/Manage-the-DAE.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="manage-the-dae">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Manage the DAE</a><a class="headerlink" href="#manage-the-dae" title="Link to this heading"></a></h1>
+<p>The Data Acquisition Electronics (DAE) is the hardware which collects neutron or muon data. The DAE is controlled by the ICP (see <a class="reference internal" href="../Key-Concepts-in-IBEX.html"><span class="doc">Concepts</span></a>), which informs the DAE when to start and stop collecting data from the instrument detectors. The ICP also receives sample environment information and combines it with the detector data and is responsible for transferring the final combined dataset to a data file.</p>
+<p>The DAE view communicates with the ICP to control the DAE. The DAE can be managed from the DAE view of the client. The DAE view is split into some tabs and sub tabs which are listed with their functions below.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#manage-the-dae" id="id1">Manage the DAE</a></p>
+<ul>
+<li><p><a class="reference internal" href="#run-summary" id="id2">Run Summary</a></p>
+<ul>
+<li><p><a class="reference internal" href="#run-summary-fields" id="id3">Run Summary Fields</a></p></li>
+<li><p><a class="reference internal" href="#message-log" id="id4">Message Log</a></p></li>
+<li><p><a class="reference internal" href="#run-control-buttons" id="id5">Run Control Buttons</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#experiment-setup" id="id6">Experiment Setup</a></p>
+<ul>
+<li><p><a class="reference internal" href="#time-channels" id="id7">Time Channels</a></p></li>
+<li><p><a class="reference internal" href="#data-acquisition" id="id8">Data Acquisition</a></p></li>
+<li><p><a class="reference internal" href="#periods" id="id9">Periods</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#run-information" id="id10">Run Information</a></p></li>
+<li><p><a class="reference internal" href="#spectra-plots" id="id11">Spectra Plots</a></p></li>
+<li><p><a class="reference internal" href="#combined-spectra-plot" id="id12">Combined Spectra Plot</a></p></li>
+<li><p><a class="reference internal" href="#detector-diagnostics" id="id13">Detector Diagnostics</a></p></li>
+<li><p><a class="reference internal" href="#vetoes" id="id14">Vetoes</a></p></li>
+<li><p><a class="reference internal" href="#simulated-dae" id="id15">Simulated DAE</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="run-summary">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Run Summary</a><a class="headerlink" href="#run-summary" title="Link to this heading"></a></h2>
+<p>The Run Summary tab displays some summary information about the current run and displays any log messages received from the ICP.</p>
+<section id="run-summary-fields">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Run Summary Fields</a><a class="headerlink" href="#run-summary-fields" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Instrument</span></code>: the instrument on which the current run is being performed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Status</span></code>: status of the current run</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Number</span></code>: the current run number</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ISIS</span> <span class="pre">Cycle</span></code>: the current ISIS cycle</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Title</span></code>: you can provide a short description of the current run in the <code class="docutils literal notranslate"><span class="pre">Title</span></code> field.  Click on the <code class="docutils literal notranslate"><span class="pre">Set</span></code> button to commit the change (i.e. send it to the ICP, so that it gets included in the data file). To embed block values within the run title see <a class="reference internal" href="Add-blocks-to-run-title.html"><span class="doc">Add blocks to run title</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Title</span> <span class="pre">in</span> <span class="pre">Dataweb</span> <span class="pre">Dashboard</span> <span class="pre">Page</span></code>: set whether to display the title in the <a class="reference internal" href="../The-Web-Dashboard.html"><span class="doc">Web Dashboard</span></a>. This checkbox only affects the Dataweb dashboard; it does not affect the display of the title in IBEX, or the inclusion of the title in the data file.</p></li>
+</ul>
+</section>
+<section id="message-log">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Message Log</a><a class="headerlink" href="#message-log" title="Link to this heading"></a></h3>
+<p>The message log area lets you view any messages issued by the ICP.  The message log area is the same as the main Log Messages view but filtered to show only messages from the ICP.</p>
+</section>
+<section id="run-control-buttons">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Run Control Buttons</a><a class="headerlink" href="#run-control-buttons" title="Link to this heading"></a></h3>
+<p>The Run Summary tab also provides some buttons to control the acquisition of data. Which buttons are available is dependent on the current status of the DAE; this is displayed in the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Status</span></code> field and the IBEX <a class="reference internal" href="../gui/Dashboard.html"><span class="doc">Dashboard</span></a>.</p>
+<dl class="simple">
+<dt>Begin Run</dt><dd><p>Beginning a run instructs the ICP to tell the DAE to start collecting data. The run status of the DAE will change to BEGINNING and then RUNNING.</p>
+</dd>
+<dt>End Run</dt><dd><p>Ending a run instructs the ICP to tell the DAE to stop collecting data and save the data. The run status of the DAE will change to ENDING (while it saves the data) and then SETUP when it is ready to be started again.</p>
+</dd>
+<dt>Pause Run</dt><dd><p>Pausing a run instructs the ICP to tell the DAE to pause data collection indefinitely. The run status of the DAE will change to PAUSED.  The status will remain PAUSED until it is instructed to resume, end or abort the run.</p>
+</dd>
+<dt>Resume Run</dt><dd><p>Resuming a run instructs the ICP to tell the DAE to resume data collection after it has been paused. The run status of the DAE will return to RUNNING.</p>
+</dd>
+<dt>Abort Run</dt><dd><p>Aborting a run instructs the ICP to tell the DAE to stop data collection (as for END).  However, the data that has been collected is not written to a file; if a new run is started, then any data that has been collected will be lost. The run status of the DAE will change to SETUP. If this is done mistakenly, the cancel abort button can be used to undo the abort.</p>
+</dd>
+<dt>Cancel Abort</dt><dd><p>This will instruct the DAE to cancel a previous abort. The DAE will be left in a paused state.</p>
+</dd>
+<dt>Save Run</dt><dd><p>This will save the current run data without stopping the current run.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="experiment-setup">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Experiment Setup</a><a class="headerlink" href="#experiment-setup" title="Link to this heading"></a></h2>
+<p>The Experiment Setup comprises of sub-tabs which will have been configured by an ISIS Instrument Scientist.  Please do not modify their contents without consulting with the instrument scientist.</p>
+<p>Any changes made are only sent to the DAE when the <code class="docutils literal notranslate"><span class="pre">Apply</span> <span class="pre">Changes</span></code> button is pressed and will be highlighted until the <code class="docutils literal notranslate"><span class="pre">Apply</span> <span class="pre">Changes</span></code> button is pressed. If there is a problem with the setting, an error message will appear on the <a class="reference internal" href="#run-summary">Run Summary</a> panel.</p>
+<section id="time-channels">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Time Channels</a><a class="headerlink" href="#time-channels" title="Link to this heading"></a></h3>
+<p>The time channels sub-tab allows the setting of the spectra captured in different time regimes. By setting different step sizes and modes, you can optimise the sizes of the time bins in the final spectra. The setting for the time channels can be set either using the table or by setting a file; usually used when more than 6 regimes are required. The files are stored in the <code class="docutils literal notranslate"><span class="pre">configurations/tcb</span></code> directory in the <a class="reference internal" href="../introduction/Installing-IBEX.html#installation-layout"><span class="std std-ref">Installation Layout</span></a> on the instrument.</p>
+</section>
+<section id="data-acquisition">
+<span id="dae-data-acquisition"></span><h3><a class="toc-backref" href="#id8" role="doc-backlink">Data Acquisition</a><a class="headerlink" href="#data-acquisition" title="Link to this heading"></a></h3>
+<p>The data acquisition sub-tab allows you to set up how the DAE will collect the data. The page is split into several sections:</p>
+<dl class="simple">
+<dt>Tables</dt><dd><p>The wiring table, detector table and spectra table set the files used when turning signals generated in the detectors into spectra. These files are stored in the <code class="docutils literal notranslate"><span class="pre">configurations/tables</span></code> directory in <a class="reference internal" href="../introduction/Installing-IBEX.html#installation-layout"><span class="std std-ref">server settings</span></a> on the instrument.</p>
+</dd>
+<dt>Monitor</dt><dd><p>Set which spectra number is used for the monitor counts and between which times the spectra should be integrated to return the monitor counts.</p>
+</dd>
+<dt>Vetoes</dt><dd><p>Set which <a class="reference internal" href="../Key-Concepts-in-IBEX.html#concept-veto"><span class="std std-ref">vetoes</span></a> are active.</p>
+</dd>
+<dt>Muons</dt><dd><p>Set if and how to collect muon data.</p>
+</dd>
+<dt>Timing</dt><dd><p>Set the source of the <a class="reference internal" href="../Key-Concepts-in-IBEX.html#concept-timing"><span class="std std-ref">timing signal</span></a> and how often the data should be auto saved.</p>
+</dd>
+</dl>
+</section>
+<section id="periods">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Periods</a><a class="headerlink" href="#periods" title="Link to this heading"></a></h3>
+<p>The period sub-tab allows the period types and needed parameters to be set up within the DAE. Periods allow data to be collected as if restarting the DAE but without the time overhead of doing this. Software periods are controlled via software command, e.g. genie_python’s <code class="docutils literal notranslate"><span class="pre">change_period</span></code> command. The other options are hardware controlled, and these are internal (within the DAE) or external control.</p>
+</section>
+</section>
+<section id="run-information">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Run Information</a><a class="headerlink" href="#run-information" title="Link to this heading"></a></h2>
+<p>The Run Information tab provides a more complete summary of the DAE set up than the Run Summary tab.  All the fields on this tab are read-only.</p>
+</section>
+<section id="spectra-plots">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Spectra Plots</a><a class="headerlink" href="#spectra-plots" title="Link to this heading"></a></h2>
+<p>The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the <code class="docutils literal notranslate"><span class="pre">Spectrum</span></code> and <code class="docutils literal notranslate"><span class="pre">Period</span></code> fields for each plot.  Click on the <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Plot</span></code> button (positioned at the top right of each plot) to update the plot after changing the <code class="docutils literal notranslate"><span class="pre">Spectrum</span></code> or <code class="docutils literal notranslate"><span class="pre">Period</span></code> fields.</p>
+</section>
+<section id="combined-spectra-plot">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Combined Spectra Plot</a><a class="headerlink" href="#combined-spectra-plot" title="Link to this heading"></a></h2>
+<p>The Combined Spectra Plot Tab displays up to 4 spectra plots on the <em>same graph</em>. This allows for more direct comparison with one another. The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab. You can choose which spectra are plotted by using the <code class="docutils literal notranslate"><span class="pre">Spectrum</span></code> and <code class="docutils literal notranslate"><span class="pre">Period</span></code> fields for each plot and make each plot visible or hidden with its corresponding <code class="docutils literal notranslate"><span class="pre">Checkbox</span></code> field.</p>
+</section>
+<section id="detector-diagnostics">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Detector Diagnostics</a><a class="headerlink" href="#detector-diagnostics" title="Link to this heading"></a></h2>
+<p>This tab shows detector diagnostics, the count rate, max and integral for a range of detectors set above. It is possible to show all spectrum with zero or non-zero counts or all the spectra. This can be useful for identifying broken detector tubes.</p>
+<p>The page only updates when it is open on an instrument, so if you are viewing it remotely you may have no information. This is to reduce the load on the server and DAE.</p>
+</section>
+<section id="vetoes">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Vetoes</a><a class="headerlink" href="#vetoes" title="Link to this heading"></a></h2>
+<p>The Vetoes tab shows a summary of the vetoes that are in force and their effect for the current run.  This information is read-only.  Vetoes can only be changed before the start of a run, via the <a class="reference internal" href="#data-acquisition">Data Acquisition</a> sub-tab on the <a class="reference internal" href="#experiment-setup">Experiment Setup</a> tab.</p>
+</section>
+<section id="simulated-dae">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Simulated DAE</a><a class="headerlink" href="#simulated-dae" title="Link to this heading"></a></h2>
+<p>The DAE can be placed into a <strong>simulation</strong>/<strong>simulate</strong> mode if you want to do an off-line experiment or test something out when the physical DAE is not usable. In simulation mode the DAE will count frames as normal and has a spectrum count in some spectra but it is not realistic. To turn this on use in genie_python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">set_dae_simulation_mode</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>to switch it off:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">set_dae_simulation_mode</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In simulation mode the dashboard should be coloured correctly and <cite>SIMULATION MODE</cite> is shown in large black letters.
+NB All instruments can be placed in simulation mode but some are not set up correctly. If you are having problems please contact us.</p>
+<p>It is also possible to run the DAE and do real counts without the timing signal from ISIS. The setting for this are on <a class="reference internal" href="#dae-data-acquisition"><span class="std std-ref">Experimental Setup -&gt; Data Acquisition tab under Timing</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="How-to-create-PVs-for-generic-user-data.html" class="btn btn-neutral float-left" title="Create PVs for generic user data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Navigate-Synoptics.html" class="btn btn-neutral float-right" title="Navigate a Synoptic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

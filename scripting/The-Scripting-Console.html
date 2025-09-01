@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Scripting Console &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tips &amp; Examples" href="Tips-and-Examples.html" />
+    <link rel="prev" title="Simulating Scripts" href="Simulating-Scripts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Scripting.html">Scripting</a></li>
+      <li class="breadcrumb-item active">The Scripting Console</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/The-Scripting-Console.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="the-scripting-console">
+<h1>The Scripting Console<a class="headerlink" href="#the-scripting-console" title="Link to this heading"></a></h1>
+<p>Genie python can be used inside the IBEX client by using the scripting console. To start this press the scripting button in the sidebar:</p>
+<p><img alt="Toolbar" src="../_images/OpenTheScriptingPerspective.png" /></p>
+<section id="command-history">
+<h2>Command History<a class="headerlink" href="#command-history" title="Link to this heading"></a></h2>
+<p>This console will let you type genie commands. Pressing Up/Down arrow keys lets you cycle through previous commands, filtered by what you have started typing into the prompt.</p>
+<p>Additionally, pressing “Page Up” will display a window containing the entire command history. Previous commands can be selected from the list or searched for using the text box at the bottom. If you want to search for terms anywhere inside the command (not just at the start), you can do this by prefixing the search term with the * symbol (“match anything”). So the search term <code class="docutils literal notranslate"><span class="pre">H20</span></code> will not match the command <code class="docutils literal notranslate"><span class="pre">g.load_script(&quot;H2O.py&quot;)</span></code>, but <code class="docutils literal notranslate"><span class="pre">*H20</span></code> will.</p>
+<p>Note that the command history is cleared when the IBEX client is restarted, but will be preserved when just the scripting console is restarted.</p>
+</section>
+<section id="toolbar">
+<h2>Toolbar<a class="headerlink" href="#toolbar" title="Link to this heading"></a></h2>
+<p>The toolbar in the top right provides additional functionality.</p>
+<p><img alt="Toolbar" src="../_images/TheScriptingPerspectiveToolbar.png" /></p>
+<p>From left to right these buttons do the following:</p>
+<ol class="arabic simple">
+<li><p>Stop the whole console. This will stop the current script and remove the console from view, useful if you are running multiple consoles.</p></li>
+<li><p>Save the text that’s in the console to file.</p></li>
+<li><p>Stop the currently running script. This is useful if you realise that the script is doing something wrong. (This can also be done by pressing Ctrl+C)</p></li>
+<li><p>Clear the console. This will remove all the text from the window, be careful though as this WON’T stop the current script.</p></li>
+<li><p>Pin the console. This is not used.</p></li>
+<li><p>Switch to a different console. This will be greyed out if you only have one console running.</p></li>
+<li><p>Start a new console or a new view. You can use this to start a new console by selecting PyDev Console -&gt; Python Console -&gt; Ok. Be careful! Having multiple consoles running can lead to different consoles ‘fighting’ for control of the instrument.</p></li>
+</ol>
+</section>
+<section id="console-memory">
+<h2>Console Memory<a class="headerlink" href="#console-memory" title="Link to this heading"></a></h2>
+<p>As of September 2019, there is a limit on the amount of output that can be kept in the console. This limit is enforced to prevent a long output log from claiming too much memory and slowing down the rest of the control system.</p>
+<p>The console output can also be manually saved &amp; cleared by using the right-click console context menu.</p>
+</section>
+<section id="search-console">
+<h2>Search Console<a class="headerlink" href="#search-console" title="Link to this heading"></a></h2>
+<p>You can search console text by right-clicking on the console, clicking “Find/Replace…”, typing your search query in the “Find:” text field and pressing the “Find” button.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Simulating-Scripts.html" class="btn btn-neutral float-left" title="Simulating Scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Tips-and-Examples.html" class="btn btn-neutral float-right" title="Tips &amp; Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

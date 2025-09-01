@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating &amp; Running Scripts &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Error Checking Troubleshooting" href="Error-Checking-Troubleshooting.html" />
+    <link rel="prev" title="Block Names Helper" href="Block-names-helper.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Scripting.html">Scripting</a></li>
+      <li class="breadcrumb-item active">Creating &amp; Running Scripts</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/Creating-and-Running-Scripts.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="creating-running-scripts">
+<h1>Creating &amp; Running Scripts<a class="headerlink" href="#creating-running-scripts" title="Link to this heading"></a></h1>
+<section id="types-of-scripts">
+<h2>Types of Scripts<a class="headerlink" href="#types-of-scripts" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#creating-and-running-instrument-scripts">Creating and running instrument
+scripts</a></p></li>
+<li><p><a class="reference external" href="#creating-and-running-user-scripts">Creating and running user
+scripts</a></p></li>
+</ul>
+</section>
+<section id="creating-and-running-instrument-scripts">
+<h2>Creating and running instrument scripts<a class="headerlink" href="#creating-and-running-instrument-scripts" title="Link to this heading"></a></h2>
+<p>Different instruments may have specific scripts that are required for
+multiple users. To make accessing these easier, <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> loads
+instrument scripts at startup.</p>
+<section id="creating-scripts">
+<h3>Creating scripts<a class="headerlink" href="#creating-scripts" title="Link to this heading"></a></h3>
+<p>For the most part, this is the same as
+<a class="reference external" href="#creating-and-running-user-scripts">creating-user-scripts</a>.</p>
+<section id="script-module">
+<h4>Script module<a class="headerlink" href="#script-module" title="Link to this heading"></a></h4>
+<p>For instruments where a single file is sufficient, instrument scripts should be placed in <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py</span></code>.</p>
+<p>For instruments with complex scripts which need more than one file, you should put your scripts in the inst folder, for example <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\my_functions.py</span></code>.</p>
+<p>When using a multi-file <code class="docutils literal notranslate"><span class="pre">inst</span></code> module, to make the functions available under the <code class="docutils literal notranslate"><span class="pre">inst</span></code> namespace as <code class="docutils literal notranslate"><span class="pre">inst.do_thing()</span></code> as opposed to <code class="docutils literal notranslate"><span class="pre">inst.my_functions.do_thing()</span></code>, you will need to add the special file <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>. Anything which is imported into this file (using normal python <code class="docutils literal notranslate"><span class="pre">import</span></code> statements) will be available under the <code class="docutils literal notranslate"><span class="pre">inst</span></code> namespace.</p>
+</section>
+<section id="script-structure">
+<h4>Script structure<a class="headerlink" href="#script-structure" title="Link to this heading"></a></h4>
+<p>Everything in the instrument scripts will be executed when
+<code class="docutils literal notranslate"><span class="pre">genie_python</span></code> is started. This includes - Making functions available
+to be called later - Setting variables - Running methods. Typically, most
+code in instrument scripts will be contained within functions
+(procedures in Open GENIE language), but it’s important to be aware that
+anything that isn’t will be included too. For example, if an instrument
+script is loaded:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">print_a</span><span class="p">():</span>
+    <span class="nb">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>then the user can call <code class="docutils literal notranslate"><span class="pre">print_a</span></code>, but they can also use the variable
+<code class="docutils literal notranslate"><span class="pre">a</span></code>, and change its value, which may not be desirable. If instead the
+script was:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_a</span><span class="p">():</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="nb">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>then the user could only access <code class="docutils literal notranslate"><span class="pre">print_a()</span></code> and the value could not be
+changed.</p>
+<p>To reload the inst module, for instance if you had updated the script or added a new script, you should issue the command <code class="docutils literal notranslate"><span class="pre">reload(inst)</span></code>.</p>
+</section>
+</section>
+<section id="running">
+<h3>Running<a class="headerlink" href="#running" title="Link to this heading"></a></h3>
+<p><strong>Please note:</strong> When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).</p>
+<p>Once the script is loaded, anything from the script will be available
+using the <code class="docutils literal notranslate"><span class="pre">inst</span></code> package reference. For instance if your script
+contains the function <code class="docutils literal notranslate"><span class="pre">my_function</span></code> you can call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inst</span><span class="o">.</span><span class="n">my_function</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Whilst using the scripting perspective in the IBEX GUI, users will also
+benefit from the same auto-complete feature as they do with
+<code class="docutils literal notranslate"><span class="pre">genie_python</span></code> commands.</p>
+</section>
+</section>
+<section id="creating-and-running-user-scripts">
+<h2>Creating and running user scripts<a class="headerlink" href="#creating-and-running-user-scripts" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>Creating scripts<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>First, we need to create a script file. By default, user scripts
+should be placed in <code class="docutils literal notranslate"><span class="pre">C:\scripts</span></code>. Navigate to your desired
+directory and create the script file with extension <code class="docutils literal notranslate"><span class="pre">.py</span></code>.</p></li>
+<li><p>Write some <code class="docutils literal notranslate"><span class="pre">genie_python</span></code>!</p></li>
+<li><p>Save the file</p></li>
+</ol>
+<p>We have glossed over step 2 because Python is a very powerful scripting
+language. Combined with Open GENIE, the potential scope of a script is
+enormous, and well beyond the scope of this guide. For example though,
+here is a simple script that executes a calibration run.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python</span><span class="w"> </span><span class="kn">import</span> <span class="n">genie</span> <span class="k">as</span> <span class="n">g</span><span class="p">,</span> <span class="n">BLOCK_NAMES</span> <span class="k">as</span> <span class="n">b</span>
+
+<span class="c1"># Change the title</span>
+<span class="n">calibration_run_title</span> <span class="o">=</span> <span class="s2">&quot;Calibration run 1, 29th September&quot;</span>
+<span class="n">g</span><span class="o">.</span><span class="n">change</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">calibration_run_title</span><span class="p">)</span>
+
+<span class="c1"># Begin the run</span>
+<span class="nb">print</span> <span class="s2">&quot;Beginning calibration run : &quot;</span> <span class="o">+</span> <span class="n">calibration_run_title</span>
+<span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+
+<span class="c1"># Wait for 100 uamps</span>
+<span class="n">g</span><span class="o">.</span><span class="n">waitfor</span><span class="p">(</span><span class="n">uamps</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># End the run</span>
+<span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+<span class="nb">print</span> <span class="s2">&quot;Calibration run finished successfully&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h3>Running<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p><strong>Please note:</strong> When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).</p>
+<p>Once you’ve created your script, it’s time to run it. There are a number
+of ways of launching a Python script.</p>
+<section id="from-ibex">
+<h4>From IBEX<a class="headerlink" href="#from-ibex" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Launch the IBEX GUI</p></li>
+<li><p>Navigate to the scripting perspective</p></li>
+<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">g.load_script(&quot;C:\path\to\script\my_script.py&quot;)</span></code>
+where the path and script name are updated appropriately</p>
+<ul class="simple">
+<li><p>Note that if you omit the absolute path to the file (i.e.
+<code class="docutils literal notranslate"><span class="pre">C:\path\to\script</span></code>) then <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> will look in the
+current script directory. By default this is <code class="docutils literal notranslate"><span class="pre">C:\scripts</span></code> but
+can be viewed and set with the commands <code class="docutils literal notranslate"><span class="pre">g.get_script_dir()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">g.set_script_dir()</span></code> respectively.</p></li>
+</ul>
+</li>
+<li><p>When the script is loaded, any procedures in the script will be run
+automatically. If the script contains any function, you will now be
+able to call them from within the scripting window.</p></li>
+</ol>
+</section>
+<section id="from-a-genie-python-terminal">
+<h4>From a genie_python terminal<a class="headerlink" href="#from-a-genie-python-terminal" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Launch a <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> terminal from
+<code class="docutils literal notranslate"><span class="pre">C:\Instrument\Apps\Python\</span></code> by running <code class="docutils literal notranslate"><span class="pre">genie_python.bat</span></code></p></li>
+<li><p>Follow the above starting at step 3.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Block-names-helper.html" class="btn btn-neutral float-left" title="Block Names Helper" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Error-Checking-Troubleshooting.html" class="btn btn-neutral float-right" title="Error Checking Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

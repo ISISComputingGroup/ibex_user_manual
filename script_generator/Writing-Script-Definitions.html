@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing Script Definitions &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Web Dashboard" href="../The-Web-Dashboard.html" />
+    <link rel="prev" title="Using the Script Generator" href="Using-the-Script-Generator.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Script-Generator.html">Script Generator</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Downloading-and-Installing-The-IBEX-Script-Generator.html">Downloading &amp; Installing the IBEX Script Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script-Generator-Customisation.html">Script Generator customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-IBEX-Script-Generator.html">The IBEX Script Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Troubleshooting-the-Script-Generator.html">Script Generator Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Using-the-Script-Generator.html">Using the Script Generator</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Writing Script Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Script-Generator.html">Script Generator</a></li>
+      <li class="breadcrumb-item active">Writing Script Definitions</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/script_generator/Writing-Script-Definitions.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="writing-script-definitions">
+<h1>Writing Script Definitions<a class="headerlink" href="#writing-script-definitions" title="Link to this heading"></a></h1>
+<section id="scriptdefinition">
+<h2>ScriptDefinition<a class="headerlink" href="#scriptdefinition" title="Link to this heading"></a></h2>
+<p>For an example script definition see: <a class="reference external" href="https://isiscomputinggroup.github.io/ibex_developers_manual/script_generator/Script-generator-high-level-design.html#scriptgenerator-script-definition">The ScriptDefinition Class (with Example)</a>. A script definition is defined by creating a class implementing a ScriptDefinition (a python interface) <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">DoRun(ScriptDefinition):</span></code>. ScriptDefinition must be imported before doing this so add at the top of your file <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">genie_python.genie_script_generator</span> <span class="pre">import</span> <span class="pre">ScriptDefinition</span> </code>.</p>
+<p>To implement an ScriptDefinition this DoRun class must have methods <code class="docutils literal notranslate"><span class="pre">run</span></code>, <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> and <code class="docutils literal notranslate"><span class="pre">get_help</span></code>. With <code class="docutils literal notranslate"><span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> signatures may look like this: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">run(self,</span> <span class="pre">temp=&quot;1&quot;,</span> <span class="pre">field=&quot;1&quot;):</span></code>, <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">parameters_valid(self,</span> <span class="pre">temp=&quot;1&quot;,</span> <span class="pre">field=&quot;1&quot;):</span></code>.</p>
+<p>Both <code class="docutils literal notranslate"><span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> methods must take the same arguments (in this case <code class="docutils literal notranslate"><span class="pre">temp=&quot;1&quot;,</span> <span class="pre">field=&quot;1&quot;</span></code>) and must have the <code class="docutils literal notranslate"><span class="pre">self</span></code> argument first. All the arguments except self must have a default value in our example “1” is the defaults. All the arguments taken except for <code class="docutils literal notranslate"><span class="pre">self</span></code> are of type string, if you want to change this see “Casting Parameters” below.</p>
+<p>When defining a <code class="docutils literal notranslate"><span class="pre">get_help</span></code> method we are returning a string that we want to be displayed to the users in the script generator UI, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_help</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+   <span class="k">return</span> <span class="s2">&quot;My help string&quot;</span>
+</pre></div>
+</div>
+<p>If we do not want to display a string to the user we return None:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_help</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+   <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>Optionally a script definition can specify an <code class="docutils literal notranslate"><span class="pre">estimate_time</span></code> method, which will take the same arguments as <code class="docutils literal notranslate"><span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> and return a float giving an estimate of how long a script will take (in seconds). When defining this method we are returning how long each row in the script generator table will take to run.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">estimate_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field1</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="n">field2</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">field1</span><span class="p">)</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">field2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In order for this method to perform arithmetic operations on scientific notations, it is mandatory to cast the argument as float for e.g. <code class="docutils literal notranslate"><span class="pre">float(field1)</span></code>.</p>
+</section>
+<section id="default-values">
+<h2>Default values<a class="headerlink" href="#default-values" title="Link to this heading"></a></h2>
+<p>The initial value of an action in the table can be defined within your script definition. Simply set the default values of the run method and these will be converted into a string for the initial value in the table.</p>
+<p>Please note that the value you put as a default will be passed through any casters when running. So for example with our <code class="docutils literal notranslate"><span class="pre">magnet_device_type</span></code> caster below the valid inputs into the action table are LF, TF, ZF or N/A which are cast to Danfysik, T20, Active ZF and N/A. When defining the default you should use the valid inputs for the actions table e.g. LF, TF, ZF or N/A.</p>
+</section>
+<section id="casting-parameters">
+<h2>Casting Parameters<a class="headerlink" href="#casting-parameters" title="Link to this heading"></a></h2>
+<section id="cast-parameters-to">
+<h3>cast_parameters_to<a class="headerlink" href="#cast-parameters-to" title="Link to this heading"></a></h3>
+<p>This decorator allows you to cast the parameters you receive for your <code class="docutils literal notranslate"><span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> methods, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@cast_parameters_to</span><span class="p">(</span><span class="n">temp</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="nb">float</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Here we pass temp a cast called float. This will call <code class="docutils literal notranslate"><span class="pre">float(temp)</span></code> on whatever is passed to <code class="docutils literal notranslate"><span class="pre">run</span></code> before <code class="docutils literal notranslate"><span class="pre">run</span></code> is called so you can treat temp as a floating-point number. If casting the input fails this will be propagated back up to the user. Other casters include int, long and hex. If there does not exist a caster that fits your specification you can write one yourself see “Custom Casters”.</p>
+</section>
+<section id="custom-casters">
+<h3>Custom Casters<a class="headerlink" href="#custom-casters" title="Link to this heading"></a></h3>
+<p>When float, int etc. are not enough you can define your own function to cast an input. These take one argument (the argument to cast) and return the casted value. See examples below for details.</p>
+<p>Say we want our users to be able to input a floating-point value for the temperature, but we also want them to be able to input the word “KEEP” or even “KeEp” to not change the value we can define the caster below:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">float_or_keep</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;keep&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Say we have a set of magnets that we are wanting the user to select in an argument (or no magnet “N/A”) we can define the below caster:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">magnet_devices</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ZF&quot;</span><span class="p">:</span> <span class="s2">&quot;Active ZF&quot;</span><span class="p">,</span> <span class="s2">&quot;LF&quot;</span><span class="p">:</span> <span class="s2">&quot;Danfysik&quot;</span><span class="p">,</span> <span class="s2">&quot;TF&quot;</span><span class="p">:</span> <span class="s2">&quot;T20 Coils&quot;</span><span class="p">}</span>
+
+<span class="c1"># Convert to magnet device type if possible, if not they have input an incorrect magnet_device</span>
+<span class="c1"># Raise a ValueError and this will be caught and displayed to the user that the conversion is incorrect </span>
+<span class="k">def</span><span class="w"> </span><span class="nf">magnet_device_type</span><span class="p">(</span><span class="n">magnet_device</span><span class="p">):</span>
+    <span class="n">magnet_device</span> <span class="o">=</span> <span class="n">magnet_device</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">magnet_device</span> <span class="ow">in</span> <span class="n">magnet_devices</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">return</span> <span class="n">magnet_devices</span><span class="p">[</span><span class="n">magnet_device</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">magnet_device</span> <span class="o">==</span> <span class="s2">&quot;N/A&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">magnet_device</span>
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Magnet device must be one of </span><span class="si">{}</span><span class="s2"> or N/A&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">magnet_devices</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>To say we cannot cast the argument we raise a ValueError which tells cast_parameters_to that we have failed to cast the argument. The string you type into the ValueError (e.g. “Magnet device must be one of {} or N/A”.format(magnet_devices))  will be propagated back up to the user.</p>
+</section>
+</section>
+<section id="copying-from-previous-rows">
+<h2>Copying from previous rows<a class="headerlink" href="#copying-from-previous-rows" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CopyPreviousRow</span></code> instances can be used to specify parameters in functions which should copy any previous row’s value. This could be used to avoid re-specifying the values manually when creating a script.</p>
+<p>Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python.genie_script_generator</span><span class="w"> </span><span class="kn">import</span> <span class="n">ScriptDefinition</span><span class="p">,</span> <span class="n">cast_parameters_to</span><span class="p">,</span> <span class="n">CopyPreviousRow</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DoRun</span><span class="p">(</span><span class="n">ScriptDefinition</span><span class="p">):</span>
+    <span class="nd">@cast_parameters_to</span><span class="p">(</span><span class="n">temperature</span><span class="o">=</span><span class="n">float_or_keep</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="n">float_or_keep</span><span class="p">,</span> <span class="n">mevents</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">magnet_device</span><span class="o">=</span><span class="n">magnet_device_type</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">CopyPreviousRow</span><span class="p">(</span><span class="mf">1.0</span><span class="p">),</span> <span class="n">field</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">mevents</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">magnet_device</span><span class="o">=</span><span class="s2">&quot;N/A&quot;</span><span class="p">):</span>
+       <span class="o">...</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">temperature</span></code> field here would still have a default value of 1.0 if no actions exist, however if a user changes this value and adds another row it will be copied over to the next row.</p>
+</section>
+<section id="using-python-genie-and-inst">
+<h2>Using python, genie and inst<a class="headerlink" href="#using-python-genie-and-inst" title="Link to this heading"></a></h2>
+<p>The script generator uses the python that we bundle with it which comes pre-installed with everything you would expect on an instrument (except inst) so you can easily write genie commands into your script definition etc.</p>
+<p>However, it does not come with installed instrument scripts that you obtain via inst. Due to this, if you try to import inst outside of your <code class="docutils literal notranslate"><span class="pre">run</span></code> method your script definition will produce errors for your users and fail to load when not on the instrument itself. Our suggestion is to import inst inside the run function and use it as normal in there:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+   <span class="kn">import</span><span class="w"> </span><span class="nn">inst</span>
+   <span class="n">inst</span><span class="o">.</span><span class="n">instrument_script_method</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="global-parameters">
+<h2>Global parameters<a class="headerlink" href="#global-parameters" title="Link to this heading"></a></h2>
+<p>In a script definition you can define a number of global parameters by creating an ordered dictionary field for your <code class="docutils literal notranslate"><span class="pre">DoRun</span></code> class named <code class="docutils literal notranslate"><span class="pre">global_params_definition</span></code> e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">DoRun</span><span class="p">(</span><span class="n">ScriptDefinition</span><span class="p">):</span>
+
+    <span class="n">global_params_definition</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span><span class="s2">&quot;example param:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">),</span> <span class="s2">&quot;example param 2:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="nb">float</span><span class="p">),</span>
+                                            <span class="s2">&quot;example param 3:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;any string&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)})</span>
+</pre></div>
+</div>
+<p>These global parameters can then be accessed in the <code class="docutils literal notranslate"><span class="pre">run</span></code>, <code class="docutils literal notranslate"><span class="pre">parameters_valid</span></code> and other methods by calling <code class="docutils literal notranslate"><span class="pre">self.global_params[&quot;example</span> <span class="pre">param</span> <span class="pre">2:&quot;]</span></code>. The global parameters will appear above the actions table in the user interface and can be set by the user. The set value is applied for the entirety of the script.</p>
+<section id="validating-global-parameters">
+<h3>Validating global parameters<a class="headerlink" href="#validating-global-parameters" title="Link to this heading"></a></h3>
+<p>You can provide a validation function for global parameters. For example with <code class="docutils literal notranslate"><span class="pre">&quot;example</span> <span class="pre">param</span> <span class="pre">2:&quot;:</span> <span class="pre">(&quot;2&quot;,</span> <span class="pre">float)</span></code> if we want to force it to be between 1 and 3, we can change <code class="docutils literal notranslate"><span class="pre">float</span></code> to be a function say <code class="docutils literal notranslate"><span class="pre">param2_validator</span></code> which we define in our script definition:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python.genie_script_generator</span><span class="w"> </span><span class="kn">import</span> <span class="n">ScriptDefinition</span><span class="p">,</span> <span class="n">GlobalParamValidationError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">OrderedDict</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">param2_validator</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">param2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">param2</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">param2</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">GlobalParamValidationError</span><span class="p">(</span><span class="s2">&quot;Param 2 must be between 1 and 3&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">param2</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DoRun</span><span class="p">(</span><span class="n">ScriptDefinition</span><span class="p">):</span>
+    <span class="n">global_params_definition</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span><span class="s2">&quot;example param:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">),</span> <span class="s2">&quot;example param 2:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;1.23&quot;</span><span class="p">,</span> <span class="n">param2_validator</span><span class="p">),</span>
+                                            <span class="s2">&quot;example param 3:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span> <span class="s2">&quot;example param 4:&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">)})</span>
+</pre></div>
+</div>
+<p>When <code class="docutils literal notranslate"><span class="pre">example</span> <span class="pre">param</span> <span class="pre">2</span></code> is then set in the script generator, it will be validated using <code class="docutils literal notranslate"><span class="pre">param2_validator</span></code>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Using-the-Script-Generator.html" class="btn btn-neutral float-left" title="Using the Script Generator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../The-Web-Dashboard.html" class="btn btn-neutral float-right" title="Web Dashboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+Dashboard
+#########
+
+The dashboard occupies the top left-hand corner of the IBEX GUI.  It provides a brief summary of the current status of the instrument.
+
+The top part of the dashboard shows the name of the instrument to which the IBEX GUI is connected and the current state of the instrument, along with the current Run number and the state of the instrument shutter.
+
+The bottom part of the dashboard summarises the current experiment title and users. At the lower left, the dashboard displays information on good frames vs raw frames, the beam current and monitor counts.  At the lower right, the dashboard displays the current instrument time, the length of the current run and the period.
+
+Additional notes
+~~~~~~~~~~~~~~~~~
+
+- The instrument time is the date/time measured by the clock on the instrument control PC.  It might not be the same as the time displayed on your PC or other electronic devices (e.g. your phone).
+- The users displayed include PIs and users, but not contacts
+
+Dashboard States & Colours
+--------------------------
+
+The meanings of the dashboard states and colours are:
+
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| State      | Background Colour | Meaning                                                                                    |
++============+===================+============================================================================================+
+| RUNNING    | LIGHT_GREEN       | DAE is collecting data                                                                     |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| SETUP      | LIGHT_BLUE        | DAE is read to begin a run                                                                 |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| PAUSED     | RED               | DAE has been paused by a script or user                                                    | 
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| WAITING    | DARK_YELLOW       | DAE is not collecting data and is waiting for a run controlled variable to come into range |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| VETOING    | DARK_YELLOW       | A veto is active and data is not collected                                                 |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| ENDING     | BLUE              | A run is has been ended and the data is being written (it will change to setup when done). |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| PAUSING    | DARK_RED          | DAE is about to be in the paused state                                                     |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| BEGINNING  | GREEN             | DAE is starting a run                                                                      |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| ABORTING   | BLUE              | DAE run is being aborted                                                                   |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| RESUMING   | GREEN             | DAE is resuming after being paused                                                         |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| PROCESSING | YELLOW            | DAE is setting up                                                                          |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| UPDATING   | YELLOW            |                                                                                            |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| STORING    | YELLOW            |                                                                                            |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| SAVING     | YELLOW            |                                                                                            |
++------------+-------------------+--------------------------------------------------------------------------------------------+
+| UNKNOWN    | YELLOW            |                                                                                            |
++------------+-------------------+--------------------------------------------------------------------------------------------+

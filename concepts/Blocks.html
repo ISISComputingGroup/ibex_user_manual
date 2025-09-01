@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blocks &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Process Variables" href="Process-Variables.html" />
+    <link rel="prev" title="Concepts" href="../Key-Concepts-in-IBEX.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Process-Variables.html">Process Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PV-Naming-Conventions.html">PV Naming Conventions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+      <li class="breadcrumb-item active">Blocks</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/concepts/Blocks.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="blocks">
+<h1>Blocks<a class="headerlink" href="#blocks" title="Link to this heading"></a></h1>
+<p>The concept of a block is that a relevant piece of information chosen by the scientist that will be displayed on the instrument dashboard and, if required, can be logged into the datafile.</p>
+<p>In IBEX, a block is, to all intents and purposes, an alias to a process variable.  For example, the block <code class="docutils literal notranslate"><span class="pre">Chop1Freq</span></code> on LARMOR is defined to be the process variable <code class="docutils literal notranslate"><span class="pre">IN:LARMOR:CS:SB:Chop1Freq</span></code>.  It is much simpler to refer to a block than to refer to a process variable.  Utilities like genie_python know about blocks, and you can use commands such as <code class="docutils literal notranslate"><span class="pre">cset</span></code> to access <code class="docutils literal notranslate"><span class="pre">Chop1Freq</span></code>. However, you can access blocks using the name <code class="docutils literal notranslate"><span class="pre">IN:LARMOR:CS:SB:Chop1Freq</span></code>  with any standard EPICS tool.</p>
+<p>Process variables are defined in more detail on the <a class="reference internal" href="Process-Variables.html"><span class="doc">Process Variables</span></a> page.</p>
+<section id="alarms">
+<h2>Alarms<a class="headerlink" href="#alarms" title="Link to this heading"></a></h2>
+<p>An IBEX block may be in alarm as well as having a value. Alarms signify potential problems with the data</p>
+<section id="disconnected">
+<h3>Disconnected<a class="headerlink" href="#disconnected" title="Link to this heading"></a></h3>
+<p>A disconnected status implies that the user interface cannot access the variable which has been requested.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>The relevant IOC is not running - for example, the relevant ioc is not listed in the current configuration</p></li>
+<li><p>The IOC is running on another computer, and there is no network availability</p></li>
+</ul>
+<p>These alarms appear with either a purple border or a solid purple background in the user interface.</p>
+</section>
+<section id="invalid-alarm">
+<h3>Invalid alarm<a class="headerlink" href="#invalid-alarm" title="Link to this heading"></a></h3>
+<p>An invalid alarm signifies that there was a problem acquiring this piece of data. Data marked with an invalid alarm should generally not be trusted.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>The hardware has become unplugged or switched off</p></li>
+<li><p>The hardware replied in an unexpected way</p></li>
+<li><p>A setpoint has not been set (it will remain in an undefined state until set)</p></li>
+</ul>
+<p>These alarms appear with a purple border in the user interface.</p>
+</section>
+<section id="major-alarm">
+<h3>Major alarm<a class="headerlink" href="#major-alarm" title="Link to this heading"></a></h3>
+<p>A major alarm signifies that there is a serious problem with the data being reported by a device. Data marked with an major alarm may require attention from an equipment expert.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>A fault status is being reported by the hardware</p></li>
+<li><p>A chopper is not in the correct operation mode</p></li>
+</ul>
+<p><em>Note: it is possible to set your own limits on a value going into major alarm - please ask the IBEX team if you would like help setting this up</em></p>
+<p>These alarms appear with a red border in the user interface.</p>
+</section>
+<section id="minor-alarm">
+<h3>Minor alarm<a class="headerlink" href="#minor-alarm" title="Link to this heading"></a></h3>
+<p>A minor alarm signifies a warning with the data being reported by a device. Data marked with a minor alarm should be checked, but if you are confident that the data is correct and within the expected ranges, can be ignored.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Motor parked on a limit switch</p></li>
+<li><p>Helium level in a cryostat falling low</p></li>
+</ul>
+<p><em>Note: it is possible to set your own limits on a value going into minor alarm - please ask the IBEX team if you would like help setting this up</em></p>
+<p>These alarms appear with an orange border in the user interface.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Key-Concepts-in-IBEX.html" class="btn btn-neutral float-left" title="Concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Process-Variables.html" class="btn btn-neutral float-right" title="Process Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

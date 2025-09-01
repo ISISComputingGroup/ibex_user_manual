@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripting &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Converting from OpenGENIE" href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html" />
+    <link rel="prev" title="Common commands" href="genie_python-and-IBEX-%28Common-commands%29.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Genie-Python-Training.html">Genie Python Training Course</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Introduction%29.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Getting-started%29.html">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Common-commands%29.html">Common commands</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Scripting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html">Converting from OpenGENIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Closing-remarks%29.html">Closing remarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html">Exercise Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Simulating-Scripts.html">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../Scripting.html">Scripting</a></li>
+          <li class="breadcrumb-item"><a href="../Genie-Python-Training.html">Genie Python Training Course</a></li>
+      <li class="breadcrumb-item active">Scripting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/training_course/genie_python-and-IBEX-(Scripting).rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scripting">
+<h1>Scripting<a class="headerlink" href="#scripting" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>So far we have run <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> commands by entering them via a terminal. However, there may be cases where we want to reuse common sets of commands multiple times. These cases are where creating a script can be very useful.</p>
+</section>
+<section id="creating-scripts">
+<h2>Creating scripts<a class="headerlink" href="#creating-scripts" title="Link to this heading"></a></h2>
+<p>Python scripts have the extension <code class="docutils literal notranslate"><span class="pre">.py</span></code>. You can create them from any number of editors. A good editor will do syntax highlighting, and will make it easy to work with Python’s indented blocks without accidentally mixing spaces and tabs. Notepad++ is a good choice.</p>
+<p>We generally classify scripts as:</p>
+<ol class="arabic simple">
+<li><p><strong>Instrument scripts</strong>. These are either aimed at instrument scientists, or put the instrument in a particular state that multiple users may wish to access.</p></li>
+<li><p><strong>User scripts</strong>. These are scripts that specific users need for particular experiments. They may be reused to an extent but they don’t generally need to be accessed quite so readily.</p></li>
+</ol>
+<p><strong>NOTE</strong>: IBEX puts all configurations and <strong>Instrument scripts</strong> under version control. That means if you change or delete them and want to restore a previous version, you can. The same isn’t true for user scripts.</p>
+<ul class="simple">
+<li><p>Instrument scripts are located in: <code class="docutils literal notranslate"><span class="pre">C:\Instrument\Settings\config\NDX[Instrument</span> <span class="pre">name]\Python\inst</span></code></p></li>
+<li><p>User scripts are located in: <code class="docutils literal notranslate"><span class="pre">C:\scripts</span></code></p></li>
+</ul>
+<section id="exercise-3a">
+<span id="gp-and-ibex-ex3"></span><h3>Exercise 3a<a class="headerlink" href="#exercise-3a" title="Link to this heading"></a></h3>
+<p>Create two empty scripts:</p>
+<ul class="simple">
+<li><p>An <strong>instrument</strong> script called <code class="docutils literal notranslate"><span class="pre">set_up_instrument.py</span></code></p></li>
+<li><p>A <strong>user</strong> script called <code class="docutils literal notranslate"><span class="pre">run_my_experiment.py</span></code></p></li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html"><span class="doc">Solution</span></a></p>
+</section>
+</section>
+<section id="writing-scripts">
+<h2>Writing scripts<a class="headerlink" href="#writing-scripts" title="Link to this heading"></a></h2>
+<p>When writing scripts, you can use any Python and <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> functionality that you’ve already learnt. <strong>In instrument scripts, you must have this as your first line:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">genie_python</span><span class="w"> </span><span class="kn">import</span> <span class="n">genie</span> <span class="k">as</span> <span class="n">g</span><span class="p">,</span> <span class="n">BLOCK_NAMES</span> <span class="k">as</span> <span class="n">b</span>
+</pre></div>
+</div>
+<p>In general, we recommend all executable code within a script should be contained within functions and classes. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
+     <span class="nb">print</span> <span class="s2">&quot;The first argument is </span><span class="si">{0}</span><span class="s2">, the second argument is </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This gives much greater control over when and how custom code is executed.</p>
+<section id="exercise-3b">
+<h3>Exercise 3b<a class="headerlink" href="#exercise-3b" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Update your instrument script, <code class="docutils literal notranslate"><span class="pre">set_up_instrument.py</span></code>, so that it contains a single function</p>
+<ul>
+<li><p>The function should be called “set_up_instrument”</p></li>
+<li><p>It should set the title to “My experiment”</p></li>
+<li><p>It should set the username to your name</p></li>
+</ul>
+</li>
+<li><p>Update your user script, <code class="docutils literal notranslate"><span class="pre">run_my_experiment.py</span></code> which contains a function that does the following</p>
+<ul>
+<li><p>Begins the run</p></li>
+<li><p>Prints the current uamps for the current period over 10 seconds at 1 second intervals</p></li>
+<li><p>Ends the run</p></li>
+</ul>
+</li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex3-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+<section id="loading-scripts">
+<h2>Loading scripts<a class="headerlink" href="#loading-scripts" title="Link to this heading"></a></h2>
+<p>Once you’ve created your scripts, you need to make sure they’re available to use. This works differently for instrument scripts and user scripts.</p>
+<ul class="simple">
+<li><p><strong>Instrument scripts</strong> are loaded automatically when you open the scripting perspective</p></li>
+<li><p><strong>User scripts</strong> can be loaded by using the <code class="docutils literal notranslate"><span class="pre">load_script</span></code> method in genie_python. For example, <code class="docutils literal notranslate"><span class="pre">g.load_script('C:\scripts\run_my_experiment.py')</span></code>. <code class="docutils literal notranslate"><span class="pre">g.load_script</span></code> looks automatically in <code class="docutils literal notranslate"><span class="pre">C:\scripts</span></code>. A full path can be given for other locations</p></li>
+</ul>
+<p><strong>IMPORTANT</strong>: When a script is loaded, Python runs all the commands contained within. We strongly recommend keeping all executable code within functions, so that it runs when you call it rather than executing immediately.</p>
+<section id="exercise-3c">
+<h3>Exercise 3c<a class="headerlink" href="#exercise-3c" title="Link to this heading"></a></h3>
+<p>Load your user script <code class="docutils literal notranslate"><span class="pre">run_my_experiment.py</span></code></p>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex3-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+<section id="running-scripts">
+<h2>Running scripts<a class="headerlink" href="#running-scripts" title="Link to this heading"></a></h2>
+<section id="instrument-scripts">
+<h3>Instrument scripts<a class="headerlink" href="#instrument-scripts" title="Link to this heading"></a></h3>
+<p>Methods defined in instrument scripts are available via the <code class="docutils literal notranslate"><span class="pre">inst</span></code> namespace. For example, if we define a method called <code class="docutils literal notranslate"><span class="pre">my_method</span></code> in an instrument script which takes 1 argument, a block name, then I can make it run in the scripting perspective by entering:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">inst</span><span class="o">.</span><span class="n">my_method</span><span class="p">(</span><span class="s2">&quot;MY_BLOCK&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As with <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> commands, the IBEX scripting perspective will provide auto-completion for instrument methods so you can see what is available</p>
+</section>
+<section id="exercise-3d">
+<h3>Exercise 3d<a class="headerlink" href="#exercise-3d" title="Link to this heading"></a></h3>
+<p>Run the instrument method you wrote in exercise 3b</p>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex3-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+<section id="user-scripts">
+<h3>User scripts<a class="headerlink" href="#user-scripts" title="Link to this heading"></a></h3>
+<p>Functions loaded from user scripts using the <code class="docutils literal notranslate"><span class="pre">g.load_script(...)</span></code> command will be available to call like any other user-defined function. For example, if I defined a function <code class="docutils literal notranslate"><span class="pre">my_function</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">load_script</span><span class="p">(</span><span class="s2">&quot;my_script_file.py&quot;</span><span class="p">)</span>
+<span class="n">my_function</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-3e">
+<h3>Exercise 3e<a class="headerlink" href="#exercise-3e" title="Link to this heading"></a></h3>
+<p>Run the user script method you wrote in exercise 3b</p>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex3-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+<section id="modifying-scripts">
+<h2>Modifying scripts<a class="headerlink" href="#modifying-scripts" title="Link to this heading"></a></h2>
+<p>Every new scripting perspective will be a clean slate; any previously loaded scripts will be forgotten. A new scripting perspective is opened each time IBEX is started, but your scripting session will be preserved if you switch between views without closing the client.</p>
+<p>Sometimes you might want to change a script and update it without having to change scripting terminal.</p>
+<ul class="simple">
+<li><p>Instrument scripts: Run the command <code class="docutils literal notranslate"><span class="pre">reload(inst)</span></code></p></li>
+<li><p>User scripts: Run <code class="docutils literal notranslate"><span class="pre">g.load_script(&quot;C:\scripts\file_to_reload.py&quot;)</span></code> with the appropriate file name</p></li>
+</ul>
+<section id="exercise-3f">
+<h3>Exercise 3f<a class="headerlink" href="#exercise-3f" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Modify your instrument script to output the current at 0.1 second intervals</p></li>
+<li><p>Reload the script</p></li>
+<li><p>Run it again and confirm the behaviour has changed</p></li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex3-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+<section id="using-functions-from-other-files">
+<h2>Using functions from other files<a class="headerlink" href="#using-functions-from-other-files" title="Link to this heading"></a></h2>
+<p>You may want to call a function from one file in another file.</p>
+<section id="calling-an-instrument-function-from-a-different-instrument-script">
+<h3>Calling an instrument function from a different instrument script<a class="headerlink" href="#calling-an-instrument-function-from-a-different-instrument-script" title="Link to this heading"></a></h3>
+<p>It is recommended that you <code class="docutils literal notranslate"><span class="pre">import</span></code> it using standard Python rather than trying to call it with the <code class="docutils literal notranslate"><span class="pre">inst.</span></code> because you don’t know the order in which the scripts are loaded. For example, if I have one instrument script, <code class="docutils literal notranslate"><span class="pre">counts.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">vanadium</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">duration</span><span class="p">):</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">change_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>and another called <code class="docutils literal notranslate"><span class="pre">calibrate.py</span></code> that uses the <code class="docutils literal notranslate"><span class="pre">vanadium</span></code> function then I would write:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">counts</span><span class="w"> </span><span class="kn">import</span> <span class="n">vanadium</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calibration</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">duration</span> <span class="ow">in</span> <span class="p">[(</span><span class="s2">&quot;10 second run&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;1 minute run&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;1 hour run&quot;</span><span class="p">,</span> <span class="mi">3600</span><span class="p">)]:</span>
+        <span class="n">vanadium</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="calling-an-instrument-function-from-a-user-script">
+<h3>Calling an instrument function from a user script<a class="headerlink" href="#calling-an-instrument-function-from-a-user-script" title="Link to this heading"></a></h3>
+<p>Here you can just use <code class="docutils literal notranslate"><span class="pre">inst.</span></code> prefix, for example <code class="docutils literal notranslate"><span class="pre">inst.my_function(arg1,</span> <span class="pre">arg2)</span></code></p>
+</section>
+<section id="calling-a-user-function-from-an-instrument-script">
+<h3>Calling a user function from an instrument script<a class="headerlink" href="#calling-a-user-function-from-an-instrument-script" title="Link to this heading"></a></h3>
+<p>This is feasible, but generally not recommended. The user script won’t be kept in version control like the instrument script and could be moved or changed unexpectedly.</p>
+</section>
+<section id="calling-a-user-function-from-a-different-user-script">
+<h3>Calling a user function from a different user script<a class="headerlink" href="#calling-a-user-function-from-a-different-user-script" title="Link to this heading"></a></h3>
+<p>The same as calling a function in one instrument script from another.</p>
+</section>
+</section>
+<section id="exercise-4">
+<span id="gp-and-ibex-ex4"></span><h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Create a new instrument script containing a function</p>
+<ul>
+<li><p>The function sets the title to “Ramping [block name] from [initial value] to [final value]”</p></li>
+<li><p>The block name, initial and final values should all be provided as input arguments</p></li>
+<li><p>The method begins a run and then changes the value of the block incrementally in steps of size 1</p></li>
+<li><p>Once the target is reached, the method ends the run</p></li>
+</ul>
+</li>
+<li><p>Put a line at the top of your instrument script <strong>outside the function definition</strong> that prints the current title</p></li>
+<li><p>Create a new user script containing a function</p>
+<ul>
+<li><p>The function runs the new instrument script on two different blocks</p></li>
+</ul>
+</li>
+<li><p>Load and run your new user-script function</p></li>
+<li><p>When was the print statement at the top of your instrument script executed?</p></li>
+</ul>
+<p><a class="reference internal" href="genie_python-and-IBEX-%28Exercise-solutions%29.html#gp-and-ibex-ex4-solution"><span class="std std-ref">Solution</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="genie_python-and-IBEX-%28Common-commands%29.html" class="btn btn-neutral float-left" title="Common commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="genie_python-and-IBEX-%28Converting-from-Open-GENIE%29.html" class="btn btn-neutral float-right" title="Converting from OpenGENIE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

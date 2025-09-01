@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulating Scripts &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Scripting Console" href="The-Scripting-Console.html" />
+    <link rel="prev" title="Pre &amp; Post-command Hooks" href="Pre-and-Post-Command-Hooks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Scripting.html">Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Alerts-on-Blocks.html">Alerts on Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Block-names-helper.html">Block Names Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Creating-and-Running-Scripts.html">Creating &amp; Running Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Error-Checking-Troubleshooting.html">Error Checking Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Genie-Python-Training.html">Genie Python Training Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pre-and-Post-Command-Hooks.html">Pre &amp; Post-command Hooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Simulating Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="The-Scripting-Console.html">The Scripting Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tips-and-Examples.html">Tips &amp; Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genie_python-Commands.html">Genie Python Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Scripting.html">Scripting</a></li>
+      <li class="breadcrumb-item active">Simulating Scripts</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/scripting/Simulating-Scripts.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="simulating-scripts">
+<h1>Simulating Scripts<a class="headerlink" href="#simulating-scripts" title="Link to this heading"></a></h1>
+<section id="simulated-genie-python">
+<h2>Simulated Genie Python<a class="headerlink" href="#simulated-genie-python" title="Link to this heading"></a></h2>
+<p>Before running a script on real hardware you may want to check that the script will behave as expected and contains no errors. To help do this <code class="docutils literal notranslate"><span class="pre">genie_python</span></code> has a simulated mode where commands that would normally communicate with hardware instead print what they are doing. To get in and out of simulation mode there is a <a class="reference external" href="https://www.geeksforgeeks.org/context-manager-in-python/">context manager</a> which will turn simulation mode on only for the code inside it’s scope and will then turn it off for you after. This can be used like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">Simulate</span><span class="p">():</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">cset</span><span class="p">(</span><span class="s2">&quot;Freq_T0&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;Freq_T0&quot;</span><span class="p">))</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>which would give:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Run</span> <span class="n">started</span>
+<span class="n">Waiting</span> <span class="n">to</span> <span class="n">exit</span> <span class="n">state</span> <span class="n">SETUP</span>
+<span class="n">Setting</span> <span class="n">Freq_T0</span> <span class="n">to</span> <span class="n">value</span> <span class="mi">10</span>
+<span class="n">OrderedDict</span><span class="p">([(</span><span class="s1">&#39;connected&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;Freq_T0&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;runcontrol&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lowlimit&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;highlimit&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;alarm&#39;</span><span class="p">,</span> <span class="s1">&#39;NO_ALARM&#39;</span><span class="p">)])</span>
+<span class="n">Run</span> <span class="n">ended</span>
+<span class="n">Waiting</span> <span class="k">for</span> <span class="n">state</span> <span class="n">SETUP</span>
+</pre></div>
+</div>
+<p>This can also be used to run your own functions, e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">load_script</span><span class="p">(</span><span class="s2">&quot;my_script.py&quot;</span><span class="p">)</span>
+<span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">Simulate</span><span class="p">():</span>
+    <span class="n">my_function</span><span class="p">()</span>  <span class="c1"># Any genie_python calls in here will be simulated </span>
+</pre></div>
+</div>
+<p>By default the simulation environment will be populated with all the current blocks that you have in your configuration and will give you errors if the script you are simulating tries to access blocks that do not exist in the current config.</p>
+<p>Within your scripts you can check if you are in simulation mode or not using <code class="docutils literal notranslate"><span class="pre">g.sim.in_sim_mode()</span></code> e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">Simulate</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">in_sim_mode</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">in_sim_mode</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+<span class="kc">False</span>
+</pre></div>
+</div>
+</section>
+<section id="initial-block-values-in-simulation-mode">
+<h2>Initial Block Values in simulation mode<a class="headerlink" href="#initial-block-values-in-simulation-mode" title="Link to this heading"></a></h2>
+<p>By default when entering simulation mode all blocks have the value <code class="docutils literal notranslate"><span class="pre">INITIAL_VALUE</span></code>. However, you may want to provide some defaults of your own so that you can simulate how the script will run from various starting conditions. You can do this by providing a dictionary of values when creating the context manager e.g.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">Simulate</span><span class="p">(</span><span class="n">initial_block_values</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;TEST_BLOCK&#39;</span><span class="p">:</span> <span class="mf">42.42</span><span class="p">}):</span>
+    <span class="n">test_block_data</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;TEST_BLOCK&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_block_data</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">42.42</span>
+</pre></div>
+</div>
+<p>You could also provide the current state of the instrument by using <code class="docutils literal notranslate"><span class="pre">cgets</span></code> before starting simulation mode:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">current_block_values</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;TEST_BLOCK&quot;</span><span class="p">:</span> <span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;TEST_BLOCK&quot;</span><span class="p">)}</span>
+<span class="k">with</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">Simulate</span><span class="p">(</span><span class="n">initial_block_values</span><span class="o">=</span><span class="n">current_block_values</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="what-is-and-is-not-simulated">
+<h2>What is and is not simulated<a class="headerlink" href="#what-is-and-is-not-simulated" title="Link to this heading"></a></h2>
+<p>Simulation mode <strong>will only simulate the functions inside genie_python</strong>, i.e. those beginning with <code class="docutils literal notranslate"><span class="pre">g.</span></code> e.g. <code class="docutils literal notranslate"><span class="pre">g.cset</span></code>, <code class="docutils literal notranslate"><span class="pre">g.cget</span></code> etc. It will <strong>not</strong> simulate the following:</p>
+<ul class="simple">
+<li><p>Anything deeper inside genie_python e.g. <code class="docutils literal notranslate"><span class="pre">g.os.open</span></code></p></li>
+<li><p>Anything outside of <code class="docutils literal notranslate"><span class="pre">g.</span></code> e.g. <code class="docutils literal notranslate"><span class="pre">time.sleep()</span></code></p></li>
+</ul>
+<p>There is some logic in simulation mode in that if you do <code class="docutils literal notranslate"><span class="pre">g.cset(&quot;my_block&quot;,</span> <span class="pre">10)</span></code> followed by <code class="docutils literal notranslate"><span class="pre">g.cget(&quot;my_block&quot;)</span></code> the new value of the block will be 10. However, this is very limited and is a work in progress, if there are additional behaviours you would like to see in simulation mode please get in touch.</p>
+<p>The following are some examples of potential mistakes that could be made with simulation mode and some examples of how to fix them:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyplot</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
+<span class="n">block_values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">block_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;my_block&quot;</span><span class="p">)[</span><span class="s2">&quot;value&quot;</span><span class="p">])</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># This will still wait for 10 seconds even when simulating!!</span>
+    <span class="k">if</span> <span class="n">my_block_value</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span> <span class="c1"># The simulated value of my_block may never reach 100 and so this may loop forever</span>
+        <span class="k">break</span> 
+<span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">my_block_value</span><span class="p">)</span>
+<span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1"># This will still show a plot even when simulating!!</span>
+</pre></div>
+</div>
+<p>this could be improved by:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyplot</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
+<span class="n">block_values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">block_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">cget</span><span class="p">(</span><span class="s2">&quot;my_block&quot;</span><span class="p">)[</span><span class="s2">&quot;value&quot;</span><span class="p">])</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">waitfor_time</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># Simulated genie_python will skip the wait here and just print</span>
+    <span class="k">if</span> <span class="n">my_block_value</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">or</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">in_sim_mode</span><span class="p">():</span> <span class="c1"># We will now stop looping if in simulation mode</span>
+        <span class="k">break</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">g</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">in_sim_mode</span><span class="p">():</span> <span class="c1"># This will now only plot if not in simulation</span>
+    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">my_block_value</span><span class="p">)</span>
+    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> 
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Pre-and-Post-Command-Hooks.html" class="btn btn-neutral float-left" title="Pre &amp; Post-command Hooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="The-Scripting-Console.html" class="btn btn-neutral float-right" title="The Scripting Console" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

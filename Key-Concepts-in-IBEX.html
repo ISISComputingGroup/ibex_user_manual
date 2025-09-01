@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concepts &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Blocks" href="concepts/Blocks.html" />
+    <link rel="prev" title="Starting and Stopping IBEX" href="introduction/Starting-and-Stopping-IBEX.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="concepts/Blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/Process-Variables.html">Process Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/PV-Naming-Conventions.html">PV Naming Conventions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="IBEX-GUI-Features.html">IBEX GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Concepts</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/Key-Concepts-in-IBEX.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="concepts">
+<h1><a class="toc-backref" href="#id2" role="doc-backlink">Concepts</a><a class="headerlink" href="#concepts" title="Link to this heading"></a></h1>
+<p>It is worth taking a few moments to appreciate some of the key concepts behind IBEX.</p>
+<nav class="contents" id="contents">
+<p class="topic-title"><strong>Contents</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#concepts" id="id2">Concepts</a></p>
+<ul>
+<li><p><a class="reference internal" href="#clients-servers" id="id3">Clients &amp; Servers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ibex-client" id="id4">IBEX Client</a></p></li>
+<li><p><a class="reference internal" href="#genie-python" id="id5">genie_python</a></p></li>
+<li><p><a class="reference internal" href="#ibex-server" id="id6">IBEX Server</a></p></li>
+<li><p><a class="reference internal" href="#security" id="id7">Security</a></p>
+<ul>
+<li><p><a class="reference internal" href="#instrument-sub-network" id="id8">Instrument Sub-Network</a></p></li>
+<li><p><a class="reference internal" href="#who-has-control" id="id9">Who has Control?</a></p></li>
+<li><p><a class="reference internal" href="#who-can-view-an-instrument" id="id10">Who can View an Instrument?</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#blocks-process-variables" id="id11">Blocks &amp; Process Variables</a></p></li>
+<li><p><a class="reference internal" href="#dae-data-acquisition-electronics" id="id12">DAE (Data Acquisition Electronics)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#what-does-the-dae-do" id="id13">What does the DAE do?</a></p></li>
+<li><p><a class="reference internal" href="#good-frames-and-raw-frames" id="id14">GOOD Frames and RAW Frames</a></p></li>
+<li><p><a class="reference internal" href="#vetoes" id="id15">Vetoes</a></p></li>
+<li><p><a class="reference internal" href="#dae-timing-sources" id="id16">DAE Timing Sources</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ts1-50hz-running" id="id17">TS1, 50Hz running</a></p></li>
+<li><p><a class="reference internal" href="#ts1-25hz-running" id="id18">TS1, 25Hz running</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="clients-servers">
+<span id="concept-client-server"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Clients &amp; Servers</a><a class="headerlink" href="#clients-servers" title="Link to this heading"></a></h2>
+<p>A client-server system is one that employs a distributed application architecture.  In a client-server system, the workload is partitioned between the providers of information or services (i.e. servers) and requesters or consumers of information or services (i.e. clients).  Clients request information or the use of a resource or service from server hosts.  Each server host runs server programs which share information or resources with clients when requested to do so.  Typically, the server and client run on separate computers connected via a network, but the client and server can also run as separate processes on the same computer.</p>
+<p>The design of IBEX follows this model:  IBEX consists of a server component, which runs on the Instrument control PC, and a client component, which runs on a separate PC (but can also run on the instrument control PC, if necessary).  IBEX has been created using the <a class="reference external" href="https://epics-controls.org/">EPICS</a> framework for creating distributed control systems.</p>
+<p>All Instruments should be installed in a consistent manner, these are detailed in <a class="reference internal" href="IBEX-File-Paths-page.html"><span class="doc">the ‘Where is …?’ guide</span></a>.</p>
+<section id="ibex-client">
+<span id="concept-client"></span><h3><a class="toc-backref" href="#id4" role="doc-backlink">IBEX Client</a><a class="headerlink" href="#ibex-client" title="Link to this heading"></a></h3>
+<p>The IBEX Client is a single application, which functions as a GUI for IBEX.</p>
+</section>
+<section id="genie-python">
+<span id="concept-genie"></span><h3><a class="toc-backref" href="#id5" role="doc-backlink">genie_python</a><a class="headerlink" href="#genie-python" title="Link to this heading"></a></h3>
+<p>genie_python can also be thought of as a client of IBEX server.  It operates as a scripting client, requesting information from the IBEX server and sending requests to change the state of devices attached to the instrument control PC.</p>
+</section>
+<section id="ibex-server">
+<span id="id1"></span><h3><a class="toc-backref" href="#id6" role="doc-backlink">IBEX Server</a><a class="headerlink" href="#ibex-server" title="Link to this heading"></a></h3>
+<p>The IBEX server is not a single component, but a collection of components, which together control the individual devices which comprise a neutron or muon Instrument. The primary components of the IBEX server are:</p>
+<dl class="simple">
+<dt>BlockServer</dt><dd><p>The core component of the IBEX server.  The BlockServer provides the service that translates <a class="reference internal" href="concepts/Process-Variables.html"><span class="doc">Process Variables</span></a> into <a class="reference internal" href="concepts/Blocks.html"><span class="doc">Blocks</span></a>.  It also supports run-control and serves configuration information.</p>
+</dd>
+<dt>ICP</dt><dd><p>The ICP (Instrument Control Program) is the process which controls the <a class="reference internal" href="#dae-data-acquisition-electronics">DAE (Data Acquisition Electronics)</a>.  The ICP tells the DAE when to start and stop collecting data from the instrument detectors.  The ICP is also responsible for combining the detector data with logged sample environment data and for transferring the final dataset to a data file.</p>
+</dd>
+<dt>Archiver</dt><dd><p>The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks &amp; process variables and can also be used to inspect the history of process variables for diagnostic purposes.</p>
+</dd>
+<dt>IOCs</dt><dd><p>IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via <a class="reference internal" href="concepts/Process-Variables.html"><span class="doc">Process Variables</span></a>.  Typically, there is one IOC for each device attached to the instrument control PC.</p>
+</dd>
+<dt>Message Server</dt><dd><p>The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.</p>
+</dd>
+<dt><a class="reference internal" href="gui/Script-Server.html"><span class="doc">Script Server</span></a></dt><dd><p>The Script Server runs Python scripts submitted by authorised clients. After these scripts are run, the output is sent back to the IBEX client. The output of these scripts can be viewed inside the Script Server View.</p>
+</dd>
+<dt>MySQL</dt><dd><p>MySQL is an open-source relational database system, which provides database services to
+the Archiver and the Message Server.</p>
+</dd>
+</dl>
+</section>
+<section id="security">
+<span id="concept-security"></span><h3><a class="toc-backref" href="#id7" role="doc-backlink">Security</a><a class="headerlink" href="#security" title="Link to this heading"></a></h3>
+<p>A critical aspect of any control system is security: in particular, who has control of an instrument at any point in time.  By control, we mean the ability to change PVs or start/stop the collection of data.  The security model in IBEX reflects current working practices at ISIS.</p>
+<section id="instrument-sub-network">
+<span id="concept-subnet"></span><h4><a class="toc-backref" href="#id8" role="doc-backlink">Instrument Sub-Network</a><a class="headerlink" href="#instrument-sub-network" title="Link to this heading"></a></h4>
+<p>Each instrument controlled by IBEX has its own sub-network.  The sub-network is a self-contained, mini-network which connects the instrument blockhouse, the instrument machine room (which houses the instrument control PC and DAE rack) and the instrument cabin/pod. Each instrument sub-network is independent of the sub-network belonging to any other instrument.  The instrument sub-network is connected to the wider ISIS network using a gateway.  Also, the instrument control PC runs a process called the EPICS Gateway, which controls access to PVs on the instrument sub-network.</p>
+<p>This arrangement means that the devices attached to the instrument control PC are isolated from events elsewhere on the network.  For example, should there be a need to shut down a part of the ISIS network (e.g. for maintenance reasons), the instrument sub-network will continue to run without interruption.  Many hardware devices are not designed to be connected directly to busy, general purpose networks; by employing a sub-network, we can insulate these devices from the background traffic that exists on the rest of the network.  A sub-network arrangement helps to make the instrument more resilient.</p>
+</section>
+<section id="who-has-control">
+<span id="concept-control-permission"></span><h4><a class="toc-backref" href="#id9" role="doc-backlink">Who has Control?</a><a class="headerlink" href="#who-has-control" title="Link to this heading"></a></h4>
+<p>In IBEX, typically only PCs directly connected to the instrument sub-network can control the instrument.  To control an instrument, your PC must be connected to a network port in the instrument cabin/pod, the instrument machine room or the instrument blockhouse.</p>
+<p>Any request from a PC for access to a PV is checked by the EPICS Gateway.  If the request originates from within the instrument sub-network, the EPICS Gateway will allow full (read and write) access to the PV.  If the request originates from outside the instrument sub-network, the EPICS Gateway will allow read-only access to the PV.  Therefore, if your PC is not directly connected to the instrument sub-network, you can only view the status of an instrument.</p>
+</section>
+<section id="who-can-view-an-instrument">
+<span id="concept-view-permission"></span><h4><a class="toc-backref" href="#id10" role="doc-backlink">Who can View an Instrument?</a><a class="headerlink" href="#who-can-view-an-instrument" title="Link to this heading"></a></h4>
+<p>Anyone on the ISIS network can view an instrument.  For example:</p>
+<ul class="simple">
+<li><p>another scientist, using another instrument, can use IBEX to view what is happening on your instrument.  This is especially useful when instruments share infrastructure (e.g. the muon beamlines).</p></li>
+<li><p>an instrument scientist can use IBEX to view what is happening on your instrument from his or her office.</p></li>
+<li><p>a technician can use IBEX to view the status of a device.</p></li>
+<li><p>a support person can use IBEX to check what is happening on your instrument and help you troubleshoot problems.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="blocks-process-variables">
+<span id="concept-blocks-pvs"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Blocks &amp; Process Variables</a><a class="headerlink" href="#blocks-process-variables" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="concepts/Blocks.html">Blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts/Process-Variables.html">Process Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts/PV-Naming-Conventions.html">PV Naming Conventions</a></li>
+</ul>
+</div>
+</section>
+<section id="dae-data-acquisition-electronics">
+<span id="concept-dae"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">DAE (Data Acquisition Electronics)</a><a class="headerlink" href="#dae-data-acquisition-electronics" title="Link to this heading"></a></h2>
+<p>The DAE is a collection of electronic cards housed in a VXI/VME crate, which is located in the instrument cabin or pod.  The DAE is maintained by the ISIS electronics group.  There are two types of card in the DAE:</p>
+<dl class="simple">
+<dt>Detector Cards</dt><dd><p>The DAE contains many detector cards, which are connected to the instrument detectors, and record neutron counts.</p>
+</dd>
+<dt>Environment/Period Card</dt><dd><p>The DAE contains a single environment/period card, which distributes timing signals etc. and maintains global
+counters (e.g. number of ISIS pulses, proton charge delivered (PPP))</p>
+</dd>
+</dl>
+<p>The DAE is usually connected to the instrument control PC via a USB or MXI-2 cable.</p>
+<p>Settings for the DAE can be read and changed either through the <a class="reference internal" href="how_to/Manage-the-DAE.html"><span class="doc">IBEX client</span></a> or commands <a class="reference internal" href="Scripting.html"><span class="doc">issued in scripts</span></a>.</p>
+<section id="what-does-the-dae-do">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">What does the DAE do?</a><a class="headerlink" href="#what-does-the-dae-do" title="Link to this heading"></a></h3>
+<p>The DAE:</p>
+<ul class="simple">
+<li><p>Records the arrival time of neutrons at detectors relative to the ISIS pulse</p></li>
+<li><p>Histograms the neutron counts based on their time of arrival into “bins” chosen by scientists</p></li>
+<li><p>If desired, groups (gangs) detectors together</p></li>
+<li><p>If necessary, rejects (vetoes) data based on pre-defined criteria</p></li>
+<li><p>Saves all of this in “detector card memory” to be later read by the PC</p></li>
+</ul>
+</section>
+<section id="good-frames-and-raw-frames">
+<span id="concept-good-raw-frames"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">GOOD Frames and RAW Frames</a><a class="headerlink" href="#good-frames-and-raw-frames" title="Link to this heading"></a></h3>
+<p>The DAE will only record data if it receives a “start pulse” signal.</p>
+<dl class="simple">
+<dt>RAW Frame</dt><dd><p>A RAW Frame means the DAE received a “start pulse” signal, but data may or may not have been saved to the detector card.</p>
+</dd>
+<dt>GOOD Frame</dt><dd><p>A GOOD Frame is a RAW frame where data was histogrammed and written to the detector card.</p>
+</dd>
+</dl>
+<p>RAW frames that do not become GOOD frames are called VETOED frames</p>
+</section>
+<section id="vetoes">
+<span id="concept-veto"></span><h3><a class="toc-backref" href="#id15" role="doc-backlink">Vetoes</a><a class="headerlink" href="#vetoes" title="Link to this heading"></a></h3>
+<p>A veto is a hardware signal that can, on a frame by frame basis, tell the DAE not to collect data.</p>
+<ul class="simple">
+<li><p>The DAE supports four user-defined external vetoes (labelled VT0 -&gt; VT3 on a crate), which can be connected to choppers, moderator, etc.</p></li>
+<li><p>Internal (FIFO) veto – triggered if too many counts in a single frame on any card</p></li>
+<li><p>SMP veto – triggered if chopper timing signal out of phase with ISIS</p></li>
+<li><p>Fermi chopper veto: checks for the arrival of a chopper signal within a given window on inelastic chopper spectrometers</p>
+<ul>
+<li><p>Used on MERLIN, MAPS, MARI. On LET handled by chopper crate and so just an external veto.</p></li>
+</ul>
+</li>
+<li><p>ISIS 50Hz veto: vetoes frames when accelerator not running at 50Hz (e.g. during beam run up or diagnostics)</p>
+<ul>
+<li><p>Used on IRIS/OSIRIS, but they also use ISISFREQ block</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="dae-timing-sources">
+<span id="concept-timing"></span><h3><a class="toc-backref" href="#id16" role="doc-backlink">DAE Timing Sources</a><a class="headerlink" href="#dae-timing-sources" title="Link to this heading"></a></h3>
+<p>The DAE can use one of three timing sources:</p>
+<ul class="simple">
+<li><p>ISIS: uses the ISIS accelerator pulse from the cable plugged into the TOF socket</p></li>
+<li><p>SMP: uses the “secondary master pulse”, usually a chopper plugged into the SMP socket</p></li>
+<li><p>First TS1: uses the first ISIS pulse after the missing TS2 pulse (so 10Hz on TS1).</p></li>
+<li><p>Internal Test Clock: 50Hz timing signal provided internally by DAE</p>
+<ul>
+<li><p>Used for quiet counts out of a cycle</p></li>
+<li><p>Need to turn off SMP veto as test clock is not synchronised to anything</p></li>
+</ul>
+</li>
+</ul>
+<section id="ts1-50hz-running">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">TS1, 50Hz running</a><a class="headerlink" href="#ts1-50hz-running" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Can choose either ISIS or SMP – however, they differ in what happens if beam goes off</p></li>
+<li><p>ISIS: beam off -&gt; no signal and so no RAW frame</p></li>
+<li><p>SMP: if chopper continues to run -&gt; RAW frame, which will be vetoed by the SMP veto as
+there is no corresponding ISIS TOF pulse.</p></li>
+</ul>
+</section>
+<section id="ts1-25hz-running">
+<h4><a class="toc-backref" href="#id18" role="doc-backlink">TS1, 25Hz running</a><a class="headerlink" href="#ts1-25hz-running" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Must choose SMP (chopper) timing as this signal is the one at 25Hz</p></li>
+<li><p>If beam off, chopper continues to run -&gt; RAW frame, but vetoed by SMP veto as no corresponding ISIS pulse</p></li>
+<li><p>Dashboard beam current calculated from DAE pulses, so 25Hz -&gt; half ISIS beam current</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction/Starting-and-Stopping-IBEX.html" class="btn btn-neutral float-left" title="Starting and Stopping IBEX" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="concepts/Blocks.html" class="btn btn-neutral float-right" title="Blocks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 01, 2025.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
