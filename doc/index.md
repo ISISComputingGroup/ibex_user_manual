@@ -44,7 +44,6 @@ How-To
 IBEX-File-Paths-page
 Instrument-Specific-Guidance
 Device-Specific-Guidance
-Obsolete
 ```
 
 ## Further information & Links
