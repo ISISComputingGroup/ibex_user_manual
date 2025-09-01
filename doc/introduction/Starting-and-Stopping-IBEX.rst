@@ -52,37 +52,3 @@ Stopping IBEX Server
 If you want to stop running the server, it is probably best to make sure you have stopped your client.
 
 Similar to the ``start_ibex_server.bat`` there is a ``stop_ibex_server.bat`` which you can usually access in the same ways. There will either be a shortcut in your start menu, which points to a file in the EPICS directory.
-
-
-Starting and Stopping IBEX Server After/Before Running SECI
------------------------------------------------------------
-
-There is a special case when you want to swap from IBEX to SECI when SECI is using IBEX as a *mini-inst* (this means IBEX is running an underlying ioc like the JASCO pump or a special DAE process). In this case there are multiple files that need to be changed to run in the two modes. To facilitate swapping there are scripts to allow you to do this easily. 
-
-Starting IBEX Server after running SECI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To start IBEX Server after running SECI, proceed as follows:
-
-#. Use Windows Remote Desktop Connection to log in to your instrument control PC
-#. Open a command window
-#. At the command prompt type the following::
-
-    cd c:\Instrument\Apps\EPICS
-    start_ibex_server_close_seci.bat
-    
-#. Allow the script a few minutes to complete.
-
-Stopping IBEX Server before running SECI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To stop IBEX Server and then start SECI, proceed as follows:
-
-#. Use Windows Remote Desktop Connection to log in to your instrument control PC
-#. Open a command window
-#. At the command prompt type the following::
-
-    cd c:\Instrument\Apps\EPICS
-    stop_ibex_server_start_seci
-    
-#. Allow the script a few minutes to complete.

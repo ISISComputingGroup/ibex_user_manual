@@ -29,15 +29,10 @@ How do I install IBEX Client?
 
 To install IBEX Client - see :ref:`installing_ibex_client`.
 
-Can I run IBEX and SECI at the same time?
------------------------------------------
-
-In a word - No.  Running two control programs on any system is a bad idea - which program has control?  If you were to run IBEX and SECI on the same system, the two would contend for control of individual devices.  It would not be clear which device was controlled by which program.  The results would be unpredictable.
-
 Which version of Python does IBEX use?
 --------------------------------------
 
-IBEX currently uses Python 3.11.2. 
+IBEX currently uses Python 3.12
 
 Where can I learn about Python?
 -------------------------------
@@ -66,11 +61,6 @@ How do I stop IBEX Server?
 --------------------------
 
 To stop IBEX Server - see :ref:`stopping_ibex_server`.
-
-Can I switch from running IBEX to SECI and vice-versa?
-------------------------------------------------------
-
-Yes, it is possible to switch from running IBEX to SECI or to switch from SECI to IBEX, but you have to be careful. See :doc:`obsolete/Switching-Between-IBEX-and-SECI` for details.
 
 Can I write scripts to control my experiment?
 ---------------------------------------------

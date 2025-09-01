@@ -23,9 +23,3 @@ Introduction to genie_python
 ------------------------------------------------
 
 A full reference to genie_python is available `on GitHub <https://isiscomputinggroup.github.io/genie/genie_python>`_ or internally `on shadow <http://shadow.nd.rl.ac.uk/genie_python/sphinx/genie_python.html>`_.
-
-Previous Instrument Control at ISIS
-------------------------------------------------
-You can find out more about the previous control system, SECI, and how it relates to IBEX :doc:`here<../obsolete/Previous-Instrument-Control-at-ISIS-‐-SECI>`.
-
-

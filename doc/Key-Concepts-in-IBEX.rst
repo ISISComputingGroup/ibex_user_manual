@@ -166,7 +166,7 @@ A veto is a hardware signal that can, on a frame by frame basis, tell the DAE no
 
 * ISIS 50Hz veto: vetoes frames when accelerator not running at 50Hz (e.g. during beam run up or diagnostics) 
 
-  * Used on IRIS/OSIRIS, but they also use ISISFREQ SECI block 
+  * Used on IRIS/OSIRIS, but they also use ISISFREQ block
 
 .. _concept_timing:
 
