@@ -5,7 +5,7 @@ Error Checking Troubleshooting
 Pylint
 ======
 
-Scripts are now “linted” on load, which means they are checked for validity against a variety of conditions. This means that more mistakes in the code can be caught before the script is run. The script is linted on load and if there are issues the output from `g.load_script` will look something like:
+Scripts are now “linted” on load, which means they are checked for validity against a variety of conditions. This means that more mistakes in the code can be caught before the script is run. The script is linted on load and if there are issues the output from ``g.load_script`` will look something like:
 
 .. code-block::
 
@@ -102,9 +102,9 @@ Although wildcard imports are not recommended because of the possibility of name
 
 You will still get a warning about wildcards which is good but not the warning about unused methods.
 
-============
-New: Pyright
-============
+=======
+Pyright
+=======
 
 As well as being 'linted', scripts are now checked against Pyright on load. This means that there will be fewer errors during runtime, as they will be caught when the script is being loaded. This is beneficial as it means that if your script has an inherent problem that could affect your equipment and you try to load and run it, it is more likely now that IBEX will not let your script be run. However, this may also mean that scripts that once worked may not anymore.
 
@@ -118,7 +118,10 @@ Implications for Current and Future Scripts
 
 Current Scripts: Scripts that previously loaded without errors may now produce errors due to type inconsistencies or other issues that Pyright detects. These scripts will need to be updated to resolve these issues before they can be loaded and run successfully.
 Future Scripts: When writing new scripts, it is good to pay closer attention to adding type annotations. This will help avoid errors when the script is loaded. Note that Pyright errors will take the same format as the previously mentioned Pylint errors, but will be preceded by a [PR] representing Pyright.
+
 Examples of Common Pyright Errors
+---------------------------------
+
 Here are some examples of scripts that may not have produced load-time errors before but will now do so due to Pyright's checks.
 
 **Example 1: Invalid Range**

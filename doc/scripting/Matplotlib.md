@@ -91,7 +91,7 @@ The IBEX user interface includes a python scripting window. When plotting graphs
 In the IBEX user interface, matplotlib is _non-blocking_ - that is, a script will continue once a plot has been drawn without the plot needing to be closed.
 
 :::{note}
-This is new functionality as of July 2018. If you prefer matplotlib windows to spawn separately from the main IBEX window, you can type the matplotlib command:
+If you prefer matplotlib windows to spawn separately from the main IBEX window, you can type the matplotlib command:
 ```python
 matplotlib.use('Qt4Agg')
 ```
