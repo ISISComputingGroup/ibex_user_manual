@@ -2,7 +2,7 @@
 
 The web dashboard (or data web) is a basic webpage that will give you information about the state of your instrument.
 
-It can be found at http://dataweb.isis.rl.ac.uk/
+It can be found at https://isiscomputinggroup.github.io/WebDashboard/instruments
 
 The view is read only and gives you a dashboard in a similar style to the desktop GUI as well as general instrument data and information on blocks. There is a checkbox at the bottom of the screen to show/hide hidden blocks.
 
