@@ -92,4 +92,5 @@ intersphinx_mapping = {
     "mantid": ("https://docs.mantidproject.org/", None),
     "genie_python": ("https://isiscomputinggroup.github.io/genie", None),
     "matplotlib": ("https://matplotlib.org", None),
+    "python": ("https://docs.python.org/3/", None),
 }
