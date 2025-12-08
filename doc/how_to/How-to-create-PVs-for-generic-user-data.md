@@ -2,10 +2,11 @@
 
 The `INSTETC` [IOC](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Start-and-Stop-IOCs) contains [PVs](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Process-Variables) intended to be user-settable values. These PVs can have blocks pointed at them [via the configurations screen](https://github.com/ISISComputingGroup/ibex_user_manual/wiki/Create-and-Manage-Configurations#blocks-tab). These PVs could, for example, be used to hold data about equipment which is manually controlled, but should be put in a nexus file.
 
-There are three types of data that a user PV can hold: integer, real and string. The corresponding process variables are:
+There are multiple types of data that a user PV can hold. The corresponding process variables are:
 - `IN:<instrument>:PARS:USER:I0` for integers
 - `IN:<instrument>:PARS:USER:R0` for real types
-- `IN:<instrument>:PARS:USER:S0` for strings
+- `IN:<instrument>:PARS:USER:S0` for strings (up to 40 characters long)
+- `IN:<instrument>:PARS:USER:LS0` for an array of characters up to 65536 characters long, which can be used to store long strings.
 
 The counter at the end of the PV is an index. By default, instruments are set up to have 5 of each type of user PV (indexes 0-4 inclusive). If you find you need more than 5 of any one data type, it is configurable.
 - Go to `C:\Instrument\Settings\config\NDX<instrument>\configurations`
