@@ -47,6 +47,7 @@ matplotlib
 mevents
 microamps
 namespace
+NDX
 nxs
 ok
 plottable
@@ -69,6 +70,7 @@ runstate
 runtime
 setpoint
 setpoints
+spudulike
 subdomain
 supermirror
 synoptic
