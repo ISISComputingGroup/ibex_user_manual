@@ -9,4 +9,4 @@ The archive watcher program runs on an analysis computer and copies data files t
 - you will likely need to adjust permissions on the directory files are copied to, see `archive_watcher.proeprties` for this but it is likely somewhere like `c:\data`. The service would have run as `inst_mgr` but you now need to ass the account the PC is logged in as to have permission.
 - run `archive_water.exe` in `c:\Program Files (x86)\STFC ISIS Facility\ISIS Archive Watcher` interactively to test
 - look at `archive_watcher.log` in `%TEMP%` and check for errors
-- create a shortcut in the user logon startup `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+- create a shortcut to `archive_watcher.exe` in the user logon startup `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
