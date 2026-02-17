@@ -1,4 +1,4 @@
-Create and Manage Configurations
+PCreate and Manage Configurations
 ################################
 
 A configuration is the means by which an instrument is described and defined to IBEX.  A configuration defines the blocks, IOCs, components, macros and other items which IBEX needs to use to control the instrument.  You can create multiple configurations for an instrument, to describe and define how the instrument has been set up for different experiments. In some cases, there are macro settings which are global for the instrument. These are set outside of the GUI and override the values in the configuration. These are setting which should not change, e.g. the IP address of the Galil motors (see the section below on how to alter these).
@@ -152,8 +152,6 @@ Logging Settings
    * Click on the ``Enabled`` check-box to change the way the block is logged.  If the ``Enabled`` check-box is checked, then logging is enabled.
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
-
-**PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
 
 To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
