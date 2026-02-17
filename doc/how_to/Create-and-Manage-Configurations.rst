@@ -153,8 +153,6 @@ Logging Settings
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
-**PREVIOUS VERSIONS OF IBEX:** In releases 2.1.0 or earlier, the logging is disabled by default.
-
 To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
 **Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
