@@ -101,6 +101,8 @@ Spectra Plots
 
 The Spectra Plots Tab displays up to 4 spectra plots.  The plots show the recorded spectra from the detectors which were set up using the tables in the data acquisition tab.  You can choose which spectra are plotted by using the ``Spectrum`` and ``Period`` fields for each plot.  Click on the ``Set Plot`` button (positioned at the top right of each plot) to update the plot after changing the ``Spectrum`` or ``Period`` fields.
 
+Spectra plots can be displayed in either ``counts`` or ``counts/μs`` mode. In ``counts`` mode, the plot shows the raw sum of counts in the given bin. If bin widths are not uniform, the plot of ``counts`` may have discontinuities at time-binning boundaries. In ``counts/μs`` mode, the displayed number is normalised by bin width (this is usually preferred for visualisation).
+
 Combined Spectra Plot
 ---------------------
 
