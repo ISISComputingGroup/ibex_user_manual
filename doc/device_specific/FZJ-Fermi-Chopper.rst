@@ -172,3 +172,8 @@ Chopper speed stuck between 1-49Hz
 The symptom is that the chopper will be stuck at a specific speed, e.g. ``28 Hz`` indefinitely when attempting to spin down, or for a few minutes (until it physically passes the relevant speed) when spinning up. The choppers cannot be commanded by IBEX to run at speeds that are not multiples of 50Hz. This will also cause the chopper lift to be inoperative (as the chopper lift still believes the chopper is spinning and therefore inhibits motion).
 
 The actual speed shown on the front panel of the chopper is shown in ``rpm``, but IBEX works in ``Hz``, therefore you can compare the two by multiplying/dividing by 60. If the front panel of the chopper also shows the same issue with a stuck speed, then it is likely a mechanical problem - e.g. a broken speed sensor - consult with the chopper team.
+
+Unrealistic Valules / Values in GUI do not match value on device
+----------------------------------------------------------------
+
+To reolve this, the chopper team will be required to power-cycle the controller after carefully checking the chopper is at rest. 
