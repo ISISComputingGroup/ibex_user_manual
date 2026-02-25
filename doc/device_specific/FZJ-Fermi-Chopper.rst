@@ -173,7 +173,7 @@ The symptom is that the chopper will be stuck at a specific speed, e.g. ``28 Hz`
 
 The actual speed shown on the front panel of the chopper is shown in ``rpm``, but IBEX works in ``Hz``, therefore you can compare the two by multiplying/dividing by 60. If the front panel of the chopper also shows the same issue with a stuck speed, then it is likely a mechanical problem - e.g. a broken speed sensor - consult with the chopper team.
 
-Unrealistic Valules / Values in GUI do not match value on device
+Unrealistic Values / Values in GUI do not match value on device
 ----------------------------------------------------------------
 
-To reolve this, the chopper team will be required to power-cycle the controller after carefully checking the chopper is at rest. 
+To resolve this, the chopper team will be required to power-cycle the controller after carefully checking the chopper is at rest. 
