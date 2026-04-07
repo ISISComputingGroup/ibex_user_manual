@@ -26,6 +26,5 @@ The course is broadly split up into the following topics
 - :doc:`genie_python-and-IBEX-(Getting-started)`
 - :doc:`genie_python-and-IBEX-(Common-commands)`
 - :doc:`genie_python-and-IBEX-(Scripting)`
-- :doc:`genie_python-and-IBEX-(Converting-from-Open-GENIE)`
 - :doc:`genie_python-and-IBEX-(Closing-remarks)`
 - :doc:`genie_python-and-IBEX-(Exercise-solutions)`
