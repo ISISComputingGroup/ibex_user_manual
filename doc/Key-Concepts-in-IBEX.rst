@@ -47,7 +47,7 @@ Archiver
   The Archiver, as its name suggests, archives the values of process variables to a database. This service supports strip-chart plots of blocks & process variables and can also be used to inspect the history of process variables for diagnostic purposes.
 
 IOCs
-  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC.  IOCs are analogous to LabVIEW VIs.  IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via :doc:`/concepts/Process-Variables`.  Typically, there is one IOC for each device attached to the instrument control PC.
+  IOCs (Input/Output Controllers) are processes which control individual devices attached to the instrument control PC. IOCs communicate with other processes (e.g. the BlockServer or other IOCs) via :doc:`/concepts/Process-Variables`.  Typically, there is one IOC for each device attached to the instrument control PC.
 
 Message Server
   The Message Server intercepts console messages written by IOCs and stores them in a database. It also serves the messages to the IBEX client, so that the message log can be inspected and searched from the GUI.
