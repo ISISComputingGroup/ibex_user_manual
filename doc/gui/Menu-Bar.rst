@@ -66,7 +66,7 @@ You can change run-control settings in 3 different ways (2 temporary and 1 perma
        Input low and high limit from the bottom of the window.
 
     2.  You can also set temporary run-controls settings via scripting.
-        Type ``g.cget(b.YOUR_BLOCK_NAME, runstate=true, highlimit= x, lowlimit=y``, where x and y are numbers you want to set as limits.
+        Type ``g.cset(b.YOUR_BLOCK_NAME, runcontrol=True, lowlimit=x, highlimit=y)``, where x and y are numbers you want to set as limits.
 
     **Note:** Defaults can be restored using the ``Restore Configuration Values`` for the selected block or ``Restore All Configuration Values``    
     buttons.
