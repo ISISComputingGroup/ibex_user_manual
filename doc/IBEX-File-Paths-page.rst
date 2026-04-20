@@ -1,7 +1,7 @@
 Where is ...?
 #############
 
-The installation of IBEX is common for most instruments you shouldn't need to delve into the paths as a user but as an instrument scientist there may be some items you wish to edit or look at. The system is set out as follows:
+The installation of IBEX is common for most instruments; you shouldn't need to delve into the paths as a user, but as an instrument scientist there may be some items you wish to edit or look at. The system is set out as follows:
 
 * IBEX Client: ``C:\Instrument\Apps\Client_E4\ibex-client.exe`` there should be a shortcut on the task bar
 
