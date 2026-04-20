@@ -155,10 +155,6 @@ Server Status
 
 The server status panel reports information, warnings and error that occur in the IOC. If there is a warning or error it should be taken seriously and the fault should be fixed before taking data. The status is cleared before each move.
 
-Known errors that can be ignored (and will be fixed in upcoming releases):
-
-- None
-
 Move All button
 ~~~~~~~~~~~~~~~
 

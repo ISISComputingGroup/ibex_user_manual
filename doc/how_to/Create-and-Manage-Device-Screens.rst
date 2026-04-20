@@ -14,7 +14,7 @@ To view the device screen, double-click on the device in the device screens tabl
 Creating a Device Screen
 ------------------------
 
-Click on the 'Edit Device Screens' button just below the Device screens tab to opens the 'Configure Device Screens' dialog box. 
+Click on the 'Edit Device Screens' button just below the Device screens tab to open the 'Configure Device Screens' dialog box.
 
 * To create a device screen, click 'Add' in the bottom left-hand corner.
 * You can rename the device in 'Name' box in the top right-hand corner. The default name is "Screen".
@@ -27,7 +27,7 @@ Click on the 'Edit Device Screens' button just below the Device screens tab to o
 Editing a Device Screen
 -----------------------
 
-Click on the 'Edit Device Screens' button just below the Device screens tab to opens the 'Configure Device Screens' dialog box. 
+Click on the 'Edit Device Screens' button just below the Device screens tab to open the 'Configure Device Screens' dialog box.
 
 * To edit a device screen, click device screen you want to edit.
 * You can then edit the name of the device screen by clicking in the 'Name' box
@@ -39,7 +39,7 @@ Click on the 'Edit Device Screens' button just below the Device screens tab to o
 Deleting a Device Screen
 ------------------------
 
-Click on the 'Edit Device Screens' button just below the Device screens tab to opens the 'Configure Device Screens' dialog box. 
+Click on the 'Edit Device Screens' button just below the Device screens tab to open the 'Configure Device Screens' dialog box.
 
 * To delete a device screen, click device screen you want to delete. You can delete several different device screens at once by holding down the Ctrl key and selecting the device screens to delete.
 * Then click 'Delete' on the bottom left-hand 
@@ -54,4 +54,4 @@ Live View Device Screen
 .. image:: LiveView.png
    :target: LiveView_large.png
 
-You instrument may have access to a Live View device screen which shows event data from the DAE in real time. This option is only available if your instrument is set up for Live View: it is running in event mode, and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact Freddie Akeroyd.
+Your instrument may have access to a Live View device screen which shows event data from the DAE in real time. This option is only available if your instrument is set up for Live View: it is running in event mode, and your instrument has an arrangement of detectors that can be mapped as a square. If you are in doubt, contact ``ISISExperimentControls@stfc.ac.uk``.

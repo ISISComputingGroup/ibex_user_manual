@@ -177,7 +177,7 @@ Use the buttons with the Up and Down arrows to control the ordering of the group
 
 You can select multiple blocks to be added (or removed) from a group using the ``Shift`` and/or ``Ctrl`` keys on your keyboard.
 
-**Note:** Groups that have been inherited from component will be shown, but cannot be cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group as shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
+**Note:** Groups that have been inherited from component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks in an inherited group are shown as "greyed-out").  To modify inherited groups you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
 
 .. _manage_configs_add_ioc:
 
@@ -210,7 +210,7 @@ To set an IOC macro:
 
 #. The table of macros will be updated with the new value.  You can also use the ``Clear Macro`` button to clear the contents of the ``Value:`` field.
 
-As of version 5.7, values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
+Values can be edited directly in the table. Pressing enter or clicking somewhere else will set the value. To clear the value so that it is no longer set, set "Use Default?" to yes. To set the macro to a blank value, i.e an empty string or "", set "Use Default?" to no and leave the value box empty.
 
 If you are not sure about how to correctly configure macro values for a device, please consult with the Experiment Controls team.
 
@@ -219,7 +219,7 @@ If you are not sure about how to correctly configure macro values for a device, 
 IOC PV Values
 ~~~~~~~~~~~~~
 
-IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example, you may have a CCR in one configuration but a Furnace in another, both using the same Eurotherm. However, the Eurotherm may require the Furnace.txt sensor file for the furnace and the CCR.txt file for the CCR. In this case the we would add a PV Value of 
+IOC PV Values allows you to set the values of a PV when the configuration is first loaded. For example, you may have a CCR in one configuration but a Furnace in another, both using the same Eurotherm. However, the Eurotherm may require the Furnace.txt sensor file for the furnace and the CCR.txt file for the CCR. In this case, we would add a PV Value of
 
 *IN:INST:EUROTHRM_01:A01:CAL:SEL* *Furnace.txt*
 
@@ -227,7 +227,7 @@ to the furnace config and
 
 *IN:INST:EUROTHRM_01:A01:CAL:SEL* *CCR.txt*
 
-to the CCR config. If you are unsure what PVs you need to write to see :ref:`faq_find_pv`
+to the CCR config. If you are unsure what PVs you need to write to, see :ref:`faq_find_pv`
 
 **Note**: The value of a PV will remain until it is set to something else. So if a configuration sets it loading another configuration will not set it back to what it was before.
 

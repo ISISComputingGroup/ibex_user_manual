@@ -54,7 +54,7 @@ The log plotter allows you to display multiple traces on the same value axis so 
 3. In the row of any trace, click the axis entry, then select the axis of the trace you want to add it to from the drop-down list.
 4. They will now be displayed along the same value axis.
 
-As of Release Version 5.5, you can right click on the block you want to add and select the option to add to an existing axis.
+You can right click on the block you want to add and select the option to add to an existing axis.
 
 
 Adjusting Time Axis on Log Plotter
