@@ -37,7 +37,15 @@ Reset Layout
 
 .. image:: reset_layout_button.png
 
-The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed, then this button becomes highlighted in red. 
+The Reset Layout View resets the layout of the windows back to their default position. If the layout has been changed, then this button becomes highlighted in red.
+
+.. _view_refresh_pvs:
+
+Refresh PVs
+===========
+The refresh PVs button remakes the connection between the IBEX user interface and the underlying EPICS IOC, for example for :doc:`blocks <Blocks-and-Groups>` and :doc:`dashboard variables <Dashboard>`.
+
+This is not routinely required, but may help to restore a PV connection which appears to be stuck, for example a PV which is showing as disconnected in the client despite the underlying :ref:`PV <concept_blocks_pvs>` and IOC being up.
 
 .. _view_alarms:
 
