@@ -14,7 +14,7 @@ Welcome to this introductory course on ``genie_python``, a Python module that en
 
 At each stage, the course aims to assist learning with exercises and worked examples. We will assume a basic working knowledge of Python. If you've never programmed in Python before, we recommend the :external+mantid:ref:`introduction_to_python` from the Mantid project.
 
-The slides accompanying this course can be found at ``\\isis\shares\ISIS_Experiment_Controls_Public\training``.
+The slides accompanying this course can be found at ``\\isis.cclrc.ac.uk\shares\ISIS_Experiment_Controls_Public\training``.
 
 ``genie_python`` does not cover data analysis. If you want to do analysis that can't be achieved with basic Python, we recommend the :external+mantid:ref:`Python in Mantid training course<pim_intro>`.
 
