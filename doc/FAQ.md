@@ -131,6 +131,8 @@ The problem is that the string has not been escaped correctly. In python, the ba
 - Use the default script path:
   - `g.load_script('NiceScript.py')`
 
+ This applies to all functions that require a file path i.e. `set_user_script_dir()` 
+
 ### Can I run scripts from Mantid?
 
 `genie_python` - the library which provides convenience functions such as `cset` and `cget` in order to run scripts can be installed from `pip`, and is [available on pypi](https://pypi.org/project/genie-python/). 
