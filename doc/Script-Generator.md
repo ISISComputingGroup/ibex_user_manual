@@ -1,5 +1,12 @@
 # Script Generator
 
+:::{important}
+The script generator is currently only configured for a small number of instruments (primarily Muon beamlines).
+
+If you are an **ISIS instrument scientist** and wish to discuss configuring the script generator for the first time on
+a new instrument, please {ref}`contact the IBEX team <report_a_problem>` for advice.
+:::
+
 ```{toctree}
 :caption: Introduction
 :maxdepth: 1
