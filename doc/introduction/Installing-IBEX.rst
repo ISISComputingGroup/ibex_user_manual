@@ -13,15 +13,15 @@ Installation of IBEX client on a PC is simple and straightforward.
 Pre-requisites for running IBEX Client
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The IBEX client is designed to run on Windows 10, and so long as that is up to date that should be enough for the client.
-It may run on Windows 11, but there is no support for that at present.
+The IBEX client is designed to run on Windows.
 It can run on Linux, and there is a build available for use on IDAAS, it is not supported in other Linux environments at present.
+You must be on the ISIS network to use the client. 
 
 
 Installation
 ~~~~~~~~~~~~
 
-There is a network drive location that the experiment controls group can direct you to.
+Download the latest release from `here <https://github.com/ISISComputingGroup/ibex_gui/releases/latest/download/client.7z/>`__ and run `ibex-client.exe`
 
 .. _installation_layout:
 
