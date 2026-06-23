@@ -43,6 +43,7 @@ Lakeshore
 llb
 mA
 Mantid
+mantid
 matplotlib
 mevents
 microamps
