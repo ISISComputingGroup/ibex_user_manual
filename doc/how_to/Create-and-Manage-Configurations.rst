@@ -158,7 +158,7 @@ Alarm Configurations
 
    * **Note:** By default alarms are defined at the IOC level.  
    * Click on the ``Enabled`` check-box to enable or disable the alarm for the block.  If the ``Enabled`` check-box is checked, then an alarm is enabled on the block.
-   * Click on the ``Latched`` check-box to enable or disable the latching of the alarm. If an enabled and active alarm is configured with latch as true, it will require an acknowledgement by the users. If the alarm is configured with latch as false, it becomes inactive as soon as the alarm conditions are not true anymore. That is, it won't require an acknowledgement by the users.
+   * Click on the ``Latched`` check-box to enable or disable the latching of the alarm. If an enabled and active alarm is configured with latch as true, it will require an acknowledgement by the user before it can become inactive. If the alarm is configured with latch as false, it becomes inactive as soon as the alarm conditions are not true any more (without the need for acknowledgement by the user).
    * Use the ``Delay`` text box to set a numerical delay for the alarm when it is active. If an enabled alarm is configured with a non-zero delay, it becomes active only after the delay period (in seconds) passes once the alarm conditions become true and still remains true. Otherwise it is immediately active (delay=0).
    * Use the ``Guidance`` text box to set guidance text which will be shown on the alarm in the Alarm view. This could be, for example, the name of the particular device in error.
    * There are information fields like ``Low Limit``, ``Low Limit Severity``, ``High Limit`` and ``High Limit Severity``. These are values set on the underlying PVs and are view-only.
