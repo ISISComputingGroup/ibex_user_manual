@@ -153,6 +153,16 @@ Logging Settings
    * You can choose to log the block value periodically (the default period is every 30 seconds).
    * Alternatively, you can set a "deadband" - the block will only be logged if its value falls outside +/- the limit defined by the deadband value.
 
+Alarm Configurations
+   Use the Alarm Configurations section of the Configure Block dialog to set and control if alarms are required at block level.
+
+   * **Note:** By default alarms are defined at the IOC level.  
+   * Click on the ``Enabled`` check-box to enable or disable the alarm for the block.  If the ``Enabled`` check-box is checked, then alarm is enabled on the block.
+   * Click on the ``Latched`` check-box to enable or disable the latching of the alarm. If an enabled and active alarm is configured with latch as true, it will require an acknowledgement by the users. If the alarm is configured with latch as false, it becomes inactive as soon as the alarm conditions are not true anymore. That is, it won't require an acknowledgement by the users.
+   * Use the ``Delay`` text box to set a numerical delay for the alarm when it is active. If an enabled alarm is configured with a non-zero delay, it becomes active only after the delay period (in seconds) passes once the alarm conditions become true and still remains true. Otherwise it is immediately active (delay=0).
+   * Use the ``Guidance`` text box to set a show a guidance or helper text on the alarm in Alarm view. This could be, for example, name of the particular device in error.
+   * There are information fields like ``Low Limit``, ``Low Limit Severity``, ``High Limit`` and ``High Limit Severity``. These are values set on the underlying PVs and are view-only.
+
 To edit an existing block, click on the ``Edit Block`` button or use the keyboard shortcut ``Ctrl+E``. Blocks can be deleted by clicking the ``Delete Block`` button or by using the keyboard shortcut ``DEL``.
 
 **Note:** Blocks that have been inherited from a component will be shown, but cannot be modified, in the Edit Configuration dialog (the blocks will be shown as "greyed-out").  To modify inherited blocks you need to use the Edit Component dialog (see :doc:`Create-and-Manage-Components`).
