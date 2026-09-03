@@ -157,7 +157,7 @@ Alarm Configurations
    Use the Alarm Configurations section of the Configure Block dialog to set and control if alarms are required at block level.
 
    * **Note:** By default alarms are defined at the IOC level.  
-   * Click on the ``Enabled`` check-box to enable or disable the alarm for the block.  If the ``Enabled`` check-box is checked, then alarm is enabled on the block.
+   * Click on the ``Enabled`` check-box to enable or disable the alarm for the block.  If the ``Enabled`` check-box is checked, then an alarm is enabled on the block.
    * Click on the ``Latched`` check-box to enable or disable the latching of the alarm. If an enabled and active alarm is configured with latch as true, it will require an acknowledgement by the users. If the alarm is configured with latch as false, it becomes inactive as soon as the alarm conditions are not true anymore. That is, it won't require an acknowledgement by the users.
    * Use the ``Delay`` text box to set a numerical delay for the alarm when it is active. If an enabled alarm is configured with a non-zero delay, it becomes active only after the delay period (in seconds) passes once the alarm conditions become true and still remains true. Otherwise it is immediately active (delay=0).
    * Use the ``Guidance`` text box to set a show a guidance or helper text on the alarm in Alarm view. This could be, for example, name of the particular device in error.
