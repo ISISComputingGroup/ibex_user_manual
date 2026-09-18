@@ -184,4 +184,4 @@ Typical running values are:
 - Drive voltage is 280V (DC) nominally, and will show small fluctuations
 - Drive current will vary based on speed, whether the chopper is spinning up, and vacuum, but generally 0.5-2A would be a reasonable running range
 - Drive power is calculated as current times voltage; ~100s of W is typical, rising to 500-600W when the chopper is spinning up
-- Autozero voltages must be between -3 and +3 V - typically +/- 1V. Will fluctuate slightly.
+- Auto-zero voltages must be between -3 and +3 V - typically between +/- 1V. Will fluctuate slightly.
