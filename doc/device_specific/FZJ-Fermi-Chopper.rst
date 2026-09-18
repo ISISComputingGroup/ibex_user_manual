@@ -176,4 +176,12 @@ The actual speed shown on the front panel of the chopper is shown in ``rpm``, bu
 Unrealistic Values / Values in GUI do not match value on device
 ----------------------------------------------------------------
 
-To resolve this, the chopper team will be required to power-cycle the controller after carefully checking the chopper is at rest. 
+To resolve this, the chopper team will be required to power-cycle the controller after carefully checking the chopper is at rest.
+
+Typical running values are:
+- Controller temperature slightly above ambient (but well below 45C, which is software limit where IOC will spin-down the chopper)
+- Motor temperature slightly above ambient (but well below 45C, which is software limit where IOC will spin-down the chopper)
+- Drive voltage is 280V (DC) nominally, and will show small fluctuations
+- Drive current will vary based on speed, whether the chopper is spinning up, and vacuum, but generally 0.5-2A would be a reasonable running range
+- Drive power is calculated as current times voltage; ~100s of W is typical, rising to 500-600W when the chopper is spinning up
+- Autozero voltages must be between -3 and +3 V - typically +/- 1V. Will fluctuate slightly.
