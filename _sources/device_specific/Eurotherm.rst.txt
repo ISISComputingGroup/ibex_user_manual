@@ -1,0 +1,52 @@
+Eurotherm
+#########
+
+The Eurotherm is usually used to measure and control temperature; however it has also been used to measure pressures. It measures the resistance of an external sensor.
+
+.. contents:: **Contents**
+
+Calibration
+-----------
+
+The two measurement modes in which the Eurotherm is used are:
+
+#. Measuring a temperature directly: use the ``None.txt`` calibration file
+
+#. Measuring a resistance and then using a calibration file to convert to a temperature: In which case use the calibration file which is correct for your sensor. The calibration files are in ``C:\Instrument\Settings\config\common\temp_sensors``
+
+The calibration file is set using the `File` box in the `Sensor Calibration` area on the Eurotherm OPI.
+
+Ramping
+-------
+
+The Eurotherm can be made to ramp slowly through a temperature gradient. It achieves this by updating the set point every 5s to create the desired ramp rate; It does not check that the Eurotherm can respond quickly enough. To set it into ramping mode:
+
+#. Set the `Ramp rate` (N.B. The units of this are K/min)
+#. Set `Ramp` to be on
+
+When the Eurotherm is ramping the ramping light will be lit.
+
+PID LookUp
+----------
+
+The PID and maximum heater settings can be set dependent on the setpoint temperature. To do this switch the lookup on using the button on the OPI; the light will illuminate.
+
+The values for the settings are stored in a file in ``C:\Instrument\Settings\config\common\ramps``:
+
+#. The ramp file is a space separated file of values for set point temperature, P, I, D and heater (see the example file for the format)
+#. The file *must* be in set point temperature order small to large
+#. The set points are the lowest temperature at which the values should be used.
+#. Any set point lower than the first entry will use the first entry.
+
+For example if your file was::
+
+    SP P I D Heater
+    100 10 11 12 13
+    200 20 21 22 23
+    300 30 31 32 33
+
+Then a setpoint of:
+
+- 220 would use `20 21 22 23`
+- 300 would use `300 30 31 32 33`
+- 10 would use `100 10 11 12 13`

@@ -1,0 +1,150 @@
+Creating & Running Scripts
+##########################
+
+Types of Scripts
+================
+
+-  `Creating and running instrument
+   scripts <#creating-and-running-instrument-scripts>`__
+-  `Creating and running user
+   scripts <#creating-and-running-user-scripts>`__
+
+Creating and running instrument scripts
+=======================================
+
+Different instruments may have specific scripts that are required for
+multiple users. To make accessing these easier, ``genie_python`` loads
+instrument scripts at startup.
+
+Creating scripts
+----------------
+
+For the most part, this is the same as
+`creating-user-scripts <#creating-and-running-user-scripts>`__.
+
+Script module
+~~~~~~~~~~~~~~~~
+
+For instruments where a single file is sufficient, instrument scripts should be placed in ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst.py``. 
+
+For instruments with complex scripts which need more than one file, you should put your scripts in the inst folder, for example ``C:\Instrument\Settings\config\[MACHINE_NAME]\Python\inst\my_functions.py``. 
+
+When using a multi-file ``inst`` module, to make the functions available under the ``inst`` namespace as ``inst.do_thing()`` as opposed to ``inst.my_functions.do_thing()``, you will need to add the special file ``__init__.py``. Anything which is imported into this file (using normal python ``import`` statements) will be available under the ``inst`` namespace.
+
+Script structure
+~~~~~~~~~~~~~~~~
+
+Everything in the instrument scripts will be executed when
+``genie_python`` is started. This includes - Making functions available
+to be called later - Setting variables - Running methods. Typically, most
+code in instrument scripts will be contained within functions
+(procedures in Open GENIE language), but it's important to be aware that
+anything that isn't will be included too. For example, if an instrument
+script is loaded:
+
+::
+
+    a = 1
+    def print_a():
+        print str(a)
+
+then the user can call ``print_a``, but they can also use the variable
+``a``, and change its value, which may not be desirable. If instead the
+script was:
+
+::
+
+    def print_a():
+        a = 1
+        print str(a)
+
+then the user could only access ``print_a()`` and the value could not be
+changed.
+
+To reload the inst module, for instance if you had updated the script or added a new script, you should issue the command ``reload(inst)``.
+
+Running
+-------
+
+**Please note:** When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).
+
+Once the script is loaded, anything from the script will be available
+using the ``inst`` package reference. For instance if your script
+contains the function ``my_function`` you can call:
+
+::
+
+    inst.my_function()
+
+Whilst using the scripting perspective in the IBEX GUI, users will also
+benefit from the same auto-complete feature as they do with
+``genie_python`` commands.
+
+Creating and running user scripts
+=================================
+
+Creating scripts
+----------------
+
+1. First, we need to create a script file. By default, user scripts
+   should be placed in ``C:\scripts``. Navigate to your desired
+   directory and create the script file with extension ``.py``.
+2. Write some ``genie_python``!
+3. Save the file
+
+We have glossed over step 2 because Python is a very powerful scripting
+language. Combined with Open GENIE, the potential scope of a script is
+enormous, and well beyond the scope of this guide. For example though,
+here is a simple script that executes a calibration run.
+
+::
+
+    from genie_python import genie as g, BLOCK_NAMES as b
+
+    # Change the title
+    calibration_run_title = "Calibration run 1, 29th September"
+    g.change(title=calibration_run_title)
+
+    # Begin the run
+    print "Beginning calibration run : " + calibration_run_title
+    g.begin()
+
+    # Wait for 100 uamps
+    g.waitfor(uamps=100)
+
+    # End the run
+    g.end()
+    print "Calibration run finished successfully"
+
+Running
+-------
+
+**Please note:** When you are running scripts, the script is being executed on the instrument control PC. This means that the script itself has to be stored on the instrument control PC.  It also means that any path names in your scripts refer to locations on the instrument control PC (unless you are referring to network drives).
+
+Once you've created your script, it's time to run it. There are a number
+of ways of launching a Python script.
+
+From IBEX
+~~~~~~~~~
+
+1. Launch the IBEX GUI
+2. Navigate to the scripting perspective
+3. Run the command ``g.load_script("C:\path\to\script\my_script.py")``
+   where the path and script name are updated appropriately
+
+   -  Note that if you omit the absolute path to the file (i.e.
+      ``C:\path\to\script``) then ``genie_python`` will look in the
+      current script directory. By default this is ``C:\scripts`` but
+      can be viewed and set with the commands ``g.get_script_dir()`` and
+      ``g.set_script_dir()`` respectively.
+
+4. When the script is loaded, any procedures in the script will be run
+   automatically. If the script contains any function, you will now be
+   able to call them from within the scripting window.
+
+From a genie\_python terminal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Launch a ``genie_python`` terminal from
+   ``C:\Instrument\Apps\Python\`` by running ``genie_python.bat``
+2. Follow the above starting at step 3.
