@@ -1,0 +1,132 @@
+Muon Front End Scripting
+########################
+
+This page contains guidance on writing scripts for the Muon Front-End control PC (NDEMUONFE).  The information on this page is specific to NDEMUONFE and is not relevant to other control PCs.
+
+.. contents:: **Contents**
+
+Starting & Stopping Runs Remotely
+---------------------------------
+
+Ensuring the control machine has sufficient permission to begin a run
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The relevant code can be found in the GitHub repository:
+
+https://github.com/ISISComputingGroup/mfe_control_scripts
+
+The code is written in Python and relies on the win32com module. Please ensure this module is installed before running.
+
+There is a file, run_interactively.py, which can be used to trigger commands on multiple machines interactively. It is currently set up to run on the 3 MFE instrument PCs. You can adjust it by changing the list of machine names in the variable MACHINES. To run just launch the script with Python.
+
+Note that the script relies on the host machine and user having sufficient DCOM permissions to talk to the three instrument machines which can be achieved through the Windows credential manager.
+
+1. Go to the start menu
+2. Type "Credential Manager" and open the Credential Manager
+3. You will need the credentials for all the machines you want to connect too. The "Persistence" field for the credentials must be "Enterprise" or higher (not "Local machine").
+4. To add a new credential
+    1. Click "Add a Windows credential"
+    2. Enter the credentials (e.g. NDXMUSR, NDXMUSR\\spudulike, [PASSWORD])
+    3. Click "OK"
+
+Using the script to control the runs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To write your scripts, use the MultipleDaeController class in Python to issue commands to multiple machines simultaneously. The script run_interactively.py provides a good example of how to use it.
+
+::
+
+    from multiple_dae_controller import MultipleDaeController
+    controller = MultipleDaeController()
+    waitfor_seconds = 10
+    for m in ["NDXHIFI","NDXMUSR","NDXEMU"]:
+        controller.add_machine(m,waitfor_seconds)
+    controller.run_on_all("get_run_state")
+    controller.run_on_machines("end",["NDXHIFI","NDXMUSR"])
+    controller.run_on_machine("begin","NDXEMU")
+
+The following methods are currently supported:
+
+- begin
+- end
+- pause
+- resume
+- abort
+- get_run_state
+- get_events
+- get_frames
+- get_counts
+- waitfor_counts
+- waitfor_frames
+- waitfor_events
+
+Using Blocks to Write Tuning Control Scripts
+--------------------------------------------
+
+A configuration_ with blocks should be created as for any IBEX instrument on NDEMUONFE.
+
+.. _configuration: CreateandManageConfigurations
+
+On an appropriate system, import `genie\_python`_ to Mantid, and set your instrument to be "MUONFE", then get the associated blocks.
+
+::
+
+   set_instrument("MUONFE")
+   get_blocks()
+
+You should now get a list of blocks on the remote system. These can then be used as standard for scripting by writing to and from those values.
+
+Return to `Contents`_.
+
+How to alter write access to blocks for each instrument
+-------------------------------------------------------
+
+The initial gateway setup has been undertaken. Should the computers being provided control need to be changed, then the gateway should be restarted at the very least, and it would be wise to consider restarting the whole server.
+
+For any system in R55 which requires full control of all aspects of NDEMUONFE ensure that there is an entry in globals.txt on NDEMUONFE of the format
+
+::
+   
+   ACF_IH1=computer_name
+
+You can specify up to four of these. 
+
+Gateway settings have been set up to allow NDX and NDL systems to control each instrument respectively (so the items used by MUSR have  write access from MUSR). There are more detailed instructions on how to set up these aspects of the gateway :external+ibex_developers_manual:doc:`in the developer's manual <system_components/Gateway>`
+
+Machines listed in the globals.txt can be restricted to read-only access by sending the following command:
+
+::
+   
+   caput IN:MUONFE:CS:EXCLUSIVE 1
+
+There is a similar PV for each instrument, so to limit HIFI to read-only:
+
+::
+
+   caput IN:MUONFE:CS:EXCLUSIVE:HIFI 1
+
+Or to allow for writing to the EMU values:
+
+::
+
+   caput IN:MUONFE:CS:EXCLUSIVE:EMU 0
+
+How to Re-apply Settings
+------------------------
+
+IOCs controlling Power Supply Units (PSUs) have the option to re-apply their set-points (current, voltage, status on/off) the next time they are restarted. The following may be useful if, for any reason, the PSUs are restarted and lose their set-points, and you need a quick way to re-apply them all at once rather than manually one by one.
+
+The relevant configuration must be set up in the following way:
+
+#. Open the Edit Configuration dialog (by selecting ``Configurations > Edit`` from the ``Configuration`` menu).
+#. In the ``IOCs`` tab, locate the correct IOC and make sure both the ``Auto-start?`` and ``Auto-restart?`` boxes for the IOC are checked.
+#. In the ``IOC Macros`` tab, select the correct IOC and set the macro ``SP_AT_STARTUP`` to ``YES`` (default is ``NO``).
+
+The set-points can be re-applied by reloading the current configuration (which will restart the IOCs), with the following `genie\_python`_ command:
+
+::
+
+   reload_current_config()
+
+Note that the set-points can also be re-applied by restarting the IOCs individually in the IBEX GUI (as long as the ``SP_AT_STARTUP`` macro is set as above).
+
+.. _`genie\_python`: http://shadow.nd.rl.ac.uk/genie\_python/sphinx/genie\_python.html

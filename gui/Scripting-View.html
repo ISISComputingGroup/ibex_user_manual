@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripting View &mdash; IBEX User Manual</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9f04a737" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Views" href="Views.html" />
+    <link rel="prev" title="Script Server" href="Script-Server.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IBEX User Manual
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Key-Concepts-in-IBEX.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../IBEX-GUI-Features.html">IBEX GUI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Banner.html">Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Blocks-and-Groups.html">Blocks &amp; Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Experiment-Details.html">Experiment Details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Menu-Bar.html">Menu Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Reflectometry-View.html">Reflectometry View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script-Server.html">Script Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Views.html">Views</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Script-Generator.html">Script Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../The-Web-Dashboard.html">Web Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../How-To.html">How do I …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBEX-File-Paths-page.html">Where is …?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Instrument-Specific-Guidance.html">Instrument-specific guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Device-Specific-Guidance.html">Device-specific guidance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IBEX User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../IBEX-GUI-Features.html">IBEX GUI</a></li>
+      <li class="breadcrumb-item active">Scripting View</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ISISComputingGroup/ibex_user_manual/blob/master/doc/gui/Scripting-View.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="scripting-view">
+<h1>Scripting View<a class="headerlink" href="#scripting-view" title="Link to this heading"></a></h1>
+<p>The Scripting-View displays a Python console, allowing you to load and execute Python or genie_python scripts. <strong>Note</strong>: Scripts running in the Scripting View are independent of scripts running on the Script Server and independent of scripts running in other consoles and clients.</p>
+<section id="multiple-consoles-and-views">
+<h2>Multiple Consoles and Views<a class="headerlink" href="#multiple-consoles-and-views" title="Link to this heading"></a></h2>
+<p>The IBEX Gui supports both multiple consoles and multiple views on those consoles. You should think of this as multiple versions of genie_python, each running in a console, which you can view through one or many windows. To see how to utilise this read the following toolbar section.</p>
+</section>
+<section id="tool-bar">
+<h2>Tool Bar<a class="headerlink" href="#tool-bar" title="Link to this heading"></a></h2>
+<p>The tools bar at the top of every python console view looks like:</p>
+<p><img alt="" src="../_images/scripting_view_genie_python_tool_bar.png" /></p>
+<p>From left to right, the buttons are:</p>
+<ul class="simple">
+<li><p><img alt="red square" src="../_images/scripting_view_stop_button.png" /> Stop the whole console. This will stop the current script and remove the console from view, useful if you are running multiple consoles.</p></li>
+<li><p><img alt="yellow square" src="../_images/scripting_view_stop_execution.png" /> Interrupt (via <a class="reference external" href="https://docs.python.org/3/builtins/exceptions.html#KeyboardInterrupt" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardInterrupt</span></code></a>). This is useful if you realise that the script is doing something wrong. This can also be done by pressing Ctrl+C</p></li>
+<li><p><img alt="scroll lock" src="../_images/scripting_view_scroll_lock.png" /> Toggle scroll-lock, which prevents new console output from scrolling the scripting window. This is useful if you need to inspect or copy from previous script output, without interrupting the script.</p></li>
+<li><p><img alt="word wrap" src="../_images/scripting_view_word_wrap.png" /> Toggle word-wrap: with word-wrap disabled, long output lines will cause a horizontal scroll-bar to appear. With this option enabled, long output lines will instead be wrapped onto new lines.</p></li>
+<li><p><img alt="clear console" src="../_images/scripting_view_console_clear.png" /> Clear the console. This will remove all the text from the window, be careful though as this WON’T stop the current script.</p></li>
+<li><p>Switch to a different console. This will be greyed out if you only have one console running.</p></li>
+<li><p><img alt="new console" src="../_images/scripting_view_new_console_button.png" /> Start a new console or a new view. You can use this to start a new console by selecting “PyDev Console”. Be careful: having multiple consoles running control scripts simultaneously will lead to the consoles ‘fighting’ for control of the instrument.</p></li>
+<li><p>Clear the console. This button also displays the current memory usage of all the output in the console.</p></li>
+<li><p>Open this help page.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Script-Server.html" class="btn btn-neutral float-left" title="Script Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Views.html" class="btn btn-neutral float-right" title="Views" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Nov 11, 2026.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
